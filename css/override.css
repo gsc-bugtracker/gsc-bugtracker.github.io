@@ -30,3 +30,7 @@ address, a[href="http://www.mantisbt.org/"] {
 	display: none;
 }
 
+a.small, a[target="_blank"] {
+	display:none;
+}
+

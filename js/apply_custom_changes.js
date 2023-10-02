@@ -69,9 +69,40 @@ function fixAmericanMonths() {
         return day + ' ' + year;
     });
 }
+
+function removeLinks() {
+	var elements = document.body.getElementsByTagName('a');
+	
+    for (var i = 0; i < elements.length; i++) {
+		if(elements[i].href == "http://www.mantisbt.org/") {
+			continue;
+		}
+		
+		elements[i].removeAttribute('href');
+    }
+}
+
+function fixImagePaths() {
+	var elements = document.body.getElementsByTagName('img');
+	
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].setAttribute('src', elements[i].getAttribute('src').replace('http://localhost/mantis/', ''));
+	}
+}
+
+function removeTaglessLeftovers() {
+	const files = document.querySelectorAll('td[colspan="5"]:has(a):has(span)')[0];
+
+	if(files) {
+		files.innerHTML = files.innerHTML.replace(/\[|\]/g, '');
+	}
+}
 	
 window.onload = function() {
 	removeAllFollowingAddress();
 	fixEstimates();
 	fixAmericanMonths();
+	fixImagePaths();
+	removeLinks();
+	removeTaglessLeftovers();
 };
