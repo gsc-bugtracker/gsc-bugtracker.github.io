@@ -14,9 +14,13 @@ function fixEstimates() {
 	
     for (var i = 0; i < elements.length; i++) {
         var matches = elements[i].innerHTML.match(/@(\d+)@/g);
-        
+		
         if (matches) {
             for (var j = 0; j < matches.length; j++) {
+				
+				if (matches[j].length < 5) {
+					continue;
+				}
 				
                 var seconds = matches[j].replace(/@(\d+)@/, '$1');
                 var date = new Date(parseInt(seconds) * 1000);
