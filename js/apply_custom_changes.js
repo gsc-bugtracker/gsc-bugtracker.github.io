@@ -53,20 +53,25 @@ function fixAmericanMonths() {
 	document.body.innerHTML = document.body.innerHTML.replace(/\b(\d{1,2})-(\d{1,2})-(\d{2})\b/g, 
 	
 	function(match, month, day, year) {
-        const date = new Date(`20${year}-${month}-${day}`);
-		
-        day = new Intl.DateTimeFormat('ru-RU', {
-            timeZone: 'Europe/Kiev',
-            month: 'long',
-            day: '2-digit',
-        }).format(date);
-                
-		year = new Intl.DateTimeFormat('en-GB', {
-            timeZone: 'Europe/Kiev',
-            year: 'numeric',
-        }).format(date);
-		
-        return day + ' ' + year;
+		try {
+			const date = new Date(`20${year}-${month}-${day}`);
+			
+			day = new Intl.DateTimeFormat('ru-RU', {
+				timeZone: 'Europe/Kiev',
+				month: 'long',
+				day: '2-digit',
+			}).format(date);
+					
+			year = new Intl.DateTimeFormat('en-GB', {
+				timeZone: 'Europe/Kiev',
+				year: 'numeric',
+			}).format(date);
+			
+			return day + ' ' + year;
+		} catch (error) {
+			console.error(error.message);
+			return match;
+		}
     });
 }
 
