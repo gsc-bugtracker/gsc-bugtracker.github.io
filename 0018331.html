@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018331: [garbage] crash при старте левела - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018330.html">
+      &lt; Прошлое обращение (0018330)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018332.html">
+      Следующее обращение (0018332) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018331</td>
+    <td>[S.T.A.L.K.E.R.: TODO List] 0</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>31 июля 2008 17:41</td>
+    <td>31 июля 2008 18:24</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018331: [garbage] crash при старте левела</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">прыгнул с ескейпа на гарбедж. на нет_спавне вылет. стабильно повторяется при загрузке автосейва.
+     <br/>
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CGameObject::net_Spawn
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\GameObject.cpp
+     <br/>
+     [error]Line          : 264
+     <br/>
+     [error]Description   : _valid(renderable.xform)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD8D6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007ADAE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0311FCC9 xrGame.dll, CGameObject::net_Spawn(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 265
+     <br/>
+     001B:0312E309 xrGame.dll, CPhysicsShellHolder::net_Spawn(), e:\priquel\sources\engine\xrgame\physicsshellholder.cpp, 84
+     <br/>
+     001B:0317E2CE xrGame.dll, CPhysicItem::net_Spawn(), e:\priquel\sources\engine\xrgame\physic_item.cpp, 81
+     <br/>
+     001B:03168565 xrGame.dll, CInventoryItemObject::net_Spawn(), e:\priquel\sources\engine\xrgame\inventory_item_object.cpp, 98
+     <br/>
+     001B:031C7A1A xrGame.dll, CHudItemObject::net_Spawn(), e:\priquel\sources\engine\xrgame\hud_item_object.cpp, 83
+     <br/>
+     001B:031B0391 xrGame.dll, CArtefact::net_Spawn(), e:\priquel\sources\engine\xrgame\artefact.cpp, 84
+     <br/>
+     001B:030B3D0A xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 108
+     <br/>
+     001B:030B3FB8 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+     <br/>
+     001B:030A5D35 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 456
+     <br/>
+     001B:030A5F8B xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 551
+     <br/>
+     001B:00787888 xrCore.dll, CTimer::GetElapsed_ms(), e:\priquel\sources\engine\xrcore\ftimer.h, 113
+     <br/>
+     001B:00421C9D xrEngine.exe, _GetFontTexName(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 809
+     <br/>
+     001B:00498A03 xrEngine.exe, CDemoRecord::IR_OnKeyboardHold(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 465
+     <br/>
+     001B:4FE09994 d3d9.dll
+     <br/>
+     001B:4FE10780 d3d9.dll
+     <br/>
+     001B:028E6D7B xrRender_R1.dll, dxRenderDeviceRender::End(), e:\priquel\sources\engine\layers\xrrender\dxrenderdevicerender.cpp, 347
+     <br/>
+     001B:7C90E10E ntdll.dll
+     <br/>
+     001B:004AB3F6 xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 194
+     <br/>
+     001B:77D4EB2E USER32.dll
+     <br/>
+     001B:74730E6C MSCTF.dll
+     <br/>
+     001B:77D4EAE2 USER32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080731-172810.zip (575,957 bytes)
+     <span class="italic">31 июля 2008 17:41</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     fresh_autosave.sav.bz2 (867,610 bytes)
+     <span class="italic">31 июля 2008 17:41</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 июля 2008 17:41</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 июля 2008 17:41</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080731-172810.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 июля 2008 17:41</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: fresh_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 июля 2008 18:24</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Slipch</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

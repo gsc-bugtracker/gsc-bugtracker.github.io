@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017962: Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017961.html">
+      &lt; Прошлое обращение (0017961)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017963.html">
+      Следующее обращение (0017963) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017962</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>11 июля 2008 17:37</td>
+    <td>17 июля 2008 15:04</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Redstain</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017962: Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! task [133] already inprocess
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : 0
+     <br/>
+     [error]Function      : CGameTaskManager::GiveGameTaskToActor
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\GametaskManager.cpp
+     <br/>
+     [error]Line          : 96
+     <br/>
+     [error]Description   : give_task : Task [133] already inprocess!
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:008FD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:008FE371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     001B:038B557E xrGame.dll, CGameTaskManager::GiveGameTaskToActor(), e:\priquel\sources\engine\xrgame\gametaskmanager.cpp, 96
+     <br/>
+     001B:03D57DF0 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     Во время захвата моста, после того, как снайперу (не первому) удается убить бойца возле пульта (задание провалено "защитить бойца возле пульта").
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     44.sav.bz2 (1,166,878 bytes)
+     <span class="italic">11 июля 2008 17:37</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080711-173021.zip (3,859,602 bytes)
+     <span class="italic">11 июля 2008 17:43</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20512" name="20512">
+     <td class="bugnote-public">
+      <span class="small">(0020512)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">11 июля 2008 18:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">проверь опять, нужно по любому убить первого снайпера до того как он снимет бойца у пульта</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20514" name="20514">
+     <td class="bugnote-public">
+      <span class="small">(0020514)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">11 июля 2008 19:05</span>
+      <br/>
+      <span class="small">отредактирован:  11 июля 2008 19:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ну да. Первого надо убить, а второй если убивает чувака у пульта - валится креш. Если первый убивает бойца - креша нету.
+      <br/>
+      <br/>
+      отредактирован: 11.07.08 19:06</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20516" name="20516">
+     <td class="bugnote-public">
+      <span class="small">(0020516)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">11 июля 2008 19:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дык я это поправил, и надо опять протестить</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20517" name="20517">
+     <td class="bugnote-public">
+      <span class="small">(0020517)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">11 июля 2008 19:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дык это обновляться надо :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:37</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:37</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:37</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:37</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: 44.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 =&gt; Current_build 11.07.08 - Red Forest 3 - E:\\priquel\\sources\\engine\\xrGame\\GametaskManager.cpp 96</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">случайно =&gt; иногда</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 =&gt; Current_build 11.07.08 - Red Forest 3 - E:\\priquel\\sources\\engine\\xrGame\\GametaskManager.cpp 96</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080711-173021.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл удален: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 17:47</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 =&gt; Current_build 11.07.08 - Red Forest 3 - E:\\priquel\\sources\\engine\\xrGame\\GametaskManager.cpp 96</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 17:47</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 18:18</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 18:23</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 18:40</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 18:40</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 18:40</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 20512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 20514</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 19:06</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий отредактирован: 20514</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:08</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 20516</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 19:10</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 20517</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 13:50</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 13:50</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 =&gt; Current_build 11.07.08 - Red Forest 3 - E:\\priquel\\sources\\engine\\xrGame\\GametaskManager.cpp 96</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 13:50</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 19:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 19:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 11.07.08 - Red Forest 3 - E:\priquel\sources\engine\xrGame\GametaskManager.cpp 96 =&gt; Current_build 11.07.08 - Red Forest 3 - E:\\priquel\\sources\\engine\\xrGame\\GametaskManager.cpp 96</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 19:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 15:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

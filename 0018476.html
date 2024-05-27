@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018476: SVN Bin Mixed - (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018475.html">
+      &lt; Прошлое обращение (0018475)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018477.html">
+      Следующее обращение (0018477) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018476</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>18 августа 2008 11:08</td>
+    <td>23 сентября 2008 17:30</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r31415</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018476: SVN Bin Mixed - (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+     <br/>
+     [error]Function      : CDetailPathManager::build_smooth_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+     <br/>
+     [error]Line          : 867
+     <br/>
+     [error]Description   : Invalid restrictions (see log for details) for object
+     <br/>
+     [error]Arguments     : boar_normal15884
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD1A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007AD41A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:02CE6881 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 867
+     <br/>
+     001B:02CDA4E0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:02CDCB98 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+     <br/>
+     001B:031C7F4C xrGame.dll, VisualCallback(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 739
+     <br/>
+     001B:007B8799 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:0294CBCF xrRender_R1.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 96
+     <br/>
+     001B:02CD07C7 xrGame.dll, CDetailPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\detail_path_builder.h, 51
+     <br/>
+     001B:02CD6D4B xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+     <br/>
+     001B:02CD08BD xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+     <br/>
+     001B:004ABE4E xrEngine.exe, CTheoraStream::Load()
+     <br/>
+     001B:0078D14B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 329
+     <br/>
+     001B:78132848 MSVCR80.dll, endthread()
+     <br/>
+     001B:781328C8 MSVCR80.dll, endthread()
+     <br/>
+     <br/>
+     Вылетело на АТП, убивал военных по квесту "Уничтожить военных на АТП"</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080818-105015.zip (1,050,175 bytes)
+     <span class="italic">18 августа 2008 11:08</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (828,281 bytes)
+     <span class="italic">19 августа 2008 18:55</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_uzercheg.rar (318,380 bytes)
+     <span class="italic">17 сентября 2008 12:36</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGATHREE.zip (7,223,590 bytes)
+     <span class="italic">19 сентября 2008 16:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     smooth_path.rar (1,653,424 bytes)
+     <span class="italic">23 сентября 2008 17:30</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21772" name="21772">
+     <td class="bugnote-public">
+      <span class="small">(0021772)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">19 августа 2008 18:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на Ескейпе, бежала забирать хабар.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22227" name="22227">
+     <td class="bugnote-public">
+      <span class="small">(0022227)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">17 сентября 2008 12:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на Ескейпе при попытке поторговать с торговцем у сталкеров за насыпью. (Тестовые миксовые бины)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22282" name="22282">
+     <td class="bugnote-public">
+      <span class="small">(0022282)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">19 сентября 2008 16:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">rev. 31796 new mixed binaries
+      <br/>
+      escape - вылет после продолжительной игры
+      <br/>
+      лог в аттаче
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      00575517	8997.03222656	[232] DEFAULT OUT RESTRICTIONS :
+      <br/>
+      00575518	8997.03222656	[232] DEFAULT IN RESTRICTIONS  :
+      <br/>
+      00575519	8997.03320313	[232]      esc_space_restrictor_in_restr_1
+      <br/>
+      00575520	8997.03320313	[232]      esc_space_restrictor_in_restr_2
+      <br/>
+      00575521	8997.03417969	[232]      esc_space_restrictor_in_restr_3
+      <br/>
+      00575522	8997.03417969	[232]      esc_space_restrictor_in_restr_4
+      <br/>
+      00575523	8997.03417969	[232]      esc_space_restrictor_minigun
+      <br/>
+      00575524	8997.03417969	[232]      esc_trader_habar_1_restrictor
+      <br/>
+      00575525	8997.03417969	[232]      esc_trader_habar_3_restrictor
+      <br/>
+      00575526	8997.03417969	[232] OUT RESTRICTIONS         :
+      <br/>
+      00575527	8997.03417969	[232]      esc_space_restrictors_9_7_sr_defense
+      <br/>
+      00575528	8997.03515625	[232] IN RESTRICTIONS          :
+      <br/>
+      00575529	8997.03515625	[232]      esc_space_restrictor_in_restr_1
+      <br/>
+      00575530	8997.03515625	[232]      esc_space_restrictor_in_restr_2
+      <br/>
+      00575531	8997.03515625	[232]      esc_space_restrictor_in_restr_3
+      <br/>
+      00575532	8997.03515625	[232]      esc_space_restrictor_in_restr_4
+      <br/>
+      00575533	8997.03613281	[232]      esc_space_restrictor_minigun
+      <br/>
+      00575534	8997.03613281	[232]      esc_trader_habar_1_restrictor
+      <br/>
+      00575535	8997.03613281	[232]      esc_trader_habar_3_restrictor
+      <br/>
+      00575536	8997.03613281	[232]
+      <br/>
+      00575537	8997.03710938	[232] FATAL ERROR
+      <br/>
+      00575538	8997.03710938	[232]
+      <br/>
+      00575539	8997.03710938	[232] [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+      <br/>
+      00575540	8997.03710938	[232] [error]Function      : CDetailPathManager::build_smooth_path
+      <br/>
+      00575541	8997.03808594	[232] [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+      <br/>
+      00575542	8997.03808594	[232] [error]Line          : 867
+      <br/>
+      00575543	8997.03808594	[232] [error]Description   : Invalid restrictions (see log for details) for object
+      <br/>
+      00575544	8997.03808594	[232] [error]Arguments     : flesh_normal26246
+      <br/>
+      00575545	8997.03808594	[232]
+      <br/>
+      00575546	8997.03808594	[232]
+      <br/>
+      00575547	8997.73339844	[232] stack trace:
+      <br/>
+      00575548	8997.73339844	[232]
+      <br/>
+      00575549	8999.78808594	[232] 001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      00575550	8999.78808594	[232] 001B:006DD42A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+      <br/>
+      00575551	8999.78906250	[232] 001B:02C46881 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 867
+      <br/>
+      00575552	8999.78906250	[232] 001B:02C3A4E0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+      <br/>
+      00575553	8999.78906250	[232] 001B:02C3CB98 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+      <br/>
+      00575554	8999.78906250	[232] 001B:006E87B9 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+      <br/>
+      00575555	8999.78906250	[232] 001B:0288839F xrRender_R2.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 96
+      <br/>
+      00575556	8999.78906250	[232] 001B:02C307E7 xrGame.dll, CDetailPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\detail_path_builder.h, 51
+      <br/>
+      00575557	8999.78906250	[232] 001B:02C36D4B xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+      <br/>
+      00575558	8999.78906250	[232] 001B:02C308BD xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+      <br/>
+      00575559	8999.79003906	[232] 001B:004ABB2E xrEngine.exe, CTheoraStream::Load()
+      <br/>
+      00575560	8999.79003906	[232] 001B:006BD15B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 329
+      <br/>
+      00575561	8999.79003906	[232] 001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      00575562	8999.79003906	[232] 001B:781328C8 MSVCR80.dll, endthread()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22300" name="22300">
+     <td class="bugnote-public">
+      <span class="small">(0022300)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">22 сентября 2008 11:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">22 сентября 2008 г., 11:03:07
+      <br/>
+      Повторилось, без видимых причин.
+      <br/>
+      CSE_ALifeDynamicObject::try_switch_online2: client_data is cleared for [3419][esc_m_trader]
+      <br/>
+      ! vertex [47726], position [-204.750687][-4.962785][-64.749306], alvi[+], asp[-]
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      esc_space_restrictor_minigun
+      <br/>
+      esc_trader_habar_1_restrictor
+      <br/>
+      esc_trader_habar_3_restrictor
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      esc_space_restrictors_1_11_sr_attack
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      esc_space_restrictor_minigun
+      <br/>
+      esc_trader_habar_1_restrictor
+      <br/>
+      esc_trader_habar_3_restrictor
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+      <br/>
+      [error]Function      : CDetailPathManager::build_smooth_path
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+      <br/>
+      [error]Line          : 867
+      <br/>
+      [error]Description   : Invalid restrictions (see log for details) for object
+      <br/>
+      [error]Arguments     : flesh_weak33028
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD42A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+      <br/>
+      001B:02C46881 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 867
+      <br/>
+      001B:02C3A4E0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+      <br/>
+      001B:02C3CB98 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+      <br/>
+      001B:027C9818 xrRender_R2.dll, CDetailManager::UpdateVisibleM(), e:\priquel\sources\engine\layers\xrrender\detailmanager.cpp, 223
+      <br/>
+      001B:02C36D4B xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+      <br/>
+      001B:02C308BD xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+      <br/>
+      001B:004ABB2E xrEngine.exe, CTheoraStream::Load()
+      <br/>
+      001B:006BD15B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 329
+      <br/>
+      001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      001B:781328C8 MSVCR80.dll, endthread()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22330" name="22330">
+     <td class="bugnote-public">
+      <span class="small">(0022330)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">23 сентября 2008 17:29</span>
+      <br/>
+      <span class="small">отредактирован:  23 сентября 2008 17:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Escape вовремя выброса. н6ичего примечательного в это время не делал. Новые миксовые бины ревизия 31815
+      <br/>
+      <br/>
+      CSE_ALifeDynamicObject::try_switch_online2: client_data is cleared for [3416][esc_m_trader]
+      <br/>
+      ! vertex [382217], position [62.649437][3.929497][392.349823], alvi[+], asp[-]
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      esc_space_restrictor_minigun
+      <br/>
+      esc_trader_habar_1_restrictor
+      <br/>
+      esc_trader_habar_3_restrictor
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      esc_space_restrictors_5_6_sr_defense
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      esc_space_restrictor_minigun
+      <br/>
+      esc_trader_habar_1_restrictor
+      <br/>
+      esc_trader_habar_3_restrictor
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+      <br/>
+      [error]Function      : CDetailPathManager::build_smooth_path
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+      <br/>
+      [error]Line          : 867
+      <br/>
+      [error]Description   : Invalid restrictions (see log for details) for object
+      <br/>
+      [error]Arguments     : dog_weak28433
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00D1D1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00D1D42A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+      <br/>
+      001B:04966881 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 867
+      <br/>
+      001B:0495A4E0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+      <br/>
+      001B:0495CB98 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+      <br/>
+      001B:00D28889 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+      <br/>
+      001B:0495A4E0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+      <br/>
+      001B:04A6E5F9 xrGame.dll, CCustomMonster::eye_pp_s1(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 631
+      <br/>
+      001B:049508BD xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+      <br/>
+      001B:004ABC3E xrEngine.exe, CTheoraStream::Load()
+      <br/>
+      <br/>
+      отредактирован: 23.09.08 17:29</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 11:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 11:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 11:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080818-105015.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 11:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 11:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 11:54</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN Bin Mixed - Escape - boar_normal15884 =&gt; SVN Bin Mixed - (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 18:55</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 18:56</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 21772</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 сентября 2008 12:36</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: xray_uzercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 сентября 2008 12:38</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 22227</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 16:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 22282</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 сентября 2008 16:02</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: MEGATHREE.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 16:13</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 11:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22300</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 12:09</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 22330</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 17:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий отредактирован: 22330</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:30</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: smooth_path.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016923: Darkvalley   val_smart_terrain_9_2_kamp_2_task - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016922.html">
+      &lt; Прошлое обращение (0016922)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016924.html">
+      Следующее обращение (0016924) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016923</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>13 июня 2008 12:38</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r27846</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016923: Darkvalley   val_smart_terrain_9_2_kamp_2_task</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">прошел Свалку перешел на даркваллей взял квест на отстрел чахлой стоянки скрипт,с игры не выкинуло.
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : m_path
+     <br/>
+     [error]Function      : CPatrolPathParams::CPatrolPathParams
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_params.cpp
+     <br/>
+     [error]Line          : 19
+     <br/>
+     [error]Description   : There is no patrol path
+     <br/>
+     [error]Arguments     : val_smart_terrain_9_2_kamp_2_task
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:02D81AC9 xrGame.dll, CPatrolPathParams::CPatrolPathParams(), e:\priquel\sources\engine\xrgame\patrol_path_params.cpp, 19
+     <br/>
+     001B:006815C3 xrCore.dll, memory_monitor::monitor_alloc(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 78
+     <br/>
+     001B:034233A9 xrGame.dll, _strlwr()
+     <br/>
+     001B:034233E1 xrGame.dll, _strlwr()
+     <br/>
+     001B:00931F16 xrLUA.dll, _lock()
+     <br/>
+     001B:0340EC30 xrGame.dll, _strlwr()
+     <br/>
+     001B:00519328 xrEngine.exe, ICClose()
+     <br/>
+     001B:0042766F xrEngine.exe, stlp_std::priv::__ucopy_ptrs&lt;CGameFont::String const *,CGameFont::String *&gt;()
+     <br/>
+     001B:02ED7915 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:004976A3 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 64
+     <br/>
+     001B:004AA439 xrEngine.exe, CTheoraSurface::operator=()
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     001B:004A9BB8 xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 163
+     <br/>
+     001B:4FDB0780 d3d9.dll
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] patrol
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\mob_home.script(36) : ?
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\xr_logic.script(534) : issue_event
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\xr_logic.script(412) : activate_by_section
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(699) : switch_to_section
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(759) : try_switch_to_another_section
+     <br/>
+     ! [LUA]  7 : [Lua] gamedata\scripts\bind_monster.script(64) :
+     <br/>
+     ! [LUA] Expression    : m_path
+     <br/>
+     <br/>
+     Function      : CPatrolPathParams::CPatrolPathParams
+     <br/>
+     <br/>
+     File          : E:\priquel\sources\engine\xrGame\patrol_path_params.cpp
+     <br/>
+     <br/>
+     Line          : 19
+     <br/>
+     <br/>
+     Description   : There is no patrol path
+     <br/>
+     <br/>
+     Arguments     : val_smart_terrain_9_2_kamp_2_task
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     001B:02D81AC9 xrGame.dll, CPatrolPathParams::CPatrolPathParams(), e:\priquel\sources\engine\xrgame\patrol_path_params.cpp, 19
+     <br/>
+     <br/>
+     001B:006815C3 xrCore.dll, memory_monitor::monitor_alloc(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 78
+     <br/>
+     <br/>
+     001B:034233A9 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     001B:034233E1 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     001B:00931F16 xrLUA.dll, _lock()
+     <br/>
+     <br/>
+     001B:0340EC30 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     001B:00519328 xrEngine.exe, ICClose()
+     <br/>
+     <br/>
+     001B:0042766F xrEngine.exe, stlp_std::priv::__ucopy_ptrs&lt;CGameFont::String const *,CGameFont::String *&gt;()
+     <br/>
+     <br/>
+     001B:02ED7915 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     <br/>
+     001B:004976A3 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 64
+     <br/>
+     <br/>
+     001B:004AA439 xrEngine.exe, CTheoraSurface::operator=()
+     <br/>
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     <br/>
+     001B:004A9BB8 xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 163
+     <br/>
+     <br/>
+     001B:4FDB0780 d3d9.dll
+     <br/>
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (933,861 bytes)
+     <span class="italic">13 июня 2008 12:38</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     6.sav.bz2 (916,211 bytes)
+     <span class="italic">13 июня 2008 12:44</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 12:38</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 12:38</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 12:38</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 12:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 12:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 12:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: 6.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 15:48</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 15:48</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:24</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:24</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

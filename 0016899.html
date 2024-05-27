@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016899: Новые бинарники E:\priquel\sources\engine\xrEngine\xr_object_list.cpp: 441 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016898.html">
+      &lt; Прошлое обращение (0016898)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016900.html">
+      Следующее обращение (0016900) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016899</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>попыток не было</td>
+    <td>12 июня 2008 14:46</td>
+    <td>19 августа 2008 10:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016899: Новые бинарники E:\priquel\sources\engine\xrEngine\xr_object_list.cpp: 441</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CObjectList::relcase_unregister
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrEngine\xr_object_list.cpp
+     <br/>
+     [error]Line          : 441
+     <br/>
+     [error]Description   : m_relcase_callbacks[*ID].m_ID==ID
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0067D136 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0067D347 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0043FF84 xrEngine.exe, xr_vector&lt;ISpatial_NODE *,xalloc&lt;ISpatial_NODE *&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     001B:0043B3AE xrEngine.exe, xr_vector&lt;CEnvAmbient::SSndChannel *,xalloc&lt;CEnvAmbient::SSndChannel *&gt; &gt;::operator=()
+     <br/>
+     001B:00478B23 xrEngine.exe, CCameraBase::OnDeactivate()
+     <br/>
+     001B:00478B23 xrEngine.exe, CCameraBase::OnDeactivate()
+     <br/>
+     001B:032EBB66 xrGame.dll, CDetectList&lt;CCustomZone&gt;::~CDetectList&lt;CCustomZone&gt;()
+     <br/>
+     001B:032EBC01 xrGame.dll, CZoneList::~CZoneList(), e:\priquel\sources\engine\xrgame\ui\uihudstateswnd.cpp, 41
+     <br/>
+     001B:032EBC78 xrGame.dll, CZoneList::`scalar deleting destructor'()
+     <br/>
+     001B:032EAC7A xrGame.dll, CUIHudStatesWnd::~CUIHudStatesWnd(), e:\priquel\sources\engine\xrgame\ui\uihudstateswnd.cpp, 72
+     <br/>
+     001B:032EACE8 xrGame.dll, CUIHudStatesWnd::`scalar deleting destructor'()
+     <br/>
+     001B:0332E21E xrGame.dll, CUIWindow::DetachChild(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 231
+     <br/>
+     001B:0332E340 xrGame.dll, CUIWindow::~CUIWindow(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 135
+     <br/>
+     001B:032EEDE5 xrGame.dll, CUIMainIngameWnd::~CUIMainIngameWnd(), e:\priquel\sources\engine\xrgame\ui\uimainingamewnd.cpp, 99
+     <br/>
+     001B:032EEF78 xrGame.dll, CUIMainIngameWnd::`scalar deleting destructor'()
+     <br/>
+     001B:03380603 xrGame.dll, CHUDManager::OnScreenRatioChanged(), e:\priquel\sources\engine\xrgame\hudmanager.cpp, 331
+     <br/>
+     001B:004AB2B2 xrEngine.exe, tv_yuv2argb(), e:\priquel\sources\engine\xrengine\xrtheora_surface_mmx.cpp, 178
+     <br/>
+     001B:0049E54C xrEngine.exe, CFrustum::testPolyInside_dirty(), e:\priquel\sources\engine\xrengine\frustum.cpp, 137
+     <br/>
+     001B:00498B7F xrEngine.exe, CDemoRecord::ProcessCam()
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-143453.zip (1,300,072 bytes)
+     <span class="italic">12 июня 2008 14:46</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-181544.zip (729,114 bytes)
+     <span class="italic">12 июня 2008 18:27</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFOUR_mult_Vista_changemap.LOG.bz2 (169,522 bytes)
+     <span class="italic">24 июня 2008 17:35</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18012" name="18012">
+     <td class="bugnote-public">
+      <span class="small">(0018012)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">12 июня 2008 17:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился 1 раз, дамп нормальный: смотреть можно.
+      <br/>
+      Дима, посмотри, может, что-то выяснишь (_stl_extensions.h, 139 == ??).</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18021" name="18021">
+     <td class="bugnote-public">
+      <span class="small">(0018021)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">12 июня 2008 18:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при тех же условиях менял разрешение моника с 1152ч720 на 1024x768 написал вид_рестарт и выпал</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18674" name="18674">
+     <td class="bugnote-public">
+      <span class="small">(0018674)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">23 июня 2008 19:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ключевое слово
+      <br/>
+      CDetectList&lt;CCustomZone&gt;::~CDetectList&lt;CCustomZone&gt;()
+      <br/>
+      CZoneList::~CZoneList()
+      <br/>
+      <br/>
+      я Жене даже рассказывал почему -)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18677" name="18677">
+     <td class="bugnote-public">
+      <span class="small">(0018677)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">23 июня 2008 19:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">этот баг уже давно исправлен</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18689" name="18689">
+     <td class="bugnote-public">
+      <span class="small">(0018689)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">23 июня 2008 21:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">опять появился на новых бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18693" name="18693">
+     <td class="bugnote-public">
+      <span class="small">(0018693)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">24 июня 2008 10:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">to Corr:
+      <br/>
+      логи, дампы ?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18780" name="18780">
+     <td class="bugnote-public">
+      <span class="small">(0018780)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">24 июня 2008 17:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился при смене карты. Я был криентом. ОС Виста. Current Build. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19101" name="19101">
+     <td class="bugnote-public">
+      <span class="small">(0019101)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">26 июня 2008 18:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">проверить через день-два.
+      <br/>
+      я исправил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 14:46</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 14:46</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-143453.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 17:19</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 18012</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 17:19</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 18:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 18021</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 18:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-181544.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 17:00</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 19:03</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 18674</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 19:13</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 18677</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 19:13</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 19:13</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 21:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 21:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Новые бинарники E:\priquel\sources\engine\xrEngine\xr_object_list.cpp: 441 =&gt; Новые бинарники E:\\priquel\\sources\\engine\\xrEngine\\xr_object_list.cpp: 441</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 21:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 21:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 18689</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 10:45</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 18693</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 17:34</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 18780</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 17:35</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR_mult_Vista_changemap.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 18:38</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 18:38</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 19101</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 10:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

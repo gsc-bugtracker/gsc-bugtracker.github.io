@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017748: Build 05.07.08  Fatal при переходе на Станцыю 2 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017747.html">
+      &lt; Прошлое обращение (0017747)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017749.html">
+      Следующее обращение (0017749) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017748</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>иногда</td>
+    <td>07 июля 2008 13:00</td>
+    <td>10 июля 2008 19:11</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь163
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017748: Build 05.07.08  Fatal при переходе на Станцыю 2</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">* loading script xrs_dynamic_music_themes.script
+     <br/>
+     * loading script xrs_stereo.script
+     <br/>
+     ! [LUA] File not found "e:\current_build\gamedata\sounds\music\combat\aes_intro.ogg"!
+     <br/>
+     ! [LUA]  0 : [C  ] sound_object
+     <br/>
+     ! [LUA]  1 : [Lua] e:\current_build\gamedata\scripts\xrs_stereo.script(13) : initialize
+     <br/>
+     ! [LUA]  2 : [Lua] ...\current_build\gamedata\scripts\xrs_dyn_music.script(108) : music_start
+     <br/>
+     ! [LUA]  3 : [Lua] ...\current_build\gamedata\scripts\xrs_dyn_music.script(159) : interactive_music
+     <br/>
+     ! [LUA]  4 : [Lua] ...:\current_build\gamedata\scripts\bind_stalker.script(396) :
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CScriptSound::SetVolume
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\script_sound_inline.h
+     <br/>
+     [error]Line          : 111
+     <br/>
+     [error]Description   : m_sound._handle()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0083D786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0083D997 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0389E405 xrGame.dll, CScriptSound::SetVolume(), e:\priquel\sources\engine\xrgame\script_sound_inline.h, 112
+     <br/>
+     001B:0389CD1E xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CScriptSound,CScriptSound,luabind::detail::null_type,float&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 288
+     <br/>
+     001B:0389E76A xrGame.dll, luabind::detail::set_caller&lt;CScriptSound,void (__thiscall CScriptSound::*)(float),luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\detail\property.hpp, 100
+     <br/>
+     001B:0389EB55 xrGame.dll, boost::_bi::list3&lt;boost::arg&lt;1&gt;,boost::arg&lt;2&gt;,boost::_bi::value&lt;void (__thiscall CScriptSound::*)(float)&gt; &gt;::operator()&lt;int,luabind::detail::set_caller&lt;CScriptSound,void (__thiscall CScriptSound::*)(float),luabind::detail::null_type&gt;,boost::_bi::list2&lt;lua_State * &amp;,int &amp;&gt; &gt;(), e:\priquel\sources\sdk\include\boost\bind.hpp, 287
+     <br/>
+     001B:0389EDFE xrGame.dll, boost::_bi::bind_t&lt;int,luabind::detail::set_caller&lt;CScriptSound,void (__thiscall CScriptSound::*)(float),luabind::detail::null_type&gt;,boost::_bi::list3&lt;boost::arg&lt;1&gt;,boost::arg&lt;2&gt;,boost::_bi::value&lt;void (__thiscall CScriptSound::*)(float)&gt; &gt; &gt;::operator()&lt;lua_State *,int&gt;(), e:\priquel\sources\sdk\include\boost\bind\bind_template.hpp, 45
+     <br/>
+     001B:0389F287 xrGame.dll, boost::detail::function::function_obj_invoker2&lt;boost::_bi::bind_t&lt;int,luabind::detail::set_caller&lt;CScriptSound,void (__thiscall CScriptSound::*)(float),luabind::detail::null_type&gt;,boost::_bi::list3&lt;boost::arg&lt;1&gt;,boost::arg&lt;2&gt;,boost::_bi::value&lt;void (__thiscall CScriptSound::*)(float)&gt; &gt; &gt;,int,lua_State *,int&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:1001B2AE luabind.beta7-devel.rc4.dll, boost::function2&lt;int,lua_State *,int,luabind::memory_allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:10017168 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::settable(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\class_rep.cpp, 344
+     <br/>
+     001B:10017453 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::settable_dispatcher(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\class_rep.cpp, 398
+     <br/>
+     001B:0034CF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+     <br/>
+     001B:0034D332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+     <br/>
+     001B:0036CD2B lua.JIT.1.1.4.dll, callTM(), e:\priquel\sources\engine\3rd party\luajit\src\lvm.c, 104
+     <br/>
+     001B:0036CBD5 lua.JIT.1.1.4.dll, luaV_settable(), e:\priquel\sources\engine\3rd party\luajit\src\lvm.c, 152
+     <br/>
+     <br/>
+     Прошёл госпиталь - переходил на станцию - пошла загрузка - на синхронизации - фатал</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080707-124057.zip (5,100,093 bytes)
+     <span class="italic">07 июля 2008 13:00</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     uzercheg_autosave.sav.bz2 (946,115 bytes)
+     <span class="italic">07 июля 2008 13:02</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     h10.sav.bz2 (956,587 bytes)
+     <span class="italic">07 июля 2008 13:19</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:00</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:00</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:00</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080707-124057.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:01</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: до перехода.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:02</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: uzercheg_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: h10.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл удален: до перехода.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:29</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 15:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 13:16</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 13:16</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 14:36</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 14:36</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

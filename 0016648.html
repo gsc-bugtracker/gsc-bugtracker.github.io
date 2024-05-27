@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016648: Build 03.06.08  Marsh  E:\priquel\sources\engine\xrServerEntities\script_engine.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016647.html">
+      &lt; Прошлое обращение (0016647)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016649.html">
+      Следующее обращение (0016649) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016648</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>03 июня 2008 20:08</td>
+    <td>24 июня 2008 13:43</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Dark</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016648: Build 03.06.08  Marsh  E:\priquel\sources\engine\xrServerEntities\script_engine.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! [LUA]  7 : [Lua] gamedata\scripts\sim_board.script(277) : create_squad
+     <br/>
+     ! [LUA]  8 : [Lua] gamedata\scripts\sim_faction.script(210) : update
+     <br/>
+     ! [LUA]  9 : [Lua] gamedata\scripts\bind_faction.script(24) :
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CScriptEngine::lua_pcall_failed
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+     <br/>
+     [error]Line          : 83
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0059A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     загрузил сейв, через 2-5 минут крашнулось
+     <br/>
+     крашнулось на релизных бинах (release)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-193408.zip (640,610 bytes)
+     <span class="italic">03 июня 2008 20:08</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     garbage.rar (878,612 bytes)
+     <span class="italic">04 июня 2008 18:24</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080605-095700.zip (833,091 bytes)
+     <span class="italic">05 июня 2008 10:27</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_s_garbage.zip (868,014 bytes)
+     <span class="italic">06 июня 2008 17:26</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     dark_save1.zip (569,664 bytes)
+     <span class="italic">06 июня 2008 19:58</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red_return_2.rar (89,707 bytes)
+     <span class="italic">13 июня 2008 17:18</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape.zip (4,234,492 bytes)
+     <span class="italic">13 июня 2008 17:21</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17544" name="17544">
+     <td class="bugnote-public">
+      <span class="small">(0017544)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">04 июня 2008 18:23</span>
+      <br/>
+      <span class="small">отредактирован:  04 июня 2008 18:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Креш повторился на Свалке, почти сразу после того как вышел с Темной Долины. Лог прикрепил.
+      <br/>
+      <br/>
+      отредактирован: 04.06.08 18:25</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17556" name="17556">
+     <td class="bugnote-public">
+      <span class="small">(0017556)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">05 июня 2008 10:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Свалке 27110</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17656" name="17656">
+     <td class="bugnote-public">
+      <span class="small">(0017656)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">06 июня 2008 17:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторилось на кордоне после перехода со свалки(релизные бины):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17672" name="17672">
+     <td class="bugnote-public">
+      <span class="small">(0017672)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">06 июня 2008 19:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторилось на темной долине,во время загрузки сейва(релизные бины 27279):
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0059A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18013" name="18013">
+     <td class="bugnote-public">
+      <span class="small">(0018013)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">12 июня 2008 17:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">заг.сейва ред форест(current_build):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0066A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18020" name="18020">
+     <td class="bugnote-public">
+      <span class="small">(0018020)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">12 июня 2008 18:19</span>
+      <br/>
+      <span class="small">отредактирован:  12 июня 2008 18:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетел на Лиманске в билде за 11.06.08.
+      <br/>
+      <br/>
+      отредактирован: 12.06.08 18:27</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18096" name="18096">
+     <td class="bugnote-public">
+      <span class="small">(0018096)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">13 июня 2008 17:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылет на red forest при вводе запуска скриптов return_2:
+      <br/>
+      <br/>
+      [LUA] ERROR: Couldnt find sounds fight\attack\script_attack_ with prefix characters_voice\human_02\stalker\
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sound_theme.script(99) : init_npc
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sound_theme.script(740) : init_npc_sound
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_motivator.script(137) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sound_theme.script(99) : init_npc
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sound_theme.script(740) : init_npc_sound
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_motivator.script(137) :
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0068B453 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18097" name="18097">
+     <td class="bugnote-public">
+      <span class="small">(0018097)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">13 июня 2008 17:23</span>
+      <br/>
+      <span class="small">отредактирован:  13 июня 2008 18:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дневные релизные бины за 13.06.08 (current_build).
+      <br/>
+      Тоже самое на Escape. Только вышел из тунеля - краш. Лог:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=11783&amp;type=bug
+      <br/>
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sound_theme.script(99) : init_npc
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sound_theme.script(740) : init_npc_sound
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_motivator.script(137) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sound_theme.script(99) : init_npc
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sound_theme.script(740) : init_npc_sound
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_motivator.script(137) :
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      001B:0068B453 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+      <br/>
+      <br/>
+      -------
+      <br/>
+      updated: Выпадает и на Свалке, и в Темной Долине, и на Янтаре. Все крашы идентичные.
+      <br/>
+      <br/>
+      отредактирован: 13.06.08 18:38</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18649" name="18649">
+     <td class="bugnote-public">
+      <span class="small">(0018649)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">23 июня 2008 16:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на свежих билдах не повторяется
+      <br/>
+      23.06</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 20:08</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 20:08</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 20:08</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-193408.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 20:20</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 20:21</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 18:23</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 17544</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 18:24</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: garbage.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 18:25</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий отредактирован: 17544</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 10:27</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080605-095700.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 10:28</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 17556</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 17:25</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17656</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 17:26</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape_s_garbage.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 19:22</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 19:58</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17672</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 19:58</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: dark_save1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 09:59</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 11:59</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 11:59</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 14:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 14:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 03.06.08  Marsh  E:\priquel\sources\engine\xrServerEntities\script_engine.cpp =&gt; Build 03.06.08  Marsh  E:\\priquel\\sources\\engine\\xrServerEntities\\script_engine.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 14:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 17:24</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18013</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 18:19</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 18020</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 18:19</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 18:19</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 18:27</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий отредактирован: 18020</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 17:15</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18096</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 17:18</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red_return_2.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 17:21</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: escape.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 17:23</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 18097</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 17:37</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 18:38</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 18097</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 13:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 16:31</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 18649</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:31</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 16:31</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 03.06.08  Marsh  E:\priquel\sources\engine\xrServerEntities\script_engine.cpp =&gt; Build 03.06.08  Marsh  E:\\priquel\\sources\\engine\\xrServerEntities\\script_engine.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:31</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 13:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

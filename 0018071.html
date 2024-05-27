@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018071: build 15.07.08 Marsh - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018070.html">
+      &lt; Прошлое обращение (0018070)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018072.html">
+      Следующее обращение (0018072) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018071</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>16 июля 2008 12:08</td>
+    <td>19 августа 2008 09:55</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018071: build 15.07.08 Marsh</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:01EA7258 xrGame.dll, callback_rotation_blend(), e:\priquel\sources\engine\xrgame\stalker_animation_callbacks.cpp, 76
+     <br/>
+     001B:01859990 xrRender_R1.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 140
+     <br/>
+     001B:01859E1A xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 164
+     <br/>
+     001B:01859E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+     <br/>
+     001B:01859E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+     <br/>
+     001B:01859E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+     <br/>
+     001B:01859E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+     <br/>
+     001B:01858811 xrRender_R1.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 43
+     <br/>
+     001B:017DC34B xrRender_R1.dll, CRender::add_leafs_Dynamic(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_build.cpp, 396
+     <br/>
+     001B:01816BE9 xrRender_R1.dll, CLightProjector::set_object(), e:\priquel\sources\engine\layers\xrrenderpc_r1\lightprojector.cpp, 86
+     <br/>
+     001B:01FB6AAD xrGame.dll, CGameObject::renderable_Render(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 650
+     <br/>
+     001B:01ED2598 xrGame.dll, CAI_Stalker::renderable_Render(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_feel.cpp, 38
+     <br/>
+     001B:017D55CC xrRender_R1.dll, CRender::Calculate(), e:\priquel\sources\engine\layers\xrrenderpc_r1\fstaticrender.cpp, 472
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_12321414.log.bz2 (12,914 bytes)
+     <span class="italic">16 июля 2008 12:08</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_save.zip (3,558,372 bytes)
+     <span class="italic">16 июля 2008 17:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_agroprom2.zip (3,757,526 bytes)
+     <span class="italic">16 июля 2008 17:23</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     garbage_save.zip (3,666,690 bytes)
+     <span class="italic">16 июля 2008 18:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     darkvalley_save.zip (3,554,540 bytes)
+     <span class="italic">16 июля 2008 18:33</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (927,042 bytes)
+     <span class="italic">16 июля 2008 18:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20819" name="20819">
+     <td class="bugnote-public">
+      <span class="small">(0020819)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">16 июля 2008 12:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">часто валится на других уровнях, в частности на Свалке.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20825" name="20825">
+     <td class="bugnote-public">
+      <span class="small">(0020825)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 июля 2008 12:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это уже пофикшено, бины у тестеров</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20872" name="20872">
+     <td class="bugnote-public">
+      <span class="small">(0020872)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">16 июля 2008 17:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">свалился на кордоне,после загрузки сейва</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20874" name="20874">
+     <td class="bugnote-public">
+      <span class="small">(0020874)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">16 июля 2008 17:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Свалилось на релизных на базе одиночек на agroprom2:
+      <br/>
+      <br/>
+      sim_default_bandit_222241 Crashed...
+      <br/>
+      !SV:ge_destroy: [22243] not found on server
+      <br/>
+      sim_default_stalker_316295 Killed by  bloodsucker_jumper22548 ...
+      <br/>
+      !SV:ge_destroy: [16297] not found on server
+      <br/>
+      !SV:ge_destroy: [26708] not found on server
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02767258 xrGame.dll, callback_rotation_blend(), e:\priquel\sources\engine\xrgame\stalker_animation_callbacks.cpp, 76
+      <br/>
+      001B:025B9990 xrRender_R1.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 140
+      <br/>
+      001B:025B9E1A xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 164
+      <br/>
+      001B:025B9E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+      <br/>
+      001B:025B9E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+      <br/>
+      001B:025B9E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+      <br/>
+      001B:025B9E2E xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 165
+      <br/>
+      001B:025B8811 xrRender_R1.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 43
+      <br/>
+      001B:028B17F1 xrGame.dll, CWeapon::UpdateXForm(), e:\priquel\sources\engine\xrgame\weapon.cpp, 129
+      <br/>
+      001B:028ADC71 xrGame.dll, CWeapon::UpdateHUDAddonsVisibility(), e:\priquel\sources\engine\xrgame\weapon.cpp, 1166
+      <br/>
+      001B:028BD5EF xrGame.dll, CWeaponMagazined::UpdateSounds(), e:\priquel\sources\engine\xrgame\weaponmagazined.cpp, 446
+      <br/>
+      001B:0041BF35 xrEngine.exe, stlp_std::priv::__introsort_loop&lt;COMotion * *,COMotion *,int,bool (__cdecl*)(COMotion *,COMotion *)&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algo.c, 961</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20881" name="20881">
+     <td class="bugnote-public">
+      <span class="small">(0020881)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">16 июля 2008 18:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">релизные бины,current buld,летит на всех уровнях,особенно после загрузки сейвов</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20883" name="20883">
+     <td class="bugnote-public">
+      <span class="small">(0020883)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 июля 2008 18:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в следующих бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21687" name="21687">
+     <td class="bugnote-public">
+      <span class="small">(0021687)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">19 августа 2008 09:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_12321414.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 12:15</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 20819</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 12:17</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 12:45</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20825</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 17:00</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 20872</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 17:00</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape_save.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 17:23</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20874</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 17:23</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_agroprom2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 18:33</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: garbage_save.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 18:33</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: darkvalley_save.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 18:34</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 20881</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 18:43</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 18:43</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 18:43</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20883</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 18:53</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 09:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 09:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 21687</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

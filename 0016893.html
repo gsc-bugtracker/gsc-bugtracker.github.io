@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016893: Garbage  12/06/ 08 E:\priquel\sources\engine\xrGame\Inventory.cpp 209 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016892.html">
+      &lt; Прошлое обращение (0016892)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016894.html">
+      Следующее обращение (0016894) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016893</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>12 июня 2008 13:58</td>
+    <td>16 июля 2008 10:59</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016893: Garbage  12/06/ 08 E:\priquel\sources\engine\xrGame\Inventory.cpp 209</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">загрузил автосейв и сразу вернулся в предиидущий уровень
+     <br/>
+     <br/>
+     00004948	13.22177982	[668] * Game Usercheg_autosave.sav is successfully saved to file 'savedgames\usercheg_autosave.sav' (4672683 bytes compressed to 1140125)
+     <br/>
+     00004949	13.22216702	[668] --- Changing level message received...
+     <br/>
+     00004950	13.23039150	[668] - Disconnect
+     <br/>
+     00004951	13.24685287	[668] ---DropItem activating slot [-1], forced, Frame[878008]
+     <br/>
+     00004952	13.24691010	[668] --- Activating slot [-1], inventory owner: [Наемник Шрам], Frame[878008]
+     <br/>
+     00004953	13.24757957	[668]
+     <br/>
+     00004954	13.24763584	[668] FATAL ERROR
+     <br/>
+     00004955	13.24768543	[668]
+     <br/>
+     00004956	13.24773026	[668] [error]Expression    : assertion failed
+     <br/>
+     00004957	13.24777794	[668] [error]Function      : CInventory::DropItem
+     <br/>
+     00004958	13.24782658	[668] [error]File          : E:\priquel\sources\engine\xrGame\Inventory.cpp
+     <br/>
+     00004959	13.24787426	[668] [error]Line          : 209
+     <br/>
+     00004960	13.24792194	[668] [error]Description   : InBelt(pIItem)
+     <br/>
+     00004961	13.24796963	[668]
+     <br/>
+     00004962	13.24801064	[668]
+     <br/>
+     00004963	13.27159595	[668] stack trace:
+     <br/>
+     00004964	13.27164650	[668]
+     <br/>
+     00004965	15.19642735	[668] 001B:0076D206 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00004966	15.19648743	[668] 001B:0076D417 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     00004967	15.19654083	[668] 001B:0374EFC4 xrGame.dll, CInventory::DropItem(), e:\priquel\sources\engine\xrgame\inventory.cpp, 210
+     <br/>
+     00004968	15.19659424	[668] 001B:036EC6D0 xrGame.dll, CActor::OnEvent(), e:\priquel\sources\engine\xrgame\actor_events.cpp, 72
+     <br/>
+     00004969	15.19664574	[668] 001B:03C0A2FB xrGame.dll, _strlwr()
+     <br/>
+     00004970	15.29394531	[668] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00004971	15.29400349	[668] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00004972	15.29407597	[668] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00004973	31.56643867	[668] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     00004974	31.56649971	[668] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00004975	31.56686211	[668] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     00004976	39.40591049	[668] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00004977	39.40597534	[668] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00004978	39.40603256	[668] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGATRONE.rar (50,320 bytes)
+     <span class="italic">12 июня 2008 13:58</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_autosave.sav.bz2 (963,806 bytes)
+     <span class="italic">12 июня 2008 14:00</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (376,766 bytes)
+     <span class="italic">16 июня 2008 11:43</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080703-125844.zip (4,533,776 bytes)
+     <span class="italic">03 июля 2008 13:13</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mar12.sav.bz2 (988,723 bytes)
+     <span class="italic">03 июля 2008 13:13</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0014960.html">
+          0014960
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Sea</nobr></td>
+        <td>Escape  assertion failed  E:\priquel\sources\engine\xrGame\Actor_Events.cpp  66</td>
+       </tr>
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0017573.html">
+          0017573
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Sea</nobr></td>
+        <td>bild 30.06.08 garbage File          : E:\priquel\sources\engine\xrGame\Inventory.cpp   Line          : 209</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18128" name="18128">
+     <td class="bugnote-public">
+      <span class="small">(0018128)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">16 июня 2008 11:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">переходила с уровня на уровень (agroprom_underground - agroprom)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19069" name="19069">
+     <td class="bugnote-public">
+      <span class="small">(0019069)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">26 июня 2008 16:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторите, пожалуста этот баг;
+      <br/>
+      обязательно прикрепить дамп,
+      <br/>
+      и написать, в каком месте (с какого на какой уровень) появился.
+      <br/>
+      в описании бага должна быть строка= InBelt(pIItem)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19543" name="19543">
+     <td class="bugnote-public">
+      <span class="small">(0019543)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">03 июля 2008 13:12</span>
+      <br/>
+      <span class="small">отредактирован:  03 июля 2008 13:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на маршах
+      <br/>
+      добавил лог с дампом, сэйв
+      <br/>
+      <br/>
+      запустил run_mixed_save с этим сэйвом - все нормально, игра загрузилась
+      <br/>
+      сразу же попробовал загрузиться через консоь, тот же сэйв - вылет
+      <br/>
+      <br/>
+      build 02.07.08
+      <br/>
+      <br/>
+      предположительно слетает из-за того, что перед сэйвом в поясе были вставлены артефакты
+      <br/>
+      <br/>
+      отредактирован: 03.07.08 13:18
+      <br/>
+      <br/>
+      отредактирован: 03.07.08 13:23</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20772" name="20772">
+     <td class="bugnote-public">
+      <span class="small">(0020772)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">16 июля 2008 09:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 13:58</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 13:58</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 13:58</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: MEGATRONE.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 14:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  12/06/ 08 E:\priquel\sources\engine\xrGame\Inventory.cpp 209 =&gt; Garbage  12/06/ 08 E:\\priquel\\sources\\engine\\xrGame\\Inventory.cpp 209</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 14:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 14:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: usercheg_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 17:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 17:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 17:43</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 11:43</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июня 2008 11:44</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 18128</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 16:26</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 16:36</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 19069</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 18:50</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0014960</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0017573</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь удалена</td>
+     <td class="small-caption">связан с 0017573</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0017573</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 13:12</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19543</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 13:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080703-125844.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 13:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: mar12.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 13:18</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 19543</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 13:23</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 19543</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 16:04</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 21:25</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 21:25</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 10:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20772</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  12/06/ 08 E:\priquel\sources\engine\xrGame\Inventory.cpp 209 =&gt; Garbage  12/06/ 08 E:\\priquel\\sources\\engine\\xrGame\\Inventory.cpp 209</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 10:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

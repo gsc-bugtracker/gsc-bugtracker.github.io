@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017983: Limansk - E:\priquel\sources\engine\xrGame\Level_Bullet_Manager.cppLine          : 716 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017982.html">
+      &lt; Прошлое обращение (0017982)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017984.html">
+      Следующее обращение (0017984) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017983</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>14 июля 2008 11:32</td>
+    <td>14 июля 2008 11:44</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь160
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r30272</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017983: Limansk - E:\priquel\sources\engine\xrGame\Level_Bullet_Manager.cppLine          : 716</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     00136908	3425.20214844	[1620]
+     <br/>
+     00136909	3425.20214844	[1620]
+     <br/>
+     00136910	3425.20214844	[1620]
+     <br/>
+     00136911	3425.20214844	[1620] [error]Expression    : assertion failed
+     <br/>
+     00136912	3425.20214844	[1620]
+     <br/>
+     00136913	3425.20214844	[1620] [error]Function      : CBulletManager::trajectory_check_error
+     <br/>
+     00136914	3425.20214844	[1620]
+     <br/>
+     00136915	3425.20214844	[1620] [error]File          : E:\priquel\sources\engine\xrGame\Level_Bullet_Manager.cpp
+     <br/>
+     00136916	3425.20214844	[1620]
+     <br/>
+     00136917	3425.20239258	[1620] [error]Line          : 716
+     <br/>
+     00136918	3425.20239258	[1620]
+     <br/>
+     00136919	3425.20239258	[1620] [error]Description   : _sqr(distance) &gt; std::numeric_limits&lt;float&gt;::min()
+     <br/>
+     00136920	3425.20239258	[1620]
+     <br/>
+     00136921	3425.20239258	[1620]
+     <br/>
+     00136922	3425.20239258	[1620]
+     <br/>
+     00136923	3425.20239258	[1620]
+     <br/>
+     00136924	3425.32543945	[1620] stack trace:
+     <br/>
+     00136925	3425.32543945	[1620]
+     <br/>
+     00136926	3425.32543945	[1620]
+     <br/>
+     00136927	3430.01586914	[1620] 001B:007AD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00136928	3430.01586914	[1620]
+     <br/>
+     00136929	3430.01586914	[1620] 001B:007AD997 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     00136930	3430.01586914	[1620]
+     <br/>
+     00136931	3430.01586914	[1620] 001B:030DCDD8 xrGame.dll, CBulletManager::trajectory_check_error(), e:\priquel\sources\engine\xrgame\level_bullet_manager.cpp, 716
+     <br/>
+     00136932	3430.01611328	[1620]
+     <br/>
+     00136933	3430.01611328	[1620] 001B:030DD19B xrGame.dll, CBulletManager::process_bullet(), e:\priquel\sources\engine\xrgame\level_bullet_manager.cpp, 828
+     <br/>
+     00136934	3430.01611328	[1620]
+     <br/>
+     00136935	3430.01611328	[1620] 001B:030DD3A4 xrGame.dll, CBulletManager::UpdateWorkload(), e:\priquel\sources\engine\xrgame\level_bullet_manager.cpp, 232
+     <br/>
+     00136936	3430.01611328	[1620]
+     <br/>
+     00136937	3430.01635742	[1620] 001B:0051FCB0 xrEngine.exe, ICClose()
+     <br/>
+     00136938	3430.01635742	[1620]
+     <br/>
+     00136939	3430.01635742	[1620] 001B:004AAB7E xrEngine.exe, CTheoraStream::ParseHeaders(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 153
+     <br/>
+     00136940	3430.01635742	[1620]
+     <br/>
+     00136941	3430.01635742	[1620] 001B:0078D92B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+     <br/>
+     00136942	3430.01684570	[1620]
+     <br/>
+     00136943	3430.01684570	[1620] 001B:78132848 MSVCR80.dll, endthread()
+     <br/>
+     00136944	3430.01684570	[1620]
+     <br/>
+     00136945	3430.01684570	[1620] 001B:781328C8 MSVCR80.dll, endthread()
+     <br/>
+     00136946	3430.01684570	[1620]
+     <br/>
+     Убил Пулемётчика Подобрал Бульдог сразу вылетело.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFIVE.LOG.bz2 (873,800 bytes)
+     <span class="italic">14 июля 2008 11:32</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     lim.sav.bz2 (944,286 bytes)
+     <span class="italic">14 июля 2008 11:33</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:32</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:32</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:32</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: MEGAFIVE.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:33</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: lim.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:44</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

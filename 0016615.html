@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016615: Garbage - gamedata\scripts\sim_board.script - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016614.html">
+      &lt; Прошлое обращение (0016614)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016616.html">
+      Следующее обращение (0016616) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016615</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>03 июня 2008 09:56</td>
+    <td>27 августа 2008 13:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     @85@</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26892</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016615: Garbage - gamedata\scripts\sim_board.script</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA]     _precondition_is_monster:false
+     <br/>
+     [LUA]     _prior:-1
+     <br/>
+     [LUA] ERROR: Insufficient smart_terrain jobs gar_smart_terrain_3_5
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\smart_terrain.script(467) : update_jobs
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\smart_terrain.script(263) : register_npc
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\sim_squad_generic.script(342) : assign_smart
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\sim_board.script(358) : assign_squad_to_smart
+     <br/>
+     ! [LUA]  7 : [Lua] gamedata\scripts\sim_board.script(277) : create_squad
+     <br/>
+     ! [LUA]  8 : [Lua] gamedata\scripts\sim_faction.script(210) : update
+     <br/>
+     ! [LUA]  9 : [Lua] gamedata\scripts\bind_faction.script(24) :
+     <br/>
+     ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     Стоял в трубе, выбрасывал вещи из инвентаря.
+     <br/>
+     Никуда не выходил.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (207,955 bytes)
+     <span class="italic">03 июня 2008 09:57</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (249,908 bytes)
+     <span class="italic">20 августа 2008 09:49</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17490" name="17490">
+     <td class="bugnote-public">
+      <span class="small">(0017490)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">03 июня 2008 19:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Быть может, пофиксилось. Пробуйте.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18305" name="18305">
+     <td class="bugnote-public">
+      <span class="small">(0018305)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">18 июня 2008 11:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21776" name="21776">
+     <td class="bugnote-public">
+      <span class="small">(0021776)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 августа 2008 09:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело в репозитории, ревизия 31448
+      <br/>
+      миксовые бины, запуск all_test, потом джамп на редфорест, запуск lvl_red_forest_start
+      <br/>
+      после выноса засады выпали скрипты 0_о
+      <br/>
+      добавил лог
+      <br/>
+      <br/>
+      [LUA] ERROR: Insufficient smart_terrain jobs gar_smart_terrain_3_5
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] f:\stalker\clear_sky\gamedata\scripts\_g.script(973) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] ...lker\clear_sky\gamedata\scripts\smart_terrain.script(483) : update_jobs
+      <br/>
+      ! [LUA]  4 : [Lua] ...lker\clear_sky\gamedata\scripts\smart_terrain.script(264) : register_npc
+      <br/>
+      ! [LUA]  5 : [Lua] ...\clear_sky\gamedata\scripts\sim_squad_generic.script(393) : assign_smart
+      <br/>
+      ! [LUA]  6 : [Lua] ...\stalker\clear_sky\gamedata\scripts\sim_board.script(578) : assign_squad_to_smart
+      <br/>
+      ! [LUA]  7 : [Lua] ...\stalker\clear_sky\gamedata\scripts\sim_board.script(497) : create_squad
+      <br/>
+      ! [LUA]  8 : [Lua] ...talker\clear_sky\gamedata\scripts\sim_faction.script(236) :
+      <br/>
+      ! [LUA] f:\stalker\clear_sky\gamedata\scripts\_g.script:973: bad argument 2 to 'format' (string expected, got nil)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 09:56</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 09:56</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 09:57</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 12:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 12:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 12:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 19:02</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 17490</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 16:10</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 16:10</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage - gamedata\scripts\sim_board.script =&gt; Garbage - gamedata\\scripts\\sim_board.script</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 16:10</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 11:28</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 18305</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 11:28</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 11:28</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage - gamedata\scripts\sim_board.script =&gt; Garbage - gamedata\\scripts\\sim_board.script</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 11:28</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 12:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 09:47</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">закрыт =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 09:47</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 09:49</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21776</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 09:49</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 10:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 10:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 августа 2008 12:12</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 августа 2008 12:12</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 августа 2008 13:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016728: Red Forest  File          : E:\priquel\sources\engine\xrGame\Explosive.cpp    Line          : 591 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016727.html">
+      &lt; Прошлое обращение (0016727)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016729.html">
+      Следующее обращение (0016729) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016728</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>06 июня 2008 10:53</td>
+    <td>24 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r27229</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016728: Red Forest  File          : E:\priquel\sources\engine\xrGame\Explosive.cpp    Line          : 591</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CExplosive::GenExplodeEvent
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\Explosive.cpp
+     <br/>
+     [error]Line          : 591
+     <br/>
+     [error]Description   : !m_explosion_flags.test(flExplodEventSent)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:03046926 xrGame.dll, CExplosive::GenExplodeEvent(), e:\priquel\sources\engine\xrgame\explosive.cpp, 592
+     <br/>
+     001B:02E0D6BE xrGame.dll, CScriptGameObject::explode(), e:\priquel\sources\engine\xrgame\script_game_object2.cpp, 56
+     <br/>
+     001B:02E2CD76 xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CScriptGameObject,CScriptGameObject,luabind::detail::null_type,unsigned int&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 288
+     <br/>
+     001B:02E3C315 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__thiscall CScriptGameObject::*)(unsigned int),CScriptGameObject,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 117
+     <br/>
+     001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     зашёл к леснику, услышал взрыв - креш</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     333333.zip (909,441 bytes)
+     <span class="italic">06 июня 2008 10:53</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (673,981 bytes)
+     <span class="italic">09 июня 2008 13:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080611-113854.zip (4,577,830 bytes)
+     <span class="italic">11 июня 2008 11:53</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     lesnik.sav.bz2 (901,367 bytes)
+     <span class="italic">11 июня 2008 12:07</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17634" name="17634">
+     <td class="bugnote-public">
+      <span class="small">(0017634)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">06 июня 2008 11:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">После того как спросить у Лесника кто он.Вылетает стабильно...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17699" name="17699">
+     <td class="bugnote-public">
+      <span class="small">(0017699)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">09 июня 2008 13:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17878" name="17878">
+     <td class="bugnote-public">
+      <span class="small">(0017878)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">11 июня 2008 11:53</span>
+      <br/>
+      <span class="small">отредактирован:  11 июня 2008 14:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторяется. билд 11.06.08.
+      <br/>
+      <br/>
+      отредактирован: 11.06.08 14:09</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20114" name="20114">
+     <td class="bugnote-public">
+      <span class="small">(0020114)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 11:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не вылетает</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 333333.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:54</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest  File          : E:\priquel\sources\engine\xrGame\Explosive.cpp    Line          : 591 =&gt; Red Forest  File          : E:\\priquel\\sources\\engine\\xrGame\\Explosive.cpp    Line          : 591</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:54</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 11:16</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17634</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 13:00</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 17699</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июня 2008 13:00</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 11:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 17878</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 11:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080611-113854.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 12:07</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: lesnik.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 12:39</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий отредактирован: 17878</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 14:09</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий отредактирован: 17878</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:43</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 18:45</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 18:45</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 11:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20114</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

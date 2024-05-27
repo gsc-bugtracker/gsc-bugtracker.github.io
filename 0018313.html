@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018313: [marsh] _vector3&lt;float&gt;::normalize - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018312.html">
+      &lt; Прошлое обращение (0018312)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018314.html">
+      Следующее обращение (0018314) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018313</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>попыток не было</td>
+    <td>30 июля 2008 11:37</td>
+    <td>16 сентября 2008 10:53</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018313: [marsh] _vector3&lt;float&gt;::normalize</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">загрузил марш, ввёл lvl_marsh_sim, вышел с проводником на Рыбацкий хутор, побежал на задание Расчистить дорогу: Россыпь камней, сделал выстрел в кабана - сразу же вылет.
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : _vector3&lt;float&gt;::normalize
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_vector3d.h
+     <br/>
+     [error]Line          : 213
+     <br/>
+     [error]Description   : (v.x*v.x+v.y*v.y+v.z*v.z)&gt;flt_zero
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD1A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007AD3B7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0317500A xrGame.dll, CBulletManager::FireShotmark(), e:\priquel\sources\engine\xrgame\level_bullet_manager_firetrace.cpp, 214
+     <br/>
+     001B:0327C5CD xrGame.dll, player_hud::motion_length(), e:\priquel\sources\engine\xrgame\player_hud.cpp, 528
+     <br/>
+     001B:03279124 xrGame.dll, CHudItem::PlayHUDMotion(), e:\priquel\sources\engine\xrgame\huditem.cpp, 293
+     <br/>
+     001B:032431CC xrGame.dll, CWeaponMagazined::PlayAnimShow(), e:\priquel\sources\engine\xrgame\weaponmagazined.cpp, 997
+     <br/>
+     001B:036B59A8 xrGame.dll, _strlwr()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080730-112356.zip (736,458 bytes)
+     <span class="italic">30 июля 2008 11:37</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080801-185535.zip (1,025,777 bytes)
+     <span class="italic">01 августа 2008 19:19</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     dakrvalley_crash.rar (1,005,319 bytes)
+     <span class="italic">04 августа 2008 18:55</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     Виста_quicksave.sav.bz2 (1,195,018 bytes)
+     <span class="italic">04 августа 2008 19:24</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_crash.rar (733,850 bytes)
+     <span class="italic">04 августа 2008 19:53</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080805-150651.zip (1,130,183 bytes)
+     <span class="italic">05 августа 2008 15:24</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     marsh_vector.sav.bz2 (944,271 bytes)
+     <span class="italic">05 августа 2008 21:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     vector_crash.zip (593,379 bytes)
+     <span class="italic">05 августа 2008 21:37</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21269" name="21269">
+     <td class="bugnote-public">
+      <span class="small">(0021269)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">30 июля 2008 11:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в следующем билде</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21354" name="21354">
+     <td class="bugnote-public">
+      <span class="small">(0021354)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">01 августа 2008 19:19</span>
+      <br/>
+      <span class="small">отредактирован:  01 августа 2008 22:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">! NPC sim_default_renegade_015299 couldn't build path from
+      <br/>
+      ~ [224931][150.500000][0.295705][37.799988]
+      <br/>
+      ~ to
+      <br/>
+      ~ [223409][147.700012][0.329913][37.100006]
+      <br/>
+      ! NPC sim_default_renegade_015299 couldn't build path from
+      <br/>
+      ~ [224931][150.500000][0.295705][37.799988]
+      <br/>
+      ~ to
+      <br/>
+      ~ [223409][147.700012][0.329913][37.100006]
+      <br/>
+      ! level_path().failed() during navigation
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : _vector3&lt;float&gt;::normalize
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_vector3d.h
+      <br/>
+      [error]Line          : 213
+      <br/>
+      [error]Description   : (v.x*v.x+v.y*v.y+v.z*v.z)&gt;flt_zero
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:1002D1A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:1002D3B7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02F55BB5 xrGame.dll, CBulletManager::FireShotmark(), e:\priquel\sources\engine\xrgame\level_bullet_manager_firetrace.cpp, 217
+      <br/>
+      001B:02F562DA xrGame.dll, CBulletManager::DynamicObjectHit(), e:\priquel\sources\engine\xrgame\level_bullet_manager_firetrace.cpp, 274
+      <br/>
+      001B:02F53FBE xrGame.dll, CBulletManager::CommitEvents(), e:\priquel\sources\engine\xrgame\level_bullet_manager.cpp, 1012
+      <br/>
+      001B:02F2A4A9 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 524
+      <br/>
+      001B:100076B8 xrCore.dll, CTimer::GetElapsed_ms(), e:\priquel\sources\engine\xrcore\ftimer.h, 113
+      <br/>
+      001B:0042236D xrEngine.exe, CApplication::LoadTitleInt(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1036
+      <br/>
+      001B:00498BC3 xrEngine.exe, CDemoRecord::MakeScreenshotFace(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 146
+      <br/>
+      001B:004ACF69 xrEngine.exe, tv_yuv2argb(), e:\priquel\sources\engine\xrengine\xrtheora_surface_mmx.cpp, 273
+      <br/>
+      001B:0051C15F xrEngine.exe, ICClose()
+      <br/>
+      001B:0051A1E2 xrEngine.exe, ICClose()
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      <br/>
+      крашнулось после захвата Церкви .. до этого такой же краш был после убийства кабана перед смотровой вышкой
+      <br/>
+      <br/>
+      revision : 31031
+      <br/>
+      репозиторий
+      <br/>
+      <br/>
+      отредактирован: 01.08.08 22:17</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21369" name="21369">
+     <td class="bugnote-public">
+      <span class="small">(0021369)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">04 августа 2008 12:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вы играете в старый билд</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21370" name="21370">
+     <td class="bugnote-public">
+      <span class="small">(0021370)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">04 августа 2008 12:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">эти же бинарники лежат в свн-е. закомитьте новые, а то запарило постояноо откатывать их с утра.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21384" name="21384">
+     <td class="bugnote-public">
+      <span class="small">(0021384)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">04 августа 2008 18:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Краш повторился на Темной Долине. Крашнулось когда подбежал к блок посту, который возле перехода на Свалку. Свежие миксовые бины. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21385" name="21385">
+     <td class="bugnote-public">
+      <span class="small">(0021385)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">04 августа 2008 19:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Сделал сейв перед крашем. Краш повторяется стабильно. С сейва нужно пробежать к точке перехода на Свалку, но не переходить, можно пострелять сталкеров на посте, иногда повторяется и до етого. Сейв прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21388" name="21388">
+     <td class="bugnote-public">
+      <span class="small">(0021388)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">04 августа 2008 19:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Так же повторился и на Ескейпе. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21394" name="21394">
+     <td class="bugnote-public">
+      <span class="small">(0021394)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">05 августа 2008 15:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">новые бины, миксед
+      <br/>
+      повторился на кордоне, во время движения от базы нейтралов к северному блокпосту
+      <br/>
+      добавил лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21421" name="21421">
+     <td class="bugnote-public">
+      <span class="small">(0021421)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь165
+      </font>
+      <br/>
+      <span class="small">05 августа 2008 21:08</span>
+      <br/>
+      <span class="small">отредактирован:  05 августа 2008 21:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">миксовые
+      <br/>
+      марш, постоянно возле вышки перед выбросом - сейв недалеко - marsh_vector
+      <br/>
+      <br/>
+      отредактирован: 05.08.08 21:09
+      <br/>
+      <br/>
+      отредактирован: 05.08.08 21:11</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22215" name="22215">
+     <td class="bugnote-public">
+      <span class="small">(0022215)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 сентября 2008 10:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июля 2008 11:37</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июля 2008 11:37</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080730-112356.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июля 2008 11:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июля 2008 11:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июля 2008 11:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21269</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 18:30</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080801-181424.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 18:33</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 21352</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 18:36</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 21352</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 18:53</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 21353</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 18:53</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий удален: 21353</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 18:55</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 21352</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 19:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 21354</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 19:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080801-185535.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 19:20</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий удален: 21352</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 19:21</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Файл удален: 181424.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 21:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 августа 2008 21:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 августа 2008 22:17</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий отредактирован: 21354</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 августа 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21369</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 августа 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 августа 2008 12:10</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 21370</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 августа 2008 18:54</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 21384</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 августа 2008 18:55</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: dakrvalley_crash.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 августа 2008 19:22</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 21385</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 августа 2008 19:24</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: Виста_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 августа 2008 19:53</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 21388</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 августа 2008 19:53</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: escape_crash.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 августа 2008 15:24</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21394</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 августа 2008 15:24</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080805-150651.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 августа 2008 21:08</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь165
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 21421</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 августа 2008 21:09</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 августа 2008 21:09</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 августа 2008 21:09</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь165
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 21421</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 августа 2008 21:10</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь165
+      </font></td>
+     <td class="small-caption">Файл добавлен: marsh_vector.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 августа 2008 21:11</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь165
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 21421</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 августа 2008 21:37</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь165
+      </font></td>
+     <td class="small-caption">Файл добавлен: vector_crash.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 августа 2008 18:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 сентября 2008 10:53</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 22215</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

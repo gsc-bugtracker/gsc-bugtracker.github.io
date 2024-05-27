@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016617: Garbage - CALifeSpawnRegistry::load - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016616.html">
+      &lt; Прошлое обращение (0016616)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016618.html">
+      Следующее обращение (0016618) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016617</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>03 июня 2008 10:46</td>
+    <td>03 июня 2008 12:26</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26892</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016617: Garbage - CALifeSpawnRegistry::load</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : !save_guid || (*save_guid == header().guid()) || ignore_save_incompatibility()
+     <br/>
+     [error]Function      : CALifeSpawnRegistry::load
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\alife_spawn_registry.cpp
+     <br/>
+     [error]Line          : 110
+     <br/>
+     [error]Description   : Saved game doesn't correspond to the spawn : DELETE SAVED GAME!
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0067DED3 xrCore.dll, memory_monitor::monitor_alloc(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 78
+     <br/>
+     001B:00679DF7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:02BB1900 xrGame.dll, CALifeSpawnRegistry::load(), e:\priquel\sources\engine\xrgame\alife_spawn_registry.cpp, 112
+     <br/>
+     001B:02BAD68B xrGame.dll, CALifeSpawnRegistry::load(), e:\priquel\sources\engine\xrgame\alife_spawn_registry.cpp, 78
+     <br/>
+     001B:02BBAEBA xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 93
+     <br/>
+     001B:02BBB3F6 xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 153
+     <br/>
+     001B:02BB8D65 xrGame.dll, CALifeUpdateManager::load(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 269
+     <br/>
+     001B:02B6ABC7 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 77
+     <br/>
+     001B:03135C30 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:03135D60 xrGame.dll, game_sv_Single::Create(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 29
+     <br/>
+     001B:03137B34 xrGame.dll, xrServer::Connect(), e:\priquel\sources\engine\xrgame\xrserver_connect.cpp, 50
+     <br/>
+     001B:02F41427 xrGame.dll, CLevel::net_start2(), e:\priquel\sources\engine\xrgame\level_start.cpp, 137
+     <br/>
+     001B:004AA17F xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 300
+     <br/>
+     001B:004AADF2 xrEngine.exe, CConsole::OnRender(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 251
+     <br/>
+     001B:7C90FB6C ntdll.dll
+     <br/>
+     001B:7C809392 kernel32.dll
+     <br/>
+     001B:7C85E8F9 kernel32.dll
+     <br/>
+     001B:00678592 xrCore.dll, heap_walk(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 73
+     <br/>
+     001B:00678666 xrCore.dll, mem_usage_impl(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 131
+     <br/>
+     001B:00678706 xrCore.dll, xrMemory::mem_usage(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 164
+     <br/>
+     001B:0040EC22 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F3E4 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F6C3 xrEngine.exe, operator new()
+     <br/>
+     001B:0051387C xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     При загрузке сейва.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-104038.zip (438,157 bytes)
+     <span class="italic">03 июня 2008 10:46</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 10:46</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 10:46</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 10:46</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-104038.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

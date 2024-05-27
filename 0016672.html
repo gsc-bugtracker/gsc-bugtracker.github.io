@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016672: Build 02.06.08 Marsh - assertion failed - IReader::r - Pos+cnt&lt;=Size - \priquel\sources\engine\xrCore\FS.cpp 362 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016671.html">
+      &lt; Прошлое обращение (0016671)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016673.html">
+      Следующее обращение (0016673) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016672</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>04 июня 2008 11:19</td>
+    <td>17 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016672: Build 02.06.08 Marsh - assertion failed - IReader::r - Pos+cnt&lt;=Size - \priquel\sources\engine\xrCore\FS.cpp 362</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет при загрузке сэйва
+     <br/>
+     <br/>
+     [LUA] xr_logic:(390):_bp: calling module('xr_patrol')
+     <br/>
+     correction attempts 1
+     <br/>
+     --- Activating slot [2], inventory owner: [Tima Abject], Frame[31]
+     <br/>
+     [LUA] _motivator_binder: set load marker: 1486
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : IReader::r
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+     <br/>
+     [error]Line          : 362
+     <br/>
+     [error]Description   : Pos+cnt&lt;=Size
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:10029B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:10029D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:10014C4E xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 363
+     <br/>
+     001B:100052DD xrCore.dll, IReaderBase&lt;IReader&gt;::r_u8(), e:\priquel\sources\engine\xrcore\fs.h, 148
+     <br/>
+     001B:03B75385 xrGame.dll, r_bool(), e:\priquel\sources\engine\xrserverentities\script_reader_script.cpp, 28
+     <br/>
+     001B:03B93051 xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;IReader,luabind::detail::null_type,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+     <br/>
+     001B:03B90766 xrGame.dll, luabind::detail::call&lt;IReader,luabind::detail::null_type,bool,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 390
+     <br/>
+     001B:03B87DCB xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:03B850B0 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00C49069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00C47248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-110738.zip (4,578,969 bytes)
+     <span class="italic">04 июня 2008 11:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mar03.sav.bz2 (873,754 bytes)
+     <span class="italic">04 июня 2008 11:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila_lua.log.bz2 (48,895 bytes)
+     <span class="italic">06 июня 2008 11:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     agroprom_start.sav.bz2 (849,414 bytes)
+     <span class="italic">06 июня 2008 11:20</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-115550.zip (4,084,954 bytes)
+     <span class="italic">12 июня 2008 12:02</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mar6.sav.bz2 (899,877 bytes)
+     <span class="italic">12 июня 2008 12:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080617-172633 loading.zip (5,390,980 bytes)
+     <span class="italic">17 июня 2008 17:39</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_quicksave.sav.bz2 (938,880 bytes)
+     <span class="italic">17 июня 2008 17:39</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR_jamp_to_limansk.rar (4,489,014 bytes)
+     <span class="italic">19 июня 2008 21:17</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17635" name="17635">
+     <td class="bugnote-public">
+      <span class="small">(0017635)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">06 июня 2008 11:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : IReader::r
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+      <br/>
+      [error]Line          : 362
+      <br/>
+      [error]Description   : Pos+cnt&lt;=Size
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:00664C4E xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 363
+      <br/>
+      001B:02EC6A42 xrGame.dll, r_bool(), e:\priquel\sources\engine\xrserverentities\script_reader_script.cpp, 28
+      <br/>
+      001B:02EC8FFD xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;IReader,luabind::detail::null_type,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+      <br/>
+      001B:02ECAF7B xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:02ECBDF9 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      Загрузка сейва</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17717" name="17717">
+     <td class="bugnote-public">
+      <span class="small">(0017717)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">09 июня 2008 15:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторить на последней ревизии, сделать новый сейв</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17989" name="17989">
+     <td class="bugnote-public">
+      <span class="small">(0017989)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">12 июня 2008 12:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился.
+      <br/>
+      Билд 12,06,08.
+      <br/>
+      При загрузке сейва "mar6".
+      <br/>
+      Лог, Сейв приложен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18254" name="18254">
+     <td class="bugnote-public">
+      <span class="small">(0018254)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">17 июня 2008 17:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился в current build за 16.06.08, на миксовых бинах. Сохранился во время боя, при загрузке выкал креш.
+      <br/>
+      Лог:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=12012&amp;type=bug
+      <br/>
+      Сейв:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=12013&amp;type=bug
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : IReader::r
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+      <br/>
+      [error]Line          : 362
+      <br/>
+      [error]Description   : Pos+cnt&lt;=Size
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0075D136 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0075D347 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:007478EE xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 363
+      <br/>
+      001B:0354FE92 xrGame.dll, r_bool(), e:\priquel\sources\engine\xrserverentities\script_reader_script.cpp, 28
+      <br/>
+      001B:035523DD xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;IReader,luabind::detail::null_type,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+      <br/>
+      001B:03554327 xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:03554772 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00DE9219 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00DE7EF4 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18497" name="18497">
+     <td class="bugnote-public">
+      <span class="small">(0018497)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">19 июня 2008 21:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+      <br/>
+      [error]Line          : 362
+      <br/>
+      [error]Description   : Pos+cnt&lt;=Size
+      <br/>
+      <br/>
+      При jamp_to_level на limansk c red_forest</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19513" name="19513">
+     <td class="bugnote-public">
+      <span class="small">(0019513)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">03 июля 2008 10:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">боян... это уже решено. Почему не было в билде - не знаю.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20931" name="20931">
+     <td class="bugnote-public">
+      <span class="small">(0020931)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">17 июля 2008 11:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-110738.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: mar03.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 11:19</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17635</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 11:19</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila_lua.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 11:20</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: agroprom_start.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 18:23</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 15:29</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июня 2008 15:29</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 15:29</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 17717</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:02</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-115550.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:02</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: mar6.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 17989</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 17:39</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080617-172633 loading.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 17:39</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: usercheg_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 17:42</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 18254</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 21:16</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 18497</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 21:17</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR_jamp_to_limansk.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 09:46</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 09:46</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 10:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 10:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 10:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 19513</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 10:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20931</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 02.06.08 Marsh - assertion failed - IReader::r - Pos+cnt&lt;=Size - \priquel\sources\engine\xrCore\FS.cpp 362 =&gt; Build 02.06.08 Marsh - assertion failed - IReader::r - Pos+cnt&lt;=Size - \\priquel\\sources\\engine\\xrCore\\FS.cpp 362</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

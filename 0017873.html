@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017873: новые релизные бины Garbage Краш без видимых причин - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017872.html">
+      &lt; Прошлое обращение (0017872)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017874.html">
+      Следующее обращение (0017874) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017873</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>09 июля 2008 22:11</td>
+    <td>16 июля 2008 15:06</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017873: новые релизные бины Garbage Краш без видимых причин</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Игра выпадает сразу когда прибегают собаки(в квести защитить Васяна от собак). На новых миксовых бинах не повторяется. Ревизия репозитория 30020. После загрузки сейва надо просто немного подождать.
+     <br/>
+     <br/>
+     [LUA] _bp: reset_generic_schemes_on_scheme_switch: npc:name()='sim_default_bandit_217020'
+     <br/>
+     [LUA] RESET INVULNERABILITY. npc[sim_default_bandit_217020] = [false]
+     <br/>
+     [LUA] _bp: calling module('xr_walker')
+     <br/>
+     [LUA] DEBUG: set_scheme: scheme='walker',
+     <a href="mailto:section='walker@gar_smart_terrain_5_2_guard_1_walk'" target="_new">
+      section='walker@gar_smart_terrain_5_2_guard_1_walk'
+          , gulag_name='gar_smart_terrain_5_2'
+      <br/>
+      [LUA] DEBUG: set_scheme: storage assigned
+      <br/>
+      [LUA] DEBUG: activate_by_section: scheme 'walker' activated from section 'walker@gar_smart_terrain_5_2_guard_1_walk'
+      <br/>
+      [LUA] TURN END CALLBACK CALLED
+      <br/>
+      stack trace:
+      <br/>
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_garbage.zip (2,640,756 bytes)
+     <span class="italic">10 июля 2008 19:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     GARBAGE.rar (903,407 bytes)
+     <span class="italic">10 июля 2008 19:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_garbage2.zip (1,213,252 bytes)
+     <span class="italic">10 июля 2008 19:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_novice.rar (311,550 bytes)
+     <span class="italic">11 июля 2008 19:09</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.dds.bz2 (7,073 bytes)
+     <span class="italic">11 июля 2008 19:09</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (948,424 bytes)
+     <span class="italic">11 июля 2008 19:09</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20283" name="20283">
+     <td class="bugnote-public">
+      <span class="small">(0020283)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">10 июля 2008 15:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Я попробую повторить и тогда отредактирую ;)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20498" name="20498">
+     <td class="bugnote-public">
+      <span class="small">(0020498)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">11 июля 2008 16:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Я вчера повторил же всё и прикрепил новые логи и сейв, почему не заопрувил?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20515" name="20515">
+     <td class="bugnote-public">
+      <span class="small">(0020515)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">11 июля 2008 19:07</span>
+      <br/>
+      <span class="small">отредактирован:  11 июля 2008 19:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторилось на эскейпе,квест защитить сталкера-новичка(дает Волк),собак не заметил,но по идее они должны там на него нападать(лог и квиксейв)
+      <br/>
+      бины release,30145
+      <br/>
+      <br/>
+      отредактирован: 11.07.08 19:10</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20539" name="20539">
+     <td class="bugnote-public">
+      <span class="small">(0020539)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">14 июля 2008 11:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Потестите в новых бинах, должно уже быть ОК.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20708" name="20708">
+     <td class="bugnote-public">
+      <span class="small">(0020708)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">15 июля 2008 17:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 22:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 22:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 22:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 22:12</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 15:58</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20283</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:56</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:56</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 09.07.08 Garbage Краш без видимых причин (новые релизные бины) =&gt; новые релизные бины (30020) Garbage Краш без видимых причин</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:56</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:07</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл удален: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 19:10</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:10</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">новые релизные бины (30020) Garbage Краш без видимых причин =&gt; новые релизные бины Garbage Краш без видимых причин</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 19:10</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_garbage.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: GARBAGE.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_garbage2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 19:11</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 16:07</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20498</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 18:20</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 18:22</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 18:35</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 19:07</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 20515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:09</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape_novice.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 19:09</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.dds.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:09</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 19:10</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 20515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:00</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 20539</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 13:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 13:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 17:03</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20708</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 17:03</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 17:03</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 15:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

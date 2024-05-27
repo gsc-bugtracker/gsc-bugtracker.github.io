@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018118: Current build 16.07.08 (MIXED) - E:\priquel\sources\engine\xrGame\string_table.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018117.html">
+      &lt; Прошлое обращение (0018117)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018119.html">
+      Следующее обращение (0018119) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018118</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>17 июля 2008 11:13</td>
+    <td>24 июля 2008 13:12</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Robo</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>открыт снова</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     @85@</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018118: Current build 16.07.08 (MIXED) - E:\priquel\sources\engine\xrGame\string_table.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : pData-&gt;m_StringTable.find(string_name) == pData-&gt;m_StringTable.end()
+     <br/>
+     [error]Function      : CStringTable::Load
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\string_table.cpp
+     <br/>
+     [error]Line          : 73
+     <br/>
+     [error]Description   : duplicate string table id
+     <br/>
+     [error]Arguments     : agr_attack_monster_group_name
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:008FD976 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:008FDBEA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:03AF575E xrGame.dll, CStringTable::Load(), e:\priquel\sources\engine\xrgame\string_table.cpp, 75
+     <br/>
+     001B:03AF5C06 xrGame.dll, CStringTable::Init(), e:\priquel\sources\engine\xrgame\string_table.cpp, 50
+     <br/>
+     001B:03AF5CE8 xrGame.dll, CStringTable::CStringTable(), e:\priquel\sources\engine\xrgame\string_table.cpp, 13
+     <br/>
+     001B:03D8049E xrGame.dll, CUIXmlInit::InitText(), e:\priquel\sources\engine\xrgame\ui\uixmlinit.cpp, 298
+     <br/>
+     001B:03D8090B xrGame.dll, CUIXmlInit::InitText(), e:\priquel\sources\engine\xrgame\ui\uixmlinit.cpp, 259
+     <br/>
+     001B:03D81266 xrGame.dll, CUIXmlInit::InitMultiText(), e:\priquel\sources\engine\xrgame\ui\uixmlinit.cpp, 1161
+     <br/>
+     001B:03D8140F xrGame.dll, CUIXmlInit::InitStatic(), e:\priquel\sources\engine\xrgame\ui\uixmlinit.cpp, 174
+     <br/>
+     001B:03D7A3CC xrGame.dll, CUIButtonHint::CUIButtonHint(), e:\priquel\sources\engine\xrgame\ui\uibtnhint.cpp, 26
+     <br/>
+     001B:03D263ED xrGame.dll, xr_new&lt;CUIButtonHint&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 8
+     <br/>
+     001B:03D28AF4 xrGame.dll, CMainMenu::CMainMenu(), e:\priquel\sources\engine\xrgame\mainmenu.cpp, 84
+     <br/>
+     001B:0393C6B0 xrGame.dll, xr_new&lt;CMainMenu&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 8
+     <br/>
+     001B:0393CC2C xrGame.dll, CGamePersistent::OnAppStart(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 133
+     <br/>
+     001B:00498683 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 75
+     <br/>
+     001B:7C919AEB ntdll.dll
+     <br/>
+     001B:00569A50 xrEngine.exe, GS_ExceptionPointers()
+     <br/>
+     <br/>
+     <br/>
+     При запуске Миксовых бинов.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MIXED CRAX.zip (4,093,017 bytes)
+     <span class="italic">17 июля 2008 11:13</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFIVE.LOG.bz2 (6,581 bytes)
+     <span class="italic">17 июля 2008 11:48</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20940" name="20940">
+     <td class="bugnote-public">
+      <span class="small">(0020940)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">17 июля 2008 12:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетает все время на релизных бинах. на Янтаре.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21129" name="21129">
+     <td class="bugnote-public">
+      <span class="small">(0021129)</span>
+      <br/>
+      Robo
+      <br/>
+      <span class="small">24 июля 2008 13:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не повторялось</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:13</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 11:13</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:13</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Файл добавлен: MIXED CRAX.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 11:19</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 11:48</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: MEGAFIVE.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 11:48</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 20937</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 12:05</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий удален: 20937</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 12:05</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 20940</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:40</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июля 2008 15:40</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июля 2008 13:11</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Комментарий добавлен: 21129</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current build 16.07.08 (MIXED) - E:\priquel\sources\engine\xrGame\string_table.cpp =&gt; Current build 16.07.08 (MIXED) - E:\\priquel\\sources\\engine\\xrGame\\string_table.cpp</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current build 16.07.08 (MIXED) - E:\priquel\sources\engine\xrGame\string_table.cpp =&gt; Current build 16.07.08 (MIXED) - E:\\priquel\\sources\\engine\\xrGame\\string_table.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июля 2008 13:12</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

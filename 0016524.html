@@ -1,0 +1,839 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016524: RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016523.html">
+      &lt; Прошлое обращение (0016523)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016525.html">
+      Следующее обращение (0016525) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016524</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>30 мая 2008 18:31</td>
+    <td>12 июня 2008 20:26</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26634</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016524: RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">после боя с засадой,помагающей Стрелку:
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0305E1DF xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 244
+     <br/>
+     001B:0305E286 xrGame.dll, CMapLocation::Update(), e:\priquel\sources\engine\xrgame\map_location.cpp, 338
+     <br/>
+     001B:03063C0A xrGame.dll, CMapManager::Update(), e:\priquel\sources\engine\xrgame\map_manager.cpp, 234
+     <br/>
+     001B:02F2279F xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 531
+     <br/>
+     001B:004225BD xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 459
+     <br/>
+     001B:00498BE3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ABAA9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AB228 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 470
+     <br/>
+     001B:004AB1C4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 461
+     <br/>
+     001B:004AA1D6 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 255
+     <br/>
+     001B:004AADF2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 375
+     <br/>
+     001B:004AAF1B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 413
+     <br/>
+     001B:0040EC22 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 262
+     <br/>
+     001B:0040F3E4 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 703
+     <br/>
+     001B:0040F6C3 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 763
+     <br/>
+     001B:0051387C xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080530-182416.zip (720,713 bytes)
+     <span class="italic">30 мая 2008 18:31</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-093213.zip (801,262 bytes)
+     <span class="italic">03 июня 2008 09:43</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-160806.zip (734,100 bytes)
+     <span class="italic">03 июня 2008 16:13</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGASEVEN_red_forest.rar (484,345 bytes)
+     <span class="italic">03 июня 2008 19:19</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-120903.zip (4,924,736 bytes)
+     <span class="italic">04 июня 2008 12:14</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red_crash_tunel.zip (4,687,219 bytes)
+     <span class="italic">05 июня 2008 18:01</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (168,299 bytes)
+     <span class="italic">06 июня 2008 10:59</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17429" name="17429">
+     <td class="bugnote-public">
+      <span class="small">(0017429)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">02 июня 2008 16:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Стабильно валиться,во время и после боя с засадой.Перед этим падает фпс.Конф компа:AMD Athlon xp 2500+ (1.83Gz). 2gb RAM. Nvidia GeForce FX 5950 ultra,возможно,слабоват?
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0305EA0F xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 244
+      <br/>
+      001B:0305EAB6 xrGame.dll, CMapLocation::Update(), e:\priquel\sources\engine\xrgame\map_location.cpp, 338
+      <br/>
+      001B:0306442A xrGame.dll, CMapManager::Update(), e:\priquel\sources\engine\xrgame\map_manager.cpp, 234
+      <br/>
+      001B:02F22FAF xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 531
+      <br/>
+      001B:0041FF46 xrEngine.exe, _SoundProcessor::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 92</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17451" name="17451">
+     <td class="bugnote-public">
+      <span class="small">(0017451)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">03 июня 2008 09:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">выпало, при взрыве в туннеле, на рыжем лесу
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00000000 xrEngine.exe
+      <br/>
+      001B:03727136 xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 243
+      <br/>
+      001B:0372782B xrGame.dll, CMapLocation::UpdateSpot(), e:\priquel\sources\engine\xrgame\map_location.cpp, 363
+      <br/>
+      001B:03728447 xrGame.dll, CMapLocation::UpdateMiniMap(), e:\priquel\sources\engine\xrgame\map_location.cpp, 527
+      <br/>
+      001B:03E6BA43 xrGame.dll, CUIMiniMap::UpdateSpots(), e:\priquel\sources\engine\xrgame\ui\uimap.cpp, 539
+      <br/>
+      001B:03E6954E xrGame.dll, CUICustomMap::Update(), e:\priquel\sources\engine\xrgame\ui\uimap.cpp, 61
+      <br/>
+      001B:03F41862 xrGame.dll, CUIWindow::Update(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 206
+      <br/>
+      001B:03F104A4 xrGame.dll, CUIStatic::Update(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 226
+      <br/>
+      001B:03EBBB7F xrGame.dll, CUIZoneMap::UpdateRadar(), e:\priquel\sources\engine\xrgame\uizonemap.cpp, 121
+      <br/>
+      001B:03EBBA5E xrGame.dll, CUIZoneMap::Update(), e:\priquel\sources\engine\xrgame\uizonemap.cpp, 109
+      <br/>
+      001B:03EAF219 xrGame.dll, CUIMainIngameWnd::Update(), e:\priquel\sources\engine\xrgame\ui\uimainingamewnd.cpp, 306
+      <br/>
+      001B:03E4E506 xrGame.dll, CUI::UIOnFrame(), e:\priquel\sources\engine\xrgame\ui.cpp, 60
+      <br/>
+      001B:0402352C xrGame.dll, CHUDManager::OnFrame(), e:\priquel\sources\engine\xrgame\hudmanager.cpp, 163
+      <br/>
+      001B:00437F93 xrEngine.exe, stlp_std::vector&lt;CObjectList::SRelcasePair,xalloc&lt;CObjectList::SRelcasePair&gt; &gt;::_M_allocate_and_copy&lt;CObjectList::SRelcasePair const *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 640
+      <br/>
+      001B:034D4A98 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 536
+      <br/>
+      001B:00498BE3 xrEngine.exe, CGameMtlLibrary::GetMaterialIdx(), e:\priquel\sources\engine\xrengine\gamemtllib.h, 311
+      <br/>
+      001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+      <br/>
+      001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+      <br/>
+      001B:004AB228 xrEngine.exe, CConsole::Execute(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 446
+      <br/>
+      001B:635698F7 FRAPS.DLL
+      <br/>
+      001B:004AB1C4 xrEngine.exe, CConsole::ExecuteCommand(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 347
+      <br/>
+      001B:004AA1D6 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 313
+      <br/>
+      001B:004AADF2 xrEngine.exe, CConsole::OnRender(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 251
+      <br/>
+      001B:7C90FB6C ntdll.dll
+      <br/>
+      001B:7C809392 kernel32.dll
+      <br/>
+      001B:7C85E8F9 kernel32.dll
+      <br/>
+      001B:00678592 xrCore.dll, heap_walk(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 73
+      <br/>
+      001B:00678666 xrCore.dll, mem_usage_impl(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 131
+      <br/>
+      001B:00678706 xrCore.dll, xrMemory::mem_usage(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 164
+      <br/>
+      001B:0040EC22 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F3E4 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F6C3 xrEngine.exe, operator new()
+      <br/>
+      001B:0051387C xrEngine.exe, ICClose()
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17466" name="17466">
+     <td class="bugnote-public">
+      <span class="small">(0017466)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">03 июня 2008 11:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">andy, посмотри, причину вылета я не понял.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17479" name="17479">
+     <td class="bugnote-public">
+      <span class="small">(0017479)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">03 июня 2008 16:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">валится по прежнему:
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0305EA0F xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 244
+      <br/>
+      001B:0305EAB6 xrGame.dll, CMapLocation::Update(), e:\priquel\sources\engine\xrgame\map_location.cpp, 338
+      <br/>
+      001B:0306442A xrGame.dll, CMapManager::Update(), e:\priquel\sources\engine\xrgame\map_manager.cpp, 234
+      <br/>
+      001B:02F22FAF xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 531
+      <br/>
+      001B:0041FF46 xrEngine.exe, IGame_Level::Cameras()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17493" name="17493">
+     <td class="bugnote-public">
+      <span class="small">(0017493)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">03 июня 2008 19:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">stack trace:
+      <br/>
+      <br/>
+      001B:00000000 xrEngine.exe
+      <br/>
+      001B:036F7B57 xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 240
+      <br/>
+      <br/>
+      бины от 03,06</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17519" name="17519">
+     <td class="bugnote-public">
+      <span class="small">(0017519)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">04 июня 2008 12:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">stack trace:
+      <br/>
+      <br/>
+      001B:00000000 xrEngine.exe
+      <br/>
+      001B:03DF7136 xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 243
+      <br/>
+      <br/>
+      Во время подрыва тунеля.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17598" name="17598">
+     <td class="bugnote-public">
+      <span class="small">(0017598)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">05 июня 2008 18:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">stack trace:
+      <br/>
+      <br/>
+      001B:00000000 xrEngine.exe
+      <br/>
+      001B:03DF7136 xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 243
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.
+      <br/>
+      <br/>
+      <br/>
+      продолжает валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17602" name="17602">
+     <td class="bugnote-public">
+      <span class="small">(0017602)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">05 июня 2008 19:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">норм</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17631" name="17631">
+     <td class="bugnote-public">
+      <span class="small">(0017631)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">06 июня 2008 10:59</span>
+      <br/>
+      <span class="small">отредактирован:  06 июня 2008 10:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">валится при взрыве, при забегании в туннель (без дампа)
+      <br/>
+      ревизия 27229
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:030908D5 xrGame.dll, CMapLocation::CalcPosition(), e:\priquel\sources\engine\xrgame\map_location.cpp, 242
+      <br/>
+      001B:03091B23 xrGame.dll, CMapLocation::Update(), e:\priquel\sources\engine\xrgame\map_location.cpp, 327
+      <br/>
+      001B:030962F9 xrGame.dll, CMapManager::Update(), e:\priquel\sources\engine\xrgame\map_manager.cpp, 237
+      <br/>
+      001B:004AA5CE xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 278
+      <br/>
+      001B:0065C79B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+      <br/>
+      001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      001B:781328C8 MSVCR80.dll, endthread()
+      <br/>
+      <br/>
+      отредактирован: 06.06.08 10:59</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17929" name="17929">
+     <td class="bugnote-public">
+      <span class="small">(0017929)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">11 июня 2008 17:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не выпадает</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 18:31</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 мая 2008 18:31</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 18:31</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080530-182416.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 мая 2008 22:14</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 22:17</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 16:53</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17429</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 09:42</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 17451</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 09:43</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-093213.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 11:20</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 17466</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 11:20</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 15:46</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 15:46</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 16:13</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17479</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 16:13</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-160806.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 16:24</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 16:24</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244 =&gt; RedForest - e:\\priquel\\sources\\engine\\xrgame\\map_location.cpp, 244</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 16:24</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 19:18</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 17493</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 19:19</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: MEGASEVEN_red_forest.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:14</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 17519</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:14</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-120903.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 18:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17598</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 18:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red_crash_tunel.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 19:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17602</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 19:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 19:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244 =&gt; RedForest - e:\\priquel\\sources\\engine\\xrgame\\map_location.cpp, 244</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 19:01</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 21:16</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">закрыт =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244 =&gt; RedForest - e:\\priquel\\sources\\engine\\xrgame\\map_location.cpp, 244</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:59</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 17631</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:59</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:59</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 17631</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 16:25</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17929</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">RedForest - e:\priquel\sources\engine\xrgame\map_location.cpp, 244 =&gt; RedForest - e:\\priquel\\sources\\engine\\xrgame\\map_location.cpp, 244</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 20:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016822: mp_autostation - Crash как-то связанный с наблюдательством. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016821.html">
+      &lt; Прошлое обращение (0016821)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016823.html">
+      Следующее обращение (0016823) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016822</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Multiplayer</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>10 июня 2008 20:10</td>
+    <td>04 июля 2008 22:02</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Chips</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r27556</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016822: mp_autostation - Crash как-то связанный с наблюдательством.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : !m_EntityAlife.g_Alive( )
+     <br/>
+     [error]Function      : CCharacterPhysicsSupport::in_Hit
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp
+     <br/>
+     [error]Line          : 410
+     <br/>
+     [error]Description   : entity [redstain][1541] is dead
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     001B:0067D206 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0067D447 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:032E881C xrGame.dll, CCharacterPhysicsSupport::in_Hit(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 410
+     <br/>
+     001B:02F5DA12 xrGame.dll, CActor::PHHit(), e:\priquel\sources\engine\xrgame\actor.cpp, 428
+     <br/>
+     001B:02F868D0 xrGame.dll, CEntity::Hit(), e:\priquel\sources\engine\xrgame\entity.cpp, 136
+     <br/>
+     001B:02F871D7 xrGame.dll, CEntityAlive::Hit(), e:\priquel\sources\engine\xrgame\entity_alive.cpp, 306
+     <br/>
+     001B:02F63B75 xrGame.dll, CActor::Hit(), e:\priquel\sources\engine\xrgame\actor.cpp, 591
+     <br/>
+     001B:02F8C78A xrGame.dll, CGameObject::OnEvent(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 201
+     <br/>
+     001B:02F856D8 xrGame.dll, CEntity::OnEvent(), e:\priquel\sources\engine\xrgame\entity.cpp, 53
+     <br/>
+     001B:02F6C476 xrGame.dll, CActor::OnEvent(), e:\priquel\sources\engine\xrgame\actor_events.cpp, 30
+     <br/>
+     001B:02F59E93 xrGame.dll, CActorMP::OnEvent(), e:\priquel\sources\engine\xrgame\actor_mp_client.cpp, 13
+     <br/>
+     001B:02F17C3F xrGame.dll, CLevel::cl_Process_Event(), e:\priquel\sources\engine\xrgame\level.cpp, 367
+     <br/>
+     001B:02F1D493 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 425
+     <br/>
+     001B:02F1D70B xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 526
+     <br/>
+     001B:7C80A42B kernel32.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     Есть такой баг -
+     <a href="http://tiger/bugz/view.php">
+      http://tiger/bugz/view.php
+          ?id=16821 . Там после перехода в спектатором-мод остаются стоящие трупы. Вот во время тестинга этого бага у двоих тестеров случайно произошел краш. Причины неизвестны. Прикрепляем...
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080610-193209 РЕДСТЕЙН.zip (755,226 bytes)
+     <span class="italic">10 июня 2008 20:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     char-physics.rar (639,840 bytes)
+     <span class="italic">10 июня 2008 20:15</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17865" name="17865">
+     <td class="bugnote-public">
+      <span class="small">(0017865)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">10 июня 2008 20:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Такой же креш произошел на карте "firestation". Играл за Сталкеров, прибежал на базу наемников, стал за перевернутую машину, перешел в наблюдатели, после того как  упал мой труп, прибежал союзник и пару раз выстрелил в труп с пистолета ПБ, после этого сразу креш. ОС Виста. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18155" name="18155">
+     <td class="bugnote-public">
+      <span class="small">(0018155)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">16 июня 2008 18:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">нужно проверить на новых бинах..</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19602" name="19602">
+     <td class="bugnote-public">
+      <span class="small">(0019602)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">03 июля 2008 20:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Этот креш не выпадал.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 20:10</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 20:10</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 20:10</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080610-193209 РЕДСТЕЙН.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 20:15</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 17865</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 20:15</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: char-physics.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 22:00</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 22:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 18:48</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июня 2008 18:48</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 18:48</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 18155</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 13:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 20:17</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 19602</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 20:17</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 20:17</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 22:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

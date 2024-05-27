@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016708: RedForest - stalker_movement_manager_smart_cover::next_loophole_id - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016707.html">
+      &lt; Прошлое обращение (0016707)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016709.html">
+      Следующее обращение (0016709) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016708</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>05 июня 2008 13:01</td>
+    <td>10 июля 2008 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016708: RedForest - stalker_movement_manager_smart_cover::next_loophole_id</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : stalker_movement_manager_smart_cover::next_loophole_id
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp
+     <br/>
+     [error]Line          : 358
+     <br/>
+     [error]Description   : m_current.cover()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02D8703D xrGame.dll, stalker_movement_manager_smart_cover::next_loophole_id(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 360
+     <br/>
+     001B:02D876DD xrGame.dll, stalker_movement_manager_smart_cover::non_animated_change_loophole(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 419
+     <br/>
+     001B:02D7E46B xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 86
+     <br/>
+     001B:02D311AB xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 950
+     <br/>
+     001B:02D35FDD xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 816
+     <br/>
+     001B:00427451 xrEngine.exe, stlp_std::reverse_iterator&lt;CCF_Shape::shape_def *&gt;::reverse_iterator&lt;CCF_Shape::shape_def *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 67
+     <br/>
+     001B:00427B7F xrEngine.exe, stlp_std::_Param_Construct&lt;CCF_Shape::shape_def,CCF_Shape::shape_def&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_construct.h, 124
+     <br/>
+     001B:02F1DBB5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:00498BE3 xrEngine.exe, CGameMtlLibrary::GetMaterialIdx(), e:\priquel\sources\engine\xrengine\gamemtllib.h, 311
+     <br/>
+     001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+     <br/>
+     001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+     <br/>
+     001B:004AB228 xrEngine.exe, CConsole::Execute(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 446
+     <br/>
+     001B:635698F7 FRAPS.DLL
+     <br/>
+     001B:004AB1C4 xrEngine.exe, CConsole::ExecuteCommand(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 347
+     <br/>
+     001B:004AA1D6 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 313
+     <br/>
+     001B:004AADF2 xrEngine.exe, CConsole::OnRender(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 251
+     <br/>
+     001B:7C90FB6C ntdll.dll
+     <br/>
+     001B:7C809392 kernel32.dll
+     <br/>
+     001B:7C85E8F9 kernel32.dll
+     <br/>
+     001B:00678592 xrCore.dll, heap_walk(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 73
+     <br/>
+     001B:00678666 xrCore.dll, mem_usage_impl(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 131
+     <br/>
+     001B:00678706 xrCore.dll, xrMemory::mem_usage(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 164
+     <br/>
+     001B:0040EC22 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F3E4 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F6C3 xrEngine.exe, operator new()
+     <br/>
+     001B:0051387C xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     При прыжке с Hospital на RedForest</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080605-125603.zip (834,484 bytes)
+     <span class="italic">05 июня 2008 13:01</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18963" name="18963">
+     <td class="bugnote-public">
+      <span class="small">(0018963)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18969" name="18969">
+     <td class="bugnote-public">
+      <span class="small">(0018969)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">26 июня 2008 11:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Нам выдают уровни.
+      <br/>
+      Если буду играть на этом и не повторится, скажу.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19981" name="19981">
+     <td class="bugnote-public">
+      <span class="small">(0019981)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">08 июля 2008 13:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 13:01</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 13:01</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 13:01</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080605-125603.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 17:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 17:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 18:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 18:29</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:52</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18963</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:55</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 18969</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r27110 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 13:29</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 19981</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 13:29</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 13:29</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

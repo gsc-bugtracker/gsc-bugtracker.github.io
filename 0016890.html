@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016890: Garbage 12-06-2008 deactivate task gar_story_chase_pda_signal_name - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016889.html">
+      &lt; Прошлое обращение (0016889)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016891.html">
+      Следующее обращение (0016891) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016890</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>12 июня 2008 13:12</td>
+    <td>16 июля 2008 10:59</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016890: Garbage 12-06-2008 deactivate task gar_story_chase_pda_signal_name</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] xr_logic:(439):_bp: reset_generic_schemes_on_scheme_switch: npc:name()='gar_space_restrictor_ambush_door'
+     <br/>
+     [LUA] task_manager:(504):task_callback
+     <br/>
+     [LUA] task_manager:(507):task_callback1
+     <br/>
+     [LUA] task_manager:(200):task_callback2
+     <br/>
+     [LUA] task_manager:(202):Task 30 completed
+     <br/>
+     [LUA] task_objects:(197):task_reward initialized
+     <br/>
+     [LUA] task_manager:(224):CLEAR TASK 30
+     <br/>
+     [LUA] task_objects:(249):deactivate task gar_story_chase_pda_signal_name
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0048FAD6 xrEngine.exe, stlp_std::vector&lt;Feel::Touch::DenyTouch,xalloc&lt;Feel::Touch::DenyTouch&gt; &gt;::end()
+     <br/>
+     001B:03B4DCBA xrGame.dll, CUILine::Draw(), e:\priquel\sources\engine\xrgame\ui\uiline.cpp, 131
+     <br/>
+     001B:03B51A51 xrGame.dll, CUILines::Draw(), e:\priquel\sources\engine\xrgame\ui\uilines.cpp, 319
+     <br/>
+     001B:03B0A2F7 xrGame.dll, CUIStatic::DrawText(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 165
+     <br/>
+     001B:03B0ACD5 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 151
+     <br/>
+     001B:03B1BE8D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+     <br/>
+     001B:03B0ACC9 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 149
+     <br/>
+     001B:03B4A500 xrGame.dll, CUIScrollView::Draw(), e:\priquel\sources\engine\xrgame\ui\uiscrollview.cpp, 202
+     <br/>
+     001B:03B1BE8D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+     <br/>
+     001B:03AA63AC xrGame.dll, CUI::Render(), e:\priquel\sources\engine\xrgame\ui.cpp, 126
+     <br/>
+     001B:03B6DA3F xrGame.dll, CHUDManager::RenderUI(), e:\priquel\sources\engine\xrgame\hudmanager.cpp, 254
+     <br/>
+     001B:0369ADFD xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 681
+     <br/>
+     001B:00497513 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 75
+     <br/>
+     001B:4FDF7858 d3d9.dll
+     <br/>
+     <br/>
+     При спуске в подвал за Клыком</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-125500.zip (4,716,210 bytes)
+     <span class="italic">12 июня 2008 13:12</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20778" name="20778">
+     <td class="bugnote-public">
+      <span class="small">(0020778)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">16 июля 2008 09:51</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не повторяется</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 13:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 13:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 13:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-125500.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 13:18</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">всегда =&gt; случайно</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 13:18</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 17:17</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 17:17</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 17:42</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:51</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20778</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 09:51</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:51</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 10:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

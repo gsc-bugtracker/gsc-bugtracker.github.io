@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016763: smart_cover::transitions::action::animation(), e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016762.html">
+      &lt; Прошлое обращение (0016762)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016764.html">
+      Следующее обращение (0016764) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016763</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>06 июня 2008 19:53</td>
+    <td>08 июля 2008 14:46</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016763: smart_cover::transitions::action::animation(), e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">во время боя,за пда коменданта(релизные бины)
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:025F0EF4 xrGame.dll, smart_cover::transitions::action::animation(), e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103
+     <br/>
+     001B:026E8D76 xrGame.dll, smart_cover::evaluators::can_exit_loophole_with_animation::evaluate(), e:\priquel\sources\engine\xrgame\smart_cover_evaluators.cpp, 213
+     <br/>
+     001B:025A8ED2 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::evaluate_condition(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 204
+     <br/>
+     001B:025A934E xrGame.dll, COperatorAbstract&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,unsigned short&gt;::applicable&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; const &gt;(), e:\priquel\sources\engine\xrgame\operator_abstract_inline.h, 262
+     <br/>
+     001B:025A9628 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::value(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 235
+     <br/>
+     001B:025A97F0 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 141
+     <br/>
+     001B:025A9961 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 252
+     <br/>
+     001B:025A9C1F xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), e:\priquel\sources\engine\xrgame\graph_engine_inline.h, 211
+     <br/>
+     001B:025A9CB7 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 377
+     <br/>
+     001B:025A9CD6 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 102
+     <br/>
+     001B:026E4C20 xrGame.dll, smart_cover::animation_selector::select_animation(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 91
+     <br/>
+     001B:026C56CE xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+     <br/>
+     001B:026C743C xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 165
+     <br/>
+     001B:026C7515 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 225
+     <br/>
+     001B:026C7590 xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 244
+     <br/>
+     001B:026BF5D0 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 957
+     <br/>
+     001B:02628BDA xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+     <br/>
+     001B:0262C275 xrGame.dll, CCustomMonster::UpdateCL(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 518
+     <br/>
+     001B:026C1FC2 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 698
+     <br/>
+     001B:0041D412 xrEngine.exe, stlp_std::__introsort_loop&lt;COMotion * *,COMotion *,int,bool (__cdecl*)(COMotion *,COMotion *)&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algo.c, 932
+     <br/>
+     001B:0041D966 xrEngine.exe, stlp_std::vector&lt;Feel::Touch::DenyTouch,xalloc&lt;Feel::Touch::DenyTouch&gt; &gt;::vector&lt;Feel::Touch::DenyTouch,xalloc&lt;Feel::Touch::DenyTouch&gt; &gt;(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 225
+     <br/>
+     001B:0041A491 xrEngine.exe, _matrix&lt;float&gt;::build_camera_dir(), e:\priquel\sources\engine\xrcore\_matrix.h, 473
+     <br/>
+     001B:027913B5 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 539
+     <br/>
+     001B:027913CB xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 547
+     <br/>
+     001B:005839E8 xrCore.dll, CTimer::GetElapsed_ms(), e:\priquel\sources\engine\xrcore\ftimer.h, 113
+     <br/>
+     001B:0040B893 xrEngine.exe, stlp_std::vector&lt;CPS_Instance *,xalloc&lt;CPS_Instance *&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 175
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     dark34.zip (614,766 bytes)
+     <span class="italic">06 июня 2008 19:53</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     lim.zip (690,968 bytes)
+     <span class="italic">27 июня 2008 21:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_crash.zip (729,583 bytes)
+     <span class="italic">27 июня 2008 21:12</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     lim_mixed.rar (243,796 bytes)
+     <span class="italic">27 июня 2008 22:06</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18965" name="18965">
+     <td class="bugnote-public">
+      <span class="small">(0018965)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19274" name="19274">
+     <td class="bugnote-public">
+      <span class="small">(0019274)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">27 июня 2008 21:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось только что на новых бинах на Лиманске, при перестрелке в засаде перед перекрестком. См. лог.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19275" name="19275">
+     <td class="bugnote-public">
+      <span class="small">(0019275)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">27 июня 2008 21:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">На Эскейпе тот же краш при боевке
+      <br/>
+      лог с дампом прикрепил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19285" name="19285">
+     <td class="bugnote-public">
+      <span class="small">(0019285)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">27 июня 2008 21:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">мне нужен такой же вылет в микседе</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19287" name="19287">
+     <td class="bugnote-public">
+      <span class="small">(0019287)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">27 июня 2008 22:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">На миксовых в этом же месте вылетает вот что (лог в аттаче):
+      <br/>
+      <br/>
+      [lim_smart_terrain_3_to_lim_smart_terrain_2_patrol_1_wait_4_smartcover][lh_2], [2]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : m_current_transition
+      <br/>
+      [error]Function      : stalker_movement_manager_smart_cover::current_transition
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover.cpp
+      <br/>
+      [error]Line          : 497
+      <br/>
+      [error]Description   : [lim_smart_terrain_3_to_lim_smart_terrain_2_patrol_1_wait_4_smartcover][lh_2] -&gt; [lim_smart_terrain_3_to_lim_smart_terrain_2_patrol_1_wait_4_smartcover][lh_2], [1]</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19900" name="19900">
+     <td class="bugnote-public">
+      <span class="small">(0019900)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 18:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это совсем другой баг, прошлые баги уже не соответствуют коду</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 19:53</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 19:53</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 19:53</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: dark34.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 21:12</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 21:14</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 10:31</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:53</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18965</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103 =&gt; e:\\priquel\\sources\\engine\\xrgame\\smart_cover_transition.cpp, 103</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:09</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 19274</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:10</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: lim.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103 =&gt; e:\\priquel\\sources\\engine\\xrgame\\smart_cover_transition.cpp, 103</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:12</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 19275</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:12</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: escape_crash.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19285</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 22:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 19287</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 22:06</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: lim_mixed.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 14:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 14:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r27279 =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 14:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103 =&gt; smart_cover::transitions::action::animation(), e:\\priquel\\sources\\engine\\xrgame\\smart_cover_transition.cpp, 103</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 14:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 18:38</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19900</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 18:39</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 18:39</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 18:39</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">smart_cover::transitions::action::animation(), e:\priquel\sources\engine\xrgame\smart_cover_transition.cpp, 103 =&gt; smart_cover::transitions::action::animation(), e:\\priquel\\sources\\engine\\xrgame\\smart_cover_transition.cpp, 103</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 18:39</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

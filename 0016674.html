@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016674: Build 02.06.08 Marsh - ERROR: Invalid AI map at kamp point [mar_smart_terrain_6_8_kamp_1] - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016673.html">
+      &lt; Прошлое обращение (0016673)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016675.html">
+      Следующее обращение (0016675) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016674</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>04 июня 2008 11:34</td>
+    <td>23 сентября 2008 15:56</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016674: Build 02.06.08 Marsh - ERROR: Invalid AI map at kamp point [mar_smart_terrain_6_8_kamp_1]</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет после захвата насосной станции (ЧНовцы цже пошли немного дальше насосной станции)
+     <br/>
+     <br/>
+     00058355	656.42901611	[916] [LUA] ERROR: Invalid AI map at kamp point [mar_smart_terrain_6_8_kamp_1]
+     <br/>
+     00058356	656.42913818	[916] ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     00058357	656.42919922	[916] ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     00058358	656.42919922	[916] ! [LUA]  1 : [C  ] format
+     <br/>
+     00058359	656.42919922	[916] ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+     <br/>
+     00058360	656.42926025	[916] ! [LUA]  3 : [Lua] gamedata\scripts\xr_kamp.script(308) : getDestVertex
+     <br/>
+     00058361	656.42932129	[916] ! [LUA]  4 : [Lua] gamedata\scripts\xr_kamp.script(58) :
+     <br/>
+     00058362	656.42944336	[916] ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     00058363	656.46807861	[916] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00058364	656.46807861	[916] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00058365	656.47534180	[916] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00058366	657.73742676	[916] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     00058367	657.73748779	[916] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00058368	657.73773193	[916] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     00058369	657.74194336	[916] * Unloading texture [glow\glow_04] pSurface RefCount= 1
+     <br/>
+     00058370	657.74206543	[916] * Unloading texture [glow\glow_red2] pSurface RefCount= 1
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGATHREE.LOG.bz2 (581,588 bytes)
+     <span class="italic">04 июня 2008 11:34</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080919-114616.zip (814,617 bytes)
+     <span class="italic">19 сентября 2008 12:16</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080919-115259.zip (1,607,678 bytes)
+     <span class="italic">23 сентября 2008 15:55</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17791" name="17791">
+     <td class="bugnote-public">
+      <span class="small">(0017791)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">10 июня 2008 12:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ещё вылетало?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19517" name="19517">
+     <td class="bugnote-public">
+      <span class="small">(0019517)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">03 июля 2008 11:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22275" name="22275">
+     <td class="bugnote-public">
+      <span class="small">(0022275)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">19 сентября 2008 12:17</span>
+      <br/>
+      <span class="small">отредактирован:  19 сентября 2008 12:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось без видимой причины, просто пробегал мимо насосной станции.
+      <br/>
+      Повторяется стабильно, просто с сейва в дампе нужно бежать к насосной станции.
+      <br/>
+      <br/>
+      отредактирован: 19.09.08 12:22</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22313" name="22313">
+     <td class="bugnote-public">
+      <span class="small">(0022313)</span>
+      <br/>
+      plecha
+      <br/>
+      <span class="small">23 сентября 2008 12:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сейва нет...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22319" name="22319">
+     <td class="bugnote-public">
+      <span class="small">(0022319)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">23 сентября 2008 15:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Добавил правильный минидамп, но с него не получилось повторить.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: MEGATHREE.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 12:56</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 17791</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 15:56</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 15:56</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19517</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 12:16</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">закрыт =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 сентября 2008 12:16</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 12:16</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080919-114616.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 сентября 2008 12:17</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22275</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 12:22</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий отредактирован: 22275</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 11:27</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 12:04</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Комментарий добавлен: 22313</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 15:55</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080919-115259.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 15:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22319</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

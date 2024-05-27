@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017984: Garbage - e_entity-&gt;ID_Parent - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017983.html">
+      &lt; Прошлое обращение (0017983)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017985.html">
+      Следующее обращение (0017985) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017984</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>14 июля 2008 11:33</td>
+    <td>25 июля 2008 16:05</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r30272</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017984: Garbage - e_entity-&gt;ID_Parent</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : e_entity-&gt;ID_Parent == id_parent
+     <br/>
+     [error]Function      : xrServer::Process_event_reject
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+     <br/>
+     [error]Line          : 30
+     <br/>
+     [error]Description   : wpn_wincheaster130023817
+     <br/>
+     [error]Arguments     : single_player
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007AD9FA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:032C01D8 xrGame.dll, xrServer::Process_event_reject(), e:\priquel\sources\engine\xrgame\xrserver_process_event_reject.cpp, 34
+     <br/>
+     001B:032BF087 xrGame.dll, xrServer::Process_event(), e:\priquel\sources\engine\xrgame\xrserver_process_event.cpp, 102
+     <br/>
+     001B:031397B8 xrGame.dll, xrServer::OnMessage(), e:\priquel\sources\engine\xrgame\xrserver.cpp, 529
+     <br/>
+     001B:034DE406 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     В начале уровня, заплатил бандиту.
+     <br/>
+     Ушел (не далеко), вернулся к ним, а они мне опять, мол стой денег давай.
+     <br/>
+     Открылся диалог.
+     <br/>
+     Креш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080714-112458.zip (1,017,098 bytes)
+     <span class="italic">14 июля 2008 11:33</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     garbage.sav.bz2 (913,185 bytes)
+     <span class="italic">14 июля 2008 11:34</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_uzercheg.rar (703,273 bytes)
+     <span class="italic">14 июля 2008 17:06</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20554" name="20554">
+     <td class="bugnote-public">
+      <span class="small">(0020554)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">14 июля 2008 12:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дима, посмотри, пожалуйста, кому этим багом заняться.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20588" name="20588">
+     <td class="bugnote-public">
+      <span class="small">(0020588)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">14 июля 2008 17:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] Squad [esc_smart_terrain_5_2_military_2_squad] stay smart [esc_smart_terrain_5_2] next_point_id [nil]
+      <br/>
+      [LUA] e:\current_build\sim_combat:(73):Sim_Combat[esc_smart_terrain_5_2]: register new squad esc_smart_terrain_5_2_military_2_squad
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : e_entity-&gt;ID_Parent == id_parent
+      <br/>
+      [error]Function      : xrServer::Process_event_reject
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+      <br/>
+      [error]Line          : 30
+      <br/>
+      [error]Description   : ammo_12x70_buck23828
+      <br/>
+      [error]Arguments     : single_player
+      <br/>
+      <br/>
+      выпал баг, когда прошел Главную квестовую линию и до перехода на Темную долину нажал заплатить бандиту 100 рублей.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21228" name="21228">
+     <td class="bugnote-public">
+      <span class="small">(0021228)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">25 июля 2008 12:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080714-112458.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:34</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: garbage.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:47</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 12:07</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 20554</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 12:07</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 12:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 12:20</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 13:18</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 13:18</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 17:05</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 20588</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:06</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_uzercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 09:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:58</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 21228</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 12:58</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:58</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 16:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

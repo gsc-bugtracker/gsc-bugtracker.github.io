@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018422: SVN - Out of memory - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018421.html">
+      &lt; Прошлое обращение (0018421)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018423.html">
+      Следующее обращение (0018423) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018422</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>11 августа 2008 19:05</td>
+    <td>30 сентября 2008 17:41</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Redstain</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r31306</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018422: SVN - Out of memory</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">* [x-ray]: economy: strings[28207 K], smem[9171 K]
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : out_of_memory_handler
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+     <br/>
+     [error]Line          : 318
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Out of memory. Memory request: 64296 K
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:1002D1A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:1002D4A6 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+     <br/>
+     001B:7C92C500 ntdll.dll
+     <br/>
+     <br/>
+     Воспроизводится стабильно, если раз 8-10 попрыгать проводниками между локациями, а потом перейти проводником на Болота. Удалось повторить 3 раза.
+     <br/>
+     В аттаче
+     <br/>
+     - скрипт guiders.script, который добавляет всем проводникам все места, куда можно пойти, и они проводят бесплатно;
+     <br/>
+     - сейв с проводником на болотах</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     pr1.sav.bz2 (1,005,452 bytes)
+     <span class="italic">11 августа 2008 19:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080811-165405.zip (2,654,310 bytes)
+     <span class="italic">11 августа 2008 19:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080811-173245.zip (2,323,823 bytes)
+     <span class="italic">11 августа 2008 19:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080811-183330.zip (3,653,177 bytes)
+     <span class="italic">11 августа 2008 19:05</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     guiders.script (10,350 bytes)
+     <span class="italic">11 августа 2008 19:07</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080822-180138.zip (8,577,873 bytes)
+     <span class="italic">22 августа 2008 18:20</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080910-182240.zip (987,509 bytes)
+     <span class="italic">10 сентября 2008 18:48</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080923-172709.zip (1,205,499 bytes)
+     <span class="italic">25 сентября 2008 15:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080925-182445.zip (5,846,138 bytes)
+     <span class="italic">25 сентября 2008 18:54</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080930-170639.zip (1,384,750 bytes)
+     <span class="italic">30 сентября 2008 17:39</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21537" name="21537">
+     <td class="bugnote-public">
+      <span class="small">(0021537)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">12 августа 2008 11:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">пожалуйста, присылайте логи об аут оф мемори в релизе, а не в микседе</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21547" name="21547">
+     <td class="bugnote-public">
+      <span class="small">(0021547)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">12 августа 2008 14:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ok</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21822" name="21822">
+     <td class="bugnote-public">
+      <span class="small">(0021822)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">22 августа 2008 18:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : out_of_memory_handler
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+      <br/>
+      [error]Line          : 318
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : Out of memory. Memory request: 58496 K
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=15435&amp;type=bug
+      <br/>
+      <br/>
+      Выполнил Ред Форест-2, поубивал долговцев и побежал на Милитари-2 выполнять сюжетный квест. При загрузке Милитари выпал креш.
+      <br/>
+      Установленная русская версия + интегрированный патч 0.3.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22165" name="22165">
+     <td class="bugnote-public">
+      <span class="small">(0022165)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">10 сентября 2008 18:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось при загрузке сейва
+      <br/>
+      CS + patch 04
+      <br/>
+      <br/>
+      краш-лог прикрепил
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      * phase cmem: 251101 K
+      <br/>
+      Загрузка формы объектов...
+      <br/>
+      * [x-ray]: crt heap[491175 K], process heap[377327 K]
+      <br/>
+      * [x-ray]: economy: strings[14945 K], smem[9163 K]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : out_of_memory_handler
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+      <br/>
+      [error]Line          : 318
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : Out of memory. Memory request: 64296 K
+      <br/>
+      <br/>
+      <br/>
+      stack trace:</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22355" name="22355">
+     <td class="bugnote-public">
+      <span class="small">(0022355)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">24 сентября 2008 20:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">есть ещё эти вылеты?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22356" name="22356">
+     <td class="bugnote-public">
+      <span class="small">(0022356)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">25 сентября 2008 10:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">В пятницу один раз было при попытке засейвиться из консоли. См. 18227
+      <br/>
+      <a href="http://tiger/bugz/view.php">
+       http://tiger/bugz/view.php
+      </a>
+      ?id=18227</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22360" name="22360">
+     <td class="bugnote-public">
+      <span class="small">(0022360)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">25 сентября 2008 11:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">нужны такие вылеты на релизных незащищённых бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22363" name="22363">
+     <td class="bugnote-public">
+      <span class="small">(0022363)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">25 сентября 2008 15:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Нашла один недавний лог на релизных.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22376" name="22376">
+     <td class="bugnote-public">
+      <span class="small">(0022376)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 сентября 2008 18:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">На сегодняшних бинах.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22377" name="22377">
+     <td class="bugnote-public">
+      <span class="small">(0022377)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">25 сентября 2008 20:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ещё раз, вылеты на МИКСЕДОВЫХ бинах НЕ ПРИСЫЛАТЬ!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22419" name="22419">
+     <td class="bugnote-public">
+      <span class="small">(0022419)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">30 сентября 2008 17:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Долго играл, прошёл игру, решил начать заново - при загрузке Марша сразу крэшнулось.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: pr1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080811-165405.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080811-173245.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 19:05</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080811-183330.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 19:07</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN - E:\priquel\sources\engine\xrCore\xrDebugNew.cpp 318 =&gt; SVN - E:\\priquel\\sources\\engine\\xrCore\\xrDebugNew.cpp 318</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 19:07</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 19:07</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: guiders.script</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 20:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 августа 2008 20:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 августа 2008 23:24</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 августа 2008 11:12</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21537</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 августа 2008 14:08</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 21547</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN - E:\priquel\sources\engine\xrCore\xrDebugNew.cpp 318 =&gt; SVN - Out of memory</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 19:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 августа 2008 18:20</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080822-180138.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 августа 2008 18:23</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 21822</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 сентября 2008 18:48</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22164</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 сентября 2008 18:48</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080910-182240.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 сентября 2008 18:49</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий удален: 22164</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 сентября 2008 18:49</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22165</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 20:31</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22355</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 10:54</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 22356</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 11:24</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22360</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 15:02</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080923-172709.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 15:03</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 22363</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 18:54</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080925-182445.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 18:54</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22376</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 20:28</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22377</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 сентября 2008 17:39</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080930-170639.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 17:41</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22419</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

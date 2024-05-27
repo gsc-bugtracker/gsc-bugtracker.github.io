@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017928: Новые миксовые бины Hospital stalker\clear_sky\gamedata\scripts\heli_fire.script(53) : update_enemy_state - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017927.html">
+      &lt; Прошлое обращение (0017927)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017929.html">
+      Следующее обращение (0017929) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017928</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Script Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>10 июля 2008 21:51</td>
+    <td>11 июля 2008 19:24</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r30136</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017928: Новые миксовые бины Hospital stalker\clear_sky\gamedata\scripts\heli_fire.script(53) : update_enemy_state</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] isVisible
+     <br/>
+     ! [LUA]  2 : [Lua] ...\stalker\clear_sky\gamedata\scripts\heli_fire.script(53) : update_enemy_state
+     <br/>
+     ! [LUA]  3 : [Lua] ...\stalker\clear_sky\gamedata\scripts\heli_move.script(138) : ?
+     <br/>
+     ! [LUA]  4 : [Lua] ...:\stalker\clear_sky\gamedata\scripts\xr_logic.script(535) : issue_event
+     <br/>
+     ! [LUA]  5 : [Lua] ...\stalker\clear_sky\gamedata\scripts\bind_heli.script(84) :
+     <br/>
+     ! [LUA] Expression    : m_spawned
+     <br/>
+     <br/>
+     Function      : CGameObject::lua_game_object
+     <br/>
+     <br/>
+     File          : E:\priquel\sources\engine\xrGame\GameObject.cpp
+     <br/>
+     <br/>
+     Line          : 756
+     <br/>
+     <br/>
+     Description   : (null)
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     001B:02FFB267 xrGame.dll, CGameObject::lua_game_object(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 756
+     <br/>
+     <br/>
+     001B:02E7263E xrGame.dll, CScriptGameObject::object(), e:\priquel\sources\engine\xrgame\script_game_object_impl.h, 26
+     <br/>
+     <br/>
+     001B:030EEF1C xrGame.dll, CHelicopter::isVisible(), e:\priquel\sources\engine\xrgame\helicopter2.cpp, 31
+     <br/>
+     <br/>
+     001B:030F33CA xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;CHelicopter,CHelicopter,luabind::detail::null_type,CScriptGameObject *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 161
+     <br/>
+     <br/>
+     001B:030F39D7 xrGame.dll, luabind::detail::call&lt;CHelicopter,CHelicopter,luabind::detail::null_type,bool,CScriptGameObject *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 407
+     <br/>
+     <br/>
+     001B:030F3BF2 xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__thiscall CHelicopter::*)(CScriptGameObject *),CHelicopter,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     <br/>
+     001B:030F400D xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__thiscall CHelicopter::*)(CScriptGameObject *),CHelicopter,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     <br/>
+     001B:0035C88A luabind.beta7-devel.rc4.dll, boost::function1&lt;int,lua_State *,luabind::memory_allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     <br/>
+     001B:0035C748 luabind.beta7-devel.rc4.dll, luabind::detail::overload_rep::call(), e:\priquel\sources\sdk\include\luabind\detail\overload_rep_impl.hpp, 36
+     <br/>
+     <br/>
+     001B:00358603 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\class_rep.cpp, 696
+     <br/>
+     <br/>
+     Во второй комнате после того как начал стрелять вертолёт. После етого при  каждом выстреле по вертолёту выпадает скрипт:
+     <br/>
+     <br/>
+     ! [LUA] you are trying to use a destroyed object [12963c00]
+     <br/>
+     ! [LUA]  0 : [C  ] id
+     <br/>
+     ! [LUA]  1 : [Lua] ...\stalker\clear_sky\gamedata\scripts\bind_heli.script(183) :
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : m_game_object &amp;&amp; m_game_object-&gt;lua_game_object() == this
+     <br/>
+     [error]Function      : CScriptGameObject::object
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\script_game_object_impl.h
+     <br/>
+     [error]Line          : 26
+     <br/>
+     [error]Description   : Probably, you are trying to use a destroyed object!
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:02E72674 xrGame.dll, CScriptGameObject::object(), e:\priquel\sources\engine\xrgame\script_game_object_impl.h, 26
+     <br/>
+     001B:02E72885 xrGame.dll, CScriptGameObject::ID(), e:\priquel\sources\engine\xrgame\script_game_object.cpp, 55
+     <br/>
+     001B:02E9A32B xrGame.dll, luabind::detail::returns&lt;unsigned short&gt;::call&lt;CScriptGameObject,CScriptGameObject,luabind::detail::null_type&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 207
+     <br/>
+     001B:02EA0F65 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;unsigned short (__thiscall CScriptGameObject::*)(void)const ,CScriptGameObject,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 117
+     <br/>
+     001B:0035C88A luabind.beta7-devel.rc4.dll, boost::function1&lt;int,lua_State *,luabind::memory_allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:0035C748 luabind.beta7-devel.rc4.dll, luabind::detail::overload_rep::call(), e:\priquel\sources\sdk\include\luabind\detail\overload_rep_impl.hpp, 36
+     <br/>
+     001B:00358603 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\class_rep.cpp, 696
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     hospital3.log.bz2 (315,892 bytes)
+     <span class="italic">10 июля 2008 21:51</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20499" name="20499">
+     <td class="bugnote-public">
+      <span class="small">(0020499)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">11 июля 2008 16:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">А чё с этим делать? еще раз попробывать?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 21:51</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 21:51</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 21:51</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: hospital3.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 16:08</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20499</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:24</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

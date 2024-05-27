@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016574: Garbage Вылет E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016573.html">
+      &lt; Прошлое обращение (0016573)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016575.html">
+      Следующее обращение (0016575) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016574</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>попыток не было</td>
+    <td>02 июня 2008 10:28</td>
+    <td>17 июля 2008 10:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Nitro</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26781</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016574: Garbage Вылет E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     gar_space_restrictor_bandit_trader_in
+     <br/>
+     gar_space_restrictor_messenger_block
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     gar_space_restrictor_bandit_trader_in
+     <br/>
+     gar_space_restrictor_messenger_block
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : vertex || show_restrictions(m_object)
+     <br/>
+     [error]Function      : CPatrolPathManager::select_point
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+     <br/>
+     [error]Line          : 155
+     <br/>
+     [error]Description   : any vertex in patrol path [esc_smart_terrain_5_2_guard_2_walk] in inaccessible for object [sim_default_bandit_215943]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00D79B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00D79DC2 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:04827BC3 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+     <br/>
+     001B:04818DD7 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+     <br/>
+     001B:04811C5A xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 223
+     <br/>
+     001B:04AE65FD xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 571
+     <br/>
+     001B:04AE6716 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 554
+     <br/>
+     001B:04ACDDC7 xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 74
+     <br/>
+     001B:04A80E1B xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 950
+     <br/>
+     001B:04A85C4D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 816
+     <br/>
+     001B:00427451 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:00427B7F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:04C6CD75 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:00498BE3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ABAA9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AB228 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 470
+     <br/>
+     001B:004AB1C4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 461
+     <br/>
+     001B:004AA1D6 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 255
+     <br/>
+     001B:004AADF2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 375
+     <br/>
+     001B:004AAF1B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 413
+     <br/>
+     001B:0040EC22 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 262
+     <br/>
+     001B:0040F3E4 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 703
+     <br/>
+     001B:0040F6C3 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 763
+     <br/>
+     001B:0051387C xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:77664911 kernel32.dll
+     <br/>
+     001B:7773E4B6 ntdll.dll
+     <br/>
+     001B:7773E489 ntdll.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     <br/>
+     Выкинуло из игры когда выполняя мисию Догнать Клыка, бегала по стоянке Дигеров.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_Виста_garbage.rar (989,884 bytes)
+     <span class="italic">02 июня 2008 10:31</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2.zip (5,095,717 bytes)
+     <span class="italic">04 июня 2008 11:39</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-095726.zip (5,564,290 bytes)
+     <span class="italic">12 июня 2008 10:12</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>связан с</nobr></td>
+        <td><a href="0016544.html">
+          0016544
+         </a></td>
+        <td><a title="невоспр.">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Bandicoot</nobr></td>
+        <td>Garbage     esc_smart_terrain_5_2_guard_3_walk E:\priquel\sources\engine\xrGame\patrol_path_params.cpp 19</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17511" name="17511">
+     <td class="bugnote-public">
+      <span class="small">(0017511)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 июня 2008 11:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      gar_space_restrictor_bandit_trader_in
+      <br/>
+      gar_space_restrictor_messenger_block
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      gar_smart_terrain_5_6_defence
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      gar_space_restrictor_bandit_trader_in
+      <br/>
+      gar_space_restrictor_messenger_block
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [gar_smart_terrain_5_6_guard_1_walk] in inaccessible for object [sim_default_bandit_116087]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:10029B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:10029DC2 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      001B:0331F0B0 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+      <br/>
+      001B:0330B459 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+      <br/>
+      001B:032FADC0 xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 223
+      <br/>
+      001B:037CD600 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 571
+      <br/>
+      001B:037CD55E xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 555
+      <br/>
+      001B:037A6FBE xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 75
+      <br/>
+      001B:0374BBB0 xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 927
+      <br/>
+      001B:0374B2E3 xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+      <br/>
+      001B:00427451 xrEngine.exe, stlp_std::reverse_iterator&lt;CCF_Shape::shape_def *&gt;::reverse_iterator&lt;CCF_Shape::shape_def *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 67
+      <br/>
+      001B:00427B7F xrEngine.exe, stlp_std::_Param_Construct&lt;CCF_Shape::shape_def,CCF_Shape::shape_def&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_construct.h, 124
+      <br/>
+      001B:03B9F2C5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+      <br/>
+      001B:00498BE3 xrEngine.exe, CGameMtlLibrary::GetMaterialIdx(), e:\priquel\sources\engine\xrengine\gamemtllib.h, 311
+      <br/>
+      001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+      <br/>
+      001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+      <br/>
+      001B:004AB228 xrEngine.exe, CConsole::Execute(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 446
+      <br/>
+      001B:635698F7 FRAPS.DLL
+      <br/>
+      001B:004AB1C4 xrEngine.exe, CConsole::ExecuteCommand(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 347
+      <br/>
+      001B:004AA1D6 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 313
+      <br/>
+      001B:004AADF2 xrEngine.exe, CConsole::OnRender(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 251
+      <br/>
+      001B:7C90FB6C ntdll.dll
+      <br/>
+      001B:7C809392 kernel32.dll
+      <br/>
+      001B:7C85E8F9 kernel32.dll
+      <br/>
+      001B:10028592 xrCore.dll, heap_walk(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 73
+      <br/>
+      001B:10028666 xrCore.dll, mem_usage_impl(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 131
+      <br/>
+      001B:10028706 xrCore.dll, xrMemory::mem_usage(), e:\priquel\sources\engine\xrcore\memory_usage.cpp, 164
+      <br/>
+      001B:0040EC22 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F3E4 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F6C3 xrEngine.exe, operator new()
+      <br/>
+      001B:0051387C xrEngine.exe, ICClose()
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      Гарбейдж Квест "Убить слепых псов"</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17967" name="17967">
+     <td class="bugnote-public">
+      <span class="small">(0017967)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">12 июня 2008 10:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на билде, без видимых причин.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18143" name="18143">
+     <td class="bugnote-public">
+      <span class="small">(0018143)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">16 июня 2008 14:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Если повторится, откроете снова.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 10:28</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 10:28</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 10:31</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: xray_Виста_garbage.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 12:00</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0016544</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 14:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 14:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 14:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17511</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 15:31</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-095726.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:13</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 17967</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июня 2008 14:48</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 18143</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 14:48</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июня 2008 14:48</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 09:59</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 09:59</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage Вылет E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp =&gt; Garbage Вылет E:\\priquel\\sources\\engine\\xrGame\\patrol_path_manager.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 09:59</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 10:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018074: Build 15.07 Bin 14.07 Yantar - E:\priquel\sources\engine\xrGame\PhraseDialog.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018073.html">
+      &lt; Прошлое обращение (0018073)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018075.html">
+      Следующее обращение (0018075) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018074</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>попыток не было</td>
+    <td>16 июля 2008 12:50</td>
+    <td>19 августа 2008 10:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Nitro</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018074: Build 15.07 Bin 14.07 Yantar - E:\priquel\sources\engine\xrGame\PhraseDialog.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : !phrase_dialog-&gt;m_PhraseVector.empty()
+     <br/>
+     [error]Function      : CPhraseDialog::SayPhrase
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\PhraseDialog.cpp
+     <br/>
+     [error]Line          : 146
+     <br/>
+     [error]Description   : No available phrase to say, dialog[yan_scientist_hello_dialog]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00F3D786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00F3E371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     001B:05B5F541 xrGame.dll, CPhraseDialog::SayPhrase(), e:\priquel\sources\engine\xrgame\phrasedialog.cpp, 146
+     <br/>
+     001B:05B64362 xrGame.dll, CPhraseDialogManager::SayPhrase(), e:\priquel\sources\engine\xrgame\phrasedialogmanager.cpp, 77
+     <br/>
+     001B:05EC9375 xrGame.dll, CUITalkWnd::SayPhrase(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 304
+     <br/>
+     001B:05EC9E0D xrGame.dll, CUITalkWnd::UpdateQuestions(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 135
+     <br/>
+     001B:05EC9FDA xrGame.dll, CUITalkWnd::Update(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 218
+     <br/>
+     001B:05EC99E6 xrGame.dll, CUITalkWnd::InitTalkDialog(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 83
+     <br/>
+     001B:05EC9AF8 xrGame.dll, CUITalkWnd::Show(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 240
+     <br/>
+     001B:05E9C94D xrGame.dll, CDialogHolder::StartMenu(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 74
+     <br/>
+     001B:05E9CB60 xrGame.dll, CDialogHolder::StartStopMenu(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 216
+     <br/>
+     001B:05F68E28 xrGame.dll, CUIGameSP::StartTalk(), e:\priquel\sources\engine\xrgame\uigamesp.cpp, 157
+     <br/>
+     001B:05B050CB xrGame.dll, CActor::RunTalkDialog(), e:\priquel\sources\engine\xrgame\actor_communication.cpp, 210
+     <br/>
+     001B:05B05A58 xrGame.dll, CActor::TryToTalk(), e:\priquel\sources\engine\xrgame\actor_communication.cpp, 194
+     <br/>
+     001B:05B21AEE xrGame.dll, CActor::ActorUse(), e:\priquel\sources\engine\xrgame\actorinput.cpp, 409
+     <br/>
+     001B:05B2244F xrGame.dll, CActor::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\actorinput.cpp, 159
+     <br/>
+     001B:05ABA3E8 xrGame.dll, CLevel::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\level_input.cpp, 409
+     <br/>
+     001B:004207F6 xrEngine.exe, CStats::operator=()
+     <br/>
+     001B:718F92F3 MSVCR80.dll, _RTDynamicCast()
+     <br/>
+     001B:060D7A0C xrGame.dll, PI_DIV_2()
+     <br/>
+     001B:05AB99E0 xrGame.dll, CLevel::IR_OnActivate, e:\priquel\sources\engine\xrgame\level_input.cpp, 488
+     <br/>
+     001B:05AB94A0 xrGame.dll, CLevel::IR_OnMousePress, e:\priquel\sources\engine\xrgame\level_input.cpp, 64
+     <br/>
+     <br/>
+     Во время первого диалога с Сахаровым, Зашла в диалогб перекинулась с ним парой фраз и вышла не получив задания, проверила табом, что нет активного задания.  Выкинуло, когда зашшла в диалог опять</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFOUR.LOG.bz2 (508,685 bytes)
+     <span class="italic">16 июля 2008 12:50</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 12:50</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 12:50</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 12:50</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 14:06</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 14:06</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:40</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июля 2008 15:40</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 10:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017838: Current build 09.07.08 - Переход с агропрома на подземелье агропрома. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017837.html">
+      &lt; Прошлое обращение (0017837)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017839.html">
+      Следующее обращение (0017839) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017838</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>09 июля 2008 17:42</td>
+    <td>11 июля 2008 22:04</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>TetriSZz</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017838: Current build 09.07.08 - Переход с агропрома на подземелье агропрома.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] DEBUG: activate_by_section: scheme 'mob_walker' activated from section 'mob_walker'
+     <br/>
+     [LUA] _bp: mob_walker:reset_scheme: agru_tushkanchik_129953
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:025CB938 xrGame.dll, CControlPathBuilder::can_use_distributed_compuations(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder.cpp, 267
+     <br/>
+     001B:0253E32C xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 51
+     <br/>
+     001B:0253B01F xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 222
+     <br/>
+     001B:025CBCC6 xrGame.dll, CControlPathBuilder::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder.cpp, 111
+     <br/>
+     001B:025C6812 xrGame.dll, CControl_Manager::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 141
+     <br/>
+     001B:025B8AC6 xrGame.dll, CBaseMonster::net_Spawn(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_startup.cpp, 262
+     <br/>
+     001B:0271B18C xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 108
+     <br/>
+     001B:0271B370 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+     <br/>
+     001B:02712F74 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 442
+     <br/>
+     001B:027131B4 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 537
+     <br/>
+     001B:00733BFE xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 104
+     <br/>
+     001B:0040AE35 xrEngine.exe, stlp_std::priv::_Impl_vector&lt;ref_sound,xalloc&lt;ref_sound&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 180
+     <br/>
+     <br/>
+     <br/>
+     затопил подземелье агропрома, перешел на агропром_2, осталось задание "Найти тайник группы" (желтая стрелочка показала обратно на подземелье). Нажал перейти обратно на подземелье и крашнулось во время загрузки.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     Current build crash.zip (4,995,746 bytes)
+     <span class="italic">09 июля 2008 17:42</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20217" name="20217">
+     <td class="bugnote-public">
+      <span class="small">(0020217)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">09 июля 2008 19:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">попробуйте свалить в следующем билде
+      <br/>
+      должна быть дополнительная инфа</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20220" name="20220">
+     <td class="bugnote-public">
+      <span class="small">(0020220)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">09 июля 2008 19:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ok</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 17:42</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 17:42</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 17:42</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: Current build crash.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 17:59</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:31</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:55</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 19:24</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 20217</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 19:34</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 20220</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:41</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:41</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 22:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

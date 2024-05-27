@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017773: [marsh] во время прохождения туториала, возле дальнего форпоста, там где берёшь артефакт - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017772.html">
+      &lt; Прошлое обращение (0017772)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017774.html">
+      Следующее обращение (0017774) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017773</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>08 июля 2008 11:29</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017773: [marsh] во время прохождения туториала, возле дальнего форпоста, там где берёшь артефакт</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+     <br/>
+     [error]Function      : CDetailPathManager::build_smooth_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+     <br/>
+     [error]Line          : 863
+     <br/>
+     [error]Description   : Invalid restrictions (see log for details) for object
+     <br/>
+     [error]Arguments     : mar_boar_weak_0001
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:1002D786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:1002D9FA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:028D4F25 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 863
+     <br/>
+     001B:028C8BE0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:028CB298 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+     <br/>
+     001B:028CE703 xrGame.dll, CLevelGraph::vertex_plane_y(), e:\priquel\sources\engine\xrgame\level_graph_inline.h, 214
+     <br/>
+     001B:0291A1F7 xrGame.dll, CSpaceRestrictionShape::inside(), e:\priquel\sources\engine\xrgame\space_restriction_shape.cpp, 216
+     <br/>
+     001B:0291A1F7 xrGame.dll, CSpaceRestrictionShape::inside(), e:\priquel\sources\engine\xrgame\space_restriction_shape.cpp, 216
+     <br/>
+     001B:02914D53 xrGame.dll, CSpaceRestrictionBase_inside(), e:\priquel\sources\engine\xrgame\space_restriction_base.cpp, 32
+     <br/>
+     001B:029153F1 xrGame.dll, CSpaceRestrictionBase::inside(), e:\priquel\sources\engine\xrgame\space_restriction_base.cpp, 45
+     <br/>
+     001B:02916AE7 xrGame.dll, CSpaceRestrictionBridge::on_border(), e:\priquel\sources\engine\xrgame\space_restriction_bridge.cpp, 125
+     <br/>
+     001B:029098C4 xrGame.dll, CSpaceRestrictionManager::accessible(), e:\priquel\sources\engine\xrgame\space_restriction_manager.cpp, 153
+     <br/>
+     001B:028C544B xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+     <br/>
+     001B:028C891C xrGame.dll, CMovementManager::process_level_path(), e:\priquel\sources\engine\xrgame\movement_manager_level.cpp, 44
+     <br/>
+     001B:028C17E1 xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 219
+     <br/>
+     001B:02A1D004 xrGame.dll, CControlPathBuilder::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder.cpp, 111
+     <br/>
+     001B:02A12870 xrGame.dll, CControl_Manager::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 141
+     <br/>
+     001B:029E1D0C xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 228
+     <br/>
+     001B:00426D61 xrEngine.exe, stlp_std::reverse_iterator&lt;collide::rq_result *&gt;::reverse_iterator&lt;collide::rq_result *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 65
+     <br/>
+     001B:0042748F xrEngine.exe, xr_new&lt;ISpatial_DB&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 5
+     <br/>
+     001B:02D1C1D5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 549
+     <br/>
+     001B:004985C3 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 106
+     <br/>
+     001B:004AB629 xrEngine.exe, CTheoraSurface::DecompressFrame(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 223
+     <br/>
+     001B:004AADE8 xrEngine.exe, CTheoraStream::Load(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 224
+     <br/>
+     001B:004AAD84 xrEngine.exe, CTheoraStream::Load(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 214
+     <br/>
+     001B:004A9D96 xrEngine.exe, imf_Process()
+     <br/>
+     001B:004AA9B2 xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 163
+     <br/>
+     001B:004AAADB xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 177
+     <br/>
+     001B:0040EC02 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F3BE xrEngine.exe, operator new()
+     <br/>
+     001B:0040F5F3 xrEngine.exe, operator new()
+     <br/>
+     001B:00518832 xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh.log.bz2 (109,247 bytes)
+     <span class="italic">08 июля 2008 11:29</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGATRONE.rar (2,264,980 bytes)
+     <span class="italic">09 июля 2008 10:48</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20010" name="20010">
+     <td class="bugnote-public">
+      <span class="small">(0020010)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">08 июля 2008 16:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">типа пофиксили...
+      <br/>
+      надо проверить в следующих бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20103" name="20103">
+     <td class="bugnote-public">
+      <span class="small">(0020103)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">09 июля 2008 10:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на Агропроме бинарники как раз 08.07.08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20180" name="20180">
+     <td class="bugnote-public">
+      <span class="small">(0020180)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">09 июля 2008 15:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">17818</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20353" name="20353">
+     <td class="bugnote-public">
+      <span class="small">(0020353)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">10 июля 2008 18:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">close me</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 11:29</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 11:29</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 11:59</td>
+     <td class="small-caption">Anton</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; безотлагательный</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 11:59</td>
+     <td class="small-caption">Anton</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 16:36</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 16:36</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 16:36</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20010</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 10:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: MEGATRONE.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 10:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20103</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 10:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 15:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20180</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 15:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 15:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 15:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:15</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20353</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:15</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:15</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

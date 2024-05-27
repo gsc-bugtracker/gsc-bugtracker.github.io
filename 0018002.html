@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018002: Escape новые бины, микс - \priquel\sources\engine\xrGame\PHSimpleCharacter.cpp - CPHSimpleCharacter::GetPosition - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018001.html">
+      &lt; Прошлое обращение (0018001)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018003.html">
+      Следующее обращение (0018003) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018002</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>14 июля 2008 14:03</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018002: Escape новые бины, микс - \priquel\sources\engine\xrGame\PHSimpleCharacter.cpp - CPHSimpleCharacter::GetPosition</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет при подходе к автобусной станции
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : valid_pos( vpos, phBoundaries )
+     <br/>
+     [error]Function      : CPHSimpleCharacter::GetPosition
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\PHSimpleCharacter.cpp
+     <br/>
+     [error]Line          : 1090
+     <br/>
+     <br/>
+     <br/>
+     pos: ( 0.000000, -107374176.000000, 0.000000 ) , seems to be invalid
+     <br/>
+     Level box:
+     <br/>
+     object dump:
+     <br/>
+     object: NULL ptr
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007AE371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     001B:033043D9 xrGame.dll, CPHSimpleCharacter::GetPosition(), e:\priquel\sources\engine\xrgame\phsimplecharacter.cpp, 1090
+     <br/>
+     001B:0352C008 xrGame.dll, _strlwr()
+     <br/>
+     001B:034A08CB xrGame.dll, _strlwr()
+     <br/>
+     001B:034B8923 xrGame.dll, _strlwr()
+     <br/>
+     001B:0051CF13 xrEngine.exe, ICClose()
+     <br/>
+     001B:02FA997E xrGame.dll, CLevel::IR_OnKeyboardHold(), e:\priquel\sources\engine\xrgame\level_input.cpp, 479
+     <br/>
+     001B:00420C8E xrEngine.exe, CStats::operator=()
+     <br/>
+     001B:00440C4D xrEngine.exe, stlp_std::vector&lt;ref_sound,xalloc&lt;ref_sound&gt; &gt;::_M_allocate_and_copy&lt;ref_sound const *&gt;()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (556,956 bytes)
+     <span class="italic">14 июля 2008 14:03</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (220,489 bytes)
+     <span class="italic">14 июля 2008 17:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_vista.rar (818,319 bytes)
+     <span class="italic">14 июля 2008 17:18</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     hospital.zip (803,671 bytes)
+     <span class="italic">14 июля 2008 17:26</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20573" name="20573">
+     <td class="bugnote-public">
+      <span class="small">(0020573)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">14 июля 2008 14:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дамп не получается?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20582" name="20582">
+     <td class="bugnote-public">
+      <span class="small">(0020582)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">14 июля 2008 16:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">возможно пофиксится в этих бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20587" name="20587">
+     <td class="bugnote-public">
+      <span class="small">(0020587)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">14 июля 2008 17:03</span>
+      <br/>
+      <span class="small">отредактирован:  14 июля 2008 17:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не пофиксилось:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : valid_pos( vpos, phBoundaries )
+      <br/>
+      [error]Function      : CPHSimpleCharacter::GetPosition
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\PHSimpleCharacter.cpp
+      <br/>
+      [error]Line          : 1090
+      <br/>
+      <br/>
+      <br/>
+      pos: ( 285766758140435610000000000.000000, 69962001577318034000000.000000, 0.000000 ) , seems to be invalid
+      <br/>
+      Level box:
+      <br/>
+      object dump:
+      <br/>
+      object: NULL ptr
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:007AD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:007AE371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+      <br/>
+      001B:032E4419 xrGame.dll, CPHSimpleCharacter::GetPosition(), e:\priquel\sources\engine\xrgame\phsimplecharacter.cpp, 1090
+      <br/>
+      001B:0350C038 xrGame.dll, _strlwr()
+      <br/>
+      001B:034808FB xrGame.dll, _strlwr()
+      <br/>
+      001B:03498953 xrGame.dll, _strlwr()
+      <br/>
+      001B:0051CF13 xrEngine.exe, ICClose()
+      <br/>
+      001B:00420C8E xrEngine.exe, CStats::operator=()
+      <br/>
+      001B:781592D3 MSVCR80.dll, _RTDynamicCast()
+      <br/>
+      <br/>
+      Выпало на Тёмной Долине. дампа к сожалению нет :(
+      <br/>
+      <br/>
+      отредактирован: 14.07.08 17:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20591" name="20591">
+     <td class="bugnote-public">
+      <span class="small">(0020591)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">14 июля 2008 17:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторяется стабильно на Ескейпе, в разных местах. Свежие миксовые бины. ОС Виста. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20593" name="20593">
+     <td class="bugnote-public">
+      <span class="small">(0020593)</span>
+      <br/>
+      Robo
+      <br/>
+      <span class="small">14 июля 2008 17:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторил на Госпитале , надел Экзоскелет.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20668" name="20668">
+     <td class="bugnote-public">
+      <span class="small">(0020668)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">15 июля 2008 14:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это скорее всего, тоже самое что глюк с сейв лоадом
+      <br/>
+      сейчас не должно вылетать</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21207" name="21207">
+     <td class="bugnote-public">
+      <span class="small">(0021207)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">25 июля 2008 11:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:03</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:03</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:03</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:34</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20573</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 16:17</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20582</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:03</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20587</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 17:04</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:04</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий отредактирован: 20587</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 17:18</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 20591</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:18</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: escape_vista.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 17:26</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Комментарий добавлен: 20593</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:26</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Файл добавлен: hospital.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 14:28</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20668</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 14:29</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 14:29</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21207</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape новые бины, микс - \priquel\sources\engine\xrGame\PHSimpleCharacter.cpp - CPHSimpleCharacter::GetPosition =&gt; Escape новые бины, микс - \\priquel\\sources\\engine\\xrGame\\PHSimpleCharacter.cpp - CPHSimpleCharacter::GetPosition</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018175: Build 17.07.08 Military - E:\priquel\sources\engine\xrEngine\xr_object_list.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018174.html">
+      &lt; Прошлое обращение (0018174)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018176.html">
+      Следующее обращение (0018176) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018175</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>18 июля 2008 12:33</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Nitro</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018175: Build 17.07.08 Military - E:\priquel\sources\engine\xrEngine\xr_object_list.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     00754646	7610.86718750	[3844]
+     <br/>
+     00754647	7610.86718750	[3844]
+     <br/>
+     00754648	7610.86718750	[3844]
+     <br/>
+     00754649	7610.86718750	[3844] [error]Expression    : assertion failed
+     <br/>
+     00754650	7610.86718750	[3844]
+     <br/>
+     00754651	7610.86718750	[3844] [error]Function      : CObjectList::Destroy
+     <br/>
+     00754652	7610.86718750	[3844]
+     <br/>
+     00754653	7610.86718750	[3844] [error]File          : E:\priquel\sources\engine\xrEngine\xr_object_list.cpp
+     <br/>
+     00754654	7610.86718750	[3844]
+     <br/>
+     00754655	7610.86718750	[3844] [error]Line          : 450
+     <br/>
+     00754656	7610.86718750	[3844]
+     <br/>
+     00754657	7610.86718750	[3844] [error]Description   : m_crows[1].empty()
+     <br/>
+     00754658	7610.86718750	[3844]
+     <br/>
+     00754659	7610.86718750	[3844]
+     <br/>
+     00754660	7610.86718750	[3844]
+     <br/>
+     00754661	7610.86718750	[3844]
+     <br/>
+     00754662	7611.28466797	[3844] stack trace:
+     <br/>
+     00754663	7611.28466797	[3844]
+     <br/>
+     00754664	7611.28466797	[3844]
+     <br/>
+     00754665	7612.11474609	[3844] 001B:00F3D976 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00754666	7612.11474609	[3844]
+     <br/>
+     00754667	7612.11474609	[3844] 001B:00F3DB87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     00754668	7612.11474609	[3844]
+     <br/>
+     00754669	7612.11474609	[3844] 001B:0044018F xrEngine.exe, xr_vector&lt;ISpatial_NODE *,xalloc&lt;ISpatial_NODE *&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     00754670	7612.11474609	[3844]
+     <br/>
+     00754671	7612.11474609	[3844] 001B:0043F573 xrEngine.exe, make_string(), e:\priquel\sources\engine\xrcore\xrdebug.h, 50
+     <br/>
+     00754672	7612.11474609	[3844]
+     <br/>
+     00754673	7612.11474609	[3844] 001B:00437662 xrEngine.exe, CLAItem::GetKey(), e:\priquel\sources\engine\xrengine\lightanimlibrary.h, 38
+     <br/>
+     00754674	7612.11474609	[3844]
+     <br/>
+     <br/>
+     <br/>
+     Шла от лесника (после того как принесла ему компас), стрельнула пару раз по воронам (из АС-96/2), выкинуло из игры когда переходила на милитари</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR.rar (5,252,716 bytes)
+     <span class="italic">18 июля 2008 12:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080718-123730.zip (4,274,216 bytes)
+     <span class="italic">18 июля 2008 12:44</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21027" name="21027">
+     <td class="bugnote-public">
+      <span class="small">(0021027)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">18 июля 2008 12:45</span>
+      <br/>
+      <span class="small">отредактирован:  18 июля 2008 12:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на RedForest.
+      <br/>
+      Пытался выйти из игры через консоль.
+      <br/>
+      Есть Лог.
+      <br/>
+      Build 16.07.08
+      <br/>
+      <br/>
+      отредактирован: 18.07.08 12:46</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21648" name="21648">
+     <td class="bugnote-public">
+      <span class="small">(0021648)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">18 августа 2008 18:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в релизе не свалится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21649" name="21649">
+     <td class="bugnote-public">
+      <span class="small">(0021649)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">18 августа 2008 18:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">если можете стабильно повторить - повторяйте на микседовых бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 12:33</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 12:33</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 12:33</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 12:44</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080718-123730.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 12:45</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 21027</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 12:46</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий отредактирован: 21027</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 14:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 14:29</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 19:04</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 18:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21648</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 18:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21649</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 18:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Corr</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 18:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 18:40</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 19:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 19:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018469: ноый бины релиз Escape - aimers::base::aim_at_position - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018468.html">
+      &lt; Прошлое обращение (0018468)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018470.html">
+      Следующее обращение (0018470) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018469</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>15 августа 2008 10:52</td>
+    <td>19 августа 2008 11:52</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r31378</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018469: ноый бины релиз Escape - aimers::base::aim_at_position</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет на базе военных, при бое
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : aimers::base::aim_at_position
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+     <br/>
+     [error]Line          : 155
+     <br/>
+     [error]Description   : _valid(target_direction)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:1001B8F3 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:024C1244 xrRender_R2.dll, stlp_std::priv::_Rb_tree&lt;shared_str,accel_str_pred,stlp_std::pair&lt;shared_str const ,unsigned short&gt;,stlp_std::priv::_Select1st&lt;stlp_std::pair&lt;shared_str const ,unsigned short&gt; &gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;shared_str const ,unsigned short&gt; &gt;,xalloc&lt;stlp_std::pair&lt;shared_str,unsigned short&gt; &gt; &gt;::_M_find&lt;char *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_tree.h, 554
+     <br/>
+     001B:02704EB3 xrGame.dll, aimers::weapon::weapon(), e:\priquel\sources\engine\xrgame\aimers_weapon.cpp, 46
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080815-103451.zip (552,513 bytes)
+     <span class="italic">15 августа 2008 10:52</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     esc.sav.bz2 (955,370 bytes)
+     <span class="italic">15 августа 2008 11:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080815-165309.zip (600,369 bytes)
+     <span class="italic">15 августа 2008 19:02</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста_marsh_aimers_base.txt.bz2 (2,897 bytes)
+     <span class="italic">15 августа 2008 19:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080815-185833!!!!!.zip (924,016 bytes)
+     <span class="italic">15 августа 2008 19:20</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080815-210037.zip (638,348 bytes)
+     <span class="italic">15 августа 2008 21:25</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080818-124347.zip (513,116 bytes)
+     <span class="italic">18 августа 2008 13:03</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21614" name="21614">
+     <td class="bugnote-public">
+      <span class="small">(0021614)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">15 августа 2008 16:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Так же валится на марше, и судя по предыдущим бинарникам будет валится везде где идёт стрельба.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21615" name="21615">
+     <td class="bugnote-public">
+      <span class="small">(0021615)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">15 августа 2008 16:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">погодите, это на совсем новых релизных??</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21618" name="21618">
+     <td class="bugnote-public">
+      <span class="small">(0021618)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">15 августа 2008 18:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ну да, 'xrCore' build 3480, Aug 14 2008
+      <br/>
+      в прикрепленном репорте Йожига как раз новые бинны.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21619" name="21619">
+     <td class="bugnote-public">
+      <span class="small">(0021619)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">15 августа 2008 18:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ааа, ещё новые бинны.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21621" name="21621">
+     <td class="bugnote-public">
+      <span class="small">(0021621)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">15 августа 2008 19:05</span>
+      <br/>
+      <span class="small">отредактирован:  15 августа 2008 19:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Свежие микс. бины. Игра крашится на некоторых уровнях без видимых причин. У меня крашилась на Марше и на Свалке. Лог с Марша прикрепил.
+      <br/>
+      <br/>
+      Лог со Свалки тоже прикрепил.
+      <br/>
+      <br/>
+      отредактирован: 15.08.08 19:20</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21623" name="21623">
+     <td class="bugnote-public">
+      <span class="small">(0021623)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">15 августа 2008 21:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fsimilar(direction_target.magnitude(), 1.f)
+      <br/>
+      [error]Function      : aimers::base::aim_at_position
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+      <br/>
+      [error]Line          : 137
+      <br/>
+      [error]Description   : 0.000000
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:005FB8F3 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+      <br/>
+      001B:02A696AF xrGame.dll, CALifeRegistryWrapper&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt; &gt;::objects_ptr(), e:\priquel\sources\engine\xrgame\alife_registry_wrapper.h, 54
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      новые релизные бины
+      <br/>
+      вывалилось при захвате Церкви на Марше
+      <br/>
+      лог прикрепил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21624" name="21624">
+     <td class="bugnote-public">
+      <span class="small">(0021624)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">18 августа 2008 13:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">SVN, релизные бинны.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21625" name="21625">
+     <td class="bugnote-public">
+      <span class="small">(0021625)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">18 августа 2008 13:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fsimilar(direction_target.magnitude(), 1.f)
+      <br/>
+      [error]Function      : aimers::base::aim_at_position
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+      <br/>
+      [error]Line          : 137
+      <br/>
+      [error]Description   : 0.000000
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:005FB8F3 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+      <br/>
+      001B:00415652 xrEngine.exe, stlp_std::priv::_Impl_vector&lt;CEffect_Rain::Particle,xalloc&lt;CEffect_Rain::Particle&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 187
+      <br/>
+      001B:00603D59 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21634" name="21634">
+     <td class="bugnote-public">
+      <span class="small">(0021634)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">18 августа 2008 18:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в последних бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080815-103451.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 10:53</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ноый бины миксед Escape - aimers::base::aim_at_position =&gt; ноый бины релиз Escape - aimers::base::aim_at_position</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 10:53</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 10:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 10:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: esc.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 16:10</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21614</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 16:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21615</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 18:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21618</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 18:11</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21619</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 19:02</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080815-165309.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 19:04</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: xray_Виста_marsh_aimers_base.txt.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 19:05</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 21621</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 19:20</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий отредактирован: 21621</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 19:20</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080815-185833!!!!!.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 августа 2008 21:25</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 21623</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 августа 2008 21:25</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080815-210037.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 13:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080818-124347.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 13:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21624</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 13:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21625</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 18:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 августа 2008 18:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 августа 2008 18:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 21634</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 09:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 11:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

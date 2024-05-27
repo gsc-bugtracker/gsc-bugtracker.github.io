@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018161: Yantar Build 16.07.08 - CPHCapture::Deactivate() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018160.html">
+      &lt; Прошлое обращение (0018160)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018162.html">
+      Следующее обращение (0018162) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018161</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>18 июля 2008 09:55</td>
+    <td>01 сентября 2008 17:58</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018161: Yantar Build 16.07.08 - CPHCapture::Deactivate()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:03C28A21 xrGame.dll, CPHCapture::Deactivate(), e:\priquel\sources\engine\xrgame\phcaptureinit.cpp, 222
+     <br/>
+     001B:03C2735B xrGame.dll, CPHCapture::~CPHCapture(), e:\priquel\sources\engine\xrgame\phcapture.cpp, 29
+     <br/>
+     001B:03C27708 xrGame.dll, CPHCapture::`scalar deleting destructor'()
+     <br/>
+     001B:03C2A8F1 xrGame.dll, xr_delete&lt;CPHCapture&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 153
+     <br/>
+     001B:03C2A969 xrGame.dll, CPHMovementControl::in_shedule_Update(), e:\priquel\sources\engine\xrgame\phmovementcontrol.cpp, 135
+     <br/>
+     001B:03C7899F xrGame.dll, CCharacterPhysicsSupport::in_shedule_Update(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 359
+     <br/>
+     001B:039238D9 xrGame.dll, CActor::shedule_Update(), e:\priquel\sources\engine\xrgame\actor.cpp, 1274
+     <br/>
+     001B:004274B9 xrEngine.exe, xr_new&lt;CInifile,char [520],int&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 19
+     <br/>
+     001B:038CEC25 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 554
+     <br/>
+     001B:00498603 xrEngine.exe, CDemoRecord::IR_OnMouseHold()
+     <br/>
+     001B:004AC779 xrEngine.exe, CTextConsole::CreateLogWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 108
+     <br/>
+     001B:004ABF38 xrEngine.exe, CTheoraSurface::Load()
+     <br/>
+     <br/>
+     При обыске Зомби.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080718-094740.zip (4,393,250 bytes)
+     <span class="italic">18 июля 2008 09:55</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21017" name="21017">
+     <td class="bugnote-public">
+      <span class="small">(0021017)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">18 июля 2008 11:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетает в момент когда начинаешь тащить тело, во время спринта.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21088" name="21088">
+     <td class="bugnote-public">
+      <span class="small">(0021088)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">21 июля 2008 17:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сейчас недолжно вылетать</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 09:55</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 09:55</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 09:55</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080718-094740.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 10:48</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 10:48</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Yantar Build 17.07.08 - CPHCapture::Deactivate() =&gt; Yantar Build 16.07.08 - CPHCapture::Deactivate()</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 10:48</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 11:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 11:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 11:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 11:43</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 21017</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 13:59</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 июля 2008 17:22</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 21088</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 сентября 2008 17:58</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 сентября 2008 17:58</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

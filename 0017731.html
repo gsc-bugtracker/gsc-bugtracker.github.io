@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017731: build 06.07.08 Marsh - Invalid restrictions (see log for details) for object - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017730.html">
+      &lt; Прошлое обращение (0017730)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017732.html">
+      Следующее обращение (0017732) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017731</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>07 июля 2008 09:57</td>
+    <td>15 июля 2008 17:30</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017731: build 06.07.08 Marsh - Invalid restrictions (see log for details) for object</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет около вышки, при бое с кабанами, я был в вагончике
+     <br/>
+     <br/>
+     ! vertex [6573], position [-281.744507][1.035194][26.389666], alvi[+], asp[-]
+     <br/>
+     DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     mar_space_restrictor_tut_tower
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     mar_space_restrictor_tut_tower
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+     <br/>
+     [error]Function      : CDetailPathManager::build_smooth_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+     <br/>
+     [error]Line          : 863
+     <br/>
+     [error]Description   : Invalid restrictions (see log for details) for object
+     <br/>
+     [error]Arguments     : mar_tutorial_boar23809
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0083D786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0083D9FA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:03514F25 xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 863
+     <br/>
+     001B:03508BE0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:0350B298 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+     <br/>
+     001B:00A8E0D6 xrCDB.dll, CDB::COLLIDER::ray_query(), e:\priquel\sources\engine\xrcdb\xrcdb_ray.cpp, 450
+     <br/>
+     001B:03CD9C1D xrGame.dll, CPHMovementControl::SetPosition(), e:\priquel\sources\engine\xrgame\phmovementcontrol.cpp, 849
+     <br/>
+     001B:004683D9 xrEngine.exe, stlp_std::priv::_Rb_tree&lt;shared_str,CEnvironment::str_pred,stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt;,stlp_std::priv::_Select1st&lt;stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt;,xalloc&lt;stlp_std::pair&lt;shared_str,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt; &gt;::key_comp()
+     <br/>
+     001B:0083D970 xrCore.dll, xrDebug::fail, e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 267
+     <br/>
+     001B:0043D75A xrEngine.exe, stlp_std::vector&lt;CObjectList::SRelcasePair,xalloc&lt;CObjectList::SRelcasePair&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 195
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080707-094151.zip (4,570,258 bytes)
+     <span class="italic">07 июля 2008 09:57</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19823" name="19823">
+     <td class="bugnote-public">
+      <span class="small">(0019823)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 13:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">17711</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20614" name="20614">
+     <td class="bugnote-public">
+      <span class="small">(0020614)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">15 июля 2008 09:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">duplicate</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 09:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 09:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 09:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080707-094151.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 10:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 10:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:09</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:18</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19823</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:18</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:18</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:18</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:18</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 09:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20614</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 09:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 09:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 17:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

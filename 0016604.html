@@ -1,0 +1,970 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016604: Marsh - Креш при сохранении - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016603.html">
+      &lt; Прошлое обращение (0016603)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016605.html">
+      Следующее обращение (0016605) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016604</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>02 июня 2008 20:18</td>
+    <td>08 июля 2008 14:39</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Chips</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26781</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016604: Marsh - Креш при сохранении</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : NET_Packet::w
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\net_utils.h
+     <br/>
+     [error]Line          : 95
+     <br/>
+     [error]Description   : B.count + count &lt; NET_PacketSizeLimit
+     <br/>
+     <br/>
+     001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0065431D xrCore.dll, NET_Packet::w(), e:\priquel\sources\engine\xrcore\net_utils.h, 96
+     <br/>
+     001B:00654636 xrCore.dll, NET_Packet::w_u32(), e:\priquel\sources\engine\xrcore\net_utils.h, 109
+     <br/>
+     001B:006B0258 xrCore.dll, _vsnwprintf()
+     <br/>
+     001B:0338FAFE xrGame.dll, luabind::detail::call&lt;NET_Packet,NET_Packet,luabind::detail::null_type,void,unsigned int&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 407
+     <br/>
+     001B:03381D5B xrGame.dll, luabind::detail::mem_fn_callback&lt;void (__thiscall NET_Packet::*)(unsigned int),NET_Packet,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:0337BA83 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__thiscall NET_Packet::*)(unsigned int),NET_Packet,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     Выполнил квест "Захватить разрушенную церковь" и должен был отбиваться от ренегатов. Забрал с трупа аптечку и заюзал. Сохранился через консоль командой "save 1". В момент сохранения - краш. ЧН-новцы в этот момент уже отстреливались от ренегатов.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080602-195538.zip (1,284,165 bytes)
+     <span class="italic">02 июня 2008 20:18</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-100831.zip (1,424,389 bytes)
+     <span class="italic">03 июня 2008 10:24</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (259,215 bytes)
+     <span class="italic">03 июня 2008 10:24</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-165513.zip (1,365,679 bytes)
+     <span class="italic">04 июня 2008 17:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     LLL.rar (1,452,172 bytes)
+     <span class="italic">11 июня 2008 15:00</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     uzercheg_quicksave.sav.bz2 (928,905 bytes)
+     <span class="italic">11 июня 2008 15:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080617-105006.zip (5,085,578 bytes)
+     <span class="italic">17 июня 2008 11:09</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080617-113246.zip (4,966,459 bytes)
+     <span class="italic">17 июня 2008 11:49</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     h300.sav.bz2 (918,396 bytes)
+     <span class="italic">17 июня 2008 11:53</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (159,722 bytes)
+     <span class="italic">18 июня 2008 11:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080619-094055Агропром.zip (5,343,670 bytes)
+     <span class="italic">19 июня 2008 09:59</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080619-115526.zip (5,402,139 bytes)
+     <span class="italic">19 июня 2008 12:12</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (340,940 bytes)
+     <span class="italic">20 июня 2008 11:22</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     a1.sav.bz2 (901,611 bytes)
+     <span class="italic">20 июня 2008 11:23</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (161,374 bytes)
+     <span class="italic">30 июня 2008 11:36</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg_lua.rar (117,253 bytes)
+     <span class="italic">30 июня 2008 11:36</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGASIX.rar (816,445 bytes)
+     <span class="italic">30 июня 2008 11:55</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     2.sav.bz2 (933,484 bytes)
+     <span class="italic">30 июня 2008 12:01</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (2,064,696 bytes)
+     <span class="italic">03 июля 2008 17:11</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17452" name="17452">
+     <td class="bugnote-public">
+      <span class="small">(0017452)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">03 июня 2008 10:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на хоспитале. Прошла весь уровеньб выкинуло при переходе на другую локацию.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17543" name="17543">
+     <td class="bugnote-public">
+      <span class="small">(0017543)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">04 июня 2008 17:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился. После квеста "Захватить россыпь камней". Условия те же - во время сохранения через консоль (там, правда, перед тем выпадал креш 15168, но чтобы не терять время на перезагрузку и повторное прохождение - пропустил).
+      <br/>
+      Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=11261&amp;type=bug
+      <br/>
+      Ревизия: 27073</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17896" name="17896">
+     <td class="bugnote-public">
+      <span class="small">(0017896)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">11 июня 2008 14:59</span>
+      <br/>
+      <span class="small">отредактирован:  11 июня 2008 15:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : NET_Packet::w
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\net_utils.h
+      <br/>
+      [error]Line          : 95
+      <br/>
+      [error]Description   : B.count + count &lt; NET_PacketSizeLimit
+      <br/>
+      <br/>
+      <br/>
+      Повторился сегодня на Darkvalley
+      <br/>
+      Получил квест захватить Ферму, Бежал к ней нажал (F5_ сохранить игру) Вылетел Фатал. Добавил Save + Log
+      <br/>
+      <br/>
+      отредактирован: 11.06.08 15:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17899" name="17899">
+     <td class="bugnote-public">
+      <span class="small">(0017899)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">11 июня 2008 15:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Серега, опять диалог менеджер сейвит больше, чем нужно.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17918" name="17918">
+     <td class="bugnote-public">
+      <span class="small">(0017918)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">11 июня 2008 17:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">revision: 27678
+      <br/>
+      ну, я повторить его не смог, но надеюсь, что то, что я подправил, поможет.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18204" name="18204">
+     <td class="bugnote-public">
+      <span class="small">(0018204)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь163
+      </font>
+      <br/>
+      <span class="small">17 июня 2008 11:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Hospital, проходил квест "Найти путь в ЧС", сохранялся в консоле - вылетел Фатал.Добавил Save и Log</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18306" name="18306">
+     <td class="bugnote-public">
+      <span class="small">(0018306)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">18 июня 2008 11:34</span>
+      <br/>
+      <span class="small">отредактирован:  18 июня 2008 11:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на хоспитале
+      <br/>
+      <br/>
+      отредактирован: 18.06.08 11:34</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18404" name="18404">
+     <td class="bugnote-public">
+      <span class="small">(0018404)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">19 июня 2008 09:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на Агропроме я зашел в нору и перед тем как перейти засейвилься сразу креш.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18425" name="18425">
+     <td class="bugnote-public">
+      <span class="small">(0018425)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">19 июня 2008 12:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился билд 18.06</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18512" name="18512">
+     <td class="bugnote-public">
+      <span class="small">(0018512)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь163
+      </font>
+      <br/>
+      <span class="small">20 июня 2008 11:20</span>
+      <br/>
+      <span class="small">отредактирован:  20 июня 2008 14:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Агропроме,стабильно валится возле норы - когда сохраняешь, билд 19.06.08.Добавил лог(11:22) и сейв(11:23)
+      <br/>
+      <br/>
+      отредактирован: 20.06.08 14:02</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19317" name="19317">
+     <td class="bugnote-public">
+      <span class="small">(0019317)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">30 июня 2008 11:37</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Даркволлей</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19319" name="19319">
+     <td class="bugnote-public">
+      <span class="small">(0019319)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">30 июня 2008 11:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Милитари.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19575" name="19575">
+     <td class="bugnote-public">
+      <span class="small">(0019575)</span>
+      <br/>
+      Robo
+      <br/>
+      <span class="small">03 июля 2008 17:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился при переходе с Марш на Эскейп
+      <br/>
+      Лог прикрепил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19580" name="19580">
+     <td class="bugnote-public">
+      <span class="small">(0019580)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">03 июля 2008 17:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">там по логу у тебя ещё до этого валится на оружии, скорее всего с тем вылетом и связано.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 20:18</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 20:18</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 20:18</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080602-195538.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 20:19</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 21:11</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 21:12</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 21:12</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 21:14</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 10:23</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 17452</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 10:24</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-100831.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 10:24</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 17:04</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-165513.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 17:09</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 17543</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 14:59</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 17896</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 15:00</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: LLL.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 15:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: uzercheg_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 15:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 17896</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 15:24</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 15:24</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 17899</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 17918</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:09</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080617-105006.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:49</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080617-113246.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:53</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: h300.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:58</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 18204</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 14:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 11:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 11:34</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 18306</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 11:34</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 18306</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 09:59</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 18404</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 09:59</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080619-094055Агропром.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 12:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 18425</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 12:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080619-115526.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:20</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 18512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 11:22</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:23</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 18512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 11:23</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: a1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:24</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 18512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 13:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 18512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:02</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 18512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 17:47</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_lua.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 11:37</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 19317</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 11:54</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 19319</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 11:55</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: MEGASIX.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 12:01</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: 2.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 14:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 14:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 14:40</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 17:10</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Комментарий добавлен: 19575</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 17:11</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 17:40</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 19580</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:22</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 14:39</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017874: Limansk  Новые бинарники E:\priquel\sources\engine\xrGame\aimers_base.cpp  73 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017873.html">
+      &lt; Прошлое обращение (0017873)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017875.html">
+      Следующее обращение (0017875) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017874</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>10 июля 2008 10:12</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017874: Limansk  Новые бинарники E:\priquel\sources\engine\xrGame\aimers_base.cpp  73</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] HIT_CALLBACK: lim_square_enemy_assaulter25602 amount=20 bone=20
+     <br/>
+     [LUA] pl: counter [lim_square_enemy_count]  greater [9]
+     <br/>
+     [LUA] pl: counter [lim_square_enemy_count]  greater [9]
+     <br/>
+     [LUA] pl: counter [lim_square_enemy_count]  greater [9]
+     <br/>
+     [LUA] pl: counter [lim_square_enemy_count]  greater [9]
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : _valid(bone_position)
+     <br/>
+     [error]Function      : aimers::base::aim_at_position
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+     <br/>
+     [error]Line          : 73
+     <br/>
+     [error]Description   : [1.#QNAN0][1.#QNAN0][1.#QNAN0]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:005FBA83 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:02640B90 xrGame.dll, _matrix&lt;float&gt;::setXYZ(), e:\priquel\sources\engine\xrcore\_matrix.h, 576
+     <br/>
+     001B:02644D69 xrGame.dll, aimers::weapon::weapon(), e:\priquel\sources\engine\xrgame\aimers_weapon.cpp, 58
+     <br/>
+     001B:026403E1 xrGame.dll, CSightManager::compute_aiming(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 470
+     <br/>
+     001B:0263EDF9 xrGame.dll, CSightManager::Exec_Look(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 128
+     <br/>
+     001B:02756A74 xrGame.dll, CAI_Stalker::Exec_Look(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_feel.cpp, 52
+     <br/>
+     001B:02729CD7 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 714
+     <br/>
+     001B:0041C076 xrEngine.exe, Feel::Touch::operator=()
+     <br/>
+     001B:0041C053 xrEngine.exe, Feel::Touch::Touch()
+     <br/>
+     <br/>
+     Во время перестрелки на площади рядом с фонтаном.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (137,940 bytes)
+     <span class="italic">10 июля 2008 10:12</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080710-100232.zip (765,980 bytes)
+     <span class="italic">10 июля 2008 10:21</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080710-145545.zip (604,796 bytes)
+     <span class="italic">10 июля 2008 15:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080711-132829.zip (771,299 bytes)
+     <span class="italic">11 июля 2008 13:48</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20274" name="20274">
+     <td class="bugnote-public">
+      <span class="small">(0020274)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">10 июля 2008 15:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">выпало на новых релизных бинах
+      <br/>
+      добавил лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20276" name="20276">
+     <td class="bugnote-public">
+      <span class="small">(0020276)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">10 июля 2008 15:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вы не могли бы то же самое сделать на микседовых бинах?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20478" name="20478">
+     <td class="bugnote-public">
+      <span class="small">(0020478)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">11 июля 2008 13:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился в начале Лиманска, при первой же перестрелке с бандюками</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20995" name="20995">
+     <td class="bugnote-public">
+      <span class="small">(0020995)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">17 июля 2008 19:51</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в следующих бинах (я надеюсь)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21155" name="21155">
+     <td class="bugnote-public">
+      <span class="small">(0021155)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 июля 2008 09:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:20</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk  Новые бинарники E:\priquel\sources\engine\xrGame\aimers_base.cpp  73 =&gt; Limansk  Новые бинарники E:\\priquel\\sources\\engine\\xrGame\\aimers_base.cpp  73</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:20</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:21</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080710-100232.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 15:09</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20274</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 15:10</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080710-145545.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 15:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20276</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 13:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080711-132829.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 13:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20478</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 14:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 17:23</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 19:51</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 19:51</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 19:51</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 20995</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 июля 2008 10:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 09:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 21155</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 09:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 09:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk  Новые бинарники E:\priquel\sources\engine\xrGame\aimers_base.cpp  73 =&gt; Limansk  Новые бинарники E:\\priquel\\sources\\engine\\xrGame\\aimers_base.cpp  73</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 09:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

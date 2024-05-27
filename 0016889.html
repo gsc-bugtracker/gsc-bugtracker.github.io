@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016889: Darkvalley 12-06-2008 ! error in stalker with visual actors\stalker_merc\stalker_merc_2 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016888.html">
+      &lt; Прошлое обращение (0016888)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016890.html">
+      Следующее обращение (0016890) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016889</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>12 июня 2008 12:56</td>
+    <td>16 июля 2008 10:59</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016889: Darkvalley 12-06-2008 ! error in stalker with visual actors\stalker_merc\stalker_merc_2</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] not on place[sim_default_killer_223658]
+     <br/>
+     ! error in stalker with visual actors\stalker_merc\stalker_merc_2
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     <br/>
+     001B:026E91DE xrGame.dll, CActionPlanner&lt;CAI_Stalker,1,CActionBase&lt;CAI_Stalker&gt;,CPropertyEvaluator&lt;CAI_Stalker&gt;,CActionBase&lt;CAI_Stalker&gt; *,CPropertyEvaluator&lt;CAI_Stalker&gt; *&gt;::finalize(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 121
+     <br/>
+     001B:028055D7 xrGame.dll, smart_cover::animation_planner::finalize(), e:\priquel\sources\engine\xrgame\smart_cover_animation_planner.cpp, 107
+     <br/>
+     001B:02800C61 xrGame.dll, stalker_movement_manager_smart_cover::on_smart_cover_exit(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 260
+     <br/>
+     001B:02804D76 xrGame.dll, stalker_movement_manager_smart_cover::non_animated_change_loophole(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 439
+     <br/>
+     001B:02806837 xrGame.dll, smart_cover::exit::execute(), e:\priquel\sources\engine\xrgame\smart_cover_planner_actions.cpp, 226
+     <br/>
+     001B:02804E09 xrGame.dll, smart_cover::animation_selector::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 56
+     <br/>
+     001B:02801137 xrGame.dll, stalker_movement_manager_smart_cover::on_animation_end(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 149
+     <br/>
+     001B:027E79C1 xrGame.dll, CStalkerAnimationManager::play_delayed_callbacks(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 31
+     <br/>
+     001B:027E79FB xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 222
+     <br/>
+     001B:027E7A90 xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 244
+     <br/>
+     001B:027DFAD0 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 957
+     <br/>
+     001B:027493DA xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+     <br/>
+     001B:0274CA45 xrGame.dll, CCustomMonster::UpdateCL(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 518
+     <br/>
+     001B:027E24C2 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 698
+     <br/>
+     001B:0041D412 xrEngine.exe, stlp_std::__introsort_loop&lt;COMotion * *,COMotion *,int,bool (__cdecl*)(COMotion *,COMotion *)&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algo.c, 932
+     <br/>
+     001B:0041D3E7 xrEngine.exe, stlp_std::__introsort_loop&lt;COMotion * *,COMotion *,int,bool (__cdecl*)(COMotion *,COMotion *)&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algo.c, 932
+     <br/>
+     001B:0041D966 xrEngine.exe, stlp_std::vector&lt;Feel::Touch::DenyTouch,xalloc&lt;Feel::Touch::DenyTouch&gt; &gt;::vector&lt;Feel::Touch::DenyTouch,xalloc&lt;Feel::Touch::DenyTouch&gt; &gt;(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 225
+     <br/>
+     001B:0041A491 xrEngine.exe, _matrix&lt;float&gt;::build_camera_dir(), e:\priquel\sources\engine\xrcore\_matrix.h, 473
+     <br/>
+     001B:028B1805 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 539
+     <br/>
+     001B:028B181B xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 547
+     <br/>
+     001B:006539E8 xrCore.dll, CTimer::GetElapsed_ms(), e:\priquel\sources\engine\xrcore\ftimer.h, 113
+     <br/>
+     001B:00497078 xrEngine.exe, _except_handler3()
+     <br/>
+     001B:0040B893 xrEngine.exe, stlp_std::vector&lt;CPS_Instance *,xalloc&lt;CPS_Instance *&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 175
+     <br/>
+     <br/>
+     При подходе Свиноферме с Наемниками(принести ПДА коменды)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080612-123942.zip (4,400,796 bytes)
+     <span class="italic">12 июня 2008 12:56</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20782" name="20782">
+     <td class="bugnote-public">
+      <span class="small">(0020782)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">16 июля 2008 09:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлено</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080612-123942.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Darkvalley 12-06-2008 ! error in stalker with visual actors\stalker_merc\stalker_merc_2 =&gt; Darkvalley 12-06-2008 ! error in stalker with visual actors\\stalker_merc\\stalker_merc_2</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 09:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20782</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 09:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Darkvalley 12-06-2008 ! error in stalker with visual actors\stalker_merc\stalker_merc_2 =&gt; Darkvalley 12-06-2008 ! error in stalker with visual actors\\stalker_merc\\stalker_merc_2</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 09:53</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 10:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016627: Build 02.06.08 Garbage - CUIActorMenu::SendEvent_Item_Drop - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016626.html">
+      &lt; Прошлое обращение (0016626)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016628.html">
+      Следующее обращение (0016628) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016627</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>03 июня 2008 13:25</td>
+    <td>08 июля 2008 12:32</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016627: Build 02.06.08 Garbage - CUIActorMenu::SendEvent_Item_Drop</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">584] FATAL ERROR
+     <br/>
+     00041913	156.07264709	[584]
+     <br/>
+     00041914	156.07266235	[584]
+     <br/>
+     00041915	156.07269287	[584]
+     <br/>
+     00041916	156.07273865	[584] [error]Expression    : assertion failed
+     <br/>
+     00041917	156.07276917	[584]
+     <br/>
+     00041918	156.07279968	[584] [error]Function      : CUIActorMenu::SendEvent_Item_Drop
+     <br/>
+     00041919	156.07286072	[584]
+     <br/>
+     00041920	156.07287598	[584] [error]File          : E:\priquel\sources\engine\xrGame\ui\UIActorMenuInventory.cpp
+     <br/>
+     00041921	156.07293701	[584]
+     <br/>
+     00041922	156.07296753	[584] [error]Line          : 117
+     <br/>
+     00041923	156.07299805	[584]
+     <br/>
+     00041924	156.07304382	[584] [error]Description   : pItem-&gt;parent_id()==recipient
+     <br/>
+     00041925	156.07307434	[584]
+     <br/>
+     <br/>
+     Пришел с DarkValley, стоял перед погребом, выбрасывал вещи из инвентаря.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGASIX.LOG.bz2 (358,943 bytes)
+     <span class="italic">03 июня 2008 13:25</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>дубликат</nobr></td>
+        <td><a href="0016430.html">
+          0016430
+         </a></td>
+        <td><a title="исправлен">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Sea</nobr></td>
+        <td>ESCAPE * xrSheduler: too much time consumed by object [alife_simulator] (22ms)</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18532" name="18532">
+     <td class="bugnote-public">
+      <span class="small">(0018532)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">20 июня 2008 12:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">писать всё в баг 16430.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19961" name="19961">
+     <td class="bugnote-public">
+      <span class="small">(0019961)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">08 июля 2008 12:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 13:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 13:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 13:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: MEGASIX.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 17:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 17:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 17:44</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 17:52</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">дубликат 0016430</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 12:48</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 18532</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 18:40</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">ID дубликата</td>
+     <td class="small-caption">0 =&gt; 16430</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 18:40</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 18:40</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 12:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 19961</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 12:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 12:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 12:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

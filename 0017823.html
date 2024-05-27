@@ -1,0 +1,608 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017823: crash во время выброса - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017822.html">
+      &lt; Прошлое обращение (0017822)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017824.html">
+      Следующее обращение (0017824) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017823</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>09 июля 2008 13:07</td>
+    <td>16 июля 2008 18:49</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017823: crash во время выброса</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">m_crow24833 Crashed...
+     <br/>
+     mass	center	in set transform
+     <br/>
+     <br/>
+     pos: 1.869732e+001,3.435974e+010,-1.678993e+002, seems to be invalid
+     <br/>
+     Level box: -3.700000e+002,-4.774926e+001,-4.220000e+002-3.700000e+002,7.115803e+001,3.240738e+002,
+     <br/>
+     Object: m_crow24833
+     <br/>
+     Visual: monsters\crow\crow
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CPHElement::SetTransform
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\PHElement.cpp
+     <br/>
+     [error]Line          : 237
+     <br/>
+     [error]Description   : 0
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007AD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007AD997 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0331C5B5 xrGame.dll, CPHElement::SetTransform(), e:\priquel\sources\engine\xrgame\phelement.cpp, 237
+     <br/>
+     001B:0331C1F0 xrGame.dll, CPHElement::build(), e:\priquel\sources\engine\xrgame\phelement.cpp, 117
+     <br/>
+     001B:007B1CE3 xrCore.dll, memory_monitor::monitor_free(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 106
+     <br/>
+     001B:007B9119 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:007B1CE3 xrCore.dll, memory_monitor::monitor_free(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 106
+     <br/>
+     001B:007B9119 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:0352BC46 xrGame.dll, _strlwr()
+     <br/>
+     001B:034E51E8 xrGame.dll, _strlwr()
+     <br/>
+     001B:0051A7CF xrEngine.exe, ICClose()
+     <br/>
+     001B:0040F5F3 xrEngine.exe, operator new()
+     <br/>
+     001B:00518852 xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080709-125622.zip (2,005,961 bytes)
+     <span class="italic">09 июля 2008 13:07</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGASIX.rar (2,758,075 bytes)
+     <span class="italic">10 июля 2008 14:17</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     162100.zip (5,903,841 bytes)
+     <span class="italic">15 июля 2008 20:22</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0018044.html">
+          0018044
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Slipch</nobr></td>
+        <td>Current_build 15.07.08 Garbage E:\priquel\sources\engine\xrGame\PhysicsShell.cpp 275</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20200" name="20200">
+     <td class="bugnote-public">
+      <span class="small">(0020200)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">версию в свн надо писать!!!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20201" name="20201">
+     <td class="bugnote-public">
+      <span class="small">(0020201)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">и название уровня</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20202" name="20202">
+     <td class="bugnote-public">
+      <span class="small">(0020202)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">09 июля 2008 18:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">версия бинарников 29963</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20203" name="20203">
+     <td class="bugnote-public">
+      <span class="small">(0020203)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">09 июля 2008 18:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">левел не помню, потому как прыгал с одного на другой... но в данном случае название уровня не важно</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20204" name="20204">
+     <td class="bugnote-public">
+      <span class="small">(0020204)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дамп этот посмотреть невозможно -
+      <br/>
+      неизвесно где взять пдб соответсявующую
+      <br/>
+      <br/>
+      а так вообще похоже - засунули ворону кудато в ж
+      <br/>
+      она умерла во время выброса и вылетела</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20205" name="20205">
+     <td class="bugnote-public">
+      <span class="small">(0020205)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетела у меня потомучто ее позицию никто больше не проверяет</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20206" name="20206">
+     <td class="bugnote-public">
+      <span class="small">(0020206)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">29963 - последние я с ними проверял - дамп не открывается</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20207" name="20207">
+     <td class="bugnote-public">
+      <span class="small">(0020207)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это ты решил, что название уровня неважно ?
+      <br/>
+      как это повторять?
+      <br/>
+      мне бы пожалуй пригодилось,
+      <br/>
+      а так - будь добрым повтори и зделай дамп еще один!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20209" name="20209">
+     <td class="bugnote-public">
+      <span class="small">(0020209)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">09 июля 2008 18:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ревизия 29921 - вчерашняя</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20255" name="20255">
+     <td class="bugnote-public">
+      <span class="small">(0020255)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">10 июля 2008 14:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился.
+      <br/>
+      Во время Выброса.
+      <br/>
+      Дампа нет.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20760" name="20760">
+     <td class="bugnote-public">
+      <span class="small">(0020760)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">15 июля 2008 20:24</span>
+      <br/>
+      <span class="small">отредактирован:  15 июля 2008 20:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился во время выброса, дамп в аттаче. Произошло на Гарбидже, в момент когда пошел красный пост-эффект.
+      <br/>
+      Current build 15.07.08
+      <br/>
+      <br/>
+      отредактирован: 15.07.08 20:25</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 13:07</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 13:07</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080709-125622.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 13:16</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:15</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20200</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:17</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20201</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:18</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20202</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:18</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20203</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:21</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20204</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:22</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20205</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:23</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20206</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 18:27</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20207</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 18:33</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20209</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 14:16</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 20255</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 14:17</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: MEGASIX.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:16</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0018044</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:22</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: 162100.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:24</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 20760</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:25</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий отредактирован: 20760</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 18:49</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 18:49</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016863: Red_forest section 'ph_oscillate': wrong arguments order in call to cfg_get_string - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016862.html">
+      &lt; Прошлое обращение (0016862)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016864.html">
+      Следующее обращение (0016864) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016863</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>попыток не было</td>
+    <td>11 июня 2008 18:14</td>
+    <td>19 августа 2008 10:09</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r27672</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016863: Red_forest section 'ph_oscillate': wrong arguments order in call to cfg_get_string</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] ERROR: section 'ph_oscillate': wrong arguments order in call to cfg_get_string
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\utils.script(161) : cfg_get_string
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\ph_oscillate.script(66) : set_scheme
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(403) : activate_by_section
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(1491) : initialize_obj
+     <br/>
+     ! [LUA]  7 : [Lua] gamedata\scripts\bind_physic_object.script(66) :
+     <br/>
+     <br/>
+     скрипты выпали когда разговаривал с лесником второй раз(после милитари, о компасе)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_dimon.rar (342,054 bytes)
+     <span class="italic">11 июня 2008 18:14</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     r.sav.bz2 (830,319 bytes)
+     <span class="italic">12 июня 2008 09:52</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (4,136,891 bytes)
+     <span class="italic">12 июня 2008 09:52</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (29,279 bytes)
+     <span class="italic">12 июня 2008 10:25</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila_06-12-08_10-13-50.mdmp.bz2 (19,950 bytes)
+     <span class="italic">12 июня 2008 10:25</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     red1.sav.bz2 (843,677 bytes)
+     <span class="italic">12 июня 2008 10:25</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17955" name="17955">
+     <td class="bugnote-public">
+      <span class="small">(0017955)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">11 июня 2008 19:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">чего то там с раскачиванием лампочек</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17964" name="17964">
+     <td class="bugnote-public">
+      <span class="small">(0017964)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">12 июня 2008 09:51</span>
+      <br/>
+      <span class="small">отредактирован:  12 июня 2008 10:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Загрузка сейва
+      <br/>
+      <br/>
+      bild 12.06.08 red_forest
+      <br/>
+      <br/>
+      [LUA] ERROR: section 'ph_oscillate': wrong arguments order in call to cfg_get_string
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\utils.script(161) : cfg_get_string
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\ph_oscillate.script(66) : set_scheme
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(403) : activate_by_section
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(1491) : initialize_obj
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\bind_physic_object.script(66) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\utils.script(161) : cfg_get_string
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\ph_oscillate.script(66) : set_scheme
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(403) : activate_by_section
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(1491) : initialize_obj
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\bind_physic_object.script(66) :
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0066A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+      <br/>
+      <br/>
+      отредактирован: 12.06.08 10:08
+      <br/>
+      <br/>
+      отредактирован: 12.06.08 10:23</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17970" name="17970">
+     <td class="bugnote-public">
+      <span class="small">(0017970)</span>
+      <br/>
+      zexell
+      <br/>
+      <span class="small">12 июня 2008 10:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">хз, это не ко мне.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17972" name="17972">
+     <td class="bugnote-public">
+      <span class="small">(0017972)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">12 июня 2008 10:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Загрузка сейва
+      <br/>
+      <br/>
+      bild 12.06.08 red_forest
+      <br/>
+      <br/>
+      LUA] ERROR: section 'walker@go_tonnel2': wrong arguments order in call to cfg_get_string
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\utils.script(161) : cfg_get_string
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_walker.script(107) : set_scheme
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(403) : activate_by_section
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(1491) : initialize_obj
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\smart_terrain.script(1000) : setup_gulag_and_logic_on_spawn
+      <br/>
+      ! [LUA]  8 : [Lua] gamedata\scripts\xr_motivator.script(150) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\utils.script(161) : cfg_get_string
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_walker.script(107) : set_scheme
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\xr_logic.script(403) : activate_by_section
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(1491) : initialize_obj
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\smart_terrain.script(1000) : setup_gulag_and_logic_on_spawn
+      <br/>
+      ! [LUA]  8 : [Lua] gamedata\scripts\xr_motivator.script(150) :
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0066A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17976" name="17976">
+     <td class="bugnote-public">
+      <span class="small">(0017976)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">12 июня 2008 10:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">И не ко мне</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17977" name="17977">
+     <td class="bugnote-public">
+      <span class="small">(0017977)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">12 июня 2008 10:55</span>
+      <br/>
+      <span class="small">отредактирован:  12 июня 2008 11:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">light_abajour_2_lowrez_0001 в custom data этого объекта написана фигня, и кто ее туда написал???
+      <br/>
+      там коментарии не были закоменчены, уже исправил
+      <br/>
+      <br/>
+      отредактирован: 12.06.08 11:16</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17981" name="17981">
+     <td class="bugnote-public">
+      <span class="small">(0017981)</span>
+      <br/>
+      zexell
+      <br/>
+      <span class="small">12 июня 2008 11:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[collide]
+      <br/>
+      ignore_static
+      <br/>
+      [logic]
+      <br/>
+      active = ph_oscillate
+      <br/>
+      [ph_oscillate]
+      <br/>
+      joint = provod
+      <br/>
+      force = 1.5
+      <br/>
+      period = 500
+      <br/>
+      Где фигня?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17982" name="17982">
+     <td class="bugnote-public">
+      <span class="small">(0017982)</span>
+      <br/>
+      zexell
+      <br/>
+      <span class="small">12 июня 2008 11:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Собственно, если не грузится сейв то явно не к художникам.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17984" name="17984">
+     <td class="bugnote-public">
+      <span class="small">(0017984)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">12 июня 2008 11:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">кто прописал тот и виноват</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17985" name="17985">
+     <td class="bugnote-public">
+      <span class="small">(0017985)</span>
+      <br/>
+      zexell
+      <br/>
+      <span class="small">12 июня 2008 11:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">хорошая логика :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17988" name="17988">
+     <td class="bugnote-public">
+      <span class="small">(0017988)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">12 июня 2008 12:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на всякий случай сообщаю коментарии в ltx делаются так:
+      <br/>
+      <br/>
+      [logic]
+      <br/>
+      active = ph_oscillate
+      <br/>
+      [ph_oscillate]
+      <br/>
+      joint = provod  ;коментарий
+      <br/>
+      force = 1.5     ;коментарий
+      <br/>
+      period = 500    ;коментарий</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17990" name="17990">
+     <td class="bugnote-public">
+      <span class="small">(0017990)</span>
+      <br/>
+      zexell
+      <br/>
+      <span class="small">12 июня 2008 12:03</span>
+      <br/>
+      <span class="small">отредактирован:  12 июня 2008 12:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ну а там как? Всё так-же.
+      <br/>
+      <br/>
+      отредактирован: 12.06.08 12:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18005" name="18005">
+     <td class="bugnote-public">
+      <span class="small">(0018005)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">12 июня 2008 14:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">а там было так
+      <br/>
+      <br/>
+      [logic]
+      <br/>
+      active = ph_oscillate
+      <br/>
+      [ph_oscillate]
+      <br/>
+      joint = provod \\коментарий
+      <br/>
+      force = 1.5    \\коментарий
+      <br/>
+      period = 500   \\коментарий</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 18:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 18:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_dimon.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 19:47</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Aidhz =&gt; zexell</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 19:47</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 17955</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 09:51</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17964</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 09:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: r.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 09:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:08</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 17964</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:14</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий добавлен: 17970</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:14</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">zexell =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 17964</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:24</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17972</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:25</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:25</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila_06-12-08_10-13-50.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:25</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: red1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 17976</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 10:53</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Aidhz =&gt; zexell</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 10:55</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 17977</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 11:09</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий добавлен: 17981</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 11:10</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий добавлен: 17982</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 11:10</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">zexell =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 11:16</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий отредактирован: 17977</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 11:17</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 17984</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 11:17</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 11:17</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 11:24</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий добавлен: 17985</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:01</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 17988</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 12:03</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий добавлен: 17990</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 июня 2008 12:04</td>
+     <td class="small-caption">zexell</td>
+     <td class="small-caption">Комментарий отредактирован: 17990</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 июня 2008 14:34</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 18005</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 10:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 10:09</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

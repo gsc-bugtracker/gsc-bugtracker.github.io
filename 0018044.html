@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018044: Current_build 15.07.08 Garbage E:\priquel\sources\engine\xrGame\PhysicsShell.cpp 275 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018043.html">
+      &lt; Прошлое обращение (0018043)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018045.html">
+      Следующее обращение (0018045) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018044</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>15 июля 2008 16:44</td>
+    <td>17 июля 2008 15:04</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Redstain</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018044: Current_build 15.07.08 Garbage E:\priquel\sources\engine\xrGame\PhysicsShell.cpp 275</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">m_crow24832 Crashed...
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : valid_pos( O.XFORM().c )
+     <br/>
+     [error]Function      : phys_shell_verify_object_model
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\PhysicsShell.cpp
+     <br/>
+     [error]Line          : 275
+     <br/>
+     <br/>
+     create physics shell
+     <br/>
+     pos: ( -119.030563, -166153499473114480000000000000000000.000000, 7.485887 ) , seems to be invalid
+     <br/>
+     Level box:
+     <br/>
+     object dump:
+     <br/>
+     object name: m_crow24832, section name: m_crow, visual name: monsters\crow\crow
+     <br/>
+     net_ID :24832, bActiveCounter :1, bEnabled :true, bVisible :true, bDestroy :false,
+     <br/>
+     net_Local true, net_Ready :true, net_SV_Update :false, crow :true, bPreDestroy : false
+     <br/>
+     dbg_update_cl: 2147483647, dwFrame_UpdateCL: 1600415090, dwFrame_AsCrow :103172, Device.dwFrame :103172, Device.dwTimeGlobal: 1539428
+     <br/>
+     <br/>
+     XFORM:
+     <br/>
+     0.553344,-0.225979,0.801713,0.000000
+     <br/>
+     0.692908,0.659040,-0.292482,0.000000
+     <br/>
+     -0.462266,0.717356,0.521258,0.000000
+     <br/>
+     -119.030563,-166153499473114480000000000000000000.000000,7.485887,1.000000
+     <br/>
+     <br/>
+     position stack :
+     <br/>
+     0, time: 1539242 pos: ( -118.431976, -166153499473114480000000000000000000.000000, 6.873657 )
+     <br/>
+     1, time: 1539288 pos: ( -118.574234, -166153499473114480000000000000000000.000000, 7.003039 )
+     <br/>
+     2, time: 1539335 pos: ( -118.711838, -166153499473114480000000000000000000.000000, 7.137356 )
+     <br/>
+     3, time: 1539401 pos: ( -118.847504, -166153499473114480000000000000000000.000000, 7.279468 )
+     <br/>
+     ,
+     <br/>
+     visual box:
+     <br/>
+     visual center: ( -118.963524, -166153499473114480000000000000000000.000000, 7.455629 )
+     <br/>
+     visual radius: 0.851013
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:008FD786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:008FE371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     001B:03C97DFB xrGame.dll, phys_shell_verify_object_model(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 275
+     <br/>
+     001B:03C97E8C xrGame.dll, P_build_Shell(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 52
+     <br/>
+     001B:03669C03 xrGame.dll, CAI_Crow::CreateSkeleton(), e:\priquel\sources\engine\xrgame\ai\crow\ai_crow.cpp, 420
+     <br/>
+     001B:0366BCBD xrGame.dll, CAI_Crow::Die(), e:\priquel\sources\engine\xrgame\ai\crow\ai_crow.cpp, 258
+     <br/>
+     001B:039A33D3 xrGame.dll, CEntity::OnEvent(), e:\priquel\sources\engine\xrgame\entity.cpp, 71
+     <br/>
+     001B:0392E19D xrGame.dll, CLevel::cl_Process_Event(), e:\priquel\sources\engine\xrgame\level.cpp, 378
+     <br/>
+     001B:03934683 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 436
+     <br/>
+     001B:039348FB xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 537
+     <br/>
+     001B:008D7958 xrCore.dll, CTimer::GetElapsed_ms(), e:\priquel\sources\engine\xrcore\ftimer.h, 113
+     <br/>
+     001B:00421E4D xrEngine.exe, InitLauncher(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1179
+     <br/>
+     001B:00498603 xrEngine.exe, CDemoRecord::IR_OnMouseHold()
+     <br/>
+     001B:004AC779 xrEngine.exe, CTextConsole::CreateLogWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 106
+     <br/>
+     001B:004ABF38 xrEngine.exe, CTheoraSurface::Load()
+     <br/>
+     <br/>
+     Во время выброса на Свалке, пряталась в большом ангаре. Креш случился когда пошел красный пост-эффект.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080715-162100.zip (5,903,681 bytes)
+     <span class="italic">15 июля 2008 16:44</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#cceedd">
+        <td><nobr>дубликат</nobr></td>
+        <td><a href="0017823.html">
+          0017823
+         </a></td>
+        <td><a title="исправлен">
+          <u>
+           решен
+          </u>
+         </a></td>
+        <td><nobr>Slipch</nobr></td>
+        <td>crash во время выброса</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20759" name="20759">
+     <td class="bugnote-public">
+      <span class="small">(0020759)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">15 июля 2008 20:19</span>
+      <br/>
+      <span class="small">отредактирован:  15 июля 2008 20:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">обратите внимание - это дубликат - открывать его снова ненадо
+      <br/>
+      просто приетачте дамп к 17823
+      <br/>
+      дампы и коментарии к этому глюку очень приветствуются
+      <br/>
+      зараннее благодарен
+      <br/>
+      <br/>
+      отредактирован: 15.07.08 20:20</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20877" name="20877">
+     <td class="bugnote-public">
+      <span class="small">(0020877)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">16 июля 2008 17:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дубликат - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 16:44</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 16:44</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 16:44</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080715-162100.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 18:23</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 18:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 18:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:16</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">дубликат 0017823</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:16</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">ID дубликата</td>
+     <td class="small-caption">0 =&gt; 17823</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:16</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:16</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:19</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 20759</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:20</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий отредактирован: 20759</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 15:07</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 17:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 20877</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 17:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 17:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Current_build 15.07.08 Garbage E:\priquel\sources\engine\xrGame\PhysicsShell.cpp 275 =&gt; Current_build 15.07.08 Garbage E:\\priquel\\sources\\engine\\xrGame\\PhysicsShell.cpp 275</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 17:58</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 15:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

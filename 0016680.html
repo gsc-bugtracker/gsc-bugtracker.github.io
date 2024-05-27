@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016680: Build 02.06.08 Marsh  E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016679.html">
+      &lt; Прошлое обращение (0016679)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016681.html">
+      Следующее обращение (0016681) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016680</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>попыток не было</td>
+    <td>04 июня 2008 12:17</td>
+    <td>17 июля 2008 10:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Nitro</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016680: Build 02.06.08 Marsh  E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     mar_space_restrictor_tut_tower
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     mar_smart_terrain_6_11_sr_defence
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     mar_space_restrictor_tut_tower
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : vertex || show_restrictions(m_object)
+     <br/>
+     [error]Function      : CPatrolPathManager::select_point
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+     <br/>
+     [error]Line          : 155
+     <br/>
+     [error]Description   : any vertex in patrol path [mar_smart_terrain_8_11_walker_1_walk] in inaccessible for object [sim_default_csky_023346]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:10029B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:10029DC2 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:052CF0B0 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+     <br/>
+     001B:052BB459 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+     <br/>
+     001B:052AADC0 xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 223
+     <br/>
+     001B:0577D600 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 571
+     <br/>
+     001B:0577D55E xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 555
+     <br/>
+     001B:05756FBE xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 75
+     <br/>
+     001B:056FBBB0 xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 927
+     <br/>
+     001B:056FB2E3 xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+     <br/>
+     001B:00427451 xrEngine.exe, stlp_std::reverse_iterator&lt;CCF_Shape::shape_def *&gt;::reverse_iterator&lt;CCF_Shape::shape_def *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 67
+     <br/>
+     001B:00427B7F xrEngine.exe, stlp_std::_Param_Construct&lt;CCF_Shape::shape_def,CCF_Shape::shape_def&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_construct.h, 124
+     <br/>
+     001B:05B4F2C5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:00498BE3 xrEngine.exe, CGameMtlLibrary::GetMaterialIdx(), e:\priquel\sources\engine\xrengine\gamemtllib.h, 311
+     <br/>
+     001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+     <br/>
+     001B:004ABAA9 xrEngine.exe, xr_new&lt;CGameFont,char const [12],enum CGameFont::&lt;unnamed-tag&gt; &gt;()
+     <br/>
+     001B:004AB228 xrEngine.exe, CConsole::Execute(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 446
+     <br/>
+     001B:71073D7F dxgi.dll
+     <br/>
+     001B:004AB1C4 xrEngine.exe, CConsole::ExecuteCommand(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 347
+     <br/>
+     001B:004AA1D6 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 313
+     <br/>
+     001B:004AADF2 xrEngine.exe, CConsole::OnRender(), e:\priquel\sources\engine\xrengine\xr_ioconsole.cpp, 251
+     <br/>
+     001B:770B5C34 ntdll.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     <br/>
+     <br/>
+     Вылет на марше после загрузки сейва.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     3.sav.bz2 (851,549 bytes)
+     <span class="italic">04 июня 2008 12:17</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-120022.zip (4,834,015 bytes)
+     <span class="italic">04 июня 2008 12:17</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080605-101740.zip (4,849,605 bytes)
+     <span class="italic">05 июня 2008 10:31</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     3.sav.bz2 (851,549 bytes)
+     <span class="italic">05 июня 2008 10:32</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17557" name="17557">
+     <td class="bugnote-public">
+      <span class="small">(0017557)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">05 июня 2008 10:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">build: 02.06.08
+      <br/>
+      Повторился на янтаре, после загрузки сейва.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17806" name="17806">
+     <td class="bugnote-public">
+      <span class="small">(0017806)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">10 июня 2008 15:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторялось?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:17</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:17</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:17</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: 3.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:17</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-120022.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 15:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 15:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 15:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 10:31</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 17557</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 10:31</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080605-101740.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 10:32</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: 3.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 15:58</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 17806</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 15:58</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 15:58</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 02.06.08 Marsh  E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp =&gt; Build 02.06.08 Marsh  E:\\priquel\\sources\\engine\\xrGame\\patrol_path_manager.cpp</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 15:58</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 10:00</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 10:00</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 02.06.08 Marsh  E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp =&gt; Build 02.06.08 Marsh  E:\\priquel\\sources\\engine\\xrGame\\patrol_path_manager.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 10:00</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 10:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

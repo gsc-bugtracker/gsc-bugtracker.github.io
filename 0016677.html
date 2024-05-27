@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016677: Build 02.06.08  Garbage  esc_dogs_lair_guard_6_3 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016676.html">
+      &lt; Прошлое обращение (0016676)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016678.html">
+      Следующее обращение (0016678) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016677</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>04 июня 2008 11:58</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016677: Build 02.06.08  Garbage  esc_dogs_lair_guard_6_3</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack traceback:
+     <br/>
+     gamedata\scripts\_g.script:1230: in function 'callstack'
+     <br/>
+     gamedata\scripts\sim_board.script:292: in function 'remove_squad'
+     <br/>
+     gamedata\scripts\sim_squad_generic.script:319: in function 'on_npc_death'
+     <br/>
+     gamedata\scripts\sim_squad_generic.script:270: in function 'remove_npc'
+     <br/>
+     gamedata\scripts\sim_combat.script:268: in function 'update'
+     <br/>
+     gamedata\scripts\smart_terrain.script:942: in function &lt;gamedata\scripts\smart_terrain.script:939&gt;
+     <br/>
+     [LUA] sim_combat:(69):Sim_Combat[esc_smart_terrain_6_6]: unregister squad esc_dogs_lair_guard_6_3
+     <br/>
+     [LUA] sim_board:(329):assigned squad esc_dogs_lair_guard_6_3 to smart [nil].
+     <br/>
+     [LUA] sim_faction:(461):unregister faction squad esc_dogs_lair_guard_6_3
+     <br/>
+     [LUA] sim_faction_brain_mutant:(28):faction [monster] brain update
+     <br/>
+     [LUA] sim_faction:(399):*** for faction monster distance_table
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [Lua] gamedata\scripts\sim_faction.script(423) :
+     <br/>
+     ! [LUA]  2 : [C  ] sort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\sim_faction.script(423) : calculate_squad_tasks
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\sim_faction_brain_mutant.script(40) : faction_brain_update
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\sim_faction.script(306) : faction_brain_update
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\sim_board.script(322) : remove_squad
+     <br/>
+     ! [LUA]  7 : [Lua] gamedata\scripts\sim_squad_generic.script(319) : on_npc_death
+     <br/>
+     ! [LUA]  8 : [Lua] gamedata\scripts\sim_squad_generic.script(270) : remove_npc
+     <br/>
+     ! [LUA]  9 : [Lua] gamedata\scripts\sim_combat.script(268) : update
+     <br/>
+     ! [LUA] 10 : [Lua] gamedata\scripts\smart_terrain.script(942) :
+     <br/>
+     ! [LUA] gamedata\scripts\sim_faction.script:423: attempt to index field '?' (a nil value)
+     <br/>
+     <br/>
+     После получения инфы у Васяна при подходе к переходу на Темную долину валиться в Хаосном порядке все время и не дает перейти на Темную долину.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (128,078 bytes)
+     <span class="italic">04 июня 2008 11:58</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     8.sav.bz2 (919,890 bytes)
+     <span class="italic">04 июня 2008 11:59</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     9.sav.bz2 (936,301 bytes)
+     <span class="italic">04 июня 2008 11:59</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     agroprom_ander2.sav.bz2 (961,275 bytes)
+     <span class="italic">04 июня 2008 13:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_starodub lyudmila.rar (865,523 bytes)
+     <span class="italic">04 июня 2008 13:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg1.rar (821,174 bytes)
+     <span class="italic">17 июня 2008 20:42</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     garbage.rar (1,002,630 bytes)
+     <span class="italic">18 июня 2008 18:16</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17525" name="17525">
+     <td class="bugnote-public">
+      <span class="small">(0017525)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 июня 2008 13:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] sim_faction:(399):*** for faction monster distance_table
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\sim_faction.script(423) :
+      <br/>
+      ! [LUA]  2 : [C  ] sort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sim_faction.script(423) : calculate_squad_tasks
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sim_faction_brain_mutant.script(40) : faction_brain_update
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\sim_faction.script(306) : faction_brain_update
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\sim_board.script(440) : enter_smart
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\sim_squad_generic.script(1234) : update
+      <br/>
+      ! [LUA]  8 : [Lua] gamedata\scripts\sim_squad_generic.script(380) : update
+      <br/>
+      ! [LUA]  9 : [Lua] gamedata\scripts\sim_squad_scripted.script(183) : update
+      <br/>
+      ! [LUA] 10 : [Lua] gamedata\scripts\sim_faction.script(232) :
+      <br/>
+      ! [LUA] gamedata\scripts\sim_faction.script:423: attempt to index field '?' (a nil value)
+      <br/>
+      * xrSheduler: too much time consumed by object [alife_simulator] (67ms)
+      <br/>
+      * xrSheduler: too much time consumed by object [alife_simulator] (26ms)
+      <br/>
+      * xrSheduler: too much time consumed by object [alife_simulator] (25ms)
+      <br/>
+      <br/>
+      агропром_андер..</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18277" name="18277">
+     <td class="bugnote-public">
+      <span class="small">(0018277)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">17 июня 2008 20:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] sim_faction_brain_mutant:(28):faction [monster] brain update
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\sim_faction.script(423) :
+      <br/>
+      ! [LUA]  2 : [C  ] sort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sim_faction.script(423) : calculate_squad_tasks
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sim_faction_brain_mutant.script(40) : faction_brain_update
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\sim_faction.script(306) : faction_brain_update
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\sim_board.script(441) : enter_smart
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\sim_squad_generic.script(1195) : update
+      <br/>
+      ! [LUA]  8 : [Lua] gamedata\scripts\sim_squad_generic.script(380) : update
+      <br/>
+      ! [LUA]  9 : [Lua] gamedata\scripts\sim_squad_scripted.script(183) : update
+      <br/>
+      ! [LUA] 10 : [Lua] gamedata\scripts\sim_faction.script(232) :
+      <br/>
+      ! [LUA] gamedata\scripts\sim_faction.script:423: attempt to index field '?' (a nil value)
+      <br/>
+      <br/>
+      Escape curent_build за 16.06.08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18379" name="18379">
+     <td class="bugnote-public">
+      <span class="small">(0018379)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">18 июня 2008 18:20</span>
+      <br/>
+      <span class="small">отредактирован:  18 июня 2008 18:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Garbage. Выполнил квест "Принести Напру 2 тысячи" (т.е. попал в засаду), убил Напра, забрал ПДА, возвращался на базу диггеров - выпал скрипт-креш. Current build за 18.06.08, миксовые бины. Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=12158&amp;type=bug
+      <br/>
+      <br/>
+      stack traceback:
+      <br/>
+      gamedata\scripts\_g.script:1231: in function 'callstack'
+      <br/>
+      gamedata\scripts\sim_board.script:293: in function 'remove_squad'
+      <br/>
+      gamedata\scripts\sim_squad_generic.script:319: in function 'on_npc_death'
+      <br/>
+      gamedata\scripts\sim_squad_generic.script:270: in function 'remove_npc'
+      <br/>
+      gamedata\scripts\sim_combat.script:274: in function 'update'
+      <br/>
+      gamedata\scripts\smart_terrain.script:958: in function &lt;gamedata\scripts\smart_terrain.script:955&gt;
+      <br/>
+      [LUA] sim_combat:(75):Sim_Combat[esc_smart_terrain_8_10]: unregister squad esc_smart_terrain_6_8_stalker_patrol
+      <br/>
+      [LUA] sim_board:(330):assigned squad esc_smart_terrain_6_8_stalker_patrol to smart [nil].
+      <br/>
+      [LUA] sim_faction:(461):unregister faction squad esc_smart_terrain_6_8_stalker_patrol
+      <br/>
+      [LUA] sim_faction_brain_mutant:(28):faction [monster] brain update
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\sim_faction.script(423) :
+      <br/>
+      ! [LUA]  2 : [C  ] sort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\sim_faction.script(423) : calculate_squad_tasks
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\sim_faction_brain_mutant.script(40) : faction_brain_update
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\sim_faction.script(306) : faction_brain_update
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\sim_board.script(323) : remove_squad
+      <br/>
+      ! [LUA]  7 : [Lua] gamedata\scripts\sim_squad_generic.script(319) : on_npc_death
+      <br/>
+      ! [LUA]  8 : [Lua] gamedata\scripts\sim_squad_generic.script(270) : remove_npc
+      <br/>
+      ! [LUA]  9 : [Lua] gamedata\scripts\sim_combat.script(274) : update
+      <br/>
+      ! [LUA] 10 : [Lua] gamedata\scripts\smart_terrain.script(958) :
+      <br/>
+      ! [LUA] gamedata\scripts\sim_faction.script:423: attempt to index field '?' (a nil value)
+      <br/>
+      <br/>
+      отредактирован: 18.06.08 18:22</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:58</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:58</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:58</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 11:59</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: 8.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 11:59</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: 9.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:02</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Build 02.06.08  esc_dogs_lair_guard_6_3 =&gt; Build 02.06.08  Garbage  esc_dogs_lair_guard_6_3</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:02</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 13:02</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: agroprom_ander2.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 13:02</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 13:03</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17525</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 16:03</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июня 2008 18:39</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июня 2008 18:39</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 20:42</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 18277</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 20:42</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg1.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 18:16</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: garbage.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 18:20</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 18379</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 18:21</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 18379</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 18:22</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 18379</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:37</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:37</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
