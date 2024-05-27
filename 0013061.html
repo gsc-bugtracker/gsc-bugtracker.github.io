@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013061: Agroprom, Limansk   при загрузке уровня   [error]Expression    : R - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013060.html">
+      &lt; Прошлое обращение (0013060)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013062.html">
+      Следующее обращение (0013062) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013061</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>25 февраля 2008 11:01</td>
+    <td>26 февраля 2008 12:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r18497</td>
+    <td class="category">Версия</td>
+    <td>r18349</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013061: Agroprom, Limansk   при загрузке уровня   [error]Expression    : R</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : R
+     <br/>
+     [error]Function      : CResourceManager::_CreatePS
+     <br/>
+     [error]File          : E:\priquel\sources\engine\Layers\xrRender\ResourceManager_Resources.cpp
+     <br/>
+     [error]Line          : 292
+     <br/>
+     [error]Description   : gamedata\shaders\r2\deffer_base_lmh_steep_d-hq.ps
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647CA7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 323
+     <br/>
+     001B:0296AC9D xrRender_R2.dll, CResourceManager::_CreatePS(), e:\priquel\sources\engine\layers\xrrender\resourcemanager_resources.cpp, 292
+     <br/>
+     001B:0298A238 xrRender_R2.dll, CBlender_Compile::r_Pass(), e:\priquel\sources\engine\layers\xrrender\blender_recorder_r2.cpp, 28
+     <br/>
+     001B:02902570 xrRender_R2.dll, uber_deffer(), e:\priquel\sources\engine\layers\xrrender\uber_deffer.cpp, 96
+     <br/>
+     001B:00655D59 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:00655D59 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:0064CB14 xrCore.dll, str_container::dock(), e:\priquel\sources\engine\xrcore\xrstring.cpp, 69
+     <br/>
+     001B:02987B7B xrRender_R2.dll, CBlender_Compile::_cpp_Compile(), e:\priquel\sources\engine\layers\xrrender\blenders\blender_recorder.cpp, 77
+     <br/>
+     001B:0295EE2C xrRender_R2.dll, CResourceManager::_cpp_Create(), e:\priquel\sources\engine\layers\xrrender\resourcemanager.cpp, 178
+     <br/>
+     001B:0295F3CC xrRender_R2.dll, CResourceManager::_cpp_Create(), e:\priquel\sources\engine\layers\xrrender\resourcemanager.cpp, 251
+     <br/>
+     001B:0295F441 xrRender_R2.dll, CResourceManager::Create(), e:\priquel\sources\engine\layers\xrrender\resourcemanager.cpp, 316
+     <br/>
+     001B:02894CA1 xrRender_R2.dll, CRender::level_Load(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_loader.cpp, 45
+     <br/>
+     001B:029D2AE3 xrRender_R2.dll, _strlwr()
+     <br/>
+     001B:041DCAE9 xrGame.dll, _strlwr()
+     <br/>
+     001B:0051F09B XR_3DA.exe, UpdateFragQIndex()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:7C8399F3 kernel32.dll
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     абсолютно тот же лог при загрузке Limansk`а</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg_02-25-08_11-00-01.mdmp.bz2 (15,735 bytes)
+     <span class="italic">25 февраля 2008 11:01</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (28,844 bytes)
+     <span class="italic">25 февраля 2008 11:01</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="10622" name="10622">
+     <td class="bugnote-public">
+      <span class="small">(0010622)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">25 февраля 2008 11:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Костик знаю что дубль 13052, но лог посимпатичней :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10658" name="10658">
+     <td class="bugnote-public">
+      <span class="small">(0010658)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">25 февраля 2008 16:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Всем обновить шейдера с SVN.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_02-25-08_11-00-01.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">попыток не было =&gt; всегда</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 11:01</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom   при загрузке уровня   [error]Expression    : R =&gt; Agroprom, Limansk   при загрузке уровня   [error]Expression    : R</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 11:04</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 11:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 10622</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 15:19</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 15:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 15:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; безотлагательный</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 15:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 15:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 16:45</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Igor</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 16:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 10658</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 16:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 16:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 16:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 09:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 09:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 09:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r18497</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 12:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

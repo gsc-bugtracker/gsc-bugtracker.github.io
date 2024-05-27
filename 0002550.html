@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0002550: Оптимизации: дин-каст - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0002549.html">
+      &lt; Прошлое обращение (0002549)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0002551.html">
+      Следующее обращение (0002551) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0002550</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля]</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>18 марта 2005 15:27</td>
+    <td>18 марта 2005 19:17</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Oles</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0002550: Оптимизации: дин-каст</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">11478   0.52: smart_cast&lt;class CSE_ALifeDynamicObject *&gt;(class CSE_Abstract *)
+     <br/>
+     15550   0.71: smart_cast&lt;class CSE_ALifeTraderAbstract *&gt;(class CSE_ALifeSchedulable *)
+     <br/>
+     21810   0.99: smart_cast&lt;class CAttachableItem *&gt;(class CGameObject *)
+     <br/>
+     22530   1.02: smart_cast&lt;class CSE_ALifeItemWeapon *&gt;(class CSE_ALifeInventoryItem *)
+     <br/>
+     22789   1.04: smart_cast&lt;class CSE_ALifeItemDetector *&gt;(class CSE_ALifeInventoryItem *)
+     <br/>
+     25206   1.15: smart_cast&lt;class CSE_ALifeItemWeapon *&gt;(class CSE_ALifeObject *)
+     <br/>
+     25764   1.17: smart_cast&lt;class CUsableScriptObject *&gt;(class CObject *)
+     <br/>
+     25764   1.17: smart_cast&lt;class CHolderCustom *&gt;(class CObject *)
+     <br/>
+     33838   1.54: smart_cast&lt;class CSE_ALifeItemWeapon *&gt;(class CSE_ALifeDynamicObject *)
+     <br/>
+     36807   1.67: smart_cast&lt;class CSE_ALifeInventoryItem *&gt;(class CSE_ALifeObject *)
+     <br/>
+     37816   1.72: smart_cast&lt;class CSE_ALifeTraderAbstract *&gt;(class CSE_ALifeMonsterAbstract *)
+     <br/>
+     39666   1.80: smart_cast&lt;class CSE_ALifeDynamicObject *&gt;(class CSE_ALifeTraderAbstract *)
+     <br/>
+     40283   1.83: smart_cast&lt;class CSE_ALifeDynamicObject *&gt;(class CSE_ALifeInventoryItem *)
+     <br/>
+     40620   1.85: smart_cast&lt;class CGameObject *&gt;(class CInventoryItem *)
+     <br/>
+     42134   1.92: smart_cast&lt;class CSE_ALifeGroupAbstract *&gt;(class CSE_ALifeSchedulable *)
+     <br/>
+     51632   2.35: smart_cast&lt;class CSE_ALifeHumanAbstract *&gt;(class CSE_ALifeSchedulable *)
+     <br/>
+     80392   3.66: smart_cast&lt;class CAttachmentOwner *&gt;(class CObject *)
+     <br/>
+     80418   3.66: smart_cast&lt;class CGameObject *&gt;(class CAttachmentOwner *)
+     <br/>
+     83380   3.79: smart_cast&lt;class CExplosive *&gt;(class CGameObject *)
+     <br/>
+     93303   4.24: smart_cast&lt;class CSE_ALifeItemAmmo *&gt;(class CSE_ALifeDynamicObject *)
+     <br/>
+     101840   4.63: smart_cast&lt;class CSpaceRestrictor *&gt;(class CGameObject *)
+     <br/>
+     185406   8.43: smart_cast&lt;class CSE_ALifeInventoryItem *&gt;(class CSE_ALifeDynamicObject *)
+     <br/>
+     238803  10.86: smart_cast&lt;class CObjectHandler *&gt;(class CGameObject *)
+     <br/>
+     332940  15.14: smart_cast&lt;class CSE_ALifeObject *&gt;(class CSE_ALifeInventoryItem *)
+     <br/>
+     435200  19.79: smart_cast&lt;class CSE_ALifeMonsterAbstract *&gt;(class CSE_ALifeSchedulable *)
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2005 15:27</td>
+     <td class="small-caption">Oles</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2005 15:32</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2005 15:32</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2005 19:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2005 19:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

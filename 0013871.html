@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013871: [garbage] crash при отбивании атаки собак на диггера - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013870.html">
+      &lt; Прошлое обращение (0013870)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013872.html">
+      Следующее обращение (0013872) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013871</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>14 марта 2008 14:40</td>
+    <td>14 марта 2008 14:45</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013871: [garbage] crash при отбивании атаки собак на диггера</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">залез на камушек с СВД и стрелял по собачкам... упало
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : pool&lt;mem_pools_count
+     <br/>
+     [error]Function      : xrMemory::mem_free
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\xrMemory_subst_msvc.cpp
+     <br/>
+     [error]Line          : 157
+     <br/>
+     [error]Description   : Memory corruption
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006E7BCB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:006E7D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 276
+     <br/>
+     001B:006E6EF5 xrCore.dll, xrMemory::mem_free(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.cpp, 158
+     <br/>
+     001B:02E29A79 xrGame.dll, CMonsterCorpseMemory::remove_non_actual(), e:\priquel\sources\engine\xrgame\ai\monsters\monster_corpse_memory.cpp, 73
+     <br/>
+     001B:02E1E9BC xrGame.dll, CBaseMonster::UpdateMemory(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_misc.cpp, 22
+     <br/>
+     001B:02E2513E xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 26
+     <br/>
+     001B:02E06950 xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 348
+     <br/>
+     001B:02E147A1 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 125
+     <br/>
+     001B:0043B471 XRENGINE.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xr_3da\xrsheduler.cpp, 337
+     <br/>
+     001B:0043BB9F XRENGINE.exe, CSheduler::Update(), e:\priquel\sources\engine\xr_3da\xrsheduler.cpp, 431
+     <br/>
+     001B:031F3105 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 504
+     <br/>
+     001B:004C81C3 XRENGINE.exe, rp_Frame(), e:\priquel\sources\engine\xr_3da\pure.cpp, 13
+     <br/>
+     001B:004DDF99 XRENGINE.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xr_3da\pure.h, 81
+     <br/>
+     001B:004DCFE8 XRENGINE.exe, ProcessLoading(), e:\priquel\sources\engine\xr_3da\device.cpp, 444
+     <br/>
+     001B:004DCF84 XRENGINE.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xr_3da\device.cpp, 435
+     <br/>
+     001B:004DBFAA XRENGINE.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xr_3da\device.cpp, 239
+     <br/>
+     001B:004DCBC2 XRENGINE.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xr_3da\device.cpp, 356
+     <br/>
+     001B:004DCCDB XRENGINE.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xr_3da\device.cpp, 392
+     <br/>
+     001B:0041C782 XRENGINE.exe, Startup(), e:\priquel\sources\engine\xr_3da\x_ray.cpp, 259
+     <br/>
+     001B:0041CE15 XRENGINE.exe, WinMain_impl(), e:\priquel\sources\engine\xr_3da\x_ray.cpp, 688
+     <br/>
+     001B:0041D0F3 XRENGINE.exe, WinMain(), e:\priquel\sources\engine\xr_3da\x_ray.cpp, 748
+     <br/>
+     001B:00555062 XRENGINE.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh.log.bz2 (46,435 bytes)
+     <span class="italic">14 марта 2008 14:40</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh_03-14-08_14-41-02.mdmp.bz2 (15,604 bytes)
+     <span class="italic">14 марта 2008 14:41</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12005" name="12005">
+     <td class="bugnote-public">
+      <span class="small">(0012005)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">14 марта 2008 14:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дубликат с 12264 и 13863</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 14:40</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 14:40</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 14:41</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh_03-14-08_14-41-02.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 14:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 14:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 12005</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

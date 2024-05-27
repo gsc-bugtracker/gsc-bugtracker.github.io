@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0009726: Посмотреть глюк в set_sight - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0009725.html">
+      &lt; Прошлое обращение (0009725)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0009727.html">
+      Следующее обращение (0009727) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0009726</td>
+    <td>[S.T.A.L.K.E.R.: TODO List] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>21 июля 2006 11:44</td>
+    <td>21 августа 2006 19:22</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Stohe</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0009726: Посмотреть глюк в set_sight</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Назначаю одни значения, а назначаются другие:
+     <br/>
+     <br/>
+     [LUA] mil_dolg_stalker0007 false vector
+     <br/>
+     [LUA] 2.0000915527344 0 0.12678527832031
+     <br/>
+     [LUA] 2.0000762939453 0 0.12677764892578
+     <br/>
+     Current world state :
+     <br/>
+     - : [1][state_mgr_end]
+     <br/>
+     - : [2][state_mgr_locked]
+     <br/>
+     + : [11][state_mgr_weapon]
+     <br/>
+     + : [13][state_mgr_weapon_strapped]
+     <br/>
+     - : [15][state_mgr_weapon_unstrapped]
+     <br/>
+     - : [17][state_mgr_weapon_none]
+     <br/>
+     - : [19][state_mgr_weapon_drop]
+     <br/>
+     + : [21][state_mgr_movement]
+     <br/>
+     + : [25][state_mgr_movement_stand_now]
+     <br/>
+     + : [31][state_mgr_mental]
+     <br/>
+     - : [35][state_mgr_mental_danger_now]
+     <br/>
+     + : [41][state_mgr_bodystate]
+     <br/>
+     - : [51][state_mgr_direction]
+     <br/>
+     - : [52][state_mgr_direction_search]
+     <br/>
+     - : [61][state_mgr_animstate]
+     <br/>
+     - : [63][state_mgr_animstate_idle]
+     <br/>
+     + : [64][state_mgr_animstate_idle_now]
+     <br/>
+     - : [65][state_mgr_animstate_sit]
+     <br/>
+     + : [67][state_mgr_animstate_sit_knee]
+     <br/>
+     - : [69][state_mgr_animstate_sit_ass]
+     <br/>
+     - : [71][state_mgr_animstate_sleep]
+     <br/>
+     - : [73][state_mgr_animstate_wounded]
+     <br/>
+     - : [75][state_mgr_animstate_wounded_heavy]
+     <br/>
+     - : [81][state_mgr_animation]
+     <br/>
+     + : [83][state_mgr_animation_play]
+     <br/>
+     - : [85][state_mgr_animation_none]
+     <br/>
+     + : [86][state_mgr_animation_none_now]
+     <br/>
+     - : [87][state_mgr_animation_reset]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1][state_mgr_end]
+     <br/>
+     213401 : Solution for object mil_dolg_stalker0007 [5 vertices searched]
+     <br/>
+     state_mgr_direction_turn
+     <br/>
+     state_mgr_animstate_2sit_knee
+     <br/>
+     state_mgr_animation_start
+     <br/>
+     state_mgr_end
+     <br/>
+     [213401] action state_mgr_locked is finalized
+     <br/>
+     [213401] action state_mgr_direction_turn is initialized
+     <br/>
+     [LUA] set_sight mil_dolg_stalker0007 [2.0000762939453] [0] [0.12677764892578]</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 июля 2006 11:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 июля 2006 11:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 июля 2006 11:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">новый =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 июля 2006 11:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 августа 2006 19:22</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 августа 2006 19:22</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

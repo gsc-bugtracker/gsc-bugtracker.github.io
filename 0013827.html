@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013827: [red forest] crash во время выполнения задания "помочь ЧН захватить мост" - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013826.html">
+      &lt; Прошлое обращение (0013826)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013828.html">
+      Следующее обращение (0013828) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013827</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>13 марта 2008 15:17</td>
+    <td>14 марта 2008 10:33</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013827: [red forest] crash во время выполнения задания "помочь ЧН захватить мост"</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">бросил гранату на ту сторону моста...
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : stalker_movement_manager_smart_cover::actualize_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp
+     <br/>
+     [error]Line          : 80
+     <br/>
+     [error]Description   : m_current.cover() || m_target.cover()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647B8B xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:00647CD7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 266
+     <br/>
+     001B:02FB20DB xrGame.dll, stalker_movement_manager_smart_cover::actualize_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 82
+     <br/>
+     001B:02FB24DB xrGame.dll, stalker_movement_manager_smart_cover::try_actualize_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 138
+     <br/>
+     001B:02FA6F21 xrGame.dll, stalker_movement_manager_smart_cover::current_transition(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 384
+     <br/>
+     001B:02FA789B xrGame.dll, stalker_movement_manager_smart_cover::select_animation(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 123
+     <br/>
+     001B:02F5832E xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+     <br/>
+     001B:02F5F3EC xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 126
+     <br/>
+     001B:02F5F588 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 186
+     <br/>
+     001B:02F5F67C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 206
+     <br/>
+     001B:02F488F2 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 954
+     <br/>
+     001B:02DB08E4 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 549
+     <br/>
+     001B:03840630 xrGame.dll, _strlwr()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh.log.bz2 (87,302 bytes)
+     <span class="italic">13 марта 2008 15:17</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh_03-13-08_15-17-49.mdmp.bz2 (15,048 bytes)
+     <span class="italic">13 марта 2008 15:17</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>связан с</nobr></td>
+        <td><a href="0013743.html">
+          0013743
+         </a></td>
+        <td><a title="исправлен">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>oposum</nobr></td>
+        <td>S.T.A.L.K.E.R.: Sandbox</td>
+        <td>Limansk. E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp  80</td>
+       </tr>
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>связан с</nobr></td>
+        <td><a href="0013770.html">
+          0013770
+         </a></td>
+        <td><a title="открыт">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Dima</nobr></td>
+        <td>S.T.A.L.K.E.R.: Bugz</td>
+        <td>m_current.cover() || m_target.cover()</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="11923" name="11923">
+     <td class="bugnote-public">
+      <span class="small">(0011923)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">13 марта 2008 17:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 15:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 марта 2008 15:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 15:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh_03-13-08_15-17-49.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 марта 2008 16:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 16:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0013743</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 марта 2008 16:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0013770</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 17:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 11923</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 марта 2008 17:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 17:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 марта 2008 17:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">[red forest] crash во время выполнения задания "помочь ЧН захватить мост" =&gt; [red forest] crash во время выполнения задания \"помочь ЧН захватить мост\"</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 марта 2008 17:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 10:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

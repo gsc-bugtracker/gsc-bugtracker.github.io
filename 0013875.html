@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013875: [garbage] crash железно валится когда бежишь от точки спавна на базу бандитов. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013874.html">
+      &lt; Прошлое обращение (0013874)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013876.html">
+      Следующее обращение (0013876) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013875</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>14 марта 2008 18:53</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013875: [garbage] crash железно валится когда бежишь от точки спавна на базу бандитов.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5"><br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : _Pos&lt;size()
+     <br/>
+     [error]Function      : xr_vector&lt;class CAniCollection&lt;class CAniVector,&amp;char const * * weapon_action_names&gt;,class xalloc&lt;class CAniCollection&lt;class CAniVector,&amp;char const * * weapon_action_names&gt; &gt; &gt;::operator []
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+     <br/>
+     [error]Line          : 137
+     <br/>
+     [error]Description   : 13 11
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00697BCB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:00697D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 276
+     <br/>
+     001B:02F803E7 xrGame.dll, xr_vector&lt;CAniCollection&lt;CAniVector,&amp;weapon_action_names&gt;,xalloc&lt;CAniCollection&lt;CAniVector,&amp;weapon_action_names&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 137
+     <br/>
+     001B:02F80FA4 xrGame.dll, CStalkerAnimationManager::weapon_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 176
+     <br/>
+     001B:02F814BE xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 281
+     <br/>
+     001B:02F7ECC7 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 144
+     <br/>
+     001B:02F7F57A xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 191
+     <br/>
+     001B:02F7F65C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 206
+     <br/>
+     001B:02F688D2 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 954
+     <br/>
+     001B:02DD08D4 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 549
+     <br/>
+     001B:03860430 xrGame.dll, _strlwr()
+     <br/>
+     001B:7472616D MSCTF.dll
+     <br/>
+     001B:02BAC8AD xrGame.dll, `vector constructor iterator'()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh.log.bz2 (137,116 bytes)
+     <span class="italic">14 марта 2008 18:53</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh_03-14-08_18-52-41.mdmp.bz2 (15,536 bytes)
+     <span class="italic">14 марта 2008 18:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12056" name="12056">
+     <td class="bugnote-public">
+      <span class="small">(0012056)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">17 марта 2008 11:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">скриптовики заставдяют юзать предмет, у которого слот 13, а анимации для него нету</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12057" name="12057">
+     <td class="bugnote-public">
+      <span class="small">(0012057)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">17 марта 2008 11:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дима, и шо мне с этим глюком делать? Есть подозрение что это нехватает анимации в самом оружии wpn_pb, если это так, то нужно на Маркевича переназначить?
+      <br/>
+      <br/>
+      Так ли это? :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12058" name="12058">
+     <td class="bugnote-public">
+      <span class="small">(0012058)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">17 марта 2008 11:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">а у какого предмета может быть слот 13? посмотрите по конфигам</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12817" name="12817">
+     <td class="bugnote-public">
+      <span class="small">(0012817)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">25 марта 2008 10:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">решил это. раньше бандиты атаковали своего чувака, потому что у него коммьюнити не то стояло. теперь пока не валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20330" name="20330">
+     <td class="bugnote-public">
+      <span class="small">(0020330)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">10 июля 2008 18:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">close me</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 18:53</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 18:53</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 18:53</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh_03-14-08_18-52-41.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 11:31</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 11:31</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12056</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 11:33</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 12057</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 11:35</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12058</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 11:35</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Следить: Abe</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 11:35</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Не следить: Abe</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2008 10:10</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 марта 2008 10:10</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2008 10:10</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 12817</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:01</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20330</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:01</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:01</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

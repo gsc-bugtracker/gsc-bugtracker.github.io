@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011428: CScriptEngine::lua_error - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011427.html">
+      &lt; Прошлое обращение (0011427)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011429.html">
+      Следующее обращение (0011429) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011428</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>25 марта 2007 20:30</td>
+    <td>18 марта 2008 18:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>25 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011428: CScriptEngine::lua_error</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CScriptEngine::lua_error
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\script_engine.cpp
+     <br/>
+     [error]Line          : 70
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : LUA error: ...dow of chernobyl\gamedata\scripts\heli_combat.script:193: attempt to perform arithmetic on field 'change_dir_time' (a nil value)
+     <br/>
+     <br/>
+     <br/>
+     &gt;	xrCore.dll!xrDebug::backend(const char * expression=0x005c1fb4, const char * description=0x005c1fc0, const char * argument0=0x0012613c, const char * argument1=0x00000000, const char * file=0x0203733c, int line=70, const char * function=0x02037368, bool &amp; ignore_always=true)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fatal(const char * file=0x0203733c, int line=70, const char * function=0x02037368, const char * F=0x02037384, ...)  Line 328	C++
+     <br/>
+     xrGame.dll!CScriptEngine::lua_error(lua_State * L=0x0a3b0018)  Line 70 + 0x2b bytes	C++
+     <br/>
+     xrGame.dll!luabind::detail::proxy_member_void_caller&lt;boost::tuples::tuple&lt;NET_Packet * const *,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_member_void_caller&lt;boost::tuples::tuple&lt;NET_Packet * const *,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;()  Line 255 + 0x8 bytes	C++
+     <br/>
+     xrGame.dll!CScriptBinderObjectWrapper::save(NET_Packet * output_packet=0x0012661c)  Line 97	C++
+     <br/>
+     xrGame.dll!CScriptBinder::save(NET_Packet &amp; output_packet={...})  Line 198	C++
+     <br/>
+     xrGame.dll!CGameObject::net_Save(NET_Packet &amp; net_packet={...})  Line 403	C++
+     <br/>
+     xrGame.dll!CHelicopter::net_Save(NET_Packet &amp; P={...})  Line 284	C++
+     <br/>
+     xrGame.dll!CLevel::Objects_net_Save(NET_Packet * _Packet=0x00003701, unsigned int start=223, unsigned int max_object_size=6144)  Line 200	C++
+     <br/>
+     xrGame.dll!CLevel::ClientSave()  Line 221 + 0x31 bytes	C++
+     <br/>
+     xrGame.dll!CALifeStorageManager::save(NET_Packet &amp; net_packet={...})  Line 157	C++
+     <br/>
+     xrGame.dll!game_sv_Single::save_game(NET_Packet &amp; net_packet={...}, ClientID sender={...})  Line 219 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!xrServer::OnMessage(NET_Packet &amp; P={...}, ClientID sender={...})  Line 434	C++
+     <br/>
+     xrGame.dll!CLevel::Send(NET_Packet &amp; P={...}, unsigned int dwFlags=8, unsigned int dwTimeout=0)  Line 238	C++
+     <br/>
+     xrGame.dll!CCC_ALifeSave::Execute(const char * args=0x00000005)  Line 701	C++
+     <br/>
+     XR_3DA.exe!00466aa2()
+     <br/>
+     [Frames below may be incorrect and/or missing, no symbols loaded for XR_3DA.exe]
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.68\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_070325-130052.zip (1,030,980 bytes)
+     <span class="italic">25 марта 2007 20:30</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 марта 2007 20:30</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2007 20:30</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_070325-130052.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 марта 2007 20:30</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">D:\xray-svn\xr_3da\xrGame\script_engine.cpp =&gt; CScriptEngine::lua_error</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2007 20:30</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 марта 2007 13:21</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 мая 2007 21:11</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 мая 2007 21:11</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 18:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

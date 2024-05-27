@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0001722: Вылет при рождении после серии stop-ов. mdmp файла не создало - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0001721.html">
+      &lt; Прошлое обращение (0001721)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0001723.html">
+      Следующее обращение (0001723) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0001722</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля]</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>13 января 2005 19:50</td>
+    <td>14 января 2005 10:47</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Prof</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0001722: Вылет при рождении после серии stop-ов. mdmp файла не создало</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     * Destroying script thread avi_start
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] flags
+     <br/>
+     ! [LUA] patrol:flags() threw an exception
+     <br/>
+     Destroying binded object esc_vagon_wounded
+     <br/>
+     Destroying binded object escape_stalker_veteran3
+     <br/>
+     Destroying binded object escape_stalker_veteran2
+     <br/>
+     Destroying binded object escape_stalker_veteran1
+     <br/>
+     Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     Adding Story item ID [5], Object [stalker0004] at level [l01_escape]
+     <br/>
+     ! [LUA] CGameObject : cannot call [get_current_patrol_point_index()]!
+     <br/>
+     ! [LUA]  0 : [C  ] get_current_point_index
+     <br/>
+     ! [LUA]  1 : [Lua] ...\x-ray\stalker$\gamedata\scripts\xr_motivator.script(21) :
+     <br/>
+     ***STOP*** file 'X:\SOURCES\XRGAME\patrol_path_params.cpp', line 74.
+     <br/>
+     ***Reason***: *** Assertion failed ***
+     <br/>
+     Expression: m_path-&gt;vertex(index)
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/texticon.gif" width="16"/>
+     xray_prof.log (45,298 bytes)
+     <span class="italic">13 января 2005 19:50</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Prof, Koan, Sidorovich, Zmey, Chugai</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="1570" name="1570">
+     <td class="bugnote-public">
+      <span class="small">(0001570)</span>
+      <br/>
+      Zmey
+      <br/>
+      <span class="small">14 января 2005 10:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Это было в течение минут 20, когда я для Джима раскомментарил сбоящий кусок кода. Уже убрал.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Следить: Prof</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Следить: Koan</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Следить: Sidorovich</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Следить: Zmey</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Следить: Chugai</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 января 2005 19:50</td>
+     <td class="small-caption">Prof</td>
+     <td class="small-caption">Файл добавлен: xray_prof.log</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 января 2005 10:46</td>
+     <td class="small-caption">Zmey</td>
+     <td class="small-caption">Комментарий добавлен: 1570</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 января 2005 10:47</td>
+     <td class="small-caption">Zmey</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

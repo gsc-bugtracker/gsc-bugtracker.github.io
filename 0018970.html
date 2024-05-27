@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018970: Уровень «Юпитер» Сцена A12 (B26) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018969.html">
+      &lt; Прошлое обращение (0018969)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018971.html">
+      Следующее обращение (0018971) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018970</td>
+    <td>[STALKER: Тайны Зоны] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>16 декабря 2008 17:25</td>
+    <td>18 декабря 2008 12:35</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018970: Уровень «Юпитер» Сцена A12 (B26)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">При выборе силового решения квеста получаеш задание "Встретиться с наёмниками", но наёмники в указанное время не приходят, вместо этого:
+     <br/>
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] patrol
+     <br/>
+     ! [LUA]  2 : [Lua] ...clear_sky\gamedata\scripts\sim_squad_scripted.script(75) : create_npc
+     <br/>
+     ! [LUA]  3 : [Lua] f:\addon\clear_sky\gamedata\scripts\sim_board.script(153) : create_squad
+     <br/>
+     ! [LUA]  4 : [Lua] ...:\addon\clear_sky\gamedata\scripts\xr_effects.script(1085) : ?
+     <br/>
+     ! [LUA]  5 : [Lua] f:\addon\clear_sky\gamedata\scripts\xr_logic.script(643) : pick_section_from_condlist
+     <br/>
+     ! [LUA]  6 : [Lua] f:\addon\clear_sky\gamedata\scripts\xr_logic.script(755) : try_switch_to_another_section
+     <br/>
+     ! [LUA]  7 : [Lua] f:\addon\clear_sky\gamedata\scripts\sr_idle.script(26) : ?
+     <br/>
+     ! [LUA]  8 : [Lua] f:\addon\clear_sky\gamedata\scripts\xr_logic.script(530) : issue_event
+     <br/>
+     ! [LUA]  9 : [Lua] ...on\clear_sky\gamedata\scripts\bind_restrictor.script(94) :
+     <br/>
+     ! [LUA] Expression    : m_path
+     <br/>
+     Function      : CPatrolPathParams::CPatrolPathParams
+     <br/>
+     File          : D:\prog_repository\sources\trunk\xrGame\patrol_path_params.cpp
+     <br/>
+     Line          : 19
+     <br/>
+     Description   : There is no patrol path
+     <br/>
+     Arguments     : up_a12_merc_stalker_squad_spawn_point_2
+     <br/>
+     <br/>
+     Дополнение к сцене, "Расспросить Заложника":
+     <br/>
+     1. Если в диалоге заложника выбрать идём вместе, то после телепорта управление игроку не возвращается.
+     <br/>
+     2. Если в диалого выбрать "у меня ещё есть дела", то заложник ведёт себя не адекватно: возвращается обратно на базу бандитов, или того хуже начинает по ним стрелать (если подобрал оружие), или идёт куда глаза гледят.
+     <br/>
+     <br/>
+     Дополнение №2.
+     <br/>
+     Вариант самостоятельного решения проблемы с заложником лишен логического смысла, так в предущих двух варинтах уже содержится решение, а именно: убить бандитов или отдать выкуп.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_uzer.log.bz2 (43,934 bytes)
+     <span class="italic">16 декабря 2008 17:25</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22475" name="22475">
+     <td class="bugnote-public">
+      <span class="small">(0022475)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">18 декабря 2008 12:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed
+      <br/>
+      <br/>
+      дополнение 2 вынести в отдельный баг на Петю
+      <br/>
+      если повторится невозврат управления - добавить лог (из дебагвьюера)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 декабря 2008 17:25</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 декабря 2008 17:25</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: xray_uzer.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 декабря 2008 13:16</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 декабря 2008 16:16</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 декабря 2008 17:31</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 декабря 2008 17:31</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 декабря 2008 12:35</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 декабря 2008 12:35</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 декабря 2008 12:35</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 22475</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

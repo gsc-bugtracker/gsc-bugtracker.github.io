@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0012928: [agroprom] crash! всё время в разные моменты времени, но чаще всего это какой-нить комбат - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0012927.html">
+      &lt; Прошлое обращение (0012927)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0012929.html">
+      Следующее обращение (0012929) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0012928</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>иногда</td>
+    <td>21 февраля 2008 17:06</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0012928: [agroprom] crash! всё время в разные моменты времени, но чаще всего это какой-нить комбат</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5"><br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : object().movement().default_behaviour()
+     <br/>
+     [error]Function      : smart_cover::loophole_action_base::setup_sight
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\smart_cover_loophole_planner_actions.cpp
+     <br/>
+     [error]Line          : 81
+     <br/>
+     [error]Description   : default behaviour is not specified, but no fire position specified
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647C72 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 317
+     <br/>
+     001B:031EE89D xrGame.dll, smart_cover::loophole_action_base::setup_sight(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 81
+     <br/>
+     001B:031F0138 xrGame.dll, smart_cover::idle_2_fire_transition::compute_offset(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 475
+     <br/>
+     001B:031F041F xrGame.dll, smart_cover::idle_2_fire_transition::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 498
+     <br/>
+     001B:02CD9DAA xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 103
+     <br/>
+     001B:031E8706 xrGame.dll, smart_cover::animation_planner::update(), e:\priquel\sources\engine\xrgame\smart_cover_animation_planner.cpp, 79
+     <br/>
+     001B:031E7705 xrGame.dll, smart_cover::animation_selector::select_animation(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 73
+     <br/>
+     001B:0318ABF8 xrGame.dll, fastdelegate::FastDelegate1&lt;bool &amp;,MotionID&gt;::operator()(), e:\priquel\sources\engine\xrcore\fastdelegate.h, 1003
+     <br/>
+     001B:0318A7D1 xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+     <br/>
+     001B:031933FA xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 125
+     <br/>
+     001B:031936EC xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 186
+     <br/>
+     001B:031937AF xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 200
+     <br/>
+     001B:03172AEB xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 945
+     <br/>
+     001B:02F46498 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 549
+     <br/>
+     001B:02F4611E xrGame.dll, CCustomMonster::UpdateCL(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 504
+     <br/>
+     001B:031716F4 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 686
+     <br/>
+     001B:004564D8 XR_3DA.exe, stlp_std::vector&lt;CSkeletonWallmark::WMFace,xalloc&lt;CSkeletonWallmark::WMFace&gt; &gt;::operator=(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.c, 169
+     <br/>
+     001B:0045688E XR_3DA.exe, CSkeletonWallmark::CSkeletonWallmark(), d:\xray.trunk\xr_3da\skeletoncustom.h, 143
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20328" name="20328">
+     <td class="bugnote-public">
+      <span class="small">(0020328)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">10 июля 2008 18:00</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">close me</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 17:06</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 17:23</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 17:23</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:00</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20328</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:00</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:00</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013036: [agroprom] crash! После загрузки бежать прямо на костёр, сначала появятся warnings для DetailPathManager, потом упадёт - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013035.html">
+      &lt; Прошлое обращение (0013035)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013037.html">
+      Следующее обращение (0013037) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013036</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>22 февраля 2008 18:46</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013036: [agroprom] crash! После загрузки бежать прямо на костёр, сначала появятся warnings для DetailPathManager, потом упадёт</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : m_storage.end() != I
+     <br/>
+     [error]Function      : CPropertyStorage::property
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\property_storage_inline.h
+     <br/>
+     [error]Line          : 23
+     <br/>
+     [error]Description   : (null)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:02CFF35A xrGame.dll, CPropertyStorage::property(), e:\priquel\sources\engine\xrgame\property_storage_inline.h, 23
+     <br/>
+     001B:031B5430 xrGame.dll, CPropertyEvaluatorMember&lt;CScriptGameObject&gt;::evaluate(), e:\priquel\sources\engine\xrgame\property_evaluator_member_inline.h, 35
+     <br/>
+     001B:02CF3FB1 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::evaluate_condition(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 204
+     <br/>
+     001B:02CF1C0F xrGame.dll, COperatorAbstract&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,unsigned short&gt;::applicable&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; const &gt;(), e:\priquel\sources\engine\xrgame\operator_abstract_inline.h, 264
+     <br/>
+     001B:02CEE640 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::value(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 235
+     <br/>
+     001B:02CEBBC3 xrGame.dll, CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;,CDataStorageConstructor&lt;CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CEdgePath&lt;unsigned int,1&gt;,CVertexA(), e:\priquel\sources\engine\xrgame\path_manager_solver_inline.h, 65
+     <br/>
+     001B:02CE0833 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 141
+     <br/>
+     001B:02CDDD2E xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 252
+     <br/>
+     001B:02CDC895 xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), e:\priquel\sources\engine\xrgame\graph_engine_inline.h, 211
+     <br/>
+     001B:02CDBB3E xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 377
+     <br/>
+     001B:02CD9AEC xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 71
+     <br/>
+     001B:031AE856 xrGame.dll, CStalkerCombatPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_combat_planner.cpp, 102
+     <br/>
+     001B:02CF8AA1 xrGame.dll, CActionPlannerAction&lt;CScriptGameObject&gt;::execute(), e:\priquel\sources\engine\xrgame\action_planner_action_inline.h, 66
+     <br/>
+     001B:031AE826 xrGame.dll, CStalkerCombatPlanner::execute(), e:\priquel\sources\engine\xrgame\stalker_combat_planner.cpp, 96
+     <br/>
+     001B:02CD9DDA xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 112
+     <br/>
+     001B:031A7F3E xrGame.dll, CStalkerPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_planner.cpp, 123
+     <br/>
+     001B:03172935 xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 884
+     <br/>
+     001B:031720D3 xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 803
+     <br/>
+     001B:00439341 XR_3DA.exe, IRender_ObjectSpecific::`vector deleting destructor'()
+     <br/>
+     001B:0365DF19 xrGame.dll, CActor::shedule_Update(), e:\priquel\sources\engine\xrgame\actor.cpp, 1251
+     <br/>
+     001B:00439A6F XR_3DA.exe, resptr_base&lt;IRender_Light&gt;::_set(), d:\xray.trunk\xrcore\xr_resource.h, 47
+     <br/>
+     001B:00450914 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;CPS_Instance *,stlp_std::priv::_SetTraitsT&lt;CPS_Instance *&gt; &gt;::_Rb_tree_iterator&lt;CPS_Instance *,stlp_std::priv::_SetTraitsT&lt;CPS_Instance *&gt; &gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_tree.h, 163
+     <br/>
+     001B:035C9385 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:035C9385 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:004C34E3 XR_3DA.exe, stlp_std::deque&lt;CStatGraph::SMarker,xalloc&lt;CStatGraph::SMarker&gt; &gt;::clear(), d:\sdk\stlport-5.0.2\stlport\stl\_deque.c, 342
+     <br/>
+     001B:4FE09994 d3d9.dll
+     <br/>
+     001B:004D90C9 XR_3DA.exe, stlp_std::vector&lt;resptr_core&lt;CTexture,resptrcode_texture&gt;,xalloc&lt;resptr_core&lt;CTexture,resptrcode_texture&gt; &gt; &gt;::clear()
+     <br/>
+     001B:004D8148 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;::operator*()
+     <br/>
+     001B:004D80E4 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_tree.h, 165
+     <br/>
+     001B:00403D6E XR_3DA.exe, resptr_base&lt;CRT&gt;::_inc()
+     <br/>
+     001B:004D71D0 XR_3DA.exe, xr_vector&lt;ShaderElement *,xalloc&lt;ShaderElement *&gt; &gt;::size, d:\xray.trunk\xrcore\_stl_extensions.h, 125
+     <br/>
+     001B:7C91056D ntdll.dll
+     <br/>
+     001B:004199DD XR_3DA.exe, CCC_LoadCFG::operator=()
+     <br/>
+     001B:0041A075 XR_3DA.exe, stlp_std::vector&lt;_vector4&lt;float&gt;,xalloc&lt;_vector4&lt;float&gt; &gt; &gt;::begin(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.h, 171
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_fresh.log.bz2 (40,839 bytes)
+     <span class="italic">22 февраля 2008 18:46</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     fresh_quicksave.sav.bz2 (95,200 bytes)
+     <span class="italic">22 февраля 2008 18:47</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="10636" name="10636">
+     <td class="bugnote-public">
+      <span class="small">(0010636)</span>
+      <br/>
+      plecha
+      <br/>
+      <span class="small">25 февраля 2008 15:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">нужно посмотреть почему снорк не может построить путь, там в логе перед вылетом написано откуда и куда...если есть проблемы с аи картой то их нужно решить, не поможет - будем смотреть.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10954" name="10954">
+     <td class="bugnote-public">
+      <span class="small">(0010954)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">28 февраля 2008 10:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дубликат с 12585</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20333" name="20333">
+     <td class="bugnote-public">
+      <span class="small">(0020333)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">10 июля 2008 18:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">close me</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 18:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 18:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: xray_fresh.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 18:47</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Файл добавлен: fresh_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 февраля 2008 15:00</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 15:01</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Комментарий добавлен: 10636</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 февраля 2008 10:40</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 10954</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 февраля 2008 10:40</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 февраля 2008 10:40</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 февраля 2008 17:14</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 февраля 2008 17:14</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 18:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 18:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">дубликат =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:02</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 20333</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 18:02</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 18:02</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

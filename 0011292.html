@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011292: xray-svn\xr_3da\xrGame\ui\UIMpTradeWnd_trade.cpp, Line : 139 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011291.html">
+      &lt; Прошлое обращение (0011291)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011293.html">
+      Следующее обращение (0011293) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011292</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>23 февраля 2007 19:30</td>
+    <td>01 марта 2007 17:47</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>23 февраля 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011292: xray-svn\xr_3da\xrGame\ui\UIMpTradeWnd_trade.cpp, Line : 139</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CUIMpTradeWnd::TryToBuyItem
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\ui\UIMpTradeWnd_trade.cpp
+     <br/>
+     [error]Line          : 139
+     <br/>
+     [error]Description   : !lst-&gt;IsOwner(cell_itm)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:005A5827 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 275
+     <br/>
+     001B:01B24B84 xrGame.dll, CUIMpTradeWnd::TryToBuyItem(), d:\xray-svn\xr_3da\xrgame\ui\uimptradewnd_trade.cpp, 139
+     <br/>
+     001B:01B24D61 xrGame.dll, CUIMpTradeWnd::BuyItemAction(), d:\xray-svn\xr_3da\xrgame\ui\uimptradewnd_trade.cpp, 101
+     <br/>
+     001B:01B23C4E xrGame.dll, CUIMpTradeWnd::OnItemDbClick(), d:\xray-svn\xr_3da\xrgame\ui\uimptradewnd_misc.cpp, 241
+     <br/>
+     001B:01B035BC xrGame.dll, CUIDragDropListEx::OnItemDBClick(), d:\xray-svn\xr_3da\xrgame\ui\uidragdroplistex.cpp, 162
+     <br/>
+     001B:01ACCDB4 xrGame.dll, CUIWndCallback::OnEvent(), d:\xray-svn\xr_3da\xrgame\ui\uiwndcallback.cpp, 40
+     <br/>
+     001B:01B015D4 xrGame.dll, CUICellItem::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uicellitem.cpp, 52
+     <br/>
+     001B:01AE1348 xrGame.dll, CUIWindow::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uiwindow.cpp, 358
+     <br/>
+     001B:01AE1348 xrGame.dll, CUIWindow::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uiwindow.cpp, 358
+     <br/>
+     001B:01B020D7 xrGame.dll, CUIDragDropListEx::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uidragdroplistex.cpp, 281
+     <br/>
+     001B:01AE1348 xrGame.dll, CUIWindow::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uiwindow.cpp, 358
+     <br/>
+     001B:01AE1348 xrGame.dll, CUIWindow::OnMouse(), d:\xray-svn\xr_3da\xrgame\ui\uiwindow.cpp, 358
+     <br/>
+     001B:01ADF2E7 xrGame.dll, CUIDialogWnd::IR_OnKeyboardPress(), d:\xray-svn\xr_3da\xrgame\ui\uidialogwnd.cpp, 68
+     <br/>
+     001B:01AA990B xrGame.dll, CUI::IR_OnKeyboardPress(), d:\xray-svn\xr_3da\xrgame\ui.cpp, 159
+     <br/>
+     001B:018B30A9 xrGame.dll, CLevel::IR_OnKeyboardPress(), d:\xray-svn\xr_3da\xrgame\level_input.cpp, 148
+     <br/>
+     001B:018B2DC1 xrGame.dll, CLevel::IR_OnMousePress(), d:\xray-svn\xr_3da\xrgame\level_input.cpp, 61
+     <br/>
+     001B:004AAD35 xr_3da.exe, CInput::MouseUpdate(), d:\xray-svn\xr_3da\xr_input.cpp, 249
+     <br/>
+     001B:004AB479 xr_3da.exe, CInput::OnFrame(), d:\xray-svn\xr_3da\xr_input.cpp, 357
+     <br/>
+     001B:0044836A xr_3da.exe, CRegistrator&lt;pureFrame&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 79
+     <br/>
+     001B:004876A7 xr_3da.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 349
+     <br/>
+     001B:00487C9E xr_3da.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 217
+     <br/>
+     001B:004AE197 xr_3da.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 213
+     <br/>
+     001B:004AE751 xr_3da.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 527
+     <br/>
+     001B:00463019 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     <br/>
+     S:\logs\277</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9439" name="9439">
+     <td class="bugnote-public">
+      <span class="small">(0009439)</span>
+      <br/>
+      Mad-Max
+      <br/>
+      <span class="small">23 февраля 2007 19:38</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">Где дамп???</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 февраля 2007 19:30</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 февраля 2007 19:38</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Комментарий добавлен: 9439</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 февраля 2007 10:31</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xray-svn\xr_3da\xrGame\ui\UIMpTradeWnd_trade.cpp, Line : 139 =&gt; xray-svn\\xr_3da\\xrGame\\ui\\UIMpTradeWnd_trade.cpp, Line : 139</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 февраля 2007 10:31</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 марта 2007 17:47</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 марта 2007 17:47</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

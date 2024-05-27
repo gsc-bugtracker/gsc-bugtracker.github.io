@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018960: BUG: Expression    : assertion failed Line          : 336 Description   : obj1 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018959.html">
+      &lt; Прошлое обращение (0018959)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018961.html">
+      Следующее обращение (0018961) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018960</td>
+    <td>[STALKER: Тайны Зоны] 0</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>12 декабря 2008 16:05</td>
+    <td>18 декабря 2008 15:57</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018960: BUG: Expression    : assertion failed Line          : 336 Description   : obj1</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Вылетает, по какой конкретно причине, не ясно - Плечик сказал показать тебе
+     <br/>
+     <br/>
+     Target world state :
+     <br/>
+     - : [7][evaluator_combat_enemy]
+     <br/>
+     316933 : Solution for object jup_b1_stalker_21808 [3 vertices searched]
+     <br/>
+     action_post_combat_wait
+     <br/>
+     [316933] action take_cover is finalized
+     <br/>
+     [316933] action action_post_combat_wait is initialized
+     <br/>
+     [316933] action action_post_combat_wait is executed
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CMemoryManager::make_object_visible_somewhen
+     <br/>
+     [error]File          : D:\prog_repository\sources\trunk\xrGame\memory_manager.cpp
+     <br/>
+     [error]Line          : 336
+     <br/>
+     [error]Description   : obj1
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0063D216 xrCore.dll, xrDebug::backend(), d:\prog_repository\sources\trunk\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0063D427 xrCore.dll, xrDebug::fail(), d:\prog_repository\sources\trunk\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02540B4E xrGame.dll, CMemoryManager::make_object_visible_somewhen(), d:\prog_repository\sources\trunk\xrgame\memory_manager.cpp, 339
+     <br/>
+     001B:02872C58 xrGame.dll, CAI_Stalker::process_enemies(), d:\prog_repository\sources\trunk\xrgame\ai\stalker\ai_stalker_misc.cpp, 191
+     <br/>
+     001B:027F8597 xrGame.dll, CAI_Stalker::shedule_Update(), d:\prog_repository\sources\trunk\xrgame\ai\stalker\ai_stalker.cpp, 787
+     <br/>
+     001B:00429D11 xrEngine.exe, stlp_std::__destroy_range_aux&lt;stlp_std::reverse_iterator&lt;float *&gt;,float&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_construct.h, 169
+     <br/>
+     001B:0042A43F xrEngine.exe, stlp_std::_TrivialUCopy&lt;CObjectList::SRelcasePair,CObjectList::SRelcasePair&gt;::_Answer(), e:\priquel\sources\sdk\include\stlport\stl\type_traits.h, 407
+     <br/>
+     001B:029DBCE5 xrGame.dll, CGamePersistent::OnFrame(), d:\prog_repository\sources\trunk\xrgame\gamepersistent.cpp, 563
+     <br/>
+     001B:0049AFE3 xrEngine.exe, CDemoRecord::operator=()
+     <br/>
+     001B:004B44F9 xrEngine.exe, CCC_DumpOpenFiles::`scalar deleting destructor'()
+     <br/>
+     001B:004B3CB8 xrEngine.exe, CCC_VidMode::Execute(), e:\priquel\sources\engine\xrengine\xr_ioc_cmd.cpp, 349
+     <br/>
+     001B:635698F7 FRAPS.DLL
+     <br/>
+     001B:004B3C54 xrEngine.exe, CCC_VID_Reset::~CCC_VID_Reset()
+     <br/>
+     001B:004B2C76 xrEngine.exe, CCC_Register(), e:\priquel\sources\engine\xrengine\xr_ioc_cmd.cpp, 713
+     <br/>
+     001B:77D3D1EA USER32.dll
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:02540B6F xrGame.dll, CMemoryManager::make_object_visible_somewhen(), d:\prog_repository\sources\trunk\xrgame\memory_manager.cpp, 339
+     <br/>
+     001B:02872C58 xrGame.dll, CAI_Stalker::process_enemies(), d:\prog_repository\sources\trunk\xrgame\ai\stalker\ai_stalker_misc.cpp, 191
+     <br/>
+     001B:027F8597 xrGame.dll, CAI_Stalker::shedule_Update(), d:\prog_repository\sources\trunk\xrgame\ai\stalker\ai_stalker.cpp, 787
+     <br/>
+     001B:00429D11 xrEngine.exe, stlp_std::__destroy_range_aux&lt;stlp_std::reverse_iterator&lt;float *&gt;,float&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_construct.h, 169
+     <br/>
+     001B:0042A43F xrEngine.exe, stlp_std::_TrivialUCopy&lt;CObjectList::SRelcasePair,CObjectList::SRelcasePair&gt;::_Answer(), e:\priquel\sources\sdk\include\stlport\stl\type_traits.h, 407
+     <br/>
+     001B:029DBCE5 xrGame.dll, CGamePersistent::OnFrame(), d:\prog_repository\sources\trunk\xrgame\gamepersistent.cpp, 563
+     <br/>
+     001B:0049AFE3 xrEngine.exe, CDemoRecord::operator=()
+     <br/>
+     001B:004B44F9 xrEngine.exe, CCC_DumpOpenFiles::`scalar deleting destructor'()
+     <br/>
+     001B:004B3CB8 xrEngine.exe, CCC_VidMode::Execute(), e:\priquel\sources\engine\xrengine\xr_ioc_cmd.cpp, 349
+     <br/>
+     001B:635698F7 FRAPS.DLL
+     <br/>
+     001B:004B3C54 xrEngine.exe, CCC_VID_Reset::~CCC_VID_Reset()
+     <br/>
+     001B:004B2C76 xrEngine.exe, CCC_Register(), e:\priquel\sources\engine\xrengine\xr_ioc_cmd.cpp, 713
+     <br/>
+     001B:77D3D1EA USER32.dll</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (53,187 bytes)
+     <span class="italic">12 декабря 2008 16:05</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 декабря 2008 16:05</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 декабря 2008 16:05</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 декабря 2008 13:24</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 декабря 2008 13:24</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 декабря 2008 15:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 декабря 2008 15:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

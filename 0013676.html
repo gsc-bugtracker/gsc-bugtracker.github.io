@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013676: Red Forest stack trace: - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013675.html">
+      &lt; Прошлое обращение (0013675)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013677.html">
+      Следующее обращение (0013677) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013676</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>07 марта 2008 12:11</td>
+    <td>24 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013676: Red Forest stack trace:</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] xr_combat_ignore:(189):_bp: action_process_enemy: hit_callback(): obj='red_pursuit_bounty_hunter_21398': SCHEME DISABLED
+     <br/>
+     [LUA] xr_hit:(15):[red_pursuit_bounty_hunter_21398] hit by [single_player]
+     <br/>
+     [LUA] xr_motivator:(274):HIT_CALLBACK: red_pursuit_bounty_hunter_21398 amount=0.10000000149012 bone=11
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:028C5832 xrRender_R1.dll, CDetailManager::hw_Render_dump(), e:\priquel\sources\engine\layers\xrrender\detailmanager_vs.cpp, 244
+     <br/>
+     001B:028C612D xrRender_R1.dll, CDetailManager::hw_Render(), e:\priquel\sources\engine\layers\xrrender\detailmanager_vs.cpp, 202
+     <br/>
+     001B:028BD328 xrRender_R1.dll, CDetailManager::Render(), e:\priquel\sources\engine\layers\xrrender\detailmanager.cpp, 287
+     <br/>
+     001B:02882FEA xrRender_R1.dll, CRender::Render(), e:\priquel\sources\engine\layers\xrrenderpc_r1\fstaticrender.cpp, 537
+     <br/>
+     001B:0044E144 XR_3DA.exe, stlp_std::_Rb_tree&lt;char const *,CResourceManager::str_pred,stlp_std::pair&lt;char const * const,CRTC *&gt;,stlp_std::_Select1st&lt;stlp_std::pair&lt;char const * const,CRTC *&gt; &gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;char const * const,CRTC *&gt; &gt;,xalloc&lt;stlp_std::pair&lt;char const *,CRTC *&gt; &gt; &gt;::_Rb_tree&lt;char const *,CResourceManager::str_pred,stlp_std::pair&lt;char const * const,CRTC *&gt;,stlp_std::_Select1st&lt;stlp_std::pair&lt;char const * const,CRTC *&gt; &gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;cha(), d:\sdk\stlport-5.0.2\stlport\stl\_tree.h, 382
+     <br/>
+     001B:03197A5B xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 616
+     <br/>
+     001B:03197A5B xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 616
+     <br/>
+     001B:03983E1C xrGame.dll, PI_DIV_2()
+     <br/>
+     <br/>
+     <br/>
+     Зашол в туннель, зря )
+     <br/>
+     После взрыва, точнее после взрыва
+     <a href="http://tiger/bugz/view.php">
+      http://tiger/bugz/view.php
+          ?id=13674 зашол в туннель и у меня креш
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (597,882 bytes)
+     <span class="italic">07 марта 2008 12:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080425-155209.zip (830,208 bytes)
+     <span class="italic">25 апреля 2008 15:59</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12539" name="12539">
+     <td class="bugnote-public">
+      <span class="small">(0012539)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">20 марта 2008 18:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Проявлялся уже исправленный баг?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12597" name="12597">
+     <td class="bugnote-public">
+      <span class="small">(0012597)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">21 марта 2008 11:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Надо время если ещо пару дней не получиться можно закрыть.Я скажу, потому что не всегда там выпадал креш.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15513" name="15513">
+     <td class="bugnote-public">
+      <span class="small">(0015513)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">25 апреля 2008 16:00</span>
+      <br/>
+      <span class="small">отредактирован:  25 апреля 2008 16:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился сегодня (ревизия: 23958). Лог:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=9238&amp;type=bug
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0285F352 xrRender_R2.dll, CDetailManager::hw_Render_dump(), e:\priquel\sources\engine\layers\xrrender\detailmanager_vs.cpp, 244
+      <br/>
+      001B:0285FDB0 xrRender_R2.dll, CDetailManager::hw_Render(), e:\priquel\sources\engine\layers\xrrender\detailmanager_vs.cpp, 193
+      <br/>
+      001B:02858828 xrRender_R2.dll, CDetailManager::Render(), e:\priquel\sources\engine\layers\xrrender\detailmanager.cpp, 287
+      <br/>
+      001B:0282FC48 xrRender_R2.dll, CRender::Render(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_r_render.cpp, 357
+      <br/>
+      001B:00438BA4 xrEngine.exe, IGame_Level::OnRender(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 126
+      <br/>
+      001B:02F5539B xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 619
+      <br/>
+      001B:0049A5D3 xrEngine.exe, rp_Render(), e:\priquel\sources\engine\xrengine\pure.cpp, 14
+      <br/>
+      001B:004AD839 xrEngine.exe, CRegistrator&lt;pureRender&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004ACE96 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 271
+      <br/>
+      001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.
+      <br/>
+      <br/>
+      отредактирован: 25.04.08 16:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18750" name="18750">
+     <td class="bugnote-public">
+      <span class="small">(0018750)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">24 июня 2008 15:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Погоняйте на следующем билде.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20077" name="20077">
+     <td class="bugnote-public">
+      <span class="small">(0020077)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 10:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не вылетает на рендере 2.5</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 марта 2008 12:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 марта 2008 12:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 марта 2008 12:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 марта 2008 12:12</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest Зашол в туннель, зря ) =&gt; Red Forest stack trace:     Зашол в туннель, зря )</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 марта 2008 12:12</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 марта 2008 12:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest stack trace:     Зашол в туннель, зря ) =&gt; Red Forest stack trace:</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 марта 2008 12:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 марта 2008 12:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 марта 2008 12:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 марта 2008 12:36</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Igor</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 12539</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r19646 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 18:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 09:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 11:00</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12597</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 марта 2008 11:07</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12895</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 12:06</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий удален: 12895</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 15:59</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080425-155209.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 16:00</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 15513</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 16:03</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; подтвержден</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 16:03</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 16:04</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 15513</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 15:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 18750</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 15:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 15:47</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:54</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">подтвержден =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:54</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20077</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

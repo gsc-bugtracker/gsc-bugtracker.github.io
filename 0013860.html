@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013860: RED_FOREST Load stack trace: [error]    : Не удается найти указанный файл. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013859.html">
+      &lt; Прошлое обращение (0013859)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013861.html">
+      Следующее обращение (0013861) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013860</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>14 марта 2008 11:56</td>
+    <td>02 июля 2008 11:32</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r20161</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013860: RED_FOREST Load stack trace: [error]    : Не удается найти указанный файл.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:030BB9F9 xrGame.dll, CPatrolPoint::game_vertex_id(), e:\priquel\sources\engine\xrgame\patrol_point.cpp, 129
+     <br/>
+     001B:030C6208 xrGame.dll, CPatrolPathParams::game_vertex_id(), e:\priquel\sources\engine\xrgame\patrol_path_params.cpp, 57
+     <br/>
+     001B:030C885B xrGame.dll, luabind::detail::returns&lt;unsigned short&gt;::call&lt;CPatrolPathParams,CPatrolPathParams,luabind::detail::null_type,unsigned int&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 207
+     <br/>
+     001B:030C9883 xrGame.dll, luabind::detail::mem_fn_callback&lt;unsigned short (__thiscall CPatrolPathParams::*)(unsigned int)const ,CPatrolPathParams,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:030C9DC9 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;unsigned short (__thiscall CPatrolPathParams::*)(unsigned int)const ,CPatrolPathParams,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00AA9069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00AA7248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     <br/>
+     [error]    : Не удается найти указанный файл.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     uzercheg_quicksave.dds.bz2 (7,326 bytes)
+     <span class="italic">14 марта 2008 11:56</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     uzercheg_quicksave.sav.bz2 (79,455 bytes)
+     <span class="italic">14 марта 2008 11:57</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (693,210 bytes)
+     <span class="italic">14 марта 2008 11:57</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     hospital (3,619,235 bytes)
+     <span class="italic">16 апреля 2008 17:29</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12797" name="12797">
+     <td class="bugnote-public">
+      <span class="small">(0012797)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">24 марта 2008 18:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12815" name="12815">
+     <td class="bugnote-public">
+      <span class="small">(0012815)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 марта 2008 09:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Загрузка с сейва...Того что я прекрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14350" name="14350">
+     <td class="bugnote-public">
+      <span class="small">(0014350)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">11 апреля 2008 12:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">просьба повторить баг на новых бинарниках</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14767" name="14767">
+     <td class="bugnote-public">
+      <span class="small">(0014767)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">16 апреля 2008 17:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на госпитале(лог)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14771" name="14771">
+     <td class="bugnote-public">
+      <span class="small">(0014771)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 апреля 2008 17:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">лог не соответствует описанию</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14883" name="14883">
+     <td class="bugnote-public">
+      <span class="small">(0014883)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">18 апреля 2008 08:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Буду чаще сохраняться на Редфоресте, жди чтото попробую найти...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18977" name="18977">
+     <td class="bugnote-public">
+      <span class="small">(0018977)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 12:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19225" name="19225">
+     <td class="bugnote-public">
+      <span class="small">(0019225)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">27 июня 2008 17:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">у точки патрульного пути нет соответствующей ноды, потому валится
+      <br/>
+      вывел дополнительную информацию о точке пути, пути и её позиции
+      <br/>
+      ждите в следующем билде</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 11:56</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 11:56</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 11:56</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: uzercheg_quicksave.dds.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: uzercheg_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">RED_FOREST  stack trace: [error]    : Не удается найти указанный файл. =&gt; RED_FOREST Load stack trace: [error]    : Не удается найти указанный файл.</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 12:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 марта 2008 12:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 марта 2008 12:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 18:19</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12797</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2008 09:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12815</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14350</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 17:29</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14767</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 17:29</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: hospital</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 17:42</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14771</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 08:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 14883</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 12:00</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18977</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19225</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:24</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:37</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:37</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 09:34</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 09:34</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 11:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

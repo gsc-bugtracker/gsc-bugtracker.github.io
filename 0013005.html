@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013005: Limansk   [error]Expression    : assertion failed - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013004.html">
+      &lt; Прошлое обращение (0013004)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013006.html">
+      Следующее обращение (0013006) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013005</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>попыток не было</td>
+    <td>22 февраля 2008 12:34</td>
+    <td>08 июля 2008 11:41</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r18148</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013005: Limansk   [error]Expression    : assertion failed</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CALifeMonsterDetailPathManager::follow_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\alife_monster_detail_path_manager.cpp
+     <br/>
+     [error]Line          : 197
+     <br/>
+     [error]Description   : m_path.back() == object().m_tGraphID
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647C37 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 313
+     <br/>
+     001B:02E3F461 xrGame.dll, CALifeMonsterDetailPathManager::follow_path(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 197
+     <br/>
+     001B:02E3F1F2 xrGame.dll, CALifeMonsterDetailPathManager::update(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 181
+     <br/>
+     001B:02E3ED0D xrGame.dll, CALifeMonsterDetailPathManager::update(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 104
+     <br/>
+     001B:02E35DC8 xrGame.dll, CALifeMonsterMovementManager::update(), e:\priquel\sources\engine\xrgame\alife_monster_movement_manager.cpp, 46
+     <br/>
+     001B:02E3030D xrGame.dll, CALifeMonsterBrain::update(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 173
+     <br/>
+     001B:02E2A6B3 xrGame.dll, CSE_ALifeHumanAbstract::update(), e:\priquel\sources\engine\xrgame\alife_human_abstract.cpp, 23
+     <br/>
+     001B:03C6C0DB xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::update_static(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 160
+     <br/>
+     001B:03CBB01B xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CSE_ALifeHumanStalker,luabind::detail::null_type,CSE_ALifeHumanStalker *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 359
+     <br/>
+     001B:03CB0204 xrGame.dll, luabind::detail::call&lt;CSE_ALifeHumanStalker,luabind::detail::null_type,void,CSE_ALifeHumanStalker *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 390
+     <br/>
+     001B:03C9BB06 xrGame.dll, luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:03C98F8F xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00A59069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00A57248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     001B:00A38EBD xrLUA.dll, luaD_precall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 324
+     <br/>
+     001B:00A38F24 xrLUA.dll, luaD_call(), e:\priquel\sources\engine\xrlua\src\ldo.c, 380
+     <br/>
+     001B:00A32035 xrLUA.dll, f_call(), e:\priquel\sources\engine\xrlua\src\lapi.c, 821
+     <br/>
+     001B:00A3853A xrLUA.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\xrlua\src\ldo.c, 120
+     <br/>
+     001B:00A390BE xrLUA.dll, luaD_pcall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 463
+     <br/>
+     001B:00A32093 xrLUA.dll, lua_pcall(), e:\priquel\sources\engine\xrlua\src\lapi.c, 842
+     <br/>
+     001B:00A5CDF3 xrLUA.dll, luabind::detail::pcall(), e:\priquel\sources\engine\xrlua\luabind\pcall.cpp, 41
+     <br/>
+     001B:02C5E5F8 xrGame.dll, luabind::detail::proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type(), e:\priquel\sources\sdk\include\luabind\detail\call_member.hpp, 248
+     <br/>
+     001B:03C8276E xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::update(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 160
+     <br/>
+     001B:02EB2D33 xrGame.dll, CALifeScheduleRegistry::CUpdatePredicate::operator()(), e:\priquel\sources\engine\xrgame\alife_schedule_registry.h, 45
+     <br/>
+     001B:02EB2B49 xrGame.dll, CSafeMapIterator&lt;unsigned short,CSE_ALifeSchedulable,stlp_std::less&lt;unsigned short&gt;,0,unsigned __int64,1&gt;::update&lt;CALifeScheduleRegistry::CUpdatePredicate&gt;(), e:\priquel\sources\engine\xrgame\safe_map_iterator_inline.h, 128
+     <br/>
+     001B:02EB2651 xrGame.dll, CALifeScheduleRegistry::update(), e:\priquel\sources\engine\xrgame\alife_schedule_registry_inline.h, 29
+     <br/>
+     001B:02EAF1CF xrGame.dll, CALifeUpdateManager::update_scheduled(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 104
+     <br/>
+     001B:02EAF255 xrGame.dll, CALifeUpdateManager::update(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 111
+     <br/>
+     001B:004D6D6E XR_3DA.exe, xalloc&lt;stlp_std::pair&lt;unsigned int const ,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt;::xalloc&lt;stlp_std::pair&lt;unsigned int const ,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt;()
+     <br/>
+     001B:00624B1B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+     <br/>
+     001B:78132848 MSVCR80.dll, endthread()
+     <br/>
+     001B:781328C8 MSVCR80.dll, endthread()
+     <br/>
+     <br/>
+     <br/>
+     сразу после старта уровня, начал двигаться вперед - вылет</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (25,587 bytes)
+     <span class="italic">22 февраля 2008 12:34</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg_02-22-08_12-33-18.mdmp.bz2 (14,391 bytes)
+     <span class="italic">22 февраля 2008 12:34</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     GeF10.rar (58,166 bytes)
+     <span class="italic">05 марта 2008 11:18</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_uzercheg.log.bz2 (51,794 bytes)
+     <span class="italic">18 апреля 2008 12:18</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="10546" name="10546">
+     <td class="bugnote-public">
+      <span class="small">(0010546)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">22 февраля 2008 12:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">а если повторить? ;-)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="11336" name="11336">
+     <td class="bugnote-public">
+      <span class="small">(0011336)</span>
+      <br/>
+      GeForsik
+      <br/>
+      <span class="small">05 марта 2008 11:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Такой же fatal error и на Military. Получил квест "Убить тварь" возле башни, предположительно кровососа. Подходя к месту задания получил crash.
+      <br/>
+      Добавил свой лог c Military.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="11337" name="11337">
+     <td class="bugnote-public">
+      <span class="small">(0011337)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">05 марта 2008 11:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ребята, этот глюк давний и редкий, мне необходима чёткая последователньость действий, чтобы быстро его пофиксить.
+      <br/>
+      <br/>
+      что от вас требуется - дать пошагово что на каком уровне сделать, чтобы стабильно повторить этот вылет.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="11354" name="11354">
+     <td class="bugnote-public">
+      <span class="small">(0011354)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">05 марта 2008 12:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в данный момент вылет повторить не смог (когда постил баг, повторялся стабильно)
+      <br/>
+      <br/>
+      последовательность действий, когда баг повторялся - сразу после загрузки уровня:
+      <br/>
+      -идти вперед
+      <br/>
+      -переход на бег
+      <br/>
+      -переключение на автомат (с гранаты)
+      <br/>
+      -включение фонарика
+      <br/>
+      <br/>
+      когда добегал до НПС, которые спавнятся вначале карты (примерно 2 секунды, чтобы добежать), вылет</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14929" name="14929">
+     <td class="bugnote-public">
+      <span class="small">(0014929)</span>
+      <br/>
+      Aer3
+      <br/>
+      <span class="small">18 апреля 2008 12:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылет повторился на Marsh, при загрузке.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18974" name="18974">
+     <td class="bugnote-public">
+      <span class="small">(0018974)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19621" name="19621">
+     <td class="bugnote-public">
+      <span class="small">(0019621)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">04 июля 2008 09:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не повторим</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 12:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 12:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 12:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_02-22-08_12-33-18.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 12:46</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 12:47</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 12:47</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 12:47</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 12:56</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 12:56</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 10546</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 марта 2008 11:17</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Комментарий добавлен: 11336</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 марта 2008 11:18</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Файл добавлен: GeF10.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 марта 2008 11:25</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 11337</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 марта 2008 12:33</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 11354</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 12:18</td>
+     <td class="small-caption">Aer3</td>
+     <td class="small-caption">Файл добавлен: xray_uzercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 12:19</td>
+     <td class="small-caption">Aer3</td>
+     <td class="small-caption">Комментарий добавлен: 14929</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:58</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18974</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 09:39</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19621</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 09:39</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 09:39</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 11:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
