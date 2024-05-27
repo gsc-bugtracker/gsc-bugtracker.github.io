@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0004961: Подозрение в некорректной работе queuewait - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0004960.html">
+      &lt; Прошлое обращение (0004960)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0004962.html">
+      Следующее обращение (0004962) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0004961</td>
+    <td>[S.T.A.L.K.E.R.: TODO List]</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>21 октября 2005 15:44</td>
+    <td>04 ноября 2005 17:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Stohe</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0004961: Подозрение в некорректной работе queuewait</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Такое впечатление, что он ждет интервал перед выстрелом, а не после него.
+     <br/>
+     <br/>
+     Current world state :
+     <br/>
+     + : [-65536][no_items]
+     <br/>
+     - : [-65518][no_items:Idle]
+     <br/>
+     Target world state :
+     <br/>
+     + : [-65518][no_items:Idle]
+     <br/>
+     35461 : Solution for object level_prefix_stalker [2 vertices searched]
+     <br/>
+     no_items:Idle
+     <br/>
+     action no items idle is initialized
+     <br/>
+     action no items idle is executed
+     <br/>
+     36657 : Active item no active items
+     <br/>
+     36657 : Goal wpn_svu0024:Idle
+     <br/>
+     Current world state :
+     <br/>
+     + : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     - : [1572882][wpn_svu0024:Idle]
+     <br/>
+     + : [-65536][no_items]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572882][wpn_svu0024:Idle]
+     <br/>
+     36657 : Solution for object level_prefix_stalker [4 vertices searched]
+     <br/>
+     wpn_svu0024:Show
+     <br/>
+     wpn_svu0024:Idle
+     <br/>
+     action no items idle is finalized
+     <br/>
+     action show is initialized
+     <br/>
+     action show is executed
+     <br/>
+     Current world state :
+     <br/>
+     - : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     - : [1572882][wpn_svu0024:Idle]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572882][wpn_svu0024:Idle]
+     <br/>
+     36838 : Solution for object level_prefix_stalker [2 vertices searched]
+     <br/>
+     wpn_svu0024:Idle
+     <br/>
+     action show is finalized
+     <br/>
+     action idle is initialized
+     <br/>
+     action idle is executed
+     <br/>
+     37855 : Active item wpn_svu0024
+     <br/>
+     37855 : Goal wpn_svu0024:Idle
+     <br/>
+     38019 : Active item wpn_svu0024
+     <br/>
+     38019 : Goal wpn_svu0024:Idle
+     <br/>
+     38189 : Active item wpn_svu0024
+     <br/>
+     38189 : Goal wpn_svu0024:Idle
+     <br/>
+     38351 : Active item wpn_svu0024
+     <br/>
+     38351 : Goal wpn_svu0024:Idle
+     <br/>
+     38513 : Active item wpn_svu0024
+     <br/>
+     38513 : Goal wpn_svu0024:Idle
+     <br/>
+     38675 : Active item wpn_svu0024
+     <br/>
+     38675 : Goal wpn_svu0024:Idle
+     <br/>
+     38835 : Active item wpn_svu0024
+     <br/>
+     38835 : Goal wpn_svu0024:Idle
+     <br/>
+     39054 : Active item wpn_svu0024
+     <br/>
+     39054 : Goal wpn_svu0024:Idle
+     <br/>
+     39213 : Active item wpn_svu0024
+     <br/>
+     39213 : Goal wpn_svu0024:Idle
+     <br/>
+     51758 : Active item wpn_svu0024
+     <br/>
+     51758 : Goal wpn_svu0024:Firing1
+     <br/>
+     Current world state :
+     <br/>
+     - : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     + : [1572868][wpn_svu0024:Switch1]
+     <br/>
+     - : [1572870][wpn_svu0024:Aimed1]
+     <br/>
+     - : [1572874][wpn_svu0024:Empty1]
+     <br/>
+     + : [1572876][wpn_svu0024:Ready1]
+     <br/>
+     - : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     - : [1572885][wpn_svu0024:QueueWait1]
+     <br/>
+     - : [-65536][no_items]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     51758 : Solution for object level_prefix_stalker [9 vertices searched]
+     <br/>
+     wpn_svu0024:Aim1
+     <br/>
+     wpn_svu0024:QueueWait1
+     <br/>
+     wpn_svu0024:Fire1
+     <br/>
+     action idle is finalized
+     <br/>
+     action aim1 is initialized
+     <br/>
+     action aim1 is executed
+     <br/>
+     51940 : Active item wpn_svu0024
+     <br/>
+     51940 : Goal wpn_svu0024:Firing1
+     <br/>
+     52142 : Active item wpn_svu0024
+     <br/>
+     52142 : Goal wpn_svu0024:Firing1
+     <br/>
+     52324 : Active item wpn_svu0024
+     <br/>
+     52324 : Goal wpn_svu0024:Firing1
+     <br/>
+     Current world state :
+     <br/>
+     - : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     + : [1572868][wpn_svu0024:Switch1]
+     <br/>
+     + : [1572870][wpn_svu0024:Aimed1]
+     <br/>
+     - : [1572874][wpn_svu0024:Empty1]
+     <br/>
+     + : [1572876][wpn_svu0024:Ready1]
+     <br/>
+     - : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     - : [1572885][wpn_svu0024:QueueWait1]
+     <br/>
+     - : [-65536][no_items]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     52324 : Solution for object level_prefix_stalker [6 vertices searched]
+     <br/>
+     wpn_svu0024:QueueWait1
+     <br/>
+     wpn_svu0024:Fire1
+     <br/>
+     action aim1 is finalized
+     <br/>
+     action aim_queue1 is initialized
+     <br/>
+     action aim_queue1 is executed
+     <br/>
+     52508 : Active item wpn_svu0024
+     <br/>
+     52508 : Goal wpn_svu0024:Firing1
+     <br/>
+     52692 : Active item wpn_svu0024
+     <br/>
+     52692 : Goal wpn_svu0024:Firing1
+     <br/>
+     52874 : Active item wpn_svu0024
+     <br/>
+     52874 : Goal wpn_svu0024:Firing1
+     <br/>
+     53057 : Active item wpn_svu0024
+     <br/>
+     53057 : Goal wpn_svu0024:Firing1
+     <br/>
+     53246 : Active item wpn_svu0024
+     <br/>
+     53246 : Goal wpn_svu0024:Firing1
+     <br/>
+     53428 : Active item wpn_svu0024
+     <br/>
+     53428 : Goal wpn_svu0024:Firing1
+     <br/>
+     53613 : Active item wpn_svu0024
+     <br/>
+     53613 : Goal wpn_svu0024:Firing1
+     <br/>
+     53793 : Active item wpn_svu0024
+     <br/>
+     53793 : Goal wpn_svu0024:Firing1
+     <br/>
+     Current world state :
+     <br/>
+     - : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     + : [1572868][wpn_svu0024:Switch1]
+     <br/>
+     + : [1572870][wpn_svu0024:Aimed1]
+     <br/>
+     - : [1572874][wpn_svu0024:Empty1]
+     <br/>
+     + : [1572876][wpn_svu0024:Ready1]
+     <br/>
+     - : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     + : [1572885][wpn_svu0024:QueueWait1]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     53916 : Solution for object level_prefix_stalker [2 vertices searched]
+     <br/>
+     wpn_svu0024:Fire1
+     <br/>
+     action aim_queue1 is finalized
+     <br/>
+     action fire1 is initialized
+     <br/>
+     action fire1 is executed
+     <br/>
+     53978 : Active item wpn_svu0024
+     <br/>
+     53978 : Goal wpn_svu0024:Firing1
+     <br/>
+     Current world state :
+     <br/>
+     - : [1572865][wpn_svu0024:Hidden]
+     <br/>
+     - : [1572866][wpn_svu0024:Strapped]
+     <br/>
+     - : [1572867][wpn_svu0024:Strapped to idle]
+     <br/>
+     + : [1572868][wpn_svu0024:Switch1]
+     <br/>
+     + : [1572870][wpn_svu0024:Aimed1]
+     <br/>
+     - : [1572874][wpn_svu0024:Empty1]
+     <br/>
+     + : [1572876][wpn_svu0024:Ready1]
+     <br/>
+     - : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     - : [1572885][wpn_svu0024:QueueWait1]
+     <br/>
+     - : [-65536][no_items]
+     <br/>
+     Target world state :
+     <br/>
+     + : [1572878][wpn_svu0024:Firing1]
+     <br/>
+     53978 : Solution for object level_prefix_stalker [6 vertices searched]
+     <br/>
+     wpn_svu0024:QueueWait1
+     <br/>
+     wpn_svu0024:Fire1
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 октября 2005 15:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 ноября 2005 17:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 ноября 2005 17:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>
