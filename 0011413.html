@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011413: xrGame.dll!std::_Copy_opt - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011412.html">
+      &lt; Прошлое обращение (0011412)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011414.html">
+      Следующее обращение (0011414) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011413</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>24 марта 2007 13:23</td>
+    <td>18 апреля 2007 15:18</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>24 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011413: xrGame.dll!std::_Copy_opt</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">&gt;	xrGame.dll!std::_Copy_opt&lt;SPHImpact *,SPHImpact *&gt;(SPHImpact * _First=0x12ca267a, SPHImpact * _Last=0x12ca2660, SPHImpact * _Dest=0x12da0ff2, std::_Nonscalar_ptr_iterator_tag __formal={...})  Line 1022 + 0xc bytes	C++
+     <br/>
+     xrGame.dll!std::copy&lt;SPHImpact *,SPHImpact *&gt;(SPHImpact * _First=0x12ca267a, SPHImpact * _Last=0x12ca2660, SPHImpact * _Dest=0x12ca2660)  Line 1040 + 0x11 bytes	C++
+     <br/>
+     xrGame.dll!std::vector&lt;SPHImpact,xalloc&lt;SPHImpact&gt; &gt;::erase(std::vector&lt;SPHImpact,xalloc&lt;SPHImpact&gt; &gt;::iterator _Where={...})  Line 726	C++
+     <br/>
+     xrGame.dll!CTeleWhirlwind::draw_out_impact(_vector3&lt;float&gt; &amp; dir={...}, float &amp; val=1500000.0)  Line 61 + 0x55 bytes	C++
+     <br/>
+     xrGame.dll!CMincer::NotificateDestroy(CPHDestroyableNotificate * dn=0x49b71b00)  Line 129	C++
+     <br/>
+     xrGame.dll!CPHDestroyableNotificate::spawn_notificate(CSE_Abstract * so=0x3ac6fa60)  Line 22	C++
+     <br/>
+     xrGame.dll!CPHSkeleton::Spawn(CSE_Abstract * D=0x3ac6fa60)  Line 107	C++
+     <br/>
+     xrGame.dll!CPhysicsSkeletonObject::net_Spawn(CSE_Abstract * DC=0x3ac6fa60)  Line 28	C++
+     <br/>
+     xrGame.dll!CLevel::g_sv_Spawn(CSE_Abstract * E=0x1a35da14)  Line 107 + 0x10 bytes	C++
+     <br/>
+     xrGame.dll!CLevel::cl_Process_Spawn(NET_Packet &amp; P={...})  Line 39	C++
+     <br/>
+     xrGame.dll!CLevel::ProcessGameEvents()  Line 405	C++
+     <br/>
+     xrGame.dll!CLevel::OnFrame()  Line 460	C++
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.53\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_070323-205646.zip (1,511,156 bytes)
+     <span class="italic">24 марта 2007 19:51</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Связи
+      </a></td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Связи
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Пользователи, отслеживающие обращение
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+      Комментарии
+     </a></td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Комментарии
+      </a></td>
+    </tr>
+    <tr class="bugnote" id="9478" name="9478">
+     <td class="bugnote-public">
+      <span class="small">(0009478)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">24 марта 2007 19:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">&gt;	xrGame.dll!std::_Copy_opt&lt;SBuyItemInfo * *,SBuyItemInfo * *&gt;(SBuyItemInfo * * _First=0x00000004, SBuyItemInfo * * _Last=0x00000000, SBuyItemInfo * * _Dest=0x00000000, std::_Scalar_ptr_iterator_tag __formal={...})  Line 1033 + 0x14 bytes	C++
+      <br/>
+      xrGame.dll!std::copy&lt;SGameMtlPair * *,SGameMtlPair * *&gt;(SGameMtlPair * * _First=0x00000004, SGameMtlPair * * _Last=0x00000000, SGameMtlPair * * _Dest=0x00000000)  Line 1040 + 0x11 bytes	C++
+      <br/>
+      xrGame.dll!std::vector&lt;CPsyDogPhantom *,xalloc&lt;CPsyDogPhantom *&gt; &gt;::erase(std::vector&lt;CPsyDogPhantom *,xalloc&lt;CPsyDogPhantom *&gt; &gt;::iterator _Where={...})  Line 726	C++
+      <br/>
+      xrGame.dll!CGroupHierarchyHolder::unregister_in_group(CEntity * member=0x0a5dd900)  Line 103 + 0xf bytes	C++
+      <br/>
+      xrGame.dll!CGroupHierarchyHolder::unregister_member(CEntity * member=0x0a5dd900)  Line 157	C++
+      <br/>
+      xrGame.dll!CEntity::net_Destroy()  Line 253 + 0x42 bytes	C++
+      <br/>
+      xrGame.dll!CActor::net_Destroy()  Line 691	C++
+      <br/>
+      xrGame.dll!CLevel::net_Stop()  Line 97	C++</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9480" name="9480">
+     <td class="bugnote-public">
+      <span class="small">(0009480)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">25 марта 2007 19:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Во время сетевой игры, нажатие кнопки "Отсоедениться" в главноме меню.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2007 13:23</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2007 19:50</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9478</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2007 19:51</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_070323-205646.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2007 19:04</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9480</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2007 14:18</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2007 14:18</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2007 15:18</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

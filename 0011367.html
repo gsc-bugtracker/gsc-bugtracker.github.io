@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011367: xrRender_R2.dll!CSkeletonX_ext - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011366.html">
+      &lt; Прошлое обращение (0011366)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011368.html">
+      Следующее обращение (0011368) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011367</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>20 марта 2007 13:47</td>
+    <td>26 июня 2007 14:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>20 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011367: xrRender_R2.dll!CSkeletonX_ext</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">XR_3DA.exe!0041638c()
+     <br/>
+     [Frames below may be incorrect and/or missing, no symbols loaded for XR_3DA.exe]
+     <br/>
+     xrRender_R2.dll!CSkeletonX_ext::_CollectBoneFaces(Fvisual * V=0x16ff9af0, unsigned int iBase=329055680, unsigned int iCount=10983)  Line 318 + 0xe bytes	C++
+     <br/>
+     &gt;	xrRender_R2.dll!CSkeletonX_PM::AfterLoad(CKinematics * parent=0x16c3fd84, unsigned short child_idx=64896)  Line 336 + 0x1c bytes	C++
+     <br/>
+     xrCore.dll!std::vector&lt;CTimer_paused *,xalloc&lt;CTimer_paused *&gt; &gt;::_Insert_n(std::vector&lt;CTimer_paused *,xalloc&lt;CTimer_paused *&gt; &gt;::iterator _Where={...}, unsigned int _Count=0, CTimer_paused * const &amp; _Val=0x0001b8a0)  Line 870 + 0x1a bytes	C++
+     <br/>
+     msvcr71.dll!7c3496a2()
+     <br/>
+     xrCore.dll!std::_Tree&lt;std::_Tset_traits&lt;CLocatorAPI::file,CLocatorAPI::file_pred,xalloc&lt;CLocatorAPI::file&gt;,0&gt; &gt;::find(const CLocatorAPI::file &amp; _Keyval={...})  Line 790	C++
+     <br/>
+     xrCore.dll!CLocatorAPI::file_find_it(const char * fname=0x01b8a030)  Line 1209	C++
+     <br/>
+     msvcr71.dll!7c3496a2()
+     <br/>
+     msvcr71.dll!7c36f87f()
+     <br/>
+     xrCore.dll!std::_Tree&lt;std::_Tset_traits&lt;CLocatorAPI::file,CLocatorAPI::file_pred,xalloc&lt;CLocatorAPI::file&gt;,0&gt; &gt;::find(const CLocatorAPI::file &amp; _Keyval={...})  Line 790	C++
+     <br/>
+     xrCore.dll!CLocatorAPI::check_for_file(const char * path=0x0022d360, const char * _fname=0x01b70348, char * fname=0x0000103e, const CLocatorAPI::file * &amp; desc=0x0c24448b)  Line 1092	C++
+     <br/>
+     xrCore.dll!CLocatorAPI::r_open_impl&lt;IReader&gt;()  Line 1122	C++
+     <br/>
+     xrCore.dll!xrMemory::mem_alloc(unsigned int size=193877680)  Line 90	C++
+     <br/>
+     xrRender_R2.dll!std::_Tree&lt;std::_Tmap_traits&lt;IRender_Visual *,shared_str,std::less&lt;IRender_Visual *&gt;,xalloc&lt;std::pair&lt;IRender_Visual *,shared_str&gt; &gt;,0&gt; &gt;::_Insert(bool _Addleft=true, std::_Tree_nod&lt;std::_Tmap_traits&lt;IRender_Visual *,shared_str,std::less&lt;IRender_Visual *&gt;,xalloc&lt;std::pair&lt;IRender_Visual *,shared_str&gt; &gt;,0&gt; &gt;::_Node * _Wherenode=0x00000000, const std::pair&lt;IRender_Visual * const,shared_str&gt; &amp; _Val=(0x035e1910 {Type=??? vis={...} shader={...} },{p_=0x006a84e0 }))  Line 915 + 0x13 bytes	C++
+     <br/>
+     xrRender_R2.dll!CModelPool::Create(const char * name=0x00000000, IReader * data=0x00000000)  Line 265	C++
+     <br/>
+     xrRender_R2.dll!CModelPool::Prefetch()  Line 391	C++
+     <br/>
+     xrRender_R2.dll!CRender::models_Prefetch()  Line 318 + 0xc bytes	C++
+     <br/>
+     xrGame.dll!CGamePersistent::OnGameStart()  Line 171	C++
+     <br/>
+     xrCore.dll!std::_Lower_bound&lt;std::vector&lt;CInifile::Item,xalloc&lt;CInifile::Item&gt; &gt;::iterator,char const *,int,bool (__cdecl*)(CInifile::Item const &amp;,char const *)&gt;(std::vector&lt;CInifile::Item,xalloc&lt;CInifile::Item&gt; &gt;::iterator _First={...}, std::vector&lt;CInifile::Item,xalloc&lt;CInifile::Item&gt; &gt;::iterator _Last={...}, const char * const &amp; _Val=0x2f6c6c61, bool (const CInifile::Item &amp;, const char *)* _Pred=0x00000000, int * __formal=0x004aee2d)  Line 1218 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!CGamePersistent::Start(const char * op=)  Line 150	C++
+     <br/>
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.2\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 13:47</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2007 13:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">[error]    : No more data is available. =&gt; xrRender_R2.dll!CSkeletonX_ext</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2007 13:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2007 14:10</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

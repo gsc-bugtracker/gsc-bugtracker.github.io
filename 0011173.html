@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011173: m_sound._handle, Line : 75 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011172.html">
+      &lt; Прошлое обращение (0011172)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011174.html">
+      Следующее обращение (0011174) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011173</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>12 февраля 2007 17:22</td>
+    <td>27 июня 2007 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>12 февраля 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011173: m_sound._handle, Line : 75</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Вылетело при переходе с lab х18 на даркваллей, при повторном переходе всё нормально ).
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CScriptSound::IsPlaying
+     <br/>
+     [error]File          : d:\xray-svn\xr_3da\xrgame\script_sound_inline.h
+     <br/>
+     [error]Line          : 75
+     <br/>
+     [error]Description   : m_sound._handle()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01139C07 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 275
+     <br/>
+     001B:03736A85 xrGame.dll, CScriptSound::IsPlaying(), d:\xray-svn\xr_3da\xrgame\script_sound_inline.h, 76
+     <br/>
+     001B:03737422 xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;CScriptSound,CScriptSound,luabind::detail::null_type&gt;(), d:\sdk\luabind\luabind\detail\call.hpp, 207
+     <br/>
+     001B:03737D7F xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__thiscall CScriptSound::*)(void)const ,CScriptSound,luabind::detail::null_type&gt;::operator()(), d:\sdk\luabind\luabind\class.hpp, 204
+     <br/>
+     001B:03738A2C xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__thiscall CScriptSound::*)(void)const ,CScriptSound,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), d:\sdk\boost_1_30_0\boost\function\function_template.hpp, 118
+     <br/>
+     001B:01401DDF xrLUA.dll, boost::function1&lt;int,lua_State *,std::allocator&lt;boost::function_base&gt; &gt;::operator()(), d:\sdk\boost_1_30_0\boost\function\function_template.hpp, 328
+     <br/>
+     001B:0140A7EC xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), d:\xray-svn\xrlua\luabind\class_rep.cpp, 721
+     <br/>
+     pause [ON] timer=[ON] sound=[ON] reason=CGP::OnAppDeactivate
+     <br/>
+     snd_emitters_[true] 2
+     <br/>
+     pause [OFF] timer=[ON] sound=[ON] reason=CGP::OnAppActivate
+     <br/>
+     snd_emitters_[false] 1
+     <br/>
+     <br/>
+     <br/>
+     S:\logs\155\</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9386" name="9386">
+     <td class="bugnote-public">
+      <span class="small">(0009386)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">12 февраля 2007 17:41</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">где лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9387" name="9387">
+     <td class="bugnote-public">
+      <span class="small">(0009387)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">12 февраля 2007 17:44</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">S:\logs\155\</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9393" name="9393">
+     <td class="bugnote-public">
+      <span class="small">(0009393)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">12 февраля 2007 19:05</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">Надо постараться повторить вылет, по идее при определенных условиях он должен вылетать стабильно. В момент перехода скорее всего играется какой то звук. Было бы неплохо определить что это за звук.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 февраля 2007 17:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 февраля 2007 17:41</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9386</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 февраля 2007 17:44</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 февраля 2007 17:44</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9387</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 февраля 2007 17:48</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 февраля 2007 19:04</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Sepul</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 февраля 2007 19:05</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 9393</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2007 10:51</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2007 10:51</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

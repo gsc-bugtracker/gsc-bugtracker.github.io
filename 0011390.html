@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011390: xrGame.dll!CALifeGraphRegistry - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011389.html">
+      &lt; Прошлое обращение (0011389)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011391.html">
+      Следующее обращение (0011391) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011390</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>22 марта 2007 13:13</td>
+    <td>18 апреля 2007 15:18</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>22 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011390: xrGame.dll!CALifeGraphRegistry</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : m_actor
+     <br/>
+     [error]Function      : CALifeGraphRegistry::update
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\alife_graph_registry.cpp
+     <br/>
+     [error]Line          : 51
+     <br/>
+     [error]Description   : Invalid flag M_SPAWN_OBJECT_ASPLAYER for non-actor object!
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     &gt;	xrCore.dll!xrDebug::backend(const char * expression=0x03eb4594, const char * description=0x03eb459c, const char * argument0=0x00000000, const char * argument1=0x00000000, const char * file=0x03eb4480, int line=51, const char * function=0x03eb45d8, bool &amp; ignore_always=false)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fail(const char * e1=0x03eb4594, const char * e2=0x03eb459c, const char * file=0x03eb4480, int line=51, const char * function=0x03eb45d8, bool &amp; ignore_always=false)  Line 304	C++
+     <br/>
+     xrGame.dll!CALifeGraphRegistry::update(CSE_ALifeDynamicObject * object=0x2054c920)  Line 54	C++
+     <br/>
+     xrGame.dll!CALifeSimulatorBase::register_object(CSE_ALifeDynamicObject * object=0x2054c920, bool add_object=false)  Line 31	C++
+     <br/>
+     xrGame.dll!CALifeStorageManager::load(const char * save_name=0x0cf550b4)  Line 130 + 0x11 bytes	C++
+     <br/>
+     xrGame.dll!CALifeUpdateManager::load(const char * game_name=0x0cf550b4, bool no_assert=true, bool new_only=false)  Line 264 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!CALifeSimulator::CALifeSimulator(xrServer * server=0x0cf550b4, shared_str * command_line=0x1b5c29f4)  Line 73	C++
+     <br/>
+     xrGame.dll!xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(xrServer * const &amp; p1=0x1301fbe0, shared_str * const &amp; p2=0x1b5c29f4)  Line 82	C++
+     <br/>
+     xrGame.dll!game_sv_Single::Create(shared_str &amp; options={...})  Line 30 + 0x16 bytes	C++
+     <br/>
+     xrGame.dll!xrServer::Connect(shared_str &amp; session_name={...})  Line 45	C++
+     <br/>
+     xrGame.dll!CLevel::net_start2()  Line 119 + 0xc bytes	C++
+     <br/>
+     XR_3DA.exe!00488ae4()
+     <br/>
+     [Frames below may be incorrect and/or missing, no symbols loaded for XR_3DA.exe]
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.30\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_070321-215722.zip (1,529,334 bytes)
+     <span class="italic">22 марта 2007 13:13</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 марта 2007 13:13</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 марта 2007 13:13</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_070321-215722.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2007 14:17</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2007 14:17</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2007 15:18</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

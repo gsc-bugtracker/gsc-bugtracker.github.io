@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011368: [error]Function : _out_of_memory - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011367.html">
+      &lt; Прошлое обращение (0011367)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011369.html">
+      Следующее обращение (0011369) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011368</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>20 марта 2007 13:55</td>
+    <td>26 июня 2007 14:13</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>20 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011368: [error]Function : _out_of_memory</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : _out_of_memory
+     <br/>
+     [error]File          : D:\xray-svn\xrCore\xrDebugNew.cpp
+     <br/>
+     [error]Line          : 339
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Out of memory. Memory request: 8192 K
+     <br/>
+     <br/>
+     <br/>
+     &gt;	xrCore.dll!xrDebug::backend(const char * expression=0x002a1fb4, const char * description=0x002a1fc0, const char * argument0=0x00221b24, const char * argument1=0x00000000, const char * file=0x002a1efc, int line=339, const char * function=0x002a1f20, bool &amp; ignore_always=false)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fatal(const char * file=0x002a1efc, int line=339, const char * function=0x002a1f20, const char * F=0x002a1f30, ...)  Line 328	C++
+     <br/>
+     xrCore.dll!_out_of_memory(unsigned int size=8388630)  Line 339 + 0x26 bytes	C++
+     <br/>
+     msvcr71.dll!7c3487ee()
+     <br/>
+     [Frames below may be incorrect and/or missing, no symbols loaded for msvcr71.dll]
+     <br/>
+     msvcr71.dll!7c347966()
+     <br/>
+     msvcr71.dll!7c3416f8()
+     <br/>
+     xrCore.dll!xrMemory::mem_realloc(void * P=0x00400007, unsigned int size=0)  Line 207 + 0x4e bytes	C++
+     <br/>
+     xrCore.dll!CMemoryWriter::w(const void * ptr=0x00221fcc, unsigned int count=142)  Line 182 + 0xf bytes	C++
+     <br/>
+     xrGame.dll!CALifeObjectRegistry::save(IWriter &amp; memory_stream={...}, CSE_ALifeDynamicObject * object=0x16bf5cd0, unsigned int &amp; object_count=18421)  Line 40	C++
+     <br/>
+     xrGame.dll!CALifeObjectRegistry::save(IWriter &amp; memory_stream={...}, CSE_ALifeDynamicObject * object=0x16bf5cd0, unsigned int &amp; object_count=1407144916)  Line 56 + 0xd bytes	C++
+     <br/>
+     xrGame.dll!CALifeObjectRegistry::save(IWriter &amp; memory_stream={...})  Line 78 + 0xe bytes	C++
+     <br/>
+     xrGame.dll!CALifeStorageManager::save(const char * save_name=0x3567122c, bool update_name=false)  Line 51	C++
+     <br/>
+     xrGame.dll!CALifeStorageManager::save(NET_Packet &amp; net_packet={...})  Line 159	C++
+     <br/>
+     xrGame.dll!game_sv_Single::save_game(NET_Packet &amp; net_packet={...}, ClientID sender={...})  Line 219 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!xrServer::OnMessage(NET_Packet &amp; P={...}, ClientID sender={...})  Line 434	C++
+     <br/>
+     xrGame.dll!CLevel::Send(NET_Packet &amp; P={...}, unsigned int dwFlags=8, unsigned int dwTimeout=0)  Line 238	C++
+     <br/>
+     xrGame.dll!CCC_ALifeSave::Execute(const char * args=0x00000010)  Line 701	C++
+     <br/>
+     XR_3DA.exe!CConsole::ExecuteCommand()  Line 437	C++
+     <br/>
+     xrGame.dll!CLevel::IR_OnKeyboardPress(int key=0)  Line 190	C++
+     <br/>
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.3\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Связи
+      </a></td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Связи
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Пользователи, отслеживающие обращение
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+      Комментарии
+     </a></td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Комментарии
+      </a></td>
+    </tr>
+    <tr class="bugnote" id="9466" name="9466">
+     <td class="bugnote-public">
+      <span class="small">(0009466)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">22 марта 2007 12:12</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">&gt;	xrCore.dll!xrDebug::backend(const char * expression=0x002a1fb4, const char * description=0x002a1fc0, const char * argument0=0x00228518, const char * argument1=0x00000000, const char * file=0x002a1efc, int line=339, const char * function=0x002a1f20, bool &amp; ignore_always=false)  Line 254	C++
+      <br/>
+      xrCore.dll!xrDebug::fatal(const char * file=0x002a1efc, int line=339, const char * function=0x002a1f20, const char * F=0x002a1f30, ...)  Line 328	C++
+      <br/>
+      xrCore.dll!_out_of_memory(unsigned int size=8388630)  Line 339 + 0x26 bytes	C++
+      <br/>
+      msvcr71.dll!7c3487ee()
+      <br/>
+      [Frames below may be incorrect and/or missing, no symbols loaded for msvcr71.dll]
+      <br/>
+      msvcr71.dll!7c347966()
+      <br/>
+      msvcr71.dll!7c3416f8()
+      <br/>
+      xrCore.dll!xrMemory::mem_realloc(void * P=0x00400007, unsigned int size=0)  Line 207 + 0x4e bytes	C++
+      <br/>
+      xrCore.dll!CMemoryWriter::w(const void * ptr=0x1147873c, unsigned int count=31)  Line 182 + 0xf bytes	C++
+      <br/>
+      xrCore.dll!IWriter::w_stringZ(const shared_str &amp; p={...})  Line 56 + 0x29 bytes	C++
+      <br/>
+      xrGame.dll!INFO_DATA::save(IWriter &amp; stream={...})  Line 23	C++
+      <br/>
+      xrGame.dll!CSaver&lt;IWriter,object_saver::detail::CEmptyPredicate&gt;::CHelper3::save_data&lt;xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;(const xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &amp; data={...}, IWriter &amp; stream={...}, const object_saver::detail::CEmptyPredicate &amp; p={...})  Line 61 + 0xb bytes	C++
+      <br/>
+      xrGame.dll!CSaver&lt;IWriter,object_saver::detail::CEmptyPredicate&gt;::save_data&lt;unsigned short const ,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;(const std::pair&lt;unsigned short const ,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt; &amp; data=(102,{...}), IWriter &amp; stream={...}, const object_saver::detail::CEmptyPredicate &amp; p={...})  Line 106 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CSaver&lt;IWriter,object_saver::detail::CEmptyPredicate&gt;::CHelper3::save_data&lt;xr_map&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt;,std::less&lt;unsigned short&gt;,xalloc&lt;std::pair&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt; &gt; &gt; &gt;(const xr_map&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt;,std::less&lt;unsigned short&gt;,xalloc&lt;std::pair&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt; &gt; &gt; &amp; data={...}, IWriter &amp; stream={...}, const object_saver::detail::CEmptyPredicate &amp; p={...})  Line 61 + 0xf bytes	C++
+      <br/>
+      xrGame.dll!CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;::save(IWriter &amp; memory_stream={...})  Line 28 + 0x16 bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 81	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;GAME_NEWS_DATA,xalloc&lt;GAME_NEWS_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;shared_str,int&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;GAME_NEWS_DATA,xalloc&lt;GAME_NEWS_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CMapLocationRegistry,Loki::Typelist&lt;CALifeAbstractRegistry&lt;shared_str,int&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;GAME_NEWS_DATA,xalloc&lt;GAME_NEWS_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CGameTaskRegistry,Loki::Typelist&lt;CMapLocationRegistry,Loki::Typelist&lt;CALifeAbstractRegistry&lt;shared_str,int&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;GAME_NEWS_DATA,xalloc&lt;GAME_NEWS_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CRegistryHelperProcess&lt;CRegistryHelperSave,CALifeRegistryContainer,IWriter &amp;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;SStatSectionData,xalloc&lt;SStatSectionData&gt; &gt; &gt;,Loki::Typelist&lt;CGameTaskRegistry,Loki::Typelist&lt;CMapLocationRegistry,Loki::Typelist&lt;CALifeAbstractRegistry&lt;shared_str,int&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;GAME_NEWS_DATA,xalloc&lt;GAME_NEWS_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;ARTICLE_DATA,xalloc&lt;ARTICLE_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;TALK_CONTACT_DATA,xalloc&lt;TALK_CONTACT_DATA&gt; &gt; &gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,RELATION_DATA&gt;,Loki::Typelist&lt;CALifeAbstractRegistry&lt;unsigned short,xr_vector&lt;INFO_DATA,xalloc&lt;INFO_DATA&gt; &gt; &gt;,Loki::NullType&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;::process(CALifeRegistryContainer * self=0x1fe43780, IWriter &amp; p1={...})  Line 80 + 0xe bytes	C++
+      <br/>
+      xrGame.dll!CALifeRegistryContainer::save(IWriter &amp; memory_stream={...})  Line 104 + 0xa bytes	C++
+      <br/>
+      xrGame.dll!CALifeStorageManager::save(const char * save_name=0x00228e14, bool update_name=true)  Line 53	C++
+      <br/>
+      xrGame.dll!CALifeUpdateManager::change_level(NET_Packet &amp; net_packet={...})  Line 211	C++
+      <br/>
+      xrGame.dll!game_sv_Single::change_level(NET_Packet &amp; net_packet={...}, ClientID sender={...})  Line 209 + 0xf bytes	C++
+      <br/>
+      xrGame.dll!xrServer::OnMessage(NET_Packet &amp; P={...}, ClientID sender={...})  Line 424 + 0x10 bytes	C++
+      <br/>
+      xrGame.dll!CLevel::Send(NET_Packet &amp; P={...}, unsigned int dwFlags=8, unsigned int dwTimeout=0)  Line 238	C++
+      <br/>
+      xrGame.dll!CChangeLevelWnd::OnOk()  Line 221 + 0x1d bytes	C++
+      <br/>
+      xrGame.dll!CChangeLevelWnd::SendMessageA(CUIWindow * pWnd=0x16a586d0, short msg=39, void * pData=0x00000000)  Line 203	C++
+      <br/>
+      xrGame.dll!CUIMessageBox::SendMessageA(CUIWindow * pWnd=0x3cc4fc10, short msg=16, void * pData=0x00000000)  Line 177 + 0x12 bytes	C++
+      <br/>
+      xrGame.dll!CUIButton::OnClick()  Line 140	C++
+      <br/>
+      xrGame.dll!CUI3tButton::OnClick()  Line 39	C++
+      <br/>
+      xrGame.dll!CUIButton::OnMouse(float x=35.500000, float y=13.750000, EUIMessages mouse_action=WINDOW_LBUTTON_UP)  Line 92	C++
+      <br/>
+      xrGame.dll!CUI3tButton::OnMouse(float x=35.500000, float y=13.750000, EUIMessages mouse_action=WINDOW_LBUTTON_UP)  Line 48	C++
+      <br/>
+      xrGame.dll!CUIWindow::OnMouse(float x=5.9917965e-020, float y=3.197e-039#DEN, EUIMessages mouse_action=WINDOW_LBUTTON_UP)  Line 360 + 0x46 bytes	C++
+      <br/>
+      xrGame.dll!CUIMessageBox::OnMouse(float x=285.50000, float y=167.75000, EUIMessages mouse_action=WINDOW_LBUTTON_UP)  Line 45	C++
+      <br/>
+      xrGame.dll!CUIWindow::OnMouse(float x=5.9915949e-020, float y=3.197e-039#DEN, EUIMessages mouse_action=WINDOW_LBUTTON_UP)  Line 360 + 0x46 bytes	C++
+      <br/>
+      xrGame.dll!CUIDialogWnd::IR_OnKeyboardRelease(int dik=256)  Line 96 + 0x17 bytes	C++
+      <br/>
+      xrGame.dll!CUI::IR_OnKeyboardRelease(int dik=256)  Line 178 + 0x15 bytes	C++
+      <br/>
+      xrGame.dll!CLevel::IR_OnKeyboardRelease(int key=256)  Line 380 + 0x1a bytes	C++
+      <br/>
+      xrGame.dll!CLevel::IR_OnMouseRelease(int btn=0)  Line 63 + 0x10 bytes	C++
+      <br/>
+      msvcr71.dll!7c350184()
+      <br/>
+      msvcr71.dll!7c34f9a2()
+      <br/>
+      msvcr71.dll!7c350135()
+      <br/>
+      msvcr71.dll!7c350184()
+      <br/>
+      xrGame.dll!ui_core::PopScissor()  Line 178	C++
+      <br/>
+      xrCore.dll!CTimer::GetElapsed_ms()  Line 31 + 0x68 bytes	C++
+      <br/>
+      <br/>
+      Этот вылет происходит при сохранение игры. Добавлен новый крэш файл.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       История
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       История
+      </a></td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 13:55</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">новый =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xray-svn\xrCore\xrDebugNew.cpp, Line: 339 =&gt; xray-svn\\xrCore\\xrDebugNew.cpp, Line: 339</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xray-svn\xrCore\xrDebugNew.cpp, Line: 339 =&gt; [error]Function : _out_of_memory</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 13:56</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 марта 2007 12:12</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9466</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 марта 2007 12:12</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2007 14:13</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

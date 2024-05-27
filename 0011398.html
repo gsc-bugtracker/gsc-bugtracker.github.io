@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011398: xrCore.dll!CInifile - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011397.html">
+      &lt; Прошлое обращение (0011397)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011399.html">
+      Следующее обращение (0011399) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011398</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>22 марта 2007 18:23</td>
+    <td>18 апреля 2007 15:20</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>22 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011398: xrCore.dll!CInifile</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">xrCore.dll!xrDebug::backend(const char * expression=0x01001fb4, const char * description=0x01001fc0, const char * argument0=0x00218054, const char * argument1=0x00000000, const char * file=0x01001b30, int line=341, const char * function=0x01001a28, bool &amp; ignore_always=false)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fatal(const char * file=0x01001b30, int line=341, const char * function=0x01001a28, const char * F=0x01001a3c, ...)  Line 328	C++
+     <br/>
+     &gt;	xrCore.dll!CInifile::r_section(const char * S=0x0021a5d8)  Line 341 + 0x1f bytes	C++
+     <br/>
+     xrCore.dll!CInifile::r_string(const char * S=0x0021a5d8, const char * L=0x03c60e88)  Line 347 + 0xc bytes	C++
+     <br/>
+     xrCore.dll!CInifile::r_clsid(const char * S=0x0021a5d8, const char * L=0x03c60e88)  Line 469	C++
+     <br/>
+     xrGame.dll!F_entity_Create(const char * section=0x0021a5d8)  Line 14 + 0x15 bytes	C++
+     <br/>
+     xrGame.dll!CALifeObjectRegistry::get_object(IReader &amp; file_stream={...})  Line 110	C++
+     <br/>
+     xrGame.dll!CALifeObjectRegistry::load(IReader &amp; file_stream={...})  Line 138 + 0x8 bytes	C++
+     <br/>
+     xrGame.dll!CALifeStorageManager::load(const char * save_name=0x08670964)  Line 122	C++
+     <br/>
+     xrGame.dll!CALifeUpdateManager::load(const char * game_name=0x08670964, bool no_assert=false, bool new_only=false)  Line 264 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!CALifeSimulator::CALifeSimulator(xrServer * server=0x08670964, shared_str * command_line=0x0a9e2214)  Line 73	C++
+     <br/>
+     xrGame.dll!xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(xrServer * const &amp; p1=0x0a473f50, shared_str * const &amp; p2=0x0a9e2214)  Line 82	C++
+     <br/>
+     xrGame.dll!game_sv_Single::restart_simulator(const char * saved_game_name=0x0a9e2214)  Line 331 + 0x19 bytes	C++
+     <br/>
+     xrGame.dll!CGamePersistent::OnEvent(CEvent * E=0x3a760d50, unsigned __int64 P1=980815184, unsigned __int64 P2=0)  Line 413	C++
+     <br/>
+     XR_3DA.exe!CEvent::Signal(unsigned __int64 P1=, unsigned __int64 P2=)  Line 42 + 0x17 bytes	C++
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.38\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9469" name="9469">
+     <td class="bugnote-public">
+      <span class="small">(0009469)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">22 марта 2007 18:26</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">где аттачнутый файл?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9470" name="9470">
+     <td class="bugnote-public">
+      <span class="small">(0009470)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">22 марта 2007 19:22</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">S:\logs\BugTrap\1.38\
+      <br/>
+      У меня больше двух метров не заливается на tiger.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 марта 2007 18:23</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 марта 2007 18:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 9469</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 марта 2007 19:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9470</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2007 15:20</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

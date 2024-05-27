@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011391: xrSound.dll!CSoundRender_Source - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011390.html">
+      &lt; Прошлое обращение (0011390)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011392.html">
+      Следующее обращение (0011392) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011391</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>22 марта 2007 13:20</td>
+    <td>18 апреля 2007 15:17</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>22 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011391: xrSound.dll!CSoundRender_Source</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5"><br/>
+     [error]Expression    : ovi
+     <br/>
+     [error]Function      : CSoundRender_Source::LoadWave
+     <br/>
+     [error]File          : D:\xray-svn\xrSound\SoundRender_Source_loader.cpp
+     <br/>
+     [error]Line          : 70
+     <br/>
+     [error]Description   : Invalid source info:
+     <br/>
+     [error]Arguments     : c:\program files (x86)\thq\s.t.a.l.k.e.r. - shadow of chernobyl\gamedata\sounds\characters_voice\human_02\dolg\reactions\music\reaction_music_6.ogg
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     &gt;	xrCore.dll!xrDebug::backend(const char * expression=0x1002396c, const char * description=0x10023970, const char * argument0=0x002789c8, const char * argument1=0x00000000, const char * file=0x100239b8, int line=70, const char * function=0x100239ec, bool &amp; ignore_always=false)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fail(const char * e1=0x1002396c, const char * e2=0x10023970, const char * e3=0x002789c8, const char * file=0x100239b8, int line=70, const char * function=0x100239ec, bool &amp; ignore_always=false)  Line 309	C++
+     <br/>
+     xrSound.dll!CSoundRender_Source::LoadWave(const char * pName=0x002789c8)  Line 71	C++
+     <br/>
+     xrSound.dll!CSoundRender_Source::load(const char * name=0x00000000)  Line 138	C++
+     <br/>
+     xrSound.dll!CSoundRender_Core::i_create_source(const char * name=0x00000000)  Line 20	C++
+     <br/>
+     xrSound.dll!CSoundRender_Core::_create_data(ref_sound_data &amp; S={...}, const char * fName=0x00278f58, esound_type sound_type=st_Effect, int game_type=16384)  Line 353	C++
+     <br/>
+     xrSound.dll!CSoundRender_Core::create(ref_sound &amp; S={...}, const char * fName=0x00278f58, esound_type sound_type=st_Effect, int game_type=16384)  Line 289 + 0x44 bytes	C++
+     <br/>
+     xrGame.dll!ref_sound::create(const char * name=0x00278f58, esound_type sound_type=st_Effect, int game_type=16384)  Line 328 + 0x1b bytes	C++
+     <br/>
+     xrGame.dll!CSoundPlayer::CSoundCollection::add(ESoundTypes type=SOUND_TYPE_TALKING, const char * name=0x00278f58)  Line 51	C++
+     <br/>
+     xrGame.dll!CSoundPlayer::CSoundCollection::CSoundCollection(const CSoundPlayer::CSoundCollectionParams &amp; params={...})  Line 254	C++
+     <br/>
+     xrGame.dll!xr_new&lt;CSoundPlayer::CSoundCollection,CSoundPlayer::CSoundCollectionParams&gt;(const CSoundPlayer::CSoundCollectionParams &amp; p1={...})  Line 76	C++
+     <br/>
+     xrGame.dll!CSoundCollectionStorage::object(const CSoundPlayer::CSoundCollectionParams &amp; params={...})  Line 47 + 0x8 bytes	C++
+     <br/>
+     xrGame.dll!CSoundPlayer::add(const char * prefix=0x08ac39c8, unsigned int max_count=20, ESoundTypes type=SOUND_TYPE_TALKING, unsigned int priority=2, unsigned int mask=1, unsigned int internal_type=10065, const char * bone_name=0x056f7278, resptr_core&lt;CSound_UserData,resptr_base&lt;CSound_UserData&gt; &gt; data={...})  Line 83	C++
+     <br/>
+     xrGame.dll!CScriptGameObject::add_sound(const char * prefix=0x08ac39c8, unsigned int max_count=20, ESoundTypes type=SOUND_TYPE_TALKING, unsigned int priority=2, unsigned int mask=1, unsigned int internal_type=10065, const char * bone_name=0x056f7278)  Line 56	C++
+     <br/>
+     xrGame.dll!CScriptGameObject::add_sound(const char * prefix=0x08ac39c8, unsigned int max_count=20, ESoundTypes type=SOUND_TYPE_TALKING, unsigned int priority=2, unsigned int mask=1, unsigned int internal_type=10065)  Line 61	C++
+     <br/>
+     xrGame.dll!luabind::detail::returns&lt;unsigned int&gt;::call&lt;CScriptGameObject,CScriptGameObject,luabind::detail::null_type,char const *,unsigned int,enum ESoundTypes,unsigned int,unsigned int,unsigned int&gt;(unsigned int (const char *, unsigned int, ESoundTypes, unsigned int, unsigned int, unsigned int)* f=0x05402e7b, CScriptGameObject * __formal=0x00000000, lua_State * L=0x083b0018, CScriptGameObject * __formal=0x00000000)  Line 161 + 0x82 bytes	C++
+     <br/>
+     xrGame.dll!luabind::detail::mem_fn_callback&lt;unsigned int (__thiscall CScriptGameObject::*)(char const *,unsigned int,enum ESoundTypes,unsigned int,unsigned int,unsigned int),CScriptGameObject,luabind::detail::null_type&gt;::operator()(lua_State * L=0x083b0018)  Line 204 + 0x10 bytes	C++
+     <br/>
+     xrGame.dll!boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;unsigned int (__thiscall CScriptGameObject::*)(char const *,unsigned int,enum ESoundTypes,unsigned int,unsigned int,unsigned int),CScriptGameObject,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(boost::detail::function::any_pointer function_obj_ptr={...}, lua_State * a0=0x083b0018)  Line 118	C++
+     <br/>
+     xrLUA.dll!boost::function1&lt;int,lua_State *,std::allocator&lt;boost::function_base&gt; &gt;::operator()(lua_State * a0=0x083b0018)  Line 328	C++
+     <br/>
+     xrLUA.dll!luabind::detail::class_rep::function_dispatcher(lua_State * L=0x083b0018)  Line 721 + 0x9 bytes	C++
+     <br/>
+     xrLUA.dll!luaD_precall(lua_State * L=0x083b0018, lua_TValue * func=0x000000a0, int nresults=1)  Line 280 + 0x10 bytes	C++
+     <br/>
+     xrLUA.dll!luaD_call(lua_State * L=0x083b0018, lua_TValue * func=0x26560168, int nResults=1)  Line 380 + 0x10 bytes	C++
+     <br/>
+     xrLUA.dll!f_call(lua_State * L=0x083b0018, void * ud=0x00279450)  Line 821 + 0x15 bytes	C++
+     <br/>
+     xrLUA.dll!luaD_rawrunprotected(lua_State * L=0x083b0018, void (lua_State *, void *)* f=0x00df8fd0, void * ud=0x00279450)  Line 120	C++
+     <br/>
+     xrLUA.dll!luaD_pcall(lua_State * L=0x00000000, void (lua_State *, void *)* func=0x00df8fd0, void * u=0x00279450, int old_top=160, int ef=0)  Line 463 + 0x1b bytes	C++
+     <br/>
+     xrLUA.dll!lua_pcall(lua_State * L=0x083b0018, int nargs=2, int nresults=1, int errfunc=0)  Line 842 + 0x1e bytes	C++
+     <br/>
+     xrLUA.dll!luabind::detail::pcall(lua_State * L=0x083b0018, int nargs=2, int nresults=1)  Line 41 + 0xd bytes	C++
+     <br/>
+     xrGame.dll!luabind::detail::proxy_member_caller&lt;bool,boost::tuples::tuple&lt;CSE_ALifeObject * const *,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::operator bool()  Line 112 + 0xc bytes	C++
+     <br/>
+     xrGame.dll!CScriptBinderObjectWrapper::net_Spawn(CSE_ALifeObject * DC=0x295e83f0)  Line 46 + 0x25 bytes	C++
+     <br/>
+     xrGame.dll!CScriptBinder::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 133 + 0x9 bytes	C++
+     <br/>
+     xrGame.dll!CGameObject::net_Spawn(CSE_Abstract * DC=0x298da840)  Line 375	C++
+     <br/>
+     xrGame.dll!CPhysicsShellHolder::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 48	C++
+     <br/>
+     xrGame.dll!CEntity::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 232 + 0xa bytes	C++
+     <br/>
+     xrGame.dll!CEntityAlive::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 235	C++
+     <br/>
+     xrGame.dll!CCustomMonster::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 628 + 0x1f bytes	C++
+     <br/>
+     xrGame.dll!CAI_Stalker::net_Spawn(CSE_Abstract * DC=0x295e83f0)  Line 341 + 0x2d bytes	C++
+     <br/>
+     xrGame.dll!CLevel::g_sv_Spawn(CSE_Abstract * E=0x12a5e384)  Line 107 + 0x10 bytes	C++
+     <br/>
+     xrGame.dll!CLevel::cl_Process_Spawn(NET_Packet &amp; P={...})  Line 39	C++
+     <br/>
+     xrGame.dll!CLevel::ProcessGameEvents()  Line 405	C++
+     <br/>
+     xrGame.dll!CLevel::OnFrame()  Line 460	C++
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.31\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_070327-100118.zip (843,377 bytes)
+     <span class="italic">27 марта 2007 17:28</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9482" name="9482">
+     <td class="bugnote-public">
+      <span class="small">(0009482)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">27 марта 2007 17:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : ovi
+      <br/>
+      [error]Function      : CSoundRender_Source::LoadWave
+      <br/>
+      [error]File          : D:\xray-svn\xrSound\SoundRender_Source_loader.cpp
+      <br/>
+      [error]Line          : 70
+      <br/>
+      [error]Description   : Invalid source info:
+      <br/>
+      [error]Arguments     : c:\program files\thq\s.t.a.l.k.e.r. - shadow of chernobyl\gamedata\sounds\ambient\rnd_outdoor\rnd_shooting_9.ogg</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 марта 2007 13:20</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 марта 2007 17:28</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9482</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 марта 2007 17:28</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_070327-100118.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2007 15:01</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2007 15:01</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2007 15:17</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

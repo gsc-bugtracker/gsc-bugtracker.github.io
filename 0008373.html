@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0008373: Универсальные диалоги в профилях персонажей. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0008372.html">
+      &lt; Прошлое обращение (0008372)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0008374.html">
+      Следующее обращение (0008374) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0008373</td>
+    <td>[S.T.A.L.K.E.R.: Level Design] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>13 апреля 2006 17:56</td>
+    <td>20 апреля 2006 15:11</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Stohe</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>13 апреля 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0008373: Универсальные диалоги в профилях персонажей.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Необходимо привести в порядок прописанные в профилях диалоги.
+     <br/>
+     В настоящее время во многих профилях не подключены универсальные диалоги, несмотря
+     <br/>
+     на то что еще месяца два назад я собственноручно прошелся по всем профилям и везде их прописал.
+     <br/>
+     <br/>
+     Если профиль сюжетного персонажа, у которого существует свой стартовый диалог, то описание профиля
+     <br/>
+     должно выглядеть следующим образом:
+     <br/>
+     <br/>
+     &lt;specific_character id="esc_tutorial_wounded" team_default = "1"&gt;
+     <br/>
+     &lt;name&gt;esc_tolik_name&lt;/name&gt;
+     <br/>
+     &lt;icon x="30" y="2"&gt;&lt;/icon&gt;
+     <br/>
+     &lt;map_icon x="0" y="0"&gt;&lt;/map_icon&gt;
+     <br/>
+     &lt;bio&gt;esc_tolik_bio&lt;/bio&gt;
+     <br/>
+     <br/>
+     &lt;class&gt;esc_tutorial_wounded&lt;/class&gt;
+     <br/>
+     &lt;community&gt;stalker&lt;/community&gt; &lt;terrain_sect&gt;stalker_terrain&lt;/terrain_sect&gt;
+     <br/>
+     <br/>
+     &lt;rank&gt;196&lt;/rank&gt;
+     <br/>
+     &lt;reputation&gt;6&lt;/reputation&gt;
+     <br/>
+     <br/>
+     &lt;snd_config&gt;characters_voice\human_01\newbie\&lt;/snd_config&gt;
+     <br/>
+     <br/>
+     &lt;visual&gt;actors\novice\green_stalker_1&lt;/visual&gt;
+     <br/>
+     &lt;supplies&gt;
+     <br/>
+     [spawn] \n
+     <br/>
+     wpn_pb \n
+     <br/>
+     ammo_9x18_fmj = 1 \n
+     <br/>
+     esc_wounded_flash \n
+     <br/>
+     &lt;/supplies&gt;
+     <br/>
+     <br/>
+     &lt;start_dialog&gt;tutorial_wounded_give_medkit&lt;/start_dialog&gt;
+     <br/>
+     #include "gameplay\character_dialogs.xml"
+     <br/>
+     &lt;/specific_character&gt;
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     Если профиль универсальный, то описание профиля должно выглядеть следующим образом:
+     <br/>
+     <br/>
+     &lt;specific_character id="esc_bandit_novice_default2" team_default = "1"&gt;
+     <br/>
+     &lt;name&gt;GENERATE_NAME_bandit&lt;/name&gt;
+     <br/>
+     &lt;icon x="28" y="2"&gt;&lt;/icon&gt;
+     <br/>
+     &lt;map_icon x="3" y="2"&gt;&lt;/map_icon&gt;
+     <br/>
+     &lt;bio&gt;esc_bandit_novice_bio&lt;/bio&gt;
+     <br/>
+     <br/>
+     &lt;class&gt;esc_bandit_novice&lt;/class&gt;
+     <br/>
+     &lt;community&gt;bandit&lt;/community&gt; &lt;terrain_sect&gt;stalker_bandit_terrain&lt;/terrain_sect&gt;
+     <br/>
+     <br/>
+     &lt;rank&gt;59&lt;/rank&gt;
+     <br/>
+     &lt;reputation&gt;-60&lt;/reputation&gt;
+     <br/>
+     <br/>
+     &lt;snd_config&gt;characters_voice\human_01\bandit\&lt;/snd_config&gt;
+     <br/>
+     <br/>
+     &lt;panic_treshold&gt;0&lt;/panic_treshold&gt;
+     <br/>
+     <br/>
+     &lt;visual&gt;actors\bandit\stalker_bandit_4&lt;/visual&gt;
+     <br/>
+     &lt;supplies&gt;
+     <br/>
+     [spawn] \n
+     <br/>
+     wpn_pb \n
+     <br/>
+     ammo_9x18_pmm = 1 \n
+     <br/>
+     device_torch \n
+     <br/>
+     wpn_bm16 \n
+     <br/>
+     ammo_12x70_buck \n
+     <br/>
+     #include "gameplay\character_items.xml" \n
+     <br/>
+     #include "gameplay\character_drugs.xml" \n
+     <br/>
+     #include "gameplay\character_food.xml"
+     <br/>
+     &lt;/supplies&gt;
+     <br/>
+     <br/>
+     #include "gameplay\character_dialogs.xml"
+     <br/>
+     &lt;/specific_character&gt;
+     <br/>
+     <br/>
+     <br/>
+     Прописывать универсальные диалоги не нужно особым уникальным персонажам типа торговец,
+     <br/>
+     бармен, лидеры группировок и тд и тп.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 апреля 2006 17:56</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 апреля 2006 19:14</td>
+     <td class="small-caption">Haron</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 апреля 2006 19:14</td>
+     <td class="small-caption">Haron</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 апреля 2006 15:07</td>
+     <td class="small-caption">Petruha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 апреля 2006 15:11</td>
+     <td class="small-caption">Petruha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

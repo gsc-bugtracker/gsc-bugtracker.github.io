@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011369: [error]Function      : CStringTable::Load - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011368.html">
+      &lt; Прошлое обращение (0011368)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011370.html">
+      Следующее обращение (0011370) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011369</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>20 марта 2007 14:00</td>
+    <td>18 марта 2008 18:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>не баг</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>20 марта 2007 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011369: [error]Function      : CStringTable::Load</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CStringTable::Load
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\string_table.cpp
+     <br/>
+     [error]Line          : 53
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : string table xml file not found ui_st_pda.xml, for language eng
+     <br/>
+     <br/>
+     <br/>
+     &gt;	xrCore.dll!xrDebug::backend(const char * expression=0x01001fb4, const char * description=0x01001fc0, const char * argument0=0x0022cb80, const char * argument1=0x00000000, const char * file=0x033034d0, int line=53, const char * function=0x033034fc, bool &amp; ignore_always=true)  Line 254	C++
+     <br/>
+     xrCore.dll!xrDebug::fatal(const char * file=0x033034d0, int line=53, const char * function=0x033034fc, const char * F=0x03303510, ...)  Line 328	C++
+     <br/>
+     xrGame.dll!CStringTable::Load(const char * xml_file=0x0022d2dc)  Line 53 + 0x34 bytes	C++
+     <br/>
+     xrGame.dll!CStringTable::Init()  Line 38 + 0x12 bytes	C++
+     <br/>
+     xrGame.dll!CStringTable::CStringTable()  Line 13	C++
+     <br/>
+     xrGame.dll!CUIXmlInit::InitText(CUIXml &amp; xml_doc={...}, const char * path=0x0022d3d8, int index=0, IUITextControl * pWnd=0x08816740)  Line 291	C++
+     <br/>
+     xrGame.dll!CUIXmlInit::InitText(CUIXml &amp; xml_doc={...}, const char * path=0x0022d3d8, int index=0, CUIStatic * pWnd=0x086993f0)  Line 253	C++
+     <br/>
+     xrGame.dll!CUIXmlInit::InitMultiText(CUIXml &amp; xml_doc={...}, const char * path=0x0331e92c, int index=0, CUIStatic * pWnd=0x086993f0)  Line 1081	C++
+     <br/>
+     xrGame.dll!CUIXmlInit::InitStatic(CUIXml &amp; xml_doc={...}, const char * path=0x0331e92c, int index=0, CUIStatic * pWnd=0x086993f0)  Line 176	C++
+     <br/>
+     xrGame.dll!CUIButtonHint::CUIButtonHint()  Line 28 + 0x15 bytes	C++
+     <br/>
+     xrGame.dll!CMainMenu::CMainMenu()  Line 49 + 0x5 bytes	C++
+     <br/>
+     xrGame.dll!CGamePersistent::OnAppStart()  Line 127	C++
+     <br/>
+     <br/>
+     <br/>
+     S:\logs\BugTrap\1.4\</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9459" name="9459">
+     <td class="bugnote-public">
+      <span class="small">(0009459)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">20 марта 2007 16:11</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">ломаный билд
+      <br/>
+      все идут лесом</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 14:00</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2007 16:11</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9459</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2007 16:11</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2007 16:11</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; не баг</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 18:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

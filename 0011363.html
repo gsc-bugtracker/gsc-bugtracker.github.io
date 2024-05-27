@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011363: xray-svn\xrCore\Xr_ini.cpp, Line : 341 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0011362.html">
+      &lt; Прошлое обращение (0011362)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011364.html">
+      Следующее обращение (0011364) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011363</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>17 марта 2007 14:04</td>
+    <td>27 июня 2007 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>17 марта 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011363: xray-svn\xrCore\Xr_ini.cpp, Line : 341</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">100% вылет в "Тёмной долине".
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CInifile::r_section
+     <br/>
+     [error]File          : D:\xray-svn\xrCore\Xr_ini.cpp
+     <br/>
+     [error]Line          : 341
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Can't open section '8З#иЖ#Р'
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01005D17 xrCore.dll, xrDebug::backend(), d:\xray-svn\xrcore\xrdebugnew.cpp, 226
+     <br/>
+     001B:01005DCB xrCore.dll, xrDebug::fatal(), d:\xray-svn\xrcore\xrdebugnew.cpp, 338
+     <br/>
+     001B:00FFDCD4 xrCore.dll, std::_Lower_bound&lt;std::vector&lt;CInifile::Sect *,xalloc&lt;CInifile::Sect *&gt; &gt;::iterator,char const [256],int,bool (__cdecl*)(CInifile::Sect const *,char const *)&gt;(), d:\develop\compilers\vs71\vc7\include\algorithm, 1218
+     <br/>
+     001B:010072FE xrCore.dll, CInifile::r_section(), d:\xray-svn\xrcore\xr_ini.cpp, 341
+     <br/>
+     001B:010079CD xrCore.dll, CInifile::r_string(), d:\xray-svn\xrcore\xr_ini.cpp, 347
+     <br/>
+     001B:010081EF xrCore.dll, CInifile::r_float(), d:\xray-svn\xrcore\xr_ini.cpp, 399
+     <br/>
+     001B:02FD93E6 xrGame.dll, CCartridge::Load(), d:\xray-svn\xr_3da\xrgame\weaponammo.cpp, 33
+     <br/>
+     001B:02FD6BA1 xrGame.dll, CWeapon::net_Spawn(), d:\xray-svn\xr_3da\xrgame\weapon.cpp, 471
+     <br/>
+     001B:02FE7EBD xrGame.dll, CWeaponRPG7::net_Spawn(), d:\xray-svn\xr_3da\xrgame\weaponrpg7.cpp, 55
+     <br/>
+     001B:02F78941 xrGame.dll, CLevel::g_sv_Spawn(), d:\xray-svn\xr_3da\xrgame\level_network_spawn.cpp, 108
+     <br/>
+     001B:02F78AF8 xrGame.dll, CLevel::cl_Process_Spawn(), d:\xray-svn\xr_3da\xrgame\level_network_spawn.cpp, 40
+     <br/>
+     001B:02F70C5C xrGame.dll, CLevel::ProcessGameEvents(), d:\xray-svn\xr_3da\xrgame\level.cpp, 414
+     <br/>
+     001B:02F70DF1 xrGame.dll, CLevel::OnFrame(), d:\xray-svn\xr_3da\xrgame\level.cpp, 469
+     <br/>
+     001B:0044918A XR_3DA.exe, CRegistrator&lt;pureFrame&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 79
+     <br/>
+     001B:004885F7 XR_3DA.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 354
+     <br/>
+     001B:00488C1E XR_3DA.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 222
+     <br/>
+     001B:004AF33B XR_3DA.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 225
+     <br/>
+     001B:004AF90B XR_3DA.exe, WinMain_impl(), d:\xray-svn\xr_3da\x_ray.cpp, 640
+     <br/>
+     001B:004AFA86 XR_3DA.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 706
+     <br/>
+     001B:00463D59 XR_3DA.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:005A2EB0 XR_3DA.exe, __onexitbegin()
+     <br/>
+     <br/>
+     S:\logs\281\</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9453" name="9453">
+     <td class="bugnote-public">
+      <span class="small">(0009453)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">17 марта 2007 14:14</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">а что значит 100% вылет ?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9454" name="9454">
+     <td class="bugnote-public">
+      <span class="small">(0009454)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">17 марта 2007 14:31</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">На дарквалли крешится в одном и том же месет, на подходе к автобусной стоянке.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9455" name="9455">
+     <td class="bugnote-public">
+      <span class="small">(0009455)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">17 марта 2007 14:51</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">дай плз сейв
+      <br/>
+      желательно за 2-5 м до  вылета</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9457" name="9457">
+     <td class="bugnote-public">
+      <span class="small">(0009457)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">17 марта 2007 15:12</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">сейв там лежит, версия игры пропатченна сегодня.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2007 14:04</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2007 14:14</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9453</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2007 14:31</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9454</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2007 14:51</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9455</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2007 15:12</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 9457</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2007 10:51</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2007 10:51</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>
