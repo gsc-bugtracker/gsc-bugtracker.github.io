@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018773: SVN новые бинарники - Military - E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018772.html">
+      &lt; Прошлое обращение (0018772)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018774.html">
+      Следующее обращение (0018774) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018773</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>22 сентября 2008 11:19</td>
+    <td>24 сентября 2008 20:27</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Dark</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r31800</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018773: SVN новые бинарники - Military - E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] RESET INVULNERABILITY. npc[sim_default_freedom_419826] = [false]
+     <br/>
+     [LUA] ...\stalker\clear_sky\xr_walker:(101):DEBUG: set_scheme: scheme='walker',
+     <a href="mailto:section='walker@follow_mil_smart_terrain_5_2_guard_1_walk'" target="_new">
+      section='walker@follow_mil_smart_terrain_5_2_guard_1_walk'
+          , gulag_name='mil_smart_terrain_5_2'
+      <br/>
+      [LUA] ...\stalker\clear_sky\xr_walker:(103):DEBUG: set_scheme: storage assigned
+      <br/>
+      bad path check changed movement type from RUN to WALK
+      <br/>
+      bad path check changed movement type from RUN to WALK
+      <br/>
+      transition guard(cover): [mil_smart_terrain_7_7_smartcover_7] -&gt; [&lt;world&gt;]
+      <br/>
+      m_current_transition guard: [mil_smart_terrain_7_7_smartcover_7][lh_9] -&gt; [&lt;world&gt;][&lt;no loophole&gt;], [2]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : stalker_movement_manager_smart_cover::nearest_action
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp
+      <br/>
+      [error]Line          : 228
+      <br/>
+      [error]Description   : result
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD3C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02F2146B xrGame.dll, stalker_movement_manager_smart_cover::nearest_action(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 229
+      <br/>
+      001B:02F22359 xrGame.dll, stalker_movement_manager_smart_cover::build_exit_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 288
+      <br/>
+      001B:02F23094 xrGame.dll, stalker_movement_manager_smart_cover::actualize_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 454
+      <br/>
+      001B:02F23353 xrGame.dll, stalker_movement_manager_smart_cover::try_actualize_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 466
+      <br/>
+      001B:02F1D2CE xrGame.dll, stalker_movement_manager_smart_cover::current_transition(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 442
+      <br/>
+      001B:02F2FFDA xrGame.dll, smart_cover::evaluators::can_exit_loophole_with_animation::evaluate(), e:\priquel\sources\engine\xrgame\smart_cover_evaluators.cpp, 221
+      <br/>
+      001B:02C13390 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::evaluate_condition(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 204
+      <br/>
+      001B:02C13D70 xrGame.dll, COperatorAbstract&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,unsigned short&gt;::applicable&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; const &gt;(), e:\priquel\sources\engine\xrgame\operator_abstract_inline.h, 262
+      <br/>
+      001B:02C145FA xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::value(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 235
+      <br/>
+      001B:02C14F91 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 143
+      <br/>
+      001B:02C15330 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 252
+      <br/>
+      001B:02C15873 xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), e:\priquel\sources\engine\xrgame\graph_engine_inline.h, 211
+      <br/>
+      001B:02C15C09 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 377
+      <br/>
+      001B:02C15E9B xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 74
+      <br/>
+      001B:02F24B7B xrGame.dll, smart_cover::animation_selector::select_animation(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 96
+      <br/>
+      001B:02ED492E xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+      <br/>
+      001B:02EDAF5C xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 167
+      <br/>
+      001B:02EDB0C3 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 228
+      <br/>
+      001B:02EDB16C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 248
+      <br/>
+      001B:02EC9492 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 956
+      <br/>
+      001B:02D5D9A4 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:035EF7E0 xrGame.dll, _strlwr()
+      <br/>
+      001B:02F40573 xrGame.dll, CAI_Stalker::debug_text(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_debug.cpp, 278
+      <br/>
+      001B:02ED0E90 xrGame.dll, CAI_Stalker::`scalar deleting destructor'
+      <br/>
+      001B:02EC9890 xrGame.dll, CAI_Stalker::AlwaysTheCrow, e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 1164
+      <br/>
+      001B:02CCFCF0 xrGame.dll, CGameObject::Ready, e:\priquel\sources\engine\xrgame\gameobject.h, 119
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      Загрузил сейв, по квесту пошел на встречу с бойцами Свободы. Вступил в бой на складах и во время перестрелки в здании - крашнулось.
+      <br/>
+      <br/>
+      тестовые миксовые бины
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (372,771 bytes)
+     <span class="italic">22 сентября 2008 11:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mil1.sav.bz2 (1,217,253 bytes)
+     <span class="italic">22 сентября 2008 11:20</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22328" name="22328">
+     <td class="bugnote-public">
+      <span class="small">(0022328)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">23 сентября 2008 17:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">добавил дополнительные проверки
+      <br/>
+      нужно ещё раз вывалить на следующих бинах
+      <br/>
+      как только вывалите - назначайте на скриптовиков - это их баг
+      <br/>
+      связан он с тем, что либо вообще нет транзишинов между каверами, либо они не аппликабле, либо кавер стоит таким образом, что нельзя воспользоваться транзишином, т.к. на месте выпрыгивания из кавера нет ноды</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 11:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 11:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 11:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 11:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN новые бинарники - Military - E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp =&gt; SVN новые бинарники - Military - E:\\priquel\\sources\\engine\\xrGame\\stalker_movement_manager_smart_cover_loopholes.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 11:19</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 11:20</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: mil1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 11:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 11:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 12:19</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 16:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 16:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 16:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN новые бинарники - Military - E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp =&gt; SVN новые бинарники - Military - E:\\priquel\\sources\\engine\\xrGame\\stalker_movement_manager_smart_cover_loopholes.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 16:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 17:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22328</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN новые бинарники - Military - E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp =&gt; SVN новые бинарники - Military - E:\\priquel\\sources\\engine\\xrGame\\stalker_movement_manager_smart_cover_loopholes.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; plecha</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

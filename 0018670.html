@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018670: e:\priquel\sources\engine\xrcore\_vector3d.h   : 189 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018669.html">
+      &lt; Прошлое обращение (0018669)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018671.html">
+      Следующее обращение (0018671) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018670</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>04 сентября 2008 18:14</td>
+    <td>24 сентября 2008 20:26</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018670: e:\priquel\sources\engine\xrcore\_vector3d.h   : 189</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : _vector3&lt;float&gt;::normalize
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_vector3d.h
+     <br/>
+     [error]Line          : 189
+     <br/>
+     [error]Description   : square_magnitude() &gt; std::numeric_limits&lt;T&gt;::min()
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006DD3C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02C69186 xrGame.dll, smart_cover::cover::evaluate_loophole(), e:\priquel\sources\engine\xrgame\smart_cover.cpp, 182
+     <br/>
+     001B:02C69A18 xrGame.dll, smart_cover::cover::best_loophole(), e:\priquel\sources\engine\xrgame\smart_cover.cpp, 161
+     <br/>
+     001B:02E84C99 xrGame.dll, CCoverEvaluatorBest::evaluate_smart_cover(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 194
+     <br/>
+     001B:02E84ED9 xrGame.dll, CCoverEvaluatorBase::evaluate(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 35
+     <br/>
+     001B:02EA903D xrGame.dll, CCoverManager::best_cover&lt;CCoverEvaluatorBest,CStalkerMovementRestrictor&gt;(), e:\priquel\sources\engine\xrgame\cover_manager_inline.h, 99
+     <br/>
+     001B:02EDB2B1 xrGame.dll, CAI_Stalker::find_best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 141
+     <br/>
+     001B:02EDB2E7 xrGame.dll, CAI_Stalker::best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 242
+     <br/>
+     001B:02E95D51 xrGame.dll, CStalkerActionGetReadyToKill::execute(), e:\priquel\sources\engine\xrgame\stalker_combat_actions.cpp, 334
+     <br/>
+     001B:02BB6019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+     <br/>
+     001B:02E907A9 xrGame.dll, CStalkerCombatPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_combat_planner.cpp, 102
+     <br/>
+     001B:02BB6019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+     <br/>
+     001B:02E873D7 xrGame.dll, CStalkerPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_planner.cpp, 81
+     <br/>
+     001B:02E6A7ED xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 919
+     <br/>
+     001B:02E6F0ED xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+     <br/>
+     001B:00426C51 xrEngine.exe, stlp_std::vector&lt;CEnvModifier,xalloc&lt;CEnvModifier&gt; &gt;::begin(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 170
+     <br/>
+     001B:0042737F xrEngine.exe, stlp_std::reverse_iterator&lt;CObjectList::SRelcasePair *&gt;::reverse_iterator&lt;CObjectList::SRelcasePair *&gt;()
+     <br/>
+     001B:03057CAD xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 563
+     <br/>
+     001B:00498583 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     001B:4FDA9994 d3d9.dll
+     <br/>
+     001B:004AD6E9 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 269
+     <br/>
+     001B:004ACEA8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 40
+     <br/>
+     001B:7C90E9C0 ntdll.dll</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080904-175332.zip (1,976,577 bytes)
+     <span class="italic">04 сентября 2008 18:14</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     19.09.2008.log.bz2 (192,513 bytes)
+     <span class="italic">19 сентября 2008 17:17</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     24.09.08.log.bz2 (405,887 bytes)
+     <span class="italic">24 сентября 2008 19:27</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22075" name="22075">
+     <td class="bugnote-public">
+      <span class="small">(0022075)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">04 сентября 2008 18:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в бункере у Сахарова отреспился сталкер и подпер дверь, я пытался юзнуть дверь</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22284" name="22284">
+     <td class="bugnote-public">
+      <span class="small">(0022284)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">19 сентября 2008 17:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">НА Янтаре, после того как включил холодильную установку (на фактори) начал возвращаться в сторону бункера Сахарова, крашнуло
+      <br/>
+      <br/>
+      ---DropItem activating slot [-1], Frame[218062]
+      <br/>
+      --- Activating slot [-1], inventory owner: [Филя Бодряк], Frame[218062]
+      <br/>
+      --- Inventory owner [Филя Бодряк]: send deactivate item [АКМ-74/2]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : _vector3&lt;float&gt;::normalize
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_vector3d.h
+      <br/>
+      [error]Line          : 189
+      <br/>
+      [error]Description   : square_magnitude() &gt; std::numeric_limits&lt;T&gt;::min()
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD3C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02CC9196 xrGame.dll, smart_cover::cover::evaluate_loophole(), e:\priquel\sources\engine\xrgame\smart_cover.cpp, 182
+      <br/>
+      001B:02CC9A28 xrGame.dll, smart_cover::cover::best_loophole(), e:\priquel\sources\engine\xrgame\smart_cover.cpp, 161
+      <br/>
+      001B:02EE4D49 xrGame.dll, CCoverEvaluatorBest::evaluate_smart_cover(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 194
+      <br/>
+      001B:02EE4F89 xrGame.dll, CCoverEvaluatorBase::evaluate(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 35
+      <br/>
+      001B:02F0AAAD xrGame.dll, CCoverManager::best_cover&lt;CCoverEvaluatorBest,CStalkerMovementRestrictor&gt;(), e:\priquel\sources\engine\xrgame\cover_manager_inline.h, 99
+      <br/>
+      001B:02F3B211 xrGame.dll, CAI_Stalker::find_best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 141
+      <br/>
+      001B:02F3B397 xrGame.dll, CAI_Stalker::best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 242
+      <br/>
+      001B:02EF3B71 xrGame.dll, CStalkerActionGetReadyToKill::execute(), e:\priquel\sources\engine\xrgame\stalker_combat_actions.cpp, 334
+      <br/>
+      001B:02C16019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+      <br/>
+      001B:02EF0859 xrGame.dll, CStalkerCombatPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_combat_planner.cpp, 102
+      <br/>
+      001B:02C16019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+      <br/>
+      001B:02EE7487 xrGame.dll, CStalkerPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_planner.cpp, 81
+      <br/>
+      001B:02ECA89D xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 919
+      <br/>
+      001B:02ECF19D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+      <br/>
+      001B:00426C91 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:004273BF xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:030B79CD xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 563
+      <br/>
+      001B:004985C3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AD719 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004ACED8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 482
+      <br/>
+      001B:004ACE74 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 473
+      <br/>
+      001B:004ABE96 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 269
+      <br/>
+      001B:004ACAB2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 389
+      <br/>
+      001B:004ACBCB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 425
+      <br/>
+      001B:0040EE02 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 273
+      <br/>
+      001B:0040F6C4 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 750
+      <br/>
+      001B:0040F8DF xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 801
+      <br/>
+      001B:0051A9E8 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22285" name="22285">
+     <td class="bugnote-public">
+      <span class="small">(0022285)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">19 сентября 2008 17:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ревизия: 31796
+      <br/>
+      миксовые бины</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22327" name="22327">
+     <td class="bugnote-public">
+      <span class="small">(0022327)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">23 сентября 2008 16:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">добавил дебаговую инфу, надо будет ещё раз вывалить на следующих бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22352" name="22352">
+     <td class="bugnote-public">
+      <span class="small">(0022352)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">24 сентября 2008 19:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">На том же месте при тех же условиях вывалилось
+      <br/>
+      новые миксовые бины
+      <br/>
+      <br/>
+      <br/>
+      ~ to
+      <br/>
+      ~ [120372][121.800003][-0.310156][41.299988]
+      <br/>
+      ! NPC yan_default_stalker_115638 couldn't build path from
+      <br/>
+      ~ [129656][136.499985][-0.966503][49.000000]
+      <br/>
+      ~ to
+      <br/>
+      ~ [120372][121.800003][-0.310156][41.299988]
+      <br/>
+      ! level_path().failed() during navigation
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _valid(position)
+      <br/>
+      [error]Function      : smart_cover::cover::evaluate_loophole
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\smart_cover.cpp
+      <br/>
+      [error]Line          : 170
+      <br/>
+      [error]Description   : 0.000000
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DDDB1 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+      <br/>
+      001B:02CCAACE xrGame.dll, smart_cover::cover::evaluate_loophole(), e:\priquel\sources\engine\xrgame\smart_cover.cpp, 170
+      <br/>
+      001B:02C9C2F5 xrGame.dll, stlp_std::priv::__lower_bound&lt;unsigned int const *,unsigned int,CFindByXZ_predicate,CFindByXZ_predicate,int&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algobase.c, 383
+      <br/>
+      001B:02C9C581 xrGame.dll, CSpaceRestrictionBridge::on_border(), e:\priquel\sources\engine\xrgame\space_restriction_bridge.cpp, 109
+      <br/>
+      001B:02C92D03 xrGame.dll, CSpaceRestriction::accessible(), e:\priquel\sources\engine\xrgame\space_restriction.cpp, 81
+      <br/>
+      001B:02C8F4F4 xrGame.dll, CSpaceRestrictionManager::accessible(), e:\priquel\sources\engine\xrgame\space_restriction_manager.cpp, 153
+      <br/>
+      001B:02C5A395 xrGame.dll, CRestrictedObject::accessible(), e:\priquel\sources\engine\xrgame\restricted_object.cpp, 140
+      <br/>
+      001B:02EE5069 xrGame.dll, CCoverEvaluatorBest::evaluate_smart_cover(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 194
+      <br/>
+      001B:02EE52A9 xrGame.dll, CCoverEvaluatorBase::evaluate(), e:\priquel\sources\engine\xrgame\cover_evaluators.cpp, 35
+      <br/>
+      001B:02F0ADED xrGame.dll, CCoverManager::best_cover&lt;CCoverEvaluatorBest,CStalkerMovementRestrictor&gt;(), e:\priquel\sources\engine\xrgame\cover_manager_inline.h, 99
+      <br/>
+      001B:02F3B5B1 xrGame.dll, CAI_Stalker::find_best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 134
+      <br/>
+      001B:02F3B7E7 xrGame.dll, CAI_Stalker::best_cover(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_cover.cpp, 242
+      <br/>
+      001B:02EF3EB1 xrGame.dll, CStalkerActionGetReadyToKill::execute(), e:\priquel\sources\engine\xrgame\stalker_combat_actions.cpp, 334
+      <br/>
+      001B:02C16019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+      <br/>
+      001B:02EF0B99 xrGame.dll, CStalkerCombatPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_combat_planner.cpp, 102
+      <br/>
+      001B:02C16019 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+      <br/>
+      001B:02EE77A7 xrGame.dll, CStalkerPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_planner.cpp, 81
+      <br/>
+      001B:02ECABBD xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 919
+      <br/>
+      001B:02ECF4BD xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+      <br/>
+      001B:00426CE1 xrEngine.exe, stlp_std::priv::_Rb_tree&lt;shared_str,CEnvironment::str_pred,stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt;,stlp_std::priv::_Select1st&lt;stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;shared_str const ,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt;,xalloc&lt;stlp_std::pair&lt;shared_str,xr_vector&lt;CEnvDescriptor *,xalloc&lt;CEnvDescriptor *&gt; &gt; &gt; &gt; &gt;::_S_maximu(), e:\priquel\sources\sdk\include\stlport\stl\_tree.h, 362
+      <br/>
+      001B:0042740F xrEngine.exe, stlp_std::reverse_iterator&lt;CObject * *&gt;::reverse_iterator&lt;CObject * *&gt;()
+      <br/>
+      001B:030B7E1D xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 563
+      <br/>
+      001B:00498683 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+      <br/>
+      001B:77F28A51 GDI32.dll
+      <br/>
+      001B:004AD829 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 275
+      <br/>
+      001B:004ACFE8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 50
+      <br/>
+      001B:7C90E9C0 ntdll.dll
+      <br/>
+      001B:004ABFA6 xrEngine.exe, CTheoraSurface::Update(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 66
+      <br/>
+      001B:77D3D1EA USER32.dll
+      <br/>
+      001B:004ACBC2 xrEngine.exe, CTheoraSurface::`vector deleting destructor'()
+      <br/>
+      001B:004ACCDB xrEngine.exe, tv_yuv2argb(), e:\priquel\sources\engine\xrengine\xrtheora_surface_mmx.cpp, 147
+      <br/>
+      001B:0040EDF2 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F6B4 xrEngine.exe, operator new()
+      <br/>
+      001B:0040F8CF xrEngine.exe, operator new()
+      <br/>
+      001B:0051AAF8 xrEngine.exe, ICClose()
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      001B:08C2C9FF d3dx9_31.dll, D3DXCreateEffect()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22353" name="22353">
+     <td class="bugnote-public">
+      <span class="small">(0022353)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">24 сентября 2008 20:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в следующих бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 18:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 18:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080904-175332.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 18:15</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 18:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 22075</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 сентября 2008 17:16</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22284</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 сентября 2008 17:17</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 19.09.2008.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 сентября 2008 17:22</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22285</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22327</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">e:\priquel\sources\engine\xrcore\_vector3d.h   : 189 =&gt; e:\\priquel\\sources\\engine\\xrcore\\_vector3d.h   : 189</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 сентября 2008 17:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 19:26</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22352</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 19:27</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 24.09.08.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 19:52</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 19:52</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">e:\priquel\sources\engine\xrcore\_vector3d.h   : 189 =&gt; e:\\priquel\\sources\\engine\\xrcore\\_vector3d.h   : 189</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 19:52</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 20:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 20:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 20:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22353</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010553: [error]Description   : m_iPauseCounter&gt;=0 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010552.html">
+      &lt; Прошлое обращение (0010552)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010554.html">
+      Следующее обращение (0010554) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010553</td>
+    <td>[S.T.A.L.K.E.R.: TODO List] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>09 декабря 2006 19:42</td>
+    <td>01 февраля 2007 17:39</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Stohe</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010553: [error]Description   : m_iPauseCounter&gt;=0</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CSoundRender_Core::pause_emitters
+     <br/>
+     [error]File          : P:\xrSound\SoundRender_Core.cpp
+     <br/>
+     [error]Line          : 110
+     <br/>
+     [error]Description   : m_iPauseCounter&gt;=0
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01093F57 xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 260
+     <br/>
+     001B:10007B60 xrSound.dll, CSoundRender_Core::pause_emitters(), p:\xrsound\soundrender_core.cpp, 115
+     <br/>
+     001B:03E39CA3 xrGame.dll, CGamePersistent::OnAppActivate(), p:\xr_3da\xrgame\gamepersistent.cpp, 419
+     <br/>
+     001B:0051DCDA xr_3da.exe, CRegistrator&lt;pureAppActivate&gt;::Process(), p:\xr_3da\pure.h, 77
+     <br/>
+     001B:0051DE7D xr_3da.exe, WndProc(), p:\xr_3da\device_wndproc.cpp, 22
+     <br/>
+     001B:77D48724 USER32.dll, GetDC()
+     <br/>
+     001B:77D48806 USER32.dll, GetDC()
+     <br/>
+     001B:77D4B4B0 USER32.dll, DefWindowProcW()
+     <br/>
+     001B:77D4B4FC USER32.dll, DefWindowProcW()
+     <br/>
+     001B:7C90EAE3 ntdll.dll, KiUserCallbackDispatcher()
+     <br/>
+     001B:77D4CA57 USER32.dll, PeekMessageA()
+     <br/>
+     001B:0051A6A6 xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 176
+     <br/>
+     001B:0043C274 xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 207
+     <br/>
+     001B:0043C9EB xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 395
+     <br/>
+     001B:0059B3FD xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll, RegisterWaitForInputIdle()
+     <br/>
+     001B:006ABC75 xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     лог 102, вылетело при переходе с уровня на уровень</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9171" name="9171">
+     <td class="bugnote-public">
+      <span class="small">(0009171)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">23 декабря 2006 16:32</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">add info
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CSoundRender_Core::pause_emitters
+      <br/>
+      [error]File          : P:\xrSound\SoundRender_Core.cpp
+      <br/>
+      [error]Line          : 110
+      <br/>
+      [error]Description   : m_iPauseCounter&gt;=0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:010A5077 xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 260
+      <br/>
+      001B:10007B60 xrSound.dll, CSoundRender_Core::pause_emitters(), p:\xrsound\soundrender_core.cpp, 115
+      <br/>
+      001B:03B9BAEB xrGame.dll, CChangeLevelWnd::Hide(), p:\xr_3da\xrgame\uigamesp.cpp, 259
+      <br/>
+      001B:03AA66E1 xrGame.dll, CDialogHolder::StopMenu(), p:\xr_3da\xrgame\uidialogholder.cpp, 106
+      <br/>
+      001B:03AA6A40 xrGame.dll, CDialogHolder::StartStopMenu(), p:\xr_3da\xrgame\uidialogholder.cpp, 195
+      <br/>
+      001B:03B9B9DA xrGame.dll, CChangeLevelWnd::OnCancel(), p:\xr_3da\xrgame\uigamesp.cpp, 231
+      <br/>
+      001B:03B9BD06 xrGame.dll, CChangeLevelWnd::SendMessageA(), p:\xr_3da\xrgame\uigamesp.cpp, 213
+      <br/>
+      001B:03B04A2D xrGame.dll, CUIMessageBox::SendMessageA(), p:\xr_3da\xrgame\ui\uimessagebox.cpp, 208
+      <br/>
+      001B:03B6ACF4 xrGame.dll, CUIButton::OnClick(), p:\xr_3da\xrgame\ui\uibutton.cpp, 139
+      <br/>
+      001B:03B6A2C8 xrGame.dll, CUI3tButton::OnClick(), p:\xr_3da\xrgame\ui\ui3tbutton.cpp, 40
+      <br/>
+      001B:03B6AC72 xrGame.dll, CUIButton::OnMouse(), p:\xr_3da\xrgame\ui\uibutton.cpp, 91
+      <br/>
+      001B:03B39423 xrGame.dll, CUIWindow::OnMouse(), p:\xr_3da\xrgame\ui\uiwindow.cpp, 358</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 декабря 2006 19:42</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 декабря 2006 14:00</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Тень Чернобыля =&gt; S.T.A.L.K.E.R.: TODO List</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 декабря 2006 12:23</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">09 декабря 2006 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 декабря 2006 12:23</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 декабря 2006 16:32</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9171</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 февраля 2007 17:39</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 февраля 2007 17:39</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

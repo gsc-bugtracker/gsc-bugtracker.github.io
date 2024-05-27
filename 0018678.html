@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018678: E:\priquel\sources\engine\Layers\xrRender\r__occlusion.cpp  : 61 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018677.html">
+      &lt; Прошлое обращение (0018677)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018679.html">
+      Следующее обращение (0018679) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018678</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>05 сентября 2008 12:59</td>
+    <td>22 сентября 2008 12:29</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r31720</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018678: E:\priquel\sources\engine\Layers\xrRender\r__occlusion.cpp  : 61</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : R_occlusion::occq_begin
+     <br/>
+     [error]File          : E:\priquel\sources\engine\Layers\xrRender\r__occlusion.cpp
+     <br/>
+     [error]Line          : 61
+     <br/>
+     [error]Description   : pool.size()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006DD1B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006DD3C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:027C363C xrRender_R2.dll, R_occlusion::occq_begin(), e:\priquel\sources\engine\layers\xrrender\r__occlusion.cpp, 62
+     <br/>
+     001B:027E4114 xrRender_R2.dll, smapvis::end(), e:\priquel\sources\engine\layers\xrrenderpc_r2\light_smapvis.cpp, 66
+     <br/>
+     001B:0279D265 xrRender_R2.dll, CRender::render_lights(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_r_lights.cpp, 122
+     <br/>
+     001B:027A0F47 xrRender_R2.dll, CRender::Render(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_r_render.cpp, 425
+     <br/>
+     001B:004374D4 xrEngine.exe, stlp_std::vector&lt;CApplication::sLevelInfo,xalloc&lt;CApplication::sLevelInfo&gt; &gt;::_M_allocate_and_copy&lt;CApplication::sLevelInfo const *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 641
+     <br/>
+     001B:030AF819 xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 703
+     <br/>
+     001B:004985E3 xrEngine.exe, CDemoPlay::`scalar deleting destructor'()
+     <br/>
+     001B:004AD1D9 xrEngine.exe, CTextConsole::CreateLogWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 134
+     <br/>
+     001B:004AC827 xrEngine.exe, CTheoraSurface::Load()
+     <br/>
+     001B:004ACAB2 xrEngine.exe, CTheoraSurface::`vector deleting destructor'()
+     <br/>
+     001B:004ACBDB xrEngine.exe, tv_yuv2argb(), e:\priquel\sources\engine\xrengine\xrtheora_surface_mmx.cpp, 141
+     <br/>
+     001B:0040EE02 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F6C4 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F8DF xrEngine.exe, operator new()
+     <br/>
+     001B:0051A9B8 xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080905-123820.zip (707,353 bytes)
+     <span class="italic">05 сентября 2008 12:59</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080922-115657.zip (1,874,998 bytes)
+     <span class="italic">22 сентября 2008 12:28</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22100" name="22100">
+     <td class="bugnote-public">
+      <span class="small">(0022100)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">08 сентября 2008 12:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлено. Ситуайия, вызывавшая VERIFY в Mixed/Debug корректно обрабатывалась в Release.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22301" name="22301">
+     <td class="bugnote-public">
+      <span class="small">(0022301)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">22 сентября 2008 12:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на Микседах.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 сентября 2008 12:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 сентября 2008 12:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080905-123820.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 сентября 2008 12:22</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 22100</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 12:22</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 сентября 2008 12:22</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 12:22</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">E:\priquel\sources\engine\Layers\xrRender\r__occlusion.cpp  : 61 =&gt; E:\\priquel\\sources\\engine\\Layers\\xrRender\\r__occlusion.cpp  : 61</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 сентября 2008 12:22</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 сентября 2008 12:28</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080922-115657.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 сентября 2008 12:29</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22301</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

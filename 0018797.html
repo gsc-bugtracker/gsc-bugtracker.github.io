@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018797: SVN новые бинарники - не работает run_alife.cmd all на миксовых бинарниках - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018796.html">
+      &lt; Прошлое обращение (0018796)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018798.html">
+      Следующее обращение (0018798) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018797</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>24 сентября 2008 19:32</td>
+    <td>29 сентября 2008 11:00</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Dark</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r31859</td>
+    <td class="category">Версия</td>
+    <td>r31827</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018797: SVN новые бинарники - не работает run_alife.cmd all на миксовых бинарниках</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">loading script xr_conditions.script
+     <br/>
+     * loading script sim_faction_brain_mutant.script
+     <br/>
+     * loading script xr_surge_hide.script
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:030A89F6 xrGame.dll, CLevel::GetGameTime(), e:\priquel\sources\engine\xrgame\level.cpp, 1045
+     <br/>
+     001B:030BEC9F xrGame.dll, get_time_minutes(), e:\priquel\sources\engine\xrgame\level_script.cpp, 167
+     <br/>
+     001B:030896FD xrGame.dll, luabind::detail::free_functions::returns&lt;unsigned int&gt;::call&lt;luabind::detail::null_type&gt;(), e:\priquel\sources\sdk\include\luabind\function.hpp, 354
+     <br/>
+     001B:03089DEE xrGame.dll, luabind::detail::free_functions::function_callback_s&lt;unsigned int (__cdecl*)(void),luabind::detail::null_type&gt;::apply(), e:\priquel\sources\sdk\include\luabind\function.hpp, 174
+     <br/>
+     001B:0035F101 luabind.beta7-devel.rc4.dll, luabind::detail::free_functions::overload_rep::call(), e:\priquel\sources\sdk\include\luabind\function.hpp, 72
+     <br/>
+     001B:0035E183 luabind.beta7-devel.rc4.dll, luabind::detail::free_functions::function_dispatcher(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\function.cpp, 144
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     На новых тестовых миксовых бинарниках не запускается run_alife all / all_test
+     <br/>
+     На релизных все норм.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080924-190432.zip (428,034 bytes)
+     <span class="italic">24 сентября 2008 19:32</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_start1.zip (841,195 bytes)
+     <span class="italic">25 сентября 2008 11:15</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080925-161737.zip (3,150,502 bytes)
+     <span class="italic">25 сентября 2008 16:48</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22357" name="22357">
+     <td class="bugnote-public">
+      <span class="small">(0022357)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">25 сентября 2008 11:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Таже ситуация но лог другой.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22358" name="22358">
+     <td class="bugnote-public">
+      <span class="small">(0022358)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">25 сентября 2008 11:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">я свою часть пофиксил, но она стала валиться после изменений в скриптах, а не в коде: при создании новой игры какая-то зона/смарт террэйн спрашивает минуты игрового времени, а уровень ещё не запущен. я сделал, что будет работать корректно и без уровня (он там не нужен, симулятор же уже поднят), но чтобы у вас работало сейчас надо изменения скриптовиков, поэтому назначаю на них</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22368" name="22368">
+     <td class="bugnote-public">
+      <span class="small">(0022368)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 сентября 2008 16:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело при переходе на Милитари 2(передать координаты)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22369" name="22369">
+     <td class="bugnote-public">
+      <span class="small">(0022369)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">25 сентября 2008 17:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это с последним апдейтом? или просто 5 патч?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22371" name="22371">
+     <td class="bugnote-public">
+      <span class="small">(0022371)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">25 сентября 2008 18:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это пофикшено в след. ревизии</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22393" name="22393">
+     <td class="bugnote-public">
+      <span class="small">(0022393)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">26 сентября 2008 16:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 19:32</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 19:32</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 19:32</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080924-190432.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 19:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 19:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 сентября 2008 20:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 сентября 2008 20:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 11:15</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_start1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 11:15</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 22357</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 11:21</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22358</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 11:21</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 11:21</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 16:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22368</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 16:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080925-161737.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 17:10</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 17:19</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 22369</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 сентября 2008 18:05</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 сентября 2008 18:05</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 22371</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 сентября 2008 16:09</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 22393</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 сентября 2008 16:09</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 сентября 2008 16:09</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r31859</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 сентября 2008 16:09</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 сентября 2008 11:00</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

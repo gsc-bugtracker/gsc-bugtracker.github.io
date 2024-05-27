@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018846: Zaton: Вылет при использовании анимации для физ. объектов - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018845.html">
+      &lt; Прошлое обращение (0018845)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018847.html">
+      Следующее обращение (0018847) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018846</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>23 октября 2008 13:15</td>
+    <td>23 октября 2008 14:32</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Bandicoot</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>приост.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018846: Zaton: Вылет при использовании анимации для физ. объектов</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Вылет на уровне zaton при попытке повернуть винтиль в корабле (первое задание у Связного).
+     <br/>
+     <br/>
+     Expression    : assertion failed
+     <br/>
+     Function      : str_container::dock
+     <br/>
+     File          : D:\Stalker_addon\sources\trunk\xrCore\xrstring.cpp
+     <br/>
+     Line          : 139
+     <br/>
+     Description   : HEADER+s_len_with_zero &lt; 4096
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006ED216 xrCore.dll, xrDebug::backend(), d:\stalker_addon\sources\trunk\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006ED427 xrCore.dll, xrDebug::fail(), d:\stalker_addon\sources\trunk\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:006F0E5B xrCore.dll, str_container::dock(), d:\stalker_addon\sources\trunk\xrcore\xrstring.cpp, 146
+     <br/>
+     001B:0244EC76 xrGame.dll, shared_str::operator=(), d:\stalker_addon\sources\trunk\xrcore\xrstring.h, 77
+     <br/>
+     001B:02B19CE1 xrGame.dll, CSE_Abstract::CSE_Abstract(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_object_base.cpp, 129
+     <br/>
+     001B:02B26DD2 xrGame.dll, CSE_ALifeObject::CSE_ALifeObject(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife.cpp, 835
+     <br/>
+     001B:02B271E4 xrGame.dll, CSE_ALifeDynamicObjectVisual::CSE_ALifeDynamicObjectVisual(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife.cpp, 1170
+     <br/>
+     001B:02BB03D5 xrGame.dll, CSE_ALifeCreatureAbstract::CSE_ALifeCreatureAbstract(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife_monsters.cpp, 929
+     <br/>
+     001B:02BB2472 xrGame.dll, CSE_ALifeMonsterAbstract::CSE_ALifeMonsterAbstract(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife_monsters.cpp, 1121
+     <br/>
+     001B:02BB44E7 xrGame.dll, CSE_ALifeHumanAbstract::CSE_ALifeHumanAbstract(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife_monsters.cpp, 1953
+     <br/>
+     001B:02BB4574 xrGame.dll, CSE_ALifeHumanStalker::CSE_ALifeHumanStalker(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_objects_alife_monsters.cpp, 2032
+     <br/>
+     001B:02BCEA48 xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;(), d:\stalker_addon\sources\trunk\xrserverentities\xrserver_script_macroses.h, 170
+     <br/>
+     001B:02BD2883 xrGame.dll, luabind::luabind_new_detail1&lt;0&gt;::initialize&lt;CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;,char const *&gt;(), d:\stalker_addon\sources\sdk\include\luabind\luabind_memory_manager_generator.h, 42
+     <br/>
+     001B:02BD4402 xrGame.dll, luabind::luabind_new&lt;CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;,char const *&gt;(), d:\stalker_addon\sources\sdk\include\luabind\luabind_memory_manager_generator.h, 72
+     <br/>
+     001B:02BD4E43 xrGame.dll, luabind::detail::wrapped_constructor_helper&lt;1&gt;::execute&lt;CSE_ALifeHumanStalker,CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;,luabind::detail::null_type,char const *,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type&gt;(), d:\stalker_addon\sources\sdk\include\luabind\detail\constructor.hpp, 143
+     <br/>
+     001B:02BD5F60 xrGame.dll, luabind::detail::construct_wrapped_class&lt;CSE_ALifeHumanStalker,CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;,luabind::detail::null_type,luabind::constructor&lt;char const *,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type&gt; &gt;::apply(), d:\stalker_addon\sources\sdk\include\luabind\detail\constructor.hpp, 84
+     <br/>
+     001B:0035C5C1 luabind.beta7-devel.rc4.dll, luabind::detail::construct_rep::overload_t::construct(), d:\stalker_addon\sources\sdk\include\luabind\detail\construct_rep.hpp, 61
+     <br/>
+     001B:00359218 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::super_callback(), d:\stalker_addon\sources\trunk\3rd party\luabind\luabind\src\class_rep.cpp, 1061
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_uzercheg.log.bz2 (16,145 bytes)
+     <span class="italic">23 октября 2008 13:15</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     22222222222.zip (471,924 bytes)
+     <span class="italic">23 октября 2008 13:16</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22449" name="22449">
+     <td class="bugnote-public">
+      <span class="small">(0022449)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">23 октября 2008 13:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">при конструировании объекта сталкер, в каечтсве секции была передана строка длиной более четырёх килобайт</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22450" name="22450">
+     <td class="bugnote-public">
+      <span class="small">(0022450)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">23 октября 2008 14:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">все ясно файл ltx больше 4 кб, будем использовать инклюды)))</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 октября 2008 13:15</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 октября 2008 13:15</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Файл добавлен: xray_uzercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 октября 2008 13:15</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 октября 2008 13:16</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Файл добавлен: 22222222222.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 октября 2008 13:17</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 октября 2008 13:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 октября 2008 13:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22449</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 октября 2008 14:31</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 22450</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 октября 2008 14:32</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 октября 2008 14:32</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; приост.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010788: xray-svn\xr_3da\xrRender_R2\ModelPool.cpp  Line: 116 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010787.html">
+      &lt; Прошлое обращение (0010787)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010789.html">
+      Следующее обращение (0010789) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010788</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>18 января 2007 12:21</td>
+    <td>19 января 2007 14:06</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>18 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010788: xray-svn\xr_3da\xrRender_R2\ModelPool.cpp  Line: 116</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : fatal error
+     <br/>
+     Function      : CModelPool::Instance_Load
+     <br/>
+     File          : D:\xray-svn\xr_3da\xrRender_R2\ModelPool.cpp
+     <br/>
+     Line          : 116
+     <br/>
+     Description   : &lt;no expression&gt;
+     <br/>
+     Arguments     : Can't find model file 'ecolog\stalker_ecolog.ogf'.
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01096B8A xrCore.dll, xrDebug::fatal(), d:\xray-svn\xrcore\xrdebugnew.cpp, 299
+     <br/>
+     001B:0108374E xrCore.dll, CLocatorAPI::exist(), d:\xray-svn\xrcore\locatorapi.cpp, 570
+     <br/>
+     001B:01090B7C xrCore.dll, sect_pred(), d:\xray-svn\xrcore\xr_ini.cpp, 16
+     <br/>
+     001B:7C359FBF MSVCR71.dll, _RTtypeid()
+     <br/>
+     001B:0109E68F xrCore.dll, str_container::dock(), d:\xray-svn\xrcore\xrstring.cpp, 69
+     <br/>
+     001B:0252A754 xrRender_R2.dll, CModelPool::Instance_Register(), d:\xray-svn\xr_3da\xrrender_r2\modelpool.cpp, 163
+     <br/>
+     001B:0252AB4A xrRender_R2.dll, CModelPool::Instance_Load(), d:\xray-svn\xr_3da\xrrender_r2\modelpool.cpp, 138
+     <br/>
+     001B:01251260 xrLUA.dll, lua_remove(), d:\xray-svn\xrlua\src\lapi.c, 181
+     <br/>
+     001B:0127FBF3 xrLUA.dll, luabind::detail::pcall(), d:\xray-svn\xrlua\luabind\pcall.cpp, 43
+     <br/>
+     001B:0109EC89 xrCore.dll, xrCriticalSection::Leave(), d:\xray-svn\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:0109E680 xrCore.dll, str_container::dock(), d:\xray-svn\xrcore\xrstring.cpp, 69
+     <br/>
+     001B:036B914B xrGame.dll, CGameObject::net_Spawn(), d:\xray-svn\xr_3da\xrgame\gameobject.cpp, 221
+     <br/>
+     001B:036C9012 xrGame.dll, CPhysicsShellHolder::net_Spawn(), d:\xray-svn\xr_3da\xrgame\physicsshellholder.cpp, 48
+     <br/>
+     001B:036AF572 xrGame.dll, CEntity::net_Spawn(), d:\xray-svn\xr_3da\xrgame\entity.cpp, 227
+     <br/>
+     001B:036B1848 xrGame.dll, CEntityAlive::net_Spawn(), d:\xray-svn\xr_3da\xrgame\entity_alive.cpp, 235
+     <br/>
+     001B:03282B70 xrGame.dll, CCustomMonster::net_Spawn(), d:\xray-svn\xr_3da\xrgame\custommonster.cpp, 619
+     <br/>
+     001B:0341BE91 xrGame.dll, CAI_Stalker::net_Spawn(), d:\xray-svn\xr_3da\xrgame\ai\stalker\ai_stalker.cpp, 340
+     <br/>
+     001B:0363F0B6 xrGame.dll, CLevel::g_sv_Spawn(), d:\xray-svn\xr_3da\xrgame\level_network_spawn.cpp, 111
+     <br/>
+     001B:0363F2CE xrGame.dll, CLevel::cl_Process_Spawn(), d:\xray-svn\xr_3da\xrgame\level_network_spawn.cpp, 39
+     <br/>
+     001B:0362B896 xrGame.dll, CLevel::ProcessGameEvents(), d:\xray-svn\xr_3da\xrgame\level.cpp, 402
+     <br/>
+     001B:0362BA91 xrGame.dll, CLevel::OnFrame(), d:\xray-svn\xr_3da\xrgame\level.cpp, 457
+     <br/>
+     <br/>
+     S:\logs\1</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 января 2007 12:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 14:06</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 14:06</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

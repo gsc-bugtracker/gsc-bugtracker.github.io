@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018827: Установленная версия (30.09.08) + патч5 Garbage CDialogHolder::CleanInternals() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018826.html">
+      &lt; Прошлое обращение (0018826)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018828.html">
+      Следующее обращение (0018828) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018827</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>30 сентября 2008 15:23</td>
+    <td>30 сентября 2008 18:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018827: Установленная версия (30.09.08) + патч5 Garbage CDialogHolder::CleanInternals()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! attempt to use non-existent INFOPORTION [mar_story_capture_bandit_base_reward]
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00000000 xrEngine.exe
+     <br/>
+     001B:05D196BF xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D2B593 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D2BBA8 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D61E82 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D60C1B xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D457B0 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D63452 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     001B:05D457B0 xrGame.dll, CDialogHolder::CleanInternals()
+     <br/>
+     <br/>
+     [error]    : Недостаточно памяти для обработки команды.
+     <br/>
+     <br/>
+     Прибежал к Зубу (торговец бандитов) и начал туда сюда перетаскивать броники двойным кликом (из окошка всех товаров в окошко того что я покупаю и назад). В этот момент отряд бандитов захватывал смарт. Получилось так что в то время когда я перетасовывал броники у торговца обновился список товаров - креш. Повторил на миксовых при тех же обстоятельствах:
+     <br/>
+     <br/>
+     * xrSheduler: too much time consumed by object [val_freedom_attack_132269] (18ms)
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00000000 xrEngine.exe
+     <br/>
+     001B:050E105D xrGame.dll, CUIItemInfo::InitItem(), e:\priquel\sources\engine\xrgame\ui\uiiteminfo.cpp, 184
+     <br/>
+     001B:050FCE2C xrGame.dll, CUIActorMenu::InfoCurItem(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 370
+     <br/>
+     001B:050FD2A3 xrGame.dll, CUIActorMenu::OnItemFocusedUpdate(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 596
+     <br/>
+     001B:05166A3C xrGame.dll, CUIDragDropListEx::OnItemFocusedUpdate(), e:\priquel\sources\engine\xrgame\ui\uidragdroplistex.cpp, 243
+     <br/>
+     001B:051083AE xrGame.dll, CUIWndCallback::OnEvent(), e:\priquel\sources\engine\xrgame\ui\uiwndcallback.cpp, 40
+     <br/>
+     001B:052723D8 xrGame.dll, _strlwr()
+     <br/>
+     001B:004AD829 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 275
+     <br/>
+     001B:004ACFE8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 50
+     <br/>
+     001B:004ACF84 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 36
+     <br/>
+     001B:76EDFA4C USER32.dll
+     <br/>
+     <br/>
+     Прикрепил сейв на базе бандитов, лог на релизных и лог на миксовых.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     dialog.sav.bz2 (1,124,761 bytes)
+     <span class="italic">30 сентября 2008 15:23</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     logs_DIALOG2.rar (23,462 bytes)
+     <span class="italic">30 сентября 2008 15:24</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_dialog.zip (2,187,183 bytes)
+     <span class="italic">30 сентября 2008 15:24</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Связи
+      </a></td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Связи
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+       Пользователи, отслеживающие обращение
+      </a></td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Пользователи, отслеживающие обращение
+      </a></td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+      Комментарии
+     </a></td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+       Комментарии
+      </a></td>
+    </tr>
+    <tr class="bugnote" id="22420" name="22420">
+     <td class="bugnote-public">
+      <span class="small">(0022420)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">30 сентября 2008 18:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">&gt;	xrGame.dll!CUIItemInfo::InitItem(CInventoryItem * pInvItem=0x1d131fb0, CInventoryItem * pCompareItem=0x39ad51b0)  Line 184 + 0xd bytes	C++
+      <br/>
+      xrGame.dll!CUIActorMenu::InfoCurItem(CUICellItem * cell_item=0x31528c80)  Line 370	C++
+      <br/>
+      xrGame.dll!CUIActorMenu::OnItemFocusedUpdate(CUICellItem * itm=0x31528c80)  Line 596 + 0x8 bytes	C++
+      <br/>
+      xrGame.dll!CUIDragDropListEx::OnItemFocusedUpdate(CUIWindow * w=0x31528c80, void * pData=0x00000000)  Line 243 + 0x13 bytes	C++
+      <br/>
+      xrGame.dll!CUIWndCallback::OnEvent(CUIWindow * pWnd=0x31528c80, short msg=-3556, void * pData=0x00000000)  Line 40	C++
+      <br/>
+      xrGame.dll!CUICellItem::Update()  Line 92 + 0x15 bytes	C++
+      <br/>
+      xrGame.dll!CUIInventoryCellItem::Update()  Line 88	C++
+      <br/>
+      xrGame.dll!CUIWindow::Update()  Line 205 + 0x7 bytes	C++
+      <br/>
+      xrGame.dll!CUIWindow::Update()  Line 205 + 0x7 bytes	C++
+      <br/>
+      xrGame.dll!CUIDragDropListEx::Update()  Line 315	C++
+      <br/>
+      xrGame.dll!CUIWindow::Update()  Line 205 + 0x7 bytes	C++
+      <br/>
+      xrGame.dll!CUIActorMenu::Update()  Line 241	C++
+      <br/>
+      xrGame.dll!CDialogHolder::OnFrame()  Line 231	C++
+      <br/>
+      xrEngine.exe!rp_Frame(void * p=0x1ced9520)  Line 13 + 0x13 bytes	C++
+      <br/>
+      xrEngine.exe!CRegistrator&lt;pureFrame&gt;::Process(void (void *)* f=0x00498670)  Line 81	C++
+      <br/>
+      xrEngine.exe!ProcessLoading(void (void *)* f=0x00498670)  Line 482	C++
+      <br/>
+      xrEngine.exe!CRenderDevice::FrameMove()  Line 473 + 0xa bytes	C++
+      <br/>
+      xrEngine.exe!CRenderDevice::on_idle()  Line 269	C++
+      <br/>
+      xrEngine.exe!CRenderDevice::message_loop()  Line 389	C++
+      <br/>
+      xrEngine.exe!CRenderDevice::Run()  Line 425	C++
+      <br/>
+      xrEngine.exe!Startup()  Line 273	C++
+      <br/>
+      xrEngine.exe!WinMain_impl(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x00161d99, int nCmdShow=10)  Line 750	C++
+      <br/>
+      xrEngine.exe!WinMain(HINSTANCE__ * hInstance=0x00400000, HINSTANCE__ * hPrevInstance=0x00000000, char * lpCmdLine=0x00161d99, int nCmdShow=10)  Line 801	C++
+      <br/>
+      xrEngine.exe!__tmainCRTStartup()  Line 589 + 0x1d bytes	C</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 15:23</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 сентября 2008 15:23</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 15:23</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: dialog.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 сентября 2008 15:24</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: logs_DIALOG2.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 15:24</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_dialog.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 сентября 2008 15:29</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 15:29</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 сентября 2008 18:10</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 22420</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 сентября 2008 18:10</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

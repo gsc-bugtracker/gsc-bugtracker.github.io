@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010552: P:\xrCore\xrMemory_subst_msvc.cpp   Line  : 117 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010551.html">
+      &lt; Прошлое обращение (0010551)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010553.html">
+      Следующее обращение (0010553) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010552</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>09 декабря 2006 18:00</td>
+    <td>09 декабря 2006 18:09</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>09 декабря 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010552: P:\xrCore\xrMemory_subst_msvc.cpp   Line  : 117</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : pool&lt;mem_pools_count
+     <br/>
+     Function      : xrMemory::mem_free
+     <br/>
+     File          : P:\xrCore\xrMemory_subst_msvc.cpp
+     <br/>
+     Line          : 117
+     <br/>
+     Description   : Memory corruption
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01093FC7 xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 270
+     <br/>
+     001B:010933D3 xrCore.dll, xrMemory::mem_free(), p:\xrcore\xrmemory_subst_msvc.cpp, 118
+     <br/>
+     001B:039C5A18 xrGame.dll, CSE_ALifeMonsterAbstract::~CSE_ALifeMonsterAbstract(), p:\xr_3da\xrgame\xrserver_objects_alife_monsters.cpp, 1152
+     <br/>
+     001B:039C87B2 xrGame.dll, CSE_ALifeHumanAbstract::~CSE_ALifeHumanAbstract(), p:\xr_3da\xrgame\xrserver_objects_alife_monsters.cpp, 1741
+     <br/>
+     001B:039C8876 xrGame.dll, CSE_ALifeHumanStalker::~CSE_ALifeHumanStalker(), p:\xr_3da\xrgame\xrserver_objects_alife_monsters.cpp, 1819
+     <br/>
+     001B:039E909A xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::~CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;()
+     <br/>
+     001B:039E904E xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::`scalar deleting destructor'()
+     <br/>
+     001B:0329276B xrGame.dll, CALifeObjectRegistry::~CALifeObjectRegistry(), p:\xr_3da\xrgame\alife_object_registry.cpp, 25
+     <br/>
+     001B:03292D38 xrGame.dll, CALifeObjectRegistry::`scalar deleting destructor'()
+     <br/>
+     001B:032739D9 xrGame.dll, CALifeSimulatorBase::unload(), p:\xr_3da\xrgame\alife_simulator_base.cpp, 61
+     <br/>
+     001B:0322DB15 xrGame.dll, CALifeSimulator::destroy(), p:\xr_3da\xrgame\alife_simulator.cpp, 66
+     <br/>
+     001B:038CF773 xrGame.dll, game_sv_Single::~game_sv_Single(), p:\xr_3da\xrgame\game_sv_single.cpp, 22
+     <br/>
+     001B:038D0A18 xrGame.dll, game_sv_Single::`scalar deleting destructor'()
+     <br/>
+     001B:038D1903 xrGame.dll, xrServer::Disconnect(), p:\xr_3da\xrgame\xrserver_disconnect.cpp, 8
+     <br/>
+     001B:0365D565 xrGame.dll, CLevel::net_Stop(), p:\xr_3da\xrgame\level_network.cpp, 62
+     <br/>
+     001B:0043C0A5 xr_3da.exe, CApplication::OnEvent(), p:\xr_3da\x_ray.cpp, 529
+     <br/>
+     001B:0057F93B xr_3da.exe, CEvent::Signal(), p:\xr_3da\eventapi.cpp, 42
+     <br/>
+     001B:0057DD40 xr_3da.exe, CEventAPI::OnFrame(), p:\xr_3da\eventapi.cpp, 174
+     <br/>
+     001B:00439A8A xr_3da.exe, CApplication::OnFrame(), p:\xr_3da\x_ray.cpp, 638
+     <br/>
+     001B:0051BA6A xr_3da.exe, CRegistrator&lt;pureFrame&gt;::Process(), p:\xr_3da\pure.h, 77
+     <br/>
+     001B:0051A535 xr_3da.exe, CRenderDevice::FrameMove(), p:\xr_3da\device.cpp, 295
+     <br/>
+     001B:0051A74A xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 196
+     <br/>
+     001B:0043C274 xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 207
+     <br/>
+     001B:0043C9EB xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 395
+     <br/>
+     001B:0059B3CD xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:006ABC75 xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     S:\logs\09.12.2006\9</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 декабря 2006 18:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 декабря 2006 18:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 декабря 2006 18:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 декабря 2006 18:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">P:\xrCore\xrMemory_subst_msvc.cpp   Line  : 117 =&gt; P:\\xrCore\\xrMemory_subst_msvc.cpp   Line  : 117</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 декабря 2006 18:09</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

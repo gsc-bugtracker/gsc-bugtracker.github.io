@@ -1,0 +1,722 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013939: MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013938.html">
+      &lt; Прошлое обращение (0013938)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013940.html">
+      Следующее обращение (0013940) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013939</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>18 марта 2008 10:58</td>
+    <td>24 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r20407</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013939: MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">---Process reject: parent [1488][mil_bloodsucker1488], item [190][wpn_sig550]
+     <br/>
+     ---ID_Parent [1488], id_parent [1488]
+     <br/>
+     ---Process ownership take: parent [0][single_player], item [190][wpn_sig550]
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CKinematics::LL_GetBoneInstance
+     <br/>
+     [error]File          : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h
+     <br/>
+     [error]Line          : 164
+     <br/>
+     [error]Description   : bone_id&lt;LL_BoneCount()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00697C8B xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/>
+     001B:00697DD7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 266
+     <br/>
+     001B:029B78F6 xrRender_R1.dll, CKinematics::LL_GetBoneInstance(), e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h, 164
+     <br/>
+     001B:02FFC0BB xrGame.dll, CWeapon::UpdateXForm(), e:\priquel\sources\engine\xrgame\weapon.cpp, 124
+     <br/>
+     001B:0331BF96 xrGame.dll, CHudItem::OnH_B_Independent(), e:\priquel\sources\engine\xrgame\huditem.cpp, 251
+     <br/>
+     001B:0331B7F4 xrGame.dll, CHudItemObject::OnH_B_Independent(), e:\priquel\sources\engine\xrgame\hud_item_object.cpp, 69
+     <br/>
+     001B:02DE7880 xrGame.dll, CBaseMonster::OnEvent(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 556
+     <br/>
+     001B:031C3A05 xrGame.dll, CLevel::cl_Process_Event(), e:\priquel\sources\engine\xrgame\level.cpp, 360
+     <br/>
+     001B:031C9E13 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 418
+     <br/>
+     001B:031CA0DD xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 486
+     <br/>
+     001B:0066DF30 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:0043514D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 450
+     <br/>
+     001B:004C8683 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004DE459 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004DD4A8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004DD444 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004DC46A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004DD082 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DD19B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C782 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CE15 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D0F3 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00555522 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     <br/>
+     Убил кровососа что возле вышки где принимать радиосигнал положил в его труп автомат СИГ, забрал двойным нажатием клавиши но не успел, Креш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (601,985 bytes)
+     <span class="italic">18 марта 2008 10:58</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_dimon.log.bz2 (182,728 bytes)
+     <span class="italic">09 апреля 2008 18:23</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2.zip (898,438 bytes)
+     <span class="italic">03 июля 2008 10:52</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12131" name="12131">
+     <td class="bugnote-public">
+      <span class="small">(0012131)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">18 марта 2008 12:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ситуация понятна - когда вынимали оружие - оно захотело взять трансфом из кости  которой оно должно цеплятся :
+      <br/>
+      Fmatrix&amp; mR			= V-&gt;LL_GetTransform(u16(boneR));
+      <br/>
+      боны с таким индексом не нашлось
+      <br/>
+      сами индексы получают на пару строк выше:
+      <br/>
+      E-&gt;g_WeaponBones(boneL,boneR,boneR2);
+      <br/>
+      где E - это ентити алайф - в данном случае сталкер
+      <br/>
+      , - это может быть настройки, может логика, может неправильная сама модель - я к сожалению здесь не ориентируюсь совсем, и не могу понять в чем тут проблема - т.е. это не ко мне вообще то,
+      <br/>
+      лучше Дима посмотрит</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12587" name="12587">
+     <td class="bugnote-public">
+      <span class="small">(0012587)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">21 марта 2008 10:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Со оружием больше не выбевает, а гранату вложил выбило.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12766" name="12766">
+     <td class="bugnote-public">
+      <span class="small">(0012766)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">24 марта 2008 16:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">игра вылетает с такой ошибкой?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12813" name="12813">
+     <td class="bugnote-public">
+      <span class="small">(0012813)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 марта 2008 09:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Да...С точно такой.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="13719" name="13719">
+     <td class="bugnote-public">
+      <span class="small">(0013719)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 апреля 2008 11:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ранше когда я гранату вставлял в собаку, выбивала такая ошибка,смотри баг
+      <a href="http://tiger/bugz/view.php">
+       http://tiger/bugz/view.php
+      </a>
+      ?id=12342#bugnotes.Но сейчас там выбивает именно ета.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14147" name="14147">
+     <td class="bugnote-public">
+      <span class="small">(0014147)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">09 апреля 2008 18:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">добавил лог могу повторить со 100%-ой вероятностью, version???</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14148" name="14148">
+     <td class="bugnote-public">
+      <span class="small">(0014148)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">09 апреля 2008 18:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">спасибо, я уже понял, в чём ошибка, просто не доходят руки исправить</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 10:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 10:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 10:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 11:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 11:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 11:44</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 11:47</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 12:17</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 12131</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 12:17</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 13:01</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 13:01</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 16:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 16:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164 =&gt; MILITARY   File  : e:\\priquel\\sources\\engine\\layers\\xrrender\\skeletoncustom.h     Line : 164</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 16:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:26</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12583</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 10:26</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:26</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164 =&gt; MILITARY   File  : e:\\priquel\\sources\\engine\\layers\\xrrender\\skeletoncustom.h     Line : 164</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 10:26</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 10:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164 =&gt; MILITARY   File  : e:\\priquel\\sources\\engine\\layers\\xrrender\\skeletoncustom.h     Line : 164</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 10:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий удален: 12583</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 марта 2008 10:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 марта 2008 10:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12587</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 16:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 12766</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 16:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2008 09:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12813</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 11:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 13719</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 12:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 18:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_dimon.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 апреля 2008 18:25</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14147</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 18:25</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 апреля 2008 18:25</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">MILITARY   File  : e:\priquel\sources\engine\layers\xrrender\skeletoncustom.h     Line : 164 =&gt; MILITARY   File  : e:\\priquel\\sources\\engine\\layers\\xrrender\\skeletoncustom.h     Line : 164</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 18:25</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 апреля 2008 18:28</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14148</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 12:03</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 12:03</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:12</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:12</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 15:00</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 15:00</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

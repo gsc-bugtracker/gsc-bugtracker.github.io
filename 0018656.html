@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018656: SVN Bin mixed Marsh. E:\priquel\sources\engine\xrGame\script_sound.cppLine          : 29 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018655.html">
+      &lt; Прошлое обращение (0018655)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018657.html">
+      Следующее обращение (0018657) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018656</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>04 сентября 2008 11:19</td>
+    <td>16 сентября 2008 10:57</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь160
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018656: SVN Bin mixed Marsh. E:\priquel\sources\engine\xrGame\script_sound.cppLine          : 29</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Update objects list...
+     <br/>
+     ----------------dump_list [destroy_queue]
+     <br/>
+     ----------------dump_list [objects_active]
+     <br/>
+     ----------------dump_list [objects_sleeping]
+     <br/>
+     ----------------dump_list [m_crows[0]]
+     <br/>
+     ----------------dump_list [m_crows[1]]
+     <br/>
+     Update objects list...
+     <br/>
+     ----------------dump_list [destroy_queue]
+     <br/>
+     ----------------dump_list [objects_active]
+     <br/>
+     ----------------dump_list [objects_sleeping]
+     <br/>
+     ----------------dump_list [m_crows[0]]
+     <br/>
+     ----------------dump_list [m_crows[1]]
+     <br/>
+     * Loaded: e:\stalker\clear_sky\gamedata\textures\ui\ui_load.dds[1048704]b
+     <br/>
+     * Loaded: e:\stalker\clear_sky\gamedata\textures\ui\ui_ingame2_back_add2_w.dds[1048704]b
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : !m_sound._feedback()
+     <br/>
+     [error]Function      : CScriptSound::~CScriptSound
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+     <br/>
+     [error]Line          : 29
+     <br/>
+     [error]Description   : playing sound is not completed, but is destroying
+     <br/>
+     [error]Arguments     : characters_voice\scenario\marsh\mar_csky_expansion_2_up
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:03084859 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+     <br/>
+     001B:030848E8 xrGame.dll, CScriptSound::`scalar deleting destructor'()
+     <br/>
+     001B:0308584E xrGame.dll, luabind::delete_helper2&lt;CScriptSound&gt;(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 19
+     <br/>
+     001B:030860A3 xrGame.dll, luabind::delete_helper&lt;CScriptSound,1&gt;::apply(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 27
+     <br/>
+     001B:03087BBF xrGame.dll, luabind::detail::delete_s&lt;CScriptSound&gt;::apply(), e:\priquel\sources\sdk\include\luabind\detail\object_rep.hpp, 100
+     <br/>
+     001B:00363799 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::~object_rep(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 78
+     <br/>
+     001B:00363A36 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::`scalar deleting destructor'()
+     <br/>
+     001B:00363A06 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::garbage_collector(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 133
+     <br/>
+     001B:003ACF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+     <br/>
+     001B:003AD332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+     <br/>
+     001B:003AEAB2 lua.JIT.1.1.4.dll, GCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 467
+     <br/>
+     001B:003AE918 lua.JIT.1.1.4.dll, luaC_callGCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 479
+     <br/>
+     001B:003C653C lua.JIT.1.1.4.dll, callallgcTM(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 199
+     <br/>
+     001B:003AC5FF lua.JIT.1.1.4.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 119
+     <br/>
+     001B:003C6509 lua.JIT.1.1.4.dll, lua_close(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 213
+     <br/>
+     001B:0309E2B3 xrGame.dll, CScriptStorage::reinit(), e:\priquel\sources\engine\xrserverentities\script_storage.cpp, 241
+     <br/>
+     001B:03092B37 xrGame.dll, CScriptEngine::init(), e:\priquel\sources\engine\xrserverentities\script_engine.cpp, 286
+     <br/>
+     001B:02CF6D6D xrGame.dll, restart_all(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 38
+     <br/>
+     001B:02CF7435 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 74
+     <br/>
+     001B:032F4EA0 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:032F667B xrGame.dll, game_sv_Single::restart_simulator(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 348
+     <br/>
+     001B:030B7EFA xrGame.dll, CGamePersistent::OnEvent(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 614
+     <br/>
+     001B:004A1C0B xrEngine.exe, CFrustum::CreateFromPortal()
+     <br/>
+     001B:004A215D xrEngine.exe, CPS_Instance::PSI_internal_delete(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 63
+     <br/>
+     001B:004A43F2 xrEngine.exe, ELightAnimLibrary::OnDestroy()
+     <br/>
+     001B:004A23FE xrEngine.exe, CPS_Instance::PSI_destroy(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 55
+     <br/>
+     001B:028A4A8F xrRender_R2.dll, _strlwr()
+     <br/>
+     001B:00410891 xrEngine.exe, operator new()
+     <br/>
+     001B:00498583 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     001B:004AD6E9 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 269
+     <br/>
+     001B:004ACEA8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 40
+     <br/>
+     001B:004ACE44 xrEngine.exe, text_editor::line_edit_control::get_selected_mode(), e:\priquel\sources\engine\xrengine\line_edit_control.h, 87
+     <br/>
+     001B:004ABE56 xrEngine.exe, CTheoraSurface::Play(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 54
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:7C81EB33 kernel32.dll
+     <br/>
+     001B:78158E69 MSVCR80.dll, CxxThrowException()
+     <br/>
+     001B:03084870 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 30
+     <br/>
+     001B:030848E8 xrGame.dll, CScriptSound::`scalar deleting destructor'()
+     <br/>
+     001B:0308584E xrGame.dll, luabind::delete_helper2&lt;CScriptSound&gt;(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 19
+     <br/>
+     001B:030860A3 xrGame.dll, luabind::delete_helper&lt;CScriptSound,1&gt;::apply(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 27
+     <br/>
+     001B:03087BBF xrGame.dll, luabind::detail::delete_s&lt;CScriptSound&gt;::apply(), e:\priquel\sources\sdk\include\luabind\detail\object_rep.hpp, 100
+     <br/>
+     001B:00363799 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::~object_rep(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 78
+     <br/>
+     001B:00363A36 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::`scalar deleting destructor'()
+     <br/>
+     001B:00363A06 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::garbage_collector(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 133
+     <br/>
+     001B:003ACF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+     <br/>
+     001B:003AD332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+     <br/>
+     001B:003AEAB2 lua.JIT.1.1.4.dll, GCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 467
+     <br/>
+     001B:003AE918 lua.JIT.1.1.4.dll, luaC_callGCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 479
+     <br/>
+     001B:003C653C lua.JIT.1.1.4.dll, callallgcTM(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 199
+     <br/>
+     001B:003AC5FF lua.JIT.1.1.4.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 119
+     <br/>
+     001B:003C6509 lua.JIT.1.1.4.dll, lua_close(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 213
+     <br/>
+     001B:0309E2B3 xrGame.dll, CScriptStorage::reinit(), e:\priquel\sources\engine\xrserverentities\script_storage.cpp, 241
+     <br/>
+     001B:03092B37 xrGame.dll, CScriptEngine::init(), e:\priquel\sources\engine\xrserverentities\script_engine.cpp, 286
+     <br/>
+     001B:02CF6D6D xrGame.dll, restart_all(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 38
+     <br/>
+     001B:02CF7435 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 74
+     <br/>
+     001B:032F4EA0 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:032F667B xrGame.dll, game_sv_Single::restart_simulator(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 348
+     <br/>
+     001B:030B7EFA xrGame.dll, CGamePersistent::OnEvent(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 614
+     <br/>
+     001B:004A1C0B xrEngine.exe, CFrustum::CreateFromPortal()
+     <br/>
+     001B:004A215D xrEngine.exe, CPS_Instance::PSI_internal_delete(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 63
+     <br/>
+     001B:004A43F2 xrEngine.exe, ELightAnimLibrary::OnDestroy()
+     <br/>
+     001B:004A23FE xrEngine.exe, CPS_Instance::PSI_destroy(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 55
+     <br/>
+     001B:028A4A8F xrRender_R2.dll, _strlwr()
+     <br/>
+     001B:00410891 xrEngine.exe, operator new()
+     <br/>
+     001B:00498583 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     001B:004AD6E9 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 269
+     <br/>
+     001B:004ACEA8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 40
+     <br/>
+     001B:004ACE44 xrEngine.exe, text_editor::line_edit_control::get_selected_mode(), e:\priquel\sources\engine\xrengine\line_edit_control.h, 87
+     <br/>
+     001B:004ABE56 xrEngine.exe, CTheoraSurface::Play(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 54
+     <br/>
+     <br/>
+     ЧН не захватывали смарт, после чего я устранить ошибку сейв+лоад. Во время лоада вылетел фатал.
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080904-105101.zip (1,238,158 bytes)
+     <span class="italic">04 сентября 2008 11:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     1.sav.bz2 (983,562 bytes)
+     <span class="italic">04 сентября 2008 11:21</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22218" name="22218">
+     <td class="bugnote-public">
+      <span class="small">(0022218)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 сентября 2008 10:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 11:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080904-105101.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 11:21</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN Bin mixed Marsh. E:\priquel\sources\engine\xrGame\script_sound.cppLine          : 29 =&gt; SVN Bin mixed Marsh. E:\\priquel\\sources\\engine\\xrGame\\script_sound.cppLine          : 29</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:21</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 11:21</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: 1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 11:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:22</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 11:22</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">SVN Bin mixed Marsh. E:\priquel\sources\engine\xrGame\script_sound.cppLine          : 29 =&gt; SVN Bin mixed Marsh. E:\\priquel\\sources\\engine\\xrGame\\script_sound.cppLine          : 29</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 11:22</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 12:06</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 12:06</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 сентября 2008 10:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 22218</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

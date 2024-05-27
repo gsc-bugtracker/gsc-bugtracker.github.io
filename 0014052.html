@@ -1,0 +1,1033 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014052: Глюк рестрикторов - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014051.html">
+      &lt; Прошлое обращение (0014051)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014053.html">
+      Следующее обращение (0014053) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014052</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>иногда</td>
+    <td>19 марта 2008 18:32</td>
+    <td>20 августа 2008 15:41</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Bandicoot</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014052: Глюк рестрикторов</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Этот глюк замечен на всех картах, когда ставишь рестриктор и пишешь в логи персонажа: out_restr = имя рестриктора
+     <br/>
+     То часто вылетает с такими ошибками, как:
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression : vertex || show_restrictions(m_object)
+     <br/>
+     [error]Function : CPatrolPathManager::select_point
+     <br/>
+     [error]File : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+     <br/>
+     [error]Line : 155
+     <br/>
+     [error]Description : any vertex in patrol path [esc_smart_terrain_7_11_story_military_6_walk] in inaccessible for object [sim_default_military_210418]
+     <br/>
+     <br/>
+     Но точка "esc_smart_terrain_7_11_story_military_6_walk" стои т на АИ ноде и все с ней впорядке.
+     <br/>
+     <br/>
+     Примеры вылетов: 13995, 13927, 13925
+     <br/>
+     Все они похожи, если уберешь out_restr в логике персонажа, то уже ничего не будет вылетать.
+     <br/>
+     <br/>
+     Кстати бывают версии билдов, где никогда не вылетает, а бывает, что вылетает.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/jpgicon.gif" width="16"/>
+     restr.JPG (175,938 bytes)
+     <span class="italic">20 марта 2008 16:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_dimon.rar (172,671 bytes)
+     <span class="italic">20 марта 2008 16:35</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080515-120017.zip (1,043,889 bytes)
+     <span class="italic">15 мая 2008 12:09</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     mil_con_exit.zip (983,046 bytes)
+     <span class="italic">27 июня 2008 20:47</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12403" name="12403">
+     <td class="bugnote-public">
+      <span class="small">(0012403)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 марта 2008 09:31</span>
+      <br/>
+      <span class="small">отредактирован:  20 марта 2008 09:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">еще один рестриктор вылетел, чтоб баги не плодить напишу в каменте
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [esc_smart_terrain_7_11_story_military_3_walk] in inaccessible for object [sim_default_military_28030]
+      <br/>
+      <br/>
+      ревизия 20645
+      <br/>
+      <br/>
+      отредактирован: 20.03.08 09:34</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12515" name="12515">
+     <td class="bugnote-public">
+      <span class="small">(0012515)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">20 марта 2008 16:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">логично, ведь вы задаёте ему патрульный путь вне аут рестриктора, который назначаете, о чём он красноречиво и пишет в лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12520" name="12520">
+     <td class="bugnote-public">
+      <span class="small">(0012520)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">20 марта 2008 16:32</span>
+      <br/>
+      <span class="small">отредактирован:  20 марта 2008 16:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Как так не в out_restr'икторе, когда все walk-пути у меня уж точно в out_restr'икторе.
+      <br/>
+      <br/>
+      esc_smart_terrain_7_11_story_military_3_walk находится в пределах указанного ему out_restr'иктора esc_out_restr_5.
+      <br/>
+      <br/>
+      [camper@work7]
+      <br/>
+      path_walk = story_military_7_walk
+      <br/>
+      path_look = story_military_7_look
+      <br/>
+      out_restr = esc_out_restr_5
+      <br/>
+      <br/>
+      Прикрепил скриншот. Либо я что-то недопонимаю.
+      <br/>
+      <br/>
+      отредактирован: 20.03.08 16:33</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12521" name="12521">
+     <td class="bugnote-public">
+      <span class="small">(0012521)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">20 марта 2008 16:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [esc_smart_terrain_7_11_story_military_4_walk] in inaccessible for object [sim_default_military_28034]</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12522" name="12522">
+     <td class="bugnote-public">
+      <span class="small">(0012522)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">20 марта 2008 16:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ещё раз повторяю: ни одна вершина патрульного пути
+      <br/>
+      <br/>
+      esc_smart_terrain_7_11_story_military_4_walk
+      <br/>
+      <br/>
+      не доступна следующей комбинации рестрикторов:
+      <br/>
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      esc_out_restr_4
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      esc_out_restrictor_1
+      <br/>
+      esc_out_restrictor_2
+      <br/>
+      esc_out_restrictor_3
+      <br/>
+      esc_space_restrictor
+      <br/>
+      esc_space_restrictor_habar_roof_broken_house</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12523" name="12523">
+     <td class="bugnote-public">
+      <span class="small">(0012523)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">20 марта 2008 16:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">P.S. смотрите лог - там много чего интересного бывает, в частности, что ему назначен не esc_out_restr_5, а esc_out_restr_4</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12541" name="12541">
+     <td class="bugnote-public">
+      <span class="small">(0012541)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">20 марта 2008 18:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">esc_smart_terrain_7_11_story_military_4_walk назначен esc_out_restr_4, я не спорю, но вылетает же. Причем тут esc_out_restr_5?
+      <br/>
+      <br/>
+      esc_smart_terrain_7_11_story_military_3_walk назначен esc_out_restr_5.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15521" name="15521">
+     <td class="bugnote-public">
+      <span class="small">(0015521)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">25 апреля 2008 17:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылет на свалке:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [gar_smart_terrain_6_1_guard_3_walk] in inaccessible for object [sim_default_monolith_214317]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678D22 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      001B:02AE7B13 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+      <br/>
+      001B:02AD8CF7 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+      <br/>
+      001B:02AD1B7A xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 220
+      <br/>
+      001B:02D9BD3D xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 571
+      <br/>
+      001B:02D9BE56 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 554
+      <br/>
+      001B:02D85297 xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 72
+      <br/>
+      001B:02D386AB xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 949
+      <br/>
+      001B:02D3D9FD xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+      <br/>
+      001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:02F21DE5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+      <br/>
+      001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16327" name="16327">
+     <td class="bugnote-public">
+      <span class="small">(0016327)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">15 мая 2008 12:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">опять вылетает на атп на эскейпе
+      <br/>
+      добавил лог
+      <br/>
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      esc_space_restrictor
+      <br/>
+      esc_space_restrictor_habar_roof_broken_house
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      esc_out_restr_5
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      esc_space_restrictor
+      <br/>
+      esc_space_restrictor_habar_roof_broken_house
+      <br/>
+      esc_space_restrictor_in_restr_1
+      <br/>
+      esc_space_restrictor_in_restr_2
+      <br/>
+      esc_space_restrictor_in_restr_3
+      <br/>
+      esc_space_restrictor_in_restr_4
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [esc_smart_terrain_7_11_story_military_6_walk] in inaccessible for object [sim_default_military_017351]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678D22 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      001B:02B08013 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+      <br/>
+      001B:02AF91F7 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+      <br/>
+      001B:02AF1D6A xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 225
+      <br/>
+      001B:02DC4E9D xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 571
+      <br/>
+      001B:02DC4FB6 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 554
+      <br/>
+      001B:02DAD1B7 xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 71
+      <br/>
+      001B:02D603DB xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 950
+      <br/>
+      001B:02D651FD xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 816
+      <br/>
+      001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:02F4B1E5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+      <br/>
+      001B:00499D73 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AD549 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004ACD08 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004ACCA4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004ABCCA xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AC8E2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AC9FB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005157D2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17277" name="17277">
+     <td class="bugnote-public">
+      <span class="small">(0017277)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">30 мая 2008 16:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">опять летит на свалке:
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [esc_smart_terrain_5_2_guard_2_walk] in inaccessible for object [sim_default_bandit_215971]</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18925" name="18925">
+     <td class="bugnote-public">
+      <span class="small">(0018925)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19267" name="19267">
+     <td class="bugnote-public">
+      <span class="small">(0019267)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 20:45</span>
+      <br/>
+      <span class="small">отредактирован:  27 июня 2008 20:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">пожалуста,на милитари,бой с контролерами у домика в топях(квест принести артефакт),когда игрок уходит от контролеров,к нему приближается какойто сталкер:
+      <br/>
+      <br/>
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      mil_zone_field_acidic_strong_0001
+      <br/>
+      mil_zone_mine_acidic_strong_0000
+      <br/>
+      mil_zone_mine_acidic_strong_0001
+      <br/>
+      mil_zone_mine_acidic_strong_0003
+      <br/>
+      mil_zone_mine_acidic_strong_0007
+      <br/>
+      mil_zone_mine_acidic_strong_0009
+      <br/>
+      mil_zone_mine_acidic_strong_0010
+      <br/>
+      mil_zone_mine_acidic_strong_0015
+      <br/>
+      mil_zone_mine_acidic_strong_0016
+      <br/>
+      mil_zone_mine_acidic_strong_0018
+      <br/>
+      mil_zone_mine_acidic_strong_0019
+      <br/>
+      mil_zone_mine_acidic_strong_0020
+      <br/>
+      mil_zone_mine_acidic_strong_0031
+      <br/>
+      mil_zone_mine_acidic_strong_0034
+      <br/>
+      mil_zone_mine_acidic_strong_0035
+      <br/>
+      mil_zone_mine_acidic_strong_0038
+      <br/>
+      mil_zone_mine_acidic_strong_0039
+      <br/>
+      mil_zone_mine_acidic_strong_0040
+      <br/>
+      mil_zone_mine_acidic_strong_0043
+      <br/>
+      mil_zone_mine_acidic_strong_0045
+      <br/>
+      mil_zone_mine_acidic_strong_0047
+      <br/>
+      mil_zone_mine_acidic_strong_0060
+      <br/>
+      mil_zone_mine_acidic_strong_0066
+      <br/>
+      mil_zone_mine_acidic_strong_0067
+      <br/>
+      mil_zone_mine_acidic_strong_0068
+      <br/>
+      mil_zone_mine_acidic_strong_0070
+      <br/>
+      mil_zone_mine_acidic_strong_0072
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [mil_additional_quest_4_spawn_way_2] in inaccessible for object [mil_controller_normal_227220]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:1001B903 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+      <br/>
+      <br/>
+      отредактирован: 27.06.08 20:46</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19867" name="19867">
+     <td class="bugnote-public">
+      <span class="small">(0019867)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 16:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">проверьте, пожалуйста, последний пост, чтобы точка патрульного графа была на аи ноде, которая доступна по списку рестрикторов</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20006" name="20006">
+     <td class="bugnote-public">
+      <span class="small">(0020006)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">08 июля 2008 15:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Последний баг должен быть решен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21788" name="21788">
+     <td class="bugnote-public">
+      <span class="small">(0021788)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 августа 2008 10:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">закрывайте, за полотора месяца ни одного повторения</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 марта 2008 18:32</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 09:31</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 12403</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 09:34</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 12403</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 16:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:32</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 12520</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 16:33</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Файл добавлен: restr.JPG</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:33</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий отредактирован: 12520</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 16:33</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 12521</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 16:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_dimon.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:56</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12522</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12523</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 18:18</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 12541</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 18:19</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 20:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">19 марта 2008 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 20:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 17:39</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15521</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 12:09</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 16327</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 12:09</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080515-120017.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 мая 2008 16:12</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17277</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:25</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18925</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 20:45</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19267</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 20:46</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 19267</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 20:47</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: mil_con_exit.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19867</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 15:23</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 15:23</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 15:23</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 20006</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 10:44</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21788</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 15:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

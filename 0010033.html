@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010033: ПРЕЗЕНТАЦИЯ.при загрузке припяти, прыгал jump_to_level, перед джампом прописал run_script task_18 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010032.html">
+      &lt; Прошлое обращение (0010032)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010034.html">
+      Следующее обращение (0010034) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010033</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>14 октября 2006 15:24</td>
+    <td>16 октября 2006 10:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>не баг</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>14 октября 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010033: ПРЕЗЕНТАЦИЯ.при загрузке припяти, прыгал jump_to_level, перед джампом прописал run_script task_18</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : assertion failed
+     <br/>
+     Description   : id &gt;= 0
+     <br/>
+     Function      : CALifeGraphRegistry::setup_current_level
+     <br/>
+     File          : P:\xr_3da\xrGame\alife_graph_registry.cpp
+     <br/>
+     Line          : 86
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00FD5885 xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 203
+     <br/>
+     001B:0360982A xrGame.dll, CALifeGraphRegistry::setup_current_level(), p:\xr_3da\xrgame\alife_graph_registry.cpp, 87
+     <br/>
+     001B:036098F7 xrGame.dll, CALifeGraphRegistry::update(), p:\xr_3da\xrgame\alife_graph_registry.cpp, 57
+     <br/>
+     001B:036068E8 xrGame.dll, CALifeSimulatorBase::register_object(), p:\xr_3da\xrgame\alife_simulator_base2.cpp, 31
+     <br/>
+     001B:03622CCE xrGame.dll, CALifeStorageManager::load(), p:\xr_3da\xrgame\alife_storage_manager.cpp, 123
+     <br/>
+     001B:0361EA42 xrGame.dll, CALifeUpdateManager::load(), p:\xr_3da\xrgame\alife_update_manager.cpp, 249
+     <br/>
+     001B:035A8D5B xrGame.dll, CALifeSimulator::CALifeSimulator(), p:\xr_3da\xrgame\alife_simulator.cpp, 45
+     <br/>
+     001B:03C3AE7F xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), p:\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:03C3983A xrGame.dll, game_sv_Single::Create(), p:\xr_3da\xrgame\game_sv_single.cpp, 30
+     <br/>
+     001B:03C3BD0C xrGame.dll, xrServer::Connect(), p:\xr_3da\xrgame\xrserver_connect.cpp, 42
+     <br/>
+     001B:039E3811 xrGame.dll, CLevel::net_start2(), p:\xr_3da\xrgame\level_start.cpp, 173
+     <br/>
+     001B:00507226 xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 241
+     <br/>
+     001B:0043BB43 xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 209
+     <br/>
+     001B:0043C4E8 xr_3da.exe, WinMain()
+     <br/>
+     <br/>
+     S:\logs\39</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="8996" name="8996">
+     <td class="bugnote-public">
+      <span class="small">(0008996)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">14 октября 2006 15:26</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">ты просто прыгнул на уровень, которого нету</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="8997" name="8997">
+     <td class="bugnote-public">
+      <span class="small">(0008997)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">16 октября 2006 10:08</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">Не понял, как это Припяти нету?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 октября 2006 15:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 октября 2006 15:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 8996</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 октября 2006 15:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 октября 2006 15:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; не баг</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 октября 2006 15:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 октября 2006 10:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 8997</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

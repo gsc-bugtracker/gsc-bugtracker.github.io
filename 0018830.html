@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018830: [любой левел] вылет в ПДА - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018829.html">
+      &lt; Прошлое обращение (0018829)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018831.html">
+      Следующее обращение (0018831) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018830</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>01 октября 2008 18:02</td>
+    <td>01 октября 2008 18:04</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>PeaceMaker</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018830: [любой левел] вылет в ПДА</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">если поговорить с каким-то чуваком, и сразу после этого открыть ПДА на вкладке истории сообщений - вылет. лога не было
+     <br/>
+     <br/>
+     001B:7C81EB33 kernel32.dll
+     <br/>
+     001B:78158E69 MSVCR80.dll, CxxThrowException()
+     <br/>
+     001B:034AA049 xrGame.dll, luabind::detail::proxy_functor_void_caller&lt;boost::tuples::tuple&lt;FactionState * const *,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_functor_void_caller&lt;boost::tuples::tuple&lt;FactionState * const *,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,b(), e:\priquel\sources\sdk\include\luabind\functor.hpp, 281
+     <br/>
+     001B:034AA7AA xrGame.dll, FactionState::update_info(), e:\priquel\sources\engine\xrgame\ui\factionstate.cpp, 114
+     <br/>
+     001B:034A1C8A xrGame.dll, CUIRankFaction::update_info(), e:\priquel\sources\engine\xrgame\ui\uirankfaction.cpp, 112
+     <br/>
+     001B:034A2AE2 xrGame.dll, CUIRankingWnd::update_info(), e:\priquel\sources\engine\xrgame\ui\uirankingwnd.cpp, 226
+     <br/>
+     001B:034A2BAF xrGame.dll, CUIRankingWnd::Show(), e:\priquel\sources\engine\xrgame\ui\uirankingwnd.cpp, 53
+     <br/>
+     001B:0348E284 xrGame.dll, CUIPdaWnd::SetActiveSubdialog(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.cpp, 205
+     <br/>
+     001B:0348E64B xrGame.dll, CUIPdaWnd::SendMessageA(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.cpp, 123
+     <br/>
+     001B:0350B4C7 xrGame.dll, CUITabControl::OnTabChange(), e:\priquel\sources\engine\xrgame\ui\uitabcontrol.cpp, 139
+     <br/>
+     001B:0350BC6F xrGame.dll, CUITabControl::SendMessageA(), e:\priquel\sources\engine\xrgame\ui\uitabcontrol.cpp, 94
+     <br/>
+     001B:0350ACB0 xrGame.dll, CUITabButton::OnMouseDown(), e:\priquel\sources\engine\xrgame\ui\uitabbutton.cpp, 21
+     <br/>
+     001B:034F930E xrGame.dll, CUIWindow::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 317
+     <br/>
+     001B:034F938A xrGame.dll, CUIWindow::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 348
+     <br/>
+     001B:034F938A xrGame.dll, CUIWindow::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 348
+     <br/>
+     001B:0348E5AC xrGame.dll, CUIPdaWnd::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.h, 66
+     <br/>
+     001B:034F69AA xrGame.dll, CUIDialogWnd::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\ui\uidialogwnd.cpp, 68
+     <br/>
+     001B:03483505 xrGame.dll, CUI::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\ui.cpp, 165
+     <br/>
+     001B:030847E8 xrGame.dll, CLevel::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\level_input.cpp, 167
+     <br/>
+     001B:004214B8 xrEngine.exe, IGame_Level::CurrentViewEntity()
+     <br/>
+     001B:004221BD xrEngine.exe, compute_build_id(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 81
+     <br/>
+     001B:4FDF3B74 d3d9.dll
+     <br/>
+     001B:00498683 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+     <br/>
+     001B:004900BB xrEngine.exe, CObjectAnimator::Load(), e:\priquel\sources\engine\xrengine\objectanimator.cpp, 74
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     001B:004AD829 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 275
+     <br/>
+     001B:004ACFE8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 50
+     <br/>
+     001B:4FDB0F79 d3d9.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22422" name="22422">
+     <td class="bugnote-public">
+      <span class="small">(0022422)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">01 октября 2008 18:04</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">сорри, это скриптовый вылет, связанный с моим тестовым левелом... повезло тебе)))</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 октября 2008 18:02</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 октября 2008 18:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 октября 2008 18:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 октября 2008 18:04</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 22422</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

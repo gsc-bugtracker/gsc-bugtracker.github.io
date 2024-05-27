@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010794: xray-svn\xrcore\FixedVector.h    Line: 35 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010793.html">
+      &lt; Прошлое обращение (0010793)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010795.html">
+      Следующее обращение (0010795) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010794</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>18 января 2007 17:12</td>
+    <td>05 февраля 2007 20:13</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>18 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010794: xray-svn\xrcore\FixedVector.h    Line: 35</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : assertion failed
+     <br/>
+     Function      : svector&lt;class CBlend *,16&gt;::push_back
+     <br/>
+     File          : d:\xray-svn\xrcore\FixedVector.h
+     <br/>
+     Line          : 35
+     <br/>
+     Description   : count&lt;dim
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01096A67 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 265
+     <br/>
+     001B:004EBD74 XR_3DA.exe, svector&lt;CBlend *,16&gt;::push_back(), d:\xray-svn\xrcore\fixedvector.h, 35
+     <br/>
+     001B:004E8D5D XR_3DA.exe, CKinematicsAnimated::LL_PlayCycle(), d:\xray-svn\xr_3da\skeletonanimated.cpp, 198
+     <br/>
+     001B:004E8C38 XR_3DA.exe, CKinematicsAnimated::LL_PlayCycle(), d:\xray-svn\xr_3da\skeletonanimated.cpp, 174
+     <br/>
+     001B:004E911E XR_3DA.exe, CKinematicsAnimated::PlayCycle(), d:\xray-svn\xr_3da\skeletonanimated.cpp, 241
+     <br/>
+     001B:03757565 xrGame.dll, CWeaponHUD::animDisplay(), d:\xray-svn\xr_3da\xrgame\weaponhud.cpp, 127
+     <br/>
+     001B:037575A0 xrGame.dll, CWeaponHUD::animPlay(), d:\xray-svn\xr_3da\xrgame\weaponhud.cpp, 139
+     <br/>
+     001B:0373C2B8 xrGame.dll, CWeaponMagazinedWGrenade::PlayAnimIdle(), d:\xray-svn\xr_3da\xrgame\weaponmagazinedwgrenade.cpp, 664
+     <br/>
+     001B:037387E4 xrGame.dll, CWeaponMagazined::OnZoomOut(), d:\xray-svn\xr_3da\xrgame\weaponmagazined.cpp, 1040
+     <br/>
+     001B:03725AAA xrGame.dll, CWeapon::Action(), d:\xray-svn\xr_3da\xrgame\weapon.cpp, 839
+     <br/>
+     001B:037352E4 xrGame.dll, CWeaponMagazined::Action(), d:\xray-svn\xr_3da\xrgame\weaponmagazined.cpp, 669
+     <br/>
+     001B:0373BC34 xrGame.dll, CWeaponMagazinedWGrenade::Action(), d:\xray-svn\xr_3da\xrgame\weaponmagazinedwgrenade.cpp, 242
+     <br/>
+     001B:036F66ED xrGame.dll, CInventory::Action(), d:\xray-svn\xr_3da\xrgame\inventory.cpp, 494
+     <br/>
+     001B:0369B2F2 xrGame.dll, CActor::IR_OnKeyboardRelease(), d:\xray-svn\xr_3da\xrgame\actorinput.cpp, 183
+     <br/>
+     001B:0046C54D XR_3DA.exe, CInput::KeyUpdate(), d:\xray-svn\xr_3da\xr_input.cpp, 169
+     <br/>
+     001B:0046C9FC XR_3DA.exe, CInput::OnFrame(), d:\xray-svn\xr_3da\xr_input.cpp, 305
+     <br/>
+     001B:00519B9A XR_3DA.exe, CRegistrator&lt;pureFrame&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 77
+     <br/>
+     001B:00518665 XR_3DA.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 295
+     <br/>
+     001B:0051887A XR_3DA.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 196
+     <br/>
+     001B:0043C204 XR_3DA.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 212
+     <br/>
+     001B:0043C6B4 XR_3DA.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 409
+     <br/>
+     001B:0059A167 XR_3DA.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:006A8C79 XR_3DA.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     S:\logs\3</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9241" name="9241">
+     <td class="bugnote-public">
+      <span class="small">(0009241)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">19 января 2007 15:47</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">а чего ты не написал, что перед вылетом игнорил другую ошибку?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 января 2007 17:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 15:47</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9241</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 февраля 2007 20:13</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 февраля 2007 20:13</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

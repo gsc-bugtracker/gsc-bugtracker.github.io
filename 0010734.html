@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010734: P:\xr_3da\xrGame\ui\UIDragDropListEx.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010733.html">
+      &lt; Прошлое обращение (0010733)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010735.html">
+      Следующее обращение (0010735) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010734</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>значительный</td>
+    <td>иногда</td>
+    <td>12 января 2007 14:06</td>
+    <td>15 января 2007 10:06</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>12 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010734: P:\xr_3da\xrGame\ui\UIDragDropListEx.cpp</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">При вызове меню покупки, иногда валился билд.
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : 0
+     <br/>
+     [error]Function      : CUICellContainer::FindFreeCell
+     <br/>
+     [error]File          : P:\xr_3da\xrGame\ui\UIDragDropListEx.cpp
+     <br/>
+     [error]Line          : 508
+     <br/>
+     [error]Description   : there are no free room to place item
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00F652D7 xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 275
+     <br/>
+     001B:026CC7C4 xrGame.dll, CUICellContainer::FindFreeCell(), p:\xr_3da\xrgame\ui\uidragdroplistex.cpp, 510
+     <br/>
+     001B:026CC80B xrGame.dll, CUIDragDropListEx::SetItem(), p:\xr_3da\xrgame\ui\uidragdroplistex.cpp, 337
+     <br/>
+     001B:026E3E8C xrGame.dll, CUIMpTradeWnd::ItemToRuck(), p:\xr_3da\xrgame\ui\uimptradewnd_trade.cpp, 244
+     <br/>
+     001B:02550184 xrGame.dll, game_cl_Deathmatch::SetBuyMenuItems(), p:\xr_3da\xrgame\game_cl_deathmatch_buywnd.cpp, 203
+     <br/>
+     001B:0254CF9B xrGame.dll, game_cl_Deathmatch::OnKeyboardPress(), p:\xr_3da\xrgame\game_cl_deathmatch.cpp, 690
+     <br/>
+     001B:02550922 xrGame.dll, game_cl_TeamDeathmatch::OnKeyboardPress(), p:\xr_3da\xrgame\game_cl_teamdeathmatch.cpp, 472
+     <br/>
+     001B:026D3244 xrGame.dll, CUIGameDM::IR_OnKeyboardPress(), p:\xr_3da\xrgame\uigamedm.cpp, 266
+     <br/>
+     001B:026D4C5F xrGame.dll, CUIGameTDM::IR_OnKeyboardPress(), p:\xr_3da\xrgame\uigametdm.cpp, 130
+     <br/>
+     001B:0266952F xrGame.dll, CUI::IR_OnKeyboardPress(), p:\xr_3da\xrgame\ui.cpp, 161
+     <br/>
+     001B:024753B4 xrGame.dll, CLevel::IR_OnKeyboardPress(), p:\xr_3da\xrgame\level_input.cpp, 147
+     <br/>
+     001B:004A827C xr_3da.exe, CInput::KeyUpdate(), p:\xr_3da\xr_input.cpp, 169
+     <br/>
+     001B:004A836C xr_3da.exe, CInput::OnFrame(), p:\xr_3da\xr_input.cpp, 305
+     <br/>
+     001B:00447B0A xr_3da.exe, CRegistrator&lt;pureRender&gt;::Process(), p:\xr_3da\pure.h, 79
+     <br/>
+     001B:00484637 xr_3da.exe, CRenderDevice::FrameMove(), p:\xr_3da\device.cpp, 295
+     <br/>
+     001B:00484A9E xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 196
+     <br/>
+     001B:004AB2CA xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 212
+     <br/>
+     001B:004AB785 xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 409
+     <br/>
+     001B:00462259 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:00581C79 xr_3da.exe, __onexitbegin()
+     <br/>
+     <br/>
+     S:\logs\250</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 января 2007 14:06</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 января 2007 14:11</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Mad-Max =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 января 2007 10:06</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 января 2007 10:06</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

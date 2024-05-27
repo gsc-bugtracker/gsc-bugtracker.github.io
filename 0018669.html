@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018669: Stalker clear sky patch 04 - e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_inline.h, 111 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018668.html">
+      &lt; Прошлое обращение (0018668)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018670.html">
+      Следующее обращение (0018670) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018669</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>04 сентября 2008 17:16</td>
+    <td>08 сентября 2008 19:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018669: Stalker clear sky patch 04 - e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_inline.h, 111</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! NPC sim_default_bandit_217135 couldn't build path from
+     <br/>
+     ~ [205432][45.500000][0.623553][-315.000000]
+     <br/>
+     ~ to
+     <br/>
+     ~ [208868][49.000000][0.783315][-310.099976]
+     <br/>
+     ! level_path().failed() during navigation
+     <br/>
+     m_current_transition guard: [&lt;world&gt;][&lt;no loophole&gt;] -&gt; [gar_smart_terrain_6_1_to_gar_smart_terrain_5_2_patrol_1_wait_2_smartcover][lh_1], [2]
+     <br/>
+     [LUA] RESET INVULNERABILITY. npc[sim_default_duty_221005] = [false]
+     <br/>
+     [LUA] ...\stalker\clear_sky\xr_walker:(101):DEBUG: set_scheme: scheme='walker',
+     <a href="mailto:section='walker@gar_smart_terrain_1_5_guard_3_walk'" target="_new">
+      section='walker@gar_smart_terrain_1_5_guard_3_walk'
+          , gulag_name='gar_smart_terrain_1_5'
+      <br/>
+      [LUA] ...\stalker\clear_sky\xr_walker:(103):DEBUG: set_scheme: storage assigned
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02E866C1 xrGame.dll, CStateGroupAttack&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_inline.h, 111
+      <br/>
+      001B:02E78D46 xrGame.dll, CStateManagerDog::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog_state_manager.cpp, 167
+      <br/>
+      001B:0043E71B xrEngine.exe, stlp_std::vector&lt;CObjectList::SRelcasePair,xalloc&lt;CObjectList::SRelcasePair&gt; &gt;::operator=(), e:\priquel\sources\sdk\include\stlport\stl\_vector.c, 193
+      <br/>
+      001B:0043EF7A xrEngine.exe, CCF_Skeleton::CCF_Skeleton()
+      <br/>
+      001B:00437512 xrEngine.exe, stlp_std::vector&lt;CApplication::sLevelInfo,xalloc&lt;CApplication::sLevelInfo&gt; &gt;::_M_allocate_and_copy&lt;CApplication::sLevelInfo const *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_vector.h, 645
+      <br/>
+      001B:030AF303 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 572
+      <br/>
+      001B:00498583 xrEngine.exe, xr_vector&lt;_matrix&lt;float&gt;,xalloc&lt;_matrix&lt;float&gt; &gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 139
+      <br/>
+      001B:77F28A51 GDI32.dll
+      <br/>
+      001B:004AD6E9 xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 269
+      <br/>
+      001B:004ACEA8 xrEngine.exe, CTextConsole::CreateConsoleWnd(), e:\priquel\sources\engine\xrengine\text_console.cpp, 40
+      <br/>
+      001B:004ACE44 xrEngine.exe, text_editor::line_edit_control::get_selected_mode(), e:\priquel\sources\engine\xrengine\line_edit_control.h, 87
+      <br/>
+      001B:004ABE56 xrEngine.exe, CTheoraSurface::Play(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 54
+      <br/>
+      001B:4FD96407 d3d9.dll
+      <br/>
+      001B:77D38709 USER32.dll
+      <br/>
+      001B:77D38BB1 USER32.dll
+      <br/>
+      001B:77D3B368 USER32.dll
+      <br/>
+      <br/>
+      На ПДА собаки бежали на смарт занятый Долгом. я Воевал на соседнем смарте с бандитами.
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080904-165328.zip (3,092,610 bytes)
+     <span class="italic">04 сентября 2008 17:16</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_quicksave.sav.bz2 (1,095,946 bytes)
+     <span class="italic">04 сентября 2008 17:17</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="22088" name="22088">
+     <td class="bugnote-public">
+      <span class="small">(0022088)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">05 сентября 2008 12:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">проверьте в следующем билде плз!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22125" name="22125">
+     <td class="bugnote-public">
+      <span class="small">(0022125)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">08 сентября 2008 19:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не повторяется, вроде как...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 17:16</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 17:16</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 17:16</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080904-165328.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 17:17</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 17:17</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: usercheg_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 17:17</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 сентября 2008 17:35</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 сентября 2008 17:38</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 сентября 2008 12:58</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 22088</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 19:28</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 22125</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

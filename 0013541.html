@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013541: Yantar - inventory().ActiveItem() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013540.html">
+      &lt; Прошлое обращение (0013540)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013542.html">
+      Следующее обращение (0013542) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013541</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>05 марта 2008 10:33</td>
+    <td>01 июля 2008 17:40</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013541: Yantar - inventory().ActiveItem()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CAI_Stalker::can_kill_enemy
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\Ai\Stalker\ai_stalker_fire.cpp
+     <br/>
+     [error]Line          : 1247
+     <br/>
+     [error]Description   : inventory().ActiveItem()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647B4B xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 236
+     <br/>
+     001B:00647C97 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 314
+     <br/>
+     001B:03072BF4 xrGame.dll, CAI_Stalker::can_kill_enemy(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_fire.cpp, 1247
+     <br/>
+     <br/>
+     Перебил всех врагов вокруг лаборатории. На экране появилась надпись "ВЫБРОС НА ЯНТАРЕ =))" и игру выкинуло.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (37,829 bytes)
+     <span class="italic">05 марта 2008 10:33</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (52,292 bytes)
+     <span class="italic">17 марта 2008 10:08</span>
+     <br/>
+     <img border="0" height="16" src="images/jpgicon.gif" width="16"/>
+     ss_starodub lyudmila_03-17-08_10-05-04_(yantar).jpg (55,283 bytes)
+     <span class="italic">17 марта 2008 10:10</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGATWO_2_18.03.LOG.bz2 (512,782 bytes)
+     <span class="italic">18 марта 2008 20:14</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     год_офф.log.bz2 (250,938 bytes)
+     <span class="italic">20 марта 2008 11:57</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>связан с</nobr></td>
+        <td><a href="0014196.html">
+          0014196
+         </a></td>
+        <td><a title="открыт">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Dima</nobr></td>
+        <td>Limansk E:\priquel\sources\engine\xrGame\Ai\Stalker\ai_stalker_fire.cpp 1248</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="11733" name="11733">
+     <td class="bugnote-public">
+      <span class="small">(0011733)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">12 марта 2008 12:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">надо как-то воспроизвести
+      <br/>
+      иначе через месяц закрою</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="11739" name="11739">
+     <td class="bugnote-public">
+      <span class="small">(0011739)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">12 марта 2008 12:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">воспроизвести не могу :(
+      <br/>
+      игру выкидывает раньше.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12039" name="12039">
+     <td class="bugnote-public">
+      <span class="small">(0012039)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">17 марта 2008 10:09</span>
+      <br/>
+      <span class="small">отредактирован:  17 марта 2008 10:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">получилось повторить баг. прикрепил свежий Лог и скрин.
+      <br/>
+      <br/>
+      отредактирован: 17.03.08 10:09</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12055" name="12055">
+     <td class="bugnote-public">
+      <span class="small">(0012055)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">17 марта 2008 11:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">лог не содержит упоминания об ошибке</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12062" name="12062">
+     <td class="bugnote-public">
+      <span class="small">(0012062)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">17 марта 2008 11:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Игру не выкинуло. Просто время от времени появлялась надпись.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12261" name="12261">
+     <td class="bugnote-public">
+      <span class="small">(0012261)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">18 марта 2008 20:14</span>
+      <br/>
+      <span class="small">отредактирован:  18 марта 2008 20:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">у меня такой краш выпал на Agroprom'e, причем случайно после перестрелки с зомбаками.
+      <br/>
+      <br/>
+      лог прикрепил
+      <br/>
+      <br/>
+      отредактирован: 18.03.08 20:14</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12434" name="12434">
+     <td class="bugnote-public">
+      <span class="small">(0012434)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">20 марта 2008 11:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетел при двойном нажатие на СВД в своём инвентаре(Попытка взять в руки).
+      <br/>
+      Выкинуло.
+      <br/>
+      Год офф.
+      <br/>
+      Загрузился по автосейву на Лимнске(на год_офф).</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19327" name="19327">
+     <td class="bugnote-public">
+      <span class="small">(0019327)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">30 июня 2008 12:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 марта 2008 10:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 марта 2008 10:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 марта 2008 10:33</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 марта 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 марта 2008 11:04</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 марта 2008 11:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 марта 2008 12:43</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 11733</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 12:56</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 11739</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 10:08</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 10:09</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 12039</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 10:09</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 10:09</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 10:09</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий отредактирован: 12039</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: ss_starodub lyudmila_03-17-08_10-05-04_(yantar).jpg</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 марта 2008 11:28</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 12055</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 марта 2008 11:40</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 12062</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 20:14</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 12261</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 марта 2008 20:14</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: MEGATWO_2_18.03.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 марта 2008 20:14</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий отредактирован: 12261</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 11:56</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 12434</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: год_офф.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 марта 2008 13:34</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0014196</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r19389 =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 12:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 12:50</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 19327</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 12:50</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 12:50</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

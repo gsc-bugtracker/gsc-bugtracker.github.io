@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014178: Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014177.html">
+      &lt; Прошлое обращение (0014177)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014179.html">
+      Следующее обращение (0014179) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014178</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>попыток не было</td>
+    <td>24 марта 2008 12:24</td>
+    <td>08 июля 2008 11:41</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014178: Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">во время боя подошел близко к НПС и хотел с ним поговорить
+     <br/>
+     говорить он естественно не хотел, так как стрелялся
+     <br/>
+     как раз в момент, когда его убили я опять нажимал "f", открылся инвентарь лута
+     <br/>
+     быстро нажал взять все, и закрыл - крэш
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : e_entity
+     <br/>
+     [error]Function      : xrServer::Process_event_reject
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+     <br/>
+     [error]Line          : 12
+     <br/>
+     [error]Description   : entity not found. id_parent=12507 id_entity=12515 frame=18300
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00697A47 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:03DBD0AF xrGame.dll, xrServer::Process_event_reject(), e:\priquel\sources\engine\xrgame\xrserver_process_event_reject.cpp, 12
+     <br/>
+     001B:03DBA7AE xrGame.dll, xrServer::Process_event(), e:\priquel\sources\engine\xrgame\xrserver_process_event.cpp, 102
+     <br/>
+     001B:038A34D6 xrGame.dll, xrServer::OnMessage(), e:\priquel\sources\engine\xrgame\xrserver.cpp, 525
+     <br/>
+     001B:0359F9CE xrGame.dll, CLevel::Send(), e:\priquel\sources\engine\xrgame\level_network.cpp, 248
+     <br/>
+     001B:0365EB62 xrGame.dll, CGameObject::u_EventSend(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 678
+     <br/>
+     001B:03F6AFDE xrGame.dll, move_item_from_to(), e:\priquel\sources\engine\xrgame\ui\uiactormenudeadbodysearch.cpp, 25
+     <br/>
+     001B:03F6B108 xrGame.dll, move_item_check(), e:\priquel\sources\engine\xrgame\ui\uiactormenudeadbodysearch.cpp, 45
+     <br/>
+     001B:03F6B943 xrGame.dll, CUIActorMenu::TakeAllFromPartner(), e:\priquel\sources\engine\xrgame\ui\uiactormenudeadbodysearch.cpp, 181
+     <br/>
+     001B:03F789BF xrGame.dll, fastdelegate::FastDelegate2&lt;CUIWindow *,void *,void&gt;::operator()(), e:\priquel\sources\engine\xrcore\fastdelegate.h, 1088
+     <br/>
+     001B:03F7843B xrGame.dll, CUIWndCallback::OnEvent(), e:\priquel\sources\engine\xrgame\ui\uiwndcallback.cpp, 40
+     <br/>
+     001B:03F69076 xrGame.dll, CUIActorMenu::SendMessageA(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 147
+     <br/>
+     001B:04045A2A xrGame.dll, CUIButton::OnClick(), e:\priquel\sources\engine\xrgame\ui\uibutton.cpp, 135
+     <br/>
+     001B:04042736 xrGame.dll, CUI3tButton::OnClick(), e:\priquel\sources\engine\xrgame\ui\ui3tbutton.cpp, 42
+     <br/>
+     001B:040458E2 xrGame.dll, CUIButton::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uibutton.cpp, 86
+     <br/>
+     001B:040427A4 xrGame.dll, CUI3tButton::OnMouse(), e:\priquel\sources\engine\xrgame\ui\ui3tbutton.cpp, 51
+     <br/>
+     001B:03FD29F1 xrGame.dll, CUIWindow::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 343
+     <br/>
+     001B:03F6A0E8 xrGame.dll, CUIActorMenu::OnMouse(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 551
+     <br/>
+     001B:03FCED46 xrGame.dll, CUIDialogWnd::IR_OnKeyboardRelease(), e:\priquel\sources\engine\xrgame\ui\uidialogwnd.cpp, 96
+     <br/>
+     001B:03EE11C5 xrGame.dll, CUI::IR_OnKeyboardRelease(), e:\priquel\sources\engine\xrgame\ui.cpp, 177
+     <br/>
+     001B:03597E7E xrGame.dll, CLevel::IR_OnKeyboardRelease(), e:\priquel\sources\engine\xrgame\level_input.cpp, 378
+     <br/>
+     001B:03596C09 xrGame.dll, CLevel::IR_OnMouseRelease(), e:\priquel\sources\engine\xrgame\level_input.cpp, 63
+     <br/>
+     001B:00434603 xrEngine.exe, CInput::MouseUpdate(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 310
+     <br/>
+     001B:004352AD xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 450
+     <br/>
+     001B:004C86A3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004DE479 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004DD4C8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004DD464 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004DC48A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004DD0A2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DD1BB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C8E2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CF75 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D253 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:005572F2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (231,744 bytes)
+     <span class="italic">24 марта 2008 12:24</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (146,564 bytes)
+     <span class="italic">31 марта 2008 12:21</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080520-100518.zip (1,342,925 bytes)
+     <span class="italic">20 мая 2008 10:14</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080529-100136.zip (766,091 bytes)
+     <span class="italic">29 мая 2008 10:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape.zip (1,248,824 bytes)
+     <span class="italic">31 мая 2008 17:43</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080702-114951.zip (4,456,216 bytes)
+     <span class="italic">02 июля 2008 12:02</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0017504.html">
+          0017504
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Sea</nobr></td>
+        <td>Yantar - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp  Line  : 11</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="12742" name="12742">
+     <td class="bugnote-public">
+      <span class="small">(0012742)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">24 марта 2008 14:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">А можно повторить ?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12751" name="12751">
+     <td class="bugnote-public">
+      <span class="small">(0012751)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">24 марта 2008 15:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">да, я повторял у себя</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="13266" name="13266">
+     <td class="bugnote-public">
+      <span class="small">(0013266)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">31 марта 2008 12:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Такой же креш, на том же Рэд Форесте. Купил у бандита 5 гранат (больше у него ничего небыло) - креш.
+      <br/>
+      Добавил Лог.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15460" name="15460">
+     <td class="bugnote-public">
+      <span class="small">(0015460)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">24 апреля 2008 19:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2Loopzilla: переназначь на того чей это баг.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15464" name="15464">
+     <td class="bugnote-public">
+      <span class="small">(0015464)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">24 апреля 2008 19:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">починить можем, только если дадите дамп. :)
+      <br/>
+      --
+      <br/>
+      по логу - попытка взять вещь у актёра, который уничтожается.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15465" name="15465">
+     <td class="bugnote-public">
+      <span class="small">(0015465)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">24 апреля 2008 19:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2Yojig &amp; Sifa: повторите, и не забывайте дампы прикреплять, теряем время.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16620" name="16620">
+     <td class="bugnote-public">
+      <span class="small">(0016620)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 мая 2008 10:13</span>
+      <br/>
+      <span class="small">отредактирован:  20 мая 2008 10:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторил - вылет при луте НПС которого убивают
+      <br/>
+      лог добавил
+      <br/>
+      <br/>
+      ~ ERROR: can't detach independant object. entity[wpn_wincheaster13001282:1282], parent[sim_default_bandit_31364:1364], section[wpn_wincheaster1300]
+      <br/>
+      ---Process ownership take: parent [0][single_player], item [1282][wpn_wincheaster1300]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : e_entity
+      <br/>
+      [error]Function      : xrServer::Process_event_reject
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+      <br/>
+      [error]Line          : 12
+      <br/>
+      [error]Description   : entity not found. id_parent=1364 id_entity=1486 frame=42858
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678BA6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006843D9 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+      <br/>
+      001B:00678E27 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:032AF1AC xrGame.dll, xrServer::Process_event_reject(), e:\priquel\sources\engine\xrgame\xrserver_process_event_reject.cpp, 12
+      <br/>
+      001B:032AE167 xrGame.dll, xrServer::Process_event(), e:\priquel\sources\engine\xrgame\xrserver_process_event.cpp, 102
+      <br/>
+      001B:030F9ED8 xrGame.dll, xrServer::OnMessage(), e:\priquel\sources\engine\xrgame\xrserver.cpp, 528
+      <br/>
+      001B:034C9846 xrGame.dll, _strlwr()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      отредактирован: 20.05.08 10:14</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17120" name="17120">
+     <td class="bugnote-public">
+      <span class="small">(0017120)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">29 мая 2008 10:10</span>
+      <br/>
+      <span class="small">отредактирован:  29 мая 2008 10:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : e_entity
+      <br/>
+      [error]Function      : xrServer::Process_event_reject
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+      <br/>
+      [error]Line          : 12
+      <br/>
+      [error]Description   : entity not found. id_parent=1556 id_entity=1540 frame=38779
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006796A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00679927 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:032819FC xrGame.dll, xrServer::Process_event_reject(), e:\priquel\sources\engine\xrgame\xrserver_process_event_reject.cpp, 12
+      <br/>
+      001B:032809B7 xrGame.dll, xrServer::Process_event(), e:\priquel\sources\engine\xrgame\xrserver_process_event.cpp, 102
+      <br/>
+      001B:030CB588 xrGame.dll, xrServer::OnMessage(), e:\priquel\sources\engine\xrgame\xrserver.cpp, 528
+      <br/>
+      001B:0349B716 xrGame.dll, _strlwr()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      Ескейп.Бросил гранату в толпу военных возле автобусной остановки
+      <br/>
+      <br/>
+      отредактирован: 29.05.08 10:11</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17326" name="17326">
+     <td class="bugnote-public">
+      <span class="small">(0017326)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">31 мая 2008 17:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">При убийстве последнего военного на элеваторе(Ескейп):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : e_entity
+      <br/>
+      [error]Function      : xrServer::Process_event_reject
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+      <br/>
+      [error]Line          : 12
+      <br/>
+      [error]Description   : entity not found. id_parent=21425 id_entity=21427 frame=19866</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18349" name="18349">
+     <td class="bugnote-public">
+      <span class="small">(0018349)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">18 июня 2008 15:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">последний дамп 29 мая, можете дать свеженький.. :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19456" name="19456">
+     <td class="bugnote-public">
+      <span class="small">(0019456)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">02 июля 2008 12:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">свежий лог с янтаря
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : e_entity
+      <br/>
+      [error]Function      : xrServer::Process_event_reject
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp
+      <br/>
+      [error]Line          : 12
+      <br/>
+      [error]Description   : entity not found. id_parent=9603 id_entity=9611 frame=7675
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0082D6C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0082D907 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:03C4A2A1 xrGame.dll, xrServer::Process_event_reject(), e:\priquel\sources\engine\xrgame\xrserver_process_event_reject.cpp, 12
+      <br/>
+      001B:03C49217 xrGame.dll, xrServer::Process_event(), e:\priquel\sources\engine\xrgame\xrserver_process_event.cpp, 102
+      <br/>
+      001B:03AA2288 xrGame.dll, xrServer::OnMessage(), e:\priquel\sources\engine\xrgame\xrserver.cpp, 529
+      <br/>
+      001B:03E61CC6 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19820" name="19820">
+     <td class="bugnote-public">
+      <span class="small">(0019820)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 13:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">15062</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19907" name="19907">
+     <td class="bugnote-public">
+      <span class="small">(0019907)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">08 июля 2008 09:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">duplicate</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 12:24</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 12:24</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 12:24</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 12:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 12:44</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 12:54</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 14:49</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 12742</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 14:49</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 14:49</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 марта 2008 14:49</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 марта 2008 15:09</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 12751</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 марта 2008 12:21</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 13266</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 марта 2008 12:21</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 19:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 15460</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 19:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 19:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 19:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 19:13</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 19:20</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15464</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 19:20</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Corr</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 19:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 15465</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 19:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 18:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 18:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 18:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 10:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 16620</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 10:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080520-100518.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 10:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 10:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 10:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 16620</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 мая 2008 10:10</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17120</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 10:10</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080529-100136.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 мая 2008 10:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 17120</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 17:42</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17326</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 мая 2008 17:43</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 18:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 мая 2008 18:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 18:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 10:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 13:41</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 15:09</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 18349</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 20:05</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 18685</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 20:06</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий удален: 18685</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:45</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0017504</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:58</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 12:02</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19456</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 12:02</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080702-114951.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19820</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r20868 =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 09:25</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19907</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 09:25</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 09:25</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - entity not found - E:\priquel\sources\engine\xrGame\xrServer_process_event_reject.cpp 12 =&gt; Red Forest - entity not found - E:\\priquel\\sources\\engine\\xrGame\\xrServer_process_event_reject.cpp 12</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 09:25</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 11:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

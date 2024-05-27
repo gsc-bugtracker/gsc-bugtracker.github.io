@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010248: P:\xr_3da\xrRender_R1\Texture.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010247.html">
+      &lt; Прошлое обращение (0010247)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010249.html">
+      Следующее обращение (0010249) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010248</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>20 ноября 2006 15:02</td>
+    <td>23 ноября 2006 18:03</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>20 ноября 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010248: P:\xr_3da\xrRender_R1\Texture.cpp</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Вылетает меню "Загрузить игру"
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Can't find texture 'ui\credits_back_512_v10'
+     <br/>
+     [error]Function      : CRender::texture_load
+     <br/>
+     [error]File          : P:\xr_3da\xrRender_R1\Texture.cpp
+     <br/>
+     [error]Line          : 245
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00EF508B xrCore.dll, xrDebug::fatal(), p:\xrcore\xrdebugnew.cpp, 254
+     <br/>
+     001B:029173CF xrRender_R1.dll, CRender::texture_load(), p:\xr_3da\xrrender_r1\texture.cpp, 245
+     <br/>
+     001B:00474A1C xr_3da.exe, CTexture::Load(), p:\xr_3da\sh_texture.cpp, 266
+     <br/>
+     001B:00474A62 xr_3da.exe, CTexture::apply_load(), p:\xr_3da\sh_texture.cpp, 70
+     <br/>
+     001B:0046A3C6 xr_3da.exe, CBackend::set_Textures(), p:\xr_3da\r_backend_runtime.cpp, 116
+     <br/>
+     001B:00406DE6 xr_3da.exe, CBackend::set_Element(), p:\xr_3da\r_backend_runtime.h, 122
+     <br/>
+     001B:02DBC701 xrGame.dll, CUIStaticItem::Render(), p:\xr_3da\xrgame\uistaticitem.cpp, 74
+     <br/>
+     001B:02DB8DAC xrGame.dll, CUIStatic::DrawTexture(), p:\xr_3da\xrgame\ui\uistatic.cpp, 185
+     <br/>
+     001B:02DE3FCB xrGame.dll, CUIScrollView::Draw(), p:\xr_3da\xrgame\ui\uiscrollview.cpp, 191
+     <br/>
+     001B:02DC355E xrGame.dll, CUIWindow::Draw(), p:\xr_3da\xrgame\ui\uiwindow.cpp, 173
+     <br/>
+     001B:02DC355E xrGame.dll, CUIWindow::Draw(), p:\xr_3da\xrgame\ui\uiwindow.cpp, 173
+     <br/>
+     001B:02D783D3 xrGame.dll, CDialogHolder::DoRenderDialogs(), p:\xr_3da\xrgame\uidialogholder.cpp, 147
+     <br/>
+     001B:02D75CF6 xrGame.dll, CMainMenu::OnRenderPPUI_main(), p:\xr_3da\xrgame\mainmenu.cpp, 242
+     <br/>
+     001B:0291A1E3 xrRender_R1.dll, CRenderTarget::End(), p:\xr_3da\xrrender_r1\fstaticrender_rendertarget.cpp, 223
+     <br/>
+     001B:0291CCAB xrRender_R1.dll, CRender::Render(), p:\xr_3da\xrrender_r1\fstaticrender.cpp, 512
+     <br/>
+     001B:0044894A xr_3da.exe, CRegistrator&lt;pureRender&gt;::Process(), p:\xr_3da\pure.h, 79
+     <br/>
+     001B:00482EEF xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 224
+     <br/>
+     001B:004A4F8A xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 207
+     <br/>
+     001B:004A5601 xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 395
+     <br/>
+     001B:00462AF9 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll, RegisterWaitForInputIdle()
+     <br/>
+     001B:00578B2D xr_3da.exe, __onexitbegin()
+     <br/>
+     * loading script ui_base_dialog.script
+     <br/>
+     <br/>
+     S:\logs\102\xray_sepul.log
+     <br/>
+     S:\logs\102\xray_sepul_11-20-06_14-58-41.mdmp
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 ноября 2006 15:02</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 ноября 2006 15:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">P:\xr_3da\xrRender_R1\Texture.cpp =&gt; P:\\xr_3da\\xrRender_R1\\Texture.cpp</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 ноября 2006 15:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 ноября 2006 15:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">P:\xr_3da\xrRender_R1\Texture.cpp =&gt; P:\\xr_3da\\xrRender_R1\\Texture.cpp</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 ноября 2006 15:03</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 ноября 2006 15:10</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 ноября 2006 15:14</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Sepul</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 ноября 2006 17:18</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sepul =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 ноября 2006 18:03</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 ноября 2006 18:03</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

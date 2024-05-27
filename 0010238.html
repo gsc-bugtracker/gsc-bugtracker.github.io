@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010238: загружал сейв на саркофаг, после обновления bin_test. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010237.html">
+      &lt; Прошлое обращение (0010237)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010239.html">
+      Следующее обращение (0010239) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010238</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>14 ноября 2006 18:20</td>
+    <td>20 ноября 2006 17:02</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>14 ноября 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010238: загружал сейв на саркофаг, после обновления bin_test.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Дима сказал что может не связано с обновлением
+     <br/>
+     <br/>
+     Expression    : xml_doc.NavigateToNode(path,index)
+     <br/>
+     Description   : XML node not found
+     <br/>
+     Arguments     : outfit_info
+     <br/>
+     Function      : CUIXmlInit::InitWindow
+     <br/>
+     File          : P:\xr_3da\xrGame\ui\UIXmlInit.cpp
+     <br/>
+     Line          : 91
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01023F3A xrCore.dll, xrDebug::fail(), p:\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:03A2B9FA xrGame.dll, CUIXmlInit::InitWindow(), p:\xr_3da\xrgame\ui\uixmlinit.cpp, 93
+     <br/>
+     001B:03A217BD xrGame.dll, CUIOutfitInfo::InitFromXml(), p:\xr_3da\xrgame\ui\uioutfitinfo.cpp, 53
+     <br/>
+     001B:039D0F9F xrGame.dll, CUIInventoryWnd::Init(), p:\xr_3da\xrgame\ui\uiinventorywnd.cpp, 128
+     <br/>
+     001B:039D1FFA xrGame.dll, CUIInventoryWnd::CUIInventoryWnd(), p:\xr_3da\xrgame\ui\uiinventorywnd.cpp, 53
+     <br/>
+     001B:037444A3 xrGame.dll, xr_new&lt;CUIInventoryWnd&gt;(), p:\xrcore\xrmemory_subst_msvc.h, 70
+     <br/>
+     001B:03ACF23D xrGame.dll, CUIGameSP::CUIGameSP(), p:\xr_3da\xrgame\uigamesp.cpp, 26
+     <br/>
+     001B:037126F0 xrGame.dll, xr_new&lt;CUIGameSP&gt;(), p:\xrcore\xrmemory_subst_msvc.h, 70
+     <br/>
+     001B:037126A5 xrGame.dll, CObjectItemSingle&lt;CUIGameSP,1&gt;::client_object(), p:\xr_3da\xrgame\object_item_single_inline.h, 48
+     <br/>
+     001B:036F64B0 xrGame.dll, xrFactory_Create(), p:\xr_3da\xrgame\xrgame.cpp, 22
+     <br/>
+     001B:0374FDB5 xrGame.dll, game_cl_Single::createGameUI(), p:\xr_3da\xrgame\game_cl_single.cpp, 27
+     <br/>
+     001B:039C96D5 xrGame.dll, CUI::Load(), p:\xr_3da\xrgame\ui.cpp, 39
+     <br/>
+     001B:03AC2B70 xrGame.dll, CHUDManager::Load(), p:\xr_3da\xrgame\hudmanager.cpp, 146
+     <br/>
+     001B:0353DA79 xrGame.dll, CLevel::net_start_client5(), p:\xr_3da\xrgame\level_network_start_client.cpp, 189
+     <br/>
+     001B:00519C96 xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 188
+     <br/>
+     001B:0043C294 xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 207
+     <br/>
+     001B:0043CA0B xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 395
+     <br/>
+     001B:0059A78D xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:006A7C46 xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     S:\logs\98</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 ноября 2006 18:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 ноября 2006 17:02</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 ноября 2006 17:02</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

@@ -1,0 +1,700 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0018546: S.T.A.L.K.E.R. - Clear Sky Patch 5 - CPatrolPathManager::select_point - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0018545.html">
+      &lt; Прошлое обращение (0018545)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0018547.html">
+      Следующее обращение (0018547) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0018546</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>27 августа 2008 11:59</td>
+    <td>17 октября 2008 11:22</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#c8c8ff">
+     назначен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0018546: S.T.A.L.K.E.R. - Clear Sky Patch 5 - CPatrolPathManager::select_point</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Сейва пока нет, может пришлют. Баг неоднократно присылали.
+     <br/>
+     <br/>
+     DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     agr_in_restr_1
+     <br/>
+     agr_in_restr_barman
+     <br/>
+     agr_in_restr_stalker_trader
+     <br/>
+     agr_in_restr_trader
+     <br/>
+     agr_in_restrictor_tower
+     <br/>
+     agr_restr_secret_trader
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     agr_stalker_leader_restr
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     agr_in_restr_1
+     <br/>
+     agr_in_restr_barman
+     <br/>
+     agr_in_restr_stalker_trader
+     <br/>
+     agr_in_restr_trader
+     <br/>
+     agr_in_restrictor_tower
+     <br/>
+     agr_restr_secret_trader
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : vertex || show_restrictions(m_object)
+     <br/>
+     [error]Function      : CPatrolPathManager::select_point
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+     <br/>
+     [error]Line          : 155
+     <br/>
+     [error]Description   : any vertex in patrol path [agr_stalker_leader_walk] is inaccessible for object [agr_stalker_base_leader]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080825-212236.zip (8,553,700 bytes)
+     <span class="italic">27 августа 2008 11:59</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080907-231556.zip (1,154,121 bytes)
+     <span class="italic">08 сентября 2008 17:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080929-151219.zip (1,180,905 bytes)
+     <span class="italic">29 сентября 2008 15:53</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     patch_a3.sav.bz2 (1,155,017 bytes)
+     <span class="italic">29 сентября 2008 15:55</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_081017-105320.zip (1,860,333 bytes)
+     <span class="italic">17 октября 2008 11:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     kolyan4.sav.bz2 (1,285,131 bytes)
+     <span class="italic">17 октября 2008 11:21</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="21882" name="21882">
+     <td class="bugnote-public">
+      <span class="small">(0021882)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">27 августа 2008 15:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Без сейва нихрена понять не могу.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21884" name="21884">
+     <td class="bugnote-public">
+      <span class="small">(0021884)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">27 августа 2008 15:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">жди.... Хотя Саня сказал что и без сейва всё понятно.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21987" name="21987">
+     <td class="bugnote-public">
+      <span class="small">(0021987)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">01 сентября 2008 17:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Баги такого типа без сейва решаются? вопрос к Слипчу.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21989" name="21989">
+     <td class="bugnote-public">
+      <span class="small">(0021989)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">01 сентября 2008 17:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">В данном случае - нет. Дело в том, что там вообще такого произойти не может. Ну, и очень хочется знать, как такое всё-таки случается.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22113" name="22113">
+     <td class="bugnote-public">
+      <span class="small">(0022113)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">08 сентября 2008 17:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">patch 04, вложен крэш лог вместе с сохранением.
+      <br/>
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      agr_in_restr_1
+      <br/>
+      agr_in_restr_barman
+      <br/>
+      agr_in_restr_stalker_trader
+      <br/>
+      agr_in_restr_trader
+      <br/>
+      agr_in_restrictor_tower
+      <br/>
+      agr_restr_secret_trader
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      agr_stalker_leader_restr
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      agr_in_restr_1
+      <br/>
+      agr_in_restr_barman
+      <br/>
+      agr_in_restr_stalker_trader
+      <br/>
+      agr_in_restr_trader
+      <br/>
+      agr_in_restrictor_tower
+      <br/>
+      agr_restr_secret_trader
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [agr_stalker_leader_walk] is inaccessible for object [agr_stalker_base_leader]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22404" name="22404">
+     <td class="bugnote-public">
+      <span class="small">(0022404)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">29 сентября 2008 15:53</span>
+      <br/>
+      <span class="small">отредактирован:  29 сентября 2008 15:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на 5-м патче... Во время перестрелки на базе одиночек Агропрома между одиночками и кровососом, стою себе у стенки, никого не трогаю, через минуты 3 краш. Сейв и лог креплю, но с сейва не повторяется.
+      <br/>
+      <br/>
+      отредактирован: 29.09.08 15:56</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22443" name="22443">
+     <td class="bugnote-public">
+      <span class="small">(0022443)</span>
+      <br/>
+      Sepul
+      <br/>
+      <span class="small">17 октября 2008 11:20</span>
+      <br/>
+      <span class="small">отредактирован:  17 октября 2008 11:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">патч 1.5.05, с вложенного сейва kolyan4.sav стабильно повторяется.
+      <br/>
+      <br/>
+      DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      agr_in_restr_1
+      <br/>
+      agr_in_restr_barman
+      <br/>
+      agr_in_restr_stalker_trader
+      <br/>
+      agr_in_restr_trader
+      <br/>
+      agr_in_restrictor_tower
+      <br/>
+      agr_restr_secret_trader
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      agr_stalker_leader_restr
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      agr_in_restr_1
+      <br/>
+      agr_in_restr_barman
+      <br/>
+      agr_in_restr_stalker_trader
+      <br/>
+      agr_in_restr_trader
+      <br/>
+      agr_in_restrictor_tower
+      <br/>
+      agr_restr_secret_trader
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : vertex || show_restrictions(m_object)
+      <br/>
+      [error]Function      : CPatrolPathManager::select_point
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+      <br/>
+      [error]Line          : 155
+      <br/>
+      [error]Description   : any vertex in patrol path [agr_stalker_leader_walk] is inaccessible for object [agr_stalker_base_leader]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      отредактирован: 17.10.08 11:22</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 августа 2008 11:59</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 августа 2008 11:59</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080825-212236.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 августа 2008 12:58</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 августа 2008 15:36</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 21882</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 августа 2008 15:36</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 августа 2008 15:36</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 августа 2008 15:43</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21884</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 сентября 2008 11:56</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 сентября 2008 11:56</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 сентября 2008 17:23</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 21987</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 сентября 2008 17:27</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 21989</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 17:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 22113</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 сентября 2008 17:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 17:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 сентября 2008 17:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080907-231556.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 сентября 2008 17:05</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 сентября 2008 10:43</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 сентября 2008 15:53</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 22404</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 сентября 2008 15:53</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080929-151219.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 сентября 2008 15:55</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: patch_a3.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 сентября 2008 15:56</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий отредактирован: 22404</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 октября 2008 19:00</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 22425</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 октября 2008 19:00</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий удален: 22425</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 октября 2008 11:20</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий добавлен: 22443</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 октября 2008 11:21</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_081017-105320.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 октября 2008 11:21</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: kolyan4.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 октября 2008 11:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Комментарий отредактирован: 22443</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 октября 2008 11:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 октября 2008 11:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 октября 2008 11:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">STALKER Clear Sky 1.5.03 =&gt; S.T.A.L.K.E.R. - Clear Sky Patch 5 - CPatrolPathManager::select_point</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 октября 2008 11:22</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
