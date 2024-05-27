@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015133: Escape - any vertex in patrol path [esc_smart_terrain_5_7_walker_5_walk] in inaccessible - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015132.html">
+      &lt; Прошлое обращение (0015132)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015134.html">
+      Следующее обращение (0015134) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015133</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>17 апреля 2008 09:56</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23244</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015133: Escape - any vertex in patrol path [esc_smart_terrain_5_7_walker_5_walk] in inaccessible</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">взял на базе сталкеров второстепенное задание - захватить развалины хутора
+     <br/>
+     через некоторое время - крэш
+     <br/>
+     <br/>
+     DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     esc_space_restrictor
+     <br/>
+     esc_space_restrictor_habar_roof_broken_house
+     <br/>
+     esc_space_restrictor_in_restr_1
+     <br/>
+     esc_space_restrictor_in_restr_2
+     <br/>
+     esc_space_restrictor_in_restr_3
+     <br/>
+     esc_space_restrictor_in_restr_4
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     esc_space_restrictor_in_restr_1
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     esc_space_restrictor
+     <br/>
+     esc_space_restrictor_habar_roof_broken_house
+     <br/>
+     esc_space_restrictor_in_restr_2
+     <br/>
+     esc_space_restrictor_in_restr_3
+     <br/>
+     esc_space_restrictor_in_restr_4
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : vertex || show_restrictions(m_object)
+     <br/>
+     [error]Function      : CPatrolPathManager::select_point
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_manager.cpp
+     <br/>
+     [error]Line          : 155
+     <br/>
+     [error]Description   : any vertex in patrol path [esc_smart_terrain_5_7_walker_5_walk] in inaccessible for object [sim_default_stalker_110020]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007177C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00717A12 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:02DB1643 xrGame.dll, CPatrolPathManager::select_point(), e:\priquel\sources\engine\xrgame\patrol_path_manager.cpp, 155
+     <br/>
+     001B:02D9F367 xrGame.dll, CMovementManager::process_patrol_path(), e:\priquel\sources\engine\xrgame\movement_manager_patrol.cpp, 33
+     <br/>
+     001B:02D9688A xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 220
+     <br/>
+     001B:030FF85D xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 541
+     <br/>
+     001B:030FF9A6 xrGame.dll, stalker_movement_manager_base::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_base.cpp, 524
+     <br/>
+     001B:030E38E7 xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 72
+     <br/>
+     001B:0308575B xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 949
+     <br/>
+     001B:0308BC1D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+     <br/>
+     001B:0043B6C1 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:0043BDEF xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:032DAB45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:004C9653 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004DF299 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004DE2E8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004DE284 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004DD2AA xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004DDEC2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DDFDB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C922 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CFB5 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D293 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:005583D2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080417-094857.zip (838,563 bytes)
+     <span class="italic">17 апреля 2008 09:56</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080515-155456.zip (881,497 bytes)
+     <span class="italic">15 мая 2008 16:05</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     g1.sav.bz2 (935,805 bytes)
+     <span class="italic">14 июля 2008 11:35</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     Новая папка.rar (832,006 bytes)
+     <span class="italic">14 июля 2008 11:35</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16028" name="16028">
+     <td class="bugnote-public">
+      <span class="small">(0016028)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">08 мая 2008 19:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторяется?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16357" name="16357">
+     <td class="bugnote-public">
+      <span class="small">(0016357)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">15 мая 2008 16:06</span>
+      <br/>
+      <span class="small">отредактирован:  15 мая 2008 17:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Да. Повторился на элеваторе, после выполнения квеста "убить военных на элеваторе". Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=10038&amp;type=bug
+      <br/>
+      <br/>
+      Ревизия: 25161
+      <br/>
+      <br/>
+      отредактирован: 15.05.08 17:56</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16381" name="16381">
+     <td class="bugnote-public">
+      <span class="small">(0016381)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 мая 2008 09:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2chips: это другой рестриктор
+      <br/>
+      тот что в оригинальном баге я еще попытаюсь повторить</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20548" name="20548">
+     <td class="bugnote-public">
+      <span class="small">(0020548)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь163
+      </font>
+      <br/>
+      <span class="small">14 июля 2008 11:34</span>
+      <br/>
+      <span class="small">отредактирован:  14 июля 2008 12:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на габадже, джампнулся - запустился - шёл  к бандитам(которые в самом начале меня встречают) - выкинуло.
+      <br/>
+      всегда выкидывает на этом месте
+      <br/>
+      <br/>
+      отредактирован: 14.07.08 12:56</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20576" name="20576">
+     <td class="bugnote-public">
+      <span class="small">(0020576)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">14 июля 2008 14:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">извини, это не твое</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21186" name="21186">
+     <td class="bugnote-public">
+      <span class="small">(0021186)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">25 июля 2008 11:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 09:56</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 09:56</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 09:56</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080417-094857.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 09:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - взял на базе сталкеров второстепенное задание - захватить развалины хутора =&gt; Escape - any vertex in patrol path [esc_smart_terrain_5_7_walker_5_walk] in inaccessible</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 09:57</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 10:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 10:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 10:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 апреля 2008 16:46</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 апреля 2008 16:46</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 19:27</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 16028</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 19:27</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 19:27</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 14:41</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 14:41</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 16:05</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080515-155456.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 16:06</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 16357</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 17:55</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 16357</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 17:56</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 16357</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:17</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 16381</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:34</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 20548</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 11:35</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: g1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 11:35</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: Новая папка.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 12:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 12:56</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 20548</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 20576</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:06</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21186</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:06</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:06</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

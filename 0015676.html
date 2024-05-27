@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015676: RedForest - lua_pushlstring() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015675.html">
+      &lt; Прошлое обращение (0015675)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015677.html">
+      Следующее обращение (0015677) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015676</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>07 мая 2008 12:16</td>
+    <td>23 июня 2008 16:21</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r24352</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015676: RedForest - lua_pushlstring()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:009718D5 xrLUA.dll, lua_pushlstring(), e:\priquel\sources\engine\xrlua\src\lapi.c, 458
+     <br/>
+     001B:0099DA02 xrLUA.dll, luabind::`anonymous namespace'::get_weak_table(), e:\priquel\sources\engine\xrlua\luabind\weak_ref.cpp, 67
+     <br/>
+     001B:0099DB66 xrLUA.dll, luabind::weak_ref::get(), e:\priquel\sources\engine\xrlua\luabind\weak_ref.cpp, 192
+     <br/>
+     001B:02A89CF8 xrGame.dll, luabind::wrap_base::call&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt; &gt;(), e:\priquel\sources\sdk\include\luabind\wrapper_base.hpp, 122
+     <br/>
+     001B:02A89D79 xrGame.dll, luabind::call_member&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt; const ,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt; const &gt;(), e:\priquel\sources\sdk\include\luabind\wrapper_base.hpp, 174
+     <br/>
+     001B:02A89DCE xrGame.dll, CScriptActionWrapper::weight(), e:\priquel\sources\engine\xrgame\script_action_wrapper.cpp, 57
+     <br/>
+     001B:0342FAD8 xrGame.dll, _strlwr()
+     <br/>
+     001B:02A9212D xrGame.dll, CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;,CDataStorageConstructor&lt;CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CEdgePath&lt;unsigned int,1&gt;,CVertexA(), e:\priquel\sources\engine\xrgame\path_manager_solver_inline.h, 77
+     <br/>
+     001B:02A94E8B xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 219
+     <br/>
+     001B:02A94F5A xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 252
+     <br/>
+     001B:02A95210 xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), e:\priquel\sources\engine\xrgame\graph_engine_inline.h, 211
+     <br/>
+     001B:02A952C9 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 377
+     <br/>
+     001B:02A95308 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 74
+     <br/>
+     001B:02D49B17 xrGame.dll, CStalkerPlanner::update(), e:\priquel\sources\engine\xrgame\stalker_planner.cpp, 81
+     <br/>
+     001B:02D2E3ED xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 919
+     <br/>
+     001B:02D3384D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+     <br/>
+     001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:02F18135 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     Во время скриптовой сценки после подрыва тунеля.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080507-121330.zip (695,756 bytes)
+     <span class="italic">07 мая 2008 12:16</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15827" name="15827">
+     <td class="bugnote-public">
+      <span class="small">(0015827)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">07 мая 2008 14:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ээээ, а объясните что вылетело то :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15828" name="15828">
+     <td class="bugnote-public">
+      <span class="small">(0015828)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 мая 2008 14:30</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вы удалили оператор планировщика, а планировщик об этом не узнал</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18454" name="18454">
+     <td class="bugnote-public">
+      <span class="small">(0018454)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">19 июня 2008 13:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 12:16</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 12:16</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 12:16</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080507-121330.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 14:03</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 14:10</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 15827</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 14:10</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 14:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 15828</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 14:31</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 10:56</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 10:56</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 12:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 13:26</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 18454</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 13:26</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 июня 2008 13:26</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 16:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

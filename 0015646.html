@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015646: mp_factory - краш - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015645.html">
+      &lt; Прошлое обращение (0015645)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015647.html">
+      Следующее обращение (0015647) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015646</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Multiplayer</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>06 мая 2008 21:24</td>
+    <td>26 мая 2008 21:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Chips</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015646: mp_factory - краш</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Client received M_EVENT_PACK message...
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01891266 xrRender_R1.dll, stlp_std::__unguarded_linear_insert&lt;CDB::RESULT *,CDB::RESULT,pred_fb&gt;(), d:\priquel\sources\sdk\include\stlport\stl\_algo.c, 861
+     <br/>
+     001B:01891083 xrRender_R1.dll, stlp_std::__linear_insert&lt;CDB::RESULT *,CDB::RESULT,pred_fb&gt;(), d:\priquel\sources\sdk\include\stlport\stl\_algo.c, 879
+     <br/>
+     001B:01890E0A xrRender_R1.dll, stlp_std::__insertion_sort&lt;CDB::RESULT *,CDB::RESULT,pred_fb&gt;(), d:\priquel\sources\sdk\include\stlport\stl\_algo.c, 888
+     <br/>
+     001B:018908C9 xrRender_R1.dll, stlp_std::__final_insertion_sort&lt;CDB::RESULT *,pred_fb&gt;(), d:\priquel\sources\sdk\include\stlport\stl\_algo.c, 914
+     <br/>
+     001B:01890684 xrRender_R1.dll, stlp_std::sort&lt;CDB::RESULT *,pred_fb&gt;(), d:\priquel\sources\sdk\include\stlport\stl\_algo.c, 957
+     <br/>
+     001B:0188EC85 xrRender_R1.dll, CHOM::Render_DB(), d:\priquel\sources\engine\layers\xrrender\hom.cpp, 178
+     <br/>
+     001B:0188F6A9 xrRender_R1.dll, CHOM::Render(), d:\priquel\sources\engine\layers\xrrender\hom.cpp, 235
+     <br/>
+     001B:01854BC5 xrRender_R1.dll, CRender::Calculate(), d:\priquel\sources\engine\layers\xrrenderpc_r1\fstaticrender.cpp, 343
+     <br/>
+     <br/>
+     После длительной игры на Янтаре вдруг выбросило. Причины неизвестны.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080506-205441.zip (519,245 bytes)
+     <span class="italic">06 мая 2008 21:24</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15778" name="15778">
+     <td class="bugnote-public">
+      <span class="small">(0015778)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">07 мая 2008 10:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Обновите дбшки (5,6) и нужно проверить на новых...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16898" name="16898">
+     <td class="bugnote-public">
+      <span class="small">(0016898)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">26 мая 2008 17:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не вываливалось</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 21:24</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 21:24</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 21:24</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080506-205441.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 21:25</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 21:57</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 22:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:45</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:45</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:45</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 15778</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 17:52</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 16898</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 17:52</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 17:52</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 21:28</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

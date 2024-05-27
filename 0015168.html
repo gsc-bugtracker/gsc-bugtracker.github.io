@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015168: Limansk Crash E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp      Line  : 816 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015167.html">
+      &lt; Прошлое обращение (0015167)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015169.html">
+      Следующее обращение (0015169) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015168</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>17 апреля 2008 17:01</td>
+    <td>26 июня 2008 17:06</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23244</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015168: Limansk Crash E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp      Line  : 816</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">---Server is going to send GE_WPN_STATE_CHANGE to [7], weapon_section[wpn_sig550], parent[lim_stalker_enemy8529]
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CKinematicsAnimated::LL_BoneMatrixBuild
+     <br/>
+     [error]File          : E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp
+     <br/>
+     [error]Line          : 816
+     <br/>
+     [error]Description   : _valid( bi.mTransform )
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:007177C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:007179D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02A829ED xrRender_R1.dll, CKinematicsAnimated::LL_BoneMatrixBuild(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 820
+     <br/>
+     001B:02A81457 xrRender_R1.dll, CKinematicsAnimated::BuildBoneMatrix(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 839
+     <br/>
+     001B:02A96EB3 xrRender_R1.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 138
+     <br/>
+     001B:02A97176 xrRender_R1.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 189
+     <br/>
+     001B:02A971EE xrRender_R1.dll, CKinematics::Bone_GetAnimPos(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 148
+     <br/>
+     001B:02DB1986 xrGame.dll, aimers::base::fill_bones&lt;4,5&gt;(), e:\priquel\sources\engine\xrgame\aimers_base_inline.h, 60
+     <br/>
+     001B:02DB1D3C xrGame.dll, aimers::weapon::compute_bone(), e:\priquel\sources\engine\xrgame\aimers_weapon.cpp, 74
+     <br/>
+     001B:02DB2852 xrGame.dll, aimers::weapon::weapon(), e:\priquel\sources\engine\xrgame\aimers_weapon.cpp, 54
+     <br/>
+     001B:02DA92F9 xrGame.dll, CSightManager::compute_aiming(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 362
+     <br/>
+     001B:02DAA401 xrGame.dll, CSightManager::Exec_Look(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 113
+     <br/>
+     001B:030E4B7A xrGame.dll, CAI_Stalker::Exec_Look(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_feel.cpp, 51
+     <br/>
+     001B:0305AFB1 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 712
+     <br/>
+     001B:00458D18 xrEngine.exe, CObjectList::SingleUpdate(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 104
+     <br/>
+     001B:00458CCA xrEngine.exe, CObjectList::SingleUpdate(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 100
+     <br/>
+     001B:004593E1 xrEngine.exe, CObjectList::Update(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 212
+     <br/>
+     001B:00450572 xrEngine.exe, IGame_Level::OnFrame(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 144
+     <br/>
+     001B:032B1CD8 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 497
+     <br/>
+     001B:006EDF60 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:00432B66 xrEngine.exe, _SoundProcessor::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 90
+     <br/>
+     <br/>
+     Во время перестрелки с бандитами в доме (задание: Уничтожить пулеметную точку) в начале левела.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_LIMANSK.zip (1,001,967 bytes)
+     <span class="italic">17 апреля 2008 17:01</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     limansk_redstain.rar (150,530 bytes)
+     <span class="italic">17 апреля 2008 19:13</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (1,029,596 bytes)
+     <span class="italic">04 июня 2008 10:18</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (427,560 bytes)
+     <span class="italic">04 июня 2008 10:38</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-114720.zip (5,002,053 bytes)
+     <span class="italic">04 июня 2008 12:01</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     4.sav.bz2 (861,168 bytes)
+     <span class="italic">04 июня 2008 12:03</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080604-164227 marsh.zip (949,522 bytes)
+     <span class="italic">04 июня 2008 16:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14861" name="14861">
+     <td class="bugnote-public">
+      <span class="small">(0014861)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">17 апреля 2008 17:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Костик, посмотри и (или) отправь Игорю.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14878" name="14878">
+     <td class="bugnote-public">
+      <span class="small">(0014878)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">17 апреля 2008 19:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">У меня повторился. См. limansk_redstain.rar</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17502" name="17502">
+     <td class="bugnote-public">
+      <span class="small">(0017502)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 июня 2008 10:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* xrSheduler: too much time consumed by object [alife_simulator] (24ms)
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CKinematicsAnimated::LL_BoneMatrixBuild
+      <br/>
+      [error]File          : E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp
+      <br/>
+      [error]Line          : 816
+      <br/>
+      [error]Description   : _valid( bi.mTransform )
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:028E53FD xrRender_R1.dll, CKinematicsAnimated::LL_BoneMatrixBuild(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 820
+      <br/>
+      001B:028E3E67 xrRender_R1.dll, CKinematicsAnimated::BuildBoneMatrix(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 839
+      <br/>
+      001B:028F5543 xrRender_R1.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 138
+      <br/>
+      001B:028F570C xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 158
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5720 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:028F5A30 xrRender_R1.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 38
+      <br/>
+      001B:02903EA3 xrRender_R1.dll, _strlwr()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      <br/>
+      НА Ескейпе, обыскал труп сталкера (из квеста "Помочь патрулю : автобусная остановка")</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17504" name="17504">
+     <td class="bugnote-public">
+      <span class="small">(0017504)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 июня 2008 10:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ПРИ квестЕ "Помочь патрулю : автобусная остановка"</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17515" name="17515">
+     <td class="bugnote-public">
+      <span class="small">(0017515)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">04 июня 2008 12:01</span>
+      <br/>
+      <span class="small">отредактирован:  04 июня 2008 12:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Build 02.06.08 Marsh. При загрузки сейва во время синхронизации. Воспроизводимость 100%
+      <br/>
+      <br/>
+      отредактирован: 04.06.08 12:09
+      <br/>
+      <br/>
+      отредактирован: 04.06.08 12:09</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17542" name="17542">
+     <td class="bugnote-public">
+      <span class="small">(0017542)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">04 июня 2008 16:55</span>
+      <br/>
+      <span class="small">отредактирован:  04 июня 2008 16:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Марше, спустя минуты две после выполнения квеста "Захватить россыпь камней". Ревизия: 27073.
+      <br/>
+      <br/>
+      Лог:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=11260&amp;type=bug
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CKinematicsAnimated::LL_BoneMatrixBuild
+      <br/>
+      [error]File          : E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp
+      <br/>
+      [error]Line          : 816
+      <br/>
+      [error]Description   : _valid( bi.mTransform )
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00679D87 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:028EF97D xrRender_R2.dll, CKinematicsAnimated::LL_BoneMatrixBuild(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 820
+      <br/>
+      001B:028EE3E7 xrRender_R2.dll, CKinematicsAnimated::BuildBoneMatrix(), e:\priquel\sources\engine\layers\xrrender\skeletonanimated.cpp, 839
+      <br/>
+      001B:029000F3 xrRender_R2.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 138
+      <br/>
+      001B:029002BC xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 158
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029002D0 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:029005E0 xrRender_R2.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 38
+      <br/>
+      001B:02923873 xrRender_R2.dll, _strlwr()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      отредактирован: 04.06.08 16:56</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18961" name="18961">
+     <td class="bugnote-public">
+      <span class="small">(0018961)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:51</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19079" name="19079">
+     <td class="bugnote-public">
+      <span class="small">(0019079)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">26 июня 2008 17:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:01</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 17:01</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:01</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_LIMANSK.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 17:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 17:54</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 14861</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:54</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 19:13</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: limansk_redstain.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 19:14</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 14878</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 10:18</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17502</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 10:18</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 10:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 10:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17504</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:01</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 17515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:01</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-114720.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:03</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: 4.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 12:09</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий отредактирован: 17515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 12:09</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий отредактирован: 17515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 16:53</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080604-164227 marsh.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 16:55</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 17542</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июня 2008 16:56</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 17542</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июня 2008 18:15</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:51</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18961</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk Crash E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp      Line  : 816 =&gt; Limansk Crash E:\\priquel\\sources\\engine\\Layers\\xrRender\\SkeletonAnimated.cpp      Line  : 816</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 15:27</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 17:02</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 19079</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 17:02</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 17:02</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk Crash E:\priquel\sources\engine\Layers\xrRender\SkeletonAnimated.cpp      Line  : 816 =&gt; Limansk Crash E:\\priquel\\sources\\engine\\Layers\\xrRender\\SkeletonAnimated.cpp      Line  : 816</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 17:02</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 17:06</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

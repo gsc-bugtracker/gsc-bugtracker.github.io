@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015225: ESCAPE [error]    : Не удается найти указанный файл. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015224.html">
+      &lt; Прошлое обращение (0015224)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015226.html">
+      Следующее обращение (0015226) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015225</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>18 апреля 2008 13:28</td>
+    <td>08 августа 2008 09:47</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23358</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015225: ESCAPE [error]    : Не удается найти указанный файл.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Загрузка быстрого сейва
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:03122E5D xrGame.dll, xrTime::diffSec(), e:\priquel\sources\engine\xrgame\xr_time.cpp, 76
+     <br/>
+     001B:03114A5B xrGame.dll, luabind::detail::returns&lt;float&gt;::call&lt;xrTime,xrTime,luabind::detail::null_type,xrTime *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 176
+     <br/>
+     001B:03116ED0 xrGame.dll, luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:03118110 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00929069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00927248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     <br/>
+     [error]    : Не удается найти указанный файл.
+     <br/>
+     <br/>
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.dds.bz2 (7,497 bytes)
+     <span class="italic">18 апреля 2008 13:28</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (567,585 bytes)
+     <span class="italic">18 апреля 2008 13:28</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     3.rar (280,503 bytes)
+     <span class="italic">18 апреля 2008 13:28</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080424-175715.zip (620,419 bytes)
+     <span class="italic">24 апреля 2008 18:06</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080506-181645.zip (1,646,257 bytes)
+     <span class="italic">06 мая 2008 18:28</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_quicksave.sav.bz2 (560,226 bytes)
+     <span class="italic">07 мая 2008 10:13</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080507-100502.zip (651,999 bytes)
+     <span class="italic">07 мая 2008 10:14</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     military.rar (573,320 bytes)
+     <span class="italic">14 мая 2008 17:48</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR.rar (1,674,909 bytes)
+     <span class="italic">22 мая 2008 13:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080522-124617.zip (1,459,657 bytes)
+     <span class="italic">22 мая 2008 13:01</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg_milcrash.rar (459,388 bytes)
+     <span class="italic">16 июня 2008 11:06</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     ys.sav.bz2 (859,662 bytes)
+     <span class="italic">17 июня 2008 11:11</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15051" name="15051">
+     <td class="bugnote-public">
+      <span class="small">(0015051)</span>
+      <br/>
+      Yuriy
+      <br/>
+      <span class="small">21 апреля 2008 10:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Сплошное луа, посмотрите чей баг.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15085" name="15085">
+     <td class="bugnote-public">
+      <span class="small">(0015085)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">21 апреля 2008 12:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сейв невалидный. Опишите, при каких условиях воспроизводится.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15447" name="15447">
+     <td class="bugnote-public">
+      <span class="small">(0015447)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">24 апреля 2008 18:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетает рендомно но часто. У меня вылетело когда я с Эскейпа джампнулся на Дарквалей. Перед этим прописал run_script spawn_items и сделал все апгрейды винторезу</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15747" name="15747">
+     <td class="bugnote-public">
+      <span class="small">(0015747)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">06 мая 2008 18:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело на Лиманске в начале. Группа "ЧН" подбегала к бандитам, нажал ПКМ (прицел, бежал со снайперкой) - именно в тот момент вылетело. Лог добавил:
+      <br/>
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=9427&amp;type=bug</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15770" name="15770">
+     <td class="bugnote-public">
+      <span class="small">(0015770)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">07 мая 2008 10:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">выпало при загрузке сейва с эскейпа
+      <br/>
+      ревизия 24352
+      <br/>
+      добавил сэйв и лог
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0314E09D xrGame.dll, xrTime::diffSec(), e:\priquel\sources\engine\xrgame\xr_time.cpp, 76
+      <br/>
+      001B:0313F35B xrGame.dll, luabind::detail::returns&lt;float&gt;::call&lt;xrTime,xrTime,luabind::detail::null_type,xrTime *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 176
+      <br/>
+      001B:031417D0 xrGame.dll, luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:03142A10 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16275" name="16275">
+     <td class="bugnote-public">
+      <span class="small">(0016275)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">14 мая 2008 17:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело после перехода с red forest на military,как только начал разговор с командиром блокпоста</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16780" name="16780">
+     <td class="bugnote-public">
+      <span class="small">(0016780)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">22 мая 2008 13:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело после перехода я агропрома на марш.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18124" name="18124">
+     <td class="bugnote-public">
+      <span class="small">(0018124)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">16 июня 2008 11:07</span>
+      <br/>
+      <span class="small">отредактирован:  16 июня 2008 11:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ревизия: 27950. Повторился при переходе с Ред Фореста на Милитари:
+      <br/>
+      <br/>
+      m_gametasks size=9
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:030E68DD xrGame.dll, xrTime::diffSec(), e:\priquel\sources\engine\xrgame\xr_time.cpp, 76
+      <br/>
+      001B:030D7833 xrGame.dll, luabind::detail::returns&lt;float&gt;::call&lt;xrTime,xrTime,luabind::detail::null_type,xrTime *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 176
+      <br/>
+      001B:030D9B64 xrGame.dll, luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:030DA1CB xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;float (__thiscall xrTime::*)(xrTime *),xrTime,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00929219 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00927EF4 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      <br/>
+      Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=11839&amp;type=bug
+      <br/>
+      <br/>
+      отредактирован: 16.06.08 11:08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18188" name="18188">
+     <td class="bugnote-public">
+      <span class="small">(0018188)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">17 июня 2008 11:11</span>
+      <br/>
+      <span class="small">отредактирован:  17 июня 2008 11:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Билд 16.06.08.
+      <br/>
+      Вылетело при загрузке после смерти. Вылетает при загрузке с других уровней и с меню ластсейвом. Сейв ys
+      <br/>
+      <br/>
+      отредактирован: 17.06.08 11:11</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 13:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 13:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 13:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.dds.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 13:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 13:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 3.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 18:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 18:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 18:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 18:21</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 18:35</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 18:58</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Yuriy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 10:35</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Комментарий добавлен: 15051</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 10:35</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Yuriy =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 12:24</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 15085</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 12:24</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 18:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 18:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 18:06</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080424-175715.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 15447</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 18:28</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080506-181645.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 18:31</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 15747</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 15770</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: usercheg_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080507-100502.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: military.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 17:50</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 16275</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 13:00</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 16780</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 мая 2008 13:00</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 13:01</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080522-124617.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 11:06</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_milcrash.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июня 2008 11:07</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 18124</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июня 2008 11:08</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 18124</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 18188</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: ys.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий отредактирован: 18188</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 12:34</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 12:34</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 июня 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 августа 2008 09:47</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

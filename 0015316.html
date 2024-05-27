@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015316: Marsh  E:\priquel\sources\engine\xrGame\PhysicsShell.cpp  272 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015315.html">
+      &lt; Прошлое обращение (0015315)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015317.html">
+      Следующее обращение (0015317) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015316</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>22 апреля 2008 09:57</td>
+    <td>24 апреля 2008 17:35</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23569</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015316: Marsh  E:\priquel\sources\engine\xrGame\PhysicsShell.cpp  272</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Постоянно вылетает после Синхронизации.
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : has_physics_collision_shapes( *K )
+     <br/>
+     [error]Function      : phys_shell_verify_object_model
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\PhysicsShell.cpp
+     <br/>
+     [error]Line          : 272
+     <br/>
+     [error]Description   : Can not create physics shell for object mar_physic_object_0036, model dynamics\kitchen_room\curtains has no physics collision shapes set
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678D22 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:032C89B2 xrGame.dll, phys_shell_verify_object_model(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 272
+     <br/>
+     001B:032C902C xrGame.dll, P_build_Shell(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 51
+     <br/>
+     001B:032C9592 xrGame.dll, P_build_Shell(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 151
+     <br/>
+     001B:032C9681 xrGame.dll, P_build_Shell(), e:\priquel\sources\engine\xrgame\physicsshell.cpp, 130
+     <br/>
+     001B:02FCB739 xrGame.dll, CPhysicObject::CreateSkeleton(), e:\priquel\sources\engine\xrgame\physicobject.cpp, 236
+     <br/>
+     001B:02FCC252 xrGame.dll, CPhysicObject::CreateBody(), e:\priquel\sources\engine\xrgame\physicobject.cpp, 369
+     <br/>
+     001B:02FCC906 xrGame.dll, CPhysicObject::CreatePhysicsShell(), e:\priquel\sources\engine\xrgame\physicobject.cpp, 228
+     <br/>
+     001B:02FCA9BD xrGame.dll, CPhysicObject::SpawnInitPhysics(), e:\priquel\sources\engine\xrgame\physicobject.cpp, 132
+     <br/>
+     001B:02FC0B9E xrGame.dll, CPHSkeleton::Spawn(), e:\priquel\sources\engine\xrgame\phskeleton.cpp, 101
+     <br/>
+     001B:02FCC7FB xrGame.dll, CPhysicObject::net_Spawn(), e:\priquel\sources\engine\xrgame\physicobject.cpp, 48
+     <br/>
+     001B:02F508AA xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 108
+     <br/>
+     001B:02F50B58 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+     <br/>
+     001B:02F45635 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 427
+     <br/>
+     001B:02F4585D xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 489
+     <br/>
+     001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:0042312D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 455
+     <br/>
+     001B:00499CB3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AB3F9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AABB8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AAB54 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004A9B7A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080422-094752.zip (826,866 bytes)
+     <span class="italic">22 апреля 2008 09:57</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15155" name="15155">
+     <td class="bugnote-public">
+      <span class="small">(0015155)</span>
+      <br/>
+      Yuriy
+      <br/>
+      <span class="small">22 апреля 2008 11:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Заберите:
+      <br/>
+      \gamedata\meshes\
+      <br/>
+      <br/>
+      P.S. Can not create physics shell
+      <br/>
+      - эта ошибка значит что для динамической модели не создан шейп коллижена.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15383" name="15383">
+     <td class="bugnote-public">
+      <span class="small">(0015383)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">24 апреля 2008 12:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлено</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 09:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 09:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 09:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080422-094752.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 10:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 10:58</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Yuriy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:21</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:21</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh  E:\priquel\sources\engine\xrGame\PhysicsShell.cpp  272 =&gt; Marsh  E:\\priquel\\sources\\engine\\xrGame\\PhysicsShell.cpp  272</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:21</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:28</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:28</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:28</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Комментарий добавлен: 15155</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 апреля 2008 09:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 09:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">закрыт =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15383</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh  E:\priquel\sources\engine\xrGame\PhysicsShell.cpp  272 =&gt; Marsh  E:\\priquel\\sources\\engine\\xrGame\\PhysicsShell.cpp  272</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 17:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

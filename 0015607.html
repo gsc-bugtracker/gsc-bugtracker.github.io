@@ -1,0 +1,681 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015607: DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015606.html">
+      &lt; Прошлое обращение (0015606)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015608.html">
+      Следующее обращение (0015608) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015607</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>05 мая 2008 18:05</td>
+    <td>26 мая 2008 21:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r26051</td>
+    <td class="category">Версия</td>
+    <td>r24201</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015607: DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">all ok. item [2885] removed from list
+     <br/>
+     correction attempts 1
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:02AEBF8C xrGame.dll, CInventoryItem::object(), e:\priquel\sources\engine\xrgame\inventory_item.h, 223
+     <br/>
+     001B:02F76A73 xrGame.dll, CActor::PickupModeUpdate_COD(), e:\priquel\sources\engine\xrgame\actor_feel.cpp, 214
+     <br/>
+     001B:02F6B01E xrGame.dll, CActor::UpdateCL(), e:\priquel\sources\engine\xrgame\actor.cpp, 915
+     <br/>
+     001B:0043F978 xrEngine.exe, CObjectList::SingleUpdate(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 104
+     <br/>
+     001B:00440041 xrEngine.exe, CObjectList::Update(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 212
+     <br/>
+     001B:00438C22 xrEngine.exe, IGame_Level::OnFrame(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 144
+     <br/>
+     001B:02F282D8 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 497
+     <br/>
+     001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:0042326D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 459
+     <br/>
+     001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32
+     <br/>
+     <br/>
+     Если попытаться выбросить любое оружие из инвентаря (правой клавишей "выбросить") не в зависимости от того в руках оно или в сумке происходит краш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_DARKVALLEY3.zip (569,179 bytes)
+     <span class="italic">05 мая 2008 18:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080506-1452341111111.zip (783,611 bytes)
+     <span class="italic">06 мая 2008 15:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     3.zip (801,399 bytes)
+     <span class="italic">07 мая 2008 10:44</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15710" name="15710">
+     <td class="bugnote-public">
+      <span class="small">(0015710)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">06 мая 2008 13:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Проверь на свежий ревизии</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15716" name="15716">
+     <td class="bugnote-public">
+      <span class="small">(0015716)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">06 мая 2008 15:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">добавил новый лог!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15721" name="15721">
+     <td class="bugnote-public">
+      <span class="small">(0015721)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">06 мая 2008 16:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не только правой клавишей,а просто G...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15724" name="15724">
+     <td class="bugnote-public">
+      <span class="small">(0015724)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">06 мая 2008 16:39</span>
+      <br/>
+      <span class="small">отредактирован:  06 мая 2008 16:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при обыске трупа
+      <br/>
+      <br/>
+      отредактирован: 06.05.08 16:40</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15728" name="15728">
+     <td class="bugnote-public">
+      <span class="small">(0015728)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">06 мая 2008 17:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ждите следующих бинов...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15777" name="15777">
+     <td class="bugnote-public">
+      <span class="small">(0015777)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">07 мая 2008 10:44</span>
+      <br/>
+      <span class="small">отредактирован:  07 мая 2008 10:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Попытались выбить мне оружие, вылетел креш.
+      <br/>
+      Агропром возле норы.
+      <br/>
+      <br/>
+      отредактирован: 07.05.08 10:44</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15903" name="15903">
+     <td class="bugnote-public">
+      <span class="small">(0015903)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">07 мая 2008 18:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Проверьте на новых бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16910" name="16910">
+     <td class="bugnote-public">
+      <span class="small">(0016910)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">26 мая 2008 18:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не выпадает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 18:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 18:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 18:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_DARKVALLEY3.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 18:13</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 18:13</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 13:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 15710</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 13:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 13:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 13:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 15:04</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080506-1452341111111.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 15:04</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 15716</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">незначительный =&gt; значительный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:08</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15721</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:39</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15724</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:40</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 15724</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:47</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 15728</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15777</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 15777</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 3.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:59</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 15903</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:59</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:59</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:59</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 19:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 19:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 19:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 16910</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 18:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r26051</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 18:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrgame\inventory_item.h, 223 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrgame\\inventory_item.h, 223</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 21:28</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014995: На всех уровнях - убийство бандита с дробовиком - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014994.html">
+      &lt; Прошлое обращение (0014994)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014996.html">
+      Следующее обращение (0014996) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014995</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>11 апреля 2008 19:06</td>
+    <td>14 апреля 2008 17:48</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Robo</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r22719</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014995: На всех уровнях - убийство бандита с дробовиком</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Если убить бандита, который держит Чейзер 13 (второй дробовик)
+     <br/>
+     тебя крешит.
+     <br/>
+     <br/>
+     присоеденил лог с Garbage и Darkvalley
+     <br/>
+     <br/>
+     [1424] shell for sim_default_bandit_38717[8717] created in 0.299644 ms
+     <br/>
+     [1424] stack trace:
+     <br/>
+     [1424]
+     <br/>
+     [1424] 001B:03F14304 ODE.dll, dSpaceRemove(), e:\priquel\sources\engine\3rd party\ode\ode\src\collision_space.cpp, 695
+     <br/>
+     [1424] 001B:036E2512 xrGame.dll, CODEGeom::remove_from_space(), e:\priquel\sources\engine\xrgame\geometry.cpp, 212
+     <br/>
+     [1424] 001B:036E635E xrGame.dll, CPHGeometryOwner::remove_geom(), e:\priquel\sources\engine\xrgame\phgeometryowner.cpp, 428
+     <br/>
+     [1424] 001B:036BCBDD xrGame.dll, CPHElement::remove_geom(), e:\priquel\sources\engine\xrgame\phelement.cpp, 1199
+     <br/>
+     [1424] 001B:036F192F xrGame.dll, CCharacterPhysicsSupport::AddActiveWeaponCollision(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 869
+     <br/>
+     [1424] 001B:036F1FDF xrGame.dll, CCharacterPhysicsSupport::CreateShell(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 990
+     <br/>
+     [1424] 001B:036F4139 xrGame.dll, CCharacterPhysicsSupport::KillHit(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 350
+     <br/>
+     [1424] 001B:036F4462 xrGame.dll, CCharacterPhysicsSupport::in_Hit(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 398
+     <br/>
+     [1424] 001B:03000351 xrGame.dll, CAI_Stalker::PHHit(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 733
+     <br/>
+     [1424] 001B:032DA900 xrGame.dll, CEntity::Hit(), e:\priquel\sources\engine\xrgame\entity.cpp, 134
+     <br/>
+     [1424] 001B:032DAE67 xrGame.dll, CEntityAlive::Hit(), e:\priquel\sources\engine\xrgame\entity_alive.cpp, 306
+     <br/>
+     [1424] 001B:03095140 xrGame.dll, CAI_Stalker::Hit(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_fire.cpp, 309
+     <br/>
+     [1424] 001B:032E16EF xrGame.dll, CGameObject::OnEvent(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 201
+     <br/>
+     [1424] 001B:032D8E48 xrGame.dll, CEntity::OnEvent(), e:\priquel\sources\engine\xrgame\entity.cpp, 51
+     <br/>
+     [1424] 001B:030909C3 xrGame.dll, CAI_Stalker::OnEvent(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_events.cpp, 27
+     <br/>
+     [1424] 001B:03257C65 xrGame.dll, CLevel::cl_Process_Event(), e:\priquel\sources\engine\xrgame\level.cpp, 363
+     <br/>
+     [1424] 001B:0325E073 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 421
+     <br/>
+     [1424] 001B:0325E33D xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 489
+     <br/>
+     [1424] 001B:0066DF60 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     [1424] 001B:004352BD xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 455
+     <br/>
+     [1424] 001B:004C9103 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     [1424] 001B:004DED49 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     [1424] 001B:004DDD98 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     [1424] 001B:004DDD34 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     [1424] 001B:004DCD5A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     [1424] 001B:004DD972 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     [1424] 001B:004DDA8B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     [1424] 001B:0041C8E2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     [1424] 001B:0041CF75 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     [1424] 001B:0041D253 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     [1424] 001B:00557E82 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     [1424] 001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     drobodan na garbage.log.bz2 (202,078 bytes)
+     <span class="italic">11 апреля 2008 19:07</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     cHEIZER_darkvalley.log.bz2 (339,805 bytes)
+     <span class="italic">11 апреля 2008 19:14</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14474" name="14474">
+     <td class="bugnote-public">
+      <span class="small">(0014474)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">14 апреля 2008 11:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">похоже это не самые последние бинарники за пятницу - я это исправил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14499" name="14499">
+     <td class="bugnote-public">
+      <span class="small">(0014499)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">14 апреля 2008 13:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">я это сам проверял - не вылетает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14514" name="14514">
+     <td class="bugnote-public">
+      <span class="small">(0014514)</span>
+      <br/>
+      Robo
+      <br/>
+      <span class="small">14 апреля 2008 16:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Действительно - не вылетает!)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:06</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:06</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:07</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Файл добавлен: drobodan na garbage.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:08</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:11</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл удален: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:12</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila_lua.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:14</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: cHEIZER_darkvalley.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:14</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл удален: xray_starodub lyudmila_lua.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:15</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:16</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 11:44</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 14474</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 13:26</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 14499</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 13:27</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 13:27</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 14:36</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 14:36</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 16:24</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Комментарий добавлен: 14514</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 16:24</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 16:24</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 17:48</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

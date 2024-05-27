@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015123: Marsh - E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015122.html">
+      &lt; Прошлое обращение (0015122)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015124.html">
+      Следующее обращение (0015124) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015123</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>16 апреля 2008 17:02</td>
+    <td>09 июля 2008 15:40</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Dark</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23089</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015123: Marsh - E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Destroying binded object mar_smart_terrain_8_9
+     <br/>
+     [LUA] ERROR: [smart_terrain mar_smart_terrain_8_9] task: obj=sim_default_bandit_02452 job_path=nil, CLEARING. job_id = -1
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\smart_terrain.script(299) :
+     <br/>
+     ! [LUA]  4 : [C] [C](-1) :
+     <br/>
+     ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : task
+     <br/>
+     [error]Function      : CALifeMonsterBrain::process_task
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp
+     <br/>
+     [error]Line          : 111
+     <br/>
+     [error]Description   : smart terrain returned nil task, while npc is registered in it
+     <br/>
+     [error]Arguments     : mar_smart_terrain_8_9
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     постоянный краш на Марше, когда боец ЧН знакомит героя с возможностями ПДА (сразу после 2го диалога с Лебедевым)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     logs.rar (91,569 bytes)
+     <span class="italic">16 апреля 2008 17:02</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     garbage_crash.mdmp.bz2 (77,033 bytes)
+     <span class="italic">22 апреля 2008 18:34</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MARSH_19-15.LOG.bz2 (346,153 bytes)
+     <span class="italic">08 мая 2008 19:45</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     21_05.rar (83,871 bytes)
+     <span class="italic">21 мая 2008 19:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     03_06.rar (323,571 bytes)
+     <span class="italic">03 июня 2008 17:34</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15251" name="15251">
+     <td class="bugnote-public">
+      <span class="small">(0015251)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">22 апреля 2008 18:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на garbage:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : task
+      <br/>
+      [error]Function      : CALifeMonsterBrain::process_task
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp
+      <br/>
+      [error]Line          : 111
+      <br/>
+      [error]Description   : smart terrain returned nil task, while npc is registered in it
+      <br/>
+      [error]Arguments     : agr_smart_terrain_1_6
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02B8DB75 xrGame.dll, CALifeMonsterBrain::process_task(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 111
+      <br/>
+      001B:02B8DF41 xrGame.dll, CALifeMonsterBrain::update(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 169
+      <br/>
+      001B:03233CD7 xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CSE_ALifeHumanStalker,luabind::detail::null_type,CSE_ALifeHumanStalker *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 361
+      <br/>
+      001B:0323A215 xrGame.dll, luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:0323B606 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:003B9069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:003B7248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      001B:00398EBD xrLUA.dll, luaD_precall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 324
+      <br/>
+      001B:00398F24 xrLUA.dll, luaD_call(), e:\priquel\sources\engine\xrlua\src\ldo.c, 380
+      <br/>
+      001B:00392035 xrLUA.dll, f_call(), e:\priquel\sources\engine\xrlua\src\lapi.c, 821
+      <br/>
+      001B:0039853A xrLUA.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\xrlua\src\ldo.c, 120
+      <br/>
+      001B:003990BE xrLUA.dll, luaD_pcall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 463
+      <br/>
+      001B:00392093 xrLUA.dll, lua_pcall(), e:\priquel\sources\engine\xrlua\src\lapi.c, 842
+      <br/>
+      001B:003BCDF3 xrLUA.dll, luabind::detail::pcall(), e:\priquel\sources\engine\xrlua\luabind\pcall.cpp, 41
+      <br/>
+      001B:02A99053 xrGame.dll, luabind::detail::proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type(), e:\priquel\sources\sdk\include\luabind\detail\call_member.hpp, 248
+      <br/>
+      001B:03236468 xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::update(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 162
+      <br/>
+      001B:02BC64B9 xrGame.dll, CALifeScheduleRegistry::CUpdatePredicate::operator()(), e:\priquel\sources\engine\xrgame\alife_schedule_registry.h, 46
+      <br/>
+      001B:02BC6DA7 xrGame.dll, CSafeMapIterator&lt;unsigned short,CSE_ALifeSchedulable,stlp_std::less&lt;unsigned short&gt;,0,unsigned __int64,1&gt;::update&lt;CALifeScheduleRegistry::CUpdatePredicate&gt;(), e:\priquel\sources\engine\xrgame\safe_map_iterator_inline.h, 128
+      <br/>
+      001B:02BC6FE9 xrGame.dll, CALifeUpdateManager::update_scheduled(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 104
+      <br/>
+      001B:02BC8A42 xrGame.dll, CALifeUpdateManager::shedule_Update(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 134
+      <br/>
+      001B:004280F1 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:0042881F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:02F1F7C5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+      <br/>
+      001B:00499E83 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB5C9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AAD88 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAD24 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004A9D4A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AA962 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAA7B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005131E4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16026" name="16026">
+     <td class="bugnote-public">
+      <span class="small">(0016026)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">08 мая 2008 19:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">В лагере capacity = 1, работ - 9 штук (из них 5 - кэмп).</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16031" name="16031">
+     <td class="bugnote-public">
+      <span class="small">(0016031)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">08 мая 2008 19:44</span>
+      <br/>
+      <span class="small">отредактирован:  08 мая 2008 19:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Marsh +1
+      <br/>
+      <br/>
+      [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\smart_terrain.script(309) :
+      <br/>
+      ! [LUA]  4 : [C] [C](-1) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : task
+      <br/>
+      [1944] [error]Function      : CALifeMonsterBrain::process_task
+      <br/>
+      [1944] [error]File          : E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp
+      <br/>
+      [1944] [error]Line          : 111
+      <br/>
+      [1944] [error]Description   : smart terrain returned nil task, while npc is registered in it
+      <br/>
+      [1944] [error]Arguments     : mar_smart_terrain_5_12
+      <br/>
+      <br/>
+      <br/>
+      Лог добавил: MARSH_19-15.LOG.bz2
+      <br/>
+      <br/>
+      отредактирован: 08.05.08 19:46</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16747" name="16747">
+     <td class="bugnote-public">
+      <span class="small">(0016747)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">21 мая 2008 19:00</span>
+      <br/>
+      <span class="small">отредактирован:  21 мая 2008 19:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился снова на Марше
+      <br/>
+      постоянный краш после начала левела через 10 секунд
+      <br/>
+      <br/>
+      отредактирован: 21.05.08 19:01</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17481" name="17481">
+     <td class="bugnote-public">
+      <span class="small">(0017481)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">03 июня 2008 17:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Янтаре
+      <br/>
+      лог прикрепил
+      <br/>
+      <br/>
+      ! NPC yan_stalker_zombied_1_default21940 couldn't build path from
+      <br/>
+      ~ [42901][-47.599991][-13.115853][-255.500015]
+      <br/>
+      ~ to
+      <br/>
+      ~ [38985][-58.099991][-12.411377][-257.600006]
+      <br/>
+      [LUA] ERROR: [smart_terrain yan_smart_terrain_6_2] task: obj=yan_stalker_zombied_1_default22618 job_path=nil, CLEARING. job_id = -1
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\smart_terrain.script(310) :
+      <br/>
+      ! [LUA]  4 : [C] [C](-1) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : task
+      <br/>
+      [error]Function      : CALifeMonsterBrain::process_task
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp
+      <br/>
+      [error]Line          : 111
+      <br/>
+      [error]Description   : smart terrain returned nil task, while npc is registered in it
+      <br/>
+      [error]Arguments     : yan_smart_terrain_6_2</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 17:02</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 17:02</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 17:02</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: logs.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 18:56</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 18:57</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 18:31</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15251</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 18:34</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: garbage_crash.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 19:25</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 19:26</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 16026</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 19:44</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 16031</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 19:44</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий отредактирован: 16031</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 19:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Файл добавлен: MARSH_19-15.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 19:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий отредактирован: 16031</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 18:36</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 18:36</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 мая 2008 13:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 мая 2008 19:00</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 мая 2008 19:00</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 мая 2008 19:00</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 16747</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 мая 2008 19:00</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 21_05.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 мая 2008 19:01</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий отредактирован: 16747</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 17:34</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 17481</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 17:34</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 03_06.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 14:14</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 14:14</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:22</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 17:05</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 17:05</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh - E:\priquel\sources\engine\xrServerEntities\alife_monster_brain.cpp =&gt; Marsh - E:\\priquel\\sources\\engine\\xrServerEntities\\alife_monster_brain.cpp</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 17:05</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 15:40</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

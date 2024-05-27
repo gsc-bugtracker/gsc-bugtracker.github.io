@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015328: Меню загрузки           File: E:\priquel\sources\engine\xrEngine\xrTheora_Stream.cpp          Line: 183 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015327.html">
+      &lt; Прошлое обращение (0015327)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015329.html">
+      Следующее обращение (0015329) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015328</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>22 апреля 2008 11:27</td>
+    <td>02 июля 2008 11:32</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23569</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015328: Меню загрузки           File: E:\priquel\sources\engine\xrEngine\xrTheora_Stream.cpp          Line: 183</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5"><br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CTheoraStream::Decode
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrEngine\xrTheora_Stream.cpp
+     <br/>
+     [error]Line          : 183
+     <br/>
+     [error]Description   : (d_frame!=k_frame) || ((d_frame==k_frame) &amp;&amp; is_key)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0049712A xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 183
+     <br/>
+     001B:0049785D xrEngine.exe, CTheoraSurface::Update(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 72
+     <br/>
+     001B:028BD655 xrRender_R1.dll, CTexture::apply_theora(), e:\priquel\sources\engine\layers\xrrender\sh_texture.cpp, 81
+     <br/>
+     001B:028B6A24 xrRender_R1.dll, CBackend::set_Textures(), e:\priquel\sources\engine\layers\xrrender\r_backend_runtime.cpp, 209
+     <br/>
+     001B:02829FDC xrRender_R1.dll, CBackend::set_Element(), e:\priquel\sources\engine\layers\xrrender\r_backend_runtime.h, 102
+     <br/>
+     001B:028B0989 xrRender_R1.dll, dxUIRender::SetShader(), e:\priquel\sources\engine\layers\xrrender\dxuirender.cpp, 25
+     <br/>
+     001B:0338C357 xrGame.dll, CUIStaticItem::Render(), e:\priquel\sources\engine\xrgame\uistaticitem.cpp, 63
+     <br/>
+     001B:03386A18 xrGame.dll, CUIStatic::DrawTexture(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 218
+     <br/>
+     001B:03386862 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 148
+     <br/>
+     001B:03397C6D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+     <br/>
+     001B:03386869 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 149
+     <br/>
+     001B:03397C6D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+     <br/>
+     001B:03324485 xrGame.dll, CDialogHolder::DoRenderDialogs(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 157
+     <br/>
+     001B:0331EAC0 xrGame.dll, CMainMenu::OnRender(), e:\priquel\sources\engine\xrgame\mainmenu.cpp, 356
+     <br/>
+     001B:00499CD3 xrEngine.exe, rp_Render(), e:\priquel\sources\engine\xrengine\pure.cpp, 14
+     <br/>
+     001B:004AAEA9 xrEngine.exe, CRegistrator&lt;pureRender&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AA506 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 271
+     <br/>
+     001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     Зашол в меню загрузки, токо двинул курсор как креш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     SAVE.zip (560,117 bytes)
+     <span class="italic">22 апреля 2008 11:27</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15163" name="15163">
+     <td class="bugnote-public">
+      <span class="small">(0015163)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">22 апреля 2008 11:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Хотел сохраниться на агропроме.Вылетело когда включил меню "сохраниться".Через 1 сек..
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CTheoraStream::Decode
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrEngine\xrTheora_Stream.cpp
+      <br/>
+      [error]Line          : 183
+      <br/>
+      [error]Description   : (d_frame!=k_frame) || ((d_frame==k_frame) &amp;&amp; is_key)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:0049712A xrEngine.exe, CTheoraStream::Decode(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 183
+      <br/>
+      001B:0049785D xrEngine.exe, CTheoraSurface::Update(), e:\priquel\sources\engine\xrengine\xrtheora_surface.cpp, 72
+      <br/>
+      001B:028BD655 xrRender_R1.dll, CTexture::apply_theora(), e:\priquel\sources\engine\layers\xrrender\sh_texture.cpp, 81
+      <br/>
+      001B:028B6A24 xrRender_R1.dll, CBackend::set_Textures(), e:\priquel\sources\engine\layers\xrrender\r_backend_runtime.cpp, 209
+      <br/>
+      001B:02829FDC xrRender_R1.dll, CBackend::set_Element(), e:\priquel\sources\engine\layers\xrrender\r_backend_runtime.h, 102
+      <br/>
+      001B:028B0989 xrRender_R1.dll, dxUIRender::SetShader(), e:\priquel\sources\engine\layers\xrrender\dxuirender.cpp, 25
+      <br/>
+      001B:0338C357 xrGame.dll, CUIStaticItem::Render(), e:\priquel\sources\engine\xrgame\uistaticitem.cpp, 63
+      <br/>
+      001B:03386A18 xrGame.dll, CUIStatic::DrawTexture(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 218
+      <br/>
+      001B:03386862 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 148
+      <br/>
+      001B:03397C6D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+      <br/>
+      001B:03386869 xrGame.dll, CUIStatic::Draw(), e:\priquel\sources\engine\xrgame\ui\uistatic.cpp, 149
+      <br/>
+      001B:03397C6D xrGame.dll, CUIWindow::Draw(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 167
+      <br/>
+      001B:03324485 xrGame.dll, CDialogHolder::DoRenderDialogs(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 157
+      <br/>
+      001B:0331EAC0 xrGame.dll, CMainMenu::OnRender(), e:\priquel\sources\engine\xrgame\mainmenu.cpp, 356
+      <br/>
+      001B:00499CD3 xrEngine.exe, rp_Render(), e:\priquel\sources\engine\xrengine\pure.cpp, 14
+      <br/>
+      001B:004AAEA9 xrEngine.exe, CRegistrator&lt;pureRender&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AA506 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 271
+      <br/>
+      001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+      <br/>
+      001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+      <br/>
+      001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+      <br/>
+      001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15192" name="15192">
+     <td class="bugnote-public">
+      <span class="small">(0015192)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">22 апреля 2008 13:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Sea, это к тебе?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: SAVE.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:57</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15163</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 12:37</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 12:37</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 12:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 13:05</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 13:05</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15192</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 15:29</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:58</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 10:48</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 10:48</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 09:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 09:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Меню загрузки           File: E:\priquel\sources\engine\xrEngine\xrTheora_Stream.cpp          Line: 183 =&gt; Меню загрузки           File: E:\\priquel\\sources\\engine\\xrEngine\\xrTheora_Stream.cpp          Line: 183</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 09:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 11:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

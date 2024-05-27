@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015339: Marsh E:\priquel\sources\engine\xrGame\animation_movement_controller.cpp  164 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015338.html">
+      &lt; Прошлое обращение (0015338)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015340.html">
+      Следующее обращение (0015340) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015339</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>22 апреля 2008 12:10</td>
+    <td>30 мая 2008 11:13</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23569</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015339: Marsh E:\priquel\sources\engine\xrGame\animation_movement_controller.cpp  164</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Крэшанулось при подъёме с койки.
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : animation_movement_controller::DBG_verify_position_not_chaged
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\animation_movement_controller.cpp
+     <br/>
+     [error]Line          : 164
+     <br/>
+     [error]Description   : !IsActive()||inital_position_blending || cmp_matrix( DBG_previous_position, m_pObjXForm, EPS, EPS )
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0334C8D3 xrGame.dll, animation_movement_controller::DBG_verify_position_not_chaged(), e:\priquel\sources\engine\xrgame\animation_movement_controller.cpp, 166
+     <br/>
+     001B:0334C95D xrGame.dll, animation_movement_controller::RootBoneCallback(), e:\priquel\sources\engine\xrgame\animation_movement_controller.cpp, 176
+     <br/>
+     001B:02910170 xrRender_R2.dll, CKinematics::CLBone(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 138
+     <br/>
+     001B:02910426 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 189
+     <br/>
+     001B:02910414 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 187
+     <br/>
+     001B:02910414 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 187
+     <br/>
+     001B:02910414 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 187
+     <br/>
+     001B:02910414 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 187
+     <br/>
+     001B:02910414 xrRender_R2.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 187
+     <br/>
+     001B:0291049E xrRender_R2.dll, CKinematics::Bone_GetAnimPos(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 148
+     <br/>
+     001B:0333F425 xrGame.dll, CIKLimb::SetAnimGoal(), e:\priquel\sources\engine\xrgame\ik\iklimb.cpp, 954
+     <br/>
+     001B:03343851 xrGame.dll, CIKLimb::SetGoal(), e:\priquel\sources\engine\xrgame\ik\iklimb.cpp, 171
+     <br/>
+     001B:033450AB xrGame.dll, CIKLimbsController::Calculate(), e:\priquel\sources\engine\xrgame\iklimbscontroller.cpp, 227
+     <br/>
+     001B:033454CA xrGame.dll, CIKLimbsController::IKVisualCallback(), e:\priquel\sources\engine\xrgame\iklimbscontroller.cpp, 285
+     <br/>
+     001B:02FC215C xrGame.dll, VisualCallback(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 747
+     <br/>
+     001B:029110CB xrRender_R2.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 96
+     <br/>
+     001B:0283ECD5 xrRender_R2.dll, CRender::add_leafs_Dynamic(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_build.cpp, 396
+     <br/>
+     001B:02FC081D xrGame.dll, CGameObject::renderable_Render(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 650
+     <br/>
+     001B:02DDBB38 xrGame.dll, CAI_Stalker::renderable_Render(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_feel.cpp, 38
+     <br/>
+     001B:028461B3 xrRender_R2.dll, R_dsgraph_structure::r_dsgraph_render_subspace(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_render.cpp, 650
+     <br/>
+     001B:0284626B xrRender_R2.dll, R_dsgraph_structure::r_dsgraph_render_subspace(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_render.cpp, 581
+     <br/>
+     001B:0282AC77 xrRender_R2.dll, CRender::render_lights(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_r_lights.cpp, 102
+     <br/>
+     001B:0282FEE7 xrRender_R2.dll, CRender::Render(), e:\priquel\sources\engine\layers\xrrenderpc_r2\r2_r_render.cpp, 421
+     <br/>
+     001B:00438B54 xrEngine.exe, IGame_Level::OnRender(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 126
+     <br/>
+     001B:02F52DDB xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 619
+     <br/>
+     001B:00499EA3 xrEngine.exe, rp_Render(), e:\priquel\sources\engine\xrengine\pure.cpp, 14
+     <br/>
+     001B:004AB079 xrEngine.exe, CRegistrator&lt;pureRender&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AA6D6 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 271
+     <br/>
+     001B:004AA962 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AAA7B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:005131E4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (54,334 bytes)
+     <span class="italic">22 апреля 2008 12:10</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17034" name="17034">
+     <td class="bugnote-public">
+      <span class="small">(0017034)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">28 мая 2008 12:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлено</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 12:10</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 12:10</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 12:10</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 12:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 12:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 12:41</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:36</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 18:36</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 мая 2008 10:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 12:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 17034</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 12:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 12:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh E:\priquel\sources\engine\xrGame\animation_movement_controller.cpp  164 =&gt; Marsh E:\\priquel\\sources\\engine\\xrGame\\animation_movement_controller.cpp  164</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 12:48</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 мая 2008 11:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

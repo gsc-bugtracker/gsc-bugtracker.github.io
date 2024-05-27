@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014986: новые бинарники engine\xrgame\action_planner_inline.h : 133 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014985.html">
+      &lt; Прошлое обращение (0014985)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014987.html">
+      Следующее обращение (0014987) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014986</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>случайно</td>
+    <td>11 апреля 2008 16:15</td>
+    <td>19 августа 2008 10:05</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014986: новые бинарники engine\xrgame\action_planner_inline.h : 133</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">- Uninitialized light position.
+     <br/>
+     - Uninitialized light position.
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CActionPlanner&lt;class CScriptGameObject,0,class CActionBase&lt;class CScriptGameObject&gt;,class CPropertyEvaluator&lt;class CScriptGameObject&gt;,class CActionBase&lt;class CScriptGameObject&gt; *,class CPropertyEvaluator&lt;class CScriptGameObject&gt; *&gt;::current_action_id
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\action_planner_inline.h
+     <br/>
+     [error]Line          : 133
+     <br/>
+     [error]Description   : initialized()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006979D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02CD3BB3 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::current_action_id(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 134
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_dimon.log.bz2 (60,309 bytes)
+     <span class="italic">11 апреля 2008 16:15</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080415-095915.zip (1,060,685 bytes)
+     <span class="italic">15 апреля 2008 10:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2.zip (771,839 bytes)
+     <span class="italic">15 апреля 2008 10:52</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080416-112832.zip (1,103,689 bytes)
+     <span class="italic">16 апреля 2008 11:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080422-094119.zip (562,655 bytes)
+     <span class="italic">22 апреля 2008 09:46</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080422-110753.zip (875,366 bytes)
+     <span class="italic">22 апреля 2008 11:13</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (190,038 bytes)
+     <span class="italic">22 апреля 2008 18:28</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14552" name="14552">
+     <td class="bugnote-public">
+      <span class="small">(0014552)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">15 апреля 2008 10:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело еще раз, на рыжем лесу, при бое за мост
+      <br/>
+      добавил лог
+      <br/>
+      <br/>
+      [1110532] action reload is finalized
+      <br/>
+      [1110532] action exit cover is initialized
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CActionPlanner&lt;class CScriptGameObject,0,class CActionBase&lt;class CScriptGameObject&gt;,class CPropertyEvaluator&lt;class CScriptGameObject&gt;,class CActionBase&lt;class CScriptGameObject&gt; *,class CPropertyEvaluator&lt;class CScriptGameObject&gt; *&gt;::current_action_id
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\action_planner_inline.h
+      <br/>
+      [error]Line          : 133
+      <br/>
+      [error]Description   : initialized()
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006979D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02CD3BB3 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::current_action_id(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 134
+      <br/>
+      001B:02CE0312 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 115</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14580" name="14580">
+     <td class="bugnote-public">
+      <span class="small">(0014580)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">15 апреля 2008 10:52</span>
+      <br/>
+      <span class="small">отредактирован:  15 апреля 2008 10:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело при подходе к базе сталкеров на ЕСКЕЙПЕ
+      <br/>
+      <br/>
+      [677649] action fire_no_lookout_2_idle is finalized
+      <br/>
+      [677649] action exit cover is initialized
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CActionPlanner&lt;class CScriptGameObject,0,class CActionBase&lt;class CScriptGameObject&gt;,class CPropertyEvaluator&lt;class CScriptGameObject&gt;,class CActionBase&lt;class CScriptGameObject&gt; *,class CPropertyEvaluator&lt;class CScriptGameObject&gt; *&gt;::current_action_id
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\action_planner_inline.h
+      <br/>
+      [error]Line          : 133
+      <br/>
+      [error]Description   : initialized()
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006979D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02CA3BB3 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::current_action_id(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 134
+      <br/>
+      001B:02CB0312 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 115
+      <br/>
+      <br/>
+      отредактирован: 15.04.08 10:52</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14716" name="14716">
+     <td class="bugnote-public">
+      <span class="small">(0014716)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 апреля 2008 11:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на рыжем лесу
+      <br/>
+      добавил лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15143" name="15143">
+     <td class="bugnote-public">
+      <span class="small">(0015143)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">22 апреля 2008 09:46</span>
+      <br/>
+      <span class="small">отредактирован:  22 апреля 2008 09:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Милитари
+      <br/>
+      пришыл лог
+      <br/>
+      <br/>
+      отредактирован: 22.04.08 09:46</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15154" name="15154">
+     <td class="bugnote-public">
+      <span class="small">(0015154)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">22 апреля 2008 11:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на рыжем лесу, бой за мост
+      <br/>
+      добавил новый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15250" name="15250">
+     <td class="bugnote-public">
+      <span class="small">(0015250)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">22 апреля 2008 18:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетел на Escape. ревизия 23658. лог приатачил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 16:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 16:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_dimon.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 17:58</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 18:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 18:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 10:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 14552</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 10:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080415-095915.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 10:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 10:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">новые бинарники engine\xrgame\action_planner_inline.h : 133 =&gt; новые бинарники engine\\xrgame\\action_planner_inline.h : 133</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 10:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 14580</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 10:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 14580</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 11:33</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 14716</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 11:33</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080416-112832.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 17:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 17:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">авария =&gt; блокировка</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 17:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">новые бинарники engine\xrgame\action_planner_inline.h : 133 =&gt; новые бинарники engine\\xrgame\\action_planner_inline.h : 133</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 17:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 09:46</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 15143</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 09:46</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080422-094119.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 09:46</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 15143</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 15154</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080422-110753.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 18:27</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 15250</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 18:28</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 16:26</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 10:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

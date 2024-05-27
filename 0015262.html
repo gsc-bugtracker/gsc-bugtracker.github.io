@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015262: Marsh  E:\priquel\sources\engine\xrGame\ui\UIXmlInit.cpp  120 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015261.html">
+      &lt; Прошлое обращение (0015261)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015263.html">
+      Следующее обращение (0015263) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015262</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>21 апреля 2008 09:49</td>
+    <td>21 апреля 2008 18:00</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23471</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015262: Marsh  E:\priquel\sources\engine\xrGame\ui\UIXmlInit.cpp  120</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">После загрузки
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : xml_doc.NavigateToNode(path,index)
+     <br/>
+     [error]Function      : CUIXmlInit::InitFrameWindow
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\ui\UIXmlInit.cpp
+     <br/>
+     [error]Line          : 120
+     <br/>
+     [error]Description   : XML node not found
+     <br/>
+     [error]Argument 0    : background_hint
+     <br/>
+     [error]Argument 1    : ui\pda.xml
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678A76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:03399423 xrGame.dll, CUIXmlInit::InitFrameWindow(), e:\priquel\sources\engine\xrgame\ui\uixmlinit.cpp, 123
+     <br/>
+     001B:0334BE3C xrGame.dll, ui_pda_hint_info::init_from_xml(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.cpp, 563
+     <br/>
+     001B:0334C428 xrGame.dll, CUIPdaWnd::Init(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.cpp, 165
+     <br/>
+     001B:0334C69F xrGame.dll, CUIPdaWnd::CUIPdaWnd(), e:\priquel\sources\engine\xrgame\ui\uipdawnd.cpp, 51
+     <br/>
+     001B:03410C90 xrGame.dll, xr_new&lt;CUIPdaWnd&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 8
+     <br/>
+     001B:03413A88 xrGame.dll, CUIGameSP::CUIGameSP(), e:\priquel\sources\engine\xrgame\uigamesp.cpp, 26
+     <br/>
+     001B:030CA2ED xrGame.dll, xr_new&lt;CUIGameSP&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 8
+     <br/>
+     001B:030CA315 xrGame.dll, CObjectItemSingle&lt;CUIGameSP,1&gt;::client_object(), e:\priquel\sources\engine\xrserverentities\object_item_single_inline.h, 48
+     <br/>
+     001B:030B2B92 xrGame.dll, xrFactory_Create(), e:\priquel\sources\engine\xrgame\xrgame.cpp, 23
+     <br/>
+     001B:031024E6 xrGame.dll, game_cl_Single::createGameUI(), e:\priquel\sources\engine\xrgame\game_cl_single.cpp, 26
+     <br/>
+     001B:03341801 xrGame.dll, CUI::Load(), e:\priquel\sources\engine\xrgame\ui.cpp, 41
+     <br/>
+     001B:03406474 xrGame.dll, CHUDManager::Load(), e:\priquel\sources\engine\xrgame\hudmanager.cpp, 151
+     <br/>
+     001B:02F51705 xrGame.dll, CLevel::net_start_client5(), e:\priquel\sources\engine\xrgame\level_network_start_client.cpp, 145
+     <br/>
+     001B:004A9B4F xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 230
+     <br/>
+     001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080421-094027.zip (455,092 bytes)
+     <span class="italic">21 апреля 2008 09:49</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15050" name="15050">
+     <td class="bugnote-public">
+      <span class="small">(0015050)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">21 апреля 2008 10:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">update folder &lt;gamedata\config&gt;</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15064" name="15064">
+     <td class="bugnote-public">
+      <span class="small">(0015064)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">21 апреля 2008 11:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлено</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 09:49</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080421-094027.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 10:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 10:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 10:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 10:34</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 10:34</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 10:34</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15050</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 11:26</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15064</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 11:26</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 11:26</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh  E:\priquel\sources\engine\xrGame\ui\UIXmlInit.cpp  120 =&gt; Marsh  E:\\priquel\\sources\\engine\\xrGame\\ui\\UIXmlInit.cpp  120</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 11:26</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 18:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015472: square_magnitude() &gt; std::numeric_limits&lt;T&gt;::min() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015471.html">
+      &lt; Прошлое обращение (0015471)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015473.html">
+      Следующее обращение (0015473) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015472</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>24 апреля 2008 15:06</td>
+    <td>26 июня 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>t_G_M_</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015472: square_magnitude() &gt; std::numeric_limits&lt;T&gt;::min()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : _vector3&lt;float&gt;::normalize
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_vector3d.h
+     <br/>
+     [error]Line          : 189
+     <br/>
+     [error]Description   : square_magnitude() &gt; std::numeric_limits&lt;T&gt;::min()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02B401D4 xrGame.dll, aimers::base::aim_at_position(), e:\priquel\sources\engine\xrgame\aimers_base.cpp, 114
+     <br/>
+     001B:02B368AF xrGame.dll, aimers::bone&lt;3&gt;::compute_bone(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 92
+     <br/>
+     001B:02B36B91 xrGame.dll, aimers::bone&lt;3&gt;::compute_bones(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 43
+     <br/>
+     001B:02B36C4C xrGame.dll, aimers::bone&lt;3&gt;::compute_bones(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 59
+     <br/>
+     001B:02B37116 xrGame.dll, aimers::bone&lt;3&gt;::bone&lt;3&gt;(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 28
+     <br/>
+     001B:02B37BE2 xrGame.dll, CSightManager::compute_aiming(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 412
+     <br/>
+     001B:02B38E31 xrGame.dll, CSightManager::Exec_Look(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 113
+     <br/>
+     001B:02DDBFBA xrGame.dll, CAI_Stalker::Exec_Look(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_feel.cpp, 51
+     <br/>
+     001B:02D6BF51 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 712
+     <br/>
+     001B:0043F938 xrEngine.exe, CObjectList::SingleUpdate(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 104
+     <br/>
+     001B:00440001 xrEngine.exe, CObjectList::Update(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 212
+     <br/>
+     001B:00438BE2 xrEngine.exe, IGame_Level::OnFrame(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 144
+     <br/>
+     001B:02F56B48 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 497
+     <br/>
+     001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:0042326D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 458
+     <br/>
+     001B:0049A143 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AB889 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AB048 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AAFE4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004AA00A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AAC22 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AAD3B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00513AB4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080424-150235.zip (675,709 bytes)
+     <span class="italic">24 апреля 2008 15:06</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080603-140505cta.zip (4,373,317 bytes)
+     <span class="italic">03 июня 2008 14:20</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080625-130732.zip (1,303,132 bytes)
+     <span class="italic">25 июня 2008 13:25</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Dima</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15427" name="15427">
+     <td class="bugnote-public">
+      <span class="small">(0015427)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">24 апреля 2008 16:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в следующем апдейте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17472" name="17472">
+     <td class="bugnote-public">
+      <span class="small">(0017472)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">03 июня 2008 14:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился в С.Т.А. +лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17475" name="17475">
+     <td class="bugnote-public">
+      <span class="small">(0017475)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">03 июня 2008 16:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">какой в баню CTA???? это только сталкеры применяют ;-)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17476" name="17476">
+     <td class="bugnote-public">
+      <span class="small">(0017476)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">03 июня 2008 16:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это другой баг, выделите его отдельно, приаттачьте последний дамп и назначьте на Игоря</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18835" name="18835">
+     <td class="bugnote-public">
+      <span class="small">(0018835)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 июня 2008 13:25</span>
+      <br/>
+      <span class="small">отредактирован:  25 июня 2008 14:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело при перестрелке на Ескейпе.
+      <br/>
+      <br/>
+      отредактирован: 25.06.08 14:01</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18837" name="18837">
+     <td class="bugnote-public">
+      <span class="small">(0018837)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">25 июня 2008 14:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторяется на новых бинах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 15:06</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 15:06</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Следить: Dima</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 15:06</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080424-150235.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 16:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 16:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 16:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 15427</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 14:20</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 17472</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 14:20</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080603-140505cta.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июня 2008 16:10</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 17475</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июня 2008 16:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 17476</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 13:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080625-130732.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 13:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 18835</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 14:01</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий отредактирован: 18835</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 14:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 18837</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 14:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:23</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

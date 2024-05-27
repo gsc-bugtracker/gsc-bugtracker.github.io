@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015516: AGROPROM           File: E:\priquel\sources\engine\xrCore\Xr_ini.cpp          Line : 453 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015515.html">
+      &lt; Прошлое обращение (0015515)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015517.html">
+      Следующее обращение (0015517) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015516</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>25 апреля 2008 11:12</td>
+    <td>06 июня 2008 12:20</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23937</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015516: AGROPROM           File: E:\priquel\sources\engine\xrCore\Xr_ini.cpp          Line : 453</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CInifile::r_string
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp
+     <br/>
+     [error]Line          : 453
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Can't find variable jump_ground_trace_range in [dog_strong]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678E16 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+     <br/>
+     001B:00676319 xrCore.dll, stlp_std::__lower_bound&lt;CInifile::Item *,char const *,bool (__cdecl*)(CInifile::Item const &amp;,char const *),int&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algobase.c, 380
+     <br/>
+     001B:00673991 xrCore.dll, CInifile::r_string(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 453
+     <br/>
+     001B:00673B9F xrCore.dll, CInifile::r_float(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 519
+     <br/>
+     001B:02C35449 xrGame.dll, CControlJump::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_jump.cpp, 35
+     <br/>
+     001B:02C1A7BA xrGame.dll, CControl_Manager::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 75
+     <br/>
+     001B:02BFF03D xrGame.dll, CBaseMonster::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_startup.cpp, 54
+     <br/>
+     001B:02D155D3 xrGame.dll, CAI_Dog::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog.cpp, 40
+     <br/>
+     001B:0043C597 xrEngine.exe, IGame_ObjectPool::create(), e:\priquel\sources\engine\xrengine\igame_objectpool.cpp, 57
+     <br/>
+     001B:004410CE xrEngine.exe, CObjectList::Create(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 389
+     <br/>
+     001B:02F32C36 xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 101
+     <br/>
+     001B:02F32EF8 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+     <br/>
+     001B:02F279D5 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 427
+     <br/>
+     001B:02F27BFD xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 489
+     <br/>
+     001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+     <br/>
+     001B:0042326D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 458
+     <br/>
+     001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     Пригнул с Ескейпа на Агропром .При загрузке</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     3.zip (735,610 bytes)
+     <span class="italic">25 апреля 2008 11:12</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     5.zip (732,619 bytes)
+     <span class="italic">25 апреля 2008 11:29</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_t_g_m_.log.bz2 (156,740 bytes)
+     <span class="italic">25 апреля 2008 11:38</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15484" name="15484">
+     <td class="bugnote-public">
+      <span class="small">(0015484)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 апреля 2008 11:28</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* Loaded: gamedata\textures\act\act_dog_red.dds[174904]b
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CInifile::r_string
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp
+      <br/>
+      [error]Line          : 453
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : Can't find variable jump_ground_trace_range in [dog_normal]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678E16 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+      <br/>
+      001B:00676319 xrCore.dll, stlp_std::__lower_bound&lt;CInifile::Item *,char const *,bool (__cdecl*)(CInifile::Item const &amp;,char const *),int&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algobase.c, 380
+      <br/>
+      001B:00673991 xrCore.dll, CInifile::r_string(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 453
+      <br/>
+      001B:00673B9F xrCore.dll, CInifile::r_float(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 519
+      <br/>
+      001B:02C35449 xrGame.dll, CControlJump::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_jump.cpp, 35
+      <br/>
+      001B:02C1A7BA xrGame.dll, CControl_Manager::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 75
+      <br/>
+      001B:02BFF03D xrGame.dll, CBaseMonster::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_startup.cpp, 54
+      <br/>
+      001B:02D155D3 xrGame.dll, CAI_Dog::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog.cpp, 40
+      <br/>
+      001B:0043C597 xrEngine.exe, IGame_ObjectPool::create(), e:\priquel\sources\engine\xrengine\igame_objectpool.cpp, 57
+      <br/>
+      001B:004410CE xrEngine.exe, CObjectList::Create(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 389
+      <br/>
+      001B:02F32C36 xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 101
+      <br/>
+      001B:02F32EF8 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+      <br/>
+      001B:02F279D5 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 427
+      <br/>
+      001B:02F27BFD xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 489
+      <br/>
+      001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+      <br/>
+      001B:0042326D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 458
+      <br/>
+      001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      Прыгнул с Ескейпа на Гарбайдж</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15487" name="15487">
+     <td class="bugnote-public">
+      <span class="small">(0015487)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">25 апреля 2008 11:34</span>
+      <br/>
+      <span class="small">отредактирован:  25 апреля 2008 11:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">закомитил
+      <br/>
+      priquel\resources\gamedata\configs\creatures\M_Dog.ltx
+      <br/>
+      <br/>
+      отредактирован: 25.04.08 11:47</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15489" name="15489">
+     <td class="bugnote-public">
+      <span class="small">(0015489)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 апреля 2008 11:37</span>
+      <br/>
+      <span class="small">отредактирован:  25 апреля 2008 11:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* Loaded: gamedata\textures\act\act_dog_red.dds[174904]b
+      <br/>
+      * Loaded: gamedata\textures\act\act_dog_red_teeth.dds[11088]b
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CInifile::r_string
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp
+      <br/>
+      [error]Line          : 453
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : Can't find variable jump_ground_trace_range in [dog_normal]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678E16 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+      <br/>
+      001B:00676319 xrCore.dll, stlp_std::__lower_bound&lt;CInifile::Item *,char const *,bool (__cdecl*)(CInifile::Item const &amp;,char const *),int&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_algobase.c, 380
+      <br/>
+      001B:00673991 xrCore.dll, CInifile::r_string(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 453
+      <br/>
+      001B:00673B9F xrCore.dll, CInifile::r_float(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 519
+      <br/>
+      001B:02C854C9 xrGame.dll, CControlJump::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_jump.cpp, 35
+      <br/>
+      001B:02C6A83A xrGame.dll, CControl_Manager::load(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 75
+      <br/>
+      001B:02C4F0BD xrGame.dll, CBaseMonster::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_startup.cpp, 54
+      <br/>
+      001B:02D65653 xrGame.dll, CAI_Dog::Load(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog.cpp, 40
+      <br/>
+      001B:0043C597 xrEngine.exe, IGame_ObjectPool::create(), e:\priquel\sources\engine\xrengine\igame_objectpool.cpp, 57
+      <br/>
+      001B:004410CE xrEngine.exe, CObjectList::Create(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 389
+      <br/>
+      001B:02F82CB6 xrGame.dll, CLevel::g_sv_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 101
+      <br/>
+      001B:02F82F78 xrGame.dll, CLevel::cl_Process_Spawn(), e:\priquel\sources\engine\xrgame\level_network_spawn.cpp, 40
+      <br/>
+      001B:02F77A55 xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 427
+      <br/>
+      001B:02F77C7D xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 489
+      <br/>
+      001B:00656D90 xrCore.dll, CTimer::GetElapsed_ticks(), e:\priquel\sources\engine\xrcore\ftimer.h, 65
+      <br/>
+      001B:0042326D xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 458
+      <br/>
+      001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004ABCF9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AB4B8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AB454 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AA47A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AB092 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AB1AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00513F24 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      Даркваллей.
+      <br/>
+      Подошёл к мёртвым сталкерам что встречаются сразу после блок-поста.
+      <br/>
+      <br/>
+      отредактирован: 25.04.08 11:38</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15584" name="15584">
+     <td class="bugnote-public">
+      <span class="small">(0015584)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">30 апреля 2008 18:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed.
+      <br/>
+      не был обновлен ресурс</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:12</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:12</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:12</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 3.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">попыток не было =&gt; всегда</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">AGROPROM           File: E:\priquel\sources\engine\xrCore\Xr_ini.cpp          Line : 453 =&gt; AGROPROM           File: E:\\priquel\\sources\\engine\\xrCore\\Xr_ini.cpp          Line : 453</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:23</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:24</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:28</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15484</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 5.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:31</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:34</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15487</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:37</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15489</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_t_g_m_.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 15489</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">незначительный =&gt; блокировка</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">AGROPROM           File: E:\priquel\sources\engine\xrCore\Xr_ini.cpp          Line : 453 =&gt; AGROPROM           File: E:\\priquel\\sources\\engine\\xrCore\\Xr_ini.cpp          Line : 453</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:47</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий отредактирован: 15487</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 апреля 2008 18:04</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 апреля 2008 18:04</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 апреля 2008 18:04</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15584</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 09:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 11:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 11:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">AGROPROM           File: E:\priquel\sources\engine\xrCore\Xr_ini.cpp          Line : 453 =&gt; AGROPROM           File: E:\\priquel\\sources\\engine\\xrCore\\Xr_ini.cpp          Line : 453</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 11:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 12:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

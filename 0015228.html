@@ -1,0 +1,1105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015228: Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015227.html">
+      &lt; Прошлое обращение (0015227)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015229.html">
+      Следующее обращение (0015229) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015228</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>иногда</td>
+    <td>18 апреля 2008 17:19</td>
+    <td>26 мая 2008 21:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r26051</td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015228: Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:02BDEA74 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896
+     <br/>
+     001B:0046615E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+     <br/>
+     001B:0041085F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1020
+     <br/>
+     001B:00499CB3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AB3F9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AABB8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AAB54 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004A9B7A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     Выкинуло из игры пока я слушал разговор Лебедева о том что дальше делать.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_AGR_UDERGROUND.zip (1,643,790 bytes)
+     <span class="italic">18 апреля 2008 17:19</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_Виста.rar (218,811 bytes)
+     <span class="italic">22 апреля 2008 17:18</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1(2).zip (656,012 bytes)
+     <span class="italic">23 апреля 2008 11:39</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (866,305 bytes)
+     <span class="italic">23 апреля 2008 12:52</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (559,658 bytes)
+     <span class="italic">24 апреля 2008 09:33</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     bychips.zip (756,032 bytes)
+     <span class="italic">24 апреля 2008 16:40</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080505-093429.zip (543,903 bytes)
+     <span class="italic">05 мая 2008 09:42</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (79,182 bytes)
+     <span class="italic">08 мая 2008 09:57</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080508-094227.zip (577,139 bytes)
+     <span class="italic">08 мая 2008 09:57</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0015601.html">
+          0015601
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>lain</nobr></td>
+        <td>ESCAPE [error]    : Не удается найти указанный файл.</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15114" name="15114">
+     <td class="bugnote-public">
+      <span class="small">(0015114)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">21 апреля 2008 15:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">написал проверку
+      <br/>
+      пробуйте свалить в следующей сборке</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15116" name="15116">
+     <td class="bugnote-public">
+      <span class="small">(0015116)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">21 апреля 2008 15:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ок</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15236" name="15236">
+     <td class="bugnote-public">
+      <span class="small">(0015236)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">22 апреля 2008 17:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">build 23658. вылетел на Escape. лог приатачил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15282" name="15282">
+     <td class="bugnote-public">
+      <span class="small">(0015282)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">23 апреля 2008 11:30</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился в Андерграунде</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15285" name="15285">
+     <td class="bugnote-public">
+      <span class="small">(0015285)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">23 апреля 2008 11:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">dumping client spawn manager stuff for object with id 13147
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02BDE328 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      001B:0046628E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:00499E83 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB5C9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AAD88 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAD24 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004A9D4A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AA962 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAA7B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005131E4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      Бежал на базу слалкеров</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15297" name="15297">
+     <td class="bugnote-public">
+      <span class="small">(0015297)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">23 апреля 2008 12:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Агропром, хотел продать аптечку.
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02BDE328 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      001B:0046628E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:00499E83 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB5C9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AAD88 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAD24 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004A9D4A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AA962 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAA7B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005131E4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15348" name="15348">
+     <td class="bugnote-public">
+      <span class="small">(0015348)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">24 апреля 2008 09:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Destroying binded object sim_default_military_210733
+      <br/>
+      dumping client spawn manager stuff for object with id 10733
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02BDE388 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      001B:0046654E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:0049A143 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB889 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AB048 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAFE4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AA00A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AAC22 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAD3B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00513AB4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.
+      <br/>
+      <br/>
+      <br/>
+      Выпало на ескейпе, прошол через Базу военных, недошол и до холма.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15398" name="15398">
+     <td class="bugnote-public">
+      <span class="small">(0015398)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">24 апреля 2008 12:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на следующем билде должно быть ок.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15432" name="15432">
+     <td class="bugnote-public">
+      <span class="small">(0015432)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">24 апреля 2008 16:35</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Лиманске. ревизия 23824</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15433" name="15433">
+     <td class="bugnote-public">
+      <span class="small">(0015433)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">24 апреля 2008 16:40</span>
+      <br/>
+      <span class="small">отредактирован:  24 апреля 2008 16:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Ред_Форест (23824):
+      <br/>
+      Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=9132&amp;type=bug
+      <br/>
+      <br/>
+      001B:02BDE388 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      001B:0046654E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:0049A143 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB889 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AB048 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAFE4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AA00A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AAC22 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAD3B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00513AB4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      [error]    : Не удается найти указанный файл.
+      <br/>
+      <br/>
+      Пришёл к Леснику. Открыл окно диалога. Креш.
+      <br/>
+      <br/>
+      отредактирован: 24.04.08 16:41</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15452" name="15452">
+     <td class="bugnote-public">
+      <span class="small">(0015452)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">24 апреля 2008 18:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">пробуйте билд &gt; 23894 :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15587" name="15587">
+     <td class="bugnote-public">
+      <span class="small">(0015587)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">05 мая 2008 09:41</span>
+      <br/>
+      <span class="small">отредактирован:  05 мая 2008 09:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на эскейпе, лог добавил
+      <br/>
+      ревизия 24134
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02BDE6E8 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 907
+      <br/>
+      001B:004666FE xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      отредактирован: 05.05.08 09:42</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15889" name="15889">
+     <td class="bugnote-public">
+      <span class="small">(0015889)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">07 мая 2008 18:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дал таблетку
+      <br/>
+      пробуйте на следующем билде.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15926" name="15926">
+     <td class="bugnote-public">
+      <span class="small">(0015926)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">08 мая 2008 09:56</span>
+      <br/>
+      <span class="small">отредактирован:  08 мая 2008 09:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">stack trace:
+      <br/>
+      <br/>
+      001B:02BFF988 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 907
+      <br/>
+      001B:004666FE xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:00499C63 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AD439 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004ACBF8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004ACB94 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004ABBBA xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AC7D2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AC8EB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005156C2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.
+      <br/>
+      <br/>
+      <br/>
+      а вот вам :) 24474,пробежал метров 5 от респа креш,логи добавил.
+      <br/>
+      <br/>
+      отредактирован: 08.05.08 09:58</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16935" name="16935">
+     <td class="bugnote-public">
+      <span class="small">(0016935)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">26 мая 2008 19:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше вроде не выпадает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 17:19</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 17:19</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 17:19</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_AGR_UDERGROUND.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 17:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 17:26</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 17:36</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 15:19</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15114</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 15:24</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 15116</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 17:17</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 15236</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 11:30</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15282</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 апреля 2008 11:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15285</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 11:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1(2).zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 апреля 2008 12:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15297</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 12:52</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 09:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15348</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 09:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15397</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий удален: 15397</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15398</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 =&gt; Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\\priquel\\sources\\engine\\xrgame\\custommonster.cpp, 896</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:35</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 16:35</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 15432</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 16:40</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 15433</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 16:40</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: bychips.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 16:41</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий отредактирован: 15433</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 18:52</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15452</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 09:41</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 15587</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 09:42</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 15587</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 09:42</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080505-093429.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 13:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 13:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 =&gt; Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\\priquel\\sources\\engine\\xrgame\\custommonster.cpp, 896</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 13:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 15:11</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0015601</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">попыток не было =&gt; иногда</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r23358 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 =&gt; Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\\priquel\\sources\\engine\\xrgame\\custommonster.cpp, 896</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:21</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15889</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 19:03</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 19:03</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 =&gt; Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\\priquel\\sources\\engine\\xrgame\\custommonster.cpp, 896</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 19:03</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 09:56</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 15926</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 09:57</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 09:57</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080508-094227.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 мая 2008 09:58</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий отредактирован: 15926</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 19:59</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 16935</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 19:59</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 19:59</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r26051</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 19:59</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 896 =&gt; Agroprom_Undergruond CCustomMonster::feel_sound_new(), e:\\priquel\\sources\\engine\\xrgame\\custommonster.cpp, 896</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 19:59</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 21:28</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

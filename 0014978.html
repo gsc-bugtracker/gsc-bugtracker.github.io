@@ -1,0 +1,1219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014978: Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014977.html">
+      &lt; Прошлое обращение (0014977)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014979.html">
+      Следующее обращение (0014979) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014978</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>11 апреля 2008 12:29</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014978: Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[252] FATAL ERROR
+     <br/>
+     [252]
+     <br/>
+     [252] [error]Expression    : !m_sound._feedback()
+     <br/>
+     [252] [error]Function      : CScriptSound::~CScriptSound
+     <br/>
+     [252] [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+     <br/>
+     [252] [error]Line          : 29
+     <br/>
+     [252] [error]Description   : playing sound is not completed, but is destroying
+     <br/>
+     [252] [error]Arguments     : characters_voice\human_01\stalker\alife\defence\actor_ignore_2_pda
+     <br/>
+     [252]
+     <br/>
+     [252]
+     <br/>
+     <br/>
+     <br/>
+     нужно перенести sound_theme:stop() с биндера(:net_destroy) актера на биндеры других обьектов, т.к. они могут дестроиться раньше актера!!!!
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGATRONE.zip (1,030,974 bytes)
+     <span class="italic">11 апреля 2008 12:29</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (394,777 bytes)
+     <span class="italic">07 мая 2008 10:46</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (186,628 bytes)
+     <span class="italic">28 мая 2008 10:37</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.dds.bz2 (6,833 bytes)
+     <span class="italic">28 мая 2008 10:37</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (837,606 bytes)
+     <span class="italic">28 мая 2008 10:37</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     bug.rar (1,051,252 bytes)
+     <span class="italic">02 июня 2008 11:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     23.06.rar (384,968 bytes)
+     <span class="italic">23 июня 2008 18:15</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_t_g_m_.log.bz2 (214,896 bytes)
+     <span class="italic">27 июня 2008 18:32</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     1.sav.bz2 (896,450 bytes)
+     <span class="italic">27 июня 2008 18:32</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (298,902 bytes)
+     <span class="italic">27 июня 2008 19:28</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_autosave.sav.bz2 (886,979 bytes)
+     <span class="italic">27 июня 2008 19:29</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     agroprom.rar (505,311 bytes)
+     <span class="italic">01 июля 2008 17:28</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (952,089 bytes)
+     <span class="italic">01 июля 2008 17:29</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15158" name="15158">
+     <td class="bugnote-public">
+      <span class="small">(0015158)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">22 апреля 2008 11:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не повторяется</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15779" name="15779">
+     <td class="bugnote-public">
+      <span class="small">(0015779)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">07 мая 2008 10:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Маршах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16741" name="16741">
+     <td class="bugnote-public">
+      <span class="small">(0016741)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">21 мая 2008 17:14</span>
+      <br/>
+      <span class="small">отредактирован:  21 мая 2008 17:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторяется на Янтаре при загрузке сейва
+      <br/>
+      <br/>
+      отредактирован: 21.05.08 17:14</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16997" name="16997">
+     <td class="bugnote-public">
+      <span class="small">(0016997)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">28 мая 2008 10:37</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Загрузка быстрого сохранения</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17388" name="17388">
+     <td class="bugnote-public">
+      <span class="small">(0017388)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">02 июня 2008 11:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* Loaded: gamedata\textures\ui\ui_load.dds[1048704]b
+      <br/>
+      * Loaded: gamedata\textures\ui\ui_ingame2_back_add2_w.dds[1048704]b
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : monsters\bloodsucker\human_panic_1
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02EEDF29 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+      <br/>
+      001B:0067DF83 xrCore.dll, memory_monitor::monitor_free(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 106
+      <br/>
+      001B:006853A9 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+      <br/>
+      001B:0347C2BC xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18667" name="18667">
+     <td class="bugnote-public">
+      <span class="small">(0018667)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">23 июня 2008 18:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] d:\current_build\xr_logic:(396):_bp: calling module('xr_patrol')
+      <br/>
+      [LUA] d:\current_build\xr_logic:(402):DEBUG: activate_by_section: scheme 'patrol' activated from section 'patrol@esc_smart_terrain_2_12_to_esc_smart_terrain_4_11_patrol5_1_walk'
+      <br/>
+      * xrSheduler: too much time consumed by object [alife_simulator] (16ms)
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : characters_voice\human_03\stalker\alife\defence\end_defence_1_pda
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:037878D9 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+      <br/>
+      001B:03787968 xrGame.dll, CScriptSound::`scalar deleting destructor'()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19241" name="19241">
+     <td class="bugnote-public">
+      <span class="small">(0019241)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">27 июня 2008 18:31</span>
+      <br/>
+      <span class="small">отредактирован:  27 июня 2008 18:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на Ескейпе при лоаде сейва. Сейв и лог в аттаче.
+      <br/>
+      <br/>
+      * Loaded: gamedata\textures\ui\ui_ingame2_back_add2_w.dds[1048704]b
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : characters_voice\scenario\escape\esc_trader_start_pda
+      <br/>
+      <br/>
+      отредактирован: 27.06.08 18:32</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19256" name="19256">
+     <td class="bugnote-public">
+      <span class="small">(0019256)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">27 июня 2008 19:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* Loaded: gamedata\textures\ui\ui_load.dds[1048704]b
+      <br/>
+      * Loaded: gamedata\textures\ui\ui_ingame2_back_add2_w.dds[1048704]b
+      <br/>
+      * Unloading texture [ui\ui_magnifier2] pSurface RefCount= 1
+      <br/>
+      * Unloading texture [ui\ui_mm2_pautina] pSurface RefCount= 1
+      <br/>
+      * Unloading texture [ui\ui_mainmenu2] pSurface RefCount= 1
+      <br/>
+      * Unloading texture [ui\ui_mm2_back_video] pSurface RefCount= 1
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : music\combat\theme2_final_2
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      001B:02F28259 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+      <br/>
+      001B:02F282E8 xrGame.dll, CScriptSound::`scalar deleting destructor'()
+      <br/>
+      001B:02F2924E xrGame.dll, luabind::delete_helper2&lt;CScriptSound&gt;(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 19
+      <br/>
+      001B:02F29AA3 xrGame.dll, luabind::delete_helper&lt;CScriptSound,1&gt;::apply(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 27
+      <br/>
+      001B:02F2B5BF xrGame.dll, luabind::detail::delete_s&lt;CScriptSound&gt;::apply(), e:\priquel\sources\sdk\include\luabind\detail\object_rep.hpp, 100
+      <br/>
+      001B:10023799 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::~object_rep(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 78
+      <br/>
+      001B:10023A36 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::`scalar deleting destructor'()
+      <br/>
+      001B:10023A06 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::garbage_collector(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 133
+      <br/>
+      001B:0034CF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+      <br/>
+      001B:0034D332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+      <br/>
+      001B:0034EAB2 lua.JIT.1.1.4.dll, GCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 467
+      <br/>
+      001B:0034E918 lua.JIT.1.1.4.dll, luaC_callGCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 479
+      <br/>
+      001B:0036653C lua.JIT.1.1.4.dll, callallgcTM(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 199
+      <br/>
+      001B:0034C5FF lua.JIT.1.1.4.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 119
+      <br/>
+      001B:00366509 lua.JIT.1.1.4.dll, lua_close(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 213
+      <br/>
+      001B:02F41823 xrGame.dll, CScriptStorage::reinit(), e:\priquel\sources\engine\xrserverentities\script_storage.cpp, 232
+      <br/>
+      001B:02F36188 xrGame.dll, CScriptEngine::init(), e:\priquel\sources\engine\xrserverentities\script_engine.cpp, 163
+      <br/>
+      001B:02BAD16D xrGame.dll, restart_all(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 38
+      <br/>
+      001B:02BAD835 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 74
+      <br/>
+      001B:0317AFC0 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+      <br/>
+      001B:0317C57B xrGame.dll, game_sv_Single::restart_simulator(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 340
+      <br/>
+      001B:02F56E99 xrGame.dll, CGamePersistent::OnEvent(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 595
+      <br/>
+      001B:004A109B xrEngine.exe, CFrustum::CreateFromPortal()
+      <br/>
+      001B:004A15ED xrEngine.exe, CPS_Instance::~CPS_Instance(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 26
+      <br/>
+      001B:004A3882 xrEngine.exe, ELightAnimLibrary::OnDestroy()
+      <br/>
+      <br/>
+      Повторился на ревизии 29148. Побегал, умер, загружал автосейв (начало уровня). Креш.
+      <br/>
+      Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=13033&amp;type=bug
+      <br/>
+      Сейв:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=13034&amp;type=bug</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19409" name="19409">
+     <td class="bugnote-public">
+      <span class="small">(0019409)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">01 июля 2008 17:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : device\pda\pda_objective
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:037C85B9 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+      <br/>
+      001B:037C8648 xrGame.dll, CScriptSound::`scalar deleting destructor'()
+      <br/>
+      001B:037C95AE xrGame.dll, luabind::delete_helper2&lt;CScriptSound&gt;(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 19
+      <br/>
+      001B:037C9E03 xrGame.dll, luabind::delete_helper&lt;CScriptSound,1&gt;::apply(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 27
+      <br/>
+      001B:037CB91F xrGame.dll, luabind::detail::delete_s&lt;CScriptSound&gt;::apply(), e:\priquel\sources\sdk\include\luabind\detail\object_rep.hpp, 100
+      <br/>
+      001B:10023799 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::~object_rep(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 78
+      <br/>
+      001B:10023A36 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::`scalar deleting destructor'()
+      <br/>
+      001B:10023A06 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::garbage_collector(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 133
+      <br/>
+      001B:0034CF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+      <br/>
+      001B:0034D332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+      <br/>
+      001B:0034EAB2 lua.JIT.1.1.4.dll, GCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 467
+      <br/>
+      001B:0034E918 lua.JIT.1.1.4.dll, luaC_callGCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 479
+      <br/>
+      001B:0036653C lua.JIT.1.1.4.dll, callallgcTM(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 199
+      <br/>
+      001B:0034C5FF lua.JIT.1.1.4.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 119
+      <br/>
+      001B:00366509 lua.JIT.1.1.4.dll, lua_close(), e:\priquel\sources\engine\3rd party\luajit\src\lstate.c, 213
+      <br/>
+      001B:037E1B83 xrGame.dll, CScriptStorage::reinit(), e:\priquel\sources\engine\xrserverentities\script_storage.cpp, 232
+      <br/>
+      001B:037D64E8 xrGame.dll, CScriptEngine::init(), e:\priquel\sources\engine\xrserverentities\script_engine.cpp, 163
+      <br/>
+      001B:0344D08D xrGame.dll, restart_all(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 38
+      <br/>
+      001B:0344D755 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 74
+      <br/>
+      001B:03A1B420 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+      <br/>
+      001B:03A1C9DB xrGame.dll, game_sv_Single::restart_simulator(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 340
+      <br/>
+      001B:037F71C9 xrGame.dll, CGamePersistent::OnEvent(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 595
+      <br/>
+      001B:004A109B xrEngine.exe, CFrustum::CreateFromPortal()
+      <br/>
+      001B:004A15ED xrEngine.exe, CPS_Instance::~CPS_Instance(), e:\priquel\sources\engine\xrengine\ps_instance.cpp, 26
+      <br/>
+      001B:004A3882 xrEngine.exe, ELightAnimLibrary::OnDestroy()
+      <br/>
+      <br/>
+      Выпал на agroprom  при быстром сохранении - загрузке. сейв и лог прикрепил. Curent_build за 1.07.08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19630" name="19630">
+     <td class="bugnote-public">
+      <span class="small">(0019630)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">04 июля 2008 10:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : !m_sound._feedback()
+      <br/>
+      [error]Function      : CScriptSound::~CScriptSound
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\script_sound.cpp
+      <br/>
+      [error]Line          : 29
+      <br/>
+      [error]Description   : playing sound is not completed, but is destroying
+      <br/>
+      [error]Arguments     : characters_voice\scenario\garbage\gar_robbery_scene_kill_actor_1_pda
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:037785C9 xrGame.dll, CScriptSound::~CScriptSound(), e:\priquel\sources\engine\xrgame\script_sound.cpp, 29
+      <br/>
+      001B:03778658 xrGame.dll, CScriptSound::`scalar deleting destructor'()
+      <br/>
+      001B:037795BE xrGame.dll, luabind::delete_helper2&lt;CScriptSound&gt;(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 19
+      <br/>
+      001B:03779E13 xrGame.dll, luabind::delete_helper&lt;CScriptSound,1&gt;::apply(), e:\priquel\sources\sdk\include\luabind\luabind_delete.h, 27
+      <br/>
+      001B:0377B92F xrGame.dll, luabind::detail::delete_s&lt;CScriptSound&gt;::apply(), e:\priquel\sources\sdk\include\luabind\detail\object_rep.hpp, 100
+      <br/>
+      001B:10023799 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::~object_rep(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 78
+      <br/>
+      001B:10023A36 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::`scalar deleting destructor'()
+      <br/>
+      001B:10023A06 luabind.beta7-devel.rc4.dll, luabind::detail::object_rep::garbage_collector(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\object_rep.cpp, 133
+      <br/>
+      001B:0034CF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+      <br/>
+      001B:0034D332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+      <br/>
+      001B:0034EAB2 lua.JIT.1.1.4.dll, GCTM(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 467
+      <br/>
+      001B:0034EFD6 lua.JIT.1.1.4.dll, singlestep(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 594
+      <br/>
+      001B:0034EDD7 lua.JIT.1.1.4.dll, luaC_step(), e:\priquel\sources\engine\3rd party\luajit\src\lgc.c, 617
+      <br/>
+      001B:0034335C lua.JIT.1.1.4.dll, lua_gc(), e:\priquel\sources\engine\3rd party\luajit\src\lapi.c, 929
+      <br/>
+      001B:037AB838 xrGame.dll, CLevel::script_gc(), e:\priquel\sources\engine\xrgame\level.cpp, 663
+      <br/>
+      001B:004A9ADE xrEngine.exe, imf_Process()
+      <br/>
+      001B:0080D92B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+      <br/>
+      001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      001B:781328C8 MSVCR80.dll, endthread()
+      <br/>
+      <br/>
+      <br/>
+      Поговорил с Васяном остановился у бандитов перед переходом на Даркваллей мгновенно креш.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19650" name="19650">
+     <td class="bugnote-public">
+      <span class="small">(0019650)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">04 июля 2008 11:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">упало на сценке ограбления</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21154" name="21154">
+     <td class="bugnote-public">
+      <span class="small">(0021154)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 июля 2008 09:37</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:29</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:29</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:29</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: MEGATRONE.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Distemper</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 14:41</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Distemper =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 16:55</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 16:55</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 11:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15158</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 апреля 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29 =&gt; Escape  E:\\priquel\\sources\\engine\\xrGame\\script_sound.cpp  29</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 апреля 2008 11:36</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 18:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:46</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">закрыт =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:46</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:46</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15779</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:59</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:59</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; Distemper</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 11:00</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Distemper =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 18:39</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 18:39</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 мая 2008 17:14</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 16741</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 мая 2008 17:14</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий отредактирован: 16741</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 16:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 10:37</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 10:37</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.dds.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 10:37</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 10:37</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16997</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 10:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 10:38</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 11:08</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17388</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 11:10</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: bug.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 18:15</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 18667</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 18:15</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 23.06.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:31</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 19241</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:32</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: xray_t_g_m_.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:32</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: 1.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:32</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий отредактирован: 19241</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:42</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:42</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29 =&gt; Escape  E:\\priquel\\sources\\engine\\xrGame\\script_sound.cpp  29</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:42</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:59</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 19:04</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 19:04</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r22661 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 19:04</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29 =&gt; Escape  E:\\priquel\\sources\\engine\\xrGame\\script_sound.cpp  29</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 19:04</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 19:28</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 19:29</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: usercheg_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 19:32</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 19256</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 10:01</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 10:01</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:28</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: agroprom.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 17:29</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:31</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 19409</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 10:43</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 10:43</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 10:45</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 19630</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 11:26</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 11:26</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 11:26</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 19650</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июля 2008 15:43</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:43</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июля 2008 15:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 09:37</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 21154</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 09:37</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 09:37</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape  E:\priquel\sources\engine\xrGame\script_sound.cpp  29 =&gt; Escape  E:\\priquel\\sources\\engine\\xrGame\\script_sound.cpp  29</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 09:37</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

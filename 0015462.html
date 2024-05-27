@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015462: Agroprom minigame shooting range - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015461.html">
+      &lt; Прошлое обращение (0015461)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015463.html">
+      Следующее обращение (0015463) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015462</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>дополнение</td>
+    <td>всегда</td>
+    <td>24 апреля 2008 12:14</td>
+    <td>06 июня 2008 12:21</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23824</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015462: Agroprom minigame shooting range</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">для того чтобы начать тестить тир, надо решить вопрос с траекторией полета пули (скрины 1,2,3)
+     <br/>
+     на скринах с ПМом - точка, куда надо целиться, чтобы пули попадали в центр мишени, на дистанции 30 и 40 метров соответственно
+     <br/>
+     проблема в том, что траектория полета пули в игровом оружии отличается от траектории полета пули из реального оружия (сбивает с толку, хотя, конечно есть много людей которые и не подозревают как реально летают пули)
+     <br/>
+     т.е. сначала нужна информация, будут что-либо делать с траекторией, и потом можно смотреть баланс
+     <br/>
+     <br/>
+     по геймплею в тире - сейчас он просто никакой, все сводится к стрельбе по крестику в одну и ту же точку
+     <br/>
+     чтобы добавить интереса можно попробовать следующее:
+     <br/>
+     1) сделать прогрессивную систему по оружию. сначала есть возможность стрелять только из пистолета, после того как проходишь тренировку с пистолетом - открывается следующее оружие и т.д., в таком случае игроку будет интересно посмотреть что там дальше откроется, а не просто взять ТОС пострелять из него и увидеть что тир отстой ;-)
+     <br/>
+     2) оставить возможность стрелять только в айронсайте (убрать скриптово кроссхэйр, правда как это сделать с кривым айронсайтом у пистолетов?), так хоть будет видимость тира
+     <br/>
+     3) добавить новые режимы, например - стрельба на время (количество патронов не ограничено, поднимаются-ложатся мишени, хочешь стреляй очередьми, хочешь - одиночными; зачитываются или попадания в десятку, после чего мишень ложится, или очки, при этом мишень поднимается например на 3 секунды), стрельба по движущимся мишеням, стрельба на скорость (поднимаются все мишени, надо их положить выстрелом в 10, чем быстрее - тем лучше) и так далее, можно придумать еще разные варианты
+     <br/>
+     4) обязательно добавить самое последнее мега-оружие, которое будет хотеться хотя бы подержать в руках, например ФН или Г36 (которое по игре будет в самом конце игры), но из которого надо набить очень нереальное количество очков (например 485 из 500)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/jpgicon.gif" width="16"/>
+     bullet.JPG (12,771 bytes)
+     <span class="italic">24 апреля 2008 12:14</span>
+     <br/>
+     <img border="0" height="16" src="images/jpgicon.gif" width="16"/>
+     pm-30.jpg (404,184 bytes)
+     <span class="italic">24 апреля 2008 12:15</span>
+     <br/>
+     <img border="0" height="16" src="images/jpgicon.gif" width="16"/>
+     pm-40.jpg (222,769 bytes)
+     <span class="italic">24 апреля 2008 12:15</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15395" name="15395">
+     <td class="bugnote-public">
+      <span class="small">(0015395)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">24 апреля 2008 12:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">посмотри, скажи, что из этого можно будет сделать. реализуемо в принципе всё, вопрос во времени.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15402" name="15402">
+     <td class="bugnote-public">
+      <span class="small">(0015402)</span>
+      <br/>
+      Anton
+      <br/>
+      <span class="small">24 апреля 2008 12:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сможешь после обеда в 14.00 подойти ко мне с этим парнем?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15403" name="15403">
+     <td class="bugnote-public">
+      <span class="small">(0015403)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">24 апреля 2008 12:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ок</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17312" name="17312">
+     <td class="bugnote-public">
+      <span class="small">(0017312)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">31 мая 2008 11:27</span>
+      <br/>
+      <span class="small">отредактирован:  31 мая 2008 11:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">обсуждение в этом баге закрыто
+      <br/>
+      <br/>
+      отредактирован: 31.05.08 11:27</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: bullet.JPG</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: pm-30.jpg</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: pm-40.jpg</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; Anton</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 15395</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:45</td>
+     <td class="small-caption">Anton</td>
+     <td class="small-caption">Комментарий добавлен: 15402</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 15403</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 17312</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 17312</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 12:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015199: Marsh e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h 42 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015198.html">
+      &lt; Прошлое обращение (0015198)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015200.html">
+      Следующее обращение (0015200) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015199</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>18 апреля 2008 11:07</td>
+    <td>16 сентября 2008 10:52</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Gleb</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     @85@</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23358</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015199: Marsh e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h 42</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : no_assert
+     <br/>
+     Function      : CALifeObjectRegistry::object
+     <br/>
+     File          : e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h
+     <br/>
+     Line          : 42
+     <br/>
+     Description   : Specified object hasn't been found in the object registry!
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:03E1ACBC xrGame.dll, CALifeObjectRegistry::object(), e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h, 42
+     <br/>
+     001B:03F89810 xrGame.dll, CStateMonsterSmartTerrainTask&lt;CAI_Boar&gt;::check_start_conditions(), e:\priquel\sources\engine\xrgame\ai\monsters\states\monster_state_smart_terrain_task_inline.h, 50
+     <br/>
+     001B:03F8BB34 xrGame.dll, CStateMonsterRest&lt;CAI_Boar&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\states\monster_state_rest_inline.h, 79
+     <br/>
+     001B:03F811D4 xrGame.dll, CStateManagerBoar::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\boar\boar_state_manager.cpp, 65
+     <br/>
+     001B:03F31520 xrGame.dll, CBaseMonster::update_fsm(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 46
+     <br/>
+     001B:03F30ECB xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 36
+     <br/>
+     001B:03F111D0 xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 348
+     <br/>
+     001B:03F1C581 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 141
+     <br/>
+     001B:00427FC1 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:004286EF xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:0424FF45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:00499CB3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AB3F9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AABB8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AAB54 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004A9B7A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:769D3833 kernel32.dll</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFOUR.LOG.bz2 (210,386 bytes)
+     <span class="italic">18 апреля 2008 11:07</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_starodub lyudmila.rar (350,269 bytes)
+     <span class="italic">18 апреля 2008 11:39</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGATWO11111.LOG.bz2 (860,538 bytes)
+     <span class="italic">14 мая 2008 09:49</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.rar (714,765 bytes)
+     <span class="italic">26 мая 2008 11:34</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14918" name="14918">
+     <td class="bugnote-public">
+      <span class="small">(0014918)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">18 апреля 2008 11:38</span>
+      <br/>
+      <span class="small">отредактирован:  18 апреля 2008 11:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ред форест, то ли лесника убил то ли ранил, а может ящик в его шкафу прострелил.Короче с СВД стрелял по стенке с первого етажа(перед входом в дверь, где оружие не убираеться) в сторону лесника(ну ненравиться мне он, убить хотел).Выпал креш.
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : no_assert
+      <br/>
+      [error]Function      : CALifeObjectRegistry::object
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h
+      <br/>
+      [error]Line          : 42
+      <br/>
+      [error]Description   : Specified object hasn't been found in the object registry!
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02AEACBC xrGame.dll, CALifeObjectRegistry::object(), e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h, 42
+      <br/>
+      001B:02C496B0 xrGame.dll, CStateMonsterSmartTerrainTask&lt;CAI_Bloodsucker&gt;::check_start_conditions(), e:\priquel\sources\engine\xrgame\ai\monsters\states\monster_state_smart_terrain_task_inline.h, 50
+      <br/>
+      001B:02C4BD54 xrGame.dll, CStateMonsterRest&lt;CAI_Bloodsucker&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\states\monster_state_rest_inline.h, 79
+      <br/>
+      001B:02C3F56F xrGame.dll, CStateManagerBloodsucker::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\bloodsucker\bloodsucker_state_manager.cpp, 109
+      <br/>
+      001B:02C01520 xrGame.dll, CBaseMonster::update_fsm(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 46
+      <br/>
+      001B:02C00ECB xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 36
+      <br/>
+      001B:02BE11D0 xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 348
+      <br/>
+      001B:02BEC581 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 141
+      <br/>
+      001B:02C3C22D xrGame.dll, CAI_Bloodsucker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\bloodsucker\bloodsucker.cpp, 379
+      <br/>
+      001B:00427FC1 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:004286EF xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:02F1FF45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+      <br/>
+      001B:00499CB3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB3F9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AABB8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAB54 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004A9B7A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AA792 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AA8AB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+      <br/>
+      001B:0040F645 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+      <br/>
+      001B:0040F923 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+      <br/>
+      001B:00511552 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      отредактирован: 18.04.08 11:40</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15890" name="15890">
+     <td class="bugnote-public">
+      <span class="small">(0015890)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">07 мая 2008 18:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">глюк этот пофикшен 90%.
+      <br/>
+      но тестить еще надо.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16202" name="16202">
+     <td class="bugnote-public">
+      <span class="small">(0016202)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">14 мая 2008 09:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Marsh-e добавил dbg-лог.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16221" name="16221">
+     <td class="bugnote-public">
+      <span class="small">(0016221)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">14 мая 2008 11:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на этот раз вылетало для сталкеров, тоже пофикшено.
+      <br/>
+      98%</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16225" name="16225">
+     <td class="bugnote-public">
+      <span class="small">(0016225)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">14 мая 2008 11:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">тестить?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16247" name="16247">
+     <td class="bugnote-public">
+      <span class="small">(0016247)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">14 мая 2008 14:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">да.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16850" name="16850">
+     <td class="bugnote-public">
+      <span class="small">(0016850)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">26 мая 2008 11:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : no_assert
+      <br/>
+      [error]Function      : CALifeObjectRegistry::object
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h
+      <br/>
+      [error]Line          : 42
+      <br/>
+      [error]Description   : Specified object hasn't been found in the object registry!
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:02ADB20C xrGame.dll, CALifeObjectRegistry::object(), e:\priquel\sources\engine\xrgame\alife_object_registry_inline.h, 42
+      <br/>
+      001B:03351B9D xrGame.dll, ch_info_get_from_id(), e:\priquel\sources\engine\xrgame\ui\uicharacterinfo.cpp, 33
+      <br/>
+      001B:0335235C xrGame.dll, CUICharacterInfo::Update(), e:\priquel\sources\engine\xrgame\ui\uicharacterinfo.cpp, 332
+      <br/>
+      001B:0339AA24 xrGame.dll, CUIWindow::Update(), e:\priquel\sources\engine\xrgame\ui\uiwindow.cpp, 206
+      <br/>
+      001B:0336D77F xrGame.dll, CUIActorMenu::Update(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 213
+      <br/>
+      001B:0332AAD2 xrGame.dll, CDialogHolder::OnFrame(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 231
+      <br/>
+      001B:00499A03 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AC899 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AC018 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 449
+      <br/>
+      001B:004ABFB4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 440
+      <br/>
+      001B:004AAFDA xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 244
+      <br/>
+      001B:004ABBF2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 361
+      <br/>
+      001B:004ABD0B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 397
+      <br/>
+      001B:0040EB42 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 262
+      <br/>
+      001B:0040F304 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 703
+      <br/>
+      001B:0040F5E3 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 763
+      <br/>
+      001B:00514ACC xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      обрыскал ТЕЛО ПСА</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17012" name="17012">
+     <td class="bugnote-public">
+      <span class="small">(0017012)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">28 мая 2008 11:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed
+      <br/>
+      но проверять еще надо</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="22213" name="22213">
+     <td class="bugnote-public">
+      <span class="small">(0022213)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 сентября 2008 10:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 11:07</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 11:07</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 11:07</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 11:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 11:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 11:30</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 11:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 14918</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 11:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 11:40</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 14918</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 12:14</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:25</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 15890</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 09:49</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16202</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 09:49</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: MEGATWO11111.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 11:05</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 16221</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 11:13</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16225</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 14:31</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 16247</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16850</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:34</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:44</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 17012</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 16:11</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 16:11</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 сентября 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 22213</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

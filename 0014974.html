@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014974: Escape - gamedata\scripts\xr_logic.script(140) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014973.html">
+      &lt; Прошлое обращение (0014973)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014975.html">
+      Следующее обращение (0014975) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014974</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>значительный</td>
+    <td>иногда</td>
+    <td>11 апреля 2008 11:49</td>
+    <td>06 июня 2008 17:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r22661</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014974: Escape - gamedata\scripts\xr_logic.script(140)</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] smart_terrain:(915):setup_gulag_and_logic_on_spawn obj=esc_stalkerbase_guard12822, strn_id=1333
+     <br/>
+     [LUA] xr_logic:(1448):get_customdata_or_ini_file: filename=*esc_smart_terrain_5_7
+     <br/>
+     [LUA] ERROR: ERROR: object 'esc_stalkerbase_guard12822': unable to find section 'logic@esc_smart_terrain_5_7_walker_1_walk'
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\xr_logic.script(140) : configure_schemes
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\xr_logic.script(1493) : initialize_obj
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\smart_terrain.script(924) : setup_gulag_and_logic_on_spawn
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\xr_motivator.script(136) :
+     <br/>
+     ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     после загрузки квик сейва с проабгредженным Ружьем.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_starodub lyudmila.rar (275,329 bytes)
+     <span class="italic">11 апреля 2008 12:25</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (166,145 bytes)
+     <span class="italic">21 апреля 2008 11:39</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (186,862 bytes)
+     <span class="italic">05 мая 2008 10:52</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_starodub lyudmila.rar (452,606 bytes)
+     <span class="italic">19 мая 2008 12:11</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (170,510 bytes)
+     <span class="italic">21 мая 2008 16:47</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14393" name="14393">
+     <td class="bugnote-public">
+      <span class="small">(0014393)</span>
+      <br/>
+      Bandicoot
+      <br/>
+      <span class="small">11 апреля 2008 14:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Что-то с сейвами. Т.к. пути имеются на карте и с ними все впорядке.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14535" name="14535">
+     <td class="bugnote-public">
+      <span class="small">(0014535)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">14 апреля 2008 18:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">попробовать повторить на последней ревизии.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15069" name="15069">
+     <td class="bugnote-public">
+      <span class="small">(0015069)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">21 апреля 2008 11:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился, добавил новый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15608" name="15608">
+     <td class="bugnote-public">
+      <span class="small">(0015608)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">05 мая 2008 10:52</span>
+      <br/>
+      <span class="small">отредактирован:  05 мая 2008 10:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился, добавил новый лог
+      <br/>
+      смарт "развалины хутора" захвачен сталкерами
+      <br/>
+      ревизия 24134
+      <br/>
+      <br/>
+      отредактирован: 05.05.08 10:52</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16216" name="16216">
+     <td class="bugnote-public">
+      <span class="small">(0016216)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">14 мая 2008 10:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">возможно связано с повторным отбиранием денег за апгрейды при загрузке. Попробовать повторить на последней ревизии</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16510" name="16510">
+     <td class="bugnote-public">
+      <span class="small">(0016510)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">19 мая 2008 12:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Милитари.
+      <br/>
+      После Квик Лоада.
+      <br/>
+      Есть Лог.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16550" name="16550">
+     <td class="bugnote-public">
+      <span class="small">(0016550)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">19 мая 2008 15:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на милитари - это уже другой баг должен быть. повторите на ескейпе.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16551" name="16551">
+     <td class="bugnote-public">
+      <span class="small">(0016551)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">19 мая 2008 15:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2Bandicoot: проверь пути в смарте 7_7 на милитари</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16740" name="16740">
+     <td class="bugnote-public">
+      <span class="small">(0016740)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">21 мая 2008 16:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ERROR: ERROR: object 'sim_default_stalker_016564': unable to find section 'logic@esc_smart_terrain_5_9_kamp_1'
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(947) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\xr_logic.script(140) : configure_schemes
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_logic.script(1497) : initialize_obj
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\smart_terrain.script(974) : setup_gulag_and_logic_on_spawn
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\xr_motivator.script(149) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:947: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      Destroying binded object sim_default_stalker_016564
+      <br/>
+      <br/>
+      загрузил сейв возле АТП, с обычным калашом (без апгрейдов). ревизия 25753. лог присоединил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17125" name="17125">
+     <td class="bugnote-public">
+      <span class="small">(0017125)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">29 мая 2008 10:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Руслан, посмотри плиз, я не могу понять почему валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17643" name="17643">
+     <td class="bugnote-public">
+      <span class="small">(0017643)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">06 июня 2008 12:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 11:49</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 11:49</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - gamedata\scripts\xr_logic.script(140) =&gt; Escape - gamedata\\scripts\\xr_logic.script(140)</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:25</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 13:04</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 13:04</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - gamedata\scripts\xr_logic.script(140) =&gt; Escape - gamedata\\scripts\\xr_logic.script(140)</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 13:04</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 14:49</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Комментарий добавлен: 14393</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 14:49</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 14:49</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; miron</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 14:49</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">miron =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 18:16</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 14535</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 18:17</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 11:39</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 15069</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 11:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 15608</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 10:52</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 15608</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 10:34</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 10:34</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 10:34</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 16216</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:11</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 12:11</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:11</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 16510</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 12:11</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 15:00</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 16550</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 15:03</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 16551</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 мая 2008 16:47</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 16740</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 мая 2008 16:47</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 10:16</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 мая 2008 10:16</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 10:16</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 17125</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 мая 2008 11:30</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 11:30</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 12:32</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 17643</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 12:32</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 12:32</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - gamedata\scripts\xr_logic.script(140) =&gt; Escape - gamedata\\scripts\\xr_logic.script(140)</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 12:32</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 17:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

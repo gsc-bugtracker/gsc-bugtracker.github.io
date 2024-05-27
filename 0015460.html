@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015460: DarkValLey         File  : e:\priquel\sources\engine\xrcore\_matrix.h        Line  : 402 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015459.html">
+      &lt; Прошлое обращение (0015459)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015461.html">
+      Следующее обращение (0015461) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015460</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>24 апреля 2008 11:58</td>
+    <td>08 августа 2008 09:48</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015460: DarkValLey         File  : e:\priquel\sources\engine\xrcore\_matrix.h        Line  : 402</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : _matrix&lt;float&gt;::build_projection_HAT
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_matrix.h
+     <br/>
+     [error]Line          : 402
+     <br/>
+     [error]Description   : _abs(fFarPlane-fNearPlane) &gt; EPS_S
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0283451B xrRender_R1.dll, _matrix&lt;float&gt;::build_projection_HAT(), e:\priquel\sources\engine\xrcore\_matrix.h, 403
+     <br/>
+     001B:02893D44 xrRender_R1.dll, CLightShadows::calculate(), e:\priquel\sources\engine\layers\xrrenderpc_r1\lightshadows.cpp, 271
+     <br/>
+     001B:02905790 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+     <br/>
+     001B:02905790 xrRender_R1.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+     <br/>
+     <br/>
+     Получил квест "уничтожить наёмников" после исполнения квеста "Захватить радио вышки". Пришёл на место начал убивать наёмников, выпал креш</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2.zip (1,319,701 bytes)
+     <span class="italic">24 апреля 2008 11:58</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape2.zip (864,381 bytes)
+     <span class="italic">31 мая 2008 17:56</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15855" name="15855">
+     <td class="bugnote-public">
+      <span class="small">(0015855)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">07 мая 2008 17:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Проверьте этот баг на билде с пометкой rebuild</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17293" name="17293">
+     <td class="bugnote-public">
+      <span class="small">(0017293)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">30 мая 2008 18:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повтор на кордоне:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : _matrix&lt;float&gt;::build_projection_HAT
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_matrix.h
+      <br/>
+      [error]Line          : 402
+      <br/>
+      [error]Description   : _abs(fFarPlane-fNearPlane) &gt; EPS_S
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17327" name="17327">
+     <td class="bugnote-public">
+      <span class="small">(0017327)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">31 мая 2008 17:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">опять на ескейпе повторился(бой на елеваторе):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : _matrix&lt;float&gt;::build_projection_HAT
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_matrix.h
+      <br/>
+      [error]Line          : 402
+      <br/>
+      [error]Description   : _abs(fFarPlane-fNearPlane) &gt; EPS_S</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18742" name="18742">
+     <td class="bugnote-public">
+      <span class="small">(0018742)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">24 июня 2008 15:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Проверьте в следующем билде.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 11:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 11:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 11:58</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 12:26</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 12:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Igor</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 17:16</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 15855</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 18:10</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17293</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 мая 2008 17:56</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17327</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 мая 2008 17:56</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 18742</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r23824 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValLey         File  : e:\priquel\sources\engine\xrcore\_matrix.h        Line  : 402 =&gt; DarkValLey         File  : e:\\priquel\\sources\\engine\\xrcore\\_matrix.h        Line  : 402</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 15:32</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 18:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 18:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValLey         File  : e:\priquel\sources\engine\xrcore\_matrix.h        Line  : 402 =&gt; DarkValLey         File  : e:\\priquel\\sources\\engine\\xrcore\\_matrix.h        Line  : 402</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 18:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 августа 2008 09:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

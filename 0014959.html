@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014959: Darkvalley e:\priquel\sources\engine\xrgame\space_restriction_bridge_inline.h 57 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014958.html">
+      &lt; Прошлое обращение (0014958)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014960.html">
+      Следующее обращение (0014960) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014959</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>11 апреля 2008 10:53</td>
+    <td>05 мая 2008 10:19</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Gleb</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r22661</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014959: Darkvalley e:\priquel\sources\engine\xrgame\space_restriction_bridge_inline.h 57</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : ai().level_graph().valid_vertex_id(selected)
+     <br/>
+     Function      : CSpaceRestrictionBridge::accessible_nearest
+     <br/>
+     File          : e:\priquel\sources\engine\xrgame\space_restriction_bridge_inline.h
+     <br/>
+     Line          : 57
+     <br/>
+     Description   : vertex_id[-1], object[val_smart_terrain_6_5_defence], position[71532375242184734000000.000000][18465450225121798000000000.000000][274079369444458500.000000]
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00D977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00D97A12 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:03FC1B4B xrGame.dll, CSpaceRestrictionBridge::accessible_nearest&lt;CSpaceRestriction * const&gt;(), e:\priquel\sources\engine\xrgame\space_restriction_bridge_inline.h, 49
+     <br/>
+     001B:03FC3DF0 xrGame.dll, CSpaceRestriction::accessible_nearest(), e:\priquel\sources\engine\xrgame\space_restriction.cpp, 319
+     <br/>
+     001B:03FBA19D xrGame.dll, CSpaceRestrictionManager::accessible_nearest(), e:\priquel\sources\engine\xrgame\space_restriction_manager.cpp, 190
+     <br/>
+     001B:03F84B9C xrGame.dll, CRestrictedObject::accessible_nearest(), e:\priquel\sources\engine\xrgame\restricted_object.cpp, 123
+     <br/>
+     001B:04110308 xrGame.dll, CControlPathBuilderBase::find_target_point_set(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder_base_path.cpp, 73
+     <br/>
+     001B:04110B09 xrGame.dll, CControlPathBuilderBase::update_target_point(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder_base_update.cpp, 45
+     <br/>
+     001B:04110D0B xrGame.dll, CControlPathBuilderBase::update_frame(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder_base_update.cpp, 18
+     <br/>
+     001B:040F5EA0 xrGame.dll, CControl_Manager::update_frame(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 105
+     <br/>
+     001B:040BD290 xrGame.dll, CBaseMonster::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 125
+     <br/>
+     001B:04227BD8 xrGame.dll, CAI_Dog::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog.cpp, 210
+     <br/>
+     001B:00458AF8 xrEngine.exe, CObjectList::SingleUpdate(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 104
+     <br/>
+     001B:004591C1 xrEngine.exe, CObjectList::Update(), e:\priquel\sources\engine\xrengine\xr_object_list.cpp, 212
+     <br/>
+     001B:00450352 xrEngine.exe, IGame_Level::OnFrame(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 144
+     <br/>
+     001B:044ADBF8 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 497
+     <br/>
+     001B:776682C4 kernel32.dll</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR.rar (860,618 bytes)
+     <span class="italic">11 апреля 2008 10:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14317" name="14317">
+     <td class="bugnote-public">
+      <span class="small">(0014317)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">11 апреля 2008 10:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ЭТОТ БАГ НЕ ПОСТИТЬ, ОН ЕСТЬ В TODO-ЛИСТЕ НАЗНАЧЕНЫЙ НА ДИМУ.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14318" name="14318">
+     <td class="bugnote-public">
+      <span class="small">(0014318)</span>
+      <br/>
+      Gleb
+      <br/>
+      <span class="small">11 апреля 2008 11:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Я ж спрашивал постить ли CSpaceRestrictionBridge ты сказал да.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14344" name="14344">
+     <td class="bugnote-public">
+      <span class="small">(0014344)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">11 апреля 2008 12:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Уточняю: не постить именно с такой фигней - object[val_smart_terrain_6_5_defence]</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:53</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 10:53</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:53</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 10:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14317</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 11:03</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Комментарий добавлен: 14318</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 12:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14344</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 10:19</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

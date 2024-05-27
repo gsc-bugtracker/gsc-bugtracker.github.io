@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015495: Hospital - E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp  Line : 1236 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015494.html">
+      &lt; Прошлое обращение (0015494)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015496.html">
+      Следующее обращение (0015496) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015495</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>24 апреля 2008 20:21</td>
+    <td>08 мая 2008 13:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r23824</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015495: Hospital - E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp  Line : 1236</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CCharacterPhysicsSupport::on_destroy_anim_mov_ctrl
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp
+     <br/>
+     [error]Line          : 1236
+     <br/>
+     [error]Description   : anim_mov_state.active
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:032E4C5A xrGame.dll, CCharacterPhysicsSupport::on_destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 1237
+     <br/>
+     001B:02BDC27A xrGame.dll, CCustomMonster::destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 1231
+     <br/>
+     001B:02D36C58 xrGame.dll, CAI_Stalker::destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 635
+     <br/>
+     001B:02D4F6CB xrGame.dll, CStalkerAnimationPair::play_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_pair.cpp, 62
+     <br/>
+     001B:02D4F899 xrGame.dll, CStalkerAnimationPair::play(), e:\priquel\sources\engine\xrgame\stalker_animation_pair.cpp, 126
+     <br/>
+     001B:02D47F33 xrGame.dll, CStalkerAnimationManager::play_script_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 75
+     <br/>
+     001B:02D488BC xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 239
+     <br/>
+     001B:02D36DE2 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 956
+     <br/>
+     001B:02BDBEC4 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+     <br/>
+     001B:034493D0 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     <br/>
+     последний бой на уровне</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     LIMANSK_crash.mdmp.bz2 (210,439 bytes)
+     <span class="italic">24 апреля 2008 20:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (50,693 bytes)
+     <span class="italic">25 апреля 2008 09:41</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     6.zip (713,759 bytes)
+     <span class="italic">25 апреля 2008 11:48</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15476" name="15476">
+     <td class="bugnote-public">
+      <span class="small">(0015476)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">25 апреля 2008 09:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Выбивает в Маршах, на старте.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15492" name="15492">
+     <td class="bugnote-public">
+      <span class="small">(0015492)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 апреля 2008 11:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CCharacterPhysicsSupport::on_destroy_anim_mov_ctrl
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp
+      <br/>
+      [error]Line          : 1236
+      <br/>
+      [error]Description   : anim_mov_state.active
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:032E4DDA xrGame.dll, CCharacterPhysicsSupport::on_destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\characterphysicssupport.cpp, 1237
+      <br/>
+      001B:02BDC1FA xrGame.dll, CCustomMonster::destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 1231
+      <br/>
+      001B:02D36BD8 xrGame.dll, CAI_Stalker::destroy_anim_mov_ctrl(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 635
+      <br/>
+      001B:02D4F64B xrGame.dll, CStalkerAnimationPair::play_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_pair.cpp, 62
+      <br/>
+      001B:02D4F819 xrGame.dll, CStalkerAnimationPair::play(), e:\priquel\sources\engine\xrgame\stalker_animation_pair.cpp, 126
+      <br/>
+      001B:02D47EB3 xrGame.dll, CStalkerAnimationManager::play_script_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 75
+      <br/>
+      001B:02D4883C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 239
+      <br/>
+      001B:02D36D62 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 956
+      <br/>
+      001B:02BDBE44 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:03449CC0 xrGame.dll, _strlwr()
+      <br/>
+      <br/>
+      Тоже на госпитале, тоже в 3-м бою.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15874" name="15874">
+     <td class="bugnote-public">
+      <span class="small">(0015874)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">07 мая 2008 17:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на госпитале не выбивает,норм.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 20:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 20:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 20:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: LIMANSK_crash.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 апреля 2008 21:59</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 апреля 2008 22:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Igor</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 09:41</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15476</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 09:41</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:48</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15492</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 11:48</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 6.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 11:58</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 10:26</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 10:26</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Hospital - E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp  Line : 1236 =&gt; Hospital - E:\\priquel\\sources\\engine\\xrGame\\CharacterPhysicsSupport.cpp  Line : 1236</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15874</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Hospital - E:\priquel\sources\engine\xrGame\CharacterPhysicsSupport.cpp  Line : 1236 =&gt; Hospital - E:\\priquel\\sources\\engine\\xrGame\\CharacterPhysicsSupport.cpp  Line : 1236</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 17:48</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 мая 2008 13:28</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

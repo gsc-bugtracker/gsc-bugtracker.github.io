@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014944: smart_cover_planner_actions.cpp  : 68 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014943.html">
+      &lt; Прошлое обращение (0014943)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014945.html">
+      Следующее обращение (0014945) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014944</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>иногда</td>
+    <td>10 апреля 2008 19:36</td>
+    <td>19 августа 2008 09:58</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014944: smart_cover_planner_actions.cpp  : 68</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Target world state :
+     <br/>
+     + : [53][loophole fire]
+     <br/>
+     335418 : Solution for object animation_planner [11 vertices searched]
+     <br/>
+     exit cover
+     <br/>
+     non-animated change loophole
+     <br/>
+     idle_2_fire
+     <br/>
+     fire
+     <br/>
+     [335418] action fire_2_idle is finalized
+     <br/>
+     [335418] action exit cover is initialized
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : smart_cover::action_base::setup_orientation
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\smart_cover_planner_actions.cpp
+     <br/>
+     [error]Line          : 68
+     <br/>
+     [error]Description   : !object().sight().enabled()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006979D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0303D3F5 xrGame.dll, smart_cover::action_base::setup_orientation(), e:\priquel\sources\engine\xrgame\smart_cover_planner_actions.cpp, 69
+     <br/>
+     001B:0303DA70 xrGame.dll, smart_cover::exit::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_planner_actions.cpp, 172
+     <br/>
+     001B:02CAFFCB xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 115
+     <br/>
+     001B:030398B6 xrGame.dll, smart_cover::animation_selector::select_animation(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 75
+     <br/>
+     001B:02FDDCEE xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+     <br/>
+     001B:02FE4DBC xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 126
+     <br/>
+     001B:02FE4F58 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 186
+     <br/>
+     001B:02FE504C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 206
+     <br/>
+     001B:02FD0152 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 956
+     <br/>
+     001B:02E296A4 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 549
+     <br/>
+     001B:038CDD90 xrGame.dll, _strlwr()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080410-193133.zip (710,146 bytes)
+     <span class="italic">10 апреля 2008 19:36</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_dimon.log.bz2 (151,144 bytes)
+     <span class="italic">11 апреля 2008 10:07</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14290" name="14290">
+     <td class="bugnote-public">
+      <span class="small">(0014290)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">10 апреля 2008 19:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">могу повторить, можно проскипать</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14292" name="14292">
+     <td class="bugnote-public">
+      <span class="small">(0014292)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">10 апреля 2008 19:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это слабенький баг, я его уже пофиксил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14299" name="14299">
+     <td class="bugnote-public">
+      <span class="small">(0014299)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">11 апреля 2008 10:07</span>
+      <br/>
+      <span class="small">отредактирован:  11 апреля 2008 10:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Может не выложил? см. новый лог
+      <br/>
+      Новые бины, сегодня забрал
+      <br/>
+      <br/>
+      отредактирован: 11.04.08 10:08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18933" name="18933">
+     <td class="bugnote-public">
+      <span class="small">(0018933)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:32</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21692" name="21692">
+     <td class="bugnote-public">
+      <span class="small">(0021692)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">19 августа 2008 09:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 апреля 2008 19:36</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 апреля 2008 19:36</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080410-193133.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 апреля 2008 19:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14290</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 апреля 2008 19:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14292</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14299</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 10:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: xray_dimon.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий отредактирован: 14299</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:32</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18933</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:00</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:00</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 09:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 09:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 21692</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

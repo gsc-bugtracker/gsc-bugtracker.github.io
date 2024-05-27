@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014990: ESCAPE E:\priquel\sources\engine\xrGame\aimers_base.cpp  Line: 59 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014989.html">
+      &lt; Прошлое обращение (0014989)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014991.html">
+      Следующее обращение (0014991) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014990</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>иногда</td>
+    <td>11 апреля 2008 17:24</td>
+    <td>08 июля 2008 14:42</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014990: ESCAPE E:\priquel\sources\engine\xrGame\aimers_base.cpp  Line: 59</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fsimilar(1.f, object_direction.square_magnitude(), EPS_L)
+     <br/>
+     [error]Function      : aimers::base::aim_at_position
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+     <br/>
+     [error]Line          : 59
+     <br/>
+     [error]Description   : [1.001004]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00697A12 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+     <br/>
+     001B:02D309A6 xrGame.dll, aimers::base::aim_at_position(), e:\priquel\sources\engine\xrgame\aimers_base.cpp, 59
+     <br/>
+     001B:02D25C41 xrGame.dll, aimers::base::fill_bones&lt;2,3&gt;(), e:\priquel\sources\engine\xrgame\aimers_base_inline.h, 43
+     <br/>
+     001B:02D263C6 xrGame.dll, aimers::bone&lt;3&gt;::compute_bone(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 77
+     <br/>
+     001B:02D265F1 xrGame.dll, aimers::bone&lt;3&gt;::compute_bones(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 43
+     <br/>
+     001B:02D267D6 xrGame.dll, aimers::bone&lt;3&gt;::bone&lt;3&gt;(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 28
+     <br/>
+     001B:02D2743C xrGame.dll, CSightManager::compute_aiming(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 387
+     <br/>
+     001B:02D28718 xrGame.dll, CSightManager::Exec_Look(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 113
+     <br/>
+     001B:0304138D xrGame.dll, smart_cover::loophole_action_base::process_default(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 168
+     <br/>
+     001B:03041CE2 xrGame.dll, smart_cover::loophole_action_base::setup_sight(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 243
+     <br/>
+     001B:0304278C xrGame.dll, smart_cover::idle_2_lookout_transition::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 577
+     <br/>
+     001B:02CAFFCB xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 115
+     <br/>
+     001B:0303A4B5 xrGame.dll, smart_cover::animation_selector::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 46
+     <br/>
+     001B:0302F291 xrGame.dll, stalker_movement_manager_smart_cover::on_frame(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 149
+     <br/>
+     001B:02E2961B xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 545
+     <br/>
+     001B:038CE560 xrGame.dll, _strlwr()
+     <br/>
+     [706606] action idle_2_lookout is executed
+     <br/>
+     <br/>
+     <br/>
+     после 1го разговора с Холецким просто идя внутри здания</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (143,764 bytes)
+     <span class="italic">11 апреля 2008 17:24</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080414-102032.zip (1,080,244 bytes)
+     <span class="italic">14 апреля 2008 10:26</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     101408.zip (1,154,175 bytes)
+     <span class="italic">14 апреля 2008 10:57</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     vylet_atp.log.bz2 (169,160 bytes)
+     <span class="italic">14 апреля 2008 15:54</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     log3.LOG.bz2 (554,960 bytes)
+     <span class="italic">14 апреля 2008 16:27</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     garbage_crash (6,926,780 bytes)
+     <span class="italic">15 апреля 2008 16:47</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080416-113619.zip (993,448 bytes)
+     <span class="italic">16 апреля 2008 11:41</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     limansk_aimers (4,407,553 bytes)
+     <span class="italic">16 апреля 2008 16:19</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     escape_crash.mdmp.bz2 (123,290 bytes)
+     <span class="italic">17 апреля 2008 17:59</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14452" name="14452">
+     <td class="bugnote-public">
+      <span class="small">(0014452)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">14 апреля 2008 10:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылет на маилитари, после выполнения основной квестовой линии
+      <br/>
+      зааттачил новый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14462" name="14462">
+     <td class="bugnote-public">
+      <span class="small">(0014462)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">14 апреля 2008 10:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">продолжает вылетать, новый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14512" name="14512">
+     <td class="bugnote-public">
+      <span class="small">(0014512)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">14 апреля 2008 15:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело после 1го боя,новый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14515" name="14515">
+     <td class="bugnote-public">
+      <span class="small">(0014515)</span>
+      <br/>
+      Gleb
+      <br/>
+      <span class="small">14 апреля 2008 16:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело в Лиманске после прохождения растяжки. лог3</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14641" name="14641">
+     <td class="bugnote-public">
+      <span class="small">(0014641)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">15 апреля 2008 16:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на garbage,лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14718" name="14718">
+     <td class="bugnote-public">
+      <span class="small">(0014718)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">16 апреля 2008 11:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на лиманске
+      <br/>
+      добавил нвоый лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14727" name="14727">
+     <td class="bugnote-public">
+      <span class="small">(0014727)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 апреля 2008 12:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">у меня нет такого сообщения уже несколько билдов, на каких бинах вы тестите?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14728" name="14728">
+     <td class="bugnote-public">
+      <span class="small">(0014728)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 апреля 2008 12:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">у вас же в логах другое сообщение</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14729" name="14729">
+     <td class="bugnote-public">
+      <span class="small">(0014729)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">16 апреля 2008 12:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в слудеющем билде</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14758" name="14758">
+     <td class="bugnote-public">
+      <span class="small">(0014758)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">16 апреля 2008 16:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело на Лиманске(бин 23089,error,в принципе,тот же...)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14759" name="14759">
+     <td class="bugnote-public">
+      <span class="small">(0014759)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">16 апреля 2008 16:26</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[1132] bad path check changed movement type from RUN to WALK
+      <br/>
+      [1132] [LUA] xr_smartcover:(111):setting smartcover [gps] [red_bridge_east_smartcover_2] used [false] for npc[red_bridge_csky_soldier_217449]
+      <br/>
+      [1132] [LUA] xr_smartcover:(117):setting smartcover [red_bridge_east_smartcover_2] for stalker [red_bridge_csky_soldier_217449]
+      <br/>
+      [1132] [LUA] xr_smartcover:(151):target_selector:using fire_point[red_bridge_csky_smart_soldier_2_f1_fire_look] for npc[red_bridge_csky_soldier_217449]!!!
+      <br/>
+      [1132] [LUA] xr_smartcover:(134):idle_min[6]  idle_max[10]  lookout_min[6]  lookout_max[10]
+      <br/>
+      [1132]
+      <br/>
+      [1132] FATAL ERROR
+      <br/>
+      [1132]
+      <br/>
+      [1132] [error]Expression    : fsimilar(1.f, object_direction.square_magnitude(), .01f)
+      <br/>
+      [1132] [error]Function      : aimers::base::aim_at_position
+      <br/>
+      [1132] [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+      <br/>
+      [1132] [error]Line          : 59
+      <br/>
+      [1132] [error]Description   : [1.015419]
+      <br/>
+      [1132]
+      <br/>
+      [1132]
+      <br/>
+      [1132] stack trace:
+      <br/>
+      [1132]
+      <br/>
+      [1132] 001B:007177C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      [1132] 001B:00717A12 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      [1132] 001B:02DB1756 xrGame.dll, aimers::base::aim_at_position(), e:\priquel\sources\engine\xrgame\aimers_base.cpp, 59
+      <br/>
+      [1132] 001B:02DA6B06 xrGame.dll, aimers::bone&lt;3&gt;::compute_bone(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 77
+      <br/>
+      [1132] 001B:02DA6D31 xrGame.dll, aimers::bone&lt;3&gt;::compute_bones(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 43
+      <br/>
+      [1132] 001B:02DA6F16 xrGame.dll, aimers::bone&lt;3&gt;::bone&lt;3&gt;(), e:\priquel\sources\engine\xrgame\aimers_bone_inline.h, 28
+      <br/>
+      [1132] 001B:02DA7BEE xrGame.dll, CSightManager::compute_aiming(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 404
+      <br/>
+      [1132] 001B:02DA8F08 xrGame.dll, CSightManager::Exec_Look(), e:\priquel\sources\engine\xrgame\sight_manager.cpp, 113
+      <br/>
+      [1132] 001B:030C3064 xrGame.dll, smart_cover::loophole_action_base::process_fire_position(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 109
+      <br/>
+      [1132] 001B:030C42D6 xrGame.dll, smart_cover::loophole_action_base::setup_sight(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 233
+      <br/>
+      [1132] 001B:030C4D6C xrGame.dll, smart_cover::idle_2_lookout_transition::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_loophole_planner_actions.cpp, 577
+      <br/>
+      [1132] 001B:02D303CB xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 115
+      <br/>
+      [1132] 001B:030BC9D5 xrGame.dll, smart_cover::animation_selector::initialize(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 46
+      <br/>
+      [1132] 001B:030B1791 xrGame.dll, stalker_movement_manager_smart_cover::on_frame(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 149
+      <br/>
+      [1132] 001B:02EAA9AB xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 545
+      <br/>
+      [1132] 001B:039544A0 xrGame.dll, _strlwr()
+      <br/>
+      <br/>
+      Вылет на red_forest вовремя боя с кровососом (билд 23089).</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14864" name="14864">
+     <td class="bugnote-public">
+      <span class="small">(0014864)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">17 апреля 2008 17:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">продолжает повторятся
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fsimilar(1.f, object_direction.square_magnitude(), .01f)
+      <br/>
+      [error]Function      : aimers::base::aim_at_position
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\aimers_base.cpp
+      <br/>
+      [error]Line          : 59
+      <br/>
+      [error]Description   : [1.060681]
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00697A12 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      001B:02D31416 xrGame.dll, aimers::base::aim_at_position(), e:\priquel\sources\engine\xrgame\aimers_base.cpp, 59
+      <br/>
+      [1646327] action idle_2_lookout is executed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14866" name="14866">
+     <td class="bugnote-public">
+      <span class="small">(0014866)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">17 апреля 2008 18:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">лог с escape</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14871" name="14871">
+     <td class="bugnote-public">
+      <span class="small">(0014871)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">17 апреля 2008 18:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сделайте апдейт бинарников, там этого сообщения уже нет</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14941" name="14941">
+     <td class="bugnote-public">
+      <span class="small">(0014941)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">18 апреля 2008 14:05</span>
+      <br/>
+      <span class="small">отредактирован:  18 апреля 2008 14:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2Dima: Начиная с какого номера ревизии исправлено?
+      <br/>
+      Изменения у нас как правило на следующий день. Т.е. 17,04 с утра был апдейт но вылетать продолжало.
+      <br/>
+      <br/>
+      отредактирован: 18.04.08 14:07</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 17:24</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 17:24</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 17:24</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 18:44</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 18:49</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Slipch</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 18:55</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Slipch =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 19:28</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:28</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 10:26</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 14452</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 10:26</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080414-102032.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 10:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: 101408.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 14462</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ESCAPE E:\priquel\sources\engine\xrGame\aimers_base.cpp  Line: 59 =&gt; ESCAPE E:\\priquel\\sources\\engine\\xrGame\\aimers_base.cpp  Line: 59</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 15:54</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: vylet_atp.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 15:55</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14512</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 16:26</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Комментарий добавлен: 14515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 16:27</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Файл добавлен: log3.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">незначительный =&gt; блокировка</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r22719 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ESCAPE E:\priquel\sources\engine\xrGame\aimers_base.cpp  Line: 59 =&gt; ESCAPE E:\\priquel\\sources\\engine\\xrGame\\aimers_base.cpp  Line: 59</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 11:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 апреля 2008 16:46</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14641</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 апреля 2008 16:47</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: garbage_crash</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 11:41</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 14718</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 11:41</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080416-113619.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 12:03</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14727</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 12:04</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14728</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 12:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 12:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14729</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 16:19</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: limansk_aimers</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 апреля 2008 16:23</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14758</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 апреля 2008 16:26</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 14759</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 14:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 14:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ESCAPE E:\priquel\sources\engine\xrGame\aimers_base.cpp  Line: 59 =&gt; ESCAPE E:\\priquel\\sources\\engine\\xrGame\\aimers_base.cpp  Line: 59</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 14:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 17:58</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14864</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:59</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 17:59</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 17:59</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape_crash.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 апреля 2008 18:00</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 14866</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 апреля 2008 18:38</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 14871</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 14:05</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 14941</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 14:07</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий отредактирован: 14941</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:42</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

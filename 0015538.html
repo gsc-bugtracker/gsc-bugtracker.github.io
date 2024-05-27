@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015538: DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015537.html">
+      &lt; Прошлое обращение (0015537)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015539.html">
+      Следующее обращение (0015539) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015538</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>25 апреля 2008 17:13</td>
+    <td>26 мая 2008 21:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r26051</td>
+    <td class="category">Версия</td>
+    <td>r23958</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015538: DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">! Can't find texture 'ui\ui_npc_monster'
+     <br/>
+     * Loaded: gamedata\textures\ed\ed_not_existing_texture.dds[2872]b
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CSpecificCharacter::data
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrserverentities\specific_character.h
+     <br/>
+     [error]Line          : 119
+     <br/>
+     [error]Description   : inherited_shared::get_sd()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02FE034D xrGame.dll, CInventoryOwner::InfinitiveMoney(), e:\priquel\sources\engine\xrgame\inventoryowner.h, 148
+     <br/>
+     001B:033749CE xrGame.dll, CUIActorMenu::UpdatePartnerBag(), e:\priquel\sources\engine\xrgame\ui\uiactormenutrade.cpp, 257
+     <br/>
+     001B:0336FA1E xrGame.dll, CUIActorMenu::InitDeadBodySearchMode(), e:\priquel\sources\engine\xrgame\ui\uiactormenudeadbodysearch.cpp, 76
+     <br/>
+     001B:0336E7E8 xrGame.dll, CUIActorMenu::SetMenuMode(), e:\priquel\sources\engine\xrgame\ui\uiactormenu.cpp, 128
+     <br/>
+     001B:033F8C50 xrGame.dll, CUIGameSP::StartCarBody(), e:\priquel\sources\engine\xrgame\uigamesp.cpp, 234
+     <br/>
+     001B:02F8B492 xrGame.dll, CActor::ActorUse(), e:\priquel\sources\engine\xrgame\actorinput.cpp, 420
+     <br/>
+     001B:02F8BD88 xrGame.dll, CActor::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\actorinput.cpp, 157
+     <br/>
+     001B:02F2AD84 xrGame.dll, CLevel::IR_OnKeyboardPress(), e:\priquel\sources\engine\xrgame\level_input.cpp, 373
+     <br/>
+     001B:00421C16 xrEngine.exe, CInput::KeyUpdate(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 198
+     <br/>
+     001B:0042325C xrEngine.exe, CInput::OnFrame(), e:\priquel\sources\engine\xrengine\xr_input.cpp, 457
+     <br/>
+     001B:0049A5B3 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004AD548 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004AD4E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004AC50A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004AD122 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004AD23B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515FA4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     Попытался обыскать труп кабана.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_DARKVALLEY.zip (743,408 bytes)
+     <span class="italic">25 апреля 2008 17:13</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     trup_sobaki.mdmp.bz2 (179,530 bytes)
+     <span class="italic">25 апреля 2008 17:16</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (184,249 bytes)
+     <span class="italic">06 мая 2008 17:35</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGASEVEN_MILITARY.rar (352,179 bytes)
+     <span class="italic">06 мая 2008 17:44</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     5.zip (795,859 bytes)
+     <span class="italic">07 мая 2008 11:44</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     ESCAPE_CR.zip (1,190,410 bytes)
+     <span class="italic">07 мая 2008 16:27</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     AGROPROM.zip (1,190,000 bytes)
+     <span class="italic">07 мая 2008 18:44</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="15520" name="15520">
+     <td class="bugnote-public">
+      <span class="small">(0015520)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">25 апреля 2008 17:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">то же самое,темная долина,труп собаки,лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15538" name="15538">
+     <td class="bugnote-public">
+      <span class="small">(0015538)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">25 апреля 2008 19:58</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">проверить после 6 мая :)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15729" name="15729">
+     <td class="bugnote-public">
+      <span class="small">(0015729)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">06 мая 2008 17:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Darkvalley в ревизии 24252 на новых бинах.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15730" name="15730">
+     <td class="bugnote-public">
+      <span class="small">(0015730)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">06 мая 2008 17:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не исправлен(билд 24252, новые бины). Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15791" name="15791">
+     <td class="bugnote-public">
+      <span class="small">(0015791)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">07 мая 2008 11:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Попытался обыскать труп снорка. тот же креш лог есть.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15793" name="15793">
+     <td class="bugnote-public">
+      <span class="small">(0015793)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">07 мая 2008 11:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">кровосос тоже лог тот же. не атачил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15841" name="15841">
+     <td class="bugnote-public">
+      <span class="small">(0015841)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">07 мая 2008 16:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Escape. Архив приатачил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15899" name="15899">
+     <td class="bugnote-public">
+      <span class="small">(0015899)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">07 мая 2008 18:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повтор на Агропроме. При обыске трупа Снорка. Архив прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15900" name="15900">
+     <td class="bugnote-public">
+      <span class="small">(0015900)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">07 мая 2008 18:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">всё... :)
+      <br/>
+      выложил изменения,
+      <br/>
+      ревизия = 24435 и позже.
+      <br/>
+      до этого исправление просто не было выложено (:</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16917" name="16917">
+     <td class="bugnote-public">
+      <span class="small">(0016917)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">26 мая 2008 18:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не выпадает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 17:13</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 17:13</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 17:13</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_DARKVALLEY.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 17:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15520</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 17:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: trup_sobaki.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 17:30</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 17:30</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 19:58</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 апреля 2008 19:58</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 апреля 2008 19:58</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15538</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 мая 2008 13:57</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 мая 2008 13:57</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Corr</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 16:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrserverentities\\specific_character.h 119</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 16:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:35</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:36</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 15729</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:41</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:41</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 15730</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrserverentities\\specific_character.h 119</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 мая 2008 17:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 мая 2008 17:44</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: MEGASEVEN_MILITARY.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15791</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 5.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 11:59</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 15793</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 13:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrserverentities\\specific_character.h 119</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 13:47</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 16:27</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: ESCAPE_CR.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 16:29</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 15841</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:44</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: AGROPROM.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:45</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 15899</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 18:50</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15900</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 18:50</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 19:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 мая 2008 19:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrserverentities\\specific_character.h 119</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 мая 2008 19:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 16917</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 18:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r26051</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 18:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">DarkValley e:\priquel\sources\engine\xrserverentities\specific_character.h 119 =&gt; DarkValley e:\\priquel\\sources\\engine\\xrserverentities\\specific_character.h 119</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 18:43</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 21:28</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
