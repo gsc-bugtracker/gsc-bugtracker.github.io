@@ -15,12 +15,13 @@ async function fetchPage(pageNumber) {
 }
 
 async function fetchPagesWithDelay() {
-    for (let i = 0; i <= 16000; i += 500) {
+    for (let i = 0; i <= 19000; i += 500) {
         const promises = [];
 		
 		for (let pageNumber = i; pageNumber < i + 500; pageNumber++)
 			promises.push(fetchPage(String(pageNumber).padStart(7, '0')));
 		await Promise.all(promises);
+		await new Promise(r => setTimeout(r, 2000));
     }
 }
 
