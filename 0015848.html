@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015848: вылет при рестарте - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015847.html">
+      &lt; Прошлое обращение (0015847)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015849.html">
+      Следующее обращение (0015849) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015848</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Multiplayer</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>12 мая 2008 21:57</td>
+    <td>04 июля 2008 22:02</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015848: вылет при рестарте</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Я-сервак:
+     <br/>
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : NET_Packet::w
+     <br/>
+     [error]File          : g:\priquel\sources\engine_mp_settings\xrcore\net_utils.h
+     <br/>
+     [error]Line          : 92
+     <br/>
+     [error]Description   : B.count + count &lt; NET_PacketSizeLimit
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006A3D12 xrCore.dll, xrDebug::backend(), g:\priquel\sources\engine_mp_settings\xrcore\xrdebugnew.cpp, 181
+     <br/>
+     001B:006A41B3 xrCore.dll, xrDebug::fail(), g:\priquel\sources\engine_mp_settings\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:0065E8FC xrCore.dll, NET_Packet::w(), g:\priquel\sources\engine_mp_settings\xrcore\net_utils.h, 92
+     <br/>
+     001B:047AAFEF xrNetServer.dll, MultipacketSender::SendPacket(), g:\priquel\sources\engine_mp_settings\xrnetserver\net_common.cpp, 108
+     <br/>
+     001B:047ADB0B xrNetServer.dll, IPureServer::SendTo_Buf(), g:\priquel\sources\engine_mp_settings\xrnetserver\net_server.cpp, 625
+     <br/>
+     001B:037ACA39 xrGame.dll, xrServer::SendTo_LL(), g:\priquel\sources\engine_trunk\xrgame\xrserver.cpp, 754
+     <br/>
+     001B:047AD7EC xrNetServer.dll, IPureServer::SendBroadcast_LL(), g:\priquel\sources\engine_mp_settings\xrnetserver\net_server.cpp, 692
+     <br/>
+     001B:047AD82E xrNetServer.dll, IPureServer::SendBroadcast(), g:\priquel\sources\engine_mp_settings\xrnetserver\net_server.cpp, 702
+     <br/>
+     001B:03CCF21B xrGame.dll, xrServer::Process_spawn(), g:\priquel\sources\engine_trunk\xrgame\xrserver_process_spawn.cpp, 146
+     <br/>
+     001B:03CCA43F xrGame.dll, xrServer::SLS_Default(), g:\priquel\sources\engine_trunk\xrgame\xrserver_perform_sls_default.cpp, 42
+     <br/>
+     001B:038B9459 xrGame.dll, game_sv_mp::OnRoundStart(), g:\priquel\sources\engine_trunk\xrgame\game_sv_mp.cpp, 146
+     <br/>
+     001B:038E7734 xrGame.dll, game_sv_CaptureTheArtefact::OnRoundStart(), g:\priquel\sources\engine_trunk\xrgame\game_sv_capture_the_artefact.cpp, 548
+     <br/>
+     001B:038E5E00 xrGame.dll, game_sv_CaptureTheArtefact::Update(), g:\priquel\sources\engine_trunk\xrgame\game_sv_capture_the_artefact.cpp, 161
+     <br/>
+     001B:037AA79A xrGame.dll, xrServer::Update(), g:\priquel\sources\engine_trunk\xrgame\xrserver.cpp, 243
+     <br/>
+     001B:03CD1306 xrGame.dll, xrGameSpyServer::Update(), g:\priquel\sources\engine_trunk\xrgame\xrgamespyserver.cpp, 117
+     <br/>
+     001B:034A20BB xrGame.dll, CLevel::net_Update(), g:\priquel\sources\engine_trunk\xrgame\level_network.cpp, 274
+     <br/>
+     001B:034A598A xrGame.dll, _NetworkProcessor::OnFrame(), g:\priquel\sources\engine_trunk\xrgame\level_network.cpp, 283
+     <br/>
+     001B:0049A5B3 xrEngine.exe, rp_Frame(), g:\priquel\sources\engine_mp_settings\xrengine\pure.cpp, 13
+     <br/>
+     001B:004ADD89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), g:\priquel\sources\engine_mp_settings\xrengine\pure.h, 81
+     <br/>
+     001B:004AC209 xrEngine.exe, mt_Thread(), g:\priquel\sources\engine_mp_settings\xrengine\device.cpp, 183
+     <br/>
+     001B:0066DA6B xrCore.dll, thread_entry(), g:\priquel\sources\engine_mp_settings\xrcore\_math.cpp, 325
+     <br/>
+     001B:78132848 MSVCR80.dll
+     <br/>
+     001B:781328C8 MSVCR80.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (39,797 bytes)
+     <span class="italic">12 мая 2008 21:57</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080514-105809.zip (1,738,516 bytes)
+     <span class="italic">14 мая 2008 11:07</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     19-05.rar (59,496 bytes)
+     <span class="italic">19 мая 2008 21:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16222" name="16222">
+     <td class="bugnote-public">
+      <span class="small">(0016222)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">14 мая 2008 11:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Сегодня играл сингл на Агропроме Вылетело, точно такой же фатал</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16233" name="16233">
+     <td class="bugnote-public">
+      <span class="small">(0016233)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">14 мая 2008 12:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">А повторимость 100%-ная ?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16239" name="16239">
+     <td class="bugnote-public">
+      <span class="small">(0016239)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">14 мая 2008 13:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Нет это случайно получилось.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16615" name="16615">
+     <td class="bugnote-public">
+      <span class="small">(0016615)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">19 мая 2008 21:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторили на свежих бинах и дб-шках. лог прикрепил</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19412" name="19412">
+     <td class="bugnote-public">
+      <span class="small">(0019412)</span>
+      <br/>
+      LoopZilla
+      <br/>
+      <span class="small">01 июля 2008 17:39</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Нужно проверить на новых бинах...</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 21:57</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 21:57</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 21:57</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 22:17</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 22:18</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 11:07</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080514-105809.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 11:08</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16222</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 12:18</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 16233</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 12:18</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 12:18</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 13:13</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16239</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 18:58</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 18:58</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 21:53</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: 19-05.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 21:54</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 21:54</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 21:54</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 21:54</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 21:54</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 16615</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 22:00</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 22:00</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:39</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 17:39</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:39</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Комментарий добавлен: 19412</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 21:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 22:02</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016356: Red Forest -\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp 863 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016355.html">
+      &lt; Прошлое обращение (0016355)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016357.html">
+      Следующее обращение (0016357) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016356</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>28 мая 2008 11:14</td>
+    <td>10 июля 2008 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26289</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016356: Red Forest -\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp 863</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет после загрузки сэйва
+     <br/>
+     <br/>
+     DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     red_smart_terrain_3_2_mechanic_restr
+     <br/>
+     red_space_restrictor_0000
+     <br/>
+     red_space_restrictor_0001
+     <br/>
+     red_tushkano_spawn_restr
+     <br/>
+     red_zone_mine_gravitational_average
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     red_smart_terrain_3_2_mechanic_restr
+     <br/>
+     red_space_restrictor_0000
+     <br/>
+     red_space_restrictor_0001
+     <br/>
+     red_tushkano_spawn_restr
+     <br/>
+     red_zone_field_psychic_weak_0015
+     <br/>
+     red_zone_field_radioactive_weak_0000
+     <br/>
+     red_zone_mine_gravitational_average
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+     <br/>
+     [error]Function      : CDetailPathManager::build_smooth_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+     <br/>
+     [error]Line          : 863
+     <br/>
+     [error]Description   : Invalid restrictions (see log for details) for object
+     <br/>
+     [error]Arguments     : snork_strong14349
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006796A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0067995A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:02AF516B xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 863
+     <br/>
+     001B:02AE8B80 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:02AEADF8 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+     <br/>
+     001B:02B39207 xrGame.dll, CSpaceRestrictionShape::inside(), e:\priquel\sources\engine\xrgame\space_restriction_shape.cpp, 216
+     <br/>
+     001B:02B34EEE xrGame.dll, CSpaceRestrictionBridge::inside(), e:\priquel\sources\engine\xrgame\space_restriction_bridge.cpp, 84
+     <br/>
+     001B:02B373B4 xrGame.dll, CSpaceRestrictionComposition::inside(), e:\priquel\sources\engine\xrgame\space_restriction_composition.cpp, 69
+     <br/>
+     001B:02B33C83 xrGame.dll, CSpaceRestrictionBase_inside(), e:\priquel\sources\engine\xrgame\space_restriction_base.cpp, 32
+     <br/>
+     001B:02AECF22 xrGame.dll, CLevelGraph::vertex_position(), e:\priquel\sources\engine\xrgame\level_graph_inline.h, 130
+     <br/>
+     001B:02B3596E xrGame.dll, CSpaceRestrictionBridge::on_border(), e:\priquel\sources\engine\xrgame\space_restriction_bridge.cpp, 109
+     <br/>
+     001B:02B2C1B3 xrGame.dll, CSpaceRestriction::accessible(), e:\priquel\sources\engine\xrgame\space_restriction.cpp, 81
+     <br/>
+     001B:02ADEEB7 xrGame.dll, CDetailPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\detail_path_builder.h, 51
+     <br/>
+     001B:02AE54EB xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+     <br/>
+     001B:02AE88BC xrGame.dll, CMovementManager::process_level_path(), e:\priquel\sources\engine\xrgame\movement_manager_level.cpp, 44
+     <br/>
+     001B:02AE1B71 xrGame.dll, CMovementManager::update_path(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 219
+     <br/>
+     001B:02C37234 xrGame.dll, CControlPathBuilder::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_path_builder.cpp, 111
+     <br/>
+     001B:02C2D2F0 xrGame.dll, CControl_Manager::update_schedule(), e:\priquel\sources\engine\xrgame\ai\monsters\control_manager.cpp, 141
+     <br/>
+     001B:02BFCF4C xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 226
+     <br/>
+     001B:004278C1 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:00427FEF xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:02F3BEE5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     001B:00499463 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AC2C9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004ABA48 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 449
+     <br/>
+     001B:004AB9E4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 440
+     <br/>
+     001B:004AAA0A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 244
+     <br/>
+     001B:004AB622 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 361
+     <br/>
+     001B:004AB73B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 397
+     <br/>
+     001B:0040EB72 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 262
+     <br/>
+     001B:0040F334 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 703
+     <br/>
+     001B:0040F613 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 763
+     <br/>
+     001B:0051407C xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     rf07.sav.bz2 (857,888 bytes)
+     <span class="italic">28 мая 2008 11:14</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (471,860 bytes)
+     <span class="italic">28 мая 2008 11:14</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="20076" name="20076">
+     <td class="bugnote-public">
+      <span class="small">(0020076)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 10:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed 08/07</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: rf07.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:14</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:23</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest - =&gt; Red Forest -\\priquel\\sources\\engine\\xrGame\\detail_path_manager_smooth.cpp 863</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:23</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">случайно =&gt; всегда</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest -\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp 863 =&gt; Red Forest -\\priquel\\sources\\engine\\xrGame\\detail_path_manager_smooth.cpp 863</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:45</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 11:45</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 11:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Aidhz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июня 2008 14:31</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июня 2008 14:31</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 10:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20076</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 10:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 10:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest -\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp 863 =&gt; Red Forest -\\priquel\\sources\\engine\\xrGame\\detail_path_manager_smooth.cpp 863</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 10:15</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

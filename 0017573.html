@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017573: bild 30.06.08 garbage File          : E:\priquel\sources\engine\xrGame\Inventory.cpp   Line          : 209 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017572.html">
+      &lt; Прошлое обращение (0017572)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017574.html">
+      Следующее обращение (0017574) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017573</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>01 июля 2008 13:53</td>
+    <td>24 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017573: bild 30.06.08 garbage File          : E:\priquel\sources\engine\xrGame\Inventory.cpp   Line          : 209</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5"><br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CInventory::DropItem
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\Inventory.cpp
+     <br/>
+     [error]Line          : 209
+     <br/>
+     [error]Description   : InBelt(pIItem)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0082D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0082D7C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:038B6554 xrGame.dll, CInventory::DropItem(), e:\priquel\sources\engine\xrgame\inventory.cpp, 210
+     <br/>
+     001B:0385358D xrGame.dll, CActor::OnEvent(), e:\priquel\sources\engine\xrgame\actor_events.cpp, 72
+     <br/>
+     001B:03D5C7EB xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     <br/>
+     Загрузка автосейва</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_autosave.sav.bz2 (990,951 bytes)
+     <span class="italic">01 июля 2008 13:53</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (342,589 bytes)
+     <span class="italic">01 июля 2008 13:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>дубликат</nobr></td>
+        <td><a href="0016893.html">
+          0016893
+         </a></td>
+        <td><a title="исправлен">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Andy</nobr></td>
+        <td>Garbage  12/06/ 08 E:\priquel\sources\engine\xrGame\Inventory.cpp 209</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19384" name="19384">
+     <td class="bugnote-public">
+      <span class="small">(0019384)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">01 июля 2008 14:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Крешиться из-за того что у меня в слоте для артефактов - артефакт</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19398" name="19398">
+     <td class="bugnote-public">
+      <span class="small">(0019398)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">01 июля 2008 16:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дамп можете сохранить?
+      <br/>
+      он обязательно нужен!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19403" name="19403">
+     <td class="bugnote-public">
+      <span class="small">(0019403)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">01 июля 2008 16:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дубликат 16893</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19555" name="19555">
+     <td class="bugnote-public">
+      <span class="small">(0019555)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">03 июля 2008 14:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Прикольно у меня тестируется, а у Конрака назначен ; Ведь  у меня дубликат !!!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 14:05</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 19384</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 15:14</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 15:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0016893</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь удалена</td>
+     <td class="small-caption">связан с 0016893</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">дубликат 0016893</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:09</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 19398</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19403</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">bild 30.06.08 garbage File          : E:\priquel\sources\engine\xrGame\Inventory.cpp   Line          : 209 =&gt; bild 30.06.08 garbage File          : E:\\priquel\\sources\\engine\\xrGame\\Inventory.cpp   Line          : 209</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 16:57</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:40</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 14:56</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 19555</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

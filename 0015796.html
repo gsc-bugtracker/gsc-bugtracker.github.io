@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015796: Agroprom agr_duty_mechanic  E:\priquel\sources\engine\xrGame\movement_manager.cpp  141 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015795.html">
+      &lt; Прошлое обращение (0015795)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015797.html">
+      Следующее обращение (0015797) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015796</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>12 мая 2008 10:47</td>
+    <td>10 июля 2008 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь160
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r24714</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015796: Agroprom agr_duty_mechanic  E:\priquel\sources\engine\xrGame\movement_manager.cpp  141</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     00110885	343.63079834	[1576]
+     <br/>
+     00110886	343.63079834	[1576]
+     <br/>
+     00110887	343.63082886	[1576]
+     <br/>
+     00110888	343.63082886	[1576] [error]Expression    : restrictions().accessible(level_vertex_id)
+     <br/>
+     00110889	343.63085938	[1576]
+     <br/>
+     00110890	343.63088989	[1576] [error]Function      : CMovementManager::set_level_dest_vertex
+     <br/>
+     00110891	343.63088989	[1576]
+     <br/>
+     00110892	343.63092041	[1576] [error]File          : E:\priquel\sources\engine\xrGame\movement_manager.cpp
+     <br/>
+     00110893	343.63092041	[1576]
+     <br/>
+     00110894	343.63095093	[1576] [error]Line          : 141
+     <br/>
+     00110895	343.63095093	[1576]
+     <br/>
+     00110896	343.63101196	[1576] [error]Description   : agr_duty_mechanic
+     <br/>
+     00110897	343.63101196	[1576]
+     <br/>
+     00110898	343.63104248	[1576]
+     <br/>
+     00110899	343.63107300	[1576]
+     <br/>
+     00110900	343.63107300	[1576]
+     <br/>
+     00110901	343.69332886	[1576] stack trace:
+     <br/>
+     00110902	343.69335938	[1576]
+     <br/>
+     00110903	343.69338989	[1576]
+     <br/>
+     00110904	348.74325562	[1576] 001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00110905	348.74328613	[1576]
+     <br/>
+     00110906	348.74346924	[1576] 001B:00678D57 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     00110907	348.74353027	[1576]
+     <br/>
+     00110908	348.74365234	[1576] 001B:02C51A2B xrGame.dll, CMovementManager::set_level_dest_vertex(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 141
+     <br/>
+     00110909	348.74377441	[1576]
+     <br/>
+     00110910	348.74392700	[1576] 001B:02F0B1F0 xrGame.dll, stalker_movement_manager_smart_cover::reach_enter_location(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 181
+     <br/>
+     00110911	348.74398804	[1576]
+     <br/>
+     00110912	348.74401855	[1576] 001B:02F0B54F xrGame.dll, stalker_movement_manager_smart_cover::enter_smart_cover(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 223
+     <br/>
+     00110913	348.74411011	[1576]
+     <br/>
+     00110914	348.74420166	[1576] 001B:02F0B6F6 xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 75
+     <br/>
+     00110915	348.74429321	[1576]
+     <br/>
+     00110916	348.74438477	[1576] 001B:02EBE92B xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 949
+     <br/>
+     00110917	348.74441528	[1576]
+     <br/>
+     00110918	348.74450684	[1576] 001B:02EC372D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 815
+     <br/>
+     00110919	348.74462891	[1576]
+     <br/>
+     00110920	348.74468994	[1576] 001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     00110921	348.74475098	[1576]
+     <br/>
+     00110922	348.74484253	[1576] 001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     00110923	348.74496460	[1576]
+     <br/>
+     00110924	348.74514771	[1576] 001B:030A82B5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+     <br/>
+     00110925	348.74520874	[1576]
+     <br/>
+     00110926	348.74523926	[1576] 001B:00499D73 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     00110927	348.74539185	[1576]
+     <br/>
+     00110928	348.74542236	[1576] 001B:004AD549 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     00110929	348.74545288	[1576]
+     <br/>
+     00110930	348.74563599	[1576] 001B:004ACD08 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     00110931	348.74572754	[1576]
+     <br/>
+     00110932	348.74584961	[1576] 001B:004ACCA4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     00110933	348.74588013	[1576]
+     <br/>
+     00110934	348.74600220	[1576] 001B:004ABCCA xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     00110935	348.74618530	[1576]
+     <br/>
+     00110936	348.74624634	[1576] 001B:004AC8E2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     00110937	348.74649048	[1576]
+     <br/>
+     00110938	348.74664307	[1576] 001B:004AC9FB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     00110939	348.74670410	[1576]
+     <br/>
+     00110940	348.74676514	[1576] 001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     00110941	348.74682617	[1576]
+     <br/>
+     00110942	348.74688721	[1576] 001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     00110943	348.74697876	[1576]
+     <br/>
+     00110944	348.74700928	[1576] 001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     00110945	348.74719238	[1576]
+     <br/>
+     00110946	348.74719238	[1576] 001B:005157D2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     00110947	348.74725342	[1576]
+     <br/>
+     00110948	348.74740601	[1576] 001B:7C816FD7 kernel32.dll
+     <br/>
+     00110949	348.74749756	[1576]
+     <br/>
+     <br/>
+     <br/>
+     самое начало левела Бежал на базу сталкеров, выкину!.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFIVE.zip (1,121,394 bytes)
+     <span class="italic">12 мая 2008 10:51</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 10:47</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 10:47</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 10:51</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: MEGAFIVE.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 12:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 мая 2008 12:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 мая 2008 12:25</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 мая 2008 17:50</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 мая 2008 17:50</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 09:42</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 09:42</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Agroprom agr_duty_mechanic  E:\priquel\sources\engine\xrGame\movement_manager.cpp  141 =&gt; Agroprom agr_duty_mechanic  E:\\priquel\\sources\\engine\\xrGame\\movement_manager.cpp  141</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 09:42</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016283: ESCAPE File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp    Line          : 443 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016282.html">
+      &lt; Прошлое обращение (0016282)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016284.html">
+      Следующее обращение (0016284) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016283</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>26 мая 2008 10:39</td>
+    <td>06 июня 2008 17:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26051</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016283: ESCAPE File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp    Line          : 443</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CInifile::r_section
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp
+     <br/>
+     [error]Line          : 443
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Can't open section 'konserva'
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678C16 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678F56 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+     <br/>
+     001B:00673A28 xrCore.dll, CInifile::r_section(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 443
+     <br/>
+     001B:00673A5D xrCore.dll, CInifile::r_string(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 450
+     <br/>
+     001B:0067406F xrCore.dll, CInifile::r_clsid(), e:\priquel\sources\engine\xrcore\xr_ini.cpp, 599
+     <br/>
+     001B:03161BBB xrGame.dll, F_entity_Create(), e:\priquel\sources\engine\xrserverentities\xrserver_factory.cpp, 14
+     <br/>
+     001B:02B8D8C3 xrGame.dll, CSE_ALifeObject::spawn_supplies(), e:\priquel\sources\engine\xrgame\alife_object.cpp, 17
+     <br/>
+     001B:02B954AB xrGame.dll, CALifeSimulatorBase::spawn_item(), e:\priquel\sources\engine\xrgame\alife_simulator_base.cpp, 102
+     <br/>
+     001B:02B70ECC xrGame.dll, CALifeSimulator__spawn_item2(), e:\priquel\sources\engine\xrgame\alife_simulator_script.cpp, 180
+     <br/>
+     001B:02B722A0 xrGame.dll, luabind::detail::returns&lt;CSE_Abstract *&gt;::call&lt;CALifeSimulator,luabind::detail::null_type,CALifeSimulator *,char const *,_vector3&lt;float&gt; const &amp;,unsigned int,unsigned short,unsigned short&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+     <br/>
+     001B:02B74BD2 xrGame.dll, luabind::detail::mem_fn_callback&lt;CSE_Abstract * (__cdecl*)(CALifeSimulator *,char const *,_vector3&lt;float&gt; const &amp;,unsigned int,unsigned short,unsigned short),CALifeSimulator,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:02B75BEC xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;CSE_Abstract * (__cdecl*)(CALifeSimulator *,char const *,_vector3&lt;float&gt; const &amp;,unsigned int,unsigned short,unsigned short),CALifeSimulator,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     <br/>
+     Покупал информацию о тайниках у Волка.Первую информацию купил за 500.Вторую он мне предлагал за 1000.Я проигрывал вопрос что он может мне предложить много раз и когда он мне предлагал продать хабар за 1000 я отказывался, но тут его проглючело и он мне продал за 500, деньги не отнялись, тайник мне он не показал, я спросил опять и он мне предложил за 250 я купил выбил креш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     11111.zip (1,653,816 bytes)
+     <span class="italic">26 мая 2008 10:39</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16858" name="16858">
+     <td class="bugnote-public">
+      <span class="small">(0016858)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">26 мая 2008 15:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Руслан, это кажется просто что-то неправильно написано в конфигах?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17649" name="17649">
+     <td class="bugnote-public">
+      <span class="small">(0017649)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">06 июня 2008 13:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Продаёт один хабар...повторить невозможно!!!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 10:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 10:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 10:39</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 11111.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 12:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 12:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 12:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 15:19</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 15:19</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 16858</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 15:21</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 15:21</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 мая 2008 10:22</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 13:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17649</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 13:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 13:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ESCAPE File          : E:\priquel\sources\engine\xrCore\Xr_ini.cpp    Line          : 443 =&gt; ESCAPE File          : E:\\priquel\\sources\\engine\\xrCore\\Xr_ini.cpp    Line          : 443</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 13:11</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 17:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

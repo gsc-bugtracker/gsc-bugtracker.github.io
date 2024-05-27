@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014806: Red_Forest E:\priquel\sources\engine\xrGame\patrol_path_params.cpp	 19 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014805.html">
+      &lt; Прошлое обращение (0014805)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014807.html">
+      Следующее обращение (0014807) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014806</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>09 апреля 2008 09:47</td>
+    <td>09 апреля 2008 10:15</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Gleb</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r22428</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014806: Red_Forest E:\priquel\sources\engine\xrGame\patrol_path_params.cpp	 19</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : cross_table().header().level_guid() == level_graph().header().guid()
+     <br/>
+     Function      : CAI_Space::load
+     <br/>
+     File          : E:\priquel\sources\engine\xrGame\ai_space.cpp
+     <br/>
+     Line          : 103
+     <br/>
+     Description   : cross_table doesn't correspond to the AI-map
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00D977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00D97A47 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:04578AC2 xrGame.dll, CAI_Space::load(), e:\priquel\sources\engine\xrgame\ai_space.cpp, 104
+     <br/>
+     001B:0415C61F xrGame.dll, CALifeGraphRegistry::setup_current_level(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 92
+     <br/>
+     001B:0415C885 xrGame.dll, CALifeGraphRegistry::update(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 61
+     <br/>
+     001B:041595BB xrGame.dll, CALifeSimulatorBase::register_object(), e:\priquel\sources\engine\xrgame\alife_simulator_base2.cpp, 31
+     <br/>
+     001B:04171E81 xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 105
+     <br/>
+     001B:04172329 xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 153
+     <br/>
+     001B:0416F345 xrGame.dll, CALifeUpdateManager::load(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 269
+     <br/>
+     001B:04110257 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 76
+     <br/>
+     001B:04813640 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:048137A0 xrGame.dll, game_sv_Single::Create(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 29
+     <br/>
+     001B:04815CB4 xrGame.dll, xrServer::Connect(), e:\priquel\sources\engine\xrgame\xrserver_connect.cpp, 50
+     <br/>
+     001B:045B5157 xrGame.dll, CLevel::net_start2(), e:\priquel\sources\engine\xrgame\level_start.cpp, 137
+     <br/>
+     001B:004DCCEF xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 230
+     <br/>
+     001B:004DD932 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DDA4B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C8F2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CF85 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D263 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00557BA2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:76AA3833 kernel32.dll
+     <br/>
+     001B:7777A9BD ntdll.dll
+     <br/>
+     <br/>
+     При "прыжке на ред форест"</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFOUR.LOG.bz2 (346,208 bytes)
+     <span class="italic">09 апреля 2008 09:47</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="14004" name="14004">
+     <td class="bugnote-public">
+      <span class="small">(0014004)</span>
+      <br/>
+      Gleb
+      <br/>
+      <span class="small">09 апреля 2008 09:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дубликат 14805. 2 мин разницы.(</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 09:47</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 апреля 2008 09:47</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 09:47</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 апреля 2008 09:50</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Комментарий добавлен: 14004</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 апреля 2008 10:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

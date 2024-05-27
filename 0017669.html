@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017669: build 03.07.08 Military e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h  281 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017668.html">
+      &lt; Прошлое обращение (0017668)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017670.html">
+      Следующее обращение (0017670) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017669</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>03 июля 2008 20:05</td>
+    <td>24 июля 2008 19:00</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017669: build 03.07.08 Military e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h  281</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">bad path check changed movement type from RUN to WALK
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:03531CDF xrGame.dll, CStateGroupEat&lt;CAI_Dog&gt;::setup_substates(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h, 281
+     <br/>
+     001B:035262A9 xrGame.dll, CState&lt;CAI_Dog&gt;::select_state(), e:\priquel\sources\engine\xrgame\ai\monsters\state_inline.h, 125
+     <br/>
+     001B:03531F8B xrGame.dll, CStateGroupEat&lt;CAI_Dog&gt;::reselect_state(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h, 198
+     <br/>
+     001B:035326FC xrGame.dll, CState&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\state_inline.h, 58
+     <br/>
+     001B:03526846 xrGame.dll, CStateManagerDog::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog_state_manager.cpp, 167
+     <br/>
+     001B:03426CE0 xrGame.dll, CBaseMonster::update_fsm(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 46
+     <br/>
+     001B:0342668B xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 36
+     <br/>
+     001B:03404A10 xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 358
+     <br/>
+     001B:03410E31 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 226
+     <br/>
+     001B:00426D61 xrEngine.exe, stlp_std::reverse_iterator&lt;collide::rq_result *&gt;::reverse_iterator&lt;collide::rq_result *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 65
+     <br/>
+     001B:0042748F xrEngine.exe, xr_new&lt;CInput,int&gt;()
+     <br/>
+     001B:037490B5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 549
+     <br/>
+     001B:00498553 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 106
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     <br/>
+     Вовремя начала боя с военными на складах.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_military.zip (3,699,285 bytes)
+     <span class="italic">03 июля 2008 20:05</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (961,986 bytes)
+     <span class="italic">03 июля 2008 20:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080710-103325red_forest.zip (1,096,995 bytes)
+     <span class="italic">10 июля 2008 10:55</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19599" name="19599">
+     <td class="bugnote-public">
+      <span class="small">(0019599)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">03 июля 2008 20:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">После сейва надо просто побежать на склады валить ваяк.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20018" name="20018">
+     <td class="bugnote-public">
+      <span class="small">(0020018)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">08 июля 2008 16:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Попробуйте еще раз свалить. В логе будет больше инфы.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20232" name="20232">
+     <td class="bugnote-public">
+      <span class="small">(0020232)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">10 июля 2008 10:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Реж_форесте,бежал к переходу на военные склады поговорил с лидером поста Долга перед переходом,креш сразуже.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20249" name="20249">
+     <td class="bugnote-public">
+      <span class="small">(0020249)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">10 июля 2008 13:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сделал фикс, попробуйте еще раз свалить.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20308" name="20308">
+     <td class="bugnote-public">
+      <span class="small">(0020308)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">10 июля 2008 16:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">завтра в current build</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20988" name="20988">
+     <td class="bugnote-public">
+      <span class="small">(0020988)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">17 июля 2008 18:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вроде всё ОК</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 20:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 20:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 20:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_military.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 20:05</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 20:06</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 19599</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 20:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 21:01</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; lain</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 16:52</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 20018</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:54</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 20232</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:55</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080710-103325red_forest.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 13:38</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 20249</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 16:49</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 16:49</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">build 03.07.08 Military e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h  281 =&gt; build 03.07.08 Military e:\\priquel\\sources\\engine\\xrgame\\ai\\monsters\\group_states\\group_state_eat_inline.h  281</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 16:49</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 16:49</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 20308</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 18:31</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20988</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 18:31</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 18:31</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">build 03.07.08 Military e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_eat_inline.h  281 =&gt; build 03.07.08 Military e:\\priquel\\sources\\engine\\xrgame\\ai\\monsters\\group_states\\group_state_eat_inline.h  281</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 18:31</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 19:00</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

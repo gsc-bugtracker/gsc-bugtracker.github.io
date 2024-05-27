@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017532: build 30.06.08 DarkValley E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp  863 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017531.html">
+      &lt; Прошлое обращение (0017531)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017533.html">
+      Следующее обращение (0017533) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017532</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>30 июня 2008 10:49</td>
+    <td>16 июля 2008 10:59</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017532: build 30.06.08 DarkValley E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp  863</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">DEFAULT OUT RESTRICTIONS :
+     <br/>
+     DEFAULT IN RESTRICTIONS  :
+     <br/>
+     val_gunnery_zone
+     <br/>
+     val_out_restrictor_comendant
+     <br/>
+     val_smart_terrain_1_4_defence
+     <br/>
+     val_space_restrictor_cisterna_night_bloodsucker
+     <br/>
+     val_space_restrictor_freedom_barmen
+     <br/>
+     OUT RESTRICTIONS         :
+     <br/>
+     val_smart_terrain_5_8_attack
+     <br/>
+     IN RESTRICTIONS          :
+     <br/>
+     val_gunnery_zone
+     <br/>
+     val_out_restrictor_comendant
+     <br/>
+     val_smart_terrain_1_4_defence
+     <br/>
+     val_space_restrictor_cisterna_night_bloodsucker
+     <br/>
+     val_space_restrictor_freedom_barmen
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+     <br/>
+     [error]Function      : CDetailPathManager::build_smooth_path
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+     <br/>
+     [error]Line          : 863
+     <br/>
+     [error]Description   : Invalid restrictions (see log for details) for object
+     <br/>
+     [error]Arguments     : flesh_normal16206
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0083D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0083D82A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:033D512B xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 863
+     <br/>
+     001B:033C8E10 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:033CB4C8 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+     <br/>
+     001B:03895EAC xrGame.dll, VisualCallback(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 747
+     <br/>
+     001B:00848F29 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     001B:033C8E10 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+     <br/>
+     001B:034D1A19 xrGame.dll, CCustomMonster::eye_pp_s1(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 631
+     <br/>
+     001B:033BF1CD xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+     <br/>
+     001B:004A9B1E xrEngine.exe, imf_Process()
+     <br/>
+     <br/>
+     Был на базе Свободы, появился квест "защитить лагерь: Глоток свободы" сразу креш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     darkvalley.rar (388,736 bytes)
+     <span class="italic">30 июня 2008 10:49</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (1,079,180 bytes)
+     <span class="italic">04 июля 2008 11:16</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19337" name="19337">
+     <td class="bugnote-public">
+      <span class="small">(0019337)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">30 июня 2008 15:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Там непонятная ситуация, файл со скриншотом из левелэдитора на тебе на мыло выслал</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19645" name="19645">
+     <td class="bugnote-public">
+      <span class="small">(0019645)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">04 июля 2008 11:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">DEFAULT OUT RESTRICTIONS :
+      <br/>
+      DEFAULT IN RESTRICTIONS  :
+      <br/>
+      val_gunnery_zone
+      <br/>
+      val_out_restrictor_comendant
+      <br/>
+      val_smart_terrain_1_4_defence
+      <br/>
+      val_space_restrictor_cisterna_night_bloodsucker
+      <br/>
+      val_space_restrictor_freedom_barmen
+      <br/>
+      OUT RESTRICTIONS         :
+      <br/>
+      val_smart_terrain_5_8_attack
+      <br/>
+      IN RESTRICTIONS          :
+      <br/>
+      val_gunnery_zone
+      <br/>
+      val_out_restrictor_comendant
+      <br/>
+      val_smart_terrain_1_4_defence
+      <br/>
+      val_space_restrictor_cisterna_night_bloodsucker
+      <br/>
+      val_space_restrictor_freedom_barmen
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : (alvi &amp;&amp; asp) || (!asp &amp;&amp; !alvi) || show_restrictions(m_restricted_object)
+      <br/>
+      [error]Function      : CDetailPathManager::build_smooth_path
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp
+      <br/>
+      [error]Line          : 863
+      <br/>
+      [error]Description   : Invalid restrictions (see log for details) for object
+      <br/>
+      [error]Arguments     : flesh_normal16143
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0082D736 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0082D9AA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+      <br/>
+      001B:03364EFB xrGame.dll, CDetailPathManager::build_smooth_path(), e:\priquel\sources\engine\xrgame\detail_path_manager_smooth.cpp, 863
+      <br/>
+      001B:03358BD0 xrGame.dll, _valid&lt;float&gt;(), e:\priquel\sources\engine\xrcore\_vector3d.h, 442
+      <br/>
+      001B:0335B288 xrGame.dll, CDetailPathManager::build_path(), e:\priquel\sources\engine\xrgame\detail_path_manager.cpp, 100
+      <br/>
+      001B:03165320 xrRender_R2.dll, CKinematics::Bone_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 159
+      <br/>
+      001B:008390A9 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+      <br/>
+      001B:031660FF xrRender_R2.dll, CKinematics::CalculateBones(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 97
+      <br/>
+      001B:0334EEB7 xrGame.dll, CDetailPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\detail_path_builder.h, 51
+      <br/>
+      001B:0335543B xrGame.dll, CLevelPathBuilder::process_impl(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 81
+      <br/>
+      001B:0334EF8D xrGame.dll, CLevelPathBuilder::process(), e:\priquel\sources\engine\xrgame\level_path_builder.h, 87
+      <br/>
+      001B:004A9ADE xrEngine.exe, imf_Process()
+      <br/>
+      001B:0080D92B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+      <br/>
+      001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      001B:781328C8 MSVCR80.dll, endthread()
+      <br/>
+      <br/>
+      взял квест принести ПДА Коменданта,вышел с базы немного но вернулся что бы продать лут Ашоту при подходе к леснице на 2 етаж крешнуло,или скорее зависло.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19821" name="19821">
+     <td class="bugnote-public">
+      <span class="small">(0019821)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 13:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">17711</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20762" name="20762">
+     <td class="bugnote-public">
+      <span class="small">(0020762)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">15 июля 2008 20:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Этот квест больше не появляется, как и сам краш.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 10:49</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 10:49</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 10:49</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: darkvalley.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 11:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 11:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 15:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 15:45</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 19337</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 11:15</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 19645</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 11:16</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19821</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">build 30.06.08 DarkValley E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp  863 =&gt; build 30.06.08 DarkValley E:\\priquel\\sources\\engine\\xrGame\\detail_path_manager_smooth.cpp  863</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:17</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:25</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 20762</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:25</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 20:25</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">build 30.06.08 DarkValley E:\priquel\sources\engine\xrGame\detail_path_manager_smooth.cpp  863 =&gt; build 30.06.08 DarkValley E:\\priquel\\sources\\engine\\xrGame\\detail_path_manager_smooth.cpp  863</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 20:25</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 10:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

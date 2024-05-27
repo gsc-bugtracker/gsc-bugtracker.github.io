@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014757: Escape e:\priquel\sources\engine\layers\xrrender\../xrRenderDX10/dx10R_Backend_Runtime.h 375 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014756.html">
+      &lt; Прошлое обращение (0014756)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014758.html">
+      Следующее обращение (0014758) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014757</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>08 апреля 2008 09:48</td>
+    <td>11 апреля 2008 18:54</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Gleb</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r22289</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014757: Escape e:\priquel\sources\engine\layers\xrrender\../xrRenderDX10/dx10R_Backend_Runtime.h 375</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : An invalid parameter was passed to the returning function
+     <br/>
+     Function      : CBackend::ApplyVertexLayout
+     <br/>
+     File          : e:\priquel\sources\engine\layers\xrrender\../xrRenderDX10/dx10R_Backend_Runtime.h
+     <br/>
+     Line          : 375
+     <br/>
+     Description   : HW.pDevice-&gt;CreateInputLayout( &amp;decl-&gt;dx10_dcl_code[0], decl-&gt;dx10_dcl_code.size()-1, m_pInputSignature-&gt;GetBufferPointer(), m_pInputSignature-&gt;GetBufferSize(), &amp;pLayout )
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00D977C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00D97945 xrCore.dll, xrDebug::error(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 258
+     <br/>
+     001B:03BB496B xrRender_R3.dll, CBackend::ApplyVertexLayout(), e:\priquel\sources\engine\layers\xrrenderdx10\dx10r_backend_runtime.h, 378
+     <br/>
+     001B:03C15D86 xrRender_R3.dll, FProgressive::Render(), e:\priquel\sources\engine\layers\xrrender\fprogressive.cpp, 91
+     <br/>
+     001B:03BC7DC4 xrRender_R3.dll, mapMatrix_Render(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_render.cpp, 52
+     <br/>
+     001B:03BC9615 xrRender_R3.dll, R_dsgraph_structure::r_dsgraph_render_graph(), e:\priquel\sources\engine\layers\xrrender\r__dsgraph_render.cpp, 380
+     <br/>
+     001B:03BB6B25 xrRender_R3.dll, CRender::Render(), e:\priquel\sources\engine\layers\xrrenderpc_r3\r3_r_render.cpp, 313
+     <br/>
+     001B:004502E4 xrEngine.exe, IGame_Level::OnRender(), e:\priquel\sources\engine\xrengine\igame_level.cpp, 126
+     <br/>
+     001B:045DB75B xrGame.dll, CLevel::OnRender(), e:\priquel\sources\engine\xrgame\level.cpp, 616
+     <br/>
+     001B:004C90E3 xrEngine.exe, rp_Render(), e:\priquel\sources\engine\xrengine\pure.cpp, 14
+     <br/>
+     001B:004DE679 xrEngine.exe, CRegistrator&lt;pureRender&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004DD6A6 xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 271
+     <br/>
+     001B:004DD932 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DDA4B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C8F2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CF85 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D263 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00557BA2 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:759D3833 kernel32.dll
+     <br/>
+     001B:76E7A9BD ntdll.dll
+     <br/>
+     Бросил болт.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR.rar (2,022,750 bytes)
+     <span class="italic">08 апреля 2008 09:48</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_Виста.log.bz2 (87,142 bytes)
+     <span class="italic">08 апреля 2008 16:22</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="13969" name="13969">
+     <td class="bugnote-public">
+      <span class="small">(0013969)</span>
+      <br/>
+      TetriSZz
+      <br/>
+      <span class="small">08 апреля 2008 16:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">баг повторился на Marsh. лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="13975" name="13975">
+     <td class="bugnote-public">
+      <span class="small">(0013975)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">08 апреля 2008 17:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Неверно назначен шейдер на лод болта или лод болта проэкспортирован как статика.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14298" name="14298">
+     <td class="bugnote-public">
+      <span class="small">(0014298)</span>
+      <br/>
+      Gleb
+      <br/>
+      <span class="small">11 апреля 2008 10:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 09:48</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 09:48</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 09:48</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 09:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 09:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 09:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Igor</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 16:21</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Комментарий добавлен: 13969</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 16:22</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 17:02</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 13975</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 17:02</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt; Yuriy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 17:02</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 17:02</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape e:\priquel\sources\engine\layers\xrrender\../xrRenderDX10/dx10R_Backend_Runtime.h 375 =&gt; Escape e:\\priquel\\sources\\engine\\layers\\xrrender\\../xrRenderDX10/dx10R_Backend_Runtime.h 375</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 17:02</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 апреля 2008 17:38</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 апреля 2008 17:38</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 апреля 2008 09:42</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:00</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Комментарий добавлен: 14298</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 10:00</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 10:00</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape e:\priquel\sources\engine\layers\xrrender\../xrRenderDX10/dx10R_Backend_Runtime.h 375 =&gt; Escape e:\\priquel\\sources\\engine\\layers\\xrrender\\../xrRenderDX10/dx10R_Backend_Runtime.h 375</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 10:00</td>
+     <td class="small-caption">Gleb</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 18:54</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017555: Limansk - m_current_transition - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017554.html">
+      &lt; Прошлое обращение (0017554)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017556.html">
+      Следующее обращение (0017556) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017555</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>01 июля 2008 10:02</td>
+    <td>10 июля 2008 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017555: Limansk - m_current_transition</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">00155674	850.39318848	[3648] FATAL ERROR
+     <br/>
+     00155675	850.39318848	[3648]
+     <br/>
+     00155676	850.39324951	[3648]
+     <br/>
+     00155677	850.39324951	[3648]
+     <br/>
+     00155678	850.39324951	[3648] [error]Expression    : m_current_transition
+     <br/>
+     00155679	850.39324951	[3648]
+     <br/>
+     00155680	850.39331055	[3648] [error]Function      : stalker_movement_manager_smart_cover::current_transition
+     <br/>
+     00155681	850.39331055	[3648]
+     <br/>
+     00155682	850.39331055	[3648] [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover.cpp
+     <br/>
+     00155683	850.39331055	[3648]
+     <br/>
+     00155684	850.39343262	[3648] [error]Line          : 497
+     <br/>
+     00155685	850.39343262	[3648]
+     <br/>
+     00155686	850.39343262	[3648] [error]Description   : [lim_bandit_house_cover_1][lh_4] -&gt; [lim_bandit_house_cover_1][lh_4], [1]
+     <br/>
+     00155687	850.39343262	[3648]
+     <br/>
+     00155688	850.39349365	[3648]
+     <br/>
+     00155689	850.39349365	[3648]
+     <br/>
+     00155690	850.39349365	[3648]
+     <br/>
+     00155691	850.50836182	[3648] stack trace:
+     <br/>
+     00155692	850.50836182	[3648]
+     <br/>
+     00155693	850.50842285	[3648]
+     <br/>
+     00155694	855.64422607	[3648] 001B:1002D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00155695	855.64422607	[3648]
+     <br/>
+     00155696	855.64434814	[3648] 001B:1002E181 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     00155697	855.64434814	[3648]
+     <br/>
+     00155698	855.64440918	[3648] 001B:04C2959C xrGame.dll, stalker_movement_manager_smart_cover::current_transition(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 497
+     <br/>
+     00155699	855.64440918	[3648]
+     <br/>
+     00155700	855.64440918	[3648] 001B:04C3AF01 xrGame.dll, smart_cover::evaluators::can_exit_loophole_with_animation::evaluate(), e:\priquel\sources\engine\xrgame\smart_cover_evaluators.cpp, 230
+     <br/>
+     00155701	855.64447021	[3648]
+     <br/>
+     00155702	855.64447021	[3648] 001B:04932E90 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::evaluate_condition(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 204
+     <br/>
+     00155703	855.64447021	[3648]
+     <br/>
+     00155704	855.64459229	[3648] 001B:04933835 xrGame.dll, COperatorAbstract&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,unsigned short&gt;::applicable&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; const &gt;(), e:\priquel\sources\engine\xrgame\operator_abstract_inline.h, 262
+     <br/>
+     00155705	855.64459229	[3648]
+     <br/>
+     00155706	855.64465332	[3648] 001B:049340BB xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::value(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 235
+     <br/>
+     00155707	855.64465332	[3648]
+     <br/>
+     00155708	855.64465332	[3648] 001B:04934A3E xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 143
+     <br/>
+     00155709	855.64471436	[3648]
+     <br/>
+     00155710	855.64471436	[3648] 001B:04934DDD xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), e:\priquel\sources\engine\xrgame\a_star_inline.h, 252
+     <br/>
+     00155711	855.64483643	[3648]
+     <br/>
+     00155712	855.64483643	[3648] 001B:04935320 xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), e:\priquel\sources\engine\xrgame\graph_engine_inline.h, 211
+     <br/>
+     00155713	855.64483643	[3648]
+     <br/>
+     00155714	855.64489746	[3648] 001B:049356B6 xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), e:\priquel\sources\engine\xrgame\problem_solver_inline.h, 377
+     <br/>
+     00155715	855.64489746	[3648]
+     <br/>
+     00155716	855.64495850	[3648] 001B:04935948 xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 74
+     <br/>
+     00155717	855.64495850	[3648]
+     <br/>
+     00155718	855.64495850	[3648] 001B:04C2F89A xrGame.dll, smart_cover::animation_selector::select_animation(), e:\priquel\sources\engine\xrgame\smart_cover_animation_selector.cpp, 96
+     <br/>
+     00155719	855.64508057	[3648]
+     <br/>
+     00155720	855.64508057	[3648] 001B:04BE08BE xrGame.dll, CStalkerAnimationManager::assign_global_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_global.cpp, 80
+     <br/>
+     00155721	855.64508057	[3648]
+     <br/>
+     00155722	855.64514160	[3648] 001B:04BE6CDC xrGame.dll, CStalkerAnimationManager::play_global(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 165
+     <br/>
+     00155723	855.64514160	[3648]
+     <br/>
+     00155724	855.64514160	[3648] 001B:04BE6E33 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 225
+     <br/>
+     00155725	855.64520264	[3648]
+     <br/>
+     00155726	855.64520264	[3648] 001B:04BE6EDC xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+     <br/>
+     00155727	855.64520264	[3648]
+     <br/>
+     00155728	855.64532471	[3648] 001B:04BD55A2 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+     <br/>
+     00155729	855.64532471	[3648]
+     <br/>
+     00155730	855.64538574	[3648] 001B:04A70994 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+     <br/>
+     00155731	855.64538574	[3648]
+     <br/>
+     00155732	855.64538574	[3648] 001B:052DD600 xrGame.dll, _strlwr()
+     <br/>
+     00155733	855.64538574	[3648]
+     <br/>
+     <br/>
+     Возле дома с пулеметной точкой.
+     <br/>
+     Сразу после выдачи квеста
+     <br/>
+     "Вынести пулеметную точку"</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR.rar (1,340,763 bytes)
+     <span class="italic">01 июля 2008 10:02</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_Виста.rar (259,394 bytes)
+     <span class="italic">01 июля 2008 17:43</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     Limansk.rar (173,706 bytes)
+     <span class="italic">03 июля 2008 17:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGASEVEN.LOG.bz2 (749,680 bytes)
+     <span class="italic">04 июля 2008 11:22</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19413" name="19413">
+     <td class="bugnote-public">
+      <span class="small">(0019413)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">01 июля 2008 17:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось на первой перестрелке. Ревизия 29226</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19578" name="19578">
+     <td class="bugnote-public">
+      <span class="small">(0019578)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">03 июля 2008 17:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился на Лиманске при перестрелке. Билд 29439
+      <br/>
+      <br/>
+      лог -- Limask</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19648" name="19648">
+     <td class="bugnote-public">
+      <span class="small">(0019648)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">04 июля 2008 11:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">лвл_мАрш</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19818" name="19818">
+     <td class="bugnote-public">
+      <span class="small">(0019818)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">07 июля 2008 13:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">17690</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20119" name="20119">
+     <td class="bugnote-public">
+      <span class="small">(0020119)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">09 июля 2008 11:23</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 10:02</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 10:02</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 10:02</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 11:46</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 13:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 13:06</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Aidhz =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 17:43</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Файл добавлен: xray_Виста.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 17:44</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 19413</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 17:21</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: Limansk.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 17:22</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 19578</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 11:22</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: MEGASEVEN.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 11:22</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 19648</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19818</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r29226 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 13:13</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 11:23</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 20119</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 11:23</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 11:23</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 10:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

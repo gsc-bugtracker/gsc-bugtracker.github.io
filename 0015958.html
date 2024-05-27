@@ -1,0 +1,950 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015958: Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015957.html">
+      &lt; Прошлое обращение (0015957)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015959.html">
+      Следующее обращение (0015959) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015958</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>попыток не было</td>
+    <td>15 мая 2008 11:05</td>
+    <td>06 июня 2008 12:21</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r26781</td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015958: Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылет после взятия первого квеста на улучшения (на АКМ) у механика
+     <br/>
+     на квесте с апгрейдом чейзера тоже вылетело - добавил еще лог
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : error handler is invoked!
+     <br/>
+     [error]Function      : invalid_parameter_handler
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+     <br/>
+     [error]Line          : 763
+     <br/>
+     [error]Description   :
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006792A3 xrCore.dll, invalid_parameter_handler(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 777
+     <br/>
+     001B:78132C3D MSVCR80.dll, decode_pointer()</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (187,601 bytes)
+     <span class="italic">15 мая 2008 11:05</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080515-110451.zip (998,426 bytes)
+     <span class="italic">15 мая 2008 11:13</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080515-164515.zip (960,664 bytes)
+     <span class="italic">15 мая 2008 16:49</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (88,475 bytes)
+     <span class="italic">22 мая 2008 10:38</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080523-104414.zip (1,832,337 bytes)
+     <span class="italic">23 мая 2008 10:56</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080523-111801Oposum.zip (1,058,592 bytes)
+     <span class="italic">23 мая 2008 11:32</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2222.zip (3,213,938 bytes)
+     <span class="italic">26 мая 2008 12:17</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>имеет дубликат</nobr></td>
+        <td><a href="0016042.html">
+          0016042
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Distemper</nobr></td>
+        <td>ESCAPE E:\priquel\sources\engine\xrCore\xrDebugNew.cpp 763</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16354" name="16354">
+     <td class="bugnote-public">
+      <span class="small">(0016354)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">15 мая 2008 15:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">причина:
+      <br/>
+      strconcat(sizeof(fn),fn, "characters_voice\\dialogs\\", text, ".ogg");
+      <br/>
+      text=Один из моих друзей-механиков послал ко мне человека, который нес с собой ценную инфор........
+      <br/>
+      а должно быть
+      <br/>
+      esc_find_upgrade_2_text
+      <br/>
+      в диалоге вылетело.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16363" name="16363">
+     <td class="bugnote-public">
+      <span class="small">(0016363)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">15 мая 2008 16:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Летит по прежнему</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16559" name="16559">
+     <td class="bugnote-public">
+      <span class="small">(0016559)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">19 мая 2008 16:08</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не исправлен в 25441.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16656" name="16656">
+     <td class="bugnote-public">
+      <span class="small">(0016656)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">20 мая 2008 13:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">должно работать.... (на бинах после 20 мая)
+      <br/>
+      при любом вылете - сохранять дамп!
+      <br/>
+      без дампа - смысла в логе нет... :(</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16661" name="16661">
+     <td class="bugnote-public">
+      <span class="small">(0016661)</span>
+      <br/>
+      Distemper
+      <br/>
+      <span class="small">20 мая 2008 14:55</span>
+      <br/>
+      <span class="small">отредактирован:  20 мая 2008 14:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">тестил сегодня полсе обеда, всё починилось. проверяйте.
+      <br/>
+      <br/>
+      отредактирован: 20.05.08 14:55</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16765" name="16765">
+     <td class="bugnote-public">
+      <span class="small">(0016765)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">22 мая 2008 10:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось.....На Марше, сразу после бага
+      <a href="http://tiger/bugz/view.php">
+       http://tiger/bugz/view.php
+      </a>
+      ?id=16223 мне кажеться это из за него
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : error handler is invoked!
+      <br/>
+      [error]Function      : invalid_parameter_handler
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+      <br/>
+      [error]Line          : 763
+      <br/>
+      [error]Description   :
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678C16 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006793E3 xrCore.dll, invalid_parameter_handler(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 777
+      <br/>
+      001B:78132C3D MSVCR80.dll, decode_pointer()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16767" name="16767">
+     <td class="bugnote-public">
+      <span class="small">(0016767)</span>
+      <br/>
+      Distemper
+      <br/>
+      <span class="small">22 мая 2008 11:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Можно уточнить:
+      <br/>
+      1) На марше разве есть квест на улучшения у механика?
+      <br/>
+      2) Что написано в баге ID 16223 (у меня доступ запрещен)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16802" name="16802">
+     <td class="bugnote-public">
+      <span class="small">(0016802)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">23 мая 2008 10:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело на маршах, после того как я снял паузу.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16808" name="16808">
+     <td class="bugnote-public">
+      <span class="small">(0016808)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">23 мая 2008 11:05</span>
+      <br/>
+      <span class="small">отредактирован:  23 мая 2008 11:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Conrack (23.05.08 10:56), это, может быть, и по другой причине вылетает,
+      <br/>
+      ещё раз повторите - прикрепите новый дамп - я посмотрю,
+      <br/>
+      и пишите номер ревизии для каждого нового дампа.
+      <br/>
+      <br/>
+      отредактирован: 23.05.08 11:09</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16809" name="16809">
+     <td class="bugnote-public">
+      <span class="small">(0016809)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">23 мая 2008 11:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился,25943,добавил дамп.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16851" name="16851">
+     <td class="bugnote-public">
+      <span class="small">(0016851)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">26 мая 2008 12:17</span>
+      <br/>
+      <span class="small">отредактирован:  26 мая 2008 12:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2) Что написано в баге ID 16223 (у меня доступ запрещен)- не важно
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : error handler is invoked!
+      <br/>
+      [error]Function      : invalid_parameter_handler
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\xrDebugNew.cpp
+      <br/>
+      [error]Line          : 763
+      <br/>
+      [error]Description   :
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678C16 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006793E3 xrCore.dll, invalid_parameter_handler(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 777
+      <br/>
+      001B:78132C3D MSVCR80.dll, decode_pointer()
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      <br/>
+      в логе будет немного понятней
+      <br/>
+      <br/>
+      отредактирован: 26.05.08 12:18</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17256" name="17256">
+     <td class="bugnote-public">
+      <span class="small">(0017256)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">30 мая 2008 11:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не должно больше такого повторяться,
+      <br/>
+      это был глюк со строками (strconcat).</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17360" name="17360">
+     <td class="bugnote-public">
+      <span class="small">(0017360)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">02 июня 2008 10:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 11:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 11:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 11:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 11:12</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763 =&gt; Escape - invalid_parameter_handler - \\priquel\\sources\\engine\\xrCore\\xrDebugNew.cpp 763</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 11:12</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 11:13</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080515-110451.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 12:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 12:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 12:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 15:47</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 16354</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 15:47</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Distemper</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 16:49</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 16363</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 16:49</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080515-164515.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 17:42</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Distemper =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 18:57</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 18:57</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 11:17</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">имеет дубликат 0016042</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 16:08</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 16559</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 09:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 09:11</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">исправлен =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 13:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 16656</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 13:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 13:07</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 14:55</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Комментарий добавлен: 16661</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 14:55</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Комментарий отредактирован: 16661</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 10:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16765</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 мая 2008 10:38</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 10:58</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Distemper</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 мая 2008 11:07</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Комментарий добавлен: 16767</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 10:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 16802</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 мая 2008 10:56</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080523-104414.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 11:05</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 16808</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 мая 2008 11:09</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий отредактирован: 16808</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 11:31</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16809</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 мая 2008 11:32</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080523-111801Oposum.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 11:49</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Distemper =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; важный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">значительный =&gt; авария</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r25077 =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763 =&gt; Escape - invalid_parameter_handler - \\priquel\\sources\\engine\\xrCore\\xrDebugNew.cpp 763</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763 =&gt; Escape - invalid_parameter_handler - \\priquel\\sources\\engine\\xrCore\\xrDebugNew.cpp 763</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 11:07</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 12:17</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16851</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 12:17</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2222.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 12:18</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 16851</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 11:02</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 мая 2008 11:02</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 мая 2008 11:02</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 17256</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 17360</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r26781</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июня 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Escape - invalid_parameter_handler - \priquel\sources\engine\xrCore\xrDebugNew.cpp 763 =&gt; Escape - invalid_parameter_handler - \\priquel\\sources\\engine\\xrCore\\xrDebugNew.cpp 763</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июня 2008 10:16</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 12:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

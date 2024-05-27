@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015872: Agroprom Underground Опыть вылет (Pos&lt;=Size) &amp;&amp; (Pos&gt;=0) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015871.html">
+      &lt; Прошлое обращение (0015871)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015873.html">
+      Следующее обращение (0015873) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015872</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>13 мая 2008 15:46</td>
+    <td>10 октября 2008 11:23</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Bandicoot</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>13 мая 2008 00:00</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015872: Agroprom Underground Опыть вылет (Pos&lt;=Size) &amp;&amp; (Pos&gt;=0)</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Взял новые бины и вылетело.
+     <br/>
+     <br/>
+     LUA] xr_logic:(1439):load_obj: ini_filename='яВ†Б~бБ?З­ Г
+     <br/>
+     ho'
+     <br/>
+     [LUA] xr_logic:(1440):load_obj: section_logic='YБм*Q'
+     <br/>
+     [LUA] xr_logic:(1441):load_obj: active_section='nil'
+     <br/>
+     [LUA] xr_logic:(1443):load_obj: gulag_name='&lt;nil&gt;'
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : IReader::r
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+     <br/>
+     [error]Line          : 362
+     <br/>
+     [error]Description   : Pos+cnt&lt;=Size
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:00663B0E xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 363
+     <br/>
+     001B:0065531D xrCore.dll, IReaderBase&lt;IReader&gt;::r_s32(), e:\priquel\sources\engine\xrcore\fs.h, 150
+     <br/>
+     001B:02EC4136 xrGame.dll, luabind::detail::returns&lt;int&gt;::call&lt;IReader,IReader,luabind::detail::null_type&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 161
+     <br/>
+     001B:02EC5FAD xrGame.dll, luabind::detail::mem_fn_callback&lt;int (__thiscall IReader::*)(void),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:02EC6E13 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;int (__thiscall IReader::*)(void),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : IReader::advance
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\FS.h
+     <br/>
+     [error]Line          : 265
+     <br/>
+     [error]Description   : (Pos&lt;=Size) &amp;&amp; (Pos&gt;=0)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:00663B5E xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 366
+     <br/>
+     001B:0065531D xrCore.dll, IReaderBase&lt;IReader&gt;::r_s32(), e:\priquel\sources\engine\xrcore\fs.h, 150
+     <br/>
+     001B:02EC4136 xrGame.dll, luabind::detail::returns&lt;int&gt;::call&lt;IReader,IReader,luabind::detail::null_type&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 161
+     <br/>
+     001B:02EC5FAD xrGame.dll, luabind::detail::mem_fn_callback&lt;int (__thiscall IReader::*)(void),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:02EC6E13 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;int (__thiscall IReader::*)(void),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00999069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00997248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_uzercheg.log.bz2 (260,068 bytes)
+     <span class="italic">13 мая 2008 15:46</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red_forest_save.zip (4,403,739 bytes)
+     <span class="italic">11 июня 2008 17:39</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080718-120929.zip (5,361,748 bytes)
+     <span class="italic">18 июля 2008 12:43</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16182" name="16182">
+     <td class="bugnote-public">
+      <span class="small">(0016182)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">13 мая 2008 19:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] xr_logic:(437):_bp: reset_generic_schemes_on_scheme_switch: npc:name()='kat_physic_object_0015'
+      <br/>
+      [LUA] xr_logic:(388):_bp: calling module('ph_door')
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\ph_door.script(34) : ?
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\xr_logic.script(548) : issue_event
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\xr_logic.script(422) : activate_by_section
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_logic.script(1484) : initialize_obj
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\bind_physic_object.script(66) :
+      <br/>
+      ! [LUA] gamedata\scripts\ph_door.script:34: attempt to index field 'joint' (a nil value)
+      <br/>
+      Destroying binded object kat_physic_object_0015
+      <br/>
+      <br/>
+      очень подозреваю, что ошибка в модели физобъекта, который стоит на уровне под именем kat_physic_object_0015
+      <br/>
+      <br/>
+      советую посмотреть что это за объект и подойти к Угрюмому.
+      <br/>
+      <br/>
+      Или второй вариант,это вообще не дверь и не должна быть дверью, но какого то хрена в нем прописана логика двери (проверить на уровне)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17926" name="17926">
+     <td class="bugnote-public">
+      <span class="small">(0017926)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">11 июня 2008 17:37</span>
+      <br/>
+      <span class="small">отредактирован:  11 июня 2008 17:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">при загрузке сейва на red forest,в шахте(билд 11.06.08):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : IReader::r
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrCore\FS.cpp
+      <br/>
+      [error]Line          : 362
+      <br/>
+      [error]Description   : Pos+cnt&lt;=Size
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0076D206 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0076D417 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:007578AE xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 363
+      <br/>
+      001B:0363F962 xrGame.dll, r_bool(), e:\priquel\sources\engine\xrserverentities\script_reader_script.cpp, 28
+      <br/>
+      001B:03641EAD xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;IReader,luabind::detail::null_type,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+      <br/>
+      001B:03643DF7 xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:03644242 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00E39219 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00E37EF4 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : IReader::advance
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\FS.h
+      <br/>
+      [error]Line          : 265
+      <br/>
+      [error]Description   : (Pos&lt;=Size) &amp;&amp; (Pos&gt;=0)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0076D206 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0076D417 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:007578FE xrCore.dll, IReader::r(), e:\priquel\sources\engine\xrcore\fs.cpp, 366
+      <br/>
+      001B:0363F962 xrGame.dll, r_bool(), e:\priquel\sources\engine\xrserverentities\script_reader_script.cpp, 28
+      <br/>
+      001B:03641EAD xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;IReader,luabind::detail::null_type,IReader *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+      <br/>
+      001B:03643DF7 xrGame.dll, luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:03644242 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__cdecl*)(IReader *),IReader,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:00E39219 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00E37EF4 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      отредактирован: 11.06.08 17:38</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21026" name="21026">
+     <td class="bugnote-public">
+      <span class="small">(0021026)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">18 июля 2008 12:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">При переходе с Лиманска на Госпиталь.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 мая 2008 15:46</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 мая 2008 15:46</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Файл добавлен: xray_uzercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 мая 2008 15:52</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Igor =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 мая 2008 19:57</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 16182</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 мая 2008 19:57</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 мая 2008 14:51</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 мая 2008 14:51</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:37</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17926</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 17:38</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 17926</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июня 2008 17:39</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red_forest_save.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 14:42</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 14:42</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июля 2008 12:43</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080718-120929.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июля 2008 12:44</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 21026</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 октября 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

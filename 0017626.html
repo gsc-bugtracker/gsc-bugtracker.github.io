@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017626: Limansk - stalker_movement_manager_smart_cover::next_loophole_id - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017625.html">
+      &lt; Прошлое обращение (0017625)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017627.html">
+      Следующее обращение (0017627) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017626</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>03 июля 2008 10:10</td>
+    <td>03 июля 2008 11:09</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r29439</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017626: Limansk - stalker_movement_manager_smart_cover::next_loophole_id</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">00215810	1100.02172852	[3276] FATAL ERROR
+     <br/>
+     00215811	1100.02172852	[3276]
+     <br/>
+     00215812	1100.02185059	[3276]
+     <br/>
+     00215813	1100.02209473	[3276]
+     <br/>
+     00215814	1100.02209473	[3276] [error]Expression    : m_current.cover()
+     <br/>
+     00215815	1100.02209473	[3276]
+     <br/>
+     00215816	1100.02221680	[3276] [error]Function      : stalker_movement_manager_smart_cover::next_loophole_id
+     <br/>
+     00215817	1100.02233887	[3276]
+     <br/>
+     00215818	1100.02233887	[3276] [error]File          : E:\priquel\sources\engine\xrGame\stalker_movement_manager_smart_cover_loopholes.cpp
+     <br/>
+     00215819	1100.02233887	[3276]
+     <br/>
+     00215820	1100.02233887	[3276] [error]Line          : 368
+     <br/>
+     00215821	1100.02246094	[3276]
+     <br/>
+     00215822	1100.02246094	[3276] [error]Description   : [&lt;world&gt;][&lt;no loophole&gt;] -&gt; [lim_smart_terrain_3_to_lim_smart_terrain_2_patrol_1_wait_1_smartcover][lh_2], [2]
+     <br/>
+     00215823	1100.02246094	[3276]
+     <br/>
+     00215824	1100.02258301	[3276]
+     <br/>
+     00215825	1100.02258301	[3276]
+     <br/>
+     00215826	1100.03698730	[3276]
+     <br/>
+     00215827	1100.21728516	[3276] stack trace:
+     <br/>
+     00215828	1100.21765137	[3276]
+     <br/>
+     00215829	1100.21777344	[3276]
+     <br/>
+     00215830	1103.93981934	[3276] 001B:1002D736 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     00215831	1103.93981934	[3276]
+     <br/>
+     00215832	1103.93994141	[3276] 001B:1002E301 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     00215833	1103.93994141	[3276]
+     <br/>
+     00215834	1103.94006348	[3276] 001B:02B8E5A7 xrGame.dll, stalker_movement_manager_smart_cover::next_loophole_id(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 368
+     <br/>
+     00215835	1103.94006348	[3276]
+     <br/>
+     00215836	1103.94006348	[3276] 001B:02B8EC8D xrGame.dll, stalker_movement_manager_smart_cover::non_animated_change_loophole(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover_loopholes.cpp, 429
+     <br/>
+     00215837	1103.94018555	[3276]
+     <br/>
+     00215838	1103.94018555	[3276] 001B:02B8A7EB xrGame.dll, stalker_movement_manager_smart_cover::update(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_smart_cover.cpp, 89
+     <br/>
+     00215839	1103.94030762	[3276]
+     <br/>
+     00215840	1103.94030762	[3276] 001B:02B36AFB xrGame.dll, CAI_Stalker::Think(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 948
+     <br/>
+     00215841	1103.94030762	[3276]
+     <br/>
+     00215842	1103.94030762	[3276] 001B:02B3C27D xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 814
+     <br/>
+     00215843	1103.94042969	[3276]
+     <br/>
+     00215844	1103.94055176	[3276] 001B:00426D61 xrEngine.exe, stlp_std::reverse_iterator&lt;collide::rq_result *&gt;::reverse_iterator&lt;collide::rq_result *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 65
+     <br/>
+     00215845	1103.94055176	[3276]
+     <br/>
+     00215846	1103.94055176	[3276] 001B:0042748F xrEngine.exe, xr_new&lt;CInput,int&gt;()
+     <br/>
+     00215847	1103.94067383	[3276]
+     <br/>
+     00215848	1103.94067383	[3276] 001B:02D190B5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 549
+     <br/>
+     00215849	1103.94067383	[3276]
+     <br/>
+     00215850	1103.94079590	[3276] 001B:00498553 xrEngine.exe, CDemoRecord::CDemoRecord(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 106
+     <br/>
+     00215851	1103.94091797	[3276]
+     <br/>
+     00215852	1103.94091797	[3276] 001B:77F28A51 GDI32.dll
+     <br/>
+     <br/>
+     При перестрелке в доме с пулеметной точкой.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGASIX.rar (1,856,046 bytes)
+     <span class="italic">03 июля 2008 10:10</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: MEGASIX.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 11:09</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

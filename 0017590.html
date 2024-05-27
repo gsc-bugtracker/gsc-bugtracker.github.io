@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017590: Уязвимость Сталкера - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017589.html">
+      &lt; Прошлое обращение (0017589)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017591.html">
+      Следующее обращение (0017591) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017590</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>02 июля 2008 10:28</td>
+    <td>19 августа 2008 09:57</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017590: Уязвимость Сталкера</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Luigi Auriemma сообщил о некоторой уязвимости в S.T.A.L.K.E.R.: Тень Chernobyl, который может эксплуатироваться злонамеренными людьми, чтобы вызвать ДОС (Опровержение Обслуживания) или поставить под угрозу уязвимую систему.
+     <br/>
+     <br/>
+     <a href="http://secunia.com/advisories/30891/">
+      http://secunia.com/advisories/30891/
+      <br/>
+      <br/>
+      <br/>
+      1) Граничная ошибка в пределах MultipacketReciever:: RecievePacket () может эксплуатироваться, чтобы вызвать основанное на стеке буферное переполнение через особенно обработанный пакет с 0x39 как первый байт.
+      <br/>
+      <br/>
+      Успешная эксплуатация позволяет выполнение произвольного кодекса.
+      <br/>
+      <br/>
+      2) Входная ошибка ратификации в пределах NET_Compressor:: Развертывает (), может эксплуатироваться, чтобы вызвать буферное переполнение через особенно обработанный пакет, содержащий байт 0xc1.
+      <br/>
+      <br/>
+      3) Ошибка в пределах MultipacketReciever:: RecievePacket () может эксплуатироваться, чтобы заставить сервер заканчиваться через особенно обработанный пакет.
+      <br/>
+      <br/>
+      Об уязвимости сообщают в версии 1.0006. Другие версии могут также быть затронуты.
+      <br/>
+      <br/>
+      Решение:
+      <br/>
+      Использование в окружающей среде сети, которой доверяют, только.
+      <br/>
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/htmlicon.gif" width="16"/>
+     S.T.A.L.K.E.R._ Shadow of Chernobyl Multiple Vulnerabilities - Advisories - Secunia.htm (26,453 bytes)
+     <span class="italic">02 июля 2008 10:28</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19464" name="19464">
+     <td class="bugnote-public">
+      <span class="small">(0019464)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">02 июля 2008 13:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public"><a href="http://aluigi.altervista.org/adv/stalker39x-adv.txt">
+       http://aluigi.altervista.org/adv/stalker39x-adv.txt
+      </a></td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19469" name="19469">
+     <td class="bugnote-public">
+      <span class="small">(0019469)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">02 июля 2008 14:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">исправлено в приквеле, надо ещё исправить в оригинальном сталкере</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19470" name="19470">
+     <td class="bugnote-public">
+      <span class="small">(0019470)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">02 июля 2008 14:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">и просьба: не переводите английский текст автоматическим переводчиком - невохможно понять что имелось в виду</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21689" name="21689">
+     <td class="bugnote-public">
+      <span class="small">(0021689)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">19 августа 2008 09:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 10:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 10:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: S.T.A.L.K.E.R._ Shadow of Chernobyl Multiple Vulnerabilities - Advisories - Secunia.htm</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 13:01</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19464</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 14:52</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 14:52</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 14:52</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19469</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">02 июля 2008 14:53</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 19470</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 августа 2008 09:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 августа 2008 09:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 21689</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

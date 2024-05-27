@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016388: Stancia_2 - креш в самом начале игры - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016387.html">
+      &lt; Прошлое обращение (0016387)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016389.html">
+      Следующее обращение (0016389) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016388</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>авария</td>
+    <td>всегда</td>
+    <td>28 мая 2008 17:29</td>
+    <td>28 мая 2008 17:37</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Robo</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r26374</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016388: Stancia_2 - креш в самом начале игры</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Если в самом начале игры(после заставки) сделать несколько шагов, то выбивает креш
+     <br/>
+     <br/>
+     <br/>
+     [512] FATAL ERROR
+     <br/>
+     [512]
+     <br/>
+     [512] [error]Expression    : fatal error
+     <br/>
+     [512] [error]Function      : CObjectAnimator::LoadMotions
+     <br/>
+     [512] [error]File          : E:\priquel\sources\engine\xrEngine\ObjectAnimator.cpp
+     <br/>
+     [512] [error]Line          : 46
+     <br/>
+     [512] [error]Description   : &lt;no expression&gt;
+     <br/>
+     [512] [error]Arguments     : Can't find motion file 'camera_effects\scenario_cam\stc_hint_cam.anm'.
+     <br/>
+     [512]
+     <br/>
+     [512]
+     <br/>
+     [512] stack trace:
+     <br/>
+     [512]
+     <br/>
+     [512] 001B:006796A6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     [512] 001B:006799E6 xrCore.dll, xrDebug::fatal(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 303
+     <br/>
+     [512] 001B:006679F7 xrCore.dll, CLocatorAPI::exist(), e:\priquel\sources\engine\xrcore\locatorapi.cpp, 764
+     <br/>
+     [512] 001B:00678F83 xrCore.dll, xrMemory::mem_alloc(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.cpp, 121
+     <br/>
+     [512] 001B:0067908C xrCore.dll, xrMemory::mem_realloc(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.cpp, 189
+     <br/>
+     [512] 001B:0067DAB3 xrCore.dll, memory_monitor::monitor_free(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 106
+     <br/>
+     [512] 001B:00684ED9 xrCore.dll, xrCriticalSection::Leave(), e:\priquel\sources\engine\xrcore\xrsyncronize.cpp, 70
+     <br/>
+     [512] 001B:0067902B xrCore.dll, xrMemory::mem_free(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.cpp, 158
+     <br/>
+     [512] 001B:0098BCA1 xrLUA.dll, rehash(), e:\priquel\sources\engine\xrlua\src\ltable.c, 345
+     <br/>
+     [512] 001B:02F556A3 xrGame.dll, luabind::detail::free_functions::match_function_callback_s&lt;float (__cdecl*)(char const *,int,bool,char const *),luabind::detail::null_type&gt;::apply(), e:\priquel\sources\sdk\include\luabind\function.hpp, 181
+     <br/>
+     [512] 001B:02AA253A xrGame.dll, boost::detail::function::function_invoker1&lt;int (__cdecl*)(lua_State *),int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 84
+     <br/>
+     [512] 001B:00999039 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     [512] 001B:02F54B07 xrGame.dll, luabind::detail::free_functions::returns&lt;float&gt;::call&lt;luabind::detail::null_type,char const *,int,bool,char const *&gt;(), e:\priquel\sources\sdk\include\luabind\function.hpp, 351
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     [512] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     ЧАЭС.zip (769,678 bytes)
+     <span class="italic">28 мая 2008 17:29</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="17081" name="17081">
+     <td class="bugnote-public">
+      <span class="small">(0017081)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">28 мая 2008 17:37</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Я его закрываю - пока просто не готова анимация для камеры</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 17:29</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 17:29</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 17:29</td>
+     <td class="small-caption">Robo</td>
+     <td class="small-caption">Файл добавлен: ЧАЭС.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 17:37</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 17:37</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 17081</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

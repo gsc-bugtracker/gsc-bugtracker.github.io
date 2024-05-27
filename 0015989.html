@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015989: AGROPROM  ! [LUA] CAI_Stalker : [sim_default_duty_019273] set_desired_direction - you passed non-normalized direction! - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015988.html">
+      &lt; Прошлое обращение (0015988)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015990.html">
+      Следующее обращение (0015990) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015989</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>16 мая 2008 09:27</td>
+    <td>06 июня 2008 12:20</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r25217</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015989: AGROPROM  ! [LUA] CAI_Stalker : [sim_default_duty_019273] set_desired_direction - you passed non-normalized direction!</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">LUA] bloodsucker_reaction:(48):for npc[sim_default_duty_019273] vertex [290062] position [163.79998779297:0.50420761108398:-4.1999816894531]
+     <br/>
+     [LUA] bloodsucker_reaction:(57):desired_direction = [0:0:-2]
+     <br/>
+     ! [LUA] CAI_Stalker : [sim_default_duty_019273] set_desired_direction - you passed non-normalized direction!
+     <br/>
+     ! [LUA]  0 : [C  ] set_desired_direction
+     <br/>
+     ! [LUA]  1 : [Lua] gamedata\scripts\bloodsucker_reaction.script(58) : set_random_position
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\bloodsucker_reaction.script(29) :
+     <br/>
+     <br/>
+     Cледовал с групой долговцев которие направлялись на базу.
+     <br/>
+     Сцена появления Снорка.Вылетели скрипты за ними игра оборвалась на креше
+     <br/>
+     [LUA] sr_bloodsucker:(491):reaction_manager:update()
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CLevelGraph::inside
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\level_graph_inline.h
+     <br/>
+     [error]Line          : 201
+     <br/>
+     [error]Description   : pxz &lt; (1 &lt;&lt; MAX_NODE_BIT_COUNT) - 1
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02D15423 xrGame.dll, CLevelGraph::inside(), e:\priquel\sources\engine\xrgame\level_graph_inline.h, 201
+     <br/>
+     001B:02D152EE xrGame.dll, CLevelGraph::check_position_in_direction(), e:\priquel\sources\engine\xrgame\level_graph_vertex_inline.h, 626
+     <br/>
+     001B:02D15291 xrGame.dll, CLevelGraph::check_position_in_direction(), e:\priquel\sources\engine\xrgame\level_graph_vertex_inline.h, 641
+     <br/>
+     001B:030F00E0 xrGame.dll, CStateGroupAttackRun&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_run_inline.h, 123
+     <br/>
+     001B:030E3818 xrGame.dll, CStateGroupAttack&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_inline.h, 306
+     <br/>
+     001B:030DF135 xrGame.dll, CStateManagerDog::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog_state_manager.cpp, 84
+     <br/>
+     001B:030E051D xrGame.dll, CMonsterStateManager&lt;CAI_Dog&gt;::update(), e:\priquel\sources\engine\xrgame\ai\monsters\monster_state_manager_inline.h, 36
+     <br/>
+     001B:02F3378C xrGame.dll, CBaseMonster::update_fsm(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 43
+     <br/>
+     001B:02F33682 xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 35
+     <br/>
+     001B:02EF79FD xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 356
+     <br/>
+     001B:02F13B90 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 145
+     <br/>
+     001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:0359AD45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:00499D73 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AD5D9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004ACD58 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 449
+     <br/>
+     001B:004ACCF4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 440
+     <br/>
+     001B:004ABD1A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 244
+     <br/>
+     001B:004AC932 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 361
+     <br/>
+     001B:004ACA4B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 397
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515872 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (444,927 bytes)
+     <span class="italic">16 мая 2008 09:27</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (104,778 bytes)
+     <span class="italic">16 мая 2008 12:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080516-120759g.zip (802,675 bytes)
+     <span class="italic">16 мая 2008 12:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (409,471 bytes)
+     <span class="italic">20 мая 2008 12:36</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16415" name="16415">
+     <td class="bugnote-public">
+      <span class="small">(0016415)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">16 мая 2008 12:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Выпал скрипт когда я не дождался появления снорка, просто получив квест "Встретиться с лидером Долга" напрвился к нему
+      <br/>
+      <br/>
+      [LUA] bloodsucker_reaction:(48):for npc[sim_default_duty_019289] vertex [293457] position [168:0.49932956695557:-4.1999816894531]
+      <br/>
+      [LUA] bloodsucker_reaction:(57):desired_direction = [8:0:-2]
+      <br/>
+      ! [LUA] CAI_Stalker : [sim_default_duty_019289] set_desired_direction - you passed non-normalized direction!
+      <br/>
+      ! [LUA]  0 : [C  ] set_desired_direction
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\bloodsucker_reaction.script(58) : set_random_position
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\bloodsucker_reaction.script(29) :</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16417" name="16417">
+     <td class="bugnote-public">
+      <span class="small">(0016417)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">16 мая 2008 12:21</span>
+      <br/>
+      <span class="small">отредактирован:  16 мая 2008 12:21</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CLevelGraph::inside
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\level_graph_inline.h
+      <br/>
+      [error]Line          : 201
+      <br/>
+      [error]Description   : pxz &lt; (1 &lt;&lt; MAX_NODE_BIT_COUNT) - 1
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00678CE7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02C45423 xrGame.dll, CLevelGraph::inside(), e:\priquel\sources\engine\xrgame\level_graph_inline.h, 201
+      <br/>
+      001B:02C452EE xrGame.dll, CLevelGraph::check_position_in_direction(), e:\priquel\sources\engine\xrgame\level_graph_vertex_inline.h, 626
+      <br/>
+      001B:02C45291 xrGame.dll, CLevelGraph::check_position_in_direction(), e:\priquel\sources\engine\xrgame\level_graph_vertex_inline.h, 641
+      <br/>
+      001B:030200E0 xrGame.dll, CStateGroupAttackRun&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_run_inline.h, 123
+      <br/>
+      001B:03013818 xrGame.dll, CStateGroupAttack&lt;CAI_Dog&gt;::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\group_states\group_state_attack_inline.h, 306
+      <br/>
+      001B:0300F135 xrGame.dll, CStateManagerDog::execute(), e:\priquel\sources\engine\xrgame\ai\monsters\dog\dog_state_manager.cpp, 84
+      <br/>
+      001B:0301051D xrGame.dll, CMonsterStateManager&lt;CAI_Dog&gt;::update(), e:\priquel\sources\engine\xrgame\ai\monsters\monster_state_manager_inline.h, 36
+      <br/>
+      001B:02E6378C xrGame.dll, CBaseMonster::update_fsm(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 43
+      <br/>
+      001B:02E63682 xrGame.dll, CBaseMonster::Think(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster_think.cpp, 35
+      <br/>
+      001B:02E279FD xrGame.dll, CCustomMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 356
+      <br/>
+      001B:02E43B90 xrGame.dll, CBaseMonster::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\monsters\basemonster\base_monster.cpp, 145
+      <br/>
+      001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+      <br/>
+      001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+      <br/>
+      001B:034CAD45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+      <br/>
+      001B:00499D73 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AD5D9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004ACD58 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 449
+      <br/>
+      001B:004ACCF4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 440
+      <br/>
+      001B:004ABD1A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 244
+      <br/>
+      001B:004AC932 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 361
+      <br/>
+      001B:004ACA4B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 397
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:00515872 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+      <br/>
+      ---CRenderDevice::OnWM_Activate 22
+      <br/>
+      ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+      <br/>
+      <br/>
+      на Darkvalley + log
+      <br/>
+      <br/>
+      отредактирован: 16.05.08 12:21</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16648" name="16648">
+     <td class="bugnote-public">
+      <span class="small">(0016648)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">20 мая 2008 12:36</span>
+      <br/>
+      <span class="small">отредактирован:  20 мая 2008 12:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] bloodsucker_reaction:(48):for npc[sim_default_duty_119423] vertex [289946] position [163.79998779297:0.48518323898315:1.3999938964844]
+      <br/>
+      [LUA] bloodsucker_reaction:(57):desired_direction = [1:0:4]
+      <br/>
+      ! [LUA] CAI_Stalker : [sim_default_duty_119423] set_desired_direction - you passed non-normalized direction!
+      <br/>
+      ! [LUA]  0 : [C  ] set_desired_direction
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\bloodsucker_reaction.script(58) : set_random_position
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\bloodsucker_reaction.script(29) :
+      <br/>
+      <br/>
+      Агропром
+      <br/>
+      <br/>
+      отредактирован: 20.05.08 12:36</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:27</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">ESCAPE File          : E:\priquel\sources\engine\xrGame\alife_spawn_registry.cpp   Line          : 86 =&gt;  File      Delete Bug</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:42</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">File      Delete Bug =&gt; AGROPROM  ! [LUA] CAI_Stalker : [sim_default_duty_019273] set_desired_direction - you passed non-normalized direction!</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:42</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:43</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 10:17</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 10:50</td>
+     <td class="small-caption">Bandicoot</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:10</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16415</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 12:10</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:21</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16417</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 12:21</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий отредактирован: 16417</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:21</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080516-120759g.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 12:36</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 16648</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 мая 2008 12:36</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 мая 2008 12:36</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 16648</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 15:46</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 мая 2008 15:46</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 16:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 13:24</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 13:24</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 12:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

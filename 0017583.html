@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017583: Hospital - E:\priquel\sources\engine\xrGame\object_actions.cpp - 191 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017582.html">
+      &lt; Прошлое обращение (0017582)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017584.html">
+      Следующее обращение (0017584) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017583</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>случайно</td>
+    <td>01 июля 2008 18:12</td>
+    <td>08 июля 2008 14:35</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Chips</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017583: Hospital - E:\priquel\sources\engine\xrGame\object_actions.cpp - 191</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CObjectActionReload::execute
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\object_actions.cpp
+     <br/>
+     [error]Line          : 191
+     <br/>
+     [error]Description   : weapon-&gt;GetAmmoMagSize() &gt;= weapon-&gt;GetAmmoElapsed()
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     001B:1002D6C6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:1002D8D7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+     <br/>
+     001B:02909F69 xrGame.dll, CObjectActionReload::execute(), e:\priquel\sources\engine\xrgame\object_actions.cpp, 192
+     <br/>
+     001B:02902271 xrGame.dll, CActionPlanner&lt;CAI_Stalker,1,CActionBase&lt;CAI_Stalker&gt;,CPropertyEvaluator&lt;CAI_Stalker&gt;,CActionBase&lt;CAI_Stalker&gt; *,CPropertyEvaluator&lt;CAI_Stalker&gt; *&gt;::update(), e:\priquel\sources\engine\xrgame\action_planner_inline.h, 116
+     <br/>
+     001B:028FCEEE xrGame.dll, CObjectHandler::update(), e:\priquel\sources\engine\xrgame\object_handler.cpp, 139
+     <br/>
+     001B:02B553B8 xrGame.dll, CAI_Stalker::update_object_handler(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 623
+     <br/>
+     001B:02B5B4B5 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 668
+     <br/>
+     001B:0043E80B xrEngine.exe, CTextConsole::operator=()
+     <br/>
+     001B:781590E5 MSVCR80.dll, _RTCastToVoid()
+     <br/>
+     001B:0043E7D5 xrEngine.exe, poolSS&lt;ISpatial_NODE,128&gt;::poolSS&lt;ISpatial_NODE,128&gt;()
+     <br/>
+     <br/>
+     Тестил новые бины (17:30, 01.07.08). Прыгал по уровням, иногда немного пробегался по ним (hosp&gt;esc&gt;agr&gt;gar&gt;&gt;red_f&gt; hosp). На Агропроме проапгрейдил дробовик и первый броник, может быть что-то еще. Прыгал на другие левелы, потом на Госпиталь. После загрузки уровня сразу выпал креш. Повторить не удалось.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080701-174242.zip (1,869,325 bytes)
+     <span class="italic">01 июля 2008 18:12</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>дубликат</nobr></td>
+        <td><a href="0017468.html">
+          0017468
+         </a></td>
+        <td><a title="дубликат">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Sea</nobr></td>
+        <td>build 26.06.08 ESCAPE После сейв-лоад слитают апдейты на AK 74/2</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19566" name="19566">
+     <td class="bugnote-public">
+      <span class="small">(0019566)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">03 июля 2008 16:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">баг такой:
+      <br/>
+      1) апргрейдить автомат, магазин 30 =&gt; 45 патронов
+      <br/>
+      2) перед переходом на другой уровень (или save-load) сделать так, чтобы в автомате было 45 патронов.
+      <br/>
+      3) перейти на другой уровень
+      <br/>
+      4) если апргрейды не загрузились, то этот автомат будет иметь размер магазина=30, а пуль в данный момент у него будет 45.
+      <br/>
+      5) получится краш (текущий).
+      <br/>
+      ---
+      <br/>
+      баг заключается в том, что не загрузились апгрейды.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19677" name="19677">
+     <td class="bugnote-public">
+      <span class="small">(0019677)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">04 июля 2008 13:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сюда ничего не писать :)
+      <br/>
+      писать в баг 17468.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 18:12</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 18:12</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 18:12</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080701-174242.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 18:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 18:50</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 19:04</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">02 июля 2008 14:55</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Sea</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 16:49</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">дубликат 0017468</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 16:56</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 19566</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 13:09</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 19677</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 13:11</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">ID дубликата</td>
+     <td class="small-caption">0 =&gt; 17468</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 13:11</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 13:11</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:22</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 июля 2008 14:35</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

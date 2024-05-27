@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016947: build 13.06.08 YANTAR [LUA] dialogs:(2):check for allow_break_dialog for object [sim_default_stalker_218719] with clsid [35] - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016946.html">
+      &lt; Прошлое обращение (0016946)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016948.html">
+      Следующее обращение (0016948) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016947</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>13 июня 2008 18:09</td>
+    <td>07 июля 2008 13:53</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Hein</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016947: build 13.06.08 YANTAR [LUA] dialogs:(2):check for allow_break_dialog for object [sim_default_stalker_218719] with clsid [35]</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">00335920	3136.49951172	[3936] ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     00335921	3136.49951172	[3936]
+     <br/>
+     00335922	3136.51123047	[3936] * Unloading texture [ecolog_icon] pSurface RefCount= 1
+     <br/>
+     00335923	3136.51123047	[3936]
+     <br/>
+     <br/>
+     00335924	3136.51782227	[3936] [LUA] dialogs:(2):check for allow_break_dialog for object [sim_default_stalker_218719] with clsid [35]
+     <br/>
+     00335925	3136.51782227	[3936]
+     <br/>
+     00335926	3136.51782227	[3936] ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     00335927	3136.51782227	[3936]
+     <br/>
+     00335928	3136.51782227	[3936] ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     00335929	3136.51782227	[3936]
+     <br/>
+     00335930	3136.51782227	[3936] ! [LUA]  1 : [Lua] gamedata\scripts\dialogs.script(7) :
+     <br/>
+     00335931	3136.51782227	[3936]
+     <br/>
+     00335932	3136.51782227	[3936] ! [LUA] gamedata\scripts\dialogs.script:7: attempt to index local 'st' (a nil value)
+     <br/>
+     00335933	3136.51831055	[3936]
+     <br/>
+     00335934	3136.71850586	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00335935	3136.71850586	[3936]
+     <br/>
+     00335936	3136.71850586	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335937	3136.71850586	[3936]
+     <br/>
+     00335938	3136.97167969	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=32
+     <br/>
+     00335939	3136.97241211	[3936]
+     <br/>
+     00335940	3136.97265625	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335941	3136.97314453	[3936]
+     <br/>
+     00335942	3137.00756836	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335943	3137.00805664	[3936]
+     <br/>
+     00335944	3142.17260742	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     00335945	3142.17260742	[3936]
+     <br/>
+     00335946	3142.17260742	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335947	3142.17309570	[3936]
+     <br/>
+     00335948	3142.19091797	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     00335949	3142.19091797	[3936]
+     <br/>
+     00335950	3142.19091797	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335951	3142.19091797	[3936]
+     <br/>
+     00335952	3142.69360352	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     00335953	3142.69360352	[3936]
+     <br/>
+     00335954	3149.73217773	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00335955	3149.73217773	[3936]
+     <br/>
+     00335956	3149.73266602	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335957	3149.73266602	[3936]
+     <br/>
+     00335958	3149.74218750	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335959	3149.74218750	[3936]
+     <br/>
+     00335960	3151.49609375	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     00335961	3151.49609375	[3936]
+     <br/>
+     00335962	3151.49609375	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335963	3151.49609375	[3936]
+     <br/>
+     00335964	3151.50439453	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     00335965	3151.50439453	[3936]
+     <br/>
+     00335966	3151.50439453	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335967	3151.50439453	[3936]
+     <br/>
+     00335968	3151.92846680	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     00335969	3151.92846680	[3936]
+     <br/>
+     00335970	3162.96044922	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00335971	3162.96044922	[3936]
+     <br/>
+     00335972	3162.96044922	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335973	3162.96166992	[3936]
+     <br/>
+     00335974	3162.96582031	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335975	3162.96582031	[3936]
+     <br/>
+     00335976	3164.43237305	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     00335977	3164.43261719	[3936]
+     <br/>
+     00335978	3164.43261719	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335979	3164.43261719	[3936]
+     <br/>
+     00335980	3164.43945313	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     00335981	3164.43945313	[3936]
+     <br/>
+     00335982	3164.43945313	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335983	3164.43945313	[3936]
+     <br/>
+     00335984	3164.84790039	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     00335985	3164.84790039	[3936]
+     <br/>
+     00335986	3169.34106445	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     00335987	3169.34130859	[3936]
+     <br/>
+     00335988	3169.34130859	[3936] ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     00335989	3169.34252930	[3936]
+     <br/>
+     00335990	3169.34448242	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335991	3169.34448242	[3936]
+     <br/>
+     00335992	3171.06103516	[3936] ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=32
+     <br/>
+     00335993	3171.06103516	[3936]
+     <br/>
+     00335994	3171.06103516	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335995	3171.06103516	[3936]
+     <br/>
+     00335996	3171.99047852	[3936] ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=32
+     <br/>
+     00335997	3171.99047852	[3936]
+     <br/>
+     00335998	3171.99047852	[3936] ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     00335999	3171.99047852	[3936]
+     <br/>
+     <br/>
+     <br/>
+     Нажал "F" что б поговорить с начальником отряда(отмечен особым кружочком на минимапе) из сталкеров которые обороняют бункер ученых.
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR_yantar.rar (2,342,443 bytes)
+     <span class="italic">13 июня 2008 18:09</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19766" name="19766">
+     <td class="bugnote-public">
+      <span class="small">(0019766)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">04 июля 2008 20:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Больше не валится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 18:09</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 18:09</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 18:09</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR_yantar.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">13 июня 2008 18:38</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">13 июня 2008 18:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; plecha</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 15:38</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 15:38</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 20:12</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 19766</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 20:12</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 20:12</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 13:53</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

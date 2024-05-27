@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017641: Military 02/06/08 Incorrect exit_smart call for squad mil_smart_terrain_2_6_monolith_squad from mil_smart_terrain_3_5!!! - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017640.html">
+      &lt; Прошлое обращение (0017640)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017642.html">
+      Следующее обращение (0017642) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017641</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>03 июля 2008 12:57</td>
+    <td>14 июля 2008 17:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017641: Military 02/06/08 Incorrect exit_smart call for squad mil_smart_terrain_2_6_monolith_squad from mil_smart_terrain_3_5!!!</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">4	[3492] [LUA] ...:\current_build\task_objects:(1043):Launch delay attack [mil_smart_terrain_2_6_monolith_squad] -&gt; [mil_smart_terrain_2_4]
+     <br/>
+     00097628	768.60662842	[3492] [LUA] e:\current_build\sim_combat:(75):Sim_Combat[mil_smart_terrain_3_5]: unregister squad mil_smart_terrain_2_6_monolith_squad
+     <br/>
+     00097629	768.60693359	[3492] [LUA] e:\current_build\sim_combat:(71):Sim_Combat[mil_smart_terrain_2_4]: register new squad mil_smart_terrain_2_6_monolith_squad
+     <br/>
+     00097630	768.60717773	[3492] [LUA] ERROR: Incorrect exit_smart call for squad mil_smart_terrain_2_6_monolith_squad from mil_smart_terrain_3_5!!!  stalker ~= monolith
+     <br/>
+     00097631	768.60729980	[3492] ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     00097632	768.60736084	[3492] ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     00097633	768.60742188	[3492] ! [LUA]  1 : [C  ] format
+     <br/>
+     00097634	768.60754395	[3492] ! [LUA]  2 : [Lua] e:\current_build\gamedata\scripts\_g.script(973) : abort
+     <br/>
+     00097635	768.60906982	[3492] ! [LUA]  3 : [Lua] e:\current_build\gamedata\scripts\sim_board.script(577) : exit_smart
+     <br/>
+     00097636	768.60919189	[3492] ! [LUA]  4 : [Lua] ...rent_build\gamedata\scripts\sim_squad_generic.script(1256) : make
+     <br/>
+     00097637	768.60937500	[3492] ! [LUA]  5 : [Lua] ...:\current_build\gamedata\scripts\task_objects.script(1045) : check_task
+     <br/>
+     00097638	768.60943604	[3492] ! [LUA]  6 : [Lua] ...:\current_build\gamedata\scripts\task_manager.script(228) :
+     <br/>
+     00097639	768.60949707	[3492] ! [LUA] e:\current_build\gamedata\scripts\_g.script:973: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     Постоянно вышибает во время перестрелки с военными квест *Убить военных*</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGATRONE.rar (1,146,972 bytes)
+     <span class="italic">03 июля 2008 12:57</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     4.sav.bz2 (974,906 bytes)
+     <span class="italic">03 июля 2008 12:57</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="19568" name="19568">
+     <td class="bugnote-public">
+      <span class="small">(0019568)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">03 июля 2008 16:59</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">надо будет еще раз попробовать повторить в новом билде.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20164" name="20164">
+     <td class="bugnote-public">
+      <span class="small">(0020164)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 13:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не вылетает</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20570" name="20570">
+     <td class="bugnote-public">
+      <span class="small">(0020570)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">14 июля 2008 14:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не повторялось</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: MEGATRONE.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:57</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: 4.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:59</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 15:00</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Bandicoot</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 15:41</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Bandicoot =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 16:58</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 16:59</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 19568</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 16:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 16:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 13:31</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20164</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20570</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 14:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 июля 2008 14:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 июля 2008 17:10</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

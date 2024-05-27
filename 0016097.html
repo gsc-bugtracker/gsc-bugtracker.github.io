@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0016097: Red Forest. - E:\priquel\sources\engine\Layers\xrRender\SkeletonRigid.cpp Line          : 91 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0016096.html">
+      &lt; Прошлое обращение (0016096)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0016098.html">
+      Следующее обращение (0016098) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0016097</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>19 мая 2008 11:45</td>
+    <td>20 августа 2008 15:43</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь160
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r25441</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0016097: Red Forest. - E:\priquel\sources\engine\Layers\xrRender\SkeletonRigid.cpp Line          : 91</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">bone  link
+     <br/>
+     bone_matrix:
+     <br/>
+     1.000000,0.000000,0.000000,0.000000
+     <br/>
+     0.000000,1.000000,0.000000,0.000000
+     <br/>
+     0.000000,0.000000,1.000000,0.000000
+     <br/>
+     0.000000,1.500000,0.000000,1.000000
+     <br/>
+     <br/>
+     bone  door
+     <br/>
+     bone_matrix:
+     <br/>
+     -0.999999,0.000036,-0.001572,0.000000
+     <br/>
+     -0.000061,-0.999877,0.015683,0.000000
+     <br/>
+     -0.001572,0.015683,0.999876,0.000000
+     <br/>
+     -240.036636,-271.308716,-17372.070313,1.000000
+     <br/>
+     <br/>
+     bone  lock
+     <br/>
+     bone_matrix:
+     <br/>
+     0.999999,-0.000036,0.001572,0.000000
+     <br/>
+     0.000061,0.999877,-0.015683,0.000000
+     <br/>
+     -0.001572,0.015683,0.999876,0.000000
+     <br/>
+     -241.147141,-271.308685,-17372.072266,1.000000
+     <br/>
+     <br/>
+     end-------
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : vis.sphere.R&lt;1000.f
+     <br/>
+     [error]Function      : CKinematics::CalculateBones
+     <br/>
+     [error]File          : E:\priquel\sources\engine\Layers\xrRender\SkeletonRigid.cpp
+     <br/>
+     [error]Line          : 91
+     <br/>
+     [error]Description   : Invalid bones-xform in model
+     <br/>
+     [error]Arguments     : dynamics\door\door_wood_130x245_01
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678BF6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:01D0535D xrRender_R1.dll, check_kinematics(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 104
+     <br/>
+     001B:781590F6 MSVCR80.dll, _RTCastToVoid()
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080519-113245.zip (1,068,505 bytes)
+     <span class="italic">19 мая 2008 11:45</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080528-124647.zip (1,053,941 bytes)
+     <span class="italic">28 мая 2008 12:55</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     2222.zip (1,703,704 bytes)
+     <span class="italic">29 мая 2008 13:03</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     MEGAFOUR.LOG.bz2 (726,065 bytes)
+     <span class="italic">06 июня 2008 11:21</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080606-110452.zip (1,074,980 bytes)
+     <span class="italic">06 июня 2008 11:21</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     3.zip (4,078,235 bytes)
+     <span class="italic">20 июня 2008 12:31</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16531" name="16531">
+     <td class="bugnote-public">
+      <span class="small">(0016531)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">19 мая 2008 13:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">пожалуй ста прокоментируйте когда и как происходит
+      <br/>
+      типа: на старте уровня или нет, степень повторяемости
+      <br/>
+      и все прочее, что может быть полезно для воспроизведения</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16532" name="16532">
+     <td class="bugnote-public">
+      <span class="small">(0016532)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">19 мая 2008 13:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">у него стоит воспроизводимость: всегда - значит ли что редфорест незапускается или
+      <br/>
+      непроходится - если так то почему тяжесть незначительная?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16540" name="16540">
+     <td class="bugnote-public">
+      <span class="small">(0016540)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">19 мая 2008 13:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Он происходит не всегда сори не правильно написал, он вылетает через 3 - 5 раз происходит возле блок поста когда догоняешь снайпера и заходишь в наблюдательную вышку взять снайперскую винтовку. Возле входа вылетает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16541" name="16541">
+     <td class="bugnote-public">
+      <span class="small">(0016541)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">19 мая 2008 13:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">ок</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16781" name="16781">
+     <td class="bugnote-public">
+      <span class="small">(0016781)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">22 мая 2008 13:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился сегодня</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17027" name="17027">
+     <td class="bugnote-public">
+      <span class="small">(0017027)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">28 мая 2008 12:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при бое против бандитов (захват моста)
+      <br/>
+      ревизия 26289
+      <br/>
+      добавил лог</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17178" name="17178">
+     <td class="bugnote-public">
+      <span class="small">(0017178)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">29 мая 2008 13:03</span>
+      <br/>
+      <span class="small">отредактирован:  29 мая 2008 13:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ескейп , нет понятия от чего просто вылетело....26454
+      <br/>
+      <br/>
+      отредактирован: 29.05.08 13:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17637" name="17637">
+     <td class="bugnote-public">
+      <span class="small">(0017637)</span>
+      <br/>
+      Nitro
+      <br/>
+      <span class="small">06 июня 2008 11:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Red_forest. После загрузки сева, кидала гранаты. Vista</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18527" name="18527">
+     <td class="bugnote-public">
+      <span class="small">(0018527)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">20 июня 2008 12:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">bild 19.06.08 red_forest во время взрыва туннеля возле меня взорвалась граната, что было причиной бага не знаю</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18589" name="18589">
+     <td class="bugnote-public">
+      <span class="small">(0018589)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">20 июня 2008 19:13</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Смотрите, если модель -
+      <br/>
+      dynamics\door\door_wood_130x245_01
+      <br/>
+      тогда это этот баг, если другая, делайте новый!
+      <br/>
+      <br/>
+      - проверка, которая здесь стоит, диагностическая - означает "с костями модели явно что то не так " причины на то могут быть разные!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18590" name="18590">
+     <td class="bugnote-public">
+      <span class="small">(0018590)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">20 июня 2008 19:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">лог со сталкером сюда добавлять ненадо!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19852" name="19852">
+     <td class="bugnote-public">
+      <span class="small">(0019852)</span>
+      <br/>
+      Slipch
+      <br/>
+      <span class="small">07 июля 2008 15:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">дверь вылетает по прежнему или нет - ответте пожалуйсто или закрываю</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20146" name="20146">
+     <td class="bugnote-public">
+      <span class="small">(0020146)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 12:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не вылетает</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21781" name="21781">
+     <td class="bugnote-public">
+      <span class="small">(0021781)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 августа 2008 09:51</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">с дверью все ок, закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 11:45</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 11:45</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 11:45</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080519-113245.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 12:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">19 мая 2008 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Red Forest. - E:\priquel\sources\engine\Layers\xrRender\SkeletonRigid.cpp Line          : 91 =&gt; Red Forest. - E:\\priquel\\sources\\engine\\Layers\\xrRender\\SkeletonRigid.cpp Line          : 91</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 12:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Slipch</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 13:15</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 16531</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 13:18</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 16532</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 13:28</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16539</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 13:29</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий удален: 16539</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 мая 2008 13:33</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16540</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 13:43</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 16541</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 мая 2008 13:05</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16781</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 мая 2008 12:42</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 17027</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 мая 2008 12:55</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080528-124647.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 13:03</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 2222.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 мая 2008 13:03</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 17178</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 мая 2008 13:04</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 17178</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 11:20</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Комментарий добавлен: 17637</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 11:21</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 11:21</td>
+     <td class="small-caption">Nitro</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080606-110452.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 12:31</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 3.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 12:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 18527</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 19:13</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 18589</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 19:14</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 18590</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 15:48</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Комментарий добавлен: 19852</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 12:29</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20146</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 июля 2008 19:05</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 июля 2008 19:05</td>
+     <td class="small-caption">Slipch</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 17:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 09:51</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21781</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 15:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

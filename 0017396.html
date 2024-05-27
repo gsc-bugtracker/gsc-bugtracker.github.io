@@ -1,0 +1,964 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017396: Military - release E:\priquel\sources\engine\xrServerEntities\script_engine.cpp Line :83 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017395.html">
+      &lt; Прошлое обращение (0017395)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017397.html">
+      Следующее обращение (0017397) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017396</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>25 июня 2008 21:21</td>
+    <td>11 июля 2008 22:04</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Darin</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28902</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017396: Military - release E:\priquel\sources\engine\xrServerEntities\script_engine.cpp Line :83</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">вылетело при попытке сделать скрин с открытой картой в пда:
+     <br/>
+     <br/>
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\move_mgr.script(571) :
+     <br/>
+     ! [LUA] gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [C  ] format
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\move_mgr.script(571) :
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CScriptEngine::lua_pcall_failed
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+     <br/>
+     [error]Line          : 83
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : LUA error: gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:1001B903 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     mil_screen_crash.zip (831,524 bytes)
+     <span class="italic">25 июня 2008 21:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (482,830 bytes)
+     <span class="italic">27 июня 2008 11:44</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     agroprom.rar (167,287 bytes)
+     <span class="italic">27 июня 2008 16:40</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     agroprom_sobaky.zip (842,943 bytes)
+     <span class="italic">27 июня 2008 16:51</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     agroprom_un.zip (972,102 bytes)
+     <span class="italic">27 июня 2008 17:03</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     agroprom2.zip (1,218,593 bytes)
+     <span class="italic">27 июня 2008 17:30</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     yantar_save.zip (707,232 bytes)
+     <span class="italic">27 июня 2008 18:16</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red1_mil1.zip (1,142,320 bytes)
+     <span class="italic">27 июня 2008 19:56</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.dds.bz2 (7,080 bytes)
+     <span class="italic">27 июня 2008 20:03</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     starodub lyudmila_quicksave.sav.bz2 (934,285 bytes)
+     <span class="italic">27 июня 2008 20:03</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     mil_red.zip (727,978 bytes)
+     <span class="italic">27 июня 2008 21:03</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     yantar_to_escape.rar (776,614 bytes)
+     <span class="italic">27 июня 2008 21:26</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18889" name="18889">
+     <td class="bugnote-public">
+      <span class="small">(0018889)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">25 июня 2008 21:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">поправочка: также валится само после загрузке сейва,там же:</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19092" name="19092">
+     <td class="bugnote-public">
+      <span class="small">(0019092)</span>
+      <br/>
+      Redstain
+      <br/>
+      <span class="small">26 июня 2008 17:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не удалось повторить со скрином: надо знать хотя бы где и при каких условиях был сделан скрин.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19157" name="19157">
+     <td class="bugnote-public">
+      <span class="small">(0019157)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">27 июня 2008 11:44</span>
+      <br/>
+      <span class="small">отредактирован:  27 июня 2008 11:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось когда спрыгнул с 3-го уровня башни (где прослушал радиосообщение) на 2-й уровень где находиться труп(наверное это кровосос вызывает скрипткреш).
+      <br/>
+      <br/>
+      Destroying client object [22530][physic_destroyable_object][13e0fe60]
+      <br/>
+      Destroying client object [22529][physic_destroyable_object][19dcded0]
+      <br/>
+      [LUA] ERROR: object 'sim_default_stalker_218433': path_walk 'mil_smart_terrain_4_6_walker_1_walk', index 6: cannot find corresponding point(s) on path_look 'mil_smart_terrain_4_6_walker_1_look'
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] d:\current_build\gamedata\scripts\_g.script(972) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] d:\current_build\gamedata\scripts\move_mgr.script(571) :
+      <br/>
+      ! [LUA] d:\current_build\gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA] string expected, got nil
+      <br/>
+      @ flush
+      <br/>
+      <br/>
+      отредактирован: 27.06.08 11:45</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19202" name="19202">
+     <td class="bugnote-public">
+      <span class="small">(0019202)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 16:04</span>
+      <br/>
+      <span class="small">отредактирован:  27 июня 2008 16:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2redstain: у перехода на ред форест,после взятия квеста уничтожить засаду бандитов,те что на ред форесте,квест дают свободовцы на блок посте.Потом открыл пда и попытался сделать скрин
+      <br/>
+      <br/>
+      отредактирован: 27.06.08 16:05</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19207" name="19207">
+     <td class="bugnote-public">
+      <span class="small">(0019207)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 16:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело на агропроме,квест прийти на помощь долговцам на блок посте у перехода на свалку,на них нападают собаки,со смертью последней - креш без дампа:
+      <br/>
+      <br/>
+      [LUA] ERROR: money not number
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\task_objects.script(240) : init_reward
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\task_manager.script(203) : task_callback
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\task_manager.script(508) : task_callback
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\bind_stalker.script(221) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\task_objects.script(240) : init_reward
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\task_manager.script(203) : task_callback
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\task_manager.script(508) : task_callback
+      <br/>
+      ! [LUA]  6 : [Lua] gamedata\scripts\bind_stalker.script(221) :
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : fatal error
+      <br/>
+      [error]Function      : CScriptEngine::lua_pcall_failed
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrServerEntities\script_engine.cpp
+      <br/>
+      [error]Line          : 83
+      <br/>
+      [error]Description   : &lt;no expression&gt;
+      <br/>
+      [error]Arguments     : LUA error: gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:1001B903 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19212" name="19212">
+     <td class="bugnote-public">
+      <span class="small">(0019212)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 16:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на агропроме летит железно.Добавил дамп</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19218" name="19218">
+     <td class="bugnote-public">
+      <span class="small">(0019218)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 17:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вылетело в подзимельях агропрома при выходе на поверхность</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19227" name="19227">
+     <td class="bugnote-public">
+      <span class="small">(0019227)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 17:30</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетело на выходе с агропром2 на янтарь</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19233" name="19233">
+     <td class="bugnote-public">
+      <span class="small">(0019233)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">27 июня 2008 18:15</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[LUA] ERROR: INCORRECT LOAD [_sound_actor_save].[0][2360]
+      <br/>
+      ! [LUA] SCRIPT RUNTIME ERROR
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\_g.script(1239) : set_save_marker
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_sound.script(169) : actor_load
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\bind_stalker.script(536) :
+      <br/>
+      ! [LUA] gamedata\scripts\_g.script:972: bad argument 2 to 'format' (string expected, got nil)
+      <br/>
+      ! [LUA]  0 : [C] [C](-1) :
+      <br/>
+      ! [LUA]  1 : [C  ] format
+      <br/>
+      ! [LUA]  2 : [Lua] gamedata\scripts\_g.script(972) : abort
+      <br/>
+      ! [LUA]  3 : [Lua] gamedata\scripts\_g.script(1239) : set_save_marker
+      <br/>
+      ! [LUA]  4 : [Lua] gamedata\scripts\xr_sound.script(169) : actor_load
+      <br/>
+      ! [LUA]  5 : [Lua] gamedata\scripts\bind_stalker.script(536) :</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19235" name="19235">
+     <td class="bugnote-public">
+      <span class="small">(0019235)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 18:16</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">летит на Янтаре при загрузке сейва</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19262" name="19262">
+     <td class="bugnote-public">
+      <span class="small">(0019262)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 19:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">переход с ред форест1 на милитари1</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19264" name="19264">
+     <td class="bugnote-public">
+      <span class="small">(0019264)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 20:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Слушай,Серега,что это может быть? Уже достало!!!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19265" name="19265">
+     <td class="bugnote-public">
+      <span class="small">(0019265)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 20:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сейв летит при загрузке,на рыжем,то же</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19273" name="19273">
+     <td class="bugnote-public">
+      <span class="small">(0019273)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">27 июня 2008 21:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">держи еще один дамп,с милитари на ред</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19278" name="19278">
+     <td class="bugnote-public">
+      <span class="small">(0019278)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">27 июня 2008 21:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Выбило при джампе с Янтаря на Ескейп. Ревизия 29093. Свежие релизные бины. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20313" name="20313">
+     <td class="bugnote-public">
+      <span class="small">(0020313)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">10 июля 2008 17:02</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">тьху-тьху,не повторяется!!!!!!!!!!!!:))</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 21:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 21:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 21:21</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: mil_screen_crash.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 21:41</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18889</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 17:15</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 17:15</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Military - release E:\priquel\sources\engine\xrServerEntities\script_engine.cpp Line :83 =&gt; Military - release E:\\priquel\\sources\\engine\\xrServerEntities\\script_engine.cpp Line :83</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 17:15</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 17:55</td>
+     <td class="small-caption">Redstain</td>
+     <td class="small-caption">Комментарий добавлен: 19092</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 19157</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 11:44</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; открыт снова</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 11:45</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий отредактирован: 19157</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 16:04</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19202</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 16:05</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 19202</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 16:40</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19207</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 16:40</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: agroprom.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 16:50</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19212</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 16:51</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: agroprom_sobaky.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19218</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: agroprom_un.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:30</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19227</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:30</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: agroprom2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:34</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:34</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 17:34</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 17:42</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sea =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:15</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 19233</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:15</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 18:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19235</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 18:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: yantar_save.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 19:56</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19262</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 19:56</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red1_mil1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 20:00</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19264</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 20:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19265</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 20:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.dds.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 20:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: starodub lyudmila_quicksave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:02</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 19273</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:03</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: mil_red.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 июня 2008 21:25</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 19278</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 21:26</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: yantar_to_escape.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 июня 2008 09:58</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 июня 2008 09:58</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт снова =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 июля 2008 14:22</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 17:02</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 20313</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 17:02</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">10 июля 2008 17:02</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Military - release E:\priquel\sources\engine\xrServerEntities\script_engine.cpp Line :83 =&gt; Military - release E:\\priquel\\sources\\engine\\xrServerEntities\\script_engine.cpp Line :83</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 17:02</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 22:04</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

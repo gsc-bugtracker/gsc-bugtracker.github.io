@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0015990: Hospital wpn_lr300_up2  E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp  34 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0015989.html">
+      &lt; Прошлое обращение (0015989)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0015991.html">
+      Следующее обращение (0015991) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0015990</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>попыток не было</td>
+    <td>16 мая 2008 09:44</td>
+    <td>28 июля 2008 12:53</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r25217</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0015990: Hospital wpn_lr300_up2  E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp  34</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : res!=-1
+     <br/>
+     [error]Function      : get_rank
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp
+     <br/>
+     [error]Line          : 34
+     <br/>
+     [error]Description   : cannot find rank for
+     <br/>
+     [error]Arguments     : wpn_lr300_up2
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00678AD6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:00678D8A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+     <br/>
+     001B:04082759 xrGame.dll, get_rank(), e:\priquel\sources\engine\xrgame\ui\restrictions.cpp, 34
+     <br/>
+     001B:03101847 xrGame.dll, CAI_Stalker::can_take(), e:\priquel\sources\engine\xrgame\ai_stalker_alife.cpp, 392
+     <br/>
+     001B:0311BC85 xrGame.dll, CAI_Stalker::useful(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_misc.cpp, 60
+     <br/>
+     001B:02C0801F xrGame.dll, CItemManager::is_useful(), e:\priquel\sources\engine\xrgame\item_manager.cpp, 22
+     <br/>
+     001B:02BE6D6B xrGame.dll, CObjectManager&lt;CGameObject const &gt;::add(), e:\priquel\sources\engine\xrgame\object_manager_inline.h, 83
+     <br/>
+     001B:02BE5AE3 xrGame.dll, CMemoryManager::update&lt;MemorySpace::CSoundObject&gt;(), e:\priquel\sources\engine\xrgame\memory_manager.cpp, 186
+     <br/>
+     001B:02BE0CCD xrGame.dll, CMemoryManager::update(), e:\priquel\sources\engine\xrgame\memory_manager.cpp, 143
+     <br/>
+     001B:03078C57 xrGame.dll, CAI_Stalker::shedule_Update(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 793
+     <br/>
+     001B:00428101 xrEngine.exe, CSheduler::ProcessStep(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 337
+     <br/>
+     001B:0042882F xrEngine.exe, CSheduler::Update(), e:\priquel\sources\engine\xrengine\xrsheduler.cpp, 431
+     <br/>
+     001B:034CAD45 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:00499D73 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004AD5D9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004ACD58 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 449
+     <br/>
+     001B:004ACCF4 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 440
+     <br/>
+     001B:004ABD1A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 244
+     <br/>
+     001B:004AC932 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 361
+     <br/>
+     001B:004ACA4B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 397
+     <br/>
+     001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+     <br/>
+     001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+     <br/>
+     001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+     <br/>
+     001B:00515872 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=0, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate fActive=1, fMinimized=0
+     <br/>
+     ---CRenderDevice::OnWM_Activate 22
+     <br/>
+     ---CRenderDevice::OnWM_Activate Device.b_is_Active=1
+     <br/>
+     <br/>
+     <br/>
+     Ждал пока ЧНовци взорвут проход во 2 уровень крешнуло.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080516-092917.zip (839,905 bytes)
+     <span class="italic">16 мая 2008 09:44</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080516-101902bbbbbbbbbbbbbbbb.zip (779,442 bytes)
+     <span class="italic">16 мая 2008 10:27</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     limansk.zip (608,205 bytes)
+     <span class="italic">06 июня 2008 20:06</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080704-122758.zip (3,772,110 bytes)
+     <span class="italic">04 июля 2008 12:41</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="16383" name="16383">
+     <td class="bugnote-public">
+      <span class="small">(0016383)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">16 мая 2008 09:56</span>
+      <br/>
+      <span class="small">отредактирован:  16 мая 2008 09:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторил,стабильно валиться на одном и том же месте перед железной пластиной которую взрывают ЧНовцы.
+      <br/>
+      <br/>
+      отредактирован: 16.05.08 09:57</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16393" name="16393">
+     <td class="bugnote-public">
+      <span class="small">(0016393)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь160
+      </font>
+      <br/>
+      <span class="small">16 мая 2008 10:29</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился сегодня на леманске.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16421" name="16421">
+     <td class="bugnote-public">
+      <span class="small">(0016421)</span>
+      <br/>
+      lain
+      <br/>
+      <span class="small">16 мая 2008 12:44</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Aidhz, каждое оружие нужно добавлять в файл mp_ranks.ltx</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16424" name="16424">
+     <td class="bugnote-public">
+      <span class="small">(0016424)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">16 мая 2008 12:48</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">забыл</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16426" name="16426">
+     <td class="bugnote-public">
+      <span class="small">(0016426)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">16 мая 2008 12:55</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">если в то время когда ЧН взрывают проход стоять на другой стороне то можно пройти во 2рую комнату но,после взрыва вертолета летят скрипты!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16429" name="16429">
+     <td class="bugnote-public">
+      <span class="small">(0016429)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">16 мая 2008 13:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не крешитсься</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17673" name="17673">
+     <td class="bugnote-public">
+      <span class="small">(0017673)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">06 июня 2008 20:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при выбросе из инвентаря апгр. свд(лиманск,релизные бины,27279):
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : res!=-1
+      <br/>
+      [error]Function      : get_rank
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp
+      <br/>
+      [error]Line          : 34
+      <br/>
+      [error]Description   : cannot find rank for
+      <br/>
+      [error]Arguments     : wpn_svd_m1
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0059A073 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 188</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17941" name="17941">
+     <td class="bugnote-public">
+      <span class="small">(0017941)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">11 июня 2008 18:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при стрельбе из апгр.винтореза:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : res!=-1
+      <br/>
+      [error]Function      : get_rank
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp
+      <br/>
+      [error]Line          : 34
+      <br/>
+      [error]Description   : cannot find rank for
+      <br/>
+      [error]Arguments     : wpn_g36_upgrade
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0076D206 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0076D47A xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 284
+      <br/>
+      001B:03BA5E85 xrGame.dll, get_rank(), e:\priquel\sources\engine\xrgame\ui\restrictions.cpp, 36
+      <br/>
+      001B:03512BC8 xrGame.dll, CAI_Stalker::can_take(), e:\priquel\sources\engine\xrgame\ai_stalker_alife.cpp, 392
+      <br/>
+      001B:03525FD4 xrGame.dll, CAI_Stalker::useful(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker_misc.cpp, 60
+      <br/>
+      001B:0321CAE6 xrGame.dll, CItemManager::is_useful(), e:\priquel\sources\engine\xrgame\item_manager.cpp, 22
+      <br/>
+      001B:03212E40 xrGame.dll, CObjectManager&lt;CGameObject const &gt;::add(), e:\priquel\sources\engine\xrgame\object_manager_inline.h, 83
+      <br/>
+      001B:03213210 xrGame.dll, CMemoryManager::update&lt;MemorySpace::CVisibleObject&gt;(), e:\priquel\sources\engine\xrgame\memory_manager.cpp, 185
+      <br/>
+      001B:03213A67 xrGame.dll, CMemoryManager::update(), e:\priquel\sources\engine\xrgame\memory_manager.cpp, 142
+      <br/>
+      001B:03BBC938 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19667" name="19667">
+     <td class="bugnote-public">
+      <span class="small">(0019667)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">04 июля 2008 12:41</span>
+      <br/>
+      <span class="small">отредактирован:  15 июля 2008 10:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">&lt;выделено в отдельный глюк&gt;
+      <br/>
+      <br/>
+      отредактирован: 15.07.08 10:12</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080516-092917.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 09:56</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16383</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 09:57</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий отредактирован: 16383</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 10:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 10:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 10:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; lain</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 10:27</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080516-101902bbbbbbbbbbbbbbbb.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 10:29</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 16393</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:44</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Комментарий добавлен: 16421</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 12:44</td>
+     <td class="small-caption">lain</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">lain =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:48</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 16424</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 12:48</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 12:48</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 12:55</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16426</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 13:03</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 16429</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 мая 2008 10:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 20:05</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17673</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 20:06</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: limansk.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июня 2008 18:24</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17941</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 июля 2008 12:41</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19667</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 июля 2008 12:41</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080704-122758.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 10:12</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 19667</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 июля 2008 11:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 июля 2008 11:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Hospital wpn_lr300_up2  E:\priquel\sources\engine\xrGame\ui\Restrictions.cpp  34 =&gt; Hospital wpn_lr300_up2  E:\\priquel\\sources\\engine\\xrGame\\ui\\Restrictions.cpp  34</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 июля 2008 11:44</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 июля 2008 12:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
