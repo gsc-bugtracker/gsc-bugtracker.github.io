@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013133: Limansk - _vector3&lt;float&gt;::distance_to_sqr() - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013132.html">
+      &lt; Прошлое обращение (0013132)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013134.html">
+      Следующее обращение (0013134) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013133</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>26 февраля 2008 10:10</td>
+    <td>27 февраля 2008 12:54</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sifa</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r18497</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013133: Limansk - _vector3&lt;float&gt;::distance_to_sqr()</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:02D3B4E6 xrGame.dll, _vector3&lt;float&gt;::distance_to_sqr(), e:\priquel\sources\engine\xrcore\_vector3d.h, 287
+     <br/>
+     001B:02D3B0FA xrGame.dll, _vector3&lt;float&gt;::distance_to(), e:\priquel\sources\engine\xrcore\_vector3d.h, 291
+     <br/>
+     001B:036AE3EC xrGame.dll, ai_obstacle::distance_to(), e:\priquel\sources\engine\xrgame\ai_obstacle.cpp, 279
+     <br/>
+     001B:02DF4847 xrGame.dll, obstacles_query::objects_changed(), e:\priquel\sources\engine\xrgame\obstacles_query.cpp, 114
+     <br/>
+     001B:02DF4762 xrGame.dll, obstacles_query::merge(), e:\priquel\sources\engine\xrgame\obstacles_query.cpp, 94
+     <br/>
+     001B:031CB825 xrGame.dll, static_obstacles_avoider::process_query(), e:\priquel\sources\engine\xrgame\static_obstacles_avoider.cpp, 97
+     <br/>
+     001B:031CB96C xrGame.dll, static_obstacles_avoider::update(), e:\priquel\sources\engine\xrgame\static_obstacles_avoider.cpp, 124
+     <br/>
+     001B:031C8E0E xrGame.dll, stalker_movement_manager_obstacles::move_along_path_impl(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_obstacles.cpp, 150
+     <br/>
+     001B:031C8F2E xrGame.dll, stalker_movement_manager_obstacles::move_along_path(), e:\priquel\sources\engine\xrgame\stalker_movement_manager_obstacles.cpp, 176
+     <br/>
+     001B:02D57282 xrGame.dll, CMovementManager::on_frame(), e:\priquel\sources\engine\xrgame\movement_manager.cpp, 354
+     <br/>
+     001B:02F45F43 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 544
+     <br/>
+     001B:02F45C5E xrGame.dll, CCustomMonster::UpdateCL(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 504
+     <br/>
+     001B:03171245 xrGame.dll, CAI_Stalker::UpdateCL(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 685
+     <br/>
+     001B:00456538 XR_3DA.exe, stlp_std::vector&lt;CSkeletonWallmark::WMFace,xalloc&lt;CSkeletonWallmark::WMFace&gt; &gt;::operator=(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.c, 182
+     <br/>
+     001B:781592D3 MSVCR80.dll, _RTDynamicCast()
+     <br/>
+     <br/>
+     Креш</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080226-100959.zip (565,342 bytes)
+     <span class="italic">26 февраля 2008 10:10</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="10718" name="10718">
+     <td class="bugnote-public">
+      <span class="small">(0010718)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">26 февраля 2008 10:49</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">баг исправлен, но еще не попал в билд.
+      <br/>
+      чтобы сейчас не вылетало, пишем в консоли (или user.ltx)
+      <br/>
+      ai_obstacles_avoiding 0
+      <br/>
+      ai_obstacles_avoiding_static 0</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10719" name="10719">
+     <td class="bugnote-public">
+      <span class="small">(0010719)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">26 февраля 2008 10:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">а почему пользователя SIFA нету в списке пользователей багтрекера ?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10801" name="10801">
+     <td class="bugnote-public">
+      <span class="small">(0010801)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">26 февраля 2008 17:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">тестеры есть только в санбоксе, что бы не могли здесь баги редактировать</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080226-100959.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Критичность</td>
+     <td class="small-caption">незначительный =&gt; блокировка</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:10</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:29</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:33</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 10718</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:49</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:50</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 10719</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 17:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 10801</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 17:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 17:43</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 17:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sifa</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 17:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 февраля 2008 12:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 февраля 2008 12:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Sifa =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 февраля 2008 12:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">27 февраля 2008 12:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 февраля 2008 12:54</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

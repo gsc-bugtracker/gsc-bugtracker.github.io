@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0012784: hospital [error]Expression    : SG - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0012783.html">
+      &lt; Прошлое обращение (0012783)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0012785.html">
+      Следующее обращение (0012785) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0012784</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>блокировка</td>
+    <td>всегда</td>
+    <td>19 февраля 2008 16:56</td>
+    <td>22 февраля 2008 11:09</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r17814</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0012784: hospital [error]Expression    : SG</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[error]Expression    : SG
+     <br/>
+     [error]Function      : CRender::model_CreateParticles
+     <br/>
+     [error]File          : E:\priquel\sources\engine\Layers\xrRenderPC_R1\FStaticRender.cpp
+     <br/>
+     [error]Line          : 165
+     <br/>
+     [error]Description   : Particle effect or group doesn't exist
+     <br/>
+     [error]Arguments     : hit_fx\hit_stucco_statik
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647CDA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 328
+     <br/>
+     001B:02883476 xrRender_R1.dll, CRender::model_CreateParticles(), e:\priquel\sources\engine\layers\xrrenderpc_r1\fstaticrender.cpp, 165
+     <br/>
+     001B:0387D1C4 xrGame.dll, CParticlesObject::Init(), e:\priquel\sources\engine\xrgame\particlesobject.cpp, 34
+     <br/>
+     001B:0387D12A xrGame.dll, CParticlesObject::CParticlesObject(), e:\priquel\sources\engine\xrgame\particlesobject.cpp, 22
+     <br/>
+     001B:02DE09E9 xrGame.dll, xr_new&lt;CParticlesObject,char const *,int,bool&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 25
+     <br/>
+     001B:02DDFE24 xrGame.dll, CParticlesObject::Create(), e:\priquel\sources\engine\xrgame\particlesobject.h, 55
+     <br/>
+     001B:03E0E06B xrGame.dll, CPHParticlesPlayCall::run(), e:\priquel\sources\engine\xrgame\physics_game.cpp, 41
+     <br/>
+     001B:03EA6927 xrGame.dll, CPHCall::check(), e:\priquel\sources\engine\xrgame\phcommander.cpp, 23
+     <br/>
+     001B:03EA6C87 xrGame.dll, CPHCommander::update(), e:\priquel\sources\engine\xrgame\phcommander.cpp, 69
+     <br/>
+     001B:035CEAD8 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 563
+     <br/>
+     001B:004C3483 XR_3DA.exe, stlp_std::_Deque_base&lt;CStatGraph::SMarker,xalloc&lt;CStatGraph::SMarker&gt; &gt;::_M_initialize_map(), d:\sdk\stlport-5.0.2\stlport\stl\_deque.c, 64
+     <br/>
+     001B:004D9069 XR_3DA.exe, stlp_std::vector&lt;resptr_core&lt;CTexture,resptrcode_texture&gt;,xalloc&lt;resptr_core&lt;CTexture,resptrcode_texture&gt; &gt; &gt;::_M_insert_overflow_aux(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.c, 91
+     <br/>
+     001B:004D80E8 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_tree.h, 165
+     <br/>
+     001B:00403D6E XR_3DA.exe, resptr_base&lt;CRT&gt;::_inc()
+     <br/>
+     001B:004D8084 XR_3DA.exe, xr_multimap&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt;,stlp_std::less&lt;unsigned int&gt;,xalloc&lt;stlp_std::pair&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt; &gt;::xr_multimap&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt;,stlp_std::less&lt;unsigned int&gt;,xalloc&lt;stlp_std::pair&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt; &gt;()
+     <br/>
+     001B:004D7170 XR_3DA.exe, stlp_std::pair&lt;unsigned int const ,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt;::pair&lt;unsigned int const ,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt;, d:\sdk\stlport-5.0.2\stlport\stl\_pair.h, 54
+     <br/>
+     <br/>
+     Вылетает сразу после того как взрывается вертолет</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080219-165804.zip (541,279 bytes)
+     <span class="italic">19 февраля 2008 16:56</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="10456" name="10456">
+     <td class="bugnote-public">
+      <span class="small">(0010456)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">21 февраля 2008 16:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Andy, нельзя обойти. Из-за этого бага hospital не проходится</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10465" name="10465">
+     <td class="bugnote-public">
+      <span class="small">(0010465)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">21 февраля 2008 16:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">[error]Description : Particle effect or group doesn't exist
+      <br/>
+      [error]Arguments : hit_fx\hit_stucco_statik</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10468" name="10468">
+     <td class="bugnote-public">
+      <span class="small">(0010468)</span>
+      <br/>
+      Yuriy
+      <br/>
+      <span class="small">21 февраля 2008 17:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Заберите \gamedata\particles.xr</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="10515" name="10515">
+     <td class="bugnote-public">
+      <span class="small">(0010515)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">22 февраля 2008 11:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Не повторяется</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 февраля 2008 16:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 февраля 2008 16:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080219-165804.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 февраля 2008 16:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 февраля 2008 16:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 февраля 2008 16:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 февраля 2008 18:27</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 16:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 10456</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 16:53</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Yuriy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 16:53</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 10465</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 17:09</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 17:09</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 17:09</td>
+     <td class="small-caption">Yuriy</td>
+     <td class="small-caption">Комментарий добавлен: 10468</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 18:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Yuriy =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 18:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 18:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 18:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Conrack</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 февраля 2008 18:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 февраля 2008 18:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 11:07</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 10515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 11:07</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 11:07</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">22 февраля 2008 11:07</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Conrack =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">22 февраля 2008 11:09</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

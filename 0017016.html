@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017016: Marsh - mar_smart_terrain_8_8_teleport_walk - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017015.html">
+      &lt; Прошлое обращение (0017015)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017017.html">
+      Следующее обращение (0017017) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017016</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>17 июня 2008 10:04</td>
+    <td>17 июля 2008 10:50</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь160
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28003</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017016: Marsh - mar_smart_terrain_8_8_teleport_walk</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     00075849	1029.22070313	[504]
+     <br/>
+     00075850	1029.22070313	[504]
+     <br/>
+     00075851	1029.22070313	[504]
+     <br/>
+     00075852	1029.22082520	[504] [error]Expression    : m_path
+     <br/>
+     00075853	1029.22082520	[504]
+     <br/>
+     00075854	1029.22082520	[504] [error]Function      : CPatrolPathParams::CPatrolPathParams
+     <br/>
+     00075855	1029.22082520	[504]
+     <br/>
+     00075856	1029.22082520	[504] [error]File          : E:\priquel\sources\engine\xrGame\patrol_path_params.cpp
+     <br/>
+     00075857	1029.22082520	[504]
+     <br/>
+     00075858	1029.22082520	[504] [error]Line          : 19
+     <br/>
+     00075859	1029.22094727	[504]
+     <br/>
+     00075860	1029.22094727	[504] [error]Description   : There is no patrol path
+     <br/>
+     00075861	1029.22094727	[504]
+     <br/>
+     00075862	1029.22094727	[504] [error]Arguments     : mar_smart_terrain_8_8_teleport_walk
+     <br/>
+     00075863	1029.22094727	[504]
+     <br/>
+     00075864	1029.22094727	[504]
+     <br/>
+     00075865	1029.22094727	[504]
+     <br/>
+     00075866	1029.22106934	[504]
+     <br/>
+     00075867	1029.25964355	[504] stack trace:
+     <br/>
+     00075868	1029.25964355	[504]
+     <br/>
+     00075869	1029.25964355	[504]
+     <br/>
+     00075870	1044.87512207	[504] 001B:02D11AC9 xrGame.dll, CPatrolPathParams::CPatrolPathParams(), e:\priquel\sources\engine\xrgame\patrol_path_params.cpp, 19
+     <br/>
+     00075871	1044.87512207	[504]
+     <br/>
+     00075872	1044.87524414	[504] 001B:006815C3 xrCore.dll, memory_monitor::monitor_alloc(), e:\priquel\sources\engine\xrcore\memory_monitor.cpp, 78
+     <br/>
+     00075873	1044.87524414	[504]
+     <br/>
+     00075874	1044.87536621	[504] 001B:033B33A9 xrGame.dll, _strlwr()
+     <br/>
+     00075875	1044.87536621	[504]
+     <br/>
+     00075876	1044.87536621	[504] 001B:033B33E1 xrGame.dll, _strlwr()
+     <br/>
+     00075877	1044.87536621	[504]
+     <br/>
+     00075878	1044.87536621	[504] 001B:00931F16 xrLUA.dll, _lock()
+     <br/>
+     00075879	1044.87536621	[504]
+     <br/>
+     00075880	1044.87536621	[504] 001B:033E01E1 xrGame.dll, _strlwr()
+     <br/>
+     00075881	1044.87548828	[504]
+     <br/>
+     00075882	1044.87548828	[504] 001B:033E0338 xrGame.dll, _strlwr()
+     <br/>
+     00075883	1044.87548828	[504]
+     <br/>
+     00075884	1044.87548828	[504] 001B:033E0368 xrGame.dll, _strlwr()
+     <br/>
+     00075885	1044.87548828	[504]
+     <br/>
+     00075886	1044.87548828	[504] 001B:033E0B80 xrGame.dll, _strlwr()
+     <br/>
+     00075887	1044.87561035	[504]
+     <br/>
+     00075888	1044.87561035	[504] 001B:033DC6C8 xrGame.dll, _strlwr()
+     <br/>
+     00075889	1044.87561035	[504]
+     <br/>
+     00075890	1044.87561035	[504] 001B:03429160 xrGame.dll, _strlwr()
+     <br/>
+     00075891	1044.87561035	[504]
+     <br/>
+     00075892	1044.87561035	[504] 001B:03429160 xrGame.dll, _strlwr()
+     <br/>
+     00075893	1044.87561035	[504]
+     <br/>
+     00075894	1044.87573242	[504] 001B:033DCED6 xrGame.dll, _strlwr()
+     <br/>
+     00075895	1044.87573242	[504]
+     <br/>
+     00075896	1044.87573242	[504] 001B:033DCF26 xrGame.dll, _strlwr()
+     <br/>
+     00075897	1044.87585449	[504]
+     <br/>
+     00075898	1044.87585449	[504] 001B:005187AF xrEngine.exe, ICClose()
+     <br/>
+     00075899	1044.87585449	[504]
+     <br/>
+     00075900	1044.87585449	[504] 001B:00516800 xrEngine.exe, ICClose()
+     <br/>
+     00075901	1044.87585449	[504]
+     <br/>
+     <br/>
+     вылетело на базе "Чистого Неба" во время диалога со сталкером.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     GGG.LOG.bz2 (593,242 bytes)
+     <span class="italic">17 июня 2008 10:04</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mr.sav.bz2 (871,817 bytes)
+     <span class="italic">17 июня 2008 10:05</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18199" name="18199">
+     <td class="bugnote-public">
+      <span class="small">(0018199)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">17 июня 2008 11:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Пробуйте.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 10:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 10:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 10:04</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: GGG.LOG.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 10:05</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Файл добавлен: mr.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 10:06</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 10:11</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 10:11</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Marsh - action_fill_temp_teleport_points =&gt; Marsh - mar_smart_terrain_8_8_teleport_walk</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 10:11</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 10:12</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 10:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:02</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:47</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 18199</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 11:47</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 11:47</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 10:40</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июля 2008 10:40</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь160
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июля 2008 10:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

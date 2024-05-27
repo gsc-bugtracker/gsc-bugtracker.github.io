@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014554: C.T.A и 1.0007- сервер может управлять оружием клиента из режима спектатора - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014553.html">
+      &lt; Прошлое обращение (0014553)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014555.html">
+      Следующее обращение (0014555) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014554</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>01 апреля 2008 20:21</td>
+    <td>26 мая 2008 17:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Dark</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>важный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014554: C.T.A и 1.0007- сервер может управлять оружием клиента из режима спектатора</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Когда сервер находится в режиме спектатора и поставил камеру на вид от первого лица, то при быстром нажатии кнопки огня (mouse_btn_1) он может не давать делать выстрелы клиенту, если поймал его на перезарядке или смене оружия.
+     <br/>
+     <br/>
+     В такой баге можно удерживать большое количество игроков, главное спектатору успевать нажимать на кнопку "огня"
+     <br/>
+     <br/>
+     клиенту в режиме спектатора удается только некоторое время использовать такой баг: 3-7 сек.
+     <br/>
+     <br/>
+     видео:
+     <br/>
+     \\Besyaev\exchange\CoRR\server_spectator_client.avi
+     <br/>
+     <br/>
+     логи сервера + клиента прикрепили</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     server.log.bz2 (9,140 bytes)
+     <span class="italic">01 апреля 2008 20:21</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     CLIENT (35,857 bytes)
+     <span class="italic">01 апреля 2008 20:22</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="13488" name="13488">
+     <td class="bugnote-public">
+      <span class="small">(0013488)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">01 апреля 2008 20:38</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">баг обнаружен как в СТА так и в 1.0007</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14436" name="14436">
+     <td class="bugnote-public">
+      <span class="small">(0014436)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">11 апреля 2008 19:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в СТА исправлено
+      <br/>
+      осталось дождаться новой версии 1.0007 для проверки</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16449" name="16449">
+     <td class="bugnote-public">
+      <span class="small">(0016449)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">16 мая 2008 17:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в 1.0007 не будем править</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16476" name="16476">
+     <td class="bugnote-public">
+      <span class="small">(0016476)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">17 мая 2008 13:41</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ладно, я никому не скажу)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16879" name="16879">
+     <td class="bugnote-public">
+      <span class="small">(0016879)</span>
+      <br/>
+      Dark
+      <br/>
+      <span class="small">26 мая 2008 16:56</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в СТА исправлено.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16880" name="16880">
+     <td class="bugnote-public">
+      <span class="small">(0016880)</span>
+      <br/>
+      Corr
+      <br/>
+      <span class="small">26 мая 2008 16:57</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">2Andy: закрываю?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="16884" name="16884">
+     <td class="bugnote-public">
+      <span class="small">(0016884)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">26 мая 2008 17:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">da</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 20:21</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 20:21</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 20:21</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Файл добавлен: server.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 20:22</td>
+     <td class="small-caption">Abe</td>
+     <td class="small-caption">Файл добавлен: CLIENT</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 20:23</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 20:32</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 20:33</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 20:38</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 13488</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 21:20</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 10:10</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 10:10</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 апреля 2008 17:33</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 апреля 2008 19:46</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 14436</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 14:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Multiplayer =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 14:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">C.T.A - сервер может управлять оружием клиента из режима спектатора =&gt; C.T.A и 1.0007- сервер может управлять оружием клиента из режима спектатора</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 14:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">14 апреля 2008 14:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">14 апреля 2008 14:46</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">16 мая 2008 17:04</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 16449</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">16 мая 2008 17:04</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 мая 2008 13:41</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 16476</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 мая 2008 18:59</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 16:56</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Комментарий добавлен: 16879</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 16:56</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 16:56</td>
+     <td class="small-caption">Dark</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 16:57</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Комментарий добавлен: 16880</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 мая 2008 17:03</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 16884</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 мая 2008 17:08</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

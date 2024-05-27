@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017032: Darkvalley  set_dest_level_vertex_id - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017031.html">
+      &lt; Прошлое обращение (0017031)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017033.html">
+      Следующее обращение (0017033) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017032</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>17 июня 2008 12:16</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28003</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017032: Darkvalley  set_dest_level_vertex_id</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] xr_logic:(396):_bp: calling module('xr_walker')
+     <br/>
+     [LUA] xr_walker:(101):DEBUG: set_scheme: scheme='walker',
+     <a href="mailto:section='walker@val_smart_terrain_5_7_guard_1_walk'" target="_new">
+      section='walker@val_smart_terrain_5_7_guard_1_walk'
+          , gulag_name='val_smart_terrain_5_7'
+      <br/>
+      [LUA] xr_walker:(103):DEBUG: set_scheme: storage assigned
+      <br/>
+      [LUA] xr_logic:(402):DEBUG: activate_by_section: scheme 'walker' activated from section 'walker@val_smart_terrain_5_7_guard_1_walk'
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      ! [LUA] ! you are trying to setup destination for the stalker val_freedom_blockpost_guard_leader_south19946, which is not accessible by its restrictors in[val_gunnery_zone,val_in_restrictor_azs_dom,val_out_restrictor_comendant,val_smart_terrain_1_4_defence,val_space_restrictor_cisterna_night_bloodsucker,val_space_restrictor_freedom_barmen] out[val_smart_terrain_5_8_defence]
+      <br/>
+      ! [LUA]  0 : [C  ] set_dest_level_vertex_id
+      <br/>
+      ! [LUA]  1 : [Lua] gamedata\scripts\actor_reaction.script(59) :
+      <br/>
+      @ flush
+      <br/>
+      <br/>
+      Сразу после загрузки уровня.(Jump_to_level_darkvalley)при переходе по сюжетной линии со Свалки все нормально.
+     </a></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (257,335 bytes)
+     <span class="italic">17 июня 2008 12:16</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (413,997 bytes)
+     <span class="italic">20 июня 2008 10:34</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (458,357 bytes)
+     <span class="italic">07 июля 2008 10:24</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18503" name="18503">
+     <td class="bugnote-public">
+      <span class="small">(0018503)</span>
+      <br/>
+      oposum
+      <br/>
+      <span class="small">20 июня 2008 10:34</span>
+      <br/>
+      <span class="small">отредактирован:  20 июня 2008 10:34</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился Jump_to_level_Darkvalley через All SVN.18391
+      <br/>
+      <br/>
+      отредактирован: 20.06.08 10:34</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19787" name="19787">
+     <td class="bugnote-public">
+      <span class="small">(0019787)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">07 июля 2008 10:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Гарбаже
+      <br/>
+      БИЛД 05.07.08</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19796" name="19796">
+     <td class="bugnote-public">
+      <span class="small">(0019796)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">07 июля 2008 11:40</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">1. Убирать defence restrictor персонажу, идущему грабить.
+      <br/>
+      2. Сделать ему включение диалога на любом расстоянии, если он не может до тебя дойти.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 12:16</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 12:16</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 12:16</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 12:16</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">17 июня 2008 12:37</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">17 июня 2008 12:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:34</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий добавлен: 18503</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:34</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Комментарий отредактирован: 18503</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:34</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 июля 2008 18:44</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 июля 2008 18:44</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 10:24</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 10:25</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 19787</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 10:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 11:10</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 11:10</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">plecha =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 11:40</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 19796</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 11:40</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; plecha</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июля 2008 15:43</td>
+     <td class="small-caption">plecha</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июля 2008 15:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:21</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:21</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

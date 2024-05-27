@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010456: P:\xrCore\xrDebugNew.cpp  Line  : 298 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010455.html">
+      &lt; Прошлое обращение (0010455)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010457.html">
+      Следующее обращение (0010457) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010456</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>07 декабря 2006 15:13</td>
+    <td>07 декабря 2006 15:22</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>безотлагательный</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>07 декабря 2006 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010456: P:\xrCore\xrDebugNew.cpp  Line  : 298</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : fatal error
+     <br/>
+     Function      : _out_of_memory
+     <br/>
+     File          : P:\xrCore\xrDebugNew.cpp
+     <br/>
+     Line          : 298
+     <br/>
+     Description   : &lt;no expression&gt;
+     <br/>
+     Arguments     : Out of memory. Memory request: 73857 K
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0109407A xrCore.dll, xrDebug::fatal(), p:\xrcore\xrdebugnew.cpp, 294
+     <br/>
+     001B:010940B6 xrCore.dll, _out_of_memory(), p:\xrcore\xrdebugnew.cpp, 298
+     <br/>
+     001B:7C3487EE MSVCR71.dll, callnewh()
+     <br/>
+     001B:01272A46 xrLUA.dll, std::basic_string&lt;char,std::char_traits&lt;char&gt;,xalloc&lt;char&gt; &gt;::assign(), d:\develop\compilers\vs71\vc7\include\xstring, 612
+     <br/>
+     001B:01279804 xrLUA.dll, luabind::detail::class_rep::gettable(), p:\xrlua_jit\luabind\class_rep.cpp, 255
+     <br/>
+     001B:01279CAB xrLUA.dll, luabind::detail::class_rep::gettable_dispatcher(), p:\xrlua_jit\luabind\class_rep.cpp, 410
+     <br/>
+     001B:01258EA9 xrLUA.dll, luaD_precall(), p:\xrlua_jit\src\ldo.c, 324
+     <br/>
+     001B:01258F14 xrLUA.dll, luaD_call(), p:\xrlua_jit\src\ldo.c, 380
+     <br/>
+     001B:0126D11A xrLUA.dll, callTMres(), p:\xrlua_jit\src\lvm.c, 94
+     <br/>
+     001B:0126D2AA xrLUA.dll, luaV_gettable(), p:\xrlua_jit\src\lvm.c, 133
+     <br/>
+     001B:01258D39 xrLUA.dll, luaD_precall(), p:\xrlua_jit\src\ldo.c, 282
+     <br/>
+     001B:01258F14 xrLUA.dll, luaD_call(), p:\xrlua_jit\src\ldo.c, 380
+     <br/>
+     001B:01252045 xrLUA.dll, f_call(), p:\xrlua_jit\src\lapi.c, 821
+     <br/>
+     001B:0125852A xrLUA.dll, luaD_rawrunprotected(), p:\xrlua_jit\src\ldo.c, 120
+     <br/>
+     001B:012590AF xrLUA.dll, luaD_pcall(), p:\xrlua_jit\src\ldo.c, 463
+     <br/>
+     001B:012520A3 xrLUA.dll, lua_pcall(), p:\xrlua_jit\src\lapi.c, 842
+     <br/>
+     001B:0127FBE3 xrLUA.dll, luabind::detail::pcall(), p:\xrlua_jit\luabind\pcall.cpp, 41
+     <br/>
+     001B:0315A49A xrGame.dll, luabind::detail::proxy_member_caller&lt;bool,boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::operator bool(), d:\sdk\luabind\luabind\detail\call_member.hpp, 112
+     <br/>
+     001B:0315A293 xrGame.dll, CScriptPropertyEvaluatorWrapper::evaluate(), p:\xr_3da\xrgame\script_property_evaluator_wrapper.cpp, 30
+     <br/>
+     001B:0314FD8C xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::evaluate_condition(), p:\xr_3da\xrgame\problem_solver_inline.h, 204
+     <br/>
+     001B:0314FFB8 xrGame.dll, COperatorAbstract&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,unsigned short&gt;::applicable&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; const &gt;(), p:\xr_3da\xrgame\operator_abstract_inline.h, 264
+     <br/>
+     001B:0314FE7F xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::value(), p:\xr_3da\xrgame\problem_solver_inline.h, 235
+     <br/>
+     001B:0314F5FA xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::step&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), p:\xr_3da\xrgame\a_star_inline.h, 143
+     <br/>
+     001B:0314EF15 xrGame.dll, CAStar&lt;unsigned short,CDataStorageBinaryHeap,CVertexManagerHashFixed&lt;unsigned int,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,256,8192&gt;,CVertexAllocatorFixed&lt;8192&gt;,1,CEdgePath&lt;unsigned int,1&gt;,CEmptyClassTemplate,CBuilderAllocatorConstructor,CManagerBuilderAllocatorConstructor,CDataStorageConstructor,unsigned int&gt;::find&lt;CPathManager&lt;CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBa(), p:\xr_3da\xrgame\a_star_inline.h, 252
+     <br/>
+     001B:0314EC7E xrGame.dll, CGraphEngine::search&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *,SBaseParameters&lt;unsigned short,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,unsigned int&gt; &gt;(), p:\xr_3da\xrgame\graph_engine_inline.h, 201
+     <br/>
+     001B:0314EB4E xrGame.dll, CProblemSolver&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt;,CConditionState&lt;COperatorConditionAbstract&lt;unsigned int,bool&gt; &gt;,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,unsigned int,0,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::solve(), p:\xr_3da\xrgame\problem_solver_inline.h, 377
+     <br/>
+     001B:0314E67A xrGame.dll, CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt;::update(), p:\xr_3da\xrgame\action_planner_inline.h, 71
+     <br/>
+     001B:03452546 xrGame.dll, CStalkerPlanner::update(), p:\xr_3da\xrgame\stalker_planner.cpp, 88
+     <br/>
+     001B:0343A031 xrGame.dll, CAI_Stalker::Think(), p:\xr_3da\xrgame\ai\stalker\ai_stalker.cpp, 835
+     <br/>
+     001B:03439765 xrGame.dll, CAI_Stalker::shedule_Update(), p:\xr_3da\xrgame\ai\stalker\ai_stalker.cpp, 750
+     <br/>
+     001B:004735E8 xr_3da.exe, CSheduler::ProcessStep(), p:\xr_3da\xrsheduler.cpp, 214
+     <br/>
+     001B:00473BEE xr_3da.exe, CSheduler::Update(), p:\xr_3da\xrsheduler.cpp, 296
+     <br/>
+     001B:0363A653 xrGame.dll, CGamePersistent::OnFrame(), p:\xr_3da\xrgame\gamepersistent.cpp, 357
+     <br/>
+     001B:0051BA6A xr_3da.exe, CRegistrator&lt;pureFrame&gt;::Process(), p:\xr_3da\pure.h, 77
+     <br/>
+     001B:0051A535 xr_3da.exe, CRenderDevice::FrameMove(), p:\xr_3da\device.cpp, 295
+     <br/>
+     001B:0051A74A xr_3da.exe, CRenderDevice::Run(), p:\xr_3da\device.cpp, 196
+     <br/>
+     001B:0043C274 xr_3da.exe, Startup(), p:\xr_3da\x_ray.cpp, 207
+     <br/>
+     001B:0043C9EB xr_3da.exe, WinMain(), p:\xr_3da\x_ray.cpp, 395
+     <br/>
+     001B:0059B3CD xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:006ABC75 xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     S:\logs\165</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9126" name="9126">
+     <td class="bugnote-public">
+      <span class="small">(0009126)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">07 декабря 2006 15:17</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">Memory request: 73857 K</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 декабря 2006 15:13</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 декабря 2006 15:17</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9126</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 декабря 2006 15:18</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 декабря 2006 15:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 декабря 2006 15:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 декабря 2006 15:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">P:\xrCore\xrDebugNew.cpp  Line  : 298 =&gt; P:\\xrCore\\xrDebugNew.cpp  Line  : 298</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 декабря 2006 15:22</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

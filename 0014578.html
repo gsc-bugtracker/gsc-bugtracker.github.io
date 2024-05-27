@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014578: Red Forest    [error]    : Не удается найти указанный файл. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014577.html">
+      &lt; Прошлое обращение (0014577)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014579.html">
+      Следующее обращение (0014579) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014578</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>03 апреля 2008 12:08</td>
+    <td>06 июня 2008 12:20</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r21855</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014578: Red Forest    [error]    : Не удается найти указанный файл.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Пригнул с Ескейпа в Ред_форест, ззади меня, вместе со мной респнулся сталкер, (синего цвета на карте), я с ним говорить, а он мне креш выбел...
+     <br/>
+     <br/>
+     Destroying binded object sim_default_freedom_112934
+     <br/>
+     dumping client spawn manager stuff for object with id 12934
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:037389AB xrGame.dll, UpdateCameraDirection(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 203
+     <br/>
+     001B:0373A3EF xrGame.dll, CUITalkWnd::Update(), e:\priquel\sources\engine\xrgame\ui\uitalkwnd.cpp, 241
+     <br/>
+     001B:03705BA2 xrGame.dll, CDialogHolder::OnFrame(), e:\priquel\sources\engine\xrgame\uidialogholder.cpp, 216
+     <br/>
+     001B:004C9213 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+     <br/>
+     001B:004DEE89 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+     <br/>
+     001B:004DDED8 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+     <br/>
+     001B:004DDE74 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+     <br/>
+     001B:004DCE9A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+     <br/>
+     001B:004DDAB2 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+     <br/>
+     001B:004DDBCB xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+     <br/>
+     001B:0041C8C2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 259
+     <br/>
+     001B:0041CF55 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 688
+     <br/>
+     001B:0041D233 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 748
+     <br/>
+     001B:00557D22 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     [error]    : Не удается найти указанный файл.
+     <br/>
+     <br/>
+     Пригнул с Ескейпа в Ред_форест, ззади меня, вместе со мной респнулся сталкер, (синего цвета на карте), я с ним говорить, а он мне креш выбел...</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (902,253 bytes)
+     <span class="italic">03 апреля 2008 12:08</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="13571" name="13571">
+     <td class="bugnote-public">
+      <span class="small">(0013571)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">03 апреля 2008 12:36</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">uitalkwnd.cpp:241
+      <br/>
+      UpdateCameraDirection( smart_cast&lt;CGameObject*&gt;(m_pOthersInvOwner) );
+      <br/>
+      m_pOthersInvOwner = глючнутый адрес : адрес есть, содержания нет (освобождено ?)</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15011" name="15011">
+     <td class="bugnote-public">
+      <span class="small">(0015011)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">18 апреля 2008 19:31</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">uitalkwnd - был переделан, такого не должно быть,
+      <br/>
+      если повторите - опишите как.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15330" name="15330">
+     <td class="bugnote-public">
+      <span class="small">(0015330)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">23 апреля 2008 17:09</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторилось на подходе к леснику(случайно)
+      <br/>
+      <br/>
+      001B:02BDE328 xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      001B:0046628E xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      001B:0041098F xrEngine.exe, CApplication::OnFrame(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 1034
+      <br/>
+      001B:00499E83 xrEngine.exe, rp_Frame(), e:\priquel\sources\engine\xrengine\pure.cpp, 13
+      <br/>
+      001B:004AB5C9 xrEngine.exe, CRegistrator&lt;pureFrame&gt;::Process(), e:\priquel\sources\engine\xrengine\pure.h, 81
+      <br/>
+      001B:004AAD88 xrEngine.exe, ProcessLoading(), e:\priquel\sources\engine\xrengine\device.cpp, 444
+      <br/>
+      001B:004AAD24 xrEngine.exe, CRenderDevice::FrameMove(), e:\priquel\sources\engine\xrengine\device.cpp, 435
+      <br/>
+      001B:004A9D4A xrEngine.exe, CRenderDevice::on_idle(), e:\priquel\sources\engine\xrengine\device.cpp, 239
+      <br/>
+      001B:004AA962 xrEngine.exe, CRenderDevice::message_loop(), e:\priquel\sources\engine\xrengine\device.cpp, 356
+      <br/>
+      001B:004AAA7B xrEngine.exe, CRenderDevice::Run(), e:\priquel\sources\engine\xrengine\device.cpp, 392
+      <br/>
+      001B:0040EFB2 xrEngine.exe, Startup(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 261
+      <br/>
+      001B:0040F777 xrEngine.exe, WinMain_impl(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 702
+      <br/>
+      001B:0040FA53 xrEngine.exe, WinMain(), e:\priquel\sources\engine\xrengine\x_ray.cpp, 762
+      <br/>
+      001B:005131E4 xrEngine.exe, __tmainCRTStartup(), f:\sp\vctools\crt_bld\self_x86\crt\src\crtexe.c, 589
+      <br/>
+      001B:7C816D4F kernel32.dll
+      <br/>
+      <br/>
+      [error]    : Не удается найти указанный файл.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15331" name="15331">
+     <td class="bugnote-public">
+      <span class="small">(0015331)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">23 апреля 2008 17:17</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Darin, это другой баг.
+      <br/>
+      текст "Не удается найти указанный файл."
+      <br/>
+      ничего не означает - такой текст не говорит, что это одинаковые баги.
+      <br/>
+      баги одинаковые(дубликаты, похожи), если:
+      <br/>
+      первый две строки совпадают (такие)
+      <br/>
+      xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      xrEngine.exe, IGame_Level::SoundEvent_Dispatch(), e:\priquel\sources\engine\xrengine\xr_area.cpp, 84
+      <br/>
+      --------
+      <br/>
+      но если верхние xrDebugNew...
+      <br/>
+      то их(xrDebugNew.cpp) нужно пропустить.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15332" name="15332">
+     <td class="bugnote-public">
+      <span class="small">(0015332)</span>
+      <br/>
+      Sea
+      <br/>
+      <span class="small">23 апреля 2008 17:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">в данном случае, вылетел звук (sound):
+      <br/>
+      xrGame.dll, CCustomMonster::feel_sound_new(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 897
+      <br/>
+      ---
+      <br/>
+      этот баг отправить &lt;lain&gt;</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 12:08</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 12:08</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 12:08</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 12:16</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Воспроизводимость</td>
+     <td class="small-caption">всегда =&gt; случайно</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 12:16</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 12:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 12:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 апреля 2008 12:31</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Sea</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 апреля 2008 12:36</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 13571</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 апреля 2008 18:24</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 апреля 2008 18:24</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 19:31</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15011</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 19:31</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 19:31</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 10:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 апреля 2008 17:09</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 15330</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 апреля 2008 17:17</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15331</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 апреля 2008 17:19</td>
+     <td class="small-caption">Sea</td>
+     <td class="small-caption">Комментарий добавлен: 15332</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 10:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 июня 2008 10:33</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 июня 2008 12:20</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

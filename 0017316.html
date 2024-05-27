@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017316: MARSH File          : E:\priquel\sources\engine\xrGame\GameTask.cpp   Line          : 87 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017315.html">
+      &lt; Прошлое обращение (0017315)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017317.html">
+      Следующее обращение (0017317) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017316</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>25 июня 2008 11:29</td>
+    <td>24 июля 2008 13:16</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28794</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017316: MARSH File          : E:\priquel\sources\engine\xrGame\GameTask.cpp   Line          : 87</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">* xrSheduler: too much time consumed by object [alife_simulator] (41ms)
+     <br/>
+     * xrSheduler: too much time consumed by object [alife_simulator] (38ms)
+     <br/>
+     [LUA] task_manager:(308):!!!Init new task type[storyline] for csky, key[csky_general_mar_tutorial_tower_top], entity_id[6]
+     <br/>
+     [LUA] task_objects:(126):ADD TASK LOCATION
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : 0
+     <br/>
+     [error]Function      : CGameTask::CreateMapLocation
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\GameTask.cpp
+     <br/>
+     [error]Line          : 87
+     <br/>
+     [error]Description   : Can`t create duplicated MapLocation of GameTask: task_id=6,  map_location=primary_task_location,  object_id=1275
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:0073D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:0073E181 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+     <br/>
+     001B:02FC4629 xrGame.dll, CGameTask::CreateMapLocation(), e:\priquel\sources\engine\xrgame\gametask.cpp, 87
+     <br/>
+     001B:02FC4DCE xrGame.dll, CGameTask::OnArrived(), e:\priquel\sources\engine\xrgame\gametask.cpp, 69
+     <br/>
+     001B:02FCB479 xrGame.dll, CGameTaskManager::GiveGameTaskToActor(), e:\priquel\sources\engine\xrgame\gametaskmanager.cpp, 108
+     <br/>
+     001B:0348DC98 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     После квеста "Подняться на вышку" что перед выбросом</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (690,356 bytes)
+     <span class="italic">25 июня 2008 11:29</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (2,594,256 bytes)
+     <span class="italic">03 июля 2008 12:45</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080703-124311.zip (4,118,446 bytes)
+     <span class="italic">03 июля 2008 12:56</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     mar10.sav.bz2 (988,806 bytes)
+     <span class="italic">03 июля 2008 12:56</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (1,384,221 bytes)
+     <span class="italic">07 июля 2008 12:06</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18832" name="18832">
+     <td class="bugnote-public">
+      <span class="small">(0018832)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">25 июня 2008 12:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">решён в след ревизии марша</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19538" name="19538">
+     <td class="bugnote-public">
+      <span class="small">(0019538)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">03 июля 2008 12:45</span>
+      <br/>
+      <span class="small">отредактирован:  03 июля 2008 13:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">вылетает на болотах после взятия квестов у механика
+      <br/>
+      механик дает сразу три квеста - принести флэшки, две из флэшек у актера
+      <br/>
+      лог с дампом и сэйв приаттачил
+      <br/>
+      <br/>
+      build 02.07.08
+      <br/>
+      <br/>
+      [LUA] ...:\current_build\task_objects:(130):ADD TASK LOCATION
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : 0
+      <br/>
+      [error]Function      : CGameTask::CreateMapLocation
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\GameTask.cpp
+      <br/>
+      [error]Line          : 87
+      <br/>
+      [error]Description   : Can`t create duplicated MapLocation of GameTask: task_id=57,  map_location=secondary_task_location_complex_flesh_up_bd_mp5,  object_id=725
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0082D736 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0082E301 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+      <br/>
+      001B:038494D9 xrGame.dll, CGameTask::CreateMapLocation(), e:\priquel\sources\engine\xrgame\gametask.cpp, 87
+      <br/>
+      001B:03849B7E xrGame.dll, CGameTask::OnArrived(), e:\priquel\sources\engine\xrgame\gametask.cpp, 69
+      <br/>
+      001B:0384FE09 xrGame.dll, CGameTaskManager::GiveGameTaskToActor(), e:\priquel\sources\engine\xrgame\gametaskmanager.cpp, 108
+      <br/>
+      001B:03D10568 xrGame.dll, _strlwr()
+      <br/>
+      <br/>
+      отредактирован: 03.07.08 12:55
+      <br/>
+      <br/>
+      отредактирован: 03.07.08 13:19</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19574" name="19574">
+     <td class="bugnote-public">
+      <span class="small">(0019574)</span>
+      <br/>
+      Distemper
+      <br/>
+      <span class="small">03 июля 2008 17:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Надо было написать, что механик даёт три квеста, а падает когда их брать повторно после сейв/лоада..</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="19803" name="19803">
+     <td class="bugnote-public">
+      <span class="small">(0019803)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">07 июля 2008 12:06</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">выпало на болотах, без сэйв/лоада
+      <br/>
+      взял квест "принести куртку" второй раз
+      <br/>
+      (после первого взятия квеста мапспот уже был)
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : 0
+      <br/>
+      [error]Function      : CGameTask::CreateMapLocation
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\GameTask.cpp
+      <br/>
+      [error]Line          : 87
+      <br/>
+      [error]Description   : Can`t create duplicated MapLocation of GameTask: task_id=17,  map_location=secondary_task_location_complex_recover_item,  object_id=158
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0083D786 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0083E371 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 274
+      <br/>
+      001B:039FC7D9 xrGame.dll, CGameTask::CreateMapLocation(), e:\priquel\sources\engine\xrgame\gametask.cpp, 87
+      <br/>
+      001B:039FCE7E xrGame.dll, CGameTask::OnArrived(), e:\priquel\sources\engine\xrgame\gametask.cpp, 69
+      <br/>
+      001B:03A033BB xrGame.dll, CGameTaskManager::GiveGameTaskToActor(), e:\priquel\sources\engine\xrgame\gametaskmanager.cpp, 113
+      <br/>
+      001B:03EC5810 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20630" name="20630">
+     <td class="bugnote-public">
+      <span class="small">(0020630)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">15 июля 2008 11:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не вылетает, можно закрывать</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 11:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 11:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 11:29</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 12:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 12:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 12:19</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 12:20</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 12:20</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 12:20</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 12:20</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 18832</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 14:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:45</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19538</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:45</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; Distemper</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:55</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 19538</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 12:56</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080703-124311.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 12:56</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: mar10.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 13:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий отредактирован: 19538</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 17:08</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 17:08</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r29504</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 17:10</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Комментарий добавлен: 19574</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 10:48</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 12:06</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 19803</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 июля 2008 12:06</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 июля 2008 15:05</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 12:31</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 12:31</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">MARSH File          : E:\priquel\sources\engine\xrGame\GameTask.cpp   Line          : 87 =&gt; MARSH File          : E:\\priquel\\sources\\engine\\xrGame\\GameTask.cpp   Line          : 87</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 12:31</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 17:16</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 17:16</td>
+     <td class="small-caption">Distemper</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">r29504 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 11:05</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20630</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июля 2008 13:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

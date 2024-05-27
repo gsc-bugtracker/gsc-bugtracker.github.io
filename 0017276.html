@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017276: Build 23.06.08 Red Forest - Cкрипт после разговора со сталкером. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017275.html">
+      &lt; Прошлое обращение (0017275)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017277.html">
+      Следующее обращение (0017277) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017276</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>авария</td>
+    <td>иногда</td>
+    <td>24 июня 2008 10:59</td>
+    <td>10 июля 2008 10:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь163
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017276: Build 23.06.08 Red Forest - Cкрипт после разговора со сталкером.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack traceback:
+     <br/>
+     f:\current_build\gamedata\scripts\_g.script:1263: in function 'callstack'
+     <br/>
+     f:\current_build\gamedata\scripts\sim_board.script:293: in function 'remove_squad'
+     <br/>
+     ...rent_build\gamedata\scripts\sim_squad_generic.script:319: in function 'on_npc_death'
+     <br/>
+     ...rent_build\gamedata\scripts\sim_squad_generic.script:270: in function 'remove_npc'
+     <br/>
+     f:\current_build\gamedata\scripts\sim_combat.script:274: in function 'update'
+     <br/>
+     ...\current_build\gamedata\scripts\smart_terrain.script:964: in function &lt;...\current_build\gamedata\scripts\smart_terrain.script:961&gt;
+     <br/>
+     [LUA] f:\current_build\sim_combat:(75):Sim_Combat[esc_smart_terrain_4_11]: unregister squad 36
+     <br/>
+     [LUA] f:\current_build\sim_board:(330):assigned squad 36 to smart [nil].
+     <br/>
+     [LUA] f:\current_build\sim_faction:(462):unregister faction squad 36
+     <br/>
+     [LUA] ...ild\sim_faction_brain_mutant:(28):faction [monster] brain update
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [Lua] f:\current_build\gamedata\scripts\sim_faction.script(424) :
+     <br/>
+     ! [LUA]  2 : [C  ] sort
+     <br/>
+     ! [LUA]  3 : [Lua] f:\current_build\gamedata\scripts\sim_faction.script(424) : calculate_squad_tasks
+     <br/>
+     ! [LUA]  4 : [Lua] ...ild\gamedata\scripts\sim_faction_brain_mutant.script(40) : faction_brain_update
+     <br/>
+     ! [LUA]  5 : [Lua] f:\current_build\gamedata\scripts\sim_faction.script(307) : faction_brain_update
+     <br/>
+     ! [LUA]  6 : [Lua] f:\current_build\gamedata\scripts\sim_board.script(323) : remove_squad
+     <br/>
+     ! [LUA]  7 : [Lua] ...rent_build\gamedata\scripts\sim_squad_generic.script(319) : on_npc_death
+     <br/>
+     ! [LUA]  8 : [Lua] ...rent_build\gamedata\scripts\sim_squad_generic.script(270) : remove_npc
+     <br/>
+     ! [LUA]  9 : [Lua] f:\current_build\gamedata\scripts\sim_combat.script(274) : update
+     <br/>
+     ! [LUA] 10 : [Lua] ...\current_build\gamedata\scripts\smart_terrain.script(964) :
+     <br/>
+     ! [LUA] f:\current_build\gamedata\scripts\sim_faction.script:424: attempt to index field '?' (a nil value)
+     <br/>
+     * xrSheduler: too much time consumed by object [alife_simulator] (48ms)
+     <br/>
+     bad path check changed movement type from RUN to WALK
+     <br/>
+     bad path check changed movement type from RUN to WALK
+     <br/>
+     <br/>
+     <br/>
+     Проходил задание "Найти проход в аномальную зону", дошёл до
+     <br/>
+     групы сталкеров(которая должна была меня провести туда), включил диалог со сталкером, поговорил,закончил разговор - одновременно выпал скрипт и появилось вторстепенное задание (Guard the stalkers on their way to the anomals area)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (301,003 bytes)
+     <span class="italic">24 июня 2008 10:59</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     r4.sav.bz2 (917,387 bytes)
+     <span class="italic">24 июня 2008 11:02</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18718" name="18718">
+     <td class="bugnote-public">
+      <span class="small">(0018718)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">24 июня 2008 13:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Вкомитил новые скрипты, надо повторить на них.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20107" name="20107">
+     <td class="bugnote-public">
+      <span class="small">(0020107)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">09 июля 2008 10:54</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">не выпадает</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 10:59</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 10:59</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 10:59</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 11:01</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: r3.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 11:02</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл удален: r3.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 11:02</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: r4.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 11:23</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 11:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 13:00</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 18718</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 13:00</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 18:06</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 18:06</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 10:54</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 20107</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 июля 2008 12:53</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 июля 2008 12:53</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">10 июля 2008 10:51</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017180: Garbage  cross_table doesn't correspond to the AI-map E:\priquel\sources\engine\xrGame\ai_space.cpp  103 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017179.html">
+      &lt; Прошлое обращение (0017179)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017181.html">
+      Следующее обращение (0017181) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017180</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>значительный</td>
+    <td>всегда</td>
+    <td>20 июня 2008 09:47</td>
+    <td>25 июля 2008 12:08</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28391</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017180: Garbage  cross_table doesn't correspond to the AI-map E:\priquel\sources\engine\xrGame\ai_space.cpp  103</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : cross_table().header().level_guid() == level_graph().header().guid()
+     <br/>
+     [error]Function      : CAI_Space::load
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\ai_space.cpp
+     <br/>
+     [error]Line          : 103
+     <br/>
+     [error]Description   : cross_table doesn't correspond to the AI-map
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:02EDBE1A xrGame.dll, CAI_Space::load(), e:\priquel\sources\engine\xrgame\ai_space.cpp, 104
+     <br/>
+     001B:02B7C60C xrGame.dll, CALifeGraphRegistry::setup_current_level(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 92
+     <br/>
+     001B:02B7CBA5 xrGame.dll, CALifeGraphRegistry::update(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 61
+     <br/>
+     001B:02B7A06B xrGame.dll, CALifeSimulatorBase::register_object(), e:\priquel\sources\engine\xrgame\alife_simulator_base2.cpp, 31
+     <br/>
+     001B:02B8E581 xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 105
+     <br/>
+     001B:02B8E9DC xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 153
+     <br/>
+     001B:02B8C2D5 xrGame.dll, CALifeUpdateManager::load(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 269
+     <br/>
+     001B:02B3DD47 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 77
+     <br/>
+     001B:031075C0 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+     <br/>
+     001B:031076F0 xrGame.dll, game_sv_Single::Create(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 29
+     <br/>
+     001B:03109624 xrGame.dll, xrServer::Connect(), e:\priquel\sources\engine\xrgame\xrserver_connect.cpp, 50
+     <br/>
+     001B:02F0D8D7 xrGame.dll, CLevel::net_start2(), e:\priquel\sources\engine\xrgame\level_start.cpp, 137
+     <br/>
+     001B:004A901F xrEngine.exe, imf_Process()
+     <br/>
+     001B:004A9C92 xrEngine.exe, CTheoraStream::ParseHeaders(), e:\priquel\sources\engine\xrengine\xrtheora_stream.cpp, 153
+     <br/>
+     001B:0040F31E xrEngine.exe, operator new()
+     <br/>
+     001B:0040EB62 xrEngine.exe, operator new()
+     <br/>
+     001B:0040F31E xrEngine.exe, operator new()
+     <br/>
+     001B:0040F553 xrEngine.exe, operator new()
+     <br/>
+     001B:00516CD0 xrEngine.exe, ICClose()
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     <br/>
+     При джампе с Агропрома на Свалку(all_test_SVN)</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080620-092849garbage.zip (692,467 bytes)
+     <span class="italic">20 июня 2008 09:47</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     агропром_прыжек_свалка.rar (247,456 bytes)
+     <span class="italic">20 июня 2008 19:22</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     ai_space.cpp.rar (905,684 bytes)
+     <span class="italic">25 июня 2008 19:06</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080715-105337777777777777777777777777777777777777777777777777777777777777777777.zip (1,849,511 bytes)
+     <span class="italic">15 июля 2008 11:17</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     21212121213213412321312312.sav.bz2 (941,743 bytes)
+     <span class="italic">15 июля 2008 11:18</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     usercheg_autosave.sav.bz2 (945,915 bytes)
+     <span class="italic">15 июля 2008 11:18</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18515" name="18515">
+     <td class="bugnote-public">
+      <span class="small">(0018515)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">20 июня 2008 11:37</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Пробуйте.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18591" name="18591">
+     <td class="bugnote-public">
+      <span class="small">(0018591)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">20 июня 2008 19:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">попробовал,с агропрома на свалку на свежих mixed:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : cross_table().header().level_guid() == level_graph().header().guid()
+      <br/>
+      [error]Function      : CAI_Space::load
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\ai_space.cpp
+      <br/>
+      [error]Line          : 103
+      <br/>
+      [error]Description   : cross_table doesn't correspond to the AI-map
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02EAC30A xrGame.dll, CAI_Space::load(), e:\priquel\sources\engine\xrgame\ai_space.cpp, 104
+      <br/>
+      001B:02B4C12C xrGame.dll, CALifeGraphRegistry::setup_current_level(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 92
+      <br/>
+      001B:02B4C6C5 xrGame.dll, CALifeGraphRegistry::update(), e:\priquel\sources\engine\xrgame\alife_graph_registry.cpp, 61
+      <br/>
+      001B:02B49B8B xrGame.dll, CALifeSimulatorBase::register_object(), e:\priquel\sources\engine\xrgame\alife_simulator_base2.cpp, 31
+      <br/>
+      001B:02B5E0A1 xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 105
+      <br/>
+      001B:02B5E4FC xrGame.dll, CALifeStorageManager::load(), e:\priquel\sources\engine\xrgame\alife_storage_manager.cpp, 153
+      <br/>
+      001B:02B5BDF5 xrGame.dll, CALifeUpdateManager::load(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 269
+      <br/>
+      001B:02B0D867 xrGame.dll, CALifeSimulator::CALifeSimulator(), e:\priquel\sources\engine\xrgame\alife_simulator.cpp, 77
+      <br/>
+      001B:030D7B20 xrGame.dll, xr_new&lt;CALifeSimulator,xrServer *,shared_str *&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 20
+      <br/>
+      001B:030D7C50 xrGame.dll, game_sv_Single::Create(), e:\priquel\sources\engine\xrgame\game_sv_single.cpp, 29
+      <br/>
+      001B:030D9B84 xrGame.dll, xrServer::Connect(), e:\priquel\sources\engine\xrgame\xrserver_connect.cpp, 50
+      <br/>
+      001B:02EDDDC7 xrGame.dll, CLevel::net_start2(), e:\priquel\sources\engine\xrgame\level_start.cpp, 137
+      <br/>
+      001B:004A91AF xrEngine.exe, imf_Process()
+      <br/>
+      <br/>
+      <br/>
+      если пропускать можно таки загрузить уровень,но он все равно валится:
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CALifeMonsterDetailPathManager::target
+      <br/>
+      [error]File          : E:\priquel\sources\engine\xrGame\alife_monster_detail_path_manager.cpp
+      <br/>
+      [error]Line          : 39
+      <br/>
+      [error]Description   : (ai().game_graph().vertex(game_vertex_id)-&gt;level_id() != ai().alife().graph().level().level_id()) || ai().level_graph().inside(level_vertex_id,position)
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7C7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 269
+      <br/>
+      001B:02B263E4 xrGame.dll, CALifeMonsterDetailPathManager::target(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 39
+      <br/>
+      001B:02B265D2 xrGame.dll, CALifeMonsterDetailPathManager::target(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 56
+      <br/>
+      001B:02B21709 xrGame.dll, CALifeMonsterBrain::process_task(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 114
+      <br/>
+      001B:02B21A51 xrGame.dll, CALifeMonsterBrain::update(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 169
+      <br/>
+      001B:031D1C0E xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CSE_ALifeMonsterBase,luabind::detail::null_type,CSE_ALifeMonsterBase *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 361
+      <br/>
+      001B:031D5B54 xrGame.dll, luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeMonsterBase *),CSE_ALifeMonsterBase,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+      <br/>
+      001B:031D6901 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeMonsterBase *),CSE_ALifeMonsterBase,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+      <br/>
+      001B:1001C88A luabind.beta7-devel.rc4.dll, boost::function1&lt;int,lua_State *,luabind::memory_allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:1001C735 luabind.beta7-devel.rc4.dll, luabind::detail::overload_rep::call(), e:\priquel\sources\sdk\include\luabind\detail\overload_rep_impl.hpp, 33
+      <br/>
+      001B:10018603 luabind.beta7-devel.rc4.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\class_rep.cpp, 696
+      <br/>
+      001B:0034CF5F lua.JIT.1.1.4.dll, luaD_precall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 326
+      <br/>
+      001B:0034D332 lua.JIT.1.1.4.dll, luaD_call(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 383
+      <br/>
+      001B:00342FD7 lua.JIT.1.1.4.dll, f_call(), e:\priquel\sources\engine\3rd party\luajit\src\lapi.c, 796
+      <br/>
+      001B:0034C5FF lua.JIT.1.1.4.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 119
+      <br/>
+      001B:0034D6B3 lua.JIT.1.1.4.dll, luaD_pcall(), e:\priquel\sources\engine\3rd party\luajit\src\ldo.c, 464
+      <br/>
+      001B:00342F48 lua.JIT.1.1.4.dll, lua_pcall(), e:\priquel\sources\engine\3rd party\luajit\src\lapi.c, 817
+      <br/>
+      001B:10023E1D luabind.beta7-devel.rc4.dll, luabind::detail::pcall(), e:\priquel\sources\engine\3rd party\luabind\luabind\src\pcall.cpp, 42
+      <br/>
+      001B:02A2A143 xrGame.dll, luabind::detail::proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type(), e:\priquel\sources\sdk\include\luabind\detail\call_member.hpp, 248
+      <br/>
+      001B:031D4220 xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeMonsterBase&gt;::update(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 163
+      <br/>
+      001B:02B5AA19 xrGame.dll, CALifeScheduleRegistry::CUpdatePredicate::operator()(), e:\priquel\sources\engine\xrgame\alife_schedule_registry.h, 46
+      <br/>
+      001B:02B5B2AA xrGame.dll, CSafeMapIterator&lt;unsigned short,CSE_ALifeSchedulable,stlp_std::less&lt;unsigned short&gt;,0,unsigned __int64,1&gt;::update&lt;CALifeScheduleRegistry::CUpdatePredicate&gt;(), e:\priquel\sources\engine\xrgame\safe_map_iterator_inline.h, 128
+      <br/>
+      001B:02B5B4E9 xrGame.dll, CALifeUpdateManager::update_scheduled(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 104
+      <br/>
+      001B:02B5CF32 xrGame.dll, CALifeUpdateManager::shedule_Update(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 134
+      <br/>
+      001B:00426CD1 xrEngine.exe, stlp_std::reverse_iterator&lt;CPS_Instance * *&gt;::reverse_iterator&lt;CPS_Instance * *&gt;(), e:\priquel\sources\sdk\include\stlport\stl\_iterator.h, 65
+      <br/>
+      001B:004273FF xrEngine.exe, xr_new&lt;CGameFont,char const [5],char const *,unsigned int&gt;(), e:\priquel\sources\engine\xrcore\xrmemory_subst_msvc.h, 25
+      <br/>
+      001B:02EB8555 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 505
+      <br/>
+      001B:00497C23 xrEngine.exe, setup_lm_screenshot_matrices(), e:\priquel\sources\engine\xrengine\fdemorecord.cpp, 37
+      <br/>
+      001B:77F28A51 GDI32.dll</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18885" name="18885">
+     <td class="bugnote-public">
+      <span class="small">(0018885)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">25 июня 2008 19:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился при джампе с Красного Леса на Лиманск. Ревизия 28851. Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20634" name="20634">
+     <td class="bugnote-public">
+      <span class="small">(0020634)</span>
+      <br/>
+      <font style="text-decoration: line-through">
+       пользователь163
+      </font>
+      <br/>
+      <span class="small">15 июля 2008 11:17</span>
+      <br/>
+      <span class="small">отредактирован:  15 июля 2008 11:19</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился при переходе на Госпиталь (при загрузке)revision 30363
+      <br/>
+      +сейв,лог
+      <br/>
+      <br/>
+      отредактирован: 15.07.08 11:19</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20635" name="20635">
+     <td class="bugnote-public">
+      <span class="small">(0020635)</span>
+      <br/>
+      t_G_M_
+      <br/>
+      <span class="small">15 июля 2008 11:25</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Ребята, все "cross_table doesn't correspond to the AI-map" - это отдельные баги, относящиеся к конкретным уровням. Их нужно постить по каждому уровню отдельно.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 09:47</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 09:47</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 09:47</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080620-092849garbage.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:37</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 11:37</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:37</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 18515</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 19:22</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18591</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 19:22</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: агропром_прыжек_свалка.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 19:05</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 18885</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 19:06</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: ai_space.cpp.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 11:17</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий добавлен: 20634</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 11:17</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080715-105337777777777777777777777777777777777777777777777777777777777777777777.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 11:18</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: 21212121213213412321312312.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 11:18</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Файл добавлен: usercheg_autosave.sav.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">15 июля 2008 11:19</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь163
+      </font></td>
+     <td class="small-caption">Комментарий отредактирован: 20634</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">15 июля 2008 11:25</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Комментарий добавлен: 20635</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:39</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 11:39</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  cross_table doesn't correspond to the AI-map E:\priquel\sources\engine\xrGame\ai_space.cpp  103 =&gt; Garbage  cross_table doesn\'t correspond to the AI-map E:\\priquel\\sources\\engine\\xrGame\\ai_space.cpp  103</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июля 2008 11:39</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июля 2008 12:08</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

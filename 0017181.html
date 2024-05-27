@@ -1,0 +1,1119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017181: Limansk  e:\priquel\sources\engine\xrcore\_stl_extensions.h 138 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017180.html">
+      &lt; Прошлое обращение (0017180)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017182.html">
+      Следующее обращение (0017182) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017181</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>20 июня 2008 10:00</td>
+    <td>11 июля 2008 19:49</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r28391</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017181: Limansk  e:\priquel\sources\engine\xrcore\_stl_extensions.h 138</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">[LUA] xr_conditions:(620):pl: counter [lim_square_enemy_count]  greater [9]
+     <br/>
+     ---DropItem activating slot [-1], Frame[35102]
+     <br/>
+     --- Activating slot [-1], inventory owner: [Федя Лохматый], Frame[35102]
+     <br/>
+     --- Inventory owner [Федя Лохматый]: send deactivate item [Акм 74/2]
+     <br/>
+     * xrSheduler: too much time consumed by object [lim_smart_terrain_3] (36ms)
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : _Pos&lt;size()
+     <br/>
+     [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+     <br/>
+     [error]Line          : 138
+     <br/>
+     [error]Description   : 0 0
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+     <br/>
+     001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+     <br/>
+     001B:02D10E5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+     <br/>
+     001B:02D18C59 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 246
+     <br/>
+     001B:02D18EB3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 291
+     <br/>
+     001B:02D16A77 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+     <br/>
+     001B:02D170C5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+     <br/>
+     001B:02D1715C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+     <br/>
+     001B:02D05832 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 957
+     <br/>
+     001B:02BA0D04 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+     <br/>
+     001B:0340A380 xrGame.dll, _strlwr()
+     <br/>
+     <br/>
+     При перестрелке у фонтана.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg_lua.rar (270 bytes)
+     <span class="italic">20 июня 2008 10:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (358,550 bytes)
+     <span class="italic">20 июня 2008 10:00</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     1.zip (837,275 bytes)
+     <span class="italic">20 июня 2008 11:04</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     enter_red_forest.zip (1,017,144 bytes)
+     <span class="italic">20 июня 2008 16:47</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     limansk_пулемет.rar (294,881 bytes)
+     <span class="italic">20 июня 2008 17:23</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080623-120018.zip (4,526,737 bytes)
+     <span class="italic">23 июня 2008 12:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080623-125704.zip (4,534,514 bytes)
+     <span class="italic">23 июня 2008 13:03</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red_boy.zip (928,061 bytes)
+     <span class="italic">23 июня 2008 16:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     marsh_згоревший_хутор.zip (1,086,339 bytes)
+     <span class="italic">23 июня 2008 16:47</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     MEGAFOUR_agroprom.rar (2,905,487 bytes)
+     <span class="italic">23 июня 2008 17:30</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.rar (1,061,258 bytes)
+     <span class="italic">24 июня 2008 11:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg_lua.rar (85 bytes)
+     <span class="italic">24 июня 2008 11:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     escape_atp.rar (378,571 bytes)
+     <span class="italic">24 июня 2008 21:08</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     3.zip (4,317,613 bytes)
+     <span class="italic">25 июня 2008 13:53</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18507" name="18507">
+     <td class="bugnote-public">
+      <span class="small">(0018507)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">20 июня 2008 11:05</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось при входе в шахту, что слева от закрытых ворот к леснику, перестреливался с бандитами вылетело с игры
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02CE0E5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02CE8C59 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 246
+      <br/>
+      001B:02CE8EB3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 291
+      <br/>
+      001B:02CE6A77 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02CE70C5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02CE715C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02CD5832 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 957
+      <br/>
+      001B:02B70D04 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:033DA380 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18565" name="18565">
+     <td class="bugnote-public">
+      <span class="small">(0018565)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">20 июня 2008 16:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторился при нажатии Enter на рыжем лесу:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02CE0E5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02CE8C59 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 246
+      <br/>
+      001B:02CE8EB3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 291
+      <br/>
+      001B:02CE6A77 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02CE70C5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02CE715C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02CD5832 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 957
+      <br/>
+      001B:02B70D04 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:033DA380 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18575" name="18575">
+     <td class="bugnote-public">
+      <span class="small">(0018575)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">20 июня 2008 17:22</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Лиманске,после выполнения квест убить пулеметчика(первый дом):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02CE094C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02CE8749 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 246
+      <br/>
+      001B:02CE89A3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 291
+      <br/>
+      001B:02CE6567 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02CE6BB5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02CE6C4C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02CD5322 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+      <br/>
+      001B:02B70824 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:033DA050 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18576" name="18576">
+     <td class="bugnote-public">
+      <span class="small">(0018576)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">20 июня 2008 17:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторить в следующем билде</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18621" name="18621">
+     <td class="bugnote-public">
+      <span class="small">(0018621)</span>
+      <br/>
+      bes
+      <br/>
+      <span class="small">23 июня 2008 12:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на лиманске после дома с пулеметчиком</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18627" name="18627">
+     <td class="bugnote-public">
+      <span class="small">(0018627)</span>
+      <br/>
+      Sifa
+      <br/>
+      <span class="small">23 июня 2008 13:03</span>
+      <br/>
+      <span class="small">отредактирован:  23 июня 2008 13:04</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторяется на Hospital-е.
+      <br/>
+      Есть Лог.
+      <br/>
+      <br/>
+      отредактирован: 23.06.08 13:04</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18644" name="18644">
+     <td class="bugnote-public">
+      <span class="small">(0018644)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">23 июня 2008 16:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на ред форест,при бое с засадой:
+      <br/>
+      <br/>
+      <br/>
+      * xrSheduler: too much time consumed by object [alife_simulator] (24ms)
+      <br/>
+      [LUA] xr_kamp:(316):vertex_position 4294967296
+      <br/>
+      [LUA] xr_kamp:(318):Nearest for npc[red_bridge_bandit_guard_123331] kamp [red_bridge_bandit_bridge_guard_wait] position [-208.59999084473:0.13370132446289:-331.09997558594]
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0289AE16 xrRender_R1.dll, CKinematics::BoneChain_Calculate(), e:\priquel\sources\engine\layers\xrrender\skeletonrigid.cpp, 191
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02CE0A5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02CE8859 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 243
+      <br/>
+      001B:02CE8B13 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 297
+      <br/>
+      001B:02CE6677 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02CE6CC5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02CE6D5C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02CD5432 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+      <br/>
+      001B:02B70824 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:033DA950 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18655" name="18655">
+     <td class="bugnote-public">
+      <span class="small">(0018655)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">23 июня 2008 16:52</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">полетело на болотах:
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:006DD5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:006DD7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02CE0A5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02CE8859 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 243
+      <br/>
+      001B:02CE8B13 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 297
+      <br/>
+      001B:02CE6677 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02CE6CC5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02CE6D5C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02CD5432 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+      <br/>
+      001B:02B70824 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:033DA950 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18658" name="18658">
+     <td class="bugnote-public">
+      <span class="small">(0018658)</span>
+      <br/>
+      Leha
+      <br/>
+      <span class="small">23 июня 2008 17:30</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Агропроме. Был возле ж\д платформы, выполнял квест "помочь защитить зону возле ж\д платформы".
+      <br/>
+      current_build
+      <br/>
+      Лог прикрепил.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18697" name="18697">
+     <td class="bugnote-public">
+      <span class="small">(0018697)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">24 июня 2008 11:12</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Болотах</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18707" name="18707">
+     <td class="bugnote-public">
+      <span class="small">(0018707)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">24 июня 2008 12:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Должно исправиться в следующей выкладке бинарников от Димы</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18803" name="18803">
+     <td class="bugnote-public">
+      <span class="small">(0018803)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">24 июня 2008 21:07</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">на кордоне,в начале боя на АТП(рев.28788):
+      <br/>
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0073D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0073D7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:02D40A6C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:02D48977 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 260
+      <br/>
+      001B:02D48EE3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 356
+      <br/>
+      001B:02D46687 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:02D46CD5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:02D46D6C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:02D35442 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+      <br/>
+      001B:02BD0824 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:0343B950 xrGame.dll, _strlwr()</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18836" name="18836">
+     <td class="bugnote-public">
+      <span class="small">(0018836)</span>
+      <br/>
+      Freemen
+      <br/>
+      <span class="small">25 июня 2008 13:53</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">! visual actors\stalker_soldier\stalker_soldier_1
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : _Pos&lt;size()
+      <br/>
+      [error]Function      : xr_vector&lt;struct MotionID,class xalloc&lt;struct MotionID&gt; &gt;::operator []
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrcore\_stl_extensions.h
+      <br/>
+      [error]Line          : 138
+      <br/>
+      [error]Description   : 0 0
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:0083D5B6 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:0083D7F7 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 279
+      <br/>
+      001B:035E0A5C xrGame.dll, xr_vector&lt;MotionID,xalloc&lt;MotionID&gt; &gt;::operator[](), e:\priquel\sources\engine\xrcore\_stl_extensions.h, 138
+      <br/>
+      001B:035E8967 xrGame.dll, CStalkerAnimationManager::missile_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 260
+      <br/>
+      001B:035E8ED3 xrGame.dll, CStalkerAnimationManager::assign_torso_animation(), e:\priquel\sources\engine\xrgame\stalker_animation_torso.cpp, 356
+      <br/>
+      001B:035E6677 xrGame.dll, CStalkerAnimationManager::play_torso(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 183
+      <br/>
+      001B:035E6CC5 xrGame.dll, CStalkerAnimationManager::update_impl(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 230
+      <br/>
+      001B:035E6D5C xrGame.dll, CStalkerAnimationManager::update(), e:\priquel\sources\engine\xrgame\stalker_animation_manager_update.cpp, 245
+      <br/>
+      001B:035D5432 xrGame.dll, CAI_Stalker::SelectAnimation(), e:\priquel\sources\engine\xrgame\ai\stalker\ai_stalker.cpp, 955
+      <br/>
+      001B:03470824 xrGame.dll, CCustomMonster::UpdatePositionAnimation(), e:\priquel\sources\engine\xrgame\custommonster.cpp, 559
+      <br/>
+      001B:03CDB300 xrGame.dll, _strlwr()
+      <br/>
+      <br/>
+      <br/>
+      Ескейп, квест "Помочь патрулю : автобусная остановка" выпало через пол минуты после объявления квеста</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="20424" name="20424">
+     <td class="bugnote-public">
+      <span class="small">(0020424)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">11 июля 2008 11:47</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Исправлен</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_lua.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk  e:\priquel\sources\engine\xrcore\_stl_extensions.h 138 =&gt; Limansk  e:\\priquel\\sources\\engine\\xrcore\\_stl_extensions.h 138</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:00</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 10:15</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 10:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 11:04</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 1.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 11:05</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 18507</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 16:46</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18565</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 16:47</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: enter_red_forest.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 17:22</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18575</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 17:23</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: limansk_пулемет.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 17:39</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 17:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 17:45</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 18576</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 12:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080623-120018.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 12:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Комментарий добавлен: 18621</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 12:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 13:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий добавлен: 18627</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 13:03</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080623-125704.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 13:04</td>
+     <td class="small-caption">Sifa</td>
+     <td class="small-caption">Комментарий отредактирован: 18627</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 16:11</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18644</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:11</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red_boy.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 16:47</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: marsh_згоревший_хутор.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:52</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18655</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">23 июня 2008 17:30</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Комментарий добавлен: 18658</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 17:30</td>
+     <td class="small-caption">Leha</td>
+     <td class="small-caption">Файл добавлен: MEGAFOUR_agroprom.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_lua.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 11:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 18697</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 12:46</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 12:46</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 12:46</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 18707</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 июня 2008 21:07</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 18803</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 июня 2008 21:08</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: escape_atp.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Комментарий добавлен: 18836</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 июня 2008 13:53</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: 3.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 июня 2008 14:16</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 11:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 20424</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 11:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 11:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Limansk  e:\priquel\sources\engine\xrcore\_stl_extensions.h 138 =&gt; Limansk  e:\\priquel\\sources\\engine\\xrcore\\_stl_extensions.h 138</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 июля 2008 11:47</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 июля 2008 19:49</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

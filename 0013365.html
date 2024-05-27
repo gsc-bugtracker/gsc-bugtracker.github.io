@@ -1,0 +1,684 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013365: Red Forest. GameGraph::CHeader::level - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013364.html">
+      &lt; Прошлое обращение (0013364)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013366.html">
+      Следующее обращение (0013366) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013365</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>незначительный</td>
+    <td>случайно</td>
+    <td>29 февраля 2008 12:30</td>
+    <td>20 августа 2008 11:10</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>GeForsik</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013365: Red Forest. GameGraph::CHeader::level</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : I != levels().end()
+     <br/>
+     [error]Function      : GameGraph::CHeader::level
+     <br/>
+     [error]File          : e:\priquel\sources\engine\xrgame\game_graph_inline.h
+     <br/>
+     [error]Line          : 153
+     <br/>
+     [error]Description   : there is no specified level in the game graph : 133
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647C72 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 317
+     <br/>
+     001B:02D92717 xrGame.dll, GameGraph::CHeader::level(), e:\priquel\sources\engine\xrgame\game_graph_inline.h, 153
+     <br/>
+     001B:02F58B34 xrGame.dll, CSavedGameWrapper__level_name(), e:\priquel\sources\engine\xrgame\saved_game_wrapper_script.cpp, 24
+     <br/>
+     001B:02F5E770 xrGame.dll, luabind::detail::returns&lt;char const *&gt;::call&lt;CSavedGameWrapper,luabind::detail::null_type,CSavedGameWrapper const *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 243
+     <br/>
+     001B:02F5E286 xrGame.dll, luabind::detail::call&lt;CSavedGameWrapper,luabind::detail::null_type,char const *,CSavedGameWrapper const *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 390
+     <br/>
+     001B:02F5CD52 xrGame.dll, luabind::detail::mem_fn_callback&lt;char const * (__cdecl*)(CSavedGameWrapper const *),CSavedGameWrapper,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:02F5C557 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;char const * (__cdecl*)(CSavedGameWrapper const *),CSavedGameWrapper,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00A59069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00A57248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     <br/>
+     Была перестрелка возле поднятого моста. Вышел в меню, чтобы засейвится и получил крэш.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080229-122743.zip (570,936 bytes)
+     <span class="italic">29 февраля 2008 12:30</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080418-120541.zip (786,224 bytes)
+     <span class="italic">18 апреля 2008 12:13</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080421-105424.zip (610,169 bytes)
+     <span class="italic">21 апреля 2008 11:11</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080421-105424.zip (610,169 bytes)
+     <span class="italic">21 апреля 2008 11:12</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     red_forest_rolic.rar (330,902 bytes)
+     <span class="italic">05 июня 2008 19:16</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="11058" name="11058">
+     <td class="bugnote-public">
+      <span class="small">(0011058)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">29 февраля 2008 15:27</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">это всегда повторяется? а если в консоли написать save 111, то завалится так же?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="11109" name="11109">
+     <td class="bugnote-public">
+      <span class="small">(0011109)</span>
+      <br/>
+      GeForsik
+      <br/>
+      <span class="small">03 марта 2008 14:10</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторить баг не удавалось.
+      <br/>
+      Если сейвится через консоль - не вылетает.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="13698" name="13698">
+     <td class="bugnote-public">
+      <span class="small">(0013698)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">04 апреля 2008 10:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">попробуйте сейвится через мейн меню, если и там не вылетает, то предлагаю его закрыть</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14926" name="14926">
+     <td class="bugnote-public">
+      <span class="small">(0014926)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">18 апреля 2008 12:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Милитари. Добавил лог.Может ли это быть из-за того, что Милитари не пришит к другим уровням?</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15056" name="15056">
+     <td class="bugnote-public">
+      <span class="small">(0015056)</span>
+      <br/>
+      Conrack
+      <br/>
+      <span class="small">21 апреля 2008 11:11</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторился на Марше, через меню.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="15122" name="15122">
+     <td class="bugnote-public">
+      <span class="small">(0015122)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">21 апреля 2008 17:14</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">эти баги происходят из-за того, что в мейн меню спрашивается имя уровня по сейву, а сейв не подходит к спону, в споне нет этого уровня, на котором сохранён сейв, либо же этот уровень уже поменял свой идентификатор, и присходит краш. пожалуйста, постите эти глюки только в случае, если у вас _все_ сейвы от вашего текущего спона</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="17606" name="17606">
+     <td class="bugnote-public">
+      <span class="small">(0017606)</span>
+      <br/>
+      Darin
+      <br/>
+      <span class="small">05 июня 2008 19:16</span>
+      <br/>
+      <span class="small">отредактирован:  05 июня 2008 19:18</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">во время проигрыша ролика(про мост),после загрузки сейва(записался,и сразу загрузился,не выходя из игры и уровня):
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : I != levels().end()
+      <br/>
+      [error]Function      : GameGraph::CHeader::level
+      <br/>
+      [error]File          : e:\priquel\sources\engine\xrgame\game_graph_inline.h
+      <br/>
+      [error]Line          : 153
+      <br/>
+      [error]Description   : there is no specified level in the game graph : 81
+      <br/>
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      <br/>
+      001B:00679B76 xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 182
+      <br/>
+      001B:00679DC2 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 273
+      <br/>
+      001B:02AC6D4E xrGame.dll, GameGraph::CHeader::level(), e:\priquel\sources\engine\xrgame\game_graph_inline.h, 153
+      <br/>
+      001B:03060CCC xrGame.dll, CMapLocation::CalcLevelName(), e:\priquel\sources\engine\xrgame\map_location.cpp, 291
+      <br/>
+      001B:03060E1C xrGame.dll, CMapLocation::Update(), e:\priquel\sources\engine\xrgame\map_location.cpp, 323
+      <br/>
+      001B:030655F9 xrGame.dll, CMapManager::Update(), e:\priquel\sources\engine\xrgame\map_manager.cpp, 237
+      <br/>
+      001B:004A9E8E xrEngine.exe, CTextConsole::DrawLog(), e:\priquel\sources\engine\xrengine\text_console.cpp, 239
+      <br/>
+      001B:0065C79B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+      <br/>
+      001B:78132848 MSVCR80.dll, endthread()
+      <br/>
+      001B:781328C8 MSVCR80.dll, endthread()
+      <br/>
+      <br/>
+      отредактирован: 05.06.08 19:18</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18922" name="18922">
+     <td class="bugnote-public">
+      <span class="small">(0018922)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:24</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">как повторить? если не повторяется - закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="21779" name="21779">
+     <td class="bugnote-public">
+      <span class="small">(0021779)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 августа 2008 09:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">закрывайте</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 12:30</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 12:30</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 12:30</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080229-122743.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 12:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 12:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 12:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; LoopZilla</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 14:47</td>
+     <td class="small-caption">LoopZilla</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">LoopZilla =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 15:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 11058</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 марта 2008 14:09</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 марта 2008 14:10</td>
+     <td class="small-caption">GeForsik</td>
+     <td class="small-caption">Комментарий добавлен: 11109</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 10:34</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">29 февраля 2008 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">version</td>
+     <td class="small-caption">r18968 =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 10:35</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 10:36</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 10:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 13698</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 апреля 2008 10:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 апреля 2008 10:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 12:13</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080418-120541.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 12:14</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 14926</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Комментарий добавлен: 15056</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 11:11</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080421-105424.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">21 апреля 2008 11:12</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080421-105424.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">21 апреля 2008 17:14</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 15122</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 19:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий добавлен: 17606</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">05 июня 2008 19:16</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Файл добавлен: red_forest_rolic.rar</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">05 июня 2008 19:18</td>
+     <td class="small-caption">Darin</td>
+     <td class="small-caption">Комментарий отредактирован: 17606</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:24</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18922</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 12:33</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 12:33</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">27 июня 2008 14:32</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 09:50</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 21779</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 11:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 августа 2008 11:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 августа 2008 11:10</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

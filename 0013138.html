@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013138: Limansk Expression    : io - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013137.html">
+      &lt; Прошлое обращение (0013137)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013139.html">
+      Следующее обращение (0013139) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013138</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>авария</td>
+    <td>случайно</td>
+    <td>26 февраля 2008 10:40</td>
+    <td>26 февраля 2008 11:28</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Conrack</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r18497</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013138: Limansk Expression    : io</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : io
+     <br/>
+     [error]Function      : CWeaponMagazined::switch2_Fire
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\WeaponMagazined.cpp
+     <br/>
+     [error]Line          : 586
+     <br/>
+     [error]Description   : no inventory owner, item wpn_sig5501099
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647C72 xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 317
+     <br/>
+     001B:036F7912 xrGame.dll, CWeaponMagazined::switch2_Fire(), e:\priquel\sources\engine\xrgame\weaponmagazined.cpp, 586
+     <br/>
+     001B:036F6A6A xrGame.dll, CWeaponMagazined::OnStateSwitch(), e:\priquel\sources\engine\xrgame\weaponmagazined.cpp, 364
+     <br/>
+     001B:03700FDC xrGame.dll, CWeaponMagazinedWGrenade::OnStateSwitch(), e:\priquel\sources\engine\xrgame\weaponmagazinedwgrenade.cpp, 437
+     <br/>
+     001B:036E0398 xrGame.dll, CWeapon::OnEvent(), e:\priquel\sources\engine\xrgame\weapon.cpp, 574
+     <br/>
+     001B:03700385 xrGame.dll, CWeaponMagazinedWGrenade::OnEvent(), e:\priquel\sources\engine\xrgame\weaponmagazinedwgrenade.cpp, 274
+     <br/>
+     001B:0355850B xrGame.dll, CLevel::cl_Process_Event(), e:\priquel\sources\engine\xrgame\level.cpp, 360
+     <br/>
+     001B:0355877A xrGame.dll, CLevel::ProcessGameEvents(), e:\priquel\sources\engine\xrgame\level.cpp, 418
+     <br/>
+     001B:035589E4 xrGame.dll, CLevel::OnFrame(), e:\priquel\sources\engine\xrgame\level.cpp, 486
+     <br/>
+     001B:004C34E3 XR_3DA.exe, stlp_std::deque&lt;CStatGraph::SMarker,xalloc&lt;CStatGraph::SMarker&gt; &gt;::clear(), d:\sdk\stlport-5.0.2\stlport\stl\_deque.c, 342
+     <br/>
+     001B:004B88AB XR_3DA.exe, ELightAnimLibrary::AppendItem(), d:\xray.trunk\xr_3da\lightanimlibrary.cpp, 274
+     <br/>
+     001B:004E8368 XR_3DA.exe, luabind::detail::match_params&lt;adopt_sampler const &amp;,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type,luabind::detail::null_type&gt;(), d:\sdk\luabind\luabind\luabind\detail\signature_match.hpp, 130
+     <br/>
+     001B:77F28A51 GDI32.dll
+     <br/>
+     001B:004D90C9 XR_3DA.exe, stlp_std::vector&lt;resptr_core&lt;CTexture,resptrcode_texture&gt;,xalloc&lt;resptr_core&lt;CTexture,resptrcode_texture&gt; &gt; &gt;::clear()
+     <br/>
+     001B:004D8148 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_MapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;::operator*()
+     <br/>
+     001B:004D80E4 XR_3DA.exe, stlp_std::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;::_Rb_tree_iterator&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt;,stlp_std::priv::_ConstMapTraitsT&lt;stlp_std::pair&lt;char const * const,CMatrix *&gt; &gt; &gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_tree.h, 165
+     <br/>
+     001B:00403D6E XR_3DA.exe, resptr_base&lt;CRT&gt;::_inc()
+     <br/>
+     001B:004D71D0 XR_3DA.exe, xr_vector&lt;ShaderElement *,xalloc&lt;ShaderElement *&gt; &gt;::size, d:\xray.trunk\xrcore\_stl_extensions.h, 125
+     <br/>
+     001B:7C91056D ntdll.dll
+     <br/>
+     001B:004199DD XR_3DA.exe, CCC_LoadCFG::operator=()
+     <br/>
+     001B:0041A075 XR_3DA.exe, stlp_std::vector&lt;_vector4&lt;float&gt;,xalloc&lt;_vector4&lt;float&gt; &gt; &gt;::begin(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.h, 171
+     <br/>
+     <br/>
+     Вылет при перестрелке с засевшими по домам монолитовцами.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080226-103858.zip (639,040 bytes)
+     <span class="italic">26 февраля 2008 10:40</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 10:40</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 10:40</td>
+     <td class="small-caption">Conrack</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080226-103858.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 11:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 11:27</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 февраля 2008 11:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 февраля 2008 11:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

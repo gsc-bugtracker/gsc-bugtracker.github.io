@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0014492: Garbage  CGameObject::lua_game_object()  e:\priquel\sources\engine\xrgame\gameobject.cpp, 753 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0014491.html">
+      &lt; Прошлое обращение (0014491)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0014493.html">
+      Следующее обращение (0014493) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0014492</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Crash</td>
+    <td>блокировка</td>
+    <td>случайно</td>
+    <td>01 апреля 2008 10:10</td>
+    <td>28 июля 2008 12:53</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>oposum</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>открыт</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td>r21666</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0014492: Garbage  CGameObject::lua_game_object()  e:\priquel\sources\engine\xrgame\gameobject.cpp, 753</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:0328499B xrGame.dll, CGameObject::lua_game_object(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 753
+     <br/>
+     001B:030A9D37 xrGame.dll, CScriptGameObject::object(), e:\priquel\sources\engine\xrgame\script_game_object_impl.h, 17
+     <br/>
+     001B:03146495 xrGame.dll, CScriptGameObject::action_planner&lt;CActionPlanner&lt;CScriptGameObject,0,CActionBase&lt;CScriptGameObject&gt;,CPropertyEvaluator&lt;CScriptGameObject&gt;,CActionBase&lt;CScriptGameObject&gt; *,CPropertyEvaluator&lt;CScriptGameObject&gt; *&gt; &gt;(), e:\priquel\sources\engine\xrgame\script_game_object_use.cpp, 139
+     <br/>
+     001B:02C5A357 xrGame.dll, `vector constructor iterator'()
+     <br/>
+     <br/>
+     В начале уровня,поговорил с бандитами,немного отошел достал СИГ,фатал.</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     xray_usercheg.zip (491,604 bytes)
+     <span class="italic">01 апреля 2008 10:10</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_GARBAGE2.zip (614,125 bytes)
+     <span class="italic">18 апреля 2008 16:20</span>
+     <br/>
+     <img border="0" height="16" src="images/zipicon.gif" width="16"/>
+     XRayEngine_error_report_080618-181451 gar.zip (4,994,180 bytes)
+     <span class="italic">18 июня 2008 18:28</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="13338" name="13338">
+     <td class="bugnote-public">
+      <span class="small">(0013338)</span>
+      <br/>
+      Stohe
+      <br/>
+      <span class="small">01 апреля 2008 10:45</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Дима, я по этом логу ничего понять не могу :( хз что делать с такими багами.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="13340" name="13340">
+     <td class="bugnote-public">
+      <span class="small">(0013340)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">01 апреля 2008 11:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">эээ, планировщик убитого объекта дёрнулся</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="14963" name="14963">
+     <td class="bugnote-public">
+      <span class="small">(0014963)</span>
+      <br/>
+      Hein
+      <br/>
+      <span class="small">18 апреля 2008 16:20</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Выпал еще раз при тех же условиях, за исключением того что я достал Грозу(билд 23358). Прикрепил лог.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18381" name="18381">
+     <td class="bugnote-public">
+      <span class="small">(0018381)</span>
+      <br/>
+      Chips
+      <br/>
+      <span class="small">18 июня 2008 18:33</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">Повторилось что-то похожее. Выполнял квест по освобождению диггеров-пленников на свалке машин/вертолетов. Только начал атаку, вдруг вывалился креш (примечание: перед тем был скрипт_краш 16677, поэтому может быть зависит от него, но кто знает). Лог:
+      <a href="http://tiger/bugz/file_download.php">
+       http://tiger/bugz/file_download.php
+      </a>
+      ?file_id=12160&amp;type=bug
+      <br/>
+      <br/>
+      stack trace:
+      <br/>
+      001B:036AF0FB xrGame.dll, CGameObject::lua_game_object(), e:\priquel\sources\engine\xrgame\gameobject.cpp, 753
+      <br/>
+      001B:035221A7 xrGame.dll, CScriptGameObject::object(), e:\priquel\sources\engine\xrgame\script_game_object_impl.h, 17
+      <br/>
+      001B:035A7563 xrGame.dll, CScriptGameObject::Alive(), e:\priquel\sources\engine\xrgame\script_game_object_use.cpp, 111
+      <br/>
+      001B:0354A65B xrGame.dll, luabind::detail::returns&lt;bool&gt;::call&lt;CScriptGameObject,CScriptGameObject,luabind::detail::null_type&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 207
+      <br/>
+      001B:035535C5 xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;bool (__thiscall CScriptGameObject::*)(void)const ,CScriptGameObject,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 117
+      <br/>
+      001B:00DE9219 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+      <br/>
+      001B:00DE7EF4 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+      <br/>
+      <br/>
+      [error][2]: Не удается найти указанный файл.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18959" name="18959">
+     <td class="bugnote-public">
+      <span class="small">(0018959)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">26 июня 2008 11:50</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">повторите ещё раз - должен быть скриптовый кол стек</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 10:10</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 10:10</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 10:10</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 10:31</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  CGameObject::lua_game_object()  e:\priquel\sources\engine\xrgame\gameobject.cpp, 753 =&gt; Garbage  CGameObject::lua_game_object()  e:\\priquel\\sources\\engine\\xrgame\\gameobject.cpp, 753</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 10:31</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 10:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 10:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 10:38</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 10:45</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Комментарий добавлен: 13338</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 апреля 2008 10:45</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 апреля 2008 11:00</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 13340</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 апреля 2008 16:20</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Комментарий добавлен: 14963</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 апреля 2008 16:20</td>
+     <td class="small-caption">Hein</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_GARBAGE2.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">18 июня 2008 18:28</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Файл добавлен: XRayEngine_error_report_080618-181451 gar.zip</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">18 июня 2008 18:33</td>
+     <td class="small-caption">Chips</td>
+     <td class="small-caption">Комментарий добавлен: 18381</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 11:50</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 18959</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 11:51</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 15:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; информация</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">26 июня 2008 15:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  CGameObject::lua_game_object()  e:\priquel\sources\engine\xrgame\gameobject.cpp, 753 =&gt; Garbage  CGameObject::lua_game_object()  e:\\priquel\\sources\\engine\\xrgame\\gameobject.cpp, 753</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 июня 2008 15:57</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 июля 2008 11:27</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">информация =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 июля 2008 11:27</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Garbage  CGameObject::lua_game_object()  e:\priquel\sources\engine\xrgame\gameobject.cpp, 753 =&gt; Garbage  CGameObject::lua_game_object()  e:\\priquel\\sources\\engine\\xrgame\\gameobject.cpp, 753</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 июля 2008 11:27</td>
+     <td class="small-caption">oposum</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 июля 2008 12:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

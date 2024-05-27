@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0017198: BILD 19.06.08 RED_FOREST * xrSheduler: too much time consumed by object [red_bounty_hunter_123114] (60ms) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0017197.html">
+      &lt; Прошлое обращение (0017197)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0017199.html">
+      Следующее обращение (0017199) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0017198</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] Script Crash</td>
+    <td>незначительный</td>
+    <td>попыток не было</td>
+    <td>20 июня 2008 12:20</td>
+    <td>03 июля 2008 09:36</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Freemen</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td></td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0017198: BILD 19.06.08 RED_FOREST * xrSheduler: too much time consumed by object [red_bounty_hunter_123114] (60ms)</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">* xrSheduler: too much time consumed by object [red_bounty_hunter_123114] (60ms)
+     <br/>
+     [LUA] xr_hit:(15):[red_bounty_hunter_123114] hit by [single_player]
+     <br/>
+     [LUA] xr_motivator:(223):HIT_CALLBACK: red_bounty_hunter_123114 amount=0.27771016955376 bone=3
+     <br/>
+     [LUA] smart_terrain:(1019):clear dead object red_bounty_hunter_123114
+     <br/>
+     [LUA] Squad red_pursuit_bounty_hunters_squad_2. Killed member 23114
+     <br/>
+     [LUA] REMOVING DEAD SQUAD red_pursuit_bounty_hunters_squad_2
+     <br/>
+     [LUA] sim_board:(292):Remove squad red_pursuit_bounty_hunters_squad_2
+     <br/>
+     [LUA] 2
+     <br/>
+     stack traceback:
+     <br/>
+     gamedata\scripts\_g.script:1231: in function 'callstack'
+     <br/>
+     gamedata\scripts\sim_board.script:293: in function 'remove_squad'
+     <br/>
+     gamedata\scripts\sim_squad_generic.script:319: in function 'on_npc_death'
+     <br/>
+     gamedata\scripts\se_stalker.script:243: in function &lt;gamedata\scripts\se_stalker.script:231&gt;
+     <br/>
+     [LUA] sim_combat:(75):Sim_Combat[red_smart_terrain_bridge]: unregister squad red_pursuit_bounty_hunters_squad_2
+     <br/>
+     [LUA] sim_board:(383):Squad red_pursuit_bounty_hunters_squad_2 exit smart red_smart_terrain_bridge. Quan = 2
+     <br/>
+     [LUA] sim_board:(735):Reset nearest squads [red_smart_terrain_bridge]
+     <br/>
+     [LUA] sim_board:(330):assigned squad red_pursuit_bounty_hunters_squad_2 to smart [nil].
+     <br/>
+     [LUA] sim_faction:(461):unregister faction squad red_pursuit_bounty_hunters_squad_2
+     <br/>
+     [LUA] sim_faction_brain_mutant:(28):faction [monster] brain update
+     <br/>
+     [LUA] sim_faction_brain_mutant:(28):faction [monolith] brain update
+     <br/>
+     [LUA] task_manager:(504):task_callback
+     <br/>
+     [LUA] task_manager:(507):task_callback1
+     <br/>
+     [LUA] task_manager:(200):task_callback2
+     <br/>
+     [LUA] task_manager:(202):Task 2 completed
+     <br/>
+     [LUA] task_objects:(208):task_reward initialized
+     <br/>
+     [LUA] bind_stalker:(149):*INFO*: npc='single_player' id='red_strelok_task_end'
+     <br/>
+     [LUA] task_manager:(224):CLEAR TASK 2
+     <br/>
+     [LUA] task_objects:(260):deactivate task red_pursuit_destroy_ambush_name
+     <br/>
+     [LUA] xr_logic:(753):_bp: on_signal (c.v1 = action) signalled [red_strelok]
+     <br/>
+     red_bounty_hunter_123114 Killed by  single_player ...
+     <br/>
+     [LUA] xr_motivator:(244):xr_info from death loaded!!!
+     <br/>
+     [LUA] xr_death:(15):[red_bounty_hunter_123114] killed by [single_player]
+     <br/>
+     [LUA] xr_effects:(534):dec_counter 'red_bounty_hunters_counter'
+     <br/>
+     shell for red_bounty_hunter_123114[23114] created in 0.503416 ms
+     <br/>
+     !SV:ge_destroy: [23116] not found on server
+     <br/>
+     [LUA] bind_stalker:(149):*INFO*: npc='single_player' id='red_pursuit_bounty_hunter_surrender_info'
+     <br/>
+     ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     ! [LUA]  1 : [Lua] gamedata\scripts\game_relations.script(104) : set_squad_goodwill
+     <br/>
+     ! [LUA]  2 : [Lua] gamedata\scripts\xr_effects.script(1258) : ?
+     <br/>
+     ! [LUA]  3 : [Lua] gamedata\scripts\xr_logic.script(647) : pick_section_from_condlist
+     <br/>
+     ! [LUA]  4 : [Lua] gamedata\scripts\xr_logic.script(759) : try_switch_to_another_section
+     <br/>
+     ! [LUA]  5 : [Lua] gamedata\scripts\sr_idle.script(26) : ?
+     <br/>
+     ! [LUA]  6 : [Lua] gamedata\scripts\xr_logic.script(534) : issue_event
+     <br/>
+     ! [LUA]  7 : [Lua] gamedata\scripts\bind_restrictor.script(87) :
+     <br/>
+     ! [LUA] gamedata\scripts\game_relations.script:104: attempt to index field '?' (a nil value)
+     <br/>
+     Destroying binded object red_pursuit_bounty_hunters_spawn_restr
+     <br/>
+     <br/>
+     После того как перестрелял всех в квесте "Уничтожить засаду" кроме того что капитулирует</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_starodub lyudmila.log.bz2 (313,268 bytes)
+     <span class="italic">20 июня 2008 12:20</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="18545" name="18545">
+     <td class="bugnote-public">
+      <span class="small">(0018545)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">20 июня 2008 14:42</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">revision: 28426 - проверить на этой ревизии</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18546" name="18546">
+     <td class="bugnote-public">
+      <span class="small">(0018546)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">20 июня 2008 14:43</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">сорри не в тот баг отписался</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="18548" name="18548">
+     <td class="bugnote-public">
+      <span class="small">(0018548)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">20 июня 2008 14:46</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">меняешь goodwill не существующему скваду</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 12:20</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 12:20</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 12:20</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Файл добавлен: xray_starodub lyudmila.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 13:11</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 13:12</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:27</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Aidhz =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 14:42</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:42</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 14:42</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 18545</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:43</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 18546</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 14:43</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:43</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 14:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 18548</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 июня 2008 14:46</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 июня 2008 14:47</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">23 июня 2008 16:21</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 09:32</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 июля 2008 09:32</td>
+     <td class="small-caption">Freemen</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 июля 2008 09:36</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

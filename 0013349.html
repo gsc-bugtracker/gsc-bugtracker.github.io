@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0013349: Escape   сразу после загрузки уровня   [error]Expression    : ai().game_graph().valid_vertex_id(patrol_point().game_vertex_id()) - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0013348.html">
+      &lt; Прошлое обращение (0013348)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0013350.html">
+      Следующее обращение (0013350) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0013349</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Crash</td>
+    <td>блокировка</td>
+    <td>попыток не было</td>
+    <td>29 февраля 2008 10:27</td>
+    <td>04 марта 2008 11:01</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r19218</td>
+    <td class="category">Версия</td>
+    <td>r18969</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0013349: Escape   сразу после загрузки уровня   [error]Expression    : ai().game_graph().valid_vertex_id(patrol_point().game_vertex_id())</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : ai().game_graph().valid_vertex_id(patrol_point().game_vertex_id())
+     <br/>
+     [error]Function      : CALifeSmartTerrainTask::level_vertex_id
+     <br/>
+     [error]File          : E:\priquel\sources\engine\xrGame\alife_smart_terrain_task.cpp
+     <br/>
+     [error]Line          : 40
+     <br/>
+     [error]Description   : gar_smart_terrain_3_8_guard_3_walk
+     <br/>
+     [error]Arguments     : name00
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00647AEB xrCore.dll, xrDebug::backend(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 235
+     <br/>
+     001B:00647CDA xrCore.dll, xrDebug::fail(), e:\priquel\sources\engine\xrcore\xrdebugnew.cpp, 328
+     <br/>
+     001B:02EA92C6 xrGame.dll, CALifeSmartTerrainTask::level_vertex_id(), e:\priquel\sources\engine\xrgame\alife_smart_terrain_task.cpp, 40
+     <br/>
+     001B:02E3E638 xrGame.dll, CALifeMonsterDetailPathManager::target(), e:\priquel\sources\engine\xrgame\alife_monster_detail_path_manager.cpp, 56
+     <br/>
+     001B:02E2FAEE xrGame.dll, CALifeMonsterBrain::process_task(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 114
+     <br/>
+     001B:02E2FE04 xrGame.dll, CALifeMonsterBrain::update(), e:\priquel\sources\engine\xrserverentities\alife_monster_brain.cpp, 169
+     <br/>
+     001B:02E2A1C3 xrGame.dll, CSE_ALifeHumanAbstract::update(), e:\priquel\sources\engine\xrgame\alife_human_abstract.cpp, 23
+     <br/>
+     001B:03C6543B xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::update_static(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 160
+     <br/>
+     001B:03CB437B xrGame.dll, luabind::detail::returns&lt;void&gt;::call&lt;CSE_ALifeHumanStalker,luabind::detail::null_type,CSE_ALifeHumanStalker *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 359
+     <br/>
+     001B:03CA9564 xrGame.dll, luabind::detail::call&lt;CSE_ALifeHumanStalker,luabind::detail::null_type,void,CSE_ALifeHumanStalker *&gt;(), e:\priquel\sources\sdk\include\luabind\detail\call.hpp, 390
+     <br/>
+     001B:03C94E66 xrGame.dll, luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;::operator()(), e:\priquel\sources\sdk\include\luabind\class.hpp, 204
+     <br/>
+     001B:03C922EF xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;void (__cdecl*)(CSE_ALifeHumanStalker *),CSE_ALifeHumanStalker,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 118
+     <br/>
+     001B:00A59069 xrLUA.dll, boost::function1&lt;int,lua_State *,stlp_std::allocator&lt;boost::function_base&gt; &gt;::operator()(), e:\priquel\sources\sdk\include\boost\function\function_template.hpp, 321
+     <br/>
+     001B:00A57248 xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), e:\priquel\sources\engine\xrlua\luabind\class_rep.cpp, 733
+     <br/>
+     001B:00A38EBD xrLUA.dll, luaD_precall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 324
+     <br/>
+     001B:00A38F24 xrLUA.dll, luaD_call(), e:\priquel\sources\engine\xrlua\src\ldo.c, 380
+     <br/>
+     001B:00A32035 xrLUA.dll, f_call(), e:\priquel\sources\engine\xrlua\src\lapi.c, 821
+     <br/>
+     001B:00A3853A xrLUA.dll, luaD_rawrunprotected(), e:\priquel\sources\engine\xrlua\src\ldo.c, 120
+     <br/>
+     001B:00A390BE xrLUA.dll, luaD_pcall(), e:\priquel\sources\engine\xrlua\src\ldo.c, 463
+     <br/>
+     001B:00A32093 xrLUA.dll, lua_pcall(), e:\priquel\sources\engine\xrlua\src\lapi.c, 842
+     <br/>
+     001B:00A5CDF3 xrLUA.dll, luabind::detail::pcall(), e:\priquel\sources\engine\xrlua\luabind\pcall.cpp, 41
+     <br/>
+     001B:02C5E0C8 xrGame.dll, luabind::detail::proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type&gt; &gt;::~proxy_member_void_caller&lt;boost::tuples::tuple&lt;boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type(), e:\priquel\sources\sdk\include\luabind\detail\call_member.hpp, 248
+     <br/>
+     001B:03C7BACE xrGame.dll, CWrapperAbstractMonster&lt;CSE_ALifeHumanStalker&gt;::update(), e:\priquel\sources\engine\xrserverentities\xrserver_script_macroses.h, 160
+     <br/>
+     001B:02EB2843 xrGame.dll, CALifeScheduleRegistry::CUpdatePredicate::operator()(), e:\priquel\sources\engine\xrgame\alife_schedule_registry.h, 45
+     <br/>
+     001B:02EB2659 xrGame.dll, CSafeMapIterator&lt;unsigned short,CSE_ALifeSchedulable,stlp_std::less&lt;unsigned short&gt;,0,unsigned __int64,1&gt;::update&lt;CALifeScheduleRegistry::CUpdatePredicate&gt;(), e:\priquel\sources\engine\xrgame\safe_map_iterator_inline.h, 128
+     <br/>
+     001B:02EB2161 xrGame.dll, CALifeScheduleRegistry::update(), e:\priquel\sources\engine\xrgame\alife_schedule_registry_inline.h, 29
+     <br/>
+     001B:02EAECDF xrGame.dll, CALifeUpdateManager::update_scheduled(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 104
+     <br/>
+     001B:02EAED65 xrGame.dll, CALifeUpdateManager::update(), e:\priquel\sources\engine\xrgame\alife_update_manager.cpp, 111
+     <br/>
+     001B:004D705E XR_3DA.exe, stlp_std::__fill_n&lt;ShaderElement * *,unsigned int,ShaderElement *&gt;()
+     <br/>
+     001B:00624B1B xrCore.dll, thread_entry(), e:\priquel\sources\engine\xrcore\_math.cpp, 325
+     <br/>
+     001B:78132848 MSVCR80.dll, endthread()
+     <br/>
+     001B:781328C8 MSVCR80.dll, endthread()
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg_02-29-08_10-26-36.mdmp.bz2 (14,828 bytes)
+     <span class="italic">29 февраля 2008 10:27</span>
+     <br/>
+     <img border="0" height="16" src="images/fileicon.gif" width="16"/>
+     xray_usercheg.log.bz2 (55,618 bytes)
+     <span class="italic">29 февраля 2008 10:27</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>bes</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 10:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 10:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Следить: bes</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 10:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg_02-29-08_10-26-36.mdmp.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 10:27</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Файл добавлен: xray_usercheg.log.bz2</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 10:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt;</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 10:52</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 10:53</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; t_G_M_</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 15:59</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 15:59</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 16:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">t_G_M_ =&gt;</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 16:55</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">29 февраля 2008 16:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">29 февраля 2008 16:56</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">=&gt; Yojig</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 марта 2008 11:00</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Yojig =&gt; bes</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 марта 2008 11:00</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 марта 2008 11:00</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r19218</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">04 марта 2008 11:00</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">04 марта 2008 11:01</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>
