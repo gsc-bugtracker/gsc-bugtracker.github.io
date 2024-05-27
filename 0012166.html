@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0012166: 16813 Red Forest - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0012165.html">
+      &lt; Прошлое обращение (0012165)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0012167.html">
+      Следующее обращение (0012167) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0012166</td>
+    <td>[S.T.A.L.K.E.R.: Bugz] 0</td>
+    <td>блокировка</td>
+    <td>случайно</td>
+    <td>11 февраля 2008 16:19</td>
+    <td>26 марта 2008 19:18</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Yojig</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>невоспр.</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r20645</td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0012166: 16813 Red Forest</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">stack trace:
+     <br/>
+     <br/>
+     001B:01B4EF38 xrParticles.dll, PAPI::CParticleManager::Update(), e:\priquel\sources\engine\xrparticles\particle_manager.cpp, 129
+     <br/>
+     001B:02915269 xrRender_R2.dll, PS::CParticleEffect::OnFrame(), e:\priquel\sources\engine\layers\xrrender\particleeffect.cpp, 111
+     <br/>
+     001B:0291A099 xrRender_R2.dll, PS::CParticleGroup::SItem::OnFrame(), e:\priquel\sources\engine\layers\xrrender\particlegroup.cpp, 326
+     <br/>
+     001B:0291AFDC xrRender_R2.dll, PS::CParticleGroup::OnFrame(), e:\priquel\sources\engine\layers\xrrender\particlegroup.cpp, 456
+     <br/>
+     001B:0380E1A7 xrGame.dll, CParticlesObject::shedule_Update(), e:\priquel\sources\engine\xrgame\particlesobject.cpp, 172
+     <br/>
+     001B:004392E1 XR_3DA.exe, IRender_Glow::`vector deleting destructor'()
+     <br/>
+     001B:035E96C9 xrGame.dll, CActor::shedule_Update(), e:\priquel\sources\engine\xrgame\actor.cpp, 1251
+     <br/>
+     001B:00439A0F XR_3DA.exe, resptr_base&lt;IRender_Light&gt;::_dec()
+     <br/>
+     001B:03554CB5 xrGame.dll, CGamePersistent::OnFrame(), e:\priquel\sources\engine\xrgame\gamepersistent.cpp, 502
+     <br/>
+     001B:004C3453 XR_3DA.exe, stlp_std::_Deque_base&lt;CStatGraph::SMarker,xalloc&lt;CStatGraph::SMarker&gt; &gt;::_M_initialize_map(), d:\sdk\stlport-5.0.2\stlport\stl\_deque.c, 61
+     <br/>
+     001B:004D8FB9 XR_3DA.exe, stlp_std::vector&lt;resptr_core&lt;CTexture,resptrcode_texture&gt;,xalloc&lt;resptr_core&lt;CTexture,resptrcode_texture&gt; &gt; &gt;::_M_insert_overflow_aux(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.c, 84
+     <br/>
+     001B:004D8038 XR_3DA.exe, stlp_std::multimap&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt;,stlp_std::less&lt;unsigned int&gt;,xalloc&lt;stlp_std::pair&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt; &gt;::~multimap&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt;,stlp_std::less&lt;unsigned int&gt;,xalloc&lt;stlp_std::pair&lt;unsigned int,stlp_std::pair&lt;unsigned int,shared_str&gt; &gt; &gt; &gt;()
+     <br/>
+     001B:4FDB0404 d3d9.dll
+     <br/>
+     001B:004D7FD4 XR_3DA.exe, xr_new&lt;ShaderElement,ShaderElement&gt;(), d:\xray.trunk\xrcore\xrmemory_subst_msvc.h, 13
+     <br/>
+     001B:004D70C0 XR_3DA.exe, stlp_std::__copy_ptrs&lt;ShaderElement * *,ShaderElement * *&gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_algobase.h, 238
+     <br/>
+     001B:7C91056D ntdll.dll
+     <br/>
+     001B:004D70C0 XR_3DA.exe, stlp_std::__copy_ptrs&lt;ShaderElement * *,ShaderElement * *&gt;(), d:\sdk\stlport-5.0.2\stlport\stl\_algobase.h, 238
+     <br/>
+     001B:7C91056D ntdll.dll
+     <br/>
+     001B:004199DD XR_3DA.exe, CCC_LoadCFG::operator=()
+     <br/>
+     001B:0041A075 XR_3DA.exe, stlp_std::vector&lt;_vector4&lt;float&gt;,xalloc&lt;_vector4&lt;float&gt; &gt; &gt;::begin(), d:\sdk\stlport-5.0.2\stlport\stl\_vector.h, 171
+     <br/>
+     <br/>
+     <br/>
+     при пробежке за Стрелком в бункер вылет игры при взрыве внутри тоннеля
+     <br/>
+     МУЛЬТИПОТОЧНОСТЬ ОТКЛЮЧЕНА
+     <br/>
+     <br/>
+     \\Besyaev\Exchange\!_LOGS\61</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2">
+      <table border="0" cellpadding="0" cellspacing="1" width="100%">
+       <tr bgcolor="#e8e8e8">
+        <td><nobr>связан с</nobr></td>
+        <td><a href="0012749.html">
+          0012749
+         </a></td>
+        <td><a title="невоспр.">
+          <u>
+           закрыт
+          </u>
+         </a></td>
+        <td><nobr>Igor</nobr></td>
+        <td>Hospital Crash</td>
+       </tr>
+      </table></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9708" name="9708">
+     <td class="bugnote-public">
+      <span class="small">(0009708)</span>
+      <br/>
+      Aidhz
+      <br/>
+      <span class="small">11 февраля 2008 17:50</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">надо отключить многопоточность!!!</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12451" name="12451">
+     <td class="bugnote-public">
+      <span class="small">(0012451)</span>
+      <br/>
+      Igor
+      <br/>
+      <span class="small">20 марта 2008 12:40</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">Похоже, проблема с многопоточностью.</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="12460" name="12460">
+     <td class="bugnote-public">
+      <span class="small">(0012460)</span>
+      <br/>
+      Yojig
+      <br/>
+      <span class="small">20 марта 2008 12:54</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">сейчас вылетает с другой ошибкой
+      <br/>
+      fixed</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 февраля 2008 16:19</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 февраля 2008 17:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 февраля 2008 17:28</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; Aidhz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 февраля 2008 17:50</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Комментарий добавлен: 9708</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">11 февраля 2008 17:51</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; признан</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">11 февраля 2008 17:51</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 февраля 2008 13:55</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">признан =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 февраля 2008 13:55</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Aidhz =&gt; Igor</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 февраля 2008 16:54</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Связь добавлена</td>
+     <td class="small-caption">связан с 0012749</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 12:40</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Комментарий добавлен: 12451</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 12:40</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 12:40</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; невоспр.</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 12:40</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Категория</td>
+     <td class="small-caption">Crash =&gt; 0</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 12:40</td>
+     <td class="small-caption">Igor</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 12:54</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Комментарий добавлен: 12460</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 12:54</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; @86@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">20 марта 2008 12:54</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r20645</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">20 марта 2008 12:54</td>
+     <td class="small-caption">Yojig</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">26 марта 2008 19:18</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

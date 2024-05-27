@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010815: xray-svn\xr_3da\xrGame\Ai\Stalker\ai_stalker_fire.cpp, Line: 95 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010814.html">
+      &lt; Прошлое обращение (0010814)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010816.html">
+      Следующее обращение (0010816) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010815</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>19 января 2007 12:43</td>
+    <td>28 января 2007 17:51</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010815: xray-svn\xr_3da\xrGame\Ai\Stalker\ai_stalker_fire.cpp, Line: 95</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Просто вылетело (
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CAI_Stalker::g_fireParams
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\Ai\Stalker\ai_stalker_fire.cpp
+     <br/>
+     [error]Line          : 95
+     <br/>
+     [error]Description   : inventory().ActiveItem()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01096A27 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 265
+     <br/>
+     001B:034A21A7 xrGame.dll, CAI_Stalker::g_fireParams(), d:\xray-svn\xr_3da\xrgame\ai\stalker\ai_stalker_fire.cpp, 102
+     <br/>
+     001B:0376813C xrGame.dll, CWeaponMagazined::state_Fire(), d:\xray-svn\xr_3da\xrgame\weaponmagazined.cpp, 491
+     <br/>
+     001B:0376CFE8 xrGame.dll, CWeaponMagazinedWGrenade::state_Fire(), d:\xray-svn\xr_3da\xrgame\weaponmagazinedwgrenade.cpp, 313
+     <br/>
+     001B:03764C9F xrGame.dll, CWeaponMagazined::UpdateCL(), d:\xray-svn\xr_3da\xrgame\weaponmagazined.cpp, 440
+     <br/>
+     001B:0049A176 XR_3DA.exe, CObjectList::SingleUpdate(), d:\xray-svn\xr_3da\xr_object_list.cpp, 99
+     <br/>
+     001B:0049B5E1 XR_3DA.exe, CObjectList::Update(), d:\xray-svn\xr_3da\xr_object_list.cpp, 164
+     <br/>
+     001B:0047CC68 XR_3DA.exe, IGame_Level::OnFrame(), d:\xray-svn\xr_3da\igame_level.cpp, 138
+     <br/>
+     001B:0364B8F4 xrGame.dll, CLevel::OnFrame(), d:\xray-svn\xr_3da\xrgame\level.cpp, 464
+     <br/>
+     <br/>
+     S:\logs\11\</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9237" name="9237">
+     <td class="bugnote-public">
+      <span class="small">(0009237)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">19 января 2007 14:01</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">current_state 1
+      <br/>
+      next_state 1
+      <br/>
+      state_time 33
+      <br/>
+      item_sect wpn_abakan
+      <br/>
+      H_Parent stalker
+      <br/>
+      <br/>
+      FATAL ERROR
+      <br/>
+      <br/>
+      [error]Expression    : assertion failed
+      <br/>
+      [error]Function      : CAI_Stalker::g_fireParams
+      <br/>
+      [error]File          : D:\xray-svn\xr_3da\xrGame\Ai\Stalker\ai_stalker_fire.cpp
+      <br/>
+      [error]Line          : 95
+      <br/>
+      [error]Description   : inventory().ActiveItem()
+      <br/>
+      <br/>
+      <br/>
+      stack trace:</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 12:43</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 12:46</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 14:01</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Следить: пользователь95</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 14:01</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9237</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 14:01</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Не следить: пользователь95</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">28 января 2007 17:51</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">28 января 2007 17:51</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

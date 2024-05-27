@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0012067: 13272 Darkvalley.Завис при разговоре с персонажем, в начали локации. - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0012066.html">
+      &lt; Прошлое обращение (0012066)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0012068.html">
+      Следующее обращение (0012068) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0012067</td>
+    <td>[S.T.A.L.K.E.R.: Sandbox] Script Crash</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>08 февраля 2008 16:59</td>
+    <td>12 марта 2008 21:14</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td><font style="text-decoration: line-through">
+      пользователь133
+     </font></td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#e8e8e8">
+     закрыт</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category">Исправлено в версии</td>
+    <td>r19874</td>
+    <td class="category">Версия</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="4"></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Сводка</td>
+    <td colspan="5">0012067: 13272 Darkvalley.Завис при разговоре с персонажем, в начали локации.</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Описание</td>
+    <td colspan="5">Подошёл к персонажу за заданием,взял его и тут же завис.
+     <br/>
+     <br/>
+     <br/>
+     041638	648.98999023	[1240] [LUA] sim_combat:(241):Sim_Combat[mil_smart_terrain_2_2]: squad [7] quest [nil] stage [idle]
+     <br/>
+     00041639	648.99005127	[1240]
+     <br/>
+     00041640	649.00054932	[1240] [LUA] sim_combat:(241):Sim_Combat[mil_smart_terrain_7_4]: squad [mil_stalker_veteran2] quest [nil] stage [idle]
+     <br/>
+     00041641	649.00054932	[1240]
+     <br/>
+     00041642	649.02600098	[1240] ! [LUA] SCRIPT RUNTIME ERROR
+     <br/>
+     00041643	649.02600098	[1240]
+     <br/>
+     00041644	649.02600098	[1240] ! [LUA]  0 : [C] [C](-1) :
+     <br/>
+     00041645	649.02600098	[1240]
+     <br/>
+     00041646	649.02606201	[1240] ! [LUA]  1 : [Lua] gamedata\scripts\task_dialogs.script(192) :
+     <br/>
+     00041647	649.02606201	[1240]
+     <br/>
+     00041648	649.02612305	[1240] ! [LUA] gamedata\scripts\task_dialogs.script:192: attempt to index field '?' (a nil value)
+     <br/>
+     00041649	649.02612305	[1240]
+     <br/>
+     00041650	716.52429199	[1240] * Unloading texture [glow\glow_red2] pSurface RefCount= 1
+     <br/>
+     00041651	716.52435303	[1240]
+     <br/>
+     00041652	716.52447510	[1240] * Unloading texture [glow\glow_04] pSurface RefCount= 1
+     <br/>
+     00041653	716.52453613	[1240]
+     <br/>
+     <br/>
+     <br/>
+     \\Besyaev\Exchange\!_LOGS\26\
+     <br/></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="category" width="15%">
+      Список пользователей</td>
+     <td>Corr</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9694" name="9694">
+     <td class="bugnote-public">
+      <span class="small">(0009694)</span>
+      <br/>
+      PeaceMaker
+      <br/>
+      <span class="small">09 февраля 2008 19:33</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">revision 16694</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 февраля 2008 16:59</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 февраля 2008 19:03</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">важный =&gt; нормальный</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 февраля 2008 19:03</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">Завис при разговоре с персонажем =&gt; 13272 Darkvally.Завис при разговоре с персонажем,в начали локацыи.</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 февраля 2008 19:03</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 февраля 2008 21:30</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">08 февраля 2008 21:46</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">13272 Darkvally.Завис при разговоре с персонажем,в начали локацыи. =&gt; 13272 Darkvalley.Завис при разговоре с персонажем,в начали локацыи.</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">08 февраля 2008 21:46</td>
+     <td class="small-caption"><font style="text-decoration: line-through">
+       пользователь133
+      </font></td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 12:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">08 февраля 2008 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2008 12:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 12:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">13272 Darkvalley.Завис при разговоре с персонажем,в начали локацыи. =&gt; 13272 Darkvalley.Завис при разговоре с персонажем, в начали локации.</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2008 12:43</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 12:45</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Sandbox =&gt; S.T.A.L.K.E.R.: Bugz</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2008 12:48</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; bes</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 12:48</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Следить: Corr</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2008 19:03</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">bes =&gt; PeaceMaker</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 19:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2008 19:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2008 19:33</td>
+     <td class="small-caption">PeaceMaker</td>
+     <td class="small-caption">Комментарий добавлен: 9694</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 марта 2008 15:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Проект</td>
+     <td class="small-caption">S.T.A.L.K.E.R.: Bugz =&gt; S.T.A.L.K.E.R.: Sandbox</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 марта 2008 15:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">решен =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 марта 2008 15:11</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">PeaceMaker =&gt; Corr</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 марта 2008 15:12</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 марта 2008 15:25</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">03 марта 2008 15:25</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Corr =&gt; Robo</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">03 марта 2008 15:25</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 15:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 марта 2008 15:54</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Robo =&gt; TetriSZz</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 15:55</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @85@</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 марта 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@85@ =&gt; назначен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">TetriSZz =&gt; Corr</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 марта 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; @86@</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Исправлено в версии</td>
+     <td class="small-caption">=&gt; r19874</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">12 марта 2008 17:18</td>
+     <td class="small-caption">TetriSZz</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">12 марта 2008 21:14</td>
+     <td class="small-caption">Corr</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">@86@ =&gt; закрыт</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

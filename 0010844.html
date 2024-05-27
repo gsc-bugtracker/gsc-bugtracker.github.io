@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010844: xr_3da\xrgame\smart_cast_impl1.h   Line: 452 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010843.html">
+      &lt; Прошлое обращение (0010843)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010845.html">
+      Следующее обращение (0010845) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010844</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>19 января 2007 18:50</td>
+    <td>09 февраля 2007 19:30</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>bes</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>низкий</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2038 05:14</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010844: xr_3da\xrgame\smart_cast_impl1.h   Line: 452</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Expression    : temp == test
+     <br/>
+     Function      : SmartDynamicCast::CHelper2&lt;class CObject const &gt;::smart_cast
+     <br/>
+     File          : d:\xray-svn\xr_3da\xrgame\smart_cast_impl1.h
+     <br/>
+     Line          : 452
+     <br/>
+     Description   : SmartCast&lt;class CGameObject*&gt;(class CObject*) FAILED (result differs from the dynamic_cast) or object is CORRUPTED!
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01096A57 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 275
+     <br/>
+     001B:031B0C0E xrGame.dll, SmartDynamicCast::CHelper2&lt;CObject const &gt;::smart_cast&lt;CGameObject const &gt;(), d:\xray-svn\xr_3da\xrgame\smart_cast_impl1.h, 458
+     <br/>
+     001B:031B829F xrGame.dll, luabind::detail::pointer_converter&lt;luabind::detail::lua_to_cpp&gt;::apply&lt;CDangerObject&gt;(), d:\sdk\luabind\luabind\detail\policy.hpp, 718
+     <br/>
+     001B:031B5398 xrGame.dll, CDangerObject_dependent_object(), d:\xray-svn\xr_3da\xrgame\memory_space_script.cpp, 49
+     <br/>
+     001B:031BA7CA xrGame.dll, luabind::detail::returns&lt;CScriptGameObject *&gt;::call&lt;CDangerObject,luabind::detail::null_type,CDangerObject const *&gt;(), d:\sdk\luabind\luabind\detail\call.hpp, 243
+     <br/>
+     001B:031BBD0E xrGame.dll, luabind::detail::mem_fn_callback&lt;CScriptGameObject * (__cdecl*)(CDangerObject const *),CDangerObject,luabind::detail::null_type&gt;::operator()(), d:\sdk\luabind\luabind\class.hpp, 204
+     <br/>
+     001B:031BC91B xrGame.dll, boost::detail::function::function_obj_invoker1&lt;luabind::detail::mem_fn_callback&lt;CScriptGameObject * (__cdecl*)(CDangerObject const *),CDangerObject,luabind::detail::null_type&gt;,int,lua_State *&gt;::invoke(), d:\sdk\boost_1_30_0\boost\function\function_template.hpp, 118
+     <br/>
+     001B:01271D4F xrLUA.dll, boost::function1&lt;int,lua_State *,std::allocator&lt;boost::function_base&gt; &gt;::operator()(), d:\sdk\boost_1_30_0\boost\function\function_template.hpp, 328
+     <br/>
+     001B:0127A79C xrLUA.dll, luabind::detail::class_rep::function_dispatcher(), d:\xray-svn\xrlua\luabind\class_rep.cpp, 721
+     <br/>
+     <br/>
+     S:\logs\22</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9312" name="9312">
+     <td class="bugnote-public">
+      <span class="small">(0009312)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">06 февраля 2007 15:06</span>
+      <br/>
+      <span class="small">отредактирован:  06 февраля 2007 15:07</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">не могу повторить этот вылет, нужна информация о том, повторяется он сейчас или нет
+      <br/>
+      <br/>
+      отредактирован: 06.02.07 15:07</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9373" name="9373">
+     <td class="bugnote-public">
+      <span class="small">(0009373)</span>
+      <br/>
+      Dima
+      <br/>
+      <span class="small">09 февраля 2007 19:30</span>
+      <br/>
+      <br/>
+      <span class="small"></span>
+    </td>
+     <td class="bugnote-note-public">закрываю, потому что неподтвердился</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 18:50</td>
+     <td class="small-caption">bes</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 18:55</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">24 января 2007 14:34</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 9259</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">24 января 2007 14:34</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Stohe</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 января 2007 14:44</td>
+     <td class="small-caption">Stohe</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Stohe =&gt; Dima</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 января 2007 21:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">ETA</td>
+     <td class="small-caption">19 января 2007 00:00 =&gt; 19 января 2038 05:14</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">25 января 2007 21:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xr_3da\xrgame\smart_cast_impl1.h   Line: 452 =&gt; xr_3da\\xrgame\\smart_cast_impl1.h   Line: 452</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">25 января 2007 21:05</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 февраля 2007 15:06</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 9312</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">06 февраля 2007 15:07</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий отредактирован: 9312</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">06 февраля 2007 15:08</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий удален: 9259</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 февраля 2007 13:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Приоритет</td>
+     <td class="small-caption">нормальный =&gt; низкий</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">07 февраля 2007 13:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xr_3da\xrgame\smart_cast_impl1.h   Line: 452 =&gt; xr_3da\\xrgame\\smart_cast_impl1.h   Line: 452</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">07 февраля 2007 13:11</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2007 19:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">09 февраля 2007 19:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">09 февраля 2007 19:30</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Комментарий добавлен: 9373</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

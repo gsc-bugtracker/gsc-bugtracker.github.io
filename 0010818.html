@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010818: xray-svn\xr_3da\xr_object_list.cpp, Line : 30 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010817.html">
+      &lt; Прошлое обращение (0010817)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0010819.html">
+      Следующее обращение (0010819) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010818</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>иногда</td>
+    <td>19 января 2007 13:59</td>
+    <td>30 января 2007 17:02</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>19 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010818: xray-svn\xr_3da\xr_object_list.cpp, Line : 30</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">Quit в консоли, иногда крешится игра.
+     <br/>
+     <br/>
+     FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CObjectList::~CObjectList
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xr_object_list.cpp
+     <br/>
+     [error]Line          : 30
+     <br/>
+     [error]Description   : destroy_queue.empty()
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:00F652E7 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 265
+     <br/>
+     001B:004B6753 xr_3da.exe, CObjectList::~CObjectList(), d:\xray-svn\xr_3da\xr_object_list.cpp, 31
+     <br/>
+     001B:004A5C3C xr_3da.exe, IGame_Level::~IGame_Level(), d:\xray-svn\xr_3da\igame_level.cpp, 38
+     <br/>
+     001B:02453606 xrGame.dll, CLevel::~CLevel(), d:\xray-svn\xr_3da\xrgame\level.cpp, 275
+     <br/>
+     001B:0245513B xrGame.dll, CLevel::`scalar deleting destructor'()
+     <br/>
+     001B:02453A3B xrGame.dll, xr_special_free&lt;1,CSpaceRestrictionManager&gt;::operator()(), d:\xray-svn\xrcore\xrmemory_subst_msvc.h, 134
+     <br/>
+     001B:025564C8 xrGame.dll, xr_delete&lt;game_sv_GameState&gt;(), d:\xray-svn\xrcore\xrmemory_subst_msvc.h, 154
+     <br/>
+     001B:02511A3F xrGame.dll, xrFactory_Destroy(), d:\xray-svn\xr_3da\xrgame\xrgame.cpp, 32
+     <br/>
+     001B:004AAFEB xr_3da.exe, CApplication::OnEvent(), d:\xray-svn\xr_3da\x_ray.cpp, 544
+     <br/>
+     001B:00455F1C xr_3da.exe, CEvent::Signal(), d:\xray-svn\xr_3da\eventapi.cpp, 42
+     <br/>
+     001B:004ABE0A xr_3da.exe, CEventAPI::OnFrame(), d:\xray-svn\xr_3da\eventapi.cpp, 174
+     <br/>
+     001B:004A96EA xr_3da.exe, CApplication::OnFrame(), d:\xray-svn\xr_3da\x_ray.cpp, 654
+     <br/>
+     001B:0044790A xr_3da.exe, CRegistrator&lt;pureRender&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 79
+     <br/>
+     001B:00484897 xr_3da.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 332
+     <br/>
+     001B:00484CFE xr_3da.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 202
+     <br/>
+     001B:004AB31A xr_3da.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 212
+     <br/>
+     001B:004AB7D5 xr_3da.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 409
+     <br/>
+     001B:004622A9 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:00582C79 xr_3da.exe, __onexitbegin()
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"><img border="0" height="16" src="images/texticon.gif" width="16"/>
+     xray_sepul.log (209,906 bytes)
+     <span class="italic">19 января 2007 13:59</span>
+    </td>
+   </tr>
+  </table>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Комментарии</td>
+    </tr>
+    <tr class="bugnote" id="9242" name="9242">
+     <td class="bugnote-public">
+      <span class="small">(0009242)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">19 января 2007 16:00</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">млина
+      <br/>
+      ну неужели сложно было написать, что это мультиплеер??????</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9243" name="9243">
+     <td class="bugnote-public">
+      <span class="small">(0009243)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">19 января 2007 16:01</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">только в МП</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+    <tr class="bugnote" id="9244" name="9244">
+     <td class="bugnote-public">
+      <span class="small">(0009244)</span>
+      <br/>
+      Andy
+      <br/>
+      <span class="small">19 января 2007 16:03</span>
+      <br/>
+      <br/></td>
+     <td class="bugnote-note-public">* WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [4652]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [4653]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [4654]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3600]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3599]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3596]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [4651]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [4632]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[19] to [4108]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [2304]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [2304]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [2304]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [2304]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[1] to [2304]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[19] to [2561]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3851]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3852]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3853]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3854]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3855]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[3] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3857]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3849]: unknown dest
+      <br/>
+      * WARNING: c_EVENT[8] to [3856]: unknown dest</td>
+    </tr>
+    <tr>
+     <td class="spacer" colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 13:59</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 13:59</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Файл добавлен: xray_sepul.log</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 14:01</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Mad-Max =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 14:02</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 14:32</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Dima =&gt; Andy</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 16:00</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9242</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 16:01</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9243</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">19 января 2007 16:03</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Комментарий добавлен: 9244</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">19 января 2007 16:03</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Mad-Max</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">30 января 2007 17:02</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">30 января 2007 17:02</td>
+     <td class="small-caption">Mad-Max</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+ </body>

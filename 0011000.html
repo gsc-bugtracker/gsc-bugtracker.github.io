@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0011000: вылет при юзании псевдособаки - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010999.html">
+      &lt; Прошлое обращение (0010999)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011001.html">
+      Следующее обращение (0011001) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0011000</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>незначительный</td>
+    <td>всегда</td>
+    <td>01 февраля 2007 11:14</td>
+    <td>01 февраля 2007 12:05</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Aidhz</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>нормальный</td>
+    <td class="category">Решение</td>
+    <td>исправлен</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>01 февраля 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0011000: вылет при юзании псевдособаки</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : fatal error
+     <br/>
+     [error]Function      : CInifile::r_string
+     <br/>
+     [error]File          : D:\xray-svn\xrCore\Xr_ini.cpp
+     <br/>
+     [error]Line          : 351
+     <br/>
+     [error]Description   : &lt;no expression&gt;
+     <br/>
+     [error]Arguments     : Can't find variable icon in [m_pseudodog_e]
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01129C3A xrCore.dll, xrDebug::fatal(), d:\xray-svn\xrcore\xrdebugnew.cpp, 304
+     <br/>
+     001B:01126DAE xrCore.dll, std::_Lower_bound&lt;std::vector&lt;CInifile::Item,xalloc&lt;CInifile::Item&gt; &gt;::iterator,char const *,int,bool (__cdecl*)(CInifile::Item const &amp;,char const *)&gt;(), d:\develop\compilers\vs71\vc7\include\algorithm, 1218
+     <br/>
+     001B:01123E08 xrCore.dll, CInifile::r_string(), d:\xray-svn\xrcore\xr_ini.cpp, 351
+     <br/>
+     001B:03CDBE45 xrGame.dll, CUICarBodyWnd::InitCarBody(), d:\xray-svn\xr_3da\xrgame\ui\uicarbodywnd.cpp, 174
+     <br/>
+     001B:03DADA3E xrGame.dll, CUIGameSP::StartCarBody(), d:\xray-svn\xr_3da\xrgame\uigamesp.cpp, 144
+     <br/>
+     001B:03894730 xrGame.dll, CActor::ActorUse(), d:\xray-svn\xr_3da\xrgame\actorinput.cpp, 372
+     <br/>
+     001B:03894B12 xrGame.dll, CActor::IR_OnKeyboardPress(), d:\xray-svn\xr_3da\xrgame\actorinput.cpp, 130
+     <br/>
+     001B:0381D0DF xrGame.dll, CLevel::IR_OnKeyboardPress(), d:\xray-svn\xr_3da\xrgame\level_input.cpp, 359
+     <br/>
+     001B:0046D093 xr_3da.exe, CInput::KeyUpdate(), d:\xray-svn\xr_3da\xr_input.cpp, 170
+     <br/>
+     001B:0046D55C xr_3da.exe, CInput::OnFrame(), d:\xray-svn\xr_3da\xr_input.cpp, 332
+     <br/>
+     001B:0051C0DA xr_3da.exe, CRegistrator&lt;pureFrame&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 77
+     <br/>
+     001B:0051A945 xr_3da.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 330
+     <br/>
+     001B:0051AB5A xr_3da.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 200
+     <br/>
+     001B:0043C636 xr_3da.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 212
+     <br/>
+     001B:0043CB23 xr_3da.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 375
+     <br/>
+     001B:005A02E7 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:0073ECAC xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     pause [ON] timer=[ON] sound=[ON] reason=CGP::OnAppDeactivate
+     <br/>
+     snd_emitters_[true] 2
+     <br/>
+     pause [OFF] timer=[ON] sound=[ON] reason=CGP::OnAppActivate
+     <br/>
+     snd_emitters_[false] 1
+     <br/>
+     pause [ON] timer=[ON] sound=[ON] reason=CGP::OnAppDeactivate
+     <br/>
+     snd_emitters_[true] 2
+     <br/>
+     pause [OFF] timer=[ON] sound=[ON] reason=CGP::OnAppActivate</td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 февраля 2007 11:14</td>
+     <td class="small-caption">Aidhz</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">01 февраля 2007 12:05</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">01 февраля 2007 12:05</td>
+     <td class="small-caption">t_G_M_</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; исправлен</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>

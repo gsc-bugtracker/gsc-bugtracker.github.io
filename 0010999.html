@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <script src="js/replicate_buttons.js">
+  </script>
+  <title>
+   0010999: xray-svn\xr_3da\xrGame\agent_enemy_manager.cpp, Line : 434 - Mantis
+  </title>
+  <script src="javascript/common.js" type="text/JavaScript">
+  </script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  <table cellspacing="1" class="width100">
+   <tr>
+    <td class="left" colspan="4">
+     <a href="0010998.html">
+      &lt; Прошлое обращение (0010998)
+     </a></td>
+    <td class="right" colspan="2">
+     <a href="0011000.html">
+      Следующее обращение (0011000) &gt;
+     </a></td>
+   </tr>
+   <tr class="row-category">
+    <td width="15%">ID</td>
+    <td width="20%">Категория</td>
+    <td width="15%">Критичность</td>
+    <td width="20%">Воспроизводимость</td>
+    <td width="15%">Дата добавления</td>
+    <td width="15%">Обновлено</td>
+   </tr>
+   <tr class="row-1">
+    <td>0010999</td>
+    <td>[S.T.A.L.K.E.R.: Тень Чернобыля] 0</td>
+    <td>значительный</td>
+    <td>иногда</td>
+    <td>31 января 2007 19:10</td>
+    <td>31 января 2007 20:27</td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Автор</td>
+    <td>Sepul</td>
+    <td class="category">Режим доступа</td>
+    <td>общедоступный</td>
+    <td colspan="2"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Приоритет</td>
+    <td>высокий</td>
+    <td class="category">Решение</td>
+    <td>дубликат</td>
+    <td class="category">Платформа</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Статус</td>
+    <td bgcolor="#cceedd">решен</td>
+    <td colspan="2"></td>
+    <td class="category">OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Прогноз</td>
+    <td>нет</td>
+    <td colspan="2"></td>
+    <td class="category">Версия OS</td>
+    <td></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">ETA</td>
+    <td>31 января 2007 00:00</td>
+    <td class="category"></td>
+    <td></td>
+    <td class="category">Подверсия продукта</td>
+    <td></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Сводка</td>
+    <td colspan="5">0010999: xray-svn\xr_3da\xrGame\agent_enemy_manager.cpp, Line : 434</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Описание</td>
+    <td colspan="5">FATAL ERROR
+     <br/>
+     <br/>
+     [error]Expression    : assertion failed
+     <br/>
+     [error]Function      : CAgentEnemyManager::assign_wounded
+     <br/>
+     [error]File          : D:\xray-svn\xr_3da\xrGame\agent_enemy_manager.cpp
+     <br/>
+     [error]Line          : 434
+     <br/>
+     [error]Description   : enemy
+     <br/>
+     <br/>
+     <br/>
+     stack trace:
+     <br/>
+     <br/>
+     001B:01129B17 xrCore.dll, xrDebug::fail(), d:\xray-svn\xrcore\xrdebugnew.cpp, 270
+     <br/>
+     001B:05463F7D xrGame.dll, CAgentEnemyManager::assign_wounded(), d:\xray-svn\xr_3da\xrgame\agent_enemy_manager.cpp, 435
+     <br/>
+     001B:054647B9 xrGame.dll, CAgentEnemyManager::distribute_enemies(), d:\xray-svn\xr_3da\xrgame\agent_enemy_manager.cpp, 468
+     <br/>
+     001B:0546F747 xrGame.dll, CAgentManagerActionKillEnemy::execute(), d:\xray-svn\xr_3da\xrgame\agent_manager_actions.cpp, 73
+     <br/>
+     001B:0545F4F3 xrGame.dll, CActionPlanner&lt;CAgentManager,0,CActionBase&lt;CAgentManager&gt;,CPropertyEvaluator&lt;CAgentManager&gt;,CActionBase&lt;CAgentManager&gt; *,CPropertyEvaluator&lt;CAgentManager&gt; *&gt;::update(), d:\xray-svn\xr_3da\xrgame\action_planner_inline.h, 113
+     <br/>
+     001B:05459713 xrGame.dll, CAgentManager::shedule_Update(), d:\xray-svn\xr_3da\xrgame\agent_manager.cpp, 92
+     <br/>
+     001B:00471878 xr_3da.exe, CSheduler::ProcessStep(), d:\xray-svn\xr_3da\xrsheduler.cpp, 215
+     <br/>
+     001B:00471E7E xr_3da.exe, CSheduler::Update(), d:\xray-svn\xr_3da\xrsheduler.cpp, 297
+     <br/>
+     001B:0589F89D xrGame.dll, CGamePersistent::OnFrame(), d:\xray-svn\xr_3da\xrgame\gamepersistent.cpp, 360
+     <br/>
+     001B:0051BA6A xr_3da.exe, CRegistrator&lt;pureFrame&gt;::Process(), d:\xray-svn\xr_3da\pure.h, 77
+     <br/>
+     001B:0051A505 xr_3da.exe, CRenderDevice::FrameMove(), d:\xray-svn\xr_3da\device.cpp, 332
+     <br/>
+     001B:0051A71A xr_3da.exe, CRenderDevice::Run(), d:\xray-svn\xr_3da\device.cpp, 202
+     <br/>
+     001B:0043C5E6 xr_3da.exe, Startup(), d:\xray-svn\xr_3da\x_ray.cpp, 212
+     <br/>
+     001B:0043CAD3 xr_3da.exe, WinMain(), d:\xray-svn\xr_3da\x_ray.cpp, 375
+     <br/>
+     001B:0059FE77 xr_3da.exe, WinMainCRTStartup(), f:\vs70builds\3077\vc\crtbld\crt\src\crtexe.c, 390
+     <br/>
+     001B:7C816D4F kernel32.dll
+     <br/>
+     001B:0073ECAC xr_3da.exe, xrSound_NULL_THUNK_DATA()
+     <br/>
+     <br/>
+     S:\logs\127\
+     <br/></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Шаги по воспроизведению</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Дополнительная информация</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="6"></td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Присоединенные файлы</td>
+    <td colspan="5"></td>
+   </tr>
+   <tr align="center">
+    <td align="center" colspan="6">
+     <table>
+     </table></td>
+   </tr>
+  </table>
+  <br/>
+  <div id="relationships_open">
+   <table cellspacing="1" class="width100">
+    <tr class="row-2" valign="top">
+     <td class="form-title" colspan="2" width="15%">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+    
+    <tr>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+  </div>
+  <div id="relationships_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Связи</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="monitoring_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="form-title" colspan="2">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      Пользователи, отслеживающие обращение</td>
+    </tr>
+   </table>
+  </div>
+  <div id="monitoring_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center">
+      Нет полльзователей, отслеживающих обращение.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <br/>
+  <div id="bugnotes_closed" style="display: none;">
+   <table cellspacing="1" class="width100">
+    <td class="form-title" colspan="2">
+     <a href="#">
+      <img alt="+" border="0" src="images/plus.png"/>
+     </a>
+     Комментарии</td>
+   </table>
+  </div>
+  <div id="bugnotes_open">
+   <table cellspacing="1" class="width100">
+    <tr>
+     <td class="center" colspan="2">
+      К этому обращению нет комменариев.</td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <div id="history_closed" style="display: none;">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="+" border="0" src="images/plus.png"/>
+      </a>
+      История</td>
+    </tr>
+   </table>
+  </div>
+  <div id="history_open">
+   <table cellspacing="0" class="width100">
+    <tr>
+     <td class="form-title" colspan="4">
+      <a href="#">
+       <img alt="-" border="0" src="images/minus.png"/>
+      </a>
+      История</td>
+    </tr>
+    <tr class="row-category-history">
+     <td class="small-caption">Дата изменения</td>
+     <td class="small-caption">Имя пользователя</td>
+     <td class="small-caption">Поле</td>
+     <td class="small-caption">Изменение</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 января 2007 19:10</td>
+     <td class="small-caption">Sepul</td>
+     <td class="small-caption">Новое обращение</td>
+     <td class="small-caption"></td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 января 2007 20:23</td>
+     <td class="small-caption">Andy</td>
+     <td class="small-caption">Назначено</td>
+     <td class="small-caption">Andy =&gt; Dima</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 января 2007 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Статус</td>
+     <td class="small-caption">назначен =&gt; решен</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 января 2007 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Решение</td>
+     <td class="small-caption">открыт =&gt; дубликат</td>
+    </tr>
+    <tr class="row-1">
+     <td class="small-caption">31 января 2007 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Сводка</td>
+     <td class="small-caption">xray-svn\xr_3da\xrGame\agent_enemy_manager.cpp, Line : 434 =&gt; xray-svn\\xr_3da\\xrGame\\agent_enemy_manager.cpp, Line : 434</td>
+    </tr>
+    <tr class="row-2">
+     <td class="small-caption">31 января 2007 20:27</td>
+     <td class="small-caption">Dima</td>
+     <td class="small-caption">Описание обновлено</td>
+     <td class="small-caption"></td>
+    </tr>
+   </table>
+  </div>
+  <br/>
+  <tr align="center">
+   <td align="center" colspan="6">
+    <table>
+    </table></td>
+  </tr>
+ </body>
