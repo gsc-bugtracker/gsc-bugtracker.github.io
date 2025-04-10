@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeUI() {
-    const form = document.createElement('form');
-    form.id = 'search-form';
-    form.innerHTML = `
+    const searchContainer = document.createElement('div');
+    searchContainer.id = 'search-form';
+    searchContainer.innerHTML = `
         <h1>GSC Bug Tracker Search</h1>
         <div>
             <input type="text" id="search-input" placeholder="Search term...">
-            <button type="submit">Search</button>
+            <button type="button" id="search-button">Search</button>
         </div>
         <div>
             <label><input type="checkbox" id="search-description"> Search in descriptions</label>
@@ -39,15 +39,19 @@ function initializeUI() {
             </div>
         </div>
     `;
-    document.body.appendChild(form);
+    document.body.appendChild(searchContainer);
 
     const results = document.createElement('div');
     results.id = 'search-results';
     document.body.appendChild(results);
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    document.getElementById('search-button').addEventListener('click', function() {
         performSearch();
+    });
+    
+    document.getElementById('search-input').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter')
+            performSearch();
     });
 
     const loading = document.createElement('div');
