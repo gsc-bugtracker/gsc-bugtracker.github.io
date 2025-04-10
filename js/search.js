@@ -69,6 +69,7 @@ function loadData() {
             lookupTables = data;
             populateFilters();
             document.getElementById('loading').style.display = 'none';
+            displayResults(bugData);
         })
         .catch(error => {
             console.error('Error loading data:', error);
