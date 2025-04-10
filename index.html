@@ -39,8 +39,7 @@
         margin-top: 10px;
       }
       #filters div {
-        display: inline-block;
-        margin-right: 20px;
+        margin-bottom: 15px;
       }
       #loading {
         padding: 20px;
@@ -48,8 +47,163 @@
         border: 1px solid #e6db55;
         margin: 20px 0;
       }
+      
+      /* Improved styling for filter elements */
+      .filter-section {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+      
+      .filter-section label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      
+      .filter-section select {
+        width: 180px;
+      }
+      
+      .date-filters input[type="date"] {
+        width: 150px;
+        padding: 4px;
+        margin-bottom: 5px;
+      }
+      
+      .filter-tag {
+        display: inline-block;
+        background-color: #e7f3ff;
+        border: 1px solid #a8d1ff;
+        border-radius: 4px;
+        padding: 3px 8px;
+        margin: 2px;
+        font-size: 12px;
+      }
+      
+      .filter-tag .remove {
+        margin-left: 5px;
+        cursor: pointer;
+        color: #5a6268;
+        font-weight: bold;
+      }
+      
+      .filter-tag .remove:hover {
+        color: #c82333;
+      }
+      
+      #active-filters {
+        margin: 10px 0;
+        padding: 5px;
+        min-height: 30px;
+      }
+      
+      .filter-actions {
+        clear: both;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        margin-top: 10px;
+      }
+      
+      .filter-actions button {
+        padding: 6px 12px;
+        margin-right: 10px;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      
+      .filter-actions button:hover {
+        background-color: #e6e6e6;
+      }
+      
+      #search-button {
+        padding: 6px 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #search-button:hover {
+        background-color: #45a049;
+      }
+      
+      #search-input {
+        padding: 6px;
+        width: 300px;
+      }
     </style>
   </head>
   <body>
+    <div id="search-form">
+      <h1>GSC Bug Tracker Search</h1>
+      <div>
+        <input type="text" id="search-input" placeholder="Search term...">
+        <button type="button" id="search-button">Search</button>
+      </div>
+      <div>
+        <label><input type="checkbox" id="search-description"> Search in descriptions</label>
+        <label><input type="checkbox" id="search-comments"> Search in comments</label>
+      </div>
+      
+      <div id="filters">
+        <h3>Filters</h3>
+        <div id="active-filters"></div>
+      
+        <div class="filter-section">
+          <label>Category:</label>
+          <select id="filter-category" multiple size="4"></select>
+        </div>
+        
+        <div class="filter-section">
+          <label>Severity:</label>
+          <select id="filter-severity" multiple size="4"></select>
+        </div>
+        
+        <div class="filter-section">
+          <label>Author:</label>
+          <select id="filter-author" multiple size="4"></select>
+        </div>
+        
+        <div class="filter-section">
+          <label>Participator:</label>
+          <select id="filter-participator" multiple size="4"></select>
+        </div>
+        
+        <div class="filter-section">
+          <label>Resolution:</label>
+          <select id="filter-resolution" multiple size="4"></select>
+        </div>
+        
+        <div class="filter-section date-filters">
+          <label>Date Added:</label>
+          <div>
+            <label>From: <input type="date" id="date-added-min"></label>
+            <label>To: <input type="date" id="date-added-max"></label>
+          </div>
+        </div>
+        
+        <div class="filter-section date-filters">
+          <label>Date Modified:</label>
+          <div>
+            <label>From: <input type="date" id="date-modified-min"></label>
+            <label>To: <input type="date" id="date-modified-max"></label>
+          </div>
+        </div>
+        
+        <div class="filter-actions">
+          <button id="apply-filters">Apply Filters</button>
+          <button id="clear-filters">Clear Filters</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="loading">Loading data...</div>
+    
+    <div id="search-results">
+
+    </div>
   </body>
 </html>
