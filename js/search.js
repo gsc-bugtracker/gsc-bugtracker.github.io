@@ -1,10 +1,34 @@
 // This is AI-generated.
 // I did not look through this at all.
 // I will do no maintenance to this code.
-// Enhanced Bug Tracker Search Script
+
+
+// Global variables
 let bugData = [];
 let lookupTables = {};
-let activeFilters = {};
+let activeFilters = {
+    categories: [],
+    severities: [],
+    authors: [],
+    participators: [],
+    resolutions: [],
+    dateAddedMin: null,
+    dateAddedMax: null,
+    dateModifiedMin: null,
+    dateModifiedMax: null,
+    searchText: '',
+    searchInDesc: false,
+    searchInComments: false
+};
+
+// Options that have been removed from dropdowns and added to active filters
+let removedOptions = {
+    categories: [],
+    severities: [],
+    authors: [],
+    participators: [],
+    resolutions: []
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
@@ -12,246 +36,327 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function setupEventListeners() {
-    // Search button event
-    document.getElementById('search-button').addEventListener('click', function() {
-        performSearch();
+    document.getElementById('search-button').addEventListener('click', performSearch);
+    document.getElementById('search-input').addEventListener('keypress', e => { 
+        if (e.key === 'Enter') performSearch(); 
     });
     
-    // Enter key in search field
-    document.getElementById('search-input').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter')
-            performSearch();
+    document.getElementById('add-category').addEventListener('click', () => addFilter('category'));
+    document.getElementById('add-severity').addEventListener('click', () => addFilter('severity'));
+    document.getElementById('add-author').addEventListener('click', () => addFilter('author'));
+    document.getElementById('add-participator').addEventListener('click', () => addFilter('participator'));
+    document.getElementById('add-resolution').addEventListener('click', () => addFilter('resolution'));
+    document.getElementById('add-date-added').addEventListener('click', addDateAddedFilter);
+    document.getElementById('add-date-modified').addEventListener('click', addDateModifiedFilter);
+    
+    document.getElementById('apply-filters').addEventListener('click', performSearch);
+    document.getElementById('clear-filters').addEventListener('click', clearFilters);
+    
+    document.getElementById('search-description').addEventListener('change', function() {
+        activeFilters.searchInDesc = this.checked;
+        updateActiveFiltersDisplay();
     });
+    
+    document.getElementById('search-comments').addEventListener('change', function() {
+        activeFilters.searchInComments = this.checked;
+        updateActiveFiltersDisplay();
+    });
+    
+    document.getElementById('search-input').addEventListener('input', function() {
+        activeFilters.searchText = this.value.trim();
+        updateActiveFiltersDisplay();
+    });
+}
 
-    // Apply filters button
-    document.getElementById('apply-filters').addEventListener('click', function() {
-        updateActiveFilters();
-        performSearch();
-    });
-
-    // Clear filters button
-    document.getElementById('clear-filters').addEventListener('click', function() {
-        clearFilters();
-    });
+function addFilter(filterType) {
+    const select = document.getElementById(`filter-${filterType}`);
+    const selectedValue = select.value;
     
-    // Set up change events for all filter elements
-    const filterElements = [
-        'filter-category',
-        'filter-severity',
-        'filter-author',
-        'filter-participator',
-        'filter-resolution',
-        'date-added-min',
-        'date-added-max',
-        'date-modified-min',
-        'date-modified-max'
-    ];
+    if (!selectedValue) return; // Nothing selected
     
-    filterElements.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.addEventListener('change', function() {
-                // Auto-apply when a filter changes
-                updateActiveFilters();
-                performSearch();
-            });
+    let filterArray;
+    let optionsArray;
+    let lookupTable;
+    
+    switch(filterType) {
+        case 'category':
+            filterArray = activeFilters.categories;
+            optionsArray = removedOptions.categories;
+            lookupTable = lookupTables.categories;
+            break;
+        case 'severity':
+            filterArray = activeFilters.severities;
+            optionsArray = removedOptions.severities;
+            lookupTable = lookupTables.severities;
+            break;
+        case 'author':
+            filterArray = activeFilters.authors;
+            optionsArray = removedOptions.authors;
+            lookupTable = lookupTables.users;
+            break;
+        case 'participator':
+            filterArray = activeFilters.participators;
+            optionsArray = removedOptions.participators;
+            lookupTable = lookupTables.users;
+            break;
+        case 'resolution':
+            filterArray = activeFilters.resolutions;
+            optionsArray = removedOptions.resolutions;
+            lookupTable = lookupTables.resolutions;
+            break;
+    }
+    
+    if (!filterArray.includes(selectedValue)) {
+        filterArray.push(selectedValue);
+        
+        // Remove from dropdown
+        for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === selectedValue) {
+                optionsArray.push({
+                    value: selectedValue,
+                    text: select.options[i].text
+                });
+                select.remove(i);
+                break;
+            }
         }
-    });
+        
+        // Reset select to first option
+        select.selectedIndex = 0;
+        
+        // Update display
+        updateActiveFiltersDisplay();
+        performSearch();
+    }
 }
 
-function updateActiveFilters() {
-    activeFilters = {};
-    const activeFiltersContainer = document.getElementById('active-filters');
-    activeFiltersContainer.innerHTML = '';
+function addDateAddedFilter() {
+    const minDate = document.getElementById('date-added-min').value;
+    const maxDate = document.getElementById('date-added-max').value;
     
-    // Check for text search
-    const searchText = document.getElementById('search-input').value.trim();
-    if (searchText) {
-        activeFilters.searchText = searchText;
-        addFilterTag('Search', searchText, () => {
-            document.getElementById('search-input').value = '';
-            updateActiveFilters();
-            performSearch();
-        });
+    if (minDate) {
+        activeFilters.dateAddedMin = minDate;
     }
     
-    // Check search options
-    const searchInDesc = document.getElementById('search-description').checked;
-    const searchInComments = document.getElementById('search-comments').checked;
-    if (searchInDesc) {
-        activeFilters.searchInDesc = true;
-        addFilterTag('Search in', 'Descriptions', () => {
-            document.getElementById('search-description').checked = false;
-            updateActiveFilters();
-            performSearch();
-        });
-    }
-    if (searchInComments) {
-        activeFilters.searchInComments = true;
-        addFilterTag('Search in', 'Comments', () => {
-            document.getElementById('search-comments').checked = false;
-            updateActiveFilters();
-            performSearch();
-        });
+    if (maxDate) {
+        activeFilters.dateAddedMax = maxDate;
     }
     
-    // Get category filters
-    const categorySelect = document.getElementById('filter-category');
-    const selectedCategories = getSelectedValues(categorySelect);
-    if (selectedCategories.length > 0) {
-        activeFilters.categories = selectedCategories;
-        selectedCategories.forEach(categoryId => {
-            addFilterTag('Category', lookupTables.categories[categoryId], () => {
-                // Deselect this specific option
-                for (let i = 0; i < categorySelect.options.length; i++) {
-                    if (categorySelect.options[i].value === categoryId) {
-                        categorySelect.options[i].selected = false;
-                        break;
-                    }
-                }
-                updateActiveFilters();
-                performSearch();
-            });
-        });
+    if (minDate || maxDate) {
+        updateActiveFiltersDisplay();
+        performSearch();
+    }
+}
+
+function addDateModifiedFilter() {
+    const minDate = document.getElementById('date-modified-min').value;
+    const maxDate = document.getElementById('date-modified-max').value;
+    
+    if (minDate) {
+        activeFilters.dateModifiedMin = minDate;
     }
     
-    // Get severity filters
-    const severitySelect = document.getElementById('filter-severity');
-    const selectedSeverities = getSelectedValues(severitySelect);
-    if (selectedSeverities.length > 0) {
-        activeFilters.severities = selectedSeverities;
-        selectedSeverities.forEach(severityId => {
-            addFilterTag('Severity', lookupTables.severities[severityId], () => {
-                for (let i = 0; i < severitySelect.options.length; i++) {
-                    if (severitySelect.options[i].value === severityId) {
-                        severitySelect.options[i].selected = false;
-                        break;
-                    }
-                }
-                updateActiveFilters();
-                performSearch();
-            });
-        });
+    if (maxDate) {
+        activeFilters.dateModifiedMax = maxDate;
     }
     
-    // Get author filters
-    const authorSelect = document.getElementById('filter-author');
-    const selectedAuthors = getSelectedValues(authorSelect);
-    if (selectedAuthors.length > 0) {
-        activeFilters.authors = selectedAuthors;
-        selectedAuthors.forEach(authorId => {
-            addFilterTag('Author', lookupTables.users[authorId], () => {
-                for (let i = 0; i < authorSelect.options.length; i++) {
-                    if (authorSelect.options[i].value === authorId) {
-                        authorSelect.options[i].selected = false;
-                        break;
-                    }
-                }
-                updateActiveFilters();
-                performSearch();
-            });
-        });
+    if (minDate || maxDate) {
+        updateActiveFiltersDisplay();
+        performSearch();
     }
+}
+
+function removeFilter(filterType, value) {
+    let filterArray;
+    let optionsArray;
+    let select;
     
-    // Get participator filters
-    const participatorSelect = document.getElementById('filter-participator');
-    const selectedParticipators = getSelectedValues(participatorSelect);
-    if (selectedParticipators.length > 0) {
-        activeFilters.participators = selectedParticipators;
-        selectedParticipators.forEach(participatorId => {
-            addFilterTag('Participator', lookupTables.users[participatorId], () => {
-                for (let i = 0; i < participatorSelect.options.length; i++) {
-                    if (participatorSelect.options[i].value === participatorId) {
-                        participatorSelect.options[i].selected = false;
-                        break;
-                    }
-                }
-                updateActiveFilters();
-                performSearch();
-            });
-        });
-    }
-    
-    // Get resolution filters
-    const resolutionSelect = document.getElementById('filter-resolution');
-    const selectedResolutions = getSelectedValues(resolutionSelect);
-    if (selectedResolutions.length > 0) {
-        activeFilters.resolutions = selectedResolutions;
-        selectedResolutions.forEach(resolutionId => {
-            addFilterTag('Resolution', lookupTables.resolutions[resolutionId], () => {
-                for (let i = 0; i < resolutionSelect.options.length; i++) {
-                    if (resolutionSelect.options[i].value === resolutionId) {
-                        resolutionSelect.options[i].selected = false;
-                        break;
-                    }
-                }
-                updateActiveFilters();
-                performSearch();
-            });
-        });
-    }
-    
-    // Check date filters
-    const dateAddedMin = document.getElementById('date-added-min').value;
-    const dateAddedMax = document.getElementById('date-added-max').value;
-    const dateModifiedMin = document.getElementById('date-modified-min').value;
-    const dateModifiedMax = document.getElementById('date-modified-max').value;
-    
-    if (dateAddedMin) {
-        activeFilters.dateAddedMin = dateAddedMin;
-        addFilterTag('Added after', formatDate(dateAddedMin), () => {
+    switch(filterType) {
+        case 'category':
+            filterArray = activeFilters.categories;
+            optionsArray = removedOptions.categories;
+            select = document.getElementById('filter-category');
+            break;
+        case 'severity':
+            filterArray = activeFilters.severities;
+            optionsArray = removedOptions.severities;
+            select = document.getElementById('filter-severity');
+            break;
+        case 'author':
+            filterArray = activeFilters.authors;
+            optionsArray = removedOptions.authors;
+            select = document.getElementById('filter-author');
+            break;
+        case 'participator':
+            filterArray = activeFilters.participators;
+            optionsArray = removedOptions.participators;
+            select = document.getElementById('filter-participator');
+            break;
+        case 'resolution':
+            filterArray = activeFilters.resolutions;
+            optionsArray = removedOptions.resolutions;
+            select = document.getElementById('filter-resolution');
+            break;
+        case 'dateAddedMin':
+            activeFilters.dateAddedMin = null;
             document.getElementById('date-added-min').value = '';
-            updateActiveFilters();
+            updateActiveFiltersDisplay();
             performSearch();
-        });
-    }
-    
-    if (dateAddedMax) {
-        activeFilters.dateAddedMax = dateAddedMax;
-        addFilterTag('Added before', formatDate(dateAddedMax), () => {
+            return;
+        case 'dateAddedMax':
+            activeFilters.dateAddedMax = null;
             document.getElementById('date-added-max').value = '';
-            updateActiveFilters();
+            updateActiveFiltersDisplay();
             performSearch();
-        });
-    }
-    
-    if (dateModifiedMin) {
-        activeFilters.dateModifiedMin = dateModifiedMin;
-        addFilterTag('Modified after', formatDate(dateModifiedMin), () => {
+            return;
+        case 'dateModifiedMin':
+            activeFilters.dateModifiedMin = null;
             document.getElementById('date-modified-min').value = '';
-            updateActiveFilters();
+            updateActiveFiltersDisplay();
             performSearch();
-        });
-    }
-    
-    if (dateModifiedMax) {
-        activeFilters.dateModifiedMax = dateModifiedMax;
-        addFilterTag('Modified before', formatDate(dateModifiedMax), () => {
+            return;
+        case 'dateModifiedMax':
+            activeFilters.dateModifiedMax = null;
             document.getElementById('date-modified-max').value = '';
-            updateActiveFilters();
+            updateActiveFiltersDisplay();
             performSearch();
-        });
+            return;
+        case 'searchText':
+            activeFilters.searchText = '';
+            document.getElementById('search-input').value = '';
+            updateActiveFiltersDisplay();
+            performSearch();
+            return;
+        case 'searchInDesc':
+            activeFilters.searchInDesc = false;
+            document.getElementById('search-description').checked = false;
+            updateActiveFiltersDisplay();
+            performSearch();
+            return;
+        case 'searchInComments':
+            activeFilters.searchInComments = false;
+            document.getElementById('search-comments').checked = false;
+            updateActiveFiltersDisplay();
+            performSearch();
+            return;
+    }
+    
+    const index = filterArray.indexOf(value);
+    if (index !== -1) {
+        filterArray.splice(index, 1);
+        
+        // Find the option in removedOptions and add it back to the select
+        for (let i = 0; i < optionsArray.length; i++) {
+            if (optionsArray[i].value === value) {
+                const option = document.createElement('option');
+                option.value = optionsArray[i].value;
+                option.text = optionsArray[i].text;
+                select.add(option);
+                optionsArray.splice(i, 1);
+                break;
+            }
+        }
+        
+        // Update display
+        updateActiveFiltersDisplay();
+        performSearch();
     }
 }
 
-function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString();
+function updateActiveFiltersDisplay() {
+    const container = document.getElementById('active-filters');
+    container.innerHTML = '<span class="bold">Active Filters:</span> ';
+    
+    let hasFilters = false;
+    
+    if (activeFilters.searchText) {
+        hasFilters = true;
+        appendFilterTag(container, 'Search', activeFilters.searchText, () => removeFilter('searchText'));
+    }
+    
+    if (activeFilters.searchInDesc) {
+        hasFilters = true;
+        appendFilterTag(container, 'Search in', 'Descriptions', () => removeFilter('searchInDesc'));
+    }
+    
+    if (activeFilters.searchInComments) {
+        hasFilters = true;
+        appendFilterTag(container, 'Search in', 'Comments', () => removeFilter('searchInComments'));
+    }
+    
+    activeFilters.categories.forEach(categoryId => {
+        hasFilters = true;
+        appendFilterTag(container, 'Category', lookupTables.categories[categoryId], 
+                    () => removeFilter('category', categoryId));
+    });
+    
+    activeFilters.severities.forEach(severityId => {
+        hasFilters = true;
+        appendFilterTag(container, 'Severity', lookupTables.severities[severityId], 
+                    () => removeFilter('severity', severityId));
+    });
+    
+    activeFilters.authors.forEach(authorId => {
+        hasFilters = true;
+        appendFilterTag(container, 'Author', lookupTables.users[authorId], 
+                    () => removeFilter('author', authorId));
+    });
+    
+    activeFilters.participators.forEach(participatorId => {
+        hasFilters = true;
+        appendFilterTag(container, 'Participator', lookupTables.users[participatorId], 
+                    () => removeFilter('participator', participatorId));
+    });
+    
+    activeFilters.resolutions.forEach(resolutionId => {
+        hasFilters = true;
+        appendFilterTag(container, 'Resolution', lookupTables.resolutions[resolutionId], 
+                    () => removeFilter('resolution', resolutionId));
+    });
+    
+    if (activeFilters.dateAddedMin) {
+        hasFilters = true;
+        appendFilterTag(container, 'Added after', formatDate(activeFilters.dateAddedMin), 
+                    () => removeFilter('dateAddedMin'));
+    }
+    
+    if (activeFilters.dateAddedMax) {
+        hasFilters = true;
+        appendFilterTag(container, 'Added before', formatDate(activeFilters.dateAddedMax), 
+                    () => removeFilter('dateAddedMax'));
+    }
+    
+    if (activeFilters.dateModifiedMin) {
+        hasFilters = true;
+        appendFilterTag(container, 'Modified after', formatDate(activeFilters.dateModifiedMin), 
+                    () => removeFilter('dateModifiedMin'));
+    }
+    
+    if (activeFilters.dateModifiedMax) {
+        hasFilters = true;
+        appendFilterTag(container, 'Modified before', formatDate(activeFilters.dateModifiedMax), 
+                    () => removeFilter('dateModifiedMax'));
+    }
+    
+    if (!hasFilters) {
+        container.innerHTML += '<span class="italic small">No filters applied. Select filters below.</span>';
+    }
 }
 
-function addFilterTag(type, value, removeCallback) {
-    const activeFiltersContainer = document.getElementById('active-filters');
-    
-    const filterTag = document.createElement('div');
-    filterTag.className = 'filter-tag';
-    filterTag.innerHTML = `
-        <span class="filter-type">${type}:</span>
-        <span class="filter-value">${value}</span>
-        <span class="remove">×</span>
+function appendFilterTag(container, type, value, removeCallback) {
+    const tag = document.createElement('span');
+    tag.className = 'filter-tag';
+    tag.style.marginRight = '5px';
+    tag.innerHTML = `
+        <span class="bold small">${type}:</span>
+        <span class="small">${value}</span>
+        <a href="#" class="small bold" title="Remove this filter"> × </a>
     `;
-    
-    filterTag.querySelector('.remove').addEventListener('click', removeCallback);
-    activeFiltersContainer.appendChild(filterTag);
+    tag.querySelector('a').addEventListener('click', function(e) {
+        e.preventDefault();
+        removeCallback();
+    });
+    container.appendChild(tag);
 }
 
 function clearFilters() {
@@ -259,25 +364,53 @@ function clearFilters() {
     document.getElementById('search-description').checked = false;
     document.getElementById('search-comments').checked = false;
     
-    // Reset all multi-select dropdowns
-    document.getElementById('filter-category').selectedIndex = -1;
-    document.getElementById('filter-severity').selectedIndex = -1;
-    document.getElementById('filter-author').selectedIndex = -1;
-    document.getElementById('filter-participator').selectedIndex = -1;
-    document.getElementById('filter-resolution').selectedIndex = -1;
-    
-    // Reset date fields
     document.getElementById('date-added-min').value = '';
     document.getElementById('date-added-max').value = '';
     document.getElementById('date-modified-min').value = '';
     document.getElementById('date-modified-max').value = '';
     
-    // Clear active filters
-    activeFilters = {};
-    document.getElementById('active-filters').innerHTML = '';
+    activeFilters = {
+        categories: [],
+        severities: [],
+        authors: [],
+        participators: [],
+        resolutions: [],
+        dateAddedMin: null,
+        dateAddedMax: null,
+        dateModifiedMin: null,
+        dateModifiedMax: null,
+        searchText: '',
+        searchInDesc: false,
+        searchInComments: false
+    };
     
-    // Show all results
+    restoreRemovedOptions('category', removedOptions.categories);
+    restoreRemovedOptions('severity', removedOptions.severities);
+    restoreRemovedOptions('author', removedOptions.authors);
+    restoreRemovedOptions('participator', removedOptions.participators);
+    restoreRemovedOptions('resolution', removedOptions.resolutions);
+    
+    removedOptions = {
+        categories: [],
+        severities: [],
+        authors: [],
+        participators: [],
+        resolutions: []
+    };
+    
+    updateActiveFiltersDisplay();
     displayResults(bugData);
+}
+
+function restoreRemovedOptions(filterType, optionsArray) {
+    const select = document.getElementById(`filter-${filterType}`);
+    
+    optionsArray.forEach(option => {
+        const newOption = document.createElement('option');
+        newOption.value = option.value;
+        newOption.text = option.text;
+        select.add(newOption);
+    });
 }
 
 function loadData() {
@@ -285,7 +418,7 @@ function loadData() {
         .then(response => response.json())
         .then(data => {
             bugData = data;
-            document.getElementById('loading').textContent = 'Loading lookup tables...';
+            document.getElementById('loading').innerHTML = '<tr class="row-2"><td class="center">Loading lookup tables...</td></tr>';
             return fetch('/json/lookup_tables.json');
         })
         .then(response => response.json())
@@ -293,186 +426,123 @@ function loadData() {
             lookupTables = data;
             populateFilters();
             document.getElementById('loading').style.display = 'none';
-            displayResults(bugData);
         })
         .catch(error => {
             console.error('Error loading data:', error);
-            document.getElementById('loading').textContent = 'Error loading data. Please refresh the page.';
+            document.getElementById('loading').innerHTML = '<tr class="row-2"><td class="center">Error loading data. Please refresh the page.</td></tr>';
         });
 }
 
 function populateFilters() {
-    // Category filter
-    const categorySelect = document.getElementById('filter-category');
-    categorySelect.innerHTML = '';  // Clear default option
-    Object.entries(lookupTables.categories).forEach(([id, name]) => {
-        const option = document.createElement('option');
-        option.value = id;
-        option.textContent = name;
-        categorySelect.appendChild(option);
-    });
-
-    // Severity filter
-    const severitySelect = document.getElementById('filter-severity');
-    severitySelect.innerHTML = '';  // Clear default option
-    Object.entries(lookupTables.severities).forEach(([id, name]) => {
-        const option = document.createElement('option');
-        option.value = id;
-        option.textContent = name;
-        severitySelect.appendChild(option);
-    });
-
-    // Author filter
-    const authorSelect = document.getElementById('filter-author');
-    authorSelect.innerHTML = '';  // Clear default option
-    Object.entries(lookupTables.users).forEach(([id, name]) => {
-        const option = document.createElement('option');
-        option.value = id;
-        option.textContent = name;
-        authorSelect.appendChild(option);
-    });
-
-    // Participator filter (same as users)
-    const participatorSelect = document.getElementById('filter-participator');
-    participatorSelect.innerHTML = '';  // Clear default option
-    Object.entries(lookupTables.users).forEach(([id, name]) => {
-        const option = document.createElement('option');
-        option.value = id;
-        option.textContent = name;
-        participatorSelect.appendChild(option);
-    });
-
-    // Resolution filter
-    const resolutionSelect = document.getElementById('filter-resolution');
-    resolutionSelect.innerHTML = '';  // Clear default option
-    Object.entries(lookupTables.resolutions).forEach(([id, name]) => {
-        const option = document.createElement('option');
-        option.value = id;
-        option.textContent = name;
-        resolutionSelect.appendChild(option);
-    });
+    populateSelect('filter-category', lookupTables.categories);
+    populateSelect('filter-severity', lookupTables.severities);
+    populateSelect('filter-author', lookupTables.users);
+    populateSelect('filter-participator', lookupTables.users);
+    populateSelect('filter-resolution', lookupTables.resolutions);
 }
 
-function getSelectedValues(selectElement) {
-    const result = [];
-    const options = selectElement && selectElement.options;
-    if (!options) return result;
+function populateSelect(selectId, options) {
+    const select = document.getElementById(selectId);
     
-    for (let i = 0; i < options.length; i++) {
-        if (options[i].selected) {
-            result.push(options[i].value);
-        }
+    while (select.options.length > 1) {
+        select.remove(1);
     }
-    return result;
+    
+    Object.entries(options).forEach(([id, name]) => {
+        const option = document.createElement('option');
+        option.value = id;
+        option.text = name;
+        select.appendChild(option);
+    });
 }
 
 function parseDate(dateString) {
     if (!dateString) return null;
-    
-    // If it's already a Date object
     if (dateString instanceof Date) return dateString;
-    
-    // Handle the format from the JSON: "2004-09-18 19:58"
-    if (dateString.includes(' ')) {
-        return new Date(dateString.replace(' ', 'T'));
-    }
-    
-    // Handle input date format from HTML date picker
+    if (dateString.includes(' ')) return new Date(dateString.replace(' ', 'T'));
     return new Date(dateString);
 }
 
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+}
+
 function performSearch() {
-    // Get current search values
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    const searchInDesc = document.getElementById('search-description').checked;
-    const searchInComments = document.getElementById('search-comments').checked;
+    const searchTerm = activeFilters.searchText.toLowerCase();
+    const searchInDesc = activeFilters.searchInDesc;
+    const searchInComments = activeFilters.searchInComments;
     
-    // Get selected filter values
-    const categoryFilters = getSelectedValues(document.getElementById('filter-category'));
-    const severityFilters = getSelectedValues(document.getElementById('filter-severity'));
-    const authorFilters = getSelectedValues(document.getElementById('filter-author'));
-    const participatorFilters = getSelectedValues(document.getElementById('filter-participator'));
-    const resolutionFilters = getSelectedValues(document.getElementById('filter-resolution'));
-    
-    // Get date range values
-    const dateAddedMin = parseDate(document.getElementById('date-added-min').value);
-    const dateAddedMax = parseDate(document.getElementById('date-added-max').value);
-    const dateModifiedMin = parseDate(document.getElementById('date-modified-min').value);
-    const dateModifiedMax = parseDate(document.getElementById('date-modified-max').value);
-
     const filteredBugs = bugData.filter(bug => {
-        // Search term matching
-        let matchesSearchTerm = bug.summary.toLowerCase().includes(searchTerm);
-        
-        if (searchInDesc && bug.description) {
-            matchesSearchTerm = matchesSearchTerm || bug.description.toLowerCase().includes(searchTerm);
-        }
-        
-        if (searchInComments && bug.comments) {
-            matchesSearchTerm = matchesSearchTerm || bug.comments.some(comment => 
-                comment.text.toLowerCase().includes(searchTerm)
-            );
-        }
-
-        if (searchTerm === '') {
-            matchesSearchTerm = true;
-        }
-        
-        // Multiple category matching
-        const matchesCategory = categoryFilters.length === 0 || 
-            categoryFilters.includes(bug.category_id.toString());
-        
-        // Multiple severity matching
-        const matchesSeverity = severityFilters.length === 0 || 
-            severityFilters.includes(bug.severity_id.toString());
-        
-        // Multiple author matching
-        const matchesAuthor = authorFilters.length === 0 || 
-            authorFilters.includes(bug.reporter_id.toString());
-        
-        // Multiple resolution matching
-        const matchesResolution = resolutionFilters.length === 0 || 
-            resolutionFilters.includes(bug.resolution_id.toString());
-        
-        // Participator matching (checks both reporter and comment authors)
-        let matchesParticipator = participatorFilters.length === 0;
-        if (!matchesParticipator) {
-            // Check if the bug reporter is one of the selected participators
-            if (participatorFilters.includes(bug.reporter_id.toString())) {
-                matchesParticipator = true;
+        // Text search
+        let matchesSearchTerm = true;
+        if (searchTerm) {
+            matchesSearchTerm = bug.summary.toLowerCase().includes(searchTerm);
+            
+            if (!matchesSearchTerm && searchInDesc && bug.description) {
+                matchesSearchTerm = bug.description.toLowerCase().includes(searchTerm);
             }
-            // Check if any comment author is one of the selected participators
-            else if (bug.comments && bug.comments.length > 0) {
-                matchesParticipator = bug.comments.some(comment => 
-                    participatorFilters.includes(comment.author_id.toString())
+            
+            if (!matchesSearchTerm && searchInComments && bug.comments) {
+                matchesSearchTerm = bug.comments.some(comment => 
+                    comment.text.toLowerCase().includes(searchTerm)
                 );
             }
         }
         
-        // Date range matching
-        let matchesDateAdded = true;
-        if (dateAddedMin && bug.date_added) {
-            const bugDateAdded = parseDate(bug.date_added);
-            matchesDateAdded = matchesDateAdded && bugDateAdded >= dateAddedMin;
+        // Category filter
+        const matchesCategory = activeFilters.categories.length === 0 || 
+                               activeFilters.categories.includes(bug.category_id.toString());
+        
+        // Severity filter
+        const matchesSeverity = activeFilters.severities.length === 0 || 
+                               activeFilters.severities.includes(bug.severity_id.toString());
+        
+        // Author filter
+        const matchesAuthor = activeFilters.authors.length === 0 || 
+                             activeFilters.authors.includes(bug.author_id.toString());
+        
+        // Resolution filter
+        const matchesResolution = activeFilters.resolutions.length === 0 || 
+                                 activeFilters.resolutions.includes(bug.resolution_id.toString());
+        
+        // Participator filter
+        let matchesParticipator = activeFilters.participators.length === 0;
+        if (!matchesParticipator) {
+            // Check if the bug reporter is one of the selected participators
+            if (activeFilters.participators.includes(bug.author_id.toString())) {
+                matchesParticipator = true;
+            } else if (bug.comments && bug.comments.length > 0) {
+                // Check if any comment author is one of the selected participators
+                matchesParticipator = bug.comments.some(comment => 
+                    activeFilters.participators.includes(comment.author_id.toString())
+                );
+            }
         }
-        if (dateAddedMax && bug.date_added) {
+        
+        // Date Added filter
+        let matchesDateAdded = true;
+        if (activeFilters.dateAddedMin && bug.date_added) {
             const bugDateAdded = parseDate(bug.date_added);
-            // Add one day to include the end date in the range
-            const maxDate = new Date(dateAddedMax);
-            maxDate.setDate(maxDate.getDate() + 1);
+            matchesDateAdded = matchesDateAdded && bugDateAdded >= parseDate(activeFilters.dateAddedMin);
+        }
+        if (activeFilters.dateAddedMax && bug.date_added) {
+            const bugDateAdded = parseDate(bug.date_added);
+            const maxDate = parseDate(activeFilters.dateAddedMax);
+            maxDate.setDate(maxDate.getDate() + 1); // Include the end date
             matchesDateAdded = matchesDateAdded && bugDateAdded < maxDate;
         }
         
+        // Date Modified filter
         let matchesDateModified = true;
-        if (dateModifiedMin && bug.date_modified) {
+        if (activeFilters.dateModifiedMin && bug.date_modified) {
             const bugDateModified = parseDate(bug.date_modified);
-            matchesDateModified = matchesDateModified && bugDateModified >= dateModifiedMin;
+            matchesDateModified = matchesDateModified && bugDateModified >= parseDate(activeFilters.dateModifiedMin);
         }
-        if (dateModifiedMax && bug.date_modified) {
+        if (activeFilters.dateModifiedMax && bug.date_modified) {
             const bugDateModified = parseDate(bug.date_modified);
-            // Add one day to include the end date in the range
-            const maxDate = new Date(dateModifiedMax);
-            maxDate.setDate(maxDate.getDate() + 1);
+            const maxDate = parseDate(activeFilters.dateModifiedMax);
+            maxDate.setDate(maxDate.getDate() + 1); // Include the end date
             matchesDateModified = matchesDateModified && bugDateModified < maxDate;
         }
         
@@ -487,63 +557,57 @@ function performSearch() {
     });
 
     displayResults(filteredBugs);
-    
-    // Update active filters display
-    updateActiveFilters();
 }
 
 function displayResults(bugs) {
     const resultsContainer = document.getElementById('search-results');
-    resultsContainer.innerHTML = '';
     
     if (bugs.length === 0) {
-        resultsContainer.innerHTML = '<p>No results found.</p>';
+        resultsContainer.innerHTML = '<table cellspacing="1" class="width100"><tr class="row-2"><td class="center">No results found.</td></tr></table>';
         return;
     }
     
-    const table = document.createElement('table');
-    table.innerHTML = `
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Summary</th>
-                <th>Category</th>
-                <th>Severity</th>
-                <th>Author</th>
-                <th>Status</th>
-                <th>Resolution</th>
-                <th>Date Added</th>
-                <th>Last Modified</th>
-            </tr>
-        </thead>
-        <tbody id="results-body"></tbody>
-    `;
-    resultsContainer.appendChild(table);
+    let html = `
+      <table cellspacing="1" class="width100">
+        <tr class="row-category">
+          <td>Summary</td>
+          <td>Category</td>
+          <td>Severity</td>
+          <td>Author</td>
+          <td>Status</td>
+          <td>Resolution</td>
+          <td>Date Added</td>
+          <td>Last Modified</td>
+        </tr>`;
     
-    const tbody = document.getElementById('results-body');
-    
-    bugs.forEach(bug => {
-        const row = document.createElement('tr');
-        
-        // Format dates for display
-        const dateAdded = bug.date_added ? formatDateForDisplay(bug.date_added) : '';
-        const dateModified = bug.date_modified ? formatDateForDisplay(bug.date_modified) : '';
-        
-        row.innerHTML = `
-            <td><a href="${bug.id}.html">${bug.id}</a></td>
-            <td>${escapeHTML(bug.summary)}</td>
-            <td>${getCategoryName(bug.category_id)}</td>
-            <td>${getSeverityName(bug.severity_id)}</td>
-            <td>${getAuthorName(bug.reporter_id)}</td>
-            <td>${getStatusName(bug.status_id)}</td>
-            <td>${getResolutionName(bug.resolution_id)}</td>
-            <td>${dateAdded}</td>
-            <td>${dateModified}</td>
-        `;
-        tbody.appendChild(row);
+    bugs.forEach((bug, index) => {
+      const rowClass = index % 2 === 0 ? 'row-1' : 'row-2';
+      const dateAdded = bug.date_added ? formatDateForDisplay(bug.date_added) : '';
+      const dateModified = bug.date_modified ? formatDateForDisplay(bug.date_modified) : '';
+      
+      html += `
+        <tr class="${rowClass}">
+          <td><a href="${bug.id}.html">${escapeHTML(bug.summary)}</a></td>
+          <td>${getCategoryName(bug.category_id)}</td>
+          <td>${getSeverityName(bug.severity_id)}</td>
+          <td>${getAuthorName(bug.author_id)}</td>
+          <td>${getStatusName(bug.status_id)}</td>
+          <td>${getResolutionName(bug.resolution_id)}</td>
+          <td class="small">${dateAdded}</td>
+          <td class="small">${dateModified}</td>
+        </tr>`;
     });
     
-    resultsContainer.appendChild(document.createElement('p')).textContent = `Found ${bugs.length} result(s).`;
+    html += `
+      <tr class="spacer" height="5">
+        <td colspan="9"></td>
+      </tr>
+      <tr class="row-1">
+        <td colspan="9" class="center">Found ${bugs.length} result(s).</td>
+      </tr>
+    </table>`;
+    
+    resultsContainer.innerHTML = html;
 }
 
 function formatDateForDisplay(dateString) {
@@ -561,22 +625,8 @@ function escapeHTML(str) {
         .replace(/'/g, '&#039;');
 }
 
-function getCategoryName(id) {
-    return lookupTables.categories[id] || 'Unknown';
-}
-
-function getSeverityName(id) {
-    return lookupTables.severities[id] || 'Unknown';
-}
-
-function getAuthorName(id) {
-    return lookupTables.users[id] || 'Unknown';
-}
-
-function getStatusName(id) {
-    return lookupTables.statuses[id] || 'Unknown';
-}
-
-function getResolutionName(id) {
-    return lookupTables.resolutions[id] || 'Unknown';
-}
+function getCategoryName(id) { return lookupTables.categories[id] || 'Unknown'; }
+function getSeverityName(id) { return lookupTables.severities[id] || 'Unknown'; }
+function getAuthorName(id) { return lookupTables.users[id] || 'Unknown'; }
+function getStatusName(id) { return lookupTables.statuses[id] || 'Unknown'; }
+function getResolutionName(id) { return lookupTables.resolutions[id] || 'Unknown'; }

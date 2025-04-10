@@ -1,209 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GSC Bug Tracker Search</title>
-    <script src="js/search.js"></script>
-    <script src="js/fuck_google_translate.js"></script>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-      th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-      #search-form div {
-        margin-bottom: 10px;
-      }
-      #filters {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-top: 10px;
-      }
-      #filters div {
-        margin-bottom: 15px;
-      }
-      #loading {
-        padding: 20px;
-        background: #ffffe0;
-        border: 1px solid #e6db55;
-        margin: 20px 0;
-      }
-      
-      /* Improved styling for filter elements */
-      .filter-section {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 20px;
-        margin-bottom: 15px;
-      }
-      
-      .filter-section label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-      }
-      
-      .filter-section select {
-        width: 180px;
-      }
-      
-      .date-filters input[type="date"] {
-        width: 150px;
-        padding: 4px;
-        margin-bottom: 5px;
-      }
-      
-      .filter-tag {
-        display: inline-block;
-        background-color: #e7f3ff;
-        border: 1px solid #a8d1ff;
-        border-radius: 4px;
-        padding: 3px 8px;
-        margin: 2px;
-        font-size: 12px;
-      }
-      
-      .filter-tag .remove {
-        margin-left: 5px;
-        cursor: pointer;
-        color: #5a6268;
-        font-weight: bold;
-      }
-      
-      .filter-tag .remove:hover {
-        color: #c82333;
-      }
-      
-      #active-filters {
-        margin: 10px 0;
-        padding: 5px;
-        min-height: 30px;
-      }
-      
-      .filter-actions {
-        clear: both;
-        padding-top: 10px;
-        border-top: 1px solid #eee;
-        margin-top: 10px;
-      }
-      
-      .filter-actions button {
-        padding: 6px 12px;
-        margin-right: 10px;
-        background-color: #f2f2f2;
-        border: 1px solid #ddd;
-        cursor: pointer;
-      }
-      
-      .filter-actions button:hover {
-        background-color: #e6e6e6;
-      }
-      
-      #search-button {
-        padding: 6px 12px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-      
-      #search-button:hover {
-        background-color: #45a049;
-      }
-      
-      #search-input {
-        padding: 6px;
-        width: 300px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="search-form">
-      <h1>GSC Bug Tracker Search</h1>
-      <div>
-        <input type="text" id="search-input" placeholder="Search term...">
-        <button type="button" id="search-button">Search</button>
-      </div>
-      <div>
-        <label><input type="checkbox" id="search-description"> Search in descriptions</label>
-        <label><input type="checkbox" id="search-comments"> Search in comments</label>
-      </div>
-      
-      <div id="filters">
-        <h3>Filters</h3>
-        <div id="active-filters"></div>
-      
-        <div class="filter-section">
-          <label>Category:</label>
-          <select id="filter-category" multiple size="4"></select>
-        </div>
-        
-        <div class="filter-section">
-          <label>Severity:</label>
-          <select id="filter-severity" multiple size="4"></select>
-        </div>
-        
-        <div class="filter-section">
-          <label>Author:</label>
-          <select id="filter-author" multiple size="4"></select>
-        </div>
-        
-        <div class="filter-section">
-          <label>Participator:</label>
-          <select id="filter-participator" multiple size="4"></select>
-        </div>
-        
-        <div class="filter-section">
-          <label>Resolution:</label>
-          <select id="filter-resolution" multiple size="4"></select>
-        </div>
-        
-        <div class="filter-section date-filters">
-          <label>Date Added:</label>
-          <div>
-            <label>From: <input type="date" id="date-added-min"></label>
-            <label>To: <input type="date" id="date-added-max"></label>
-          </div>
-        </div>
-        
-        <div class="filter-section date-filters">
-          <label>Date Modified:</label>
-          <div>
-            <label>From: <input type="date" id="date-modified-min"></label>
-            <label>To: <input type="date" id="date-modified-max"></label>
-          </div>
-        </div>
-        
-        <div class="filter-actions">
-          <button id="apply-filters">Apply Filters</button>
-          <button id="clear-filters">Clear Filters</button>
-        </div>
-      </div>
-    </div>
-    
-    <div id="loading">Loading data...</div>
-    
-    <div id="search-results">
-
-    </div>
-  </body>
+ <head>
+  <meta charset="utf-8"/>
+  <link href="css/default.css" rel="stylesheet" type="text/css"/>
+  <title>GSC Bug Tracker Search</title>
+  <script src="js/search.js" type="text/JavaScript"></script>
+  <script src="js/fuck_google_translate.js" type="text/JavaScript"></script>
+ </head>
+ <body>
+  <div class="center">
+   <span class="pagetitle">Mantis</span>
+  </div>
+  <br/>
+  
+  <table cellspacing="1" class="width100">
+   <tr class="row-category">
+    <td colspan="2">Search</td>
+   </tr>
+   <tr class="row-1">
+    <td class="category" width="20%">Search term</td>
+    <td>
+     <input type="text" id="search-input" placeholder="Search term...">
+     <input type="submit" id="search-button" value="Search" class="button">
+    </td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Search in</td>
+    <td>
+     <label><input type="checkbox" id="search-description"> Search in descriptions</label>
+     <label><input type="checkbox" id="search-comments"> Search in comments</label>
+    </td>
+   </tr>
+  </table>
+  
+  <br/>
+  
+  <table cellspacing="1" class="width100">
+   <tr class="row-category">
+    <td colspan="3">Filters</td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="3">
+     <div id="active-filters">
+      <span class="bold">Active Filters:</span>
+      <span class="italic small">No filters applied. Select filters below.</span>
+     </div>
+    </td>
+   </tr>
+   <tr class="row-1">
+    <td class="category" width="20%">Category</td>
+    <td>
+     <select id="filter-category">
+     </select>
+     <input type="button" value="+" id="add-category" class="button-small">
+    </td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Severity</td>
+    <td>
+     <select id="filter-severity">
+     </select>
+     <input type="button" value="+" id="add-severity" class="button-small">
+    </td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Author</td>
+    <td>
+     <select id="filter-author">
+     </select>
+     <input type="button" value="+" id="add-author" class="button-small">
+    </td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Participator</td>
+    <td>
+     <select id="filter-participator">
+     </select>
+     <input type="button" value="+" id="add-participator" class="button-small">
+    </td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Resolution</td>
+    <td>
+     <select id="filter-resolution">
+     </select>
+     <input type="button" value="+" id="add-resolution" class="button-small">
+    </td>
+   </tr>
+   <tr class="row-2">
+    <td class="category">Date Added</td>
+    <td>
+     <table class="hide">
+      <tr>
+       <td class="small">From:</td>
+       <td><input type="date" min="2004-09-18" max="2008-12-25" id="date-added-min"></td>
+      </tr>
+      <tr>
+       <td class="small">To:</td>
+       <td><input type="date" min="2004-09-18" max="2008-12-25" id="date-added-max"></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td><input type="button" value="+" id="add-date-added" class="button-small"></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+   <tr class="row-1">
+    <td class="category">Date Modified</td>
+    <td>
+     <table class="hide">
+      <tr>
+       <td class="small">From:</td>
+       <td><input type="date" min="2004-09-18" max="2008-12-25" id="date-modified-min"></td>
+      </tr>
+      <tr>
+       <td class="small">To:</td>
+       <td><input type="date" min="2004-09-18" max="2008-12-25" id="date-modified-max"></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td><input type="button" value="+" id="add-date-modified" class="button-small"></td>
+      </tr>
+     </table>
+     
+    </td>
+   </tr>
+   <tr class="spacer" height="5">
+    <td colspan="3"></td>
+   </tr>
+   <tr class="row-2">
+    <td colspan="3" class="center">
+     <input type="button" id="apply-filters" value="Apply All Filters" class="button">
+     <input type="button" id="clear-filters" value="Clear All Filters" class="button">
+    </td>
+   </tr>
+  </table>
+  
+  <br/>
+  
+  <table cellspacing="1" class="width100" id="loading">
+   <tr class="row-2">
+    <td class="center">Loading data...</td>
+   </tr>
+  </table>
+  
+  <div id="search-results"></div>
+ </body>
 </html>
